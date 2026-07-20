@@ -137,6 +137,16 @@
   }
   .toggle-note{margin-top:12px; font-size:12px; color:var(--ink-dim); line-height:1.5;}
 
+  .filter-row{display:flex; align-items:center; gap:12px; margin:0 0 14px;}
+  .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em;}
+  select#groupFilter{
+    flex:1; background:#0d1128; border:1px solid #ffffff22; color:var(--ink);
+    border-radius:8px; padding:10px 12px; font-size:14px; font-family:inherit;
+    appearance:none; -webkit-appearance:none;
+    background-image:linear-gradient(45deg,transparent 50%,var(--ink-dim) 50%),linear-gradient(135deg,var(--ink-dim) 50%,transparent 50%);
+    background-position:calc(100% - 18px) 17px, calc(100% - 13px) 17px;
+    background-size:5px 5px, 5px 5px; background-repeat:no-repeat;
+  }
   .gender-tabs{display:flex; gap:8px; margin:0 0 20px;}
   .gtab{
     flex:1; padding:11px 12px; border-radius:9px; cursor:pointer;
@@ -234,7 +244,12 @@
     <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
     <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 점수화한 순위입니다. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영돼 순위가 달라집니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
 
-    <div class="gender-tabs">
+    <div class="filter-row">
+      <label class="filter-label" for="groupFilter">범위</label>
+      <select id="groupFilter" onchange="onGroupChange(this)"></select>
+    </div>
+
+    <div class="gender-tabs" id="genderTabs">
       <button class="gtab active" data-g="F" onclick="switchGender('F')">여자 아이돌</button>
       <button class="gtab" data-g="M" onclick="switchGender('M')">남자 아이돌</button>
     </div>
@@ -453,13 +468,16 @@ function runCalc(){
   };
 
   const prevGender = (window._saju && window._saju.activeGender) || "F";
+  const prevGroup  = (window._saju && window._saju.activeGroup) || "";
   window._saju = {
     stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
     elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
-    dayHanja, rankedByGender, activeGender: prevGender
+    dayHanja, scored, rankedByGender, activeGender: prevGender, activeGroup: prevGroup
   };
   document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===prevGender));
-  renderRanks(prevGender);
+  document.getElementById('groupFilter').value = prevGroup;
+  document.getElementById('genderTabs').style.display = prevGroup ? "none" : "flex";
+  renderRanks();
 
   document.getElementById('shareBtn').disabled = false;
   document.getElementById('shareHint').textContent = "";
@@ -469,6 +487,19 @@ function runCalc(){
 }
 
 const TOP_N = 8;
+
+// 현재 필터(전체=성별탭 / 특정 그룹) 기준으로 보여줄 목록
+function currentList(){
+  const s = window._saju;
+  if(s.activeGroup){
+    return s.scored.filter(x=>x.group===s.activeGroup).sort((a,b)=> b.score-a.score);
+  }
+  return s.rankedByGender[s.activeGender];
+}
+function currentLabel(){
+  const s = window._saju;
+  return s.activeGroup ? s.activeGroup : (s.activeGender==="M" ? "남자 아이돌" : "여자 아이돌");
+}
 
 function cardHTML(r,i){
   return `
@@ -484,18 +515,18 @@ function cardHTML(r,i){
     </div>`;
 }
 
-function moreLabel(g){
-  const n = window._saju.rankedByGender[g].length;
+function moreLabel(){
+  const n = currentList().length;
   return `전체 순위 펼쳐보기 (9~${n}위)`;
 }
 
-function renderRanks(g){
-  const list = window._saju.rankedByGender[g];
+function renderRanks(){
+  const list = currentList();
   document.getElementById('ranklist').innerHTML = list.slice(0,TOP_N).map((r,i)=>cardHTML(r,i)).join("");
   const restEl = document.getElementById('rankRest');
   restEl.classList.add('hidden'); restEl.dataset.built = ""; restEl.innerHTML = "";
   const btn = document.getElementById('moreBtn');
-  btn.textContent = moreLabel(g);
+  btn.textContent = moreLabel();
   btn.style.display = list.length > TOP_N ? "" : "none";
 }
 
@@ -503,17 +534,24 @@ function switchGender(g){
   if(!window._saju) return;
   window._saju.activeGender = g;
   document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===g));
-  renderRanks(g);
+  renderRanks();
 }
 
-// 전체 순위(9위~) 펼치기/접기 — 현재 선택된 성별 기준
+// 그룹 필터 변경: "" = 전체(성별 탭 노출) / 그룹명 = 해당 그룹만
+function onGroupChange(sel){
+  if(!window._saju) return;
+  window._saju.activeGroup = sel.value;
+  document.getElementById('genderTabs').style.display = sel.value ? "none" : "flex";
+  renderRanks();
+}
+
+// 전체 순위(9위~) 펼치기/접기 — 현재 필터 기준
 function toggleRest(){
   const el = document.getElementById('rankRest');
   const btn = document.getElementById('moreBtn');
-  const g = window._saju.activeGender;
   if(el.classList.contains('hidden')){
     if(!el.dataset.built){
-      const list = window._saju.rankedByGender[g];
+      const list = currentList();
       el.innerHTML = list.slice(TOP_N).map((x,i)=>`
         <div class="rest-row">
           <span class="r-n">${i+1+TOP_N}</span>
@@ -528,7 +566,7 @@ function toggleRest(){
     btn.textContent = "접기";
   }else{
     el.classList.add('hidden');
-    btn.textContent = moreLabel(g);
+    btn.textContent = moreLabel();
   }
 }
 
@@ -546,6 +584,28 @@ function toggleRest(){
     o.textContent = `${h}시 (${hh}:00~${hh}:59)`;
     sel.appendChild(o);
   }
+})();
+
+// 그룹 필터 드롭다운 채우기 (여자 그룹 / 남자 그룹으로 묶어서)
+(function(){
+  const sel = document.getElementById('groupFilter');
+  if(!sel) return;
+  const order = [], meta = {};
+  IDOLS.forEach(([n,g])=>{ if(!meta[g]){ meta[g]={count:0, male:MALE_GROUPS.has(g)}; order.push(g); } meta[g].count++; });
+  const all = document.createElement('option');
+  all.value = ""; all.textContent = `전체 아이돌 (${IDOLS.length}명)`;
+  sel.appendChild(all);
+  const addGroup = (label, isMale)=>{
+    const og = document.createElement('optgroup'); og.label = label;
+    order.filter(g=>meta[g].male===isMale).forEach(g=>{
+      const o = document.createElement('option');
+      o.value = g; o.textContent = `${g} (${meta[g].count}명)`;
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  };
+  addGroup("여자 그룹", false);
+  addGroup("남자 그룹", true);
 })();
 
 // ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
@@ -629,10 +689,9 @@ function drawShareCard(){
   ctx.fillText("덕질 궁합 추천 순위", M, 540);
   ctx.fillStyle = dim;
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
-  const gLabel = s.activeGender === "M" ? "남자 아이돌" : "여자 아이돌";
-  ctx.fillText(`${gLabel} · 오로지 사주 특성으로 선정`, M, 574);
+  ctx.fillText(`${currentLabel()} · 오로지 사주 특성으로 선정`, M, 574);
 
-  const top = ((s.rankedByGender && s.rankedByGender[s.activeGender]) || []).slice(0,6);
+  const top = currentList().slice(0,6);
   const yStart = 606, rowH = 112, cardH = 96;
   top.forEach((r,i)=>{
     const top0 = yStart + i*rowH;
