@@ -471,12 +471,17 @@ function monthPillar(y,m,d,yearStemIdx){
   const inStem = ((yearStemIdx%5)*2+2)%10;                 // 오호둔: 寅월 천간
   return {stemIdx:mod(inStem + mod(bIdx-2,12), 10), branchIdx:bIdx};
 }
-// 신강/신약: 사용자의 여러 기둥 오행이 일간을 돕는지(비겁·인성) 설기하는지(식상·재성·관성)
+// 신강/신약: 일간을 돕는 세력(비겁·인성) vs 빼는 세력(식상·재성·관성).
+// 억부론에 맞춰 일간(日干) 자신은 기준점이라 세력 계산에서 제외하고, 나머지 글자만 센다.
 // need>0 = 신약(도움 필요), need<0 = 신강(설기 필요). 범위 대략 [-0.4, 0.4].
 function bodyStrength(pillars, dayElem){
   let support=0, total=0;
-  pillars.forEach(({stem, branch, weight})=>{
-    [ELEM_NAMES[STEM_ELEM_IDX[stem]], ELEM_NAMES[STEM_ELEM_IDX[JIJANG[branch]]]].forEach(E=>{
+  pillars.forEach(({stem, branch, weight, isDay})=>{
+    // 일간 자신(일주의 천간)은 제외, 일지(지지)는 세력으로 포함
+    const glyphs = isDay
+      ? [ELEM_NAMES[STEM_ELEM_IDX[JIJANG[branch]]]]
+      : [ELEM_NAMES[STEM_ELEM_IDX[stem]], ELEM_NAMES[STEM_ELEM_IDX[JIJANG[branch]]]];
+    glyphs.forEach(E=>{
       total += weight;
       if(E===dayElem || generates(E, dayElem)) support += weight; // 비겁·인성 = 도움
     });
@@ -1118,7 +1123,7 @@ function runCalc(){
   const userPillars = [
     {stem:yp.stemIdx, branch:yp.branchIdx, weight:1},
     {stem:mp.stemIdx, branch:mp.branchIdx, weight:2}, // 월령 가중
-    {stem:dp.stemIdx, branch:dp.branchIdx, weight:1}
+    {stem:dp.stemIdx, branch:dp.branchIdx, weight:1, isDay:true} // 일간 자신은 세력 제외
   ];
   if(userHourBranch !== null){ const hp2=hourPillar(dp.stemIdx, Number(hourVal)); userPillars.push({stem:hp2.stemIdx, branch:hp2.branchIdx, weight:1}); }
   const need = bodyStrength(userPillars, userStemElem);
