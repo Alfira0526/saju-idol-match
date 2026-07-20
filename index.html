@@ -8,27 +8,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #10142a;
-    --panel: #171d3a;
-    --panel-2: #1e2547;
-    --ink: #e9e4d4;
-    --ink-dim: #9aa0c2;
-    --gold: #cf9f3f;
-    --gold-soft: #cf9f3f33;
-    --hair: #33396033;
+    /* K-pop 아이돌 팔레트: 핫핑크 × 일렉트릭 퍼플 × 시안 */
+    --bg: #0e0a1f;
+    --panel: #1a1236;
+    --panel-2: #241a48;
+    --ink: #f3edff;
+    --ink-dim: #ab9fce;
+    --gold: #ff4d97;          /* primary 액센트(핫핑크) */
+    --gold-2: #8b5cf6;        /* 보조 액센트(퍼플) */
+    --gold-3: #22d3ee;        /* 포인트(시안) */
+    --gold-soft: #ff4d9733;
+    --grad: linear-gradient(135deg, #ff4d97 0%, #a855f7 55%, #7c6bff 100%);
+    --hair: #ffffff14;
 
-    --mok: #4c9a6a;
-    --hwa: #d1553f;
-    --to:  #d4a44c;
-    --geum:#c9c9d6;
-    --su:  #4c6fa5;
+    --mok: #34e0a1;   /* 木 민트그린 */
+    --hwa: #ff6b7d;   /* 火 코랄레드 */
+    --to:  #ffc94d;   /* 土 옐로우골드 */
+    --geum:#d7dcf7;   /* 金 실버라벤더 */
+    --su:  #4aa8ff;   /* 水 브라이트블루 */
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:
-      radial-gradient(1200px 600px at 15% -10%, #232a54 0%, transparent 60%),
-      radial-gradient(900px 500px at 110% 10%, #2a2050 0%, transparent 55%),
+      radial-gradient(1000px 620px at 6% -10%, #ff3d9a2e 0%, transparent 55%),
+      radial-gradient(900px 560px at 104% 2%, #7b5cff33 0%, transparent 55%),
+      radial-gradient(820px 560px at 58% 112%, #22d3ee1c 0%, transparent 55%),
       var(--bg);
     color:var(--ink);
     font-family:'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
@@ -46,19 +51,21 @@
   h1{
     font-family:'Nanum Myeongjo', serif; font-weight:800;
     font-size:clamp(28px,5vw,42px); margin:0 0 10px; letter-spacing:-.01em;
+    background:linear-gradient(92deg,#ff5da2 0%,#c07bff 48%,#43e0f0 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
   }
   .sub{color:var(--ink-dim); font-size:14.5px; max-width:56ch; margin:0 0 36px;}
 
   .panel{
     background:linear-gradient(180deg, var(--panel), var(--panel-2));
-    border:1px solid #ffffff14; border-radius:14px; padding:28px;
-    margin-bottom:22px; box-shadow:0 20px 50px -30px #000a;
+    border:1px solid #ff4d9722; border-radius:16px; padding:28px;
+    margin-bottom:22px; box-shadow:0 24px 60px -34px #ff2e8a55, 0 8px 30px -20px #7b5cff44;
   }
 
   label{display:block; font-size:13px; color:var(--ink-dim); margin-bottom:8px;}
   .row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
   input[type=date], input[type=time]{
-    width:100%; background:#0d1128; border:1px solid #ffffff22; color:var(--ink);
+    width:100%; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:8px; padding:11px 12px; font-size:15px; font-family:inherit;
   }
   input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator{filter:invert(.7);}
@@ -68,22 +75,24 @@
 
   button.calc{
     margin-top:22px; width:100%; padding:14px; border-radius:9px; border:none;
-    background:var(--gold); color:#1a1305; font-weight:700; font-size:15px;
+    background:var(--grad); color:#fff; font-weight:700; font-size:15px;
     font-family:'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
-    transition:transform .12s ease, box-shadow .12s ease;
+    box-shadow:0 10px 26px -12px #ff4d97aa;
+    transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
   }
-  button.calc:hover{transform:translateY(-1px); box-shadow:0 10px 24px -10px var(--gold-soft);}
+  button.calc:hover{transform:translateY(-1px); box-shadow:0 16px 34px -12px #ff4d97cc; filter:brightness(1.06);}
   button.calc:active{transform:translateY(0);}
 
   .hidden{display:none;}
   .daymaster{
     display:flex; align-items:center; gap:18px; padding:22px 24px;
-    border-radius:12px; border:1px solid #ffffff14;
-    background:#0d1128;
+    border-radius:14px; border:1px solid #ff4d9726;
+    background:linear-gradient(120deg,#1e1440,#170e2e);
+    box-shadow:0 12px 34px -24px #ff2e8a66;
   }
   .dm-badge{
     width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-    font-family:'Nanum Myeongjo', serif; font-size:26px; font-weight:800; color:#0d1128; flex:none;
+    font-family:'Nanum Myeongjo', serif; font-size:26px; font-weight:800; color:#170e2e; flex:none;
   }
   .dm-text .dm-title{font-family:'Nanum Myeongjo', serif; font-size:19px; font-weight:700; margin-bottom:4px;}
   .dm-text .dm-desc{font-size:13px; color:var(--ink-dim);}
@@ -111,7 +120,7 @@
   .chips{display:flex; flex-wrap:wrap; gap:8px;}
   .chip{
     display:inline-flex; align-items:center; gap:6px; padding:6px 12px 6px 8px;
-    border-radius:20px; background:#0d1128; border:1px solid #ffffff1c; font-size:13px;
+    border-radius:20px; background:#170e2e; border:1px solid #ffffff1c; font-size:13px;
   }
   .chip .dot{width:9px; height:9px; border-radius:50%; flex:none;}
   .chip .grp{color:var(--ink-dim); font-size:11.5px;}
@@ -123,12 +132,12 @@
     font-family:'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
     transition:background .12s ease, color .12s ease;
   }
-  .share-btn:hover{background:var(--gold); color:#1a1305;}
+  .share-btn:hover{background:var(--grad); border-color:transparent; color:#fff;}
   .share-btn:disabled{opacity:.5; cursor:default;}
   .share-hint{font-size:12px; color:var(--ink-dim);}
 
   select#bhour{
-    width:100%; background:#0d1128; border:1px solid #ffffff22; color:var(--ink);
+    width:100%; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:8px; padding:11px 12px; font-size:15px; font-family:inherit;
     appearance:none; -webkit-appearance:none;
     background-image:linear-gradient(45deg,transparent 50%,var(--ink-dim) 50%),linear-gradient(135deg,var(--ink-dim) 50%,transparent 50%);
@@ -140,7 +149,7 @@
   .filter-row{display:flex; align-items:center; gap:12px; margin:0 0 14px;}
   .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em;}
   select#groupFilter{
-    flex:1; background:#0d1128; border:1px solid #ffffff22; color:var(--ink);
+    flex:1; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:8px; padding:10px 12px; font-size:14px; font-family:inherit;
     appearance:none; -webkit-appearance:none;
     background-image:linear-gradient(45deg,transparent 50%,var(--ink-dim) 50%),linear-gradient(135deg,var(--ink-dim) 50%,transparent 50%);
@@ -150,16 +159,16 @@
   .gender-tabs{display:flex; gap:8px; margin:0 0 20px;}
   .gtab{
     flex:1; padding:11px 12px; border-radius:9px; cursor:pointer;
-    border:1px solid #ffffff1c; background:#0d1128; color:var(--ink-dim);
+    border:1px solid #ffffff1c; background:#170e2e; color:var(--ink-dim);
     font-family:'Noto Sans KR', sans-serif; font-size:14px; font-weight:500;
     transition:all .12s ease;
   }
   .gtab:hover{border-color:var(--gold-soft); color:var(--ink);}
-  .gtab.active{background:var(--gold); border-color:var(--gold); color:#1a1305; font-weight:700;}
+  .gtab.active{background:var(--grad); border-color:transparent; color:#fff; font-weight:700; box-shadow:0 8px 20px -12px #ff4d97cc;}
 
   .rank-card{
     display:flex; align-items:flex-start; gap:16px; padding:16px 18px;
-    border:1px solid #ffffff14; border-radius:12px; background:#0d1128; margin-bottom:12px;
+    border:1px solid #ffffff14; border-radius:12px; background:#170e2e; margin-bottom:12px;
   }
   .rank-num{
     flex:none; width:38px; height:38px; border-radius:50%;
@@ -167,7 +176,7 @@
     font-family:'Nanum Myeongjo', serif; font-weight:800; font-size:17px;
     background:var(--gold-soft); color:var(--gold); border:1px solid var(--gold);
   }
-  .rank-top .rank-num{background:var(--gold); color:#1a1305;}
+  .rank-top .rank-num{background:var(--grad); border-color:transparent; color:#fff; box-shadow:0 6px 16px -8px #ff4d97cc;}
   .rank-body{flex:1; min-width:0;}
   .rank-name{font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
   .rank-name .grp{font-size:12px; color:var(--ink-dim); font-weight:400;}
@@ -195,7 +204,7 @@
 
   .disclaimer{
     margin-top:44px; padding:20px 22px; border-radius:12px;
-    background:#0d1128; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
+    background:#170e2e; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
   }
   .disclaimer h3{margin:0 0 10px; font-size:13px; color:var(--ink); font-weight:700;}
   .disclaimer ul{margin:0; padding-left:18px;}
@@ -285,7 +294,7 @@ const BRANCHES = ["子","丑","寅","卯","辰","巳","午","未","申","酉","�
 const ELEM_NAMES = ["木","火","土","金","水"];
 const ELEM_KR = ["목","화","토","금","수"];
 const ELEM_COLOR = {"木":"var(--mok)","火":"var(--hwa)","土":"var(--to)","金":"var(--geum)","水":"var(--su)"};
-const ELEM_HEX = {"木":"#4c9a6a","火":"#d1553f","土":"#d4a44c","金":"#c9c9d6","水":"#4c6fa5"};
+const ELEM_HEX = {"木":"#34e0a1","火":"#ff6b7d","土":"#ffc94d","金":"#d7dcf7","水":"#4aa8ff"};
 const STEM_ELEM_IDX = [0,0,1,1,2,2,3,3,4,4];
 
 const GEN_ORDER = ["木","火","土","金","水"];
@@ -420,6 +429,7 @@ function runCalc(){
 
   document.getElementById('dmBadge').textContent = STEMS[dp.stemIdx];
   document.getElementById('dmBadge').style.background = ELEM_COLOR[userStemElem];
+  document.getElementById('dmBadge').style.boxShadow = "0 0 26px -2px " + ELEM_HEX[userStemElem] + "aa";
   document.getElementById('dmTitle').textContent =
     `일간: ${STEMS[dp.stemIdx]}(${STEMS_KR[dp.stemIdx]}) · ${ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]]}(${userStemElem})`;
   document.getElementById('dmDesc').textContent = `일주(日柱): ${dayHanja}${hourInfo}`;
@@ -628,18 +638,19 @@ function drawShareCard(){
 
   // 배경
   const bg = ctx.createLinearGradient(0,0,W,H);
-  bg.addColorStop(0,"#171d3a");
-  bg.addColorStop(1,"#10142a");
+  bg.addColorStop(0,"#1a1236");
+  bg.addColorStop(1,"#0e0a1f");
   ctx.fillStyle = bg;
   ctx.fillRect(0,0,W,H);
-  // 상단 은은한 광원
-  const glow = ctx.createRadialGradient(W*0.2,-80,0,W*0.2,-80,700);
-  glow.addColorStop(0,"#2a2050aa");
-  glow.addColorStop(1,"transparent");
-  ctx.fillStyle = glow;
-  ctx.fillRect(0,0,W,H);
+  // 네온 광원 (핑크 + 퍼플)
+  const glowP = ctx.createRadialGradient(W*0.12,-60,0,W*0.12,-60,760);
+  glowP.addColorStop(0,"#ff3d9a55"); glowP.addColorStop(1,"transparent");
+  ctx.fillStyle = glowP; ctx.fillRect(0,0,W,H);
+  const glowV = ctx.createRadialGradient(W*1.02,40,0,W*1.02,40,720);
+  glowV.addColorStop(0,"#7b5cff4d"); glowV.addColorStop(1,"transparent");
+  ctx.fillStyle = glowV; ctx.fillRect(0,0,W,H);
 
-  const gold = "#cf9f3f", ink = "#e9e4d4", dim = "#9aa0c2";
+  const gold = "#ff4d97", ink = "#f3edff", dim = "#ab9fce";
   const M = 90; // margin
 
   // eyebrow
@@ -649,8 +660,10 @@ function drawShareCard(){
   ctx.textBaseline = "alphabetic";
   ctx.fillText("오행 상생상극 · 궁합 매칭", M+62, 122);
 
-  // title
-  ctx.fillStyle = ink;
+  // title (그라디언트)
+  const tg = ctx.createLinearGradient(M,0,M+660,0);
+  tg.addColorStop(0,"#ff5da2"); tg.addColorStop(0.5,"#c07bff"); tg.addColorStop(1,"#43e0f0");
+  ctx.fillStyle = tg;
   ctx.font = "800 68px 'Nanum Myeongjo', serif";
   ctx.fillText("사주 궁합 아이돌 매칭", M, 210);
 
@@ -660,7 +673,7 @@ function drawShareCard(){
   ctx.arc(cx,cy,rad,0,Math.PI*2);
   ctx.fillStyle = ELEM_HEX[s.elem];
   ctx.fill();
-  ctx.fillStyle = "#0d1128";
+  ctx.fillStyle = "#170e2e";
   ctx.font = "800 62px 'Nanum Myeongjo', serif";
   ctx.textAlign = "center"; ctx.textBaseline = "middle";
   ctx.fillText(s.stem, cx, cy+4);
@@ -696,14 +709,16 @@ function drawShareCard(){
   top.forEach((r,i)=>{
     const top0 = yStart + i*rowH;
     // 카드 배경
-    ctx.fillStyle = "#0d1128";
+    ctx.fillStyle = (i<3) ? "#241247" : "#1c1338";
     roundRect(ctx, M, top0, W-2*M, cardH, 16); ctx.fill();
     const midY = top0 + cardH/2;
     // 랭크 원
     const rnx = M+48;
     ctx.beginPath(); ctx.arc(rnx, midY, 29, 0, Math.PI*2);
-    ctx.fillStyle = (i<3) ? gold : "#1e2547"; ctx.fill();
-    ctx.fillStyle = (i<3) ? "#1a1305" : gold;
+    if(i<3){ const cg = ctx.createLinearGradient(rnx-29,midY-29,rnx+29,midY+29); cg.addColorStop(0,"#ff4d97"); cg.addColorStop(1,"#8b5cf6"); ctx.fillStyle = cg; }
+    else { ctx.fillStyle = "#2a1f4d"; }
+    ctx.fill();
+    ctx.fillStyle = (i<3) ? "#ffffff" : gold;
     ctx.font = "800 30px 'Nanum Myeongjo', serif";
     ctx.textAlign="center"; ctx.textBaseline="middle";
     ctx.fillText(String(i+1), rnx, midY+2);
@@ -732,7 +747,7 @@ function drawShareCard(){
   });
 
   // footer
-  ctx.fillStyle = "#5c6390";
+  ctx.fillStyle = "#6b5f96";
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
   ctx.fillText("사주 궁합 아이돌 매칭 · 오락용 해석", M, H-60);
 
