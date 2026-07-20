@@ -262,7 +262,7 @@
 
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
-  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 110인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 대형소속사(HYBE·SM·YG·JYP·기타)별로도 볼 수 있어요. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
+  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 <span id="idolCount">110</span>인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 대형소속사(HYBE·SM·YG·JYP·기타)별로도 볼 수 있어요. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
 
   <div class="panel">
     <div class="row">
@@ -395,44 +395,194 @@ function branchRel(a,b){
 }
 
 const IDOLS = [
-  ["에스쿱스","SEVENTEEN","辛未","金"],["정한","SEVENTEEN","戊辰","土"],["조슈아","SEVENTEEN","乙未","木"],
-  ["준","SEVENTEEN","戊寅","土"],["호시","SEVENTEEN","癸未","水"],["원우","SEVENTEEN","乙卯","木"],
-  ["우지","SEVENTEEN","癸亥","水"],["도겸","SEVENTEEN","辛卯","金"],["민규","SEVENTEEN","戊寅","土"],
-  ["디에잇","SEVENTEEN","癸丑","水"],["승관","SEVENTEEN","癸亥","水"],["버논","SEVENTEEN","丙申","火"],
-  ["디노","SEVENTEEN","甲午","木"],
-  ["RM","BTS","辛丑","金"],["진","BTS","甲寅","木"],["슈가","BTS","己丑","土"],["제이홉","BTS","乙亥","木"],
-  ["지민","BTS","丁丑","火"],["뷔","BTS","乙未","木"],["정국","BTS","丙午","火"],
-  ["지수","BLACKPINK","甲午","木"],["제니","BLACKPINK","壬子","水"],["로제","BLACKPINK","甲申","木"],["리사","BLACKPINK","戊辰","土"],
-  ["백현","EXO","壬午","水"],["카이","EXO","庚子","金"],["도경수","EXO","壬寅","水"],
-  ["아이유","솔로","丁酉","火"],["태연","SNSD","戊辰","土"],
-  ["장원영","IVE","壬午","水"],["안유진","IVE","丁丑","火"],
-  ["카리나","aespa","己亥","土"],["윈터","aespa","甲子","木"],["닝닝","aespa","甲子","木"],
-  ["카즈하","르세라핌","甲寅","木"],["사쿠라","르세라핌","乙丑","木"],
-  ["채원","ITZY","乙酉","木"],["리아","ITZY","戊子","土"],
-  ["방찬","Stray Kids","戊寅","土"],["필릭스","Stray Kids","丙子","火"],
-  ["지젤","aespa","辛酉","金"],
-  ["가을","IVE","乙未","木"],["레이","IVE","壬子","水"],["리즈","IVE","甲辰","木"],["이서","IVE","丙戌","火"],
-  ["김채원","르세라핌","辛卯","金"],["허윤진","르세라핌","甲辰","木"],["홍은채","르세라핌","癸卯","水"],
-  ["민지","NewJeans","丙戌","火"],["하니","NewJeans","戊午","土"],["다니엘","NewJeans","乙丑","木"],
-  ["해린","NewJeans","甲辰","木"],["혜인","NewJeans","辛卯","金"],
-  ["미연","(G)I-DLE","癸酉","水"],["민니","(G)I-DLE","戊戌","土"],["소연","(G)I-DLE","乙巳","木"],
-  ["우기","(G)I-DLE","戊寅","土"],["슈화","(G)I-DLE","癸亥","水"],
-  ["나연","TWICE","丙辰","火"],["정연","TWICE","壬寅","水"],["모모","TWICE","庚戌","金"],
-  ["사나","TWICE","庚子","金"],["지효","TWICE","甲戌","木"],["미나","TWICE","乙丑","木"],
-  ["다현","TWICE","乙亥","木"],["채영","TWICE","乙巳","木"],["쯔위","TWICE","丁酉","火"],
-  ["아이린","Red Velvet","戊戌","土"],["슬기","Red Velvet","丁卯","火"],["웬디","Red Velvet","戊寅","土"],
-  ["조이","Red Velvet","癸卯","水"],["예리","Red Velvet","丙辰","火"],
-  ["연준","TXT","戊辰","土"],["수빈","TXT","丁酉","火"],["범규","TXT","乙亥","木"],
-  ["태현","TXT","甲辰","木"],["휴닝카이","TXT","甲寅","木"],
-  ["희승","ENHYPEN","辛亥","金"],["제이","ENHYPEN","戊午","土"],["제이크","ENHYPEN","丁亥","火"],
-  ["성훈","ENHYPEN","庚戌","金"],["정원","ENHYPEN","戊午","土"],["선우","ENHYPEN","戊辰","土"],
-  ["니키","ENHYPEN","丁卯","火"],
-  ["태용","NCT","癸巳","水"],["도영","NCT","戊辰","土"],["재현","NCT","丁亥","火"],["마크","NCT","丙戌","火"],
-  ["온유","SHINee","戊申","土"],["키","SHINee","丙申","火"],["민호","SHINee","癸丑","水"],["태민","SHINee","庚子","金"],
-  ["김진우","WINNER","己亥","土"],["이승훈","WINNER","丙戌","火"],["송민호","WINNER","庚戌","金"],["강승윤","WINNER","丁未","火"],
-  ["솔라","MAMAMOO","壬戌","水"],["문별","MAMAMOO","壬申","水"],["휘인","MAMAMOO","戊寅","土"],["화사","MAMAMOO","乙卯","木"],
-  ["윤아","ILLIT","己卯","土"],["민주","ILLIT","丁酉","火"],["모카","ILLIT","辛巳","金"],["원희","ILLIT","己丑","土"],["이로하","ILLIT","壬申","水"],
-  ["릴리","NMIXX","戊午","土"],["해원","NMIXX","甲戌","木"],["설윤","NMIXX","壬午","水"],["배이","NMIXX","甲寅","木"],["지우","NMIXX","庚辰","金"]
+  ["에스쿱스","SEVENTEEN","辛未","金","M","HYBE"],
+  ["정한","SEVENTEEN","戊辰","土","M","HYBE"],
+  ["조슈아","SEVENTEEN","乙未","木","M","HYBE"],
+  ["준","SEVENTEEN","戊寅","土","M","HYBE"],
+  ["호시","SEVENTEEN","癸未","水","M","HYBE"],
+  ["원우","SEVENTEEN","乙卯","木","M","HYBE"],
+  ["우지","SEVENTEEN","癸亥","水","M","HYBE"],
+  ["도겸","SEVENTEEN","辛卯","金","M","HYBE"],
+  ["민규","SEVENTEEN","戊寅","土","M","HYBE"],
+  ["디에잇","SEVENTEEN","癸丑","水","M","HYBE"],
+  ["승관","SEVENTEEN","癸亥","水","M","HYBE"],
+  ["버논","SEVENTEEN","丙申","火","M","HYBE"],
+  ["디노","SEVENTEEN","甲午","木","M","HYBE"],
+  ["RM","BTS","辛丑","金","M","HYBE"],
+  ["진","BTS","甲寅","木","M","HYBE"],
+  ["슈가","BTS","己丑","土","M","HYBE"],
+  ["제이홉","BTS","乙亥","木","M","HYBE"],
+  ["지민","BTS","丁丑","火","M","HYBE"],
+  ["뷔","BTS","乙未","木","M","HYBE"],
+  ["정국","BTS","丙午","火","M","HYBE"],
+  ["지수","BLACKPINK","甲午","木","F","YG"],
+  ["제니","BLACKPINK","壬子","水","F","YG"],
+  ["로제","BLACKPINK","甲申","木","F","YG"],
+  ["리사","BLACKPINK","戊辰","土","F","YG"],
+  ["백현","EXO","壬午","水","M","SM"],
+  ["카이","EXO","庚子","金","M","SM"],
+  ["도경수","EXO","壬寅","水","M","SM"],
+  ["아이유","솔로","丁酉","火","F","기타"],
+  ["태연","SNSD","戊辰","土","F","SM"],
+  ["장원영","IVE","壬午","水","F","기타"],
+  ["안유진","IVE","丁丑","火","F","기타"],
+  ["카리나","aespa","己亥","土","F","SM"],
+  ["윈터","aespa","甲子","木","F","SM"],
+  ["닝닝","aespa","甲子","木","F","SM"],
+  ["카즈하","르세라핌","甲寅","木","F","HYBE"],
+  ["사쿠라","르세라핌","乙丑","木","F","HYBE"],
+  ["채원","ITZY","乙酉","木","F","JYP"],
+  ["리아","ITZY","戊子","土","F","JYP"],
+  ["방찬","Stray Kids","戊寅","土","M","JYP"],
+  ["필릭스","Stray Kids","丙子","火","M","JYP"],
+  ["지젤","aespa","辛酉","金","F","SM"],
+  ["가을","IVE","乙未","木","F","기타"],
+  ["레이","IVE","壬子","水","F","기타"],
+  ["리즈","IVE","甲辰","木","F","기타"],
+  ["이서","IVE","丙戌","火","F","기타"],
+  ["김채원","르세라핌","辛卯","金","F","HYBE"],
+  ["허윤진","르세라핌","甲辰","木","F","HYBE"],
+  ["홍은채","르세라핌","癸卯","水","F","HYBE"],
+  ["민지","NewJeans","丙戌","火","F","HYBE"],
+  ["하니","NewJeans","戊午","土","F","HYBE"],
+  ["다니엘","NewJeans","乙丑","木","F","HYBE"],
+  ["해린","NewJeans","甲辰","木","F","HYBE"],
+  ["혜인","NewJeans","辛卯","金","F","HYBE"],
+  ["미연","(G)I-DLE","癸酉","水","F","기타"],
+  ["민니","(G)I-DLE","戊戌","土","F","기타"],
+  ["소연","(G)I-DLE","乙巳","木","F","기타"],
+  ["우기","(G)I-DLE","戊寅","土","F","기타"],
+  ["슈화","(G)I-DLE","癸亥","水","F","기타"],
+  ["나연","TWICE","丙辰","火","F","JYP"],
+  ["정연","TWICE","壬寅","水","F","JYP"],
+  ["모모","TWICE","庚戌","金","F","JYP"],
+  ["사나","TWICE","庚子","金","F","JYP"],
+  ["지효","TWICE","甲戌","木","F","JYP"],
+  ["미나","TWICE","乙丑","木","F","JYP"],
+  ["다현","TWICE","乙亥","木","F","JYP"],
+  ["채영","TWICE","乙巳","木","F","JYP"],
+  ["쯔위","TWICE","丁酉","火","F","JYP"],
+  ["아이린","Red Velvet","戊戌","土","F","SM"],
+  ["슬기","Red Velvet","丁卯","火","F","SM"],
+  ["웬디","Red Velvet","戊寅","土","F","SM"],
+  ["조이","Red Velvet","癸卯","水","F","SM"],
+  ["예리","Red Velvet","丙辰","火","F","SM"],
+  ["연준","TXT","戊辰","土","M","HYBE"],
+  ["수빈","TXT","丁酉","火","M","HYBE"],
+  ["범규","TXT","乙亥","木","M","HYBE"],
+  ["태현","TXT","甲辰","木","M","HYBE"],
+  ["휴닝카이","TXT","甲寅","木","M","HYBE"],
+  ["희승","ENHYPEN","辛亥","金","M","HYBE"],
+  ["제이","ENHYPEN","戊午","土","M","HYBE"],
+  ["제이크","ENHYPEN","丁亥","火","M","HYBE"],
+  ["성훈","ENHYPEN","庚戌","金","M","HYBE"],
+  ["정원","ENHYPEN","戊午","土","M","HYBE"],
+  ["선우","ENHYPEN","戊辰","土","M","HYBE"],
+  ["니키","ENHYPEN","丁卯","火","M","HYBE"],
+  ["태용","NCT","癸巳","水","M","SM"],
+  ["도영","NCT","戊辰","土","M","SM"],
+  ["재현","NCT","丁亥","火","M","SM"],
+  ["마크","NCT","丙戌","火","M","SM"],
+  ["온유","SHINee","戊申","土","M","SM"],
+  ["키","SHINee","丙申","火","M","SM"],
+  ["민호","SHINee","癸丑","水","M","SM"],
+  ["태민","SHINee","庚子","金","M","SM"],
+  ["김진우","WINNER","己亥","土","M","YG"],
+  ["이승훈","WINNER","丙戌","火","M","YG"],
+  ["송민호","WINNER","庚戌","金","M","YG"],
+  ["강승윤","WINNER","丁未","火","M","YG"],
+  ["솔라","MAMAMOO","壬戌","水","F","기타"],
+  ["문별","MAMAMOO","壬申","水","F","기타"],
+  ["휘인","MAMAMOO","戊寅","土","F","기타"],
+  ["화사","MAMAMOO","乙卯","木","F","기타"],
+  ["윤아","ILLIT","己卯","土","F","HYBE"],
+  ["민주","ILLIT","丁酉","火","F","HYBE"],
+  ["모카","ILLIT","辛巳","金","F","HYBE"],
+  ["원희","ILLIT","己丑","土","F","HYBE"],
+  ["이로하","ILLIT","壬申","水","F","HYBE"],
+  ["릴리","NMIXX","戊午","土","F","JYP"],
+  ["해원","NMIXX","甲戌","木","F","JYP"],
+  ["설윤","NMIXX","壬午","水","F","JYP"],
+  ["배이","NMIXX","甲寅","木","F","JYP"],
+  ["지우","NMIXX","庚辰","金","F","JYP"],
+  ["써니","SNSD","乙亥","木","F","SM"],
+  ["티파니","SNSD","癸巳","水","F","SM"],
+  ["효연","SNSD","乙酉","木","F","SM"],
+  ["유리","SNSD","己亥","土","F","SM"],
+  ["수영","SNSD","丙午","火","F","SM"],
+  ["윤아","SNSD","乙未","木","F","SM"],
+  ["서현","SNSD","己巳","土","F","SM"],
+  ["시우민","EXO","庚寅","金","M","SM"],
+  ["수호","EXO","壬辰","水","M","SM"],
+  ["레이","EXO","庚戌","金","M","SM"],
+  ["첸","EXO","庚子","金","M","SM"],
+  ["찬열","EXO","丁未","火","M","SM"],
+  ["세훈","EXO","戊辰","土","M","SM"],
+  ["유노윤호","TVXQ","辛巳","金","M","SM"],
+  ["최강창민","TVXQ","癸卯","水","M","SM"],
+  ["이특","Super Junior","庚寅","金","M","SM"],
+  ["희철","Super Junior","己亥","土","M","SM"],
+  ["예성","Super Junior","庚寅","金","M","SM"],
+  ["신동","Super Junior","庚午","金","M","SM"],
+  ["은혁","Super Junior","戊寅","土","M","SM"],
+  ["시원","Super Junior","辛巳","金","M","SM"],
+  ["동해","Super Junior","壬辰","水","M","SM"],
+  ["려욱","Super Junior","辛丑","金","M","SM"],
+  ["규현","Super Junior","戊子","土","M","SM"],
+  ["자니","NCT","辛未","金","M","SM"],
+  ["유타","NCT","庚寅","金","M","SM"],
+  ["쿤","NCT","丁酉","火","M","SM"],
+  ["텐","NCT","甲午","木","M","SM"],
+  ["윈윈","NCT","癸卯","水","M","SM"],
+  ["정우","NCT","丁酉","火","M","SM"],
+  ["샤오쥔","NCT","壬辰","水","M","SM"],
+  ["헨드리","NCT","癸未","水","M","SM"],
+  ["런쥔","NCT","庚辰","金","M","SM"],
+  ["제노","NCT","辛亥","金","M","SM"],
+  ["해찬","NCT","乙未","木","M","SM"],
+  ["재민","NCT","癸卯","水","M","SM"],
+  ["양양","NCT","辛丑","金","M","SM"],
+  ["천러","NCT","己丑","土","M","SM"],
+  ["지성","NCT","甲辰","木","M","SM"],
+  ["쇼타로","RIIZE","丁亥","火","M","SM"],
+  ["은석","RIIZE","辛巳","金","M","SM"],
+  ["성찬","RIIZE","己卯","土","M","SM"],
+  ["원빈","RIIZE","己巳","土","M","SM"],
+  ["소희","RIIZE","戊戌","土","M","SM"],
+  ["앤톤","RIIZE","己亥","土","M","SM"],
+  ["루카","BABYMONSTER","丁亥","火","F","YG"],
+  ["파리타","BABYMONSTER","壬午","水","F","YG"],
+  ["아사","BABYMONSTER","丙子","火","F","YG"],
+  ["아현","BABYMONSTER","乙亥","木","F","YG"],
+  ["라미","BABYMONSTER","甲申","木","F","YG"],
+  ["로라","BABYMONSTER","丙戌","火","F","YG"],
+  ["치키타","BABYMONSTER","癸巳","水","F","YG"],
+  ["씨엘","2NE1","丁卯","火","F","YG"],
+  ["산다라박","2NE1","庚戌","金","F","YG"],
+  ["박봄","2NE1","丁巳","火","F","YG"],
+  ["공민지","2NE1","甲辰","木","F","YG"],
+  ["이찬혁","AKMU","壬子","水","M","YG"],
+  ["이수현","AKMU","丙辰","火","F","YG"],
+  ["지드래곤","BIGBANG","乙巳","木","M","YG"],
+  ["태양","BIGBANG","癸酉","水","M","YG"],
+  ["대성","BIGBANG","丙辰","火","M","YG"],
+  ["김진환","iKON","甲子","木","M","YG"],
+  ["송윤형","iKON","庚午","金","M","YG"],
+  ["바비","iKON","丙戌","火","M","YG"],
+  ["김동혁","iKON","乙巳","木","M","YG"],
+  ["구준회","iKON","壬申","水","M","YG"],
+  ["정찬우","iKON","癸酉","水","M","YG"],
+  ["최현석","TREASURE","癸卯","水","M","YG"],
+  ["지훈","TREASURE","辛未","金","M","YG"],
+  ["요시","TREASURE","癸酉","水","M","YG"],
+  ["준규","TREASURE","庚午","金","M","YG"],
+  ["윤재혁","TREASURE","丁亥","火","M","YG"],
+  ["아사히","TREASURE","乙卯","木","M","YG"],
+  ["도영","TREASURE","辛亥","金","M","YG"],
+  ["하루토","TREASURE","甲寅","木","M","YG"],
+  ["박정우","TREASURE","庚戌","金","M","YG"],
+  ["소정환","TREASURE","癸酉","水","M","YG"]
+
 ];
 
 function jdn(y,m,d){
@@ -509,7 +659,7 @@ function runCalc(){
   });
 
   // ---- 오로지 사주 특성으로 점수화 → 성별별 순위 ----
-  const scored = IDOLS.map(([name,group,pillar,elem])=>{
+  const scored = IDOLS.map(([name,group,pillar,elem,gender,agency])=>{
     const rel = relation(userStemElem, elem);
     const sh  = SHISHIN[rel.label];
     const bIdx = BRANCHES.indexOf(pillar[1]);
@@ -532,7 +682,7 @@ function runCalc(){
     }
 
     const pct = Math.max(0, Math.min(100, score - 14));
-    return {name, group, pillar, elem, gender: MALE_GROUPS.has(group)?"M":"F", agency: agencyOf(group),
+    return {name, group, pillar, elem, gender, agency,
             relLabel:rel.label, role:sh.role, branchTag:br.tag, hourNote, score, pct, reason};
   });
 
@@ -679,12 +829,15 @@ function toggleRest(){
   }
 })();
 
+// 아이돌 총원 표시
+(function(){ const el=document.getElementById('idolCount'); if(el) el.textContent=IDOLS.length; })();
+
 // 소속사 버튼 만들기 (전체 + 대형소속사)
 (function(){
   const wrap = document.getElementById('agencyBtns');
   if(!wrap) return;
   const counts = {};
-  IDOLS.forEach(([n,g])=>{ const a=agencyOf(g); counts[a]=(counts[a]||0)+1; });
+  IDOLS.forEach(([n,g,p,e,ge,a])=>{ counts[a]=(counts[a]||0)+1; });
   const mk = (a,label,cnt)=>`<button class="agbtn${a===''?' active':''}" data-a="${a}" onclick="selectAgency('${a}')">${label}<span class="agn">${cnt}</span></button>`;
   let html = mk("","전체",IDOLS.length);
   AGENCY_ORDER.forEach(a=>{ if(counts[a]) html += mk(a,a,counts[a]); });
@@ -696,7 +849,7 @@ function populateGroupDropdown(agency){
   const sel = document.getElementById('groupFilter');
   sel.innerHTML = "";
   const gcount = {}, order = [];
-  IDOLS.forEach(([n,g])=>{ if(agencyOf(g)===agency){ if(gcount[g]===undefined){ gcount[g]=0; order.push(g); } gcount[g]++; } });
+  IDOLS.forEach(([n,g,p,e,ge,a])=>{ if(a===agency){ if(gcount[g]===undefined){ gcount[g]=0; order.push(g); } gcount[g]++; } });
   const agTotal = order.reduce((s,g)=>s+gcount[g],0);
   const oAll = document.createElement('option');
   oAll.value = ""; oAll.textContent = `${agency} 전체 (${agTotal}명)`;
