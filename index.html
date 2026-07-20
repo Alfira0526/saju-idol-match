@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>사주 궁합 아이돌 매칭</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     /* K-pop 아이돌 팔레트: 핫핑크 × 일렉트릭 퍼플 × 시안 */
@@ -42,18 +42,36 @@
   }
   .wrap{max-width:760px; margin:0 auto; padding:56px 20px 90px;}
 
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+    background-image:
+      linear-gradient(#ffffff0a 1px, transparent 1px),
+      linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+    background-size:42px 42px;
+    -webkit-mask-image:radial-gradient(120% 80% at 50% -6%, #000 0%, transparent 68%);
+    mask-image:radial-gradient(120% 80% at 50% -6%, #000 0%, transparent 68%);
+  }
+  .wrap{position:relative; z-index:1;}
+
   .eyebrow{
     font-size:12px; letter-spacing:.25em; color:var(--gold);
     text-transform:uppercase; margin-bottom:14px; display:flex; align-items:center; gap:10px;
   }
-  .eyebrow::before{content:"";width:22px;height:1px;background:var(--gold);display:inline-block;}
+  .eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--grad);display:inline-block;}
+  .eyebrow::after{content:"✦"; color:var(--gold-3); margin-left:2px; animation:twinkle 1.8s ease-in-out infinite;}
+  @keyframes twinkle{ 0%,100%{opacity:.35; transform:scale(.8);} 50%{opacity:1; transform:scale(1.25);} }
 
   h1{
-    font-family:'Nanum Myeongjo', serif; font-weight:800;
-    font-size:clamp(28px,5vw,42px); margin:0 0 10px; letter-spacing:-.01em;
-    background:linear-gradient(92deg,#ff5da2 0%,#c07bff 48%,#43e0f0 100%);
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-weight:400;
+    font-size:clamp(31px,5.8vw,47px); margin:0 0 10px; letter-spacing:0; line-height:1.22;
+    background:linear-gradient(92deg,#ff5da2,#c07bff,#43e0f0,#ff5da2);
+    background-size:300% 100%;
     -webkit-background-clip:text; background-clip:text; color:transparent;
+    animation:holo 6s linear infinite;
+    filter:drop-shadow(0 2px 12px #ff4d9755);
   }
+  @keyframes holo{ to{ background-position:300% 50%; } }
+  @media (prefers-reduced-motion: reduce){ h1{ animation:none; } }
   .sub{color:var(--ink-dim); font-size:14.5px; max-width:56ch; margin:0 0 36px;}
 
   .panel{
@@ -75,8 +93,8 @@
 
   button.calc{
     margin-top:22px; width:100%; padding:14px; border-radius:9px; border:none;
-    background:var(--grad); color:#fff; font-weight:700; font-size:15px;
-    font-family:'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
+    background:var(--grad); color:#fff; font-weight:400; font-size:17px;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
     box-shadow:0 10px 26px -12px #ff4d97aa;
     transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
   }
@@ -102,8 +120,8 @@
   .elemlegend{display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--ink-dim);}
 
   h2.section-title{
-    font-family:'Nanum Myeongjo', serif; font-size:20px; font-weight:700;
-    margin:38px 0 6px; display:flex; align-items:baseline; gap:10px;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:23px; font-weight:400;
+    margin:38px 0 8px; display:flex; align-items:baseline; gap:10px; letter-spacing:.01em;
   }
   .tier-note{font-size:13px; color:var(--ink-dim); margin:0 0 30px;}
 
@@ -128,9 +146,9 @@
   .share-row{display:flex; align-items:center; gap:14px; margin-top:34px; flex-wrap:wrap;}
   .share-btn{
     padding:12px 20px; border-radius:9px; border:1px solid var(--gold);
-    background:transparent; color:var(--gold); font-weight:700; font-size:14px;
-    font-family:'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
-    transition:background .12s ease, color .12s ease;
+    background:transparent; color:var(--gold); font-weight:400; font-size:15px;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
+    transition:background .12s ease, color .12s ease, transform .12s ease;
   }
   .share-btn:hover{background:var(--grad); border-color:transparent; color:#fff;}
   .share-btn:disabled{opacity:.5; cursor:default;}
@@ -160,23 +178,37 @@
   .gtab{
     flex:1; padding:11px 12px; border-radius:9px; cursor:pointer;
     border:1px solid #ffffff1c; background:#170e2e; color:var(--ink-dim);
-    font-family:'Noto Sans KR', sans-serif; font-size:14px; font-weight:500;
-    transition:all .12s ease;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:15px; font-weight:400;
+    transition:all .14s ease;
   }
   .gtab:hover{border-color:var(--gold-soft); color:var(--ink);}
   .gtab.active{background:var(--grad); border-color:transparent; color:#fff; font-weight:700; box-shadow:0 8px 20px -12px #ff4d97cc;}
 
   .rank-card{
     display:flex; align-items:flex-start; gap:16px; padding:16px 18px;
-    border:1px solid #ffffff14; border-radius:12px; background:#170e2e; margin-bottom:12px;
+    border:1px solid #ffffff14; border-radius:14px; background:#170e2e; margin-bottom:12px;
+    opacity:0; transform:translateY(16px) scale(.98);
+    animation:cardIn .5s cubic-bezier(.2,.7,.3,1) forwards;
+    transition:transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+  }
+  .rank-card:hover{
+    transform:translateY(-3px) scale(1.012);
+    border-color:#ff4d9766;
+    box-shadow:0 16px 40px -22px #ff2e8a99, 0 6px 22px -18px #7b5cff88;
+  }
+  @keyframes cardIn{ to{ opacity:1; transform:none; } }
+  @keyframes badgePulse{ 0%,100%{ box-shadow:0 6px 16px -8px #ff4d97cc, 0 0 0 0 #ff4d9766; } 50%{ box-shadow:0 6px 18px -8px #ff4d97ee, 0 0 0 6px #ff4d9700; } }
+  @media (prefers-reduced-motion: reduce){
+    .rank-card{ opacity:1; transform:none; animation:none; }
+    .rank-top .rank-num{ animation:none; }
   }
   .rank-num{
     flex:none; width:38px; height:38px; border-radius:50%;
     display:flex; align-items:center; justify-content:center;
-    font-family:'Nanum Myeongjo', serif; font-weight:800; font-size:17px;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-weight:400; font-size:18px;
     background:var(--gold-soft); color:var(--gold); border:1px solid var(--gold);
   }
-  .rank-top .rank-num{background:var(--grad); border-color:transparent; color:#fff; box-shadow:0 6px 16px -8px #ff4d97cc;}
+  .rank-top .rank-num{background:var(--grad); border-color:transparent; color:#fff; box-shadow:0 6px 16px -8px #ff4d97cc; animation:badgePulse 2.4s ease-in-out infinite;}
   .rank-body{flex:1; min-width:0;}
   .rank-name{font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
   .rank-name .grp{font-size:12px; color:var(--ink-dim); font-weight:400;}
@@ -184,14 +216,14 @@
   .rank-meta{font-size:12.5px; color:var(--gold); margin:5px 0 6px;}
   .rank-reason{font-size:13px; color:var(--ink-dim); line-height:1.55;}
   .rank-score{flex:none; text-align:right; padding-top:2px;}
-  .rank-score .pct{font-family:'Nanum Myeongjo', serif; font-size:24px; font-weight:800; color:var(--ink); line-height:1;}
+  .rank-score .pct{font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:26px; font-weight:400; color:var(--ink); line-height:1;}
   .rank-score .pct-label{font-size:10.5px; color:var(--ink-dim); margin-top:3px;}
   .dot{width:9px; height:9px; border-radius:50%; display:inline-block; flex:none;}
 
   .more-btn{
     width:100%; margin-top:6px; padding:12px; border-radius:9px;
     border:1px solid #ffffff22; background:transparent; color:var(--ink-dim);
-    font-family:'Noto Sans KR', sans-serif; font-size:13.5px; cursor:pointer;
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:14.5px; cursor:pointer;
   }
   .more-btn:hover{border-color:var(--gold); color:var(--gold);}
   .rank-rest{margin-top:6px;}
@@ -513,7 +545,7 @@ function currentLabel(){
 
 function cardHTML(r,i){
   return `
-    <div class="rank-card${i<3?' rank-top':''}">
+    <div class="rank-card${i<3?' rank-top':''}" style="animation-delay:${i*70}ms">
       <div class="rank-num">${i+1}</div>
       <div class="rank-body">
         <div class="rank-name">${r.name}<span class="grp">${r.group}</span>
@@ -664,7 +696,7 @@ function drawShareCard(){
   const tg = ctx.createLinearGradient(M,0,M+660,0);
   tg.addColorStop(0,"#ff5da2"); tg.addColorStop(0.5,"#c07bff"); tg.addColorStop(1,"#43e0f0");
   ctx.fillStyle = tg;
-  ctx.font = "800 68px 'Nanum Myeongjo', serif";
+  ctx.font = "68px 'Jua', 'Noto Sans KR', sans-serif";
   ctx.fillText("사주 궁합 아이돌 매칭", M, 210);
 
   // day-master badge
@@ -698,7 +730,7 @@ function drawShareCard(){
 
   // 추천 순위 섹션
   ctx.fillStyle = ink;
-  ctx.font = "700 40px 'Nanum Myeongjo', serif";
+  ctx.font = "40px 'Jua', 'Noto Sans KR', sans-serif";
   ctx.fillText("덕질 궁합 추천 순위", M, 540);
   ctx.fillStyle = dim;
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
@@ -719,7 +751,7 @@ function drawShareCard(){
     else { ctx.fillStyle = "#2a1f4d"; }
     ctx.fill();
     ctx.fillStyle = (i<3) ? "#ffffff" : gold;
-    ctx.font = "800 30px 'Nanum Myeongjo', serif";
+    ctx.font = "30px 'Jua', 'Noto Sans KR', sans-serif";
     ctx.textAlign="center"; ctx.textBaseline="middle";
     ctx.fillText(String(i+1), rnx, midY+2);
     ctx.textAlign="left"; ctx.textBaseline="alphabetic";
@@ -740,7 +772,7 @@ function drawShareCard(){
     ctx.fillText(`${r.pillar} · ${r.relLabel} · ${r.branchTag}`, tx+22, top0+79);
     // 궁합 %
     ctx.fillStyle = ink;
-    ctx.font = "800 40px 'Nanum Myeongjo', serif";
+    ctx.font = "40px 'Jua', 'Noto Sans KR', sans-serif";
     ctx.textAlign="right";
     ctx.fillText(`${r.pct}%`, W-M-26, midY+13);
     ctx.textAlign="left";
