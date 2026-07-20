@@ -270,7 +270,7 @@
     <div class="row">
       <div>
         <label for="bdate">생년월일 (8자리 숫자)</label>
-        <input type="text" id="bdate" inputmode="numeric" maxlength="8" placeholder="예: 19950719" autocomplete="off">
+        <input type="tel" id="bdate" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="예: 19950719" autocomplete="off">
       </div>
       <div>
         <label for="bhour">태어난 시각 (선택 · 24시간 기준)</label>
@@ -1190,11 +1190,18 @@ function toggleRest(){
 (function(){ const el=document.getElementById('idolCount'); if(el) el.textContent=IDOLS.length; })();
 
 // 생년월일 입력: 숫자만 허용·8자리 제한, Enter로 계산
+// 모바일 한글 IME 조합 중에는 값을 건드리지 않아야 입력이 씹히지 않는다.
 (function(){
   const el = document.getElementById('bdate');
   if(!el) return;
-  el.addEventListener('input', ()=>{ el.value = el.value.replace(/\D/g,'').slice(0,8); });
-  el.addEventListener('keydown', e=>{ if(e.key === 'Enter') runCalc(); });
+  const sanitize = ()=>{
+    const cleaned = el.value.replace(/\D/g,'').slice(0,8);
+    if(cleaned !== el.value) el.value = cleaned; // 변경될 때만 재할당(커서 튐 방지)
+  };
+  el.addEventListener('input', e=>{ if(e.isComposing) return; sanitize(); });
+  el.addEventListener('compositionend', sanitize); // IME 조합 완료 후 정제
+  el.addEventListener('blur', sanitize);
+  el.addEventListener('keydown', e=>{ if(e.key === 'Enter'){ e.preventDefault(); runCalc(); } });
 })();
 
 // 소속사 버튼 만들기 (전체 + 대형소속사)
