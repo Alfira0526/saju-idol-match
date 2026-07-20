@@ -250,7 +250,7 @@
 
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
-  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 88인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
+  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 110인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 대형소속사(HYBE·SM·YG·JYP·기타)별로도 볼 수 있어요. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
 
   <div class="panel">
     <div class="row">
@@ -333,7 +333,18 @@ const GEN_ORDER = ["木","火","土","金","水"];
 const CTRL_ORDER = ["木","土","水","火","金"];
 
 // 성별 분류 (그룹 기준). 목록에 없는 그룹은 여성으로 처리.
-const MALE_GROUPS = new Set(["SEVENTEEN","BTS","EXO","Stray Kids","TXT","ENHYPEN","NCT"]);
+const MALE_GROUPS = new Set(["SEVENTEEN","BTS","EXO","Stray Kids","TXT","ENHYPEN","NCT","SHINee","WINNER"]);
+
+// 대형소속사 분류 (그룹 기준). 목록에 없는 그룹은 '기타'로 처리.
+const AGENCY_ORDER = ["HYBE","SM","YG","JYP","기타"];
+const GROUP_AGENCY = {
+  "BTS":"HYBE","SEVENTEEN":"HYBE","TXT":"HYBE","ENHYPEN":"HYBE","르세라핌":"HYBE","NewJeans":"HYBE","ILLIT":"HYBE",
+  "EXO":"SM","Red Velvet":"SM","aespa":"SM","NCT":"SM","SNSD":"SM","SHINee":"SM",
+  "BLACKPINK":"YG","WINNER":"YG",
+  "TWICE":"JYP","Stray Kids":"JYP","ITZY":"JYP","NMIXX":"JYP",
+  "IVE":"기타","(G)I-DLE":"기타","솔로":"기타","MAMAMOO":"기타"
+};
+const agencyOf = (g)=> GROUP_AGENCY[g] || "기타";
 
 // 십신(十神) 기준 '덕질 궁합' 가중치.
 // 덕질 = 내가 상대에게 애정·에너지를 쏟는 관계 → 일간이 주도하는 식상, 내가 받는 인성을 상위로 둠.
@@ -400,7 +411,12 @@ const IDOLS = [
   ["희승","ENHYPEN","辛亥","金"],["제이","ENHYPEN","戊午","土"],["제이크","ENHYPEN","丁亥","火"],
   ["성훈","ENHYPEN","庚戌","金"],["정원","ENHYPEN","戊午","土"],["선우","ENHYPEN","戊辰","土"],
   ["니키","ENHYPEN","丁卯","火"],
-  ["태용","NCT","癸巳","水"],["도영","NCT","戊辰","土"],["재현","NCT","丁亥","火"],["마크","NCT","丙戌","火"]
+  ["태용","NCT","癸巳","水"],["도영","NCT","戊辰","土"],["재현","NCT","丁亥","火"],["마크","NCT","丙戌","火"],
+  ["온유","SHINee","戊申","土"],["키","SHINee","丙申","火"],["민호","SHINee","癸丑","水"],["태민","SHINee","庚子","金"],
+  ["김진우","WINNER","己亥","土"],["이승훈","WINNER","丙戌","火"],["송민호","WINNER","庚戌","金"],["강승윤","WINNER","丁未","火"],
+  ["솔라","MAMAMOO","壬戌","水"],["문별","MAMAMOO","壬申","水"],["휘인","MAMAMOO","戊寅","土"],["화사","MAMAMOO","乙卯","木"],
+  ["윤아","ILLIT","己卯","土"],["민주","ILLIT","丁酉","火"],["모카","ILLIT","辛巳","金"],["원희","ILLIT","己丑","土"],["이로하","ILLIT","壬申","水"],
+  ["릴리","NMIXX","戊午","土"],["해원","NMIXX","甲戌","木"],["설윤","NMIXX","壬午","水"],["배이","NMIXX","甲寅","木"],["지우","NMIXX","庚辰","金"]
 ];
 
 function jdn(y,m,d){
@@ -500,25 +516,19 @@ function runCalc(){
     }
 
     const pct = Math.max(0, Math.min(100, score - 14));
-    return {name, group, pillar, elem, gender: MALE_GROUPS.has(group)?"M":"F",
+    return {name, group, pillar, elem, gender: MALE_GROUPS.has(group)?"M":"F", agency: agencyOf(group),
             relLabel:rel.label, role:sh.role, branchTag:br.tag, hourNote, score, pct, reason};
   });
 
-  const rankedByGender = {
-    M: scored.filter(x=>x.gender==="M").sort((a,b)=> b.score-a.score),
-    F: scored.filter(x=>x.gender==="F").sort((a,b)=> b.score-a.score)
-  };
-
   const prevGender = (window._saju && window._saju.activeGender) || "F";
-  const prevGroup  = (window._saju && window._saju.activeGroup) || "";
+  const prevScope  = (window._saju && window._saju.scope) || "";
   window._saju = {
     stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
     elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
-    dayHanja, scored, rankedByGender, activeGender: prevGender, activeGroup: prevGroup
+    dayHanja, scored, activeGender: prevGender, scope: prevScope
   };
-  document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===prevGender));
-  document.getElementById('groupFilter').value = prevGroup;
-  document.getElementById('genderTabs').style.display = prevGroup ? "none" : "flex";
+  document.getElementById('groupFilter').value = prevScope;
+  syncControls();
   renderRanks();
 
   document.getElementById('shareBtn').disabled = false;
@@ -530,17 +540,41 @@ function runCalc(){
 
 const TOP_N = 8;
 
-// 현재 필터(전체=성별탭 / 특정 그룹) 기준으로 보여줄 목록
+// scope: "" = 전체 / "ag:소속사" = 소속사 전체 / "gr:그룹" = 특정 그룹
+function scopeMatch(x){
+  const v = window._saju.scope || "";
+  if(v.startsWith("ag:")) return x.agency === v.slice(3);
+  if(v.startsWith("gr:")) return x.group === v.slice(3);
+  return true;
+}
+function isGroupScope(){ return (window._saju.scope||"").startsWith("gr:"); }
+// 성별 탭이 필요한가? (그룹 지정이면 불필요, 소속사/전체에 두 성별이 다 있으면 필요)
+function genderTabsNeeded(){
+  if(isGroupScope()) return false;
+  const base = window._saju.scored.filter(scopeMatch);
+  return base.some(x=>x.gender==="F") && base.some(x=>x.gender==="M");
+}
+// 현재 필터 기준 목록 (점수 내림차순)
 function currentList(){
   const s = window._saju;
-  if(s.activeGroup){
-    return s.scored.filter(x=>x.group===s.activeGroup).sort((a,b)=> b.score-a.score);
-  }
-  return s.rankedByGender[s.activeGender];
+  let base = s.scored.filter(scopeMatch);
+  if(genderTabsNeeded()) base = base.filter(x=>x.gender===s.activeGender);
+  return base.slice().sort((a,b)=> b.score-a.score);
 }
 function currentLabel(){
-  const s = window._saju;
-  return s.activeGroup ? s.activeGroup : (s.activeGender==="M" ? "남자 아이돌" : "여자 아이돌");
+  const s = window._saju, v = s.scope || "";
+  if(v.startsWith("ag:")){
+    const ag = v.slice(3);
+    return genderTabsNeeded() ? `${ag} · ${s.activeGender==="M"?"남자":"여자"}` : ag;
+  }
+  if(v.startsWith("gr:")) return v.slice(3);
+  return s.activeGender==="M" ? "남자 아이돌" : "여자 아이돌";
+}
+// 성별 탭 노출/활성 상태 동기화
+function syncControls(){
+  const need = genderTabsNeeded();
+  document.getElementById('genderTabs').style.display = need ? "flex" : "none";
+  document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===window._saju.activeGender));
 }
 
 function cardHTML(r,i){
@@ -575,15 +609,15 @@ function renderRanks(){
 function switchGender(g){
   if(!window._saju) return;
   window._saju.activeGender = g;
-  document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===g));
+  syncControls();
   renderRanks();
 }
 
-// 그룹 필터 변경: "" = 전체(성별 탭 노출) / 그룹명 = 해당 그룹만
+// 범위(전체 / 소속사 / 그룹) 변경
 function onGroupChange(sel){
   if(!window._saju) return;
-  window._saju.activeGroup = sel.value;
-  document.getElementById('genderTabs').style.display = sel.value ? "none" : "flex";
+  window._saju.scope = sel.value;
+  syncControls();
   renderRanks();
 }
 
@@ -628,26 +662,33 @@ function toggleRest(){
   }
 })();
 
-// 그룹 필터 드롭다운 채우기 (여자 그룹 / 남자 그룹으로 묶어서)
+// 범위 드롭다운 채우기 (대형소속사 → 소속사 전체 + 소속 그룹)
 (function(){
   const sel = document.getElementById('groupFilter');
   if(!sel) return;
-  const order = [], meta = {};
-  IDOLS.forEach(([n,g])=>{ if(!meta[g]){ meta[g]={count:0, male:MALE_GROUPS.has(g)}; order.push(g); } meta[g].count++; });
+  const order = [], gcount = {}, agCount = {};
+  IDOLS.forEach(([n,g])=>{
+    if(gcount[g]===undefined){ gcount[g]=0; order.push(g); }
+    gcount[g]++;
+    const a = agencyOf(g); agCount[a] = (agCount[a]||0)+1;
+  });
   const all = document.createElement('option');
   all.value = ""; all.textContent = `전체 아이돌 (${IDOLS.length}명)`;
   sel.appendChild(all);
-  const addGroup = (label, isMale)=>{
-    const og = document.createElement('optgroup'); og.label = label;
-    order.filter(g=>meta[g].male===isMale).forEach(g=>{
+  AGENCY_ORDER.forEach(ag=>{
+    const groups = order.filter(g=>agencyOf(g)===ag);
+    if(groups.length===0) return;
+    const og = document.createElement('optgroup'); og.label = ag;
+    const oAll = document.createElement('option');
+    oAll.value = `ag:${ag}`; oAll.textContent = `${ag} 전체 (${agCount[ag]}명)`;
+    og.appendChild(oAll);
+    groups.forEach(g=>{
       const o = document.createElement('option');
-      o.value = g; o.textContent = `${g} (${meta[g].count}명)`;
+      o.value = `gr:${g}`; o.textContent = `· ${g} (${gcount[g]}명)`;
       og.appendChild(o);
     });
     sel.appendChild(og);
-  };
-  addGroup("여자 그룹", false);
-  addGroup("남자 그룹", true);
+  });
 })();
 
 // ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
