@@ -297,7 +297,7 @@
     </div>
 
     <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
-    <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 점수화한 순위입니다. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영돼 순위가 달라집니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+    <p class="tier-note">일간 기준 <b>십신 10신(정/편)</b>과 <b>천간합(天干合)</b>, 일지(日支) 궁합(육합·삼합·충·해 등)을 합산해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 레퍼런스가 많아 동점을 줄이려 음양까지 세분화했어요. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
 
     <div class="filter-row">
       <label class="filter-label">소속사</label>
@@ -328,7 +328,7 @@
         <li>사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.</li>
         <li>"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
         <li>일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.</li>
-        <li>순위 점수는 <b>일간의 십신(식상·인성·재성·비겁·관성) 가중치 + 일지의 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 매깁니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
+        <li>순위 점수는 <b>일간 기준 십신 10신(비견·겁재·식신·상관·편재·정재·편관·정관·편인·정인) + 천간합 + 일지 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 0~100으로 정규화하고 소수 둘째 자리까지 표기합니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
         <li>수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
         <li>같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.</li>
       </ul>
@@ -365,20 +365,34 @@ const GROUP_AGENCY = {
 };
 const agencyOf = (g)=> GROUP_AGENCY[g] || "기타";
 
-// 십신(十神) 기준 '덕질 궁합' 가중치.
-// 덕질 = 내가 상대에게 애정·에너지를 쏟는 관계 → 일간이 주도하는 식상, 내가 받는 인성을 상위로 둠.
-const SHISHIN = {
-  "식상(食傷)":{base:100, role:"애정을 쏟는 최애형",
-    reason:"내 기운이 자연스럽게 흘러가는 오행이라, 응원하고 챙겨주는 '덕질' 그 자체에 가장 잘 맞아요."},
-  "인성(印星)":{base:82, role:"힐링·충전형",
-    reason:"나를 북돋아 주는 오행이라, 보고만 있어도 위로받고 충전되는 최애예요."},
-  "재성(財星)":{base:64, role:"설레는 매력형",
-    reason:"내가 끌어당기는 오행이라, 갖고 싶고 설레는 매력으로 다가와요."},
-  "비겁(比劫)":{base:46, role:"편안한 친구형",
-    reason:"나와 같은 오행이라, 동질감과 친근함이 큰 편한 상대예요."},
-  "관성(官星)":{base:28, role:"긴장·경외형",
-    reason:"나를 조이는 오행이라, 멋있지만 다소 어렵고 부담이 될 수 있어요."}
+// 십신(十神) 10신 — 일간 기준 상대 천간을 음양(정/편)까지 구분해 세분화한 '덕질 궁합' 가중치.
+// 덕질 = 내가 애정을 쏟는 관계 → 식상·인성을 상위로 두되, 정/편으로 더 잘게 나눠 동점을 줄인다.
+const STEM_YY = i => (i%2===0 ? 1 : 0); // 甲丙戊庚壬=양, 乙丁己辛癸=음
+const GODS = {
+  "상관":{h:"傷官", w:40, role:"애정을 쏟는 최애형", reason:"내 기운이 자유롭게 뻗어 나가는 관계라, 재능을 응원하고 표현을 즐기는 덕질에 최적이에요."},
+  "식신":{h:"食神", w:38, role:"애정을 쏟는 최애형", reason:"내 기운이 온화하게 흘러가는 관계라, 편안히 챙겨주고 아끼는 덕질에 잘 맞아요."},
+  "정인":{h:"正印", w:33, role:"힐링·충전형", reason:"나를 자애롭게 보살펴 주는 관계라, 보고만 있어도 위로받고 충전돼요."},
+  "편인":{h:"偏印", w:30, role:"힐링·충전형", reason:"나를 특별한 방식으로 채워 주는 관계라, 묘하게 끌리며 힐링돼요."},
+  "정재":{h:"正財", w:24, role:"설레는 매력형", reason:"내가 안정적으로 끌어당기는 관계라, 곁에 두고 싶은 든든한 매력이에요."},
+  "편재":{h:"偏財", w:22, role:"설레는 매력형", reason:"내가 화려하게 끌어당기는 관계라, 설레고 눈을 뗄 수 없는 매력이에요."},
+  "겁재":{h:"劫財", w:15, role:"편안한 친구형", reason:"기운은 같지만 결이 달라, 톡톡 튀는 친구 같은 편안함이 있어요."},
+  "비견":{h:"比肩", w:13, role:"편안한 친구형", reason:"나와 같은 기운이라, 동질감이 큰 편한 상대예요."},
+  "정관":{h:"正官", w:8,  role:"긴장·경외형", reason:"나를 절제 있게 이끄는 관계라, 멋있지만 조금 어렵게 느껴질 수 있어요."},
+  "편관":{h:"偏官", w:6,  role:"긴장·경외형", reason:"나를 강하게 압박하는 관계라, 카리스마는 크지만 부담이 될 수 있어요."}
 };
+function tenGod(uSI, tSI){
+  const ue=ELEM_NAMES[STEM_ELEM_IDX[uSI]], te=ELEM_NAMES[STEM_ELEM_IDX[tSI]];
+  const same = STEM_YY(uSI)===STEM_YY(tSI);
+  let g;
+  if(te===ue) g = same?"비견":"겁재";
+  else if(generates(ue,te)) g = same?"식신":"상관";
+  else if(generates(te,ue)) g = same?"편인":"정인";
+  else if(controls(ue,te)) g = same?"편재":"정재";
+  else g = same?"편관":"정관";
+  return {name:g, ...GODS[g]};
+}
+// 천간합(天干合): 甲己·乙庚·丙辛·丁壬·戊癸 — 일간끼리 합하면 특별한 인연 가점
+function ganHap(uSI,tSI){ return (uSI+5)%10===tSI; }
 
 // 일지(日支) 관계 — 지지 인덱스(子0 … 亥11) 기준
 const LIUHE  = {0:1,1:0,2:11,11:2,3:10,10:3,4:9,9:4,5:8,8:5,6:7,7:6}; // 육합
@@ -422,10 +436,6 @@ const IDOLS = [
   ["제니","BLACKPINK","壬子","水","F","YG"],
   ["로제","BLACKPINK","甲申","木","F","YG"],
   ["리사","BLACKPINK","戊辰","土","F","YG"],
-  ["백현","EXO","壬午","水","M","SM"],
-  ["카이","EXO","庚子","金","M","SM"],
-  ["도경수","EXO","壬寅","水","M","SM"],
-  ["태연","SNSD","戊辰","土","F","SM"],
   ["장원영","IVE","壬午","水","F","기타"],
   ["안유진","IVE","丁丑","火","F","기타"],
   ["카리나","aespa","己亥","土","F","SM"],
@@ -477,10 +487,6 @@ const IDOLS = [
   ["정원","ENHYPEN","戊午","土","M","HYBE"],
   ["선우","ENHYPEN","戊辰","土","M","HYBE"],
   ["니키","ENHYPEN","丁卯","火","M","HYBE"],
-  ["태용","NCT","癸巳","水","M","SM"],
-  ["도영","NCT","戊辰","土","M","SM"],
-  ["재현","NCT","丁亥","火","M","SM"],
-  ["마크","NCT","丙戌","火","M","SM"],
   ["온유","SHINee","戊申","土","M","SM"],
   ["키","SHINee","丙申","火","M","SM"],
   ["민호","SHINee","癸丑","水","M","SM"],
@@ -498,64 +504,6 @@ const IDOLS = [
   ["모카","ILLIT","辛巳","金","F","HYBE"],
   ["원희","ILLIT","己丑","土","F","HYBE"],
   ["이로하","ILLIT","壬申","水","F","HYBE"],
-  ["써니","SNSD","乙亥","木","F","SM"],
-  ["티파니","SNSD","癸巳","水","F","SM"],
-  ["효연","SNSD","乙酉","木","F","SM"],
-  ["유리","SNSD","己亥","土","F","SM"],
-  ["수영","SNSD","丙午","火","F","SM"],
-  ["윤아","SNSD","乙未","木","F","SM"],
-  ["서현","SNSD","己巳","土","F","SM"],
-  ["시우민","EXO","庚寅","金","M","SM"],
-  ["수호","EXO","壬辰","水","M","SM"],
-  ["레이","EXO","庚戌","金","M","SM"],
-  ["첸","EXO","庚子","金","M","SM"],
-  ["찬열","EXO","丁未","火","M","SM"],
-  ["세훈","EXO","戊辰","土","M","SM"],
-  ["유노윤호","TVXQ","辛巳","金","M","SM"],
-  ["최강창민","TVXQ","癸卯","水","M","SM"],
-  ["이특","Super Junior","庚寅","金","M","SM"],
-  ["희철","Super Junior","己亥","土","M","SM"],
-  ["예성","Super Junior","庚寅","金","M","SM"],
-  ["신동","Super Junior","庚午","金","M","SM"],
-  ["은혁","Super Junior","戊寅","土","M","SM"],
-  ["시원","Super Junior","辛巳","金","M","SM"],
-  ["동해","Super Junior","壬辰","水","M","SM"],
-  ["려욱","Super Junior","辛丑","金","M","SM"],
-  ["규현","Super Junior","戊子","土","M","SM"],
-  ["자니","NCT","辛未","金","M","SM"],
-  ["유타","NCT","庚寅","金","M","SM"],
-  ["쿤","NCT","丁酉","火","M","SM"],
-  ["텐","NCT","甲午","木","M","SM"],
-  ["윈윈","NCT","癸卯","水","M","SM"],
-  ["정우","NCT","丁酉","火","M","SM"],
-  ["샤오쥔","NCT","壬辰","水","M","SM"],
-  ["헨드리","NCT","癸未","水","M","SM"],
-  ["런쥔","NCT","庚辰","金","M","SM"],
-  ["제노","NCT","辛亥","金","M","SM"],
-  ["해찬","NCT","乙未","木","M","SM"],
-  ["재민","NCT","癸卯","水","M","SM"],
-  ["양양","NCT","辛丑","金","M","SM"],
-  ["천러","NCT","己丑","土","M","SM"],
-  ["지성","NCT","甲辰","木","M","SM"],
-  ["쇼타로","RIIZE","丁亥","火","M","SM"],
-  ["은석","RIIZE","辛巳","金","M","SM"],
-  ["성찬","RIIZE","己卯","土","M","SM"],
-  ["원빈","RIIZE","己巳","土","M","SM"],
-  ["소희","RIIZE","戊戌","土","M","SM"],
-  ["앤톤","RIIZE","己亥","土","M","SM"],
-  ["루카","BABYMONSTER","丁亥","火","F","YG"],
-  ["파리타","BABYMONSTER","壬午","水","F","YG"],
-  ["아사","BABYMONSTER","丙子","火","F","YG"],
-  ["아현","BABYMONSTER","乙亥","木","F","YG"],
-  ["라미","BABYMONSTER","甲申","木","F","YG"],
-  ["로라","BABYMONSTER","丙戌","火","F","YG"],
-  ["치키타","BABYMONSTER","癸巳","水","F","YG"],
-  ["씨엘","2NE1","丁卯","火","F","YG"],
-  ["산다라박","2NE1","庚戌","金","F","YG"],
-  ["박봄","2NE1","丁巳","火","F","YG"],
-  ["공민지","2NE1","甲辰","木","F","YG"],
-  ["이찬혁","AKMU","壬子","水","M","YG"],
-  ["이수현","AKMU","丙辰","火","F","YG"],
   ["지드래곤","BIGBANG","乙巳","木","M","YG"],
   ["태양","BIGBANG","癸酉","水","M","YG"],
   ["대성","BIGBANG","丙辰","火","M","YG"],
@@ -943,7 +891,73 @@ const IDOLS = [
   ["가온","Xdinary Heroes","壬午","水","M","JYP"],
   ["오드","Xdinary Heroes","庚戌","金","M","JYP"],
   ["주연","Xdinary Heroes","癸未","水","M","JYP"],
-  ["준한","Xdinary Heroes","戊午","土","M","JYP"]
+  ["준한","Xdinary Heroes","戊午","土","M","JYP"],
+  ["태연","SNSD","戊辰","土","F","SM"],
+  ["써니","SNSD","乙亥","木","F","SM"],
+  ["티파니","SNSD","癸巳","水","F","SM"],
+  ["효연","SNSD","乙酉","木","F","SM"],
+  ["유리","SNSD","己亥","土","F","SM"],
+  ["수영","SNSD","丙午","火","F","SM"],
+  ["윤아","SNSD","乙未","木","F","SM"],
+  ["서현","SNSD","己巳","土","F","SM"],
+  ["시우민","EXO","庚寅","金","M","SM"],
+  ["수호","EXO","壬辰","水","M","SM"],
+  ["레이","EXO","庚戌","金","M","SM"],
+  ["백현","EXO","壬午","水","M","SM"],
+  ["첸","EXO","庚子","金","M","SM"],
+  ["찬열","EXO","丁未","火","M","SM"],
+  ["도경수","EXO","癸巳","水","M","SM"],
+  ["카이","EXO","庚子","金","M","SM"],
+  ["세훈","EXO","戊辰","土","M","SM"],
+  ["유노윤호","TVXQ","辛巳","金","M","SM"],
+  ["최강창민","TVXQ","癸卯","水","M","SM"],
+  ["이특","Super Junior","庚寅","金","M","SM"],
+  ["희철","Super Junior","己亥","土","M","SM"],
+  ["예성","Super Junior","庚寅","金","M","SM"],
+  ["신동","Super Junior","庚午","金","M","SM"],
+  ["은혁","Super Junior","戊寅","土","M","SM"],
+  ["시원","Super Junior","辛巳","金","M","SM"],
+  ["동해","Super Junior","壬辰","水","M","SM"],
+  ["려욱","Super Junior","辛丑","金","M","SM"],
+  ["규현","Super Junior","戊子","土","M","SM"],
+  ["자니","NCT","辛未","金","M","SM"],
+  ["태용","NCT","癸巳","水","M","SM"],
+  ["유타","NCT","庚寅","金","M","SM"],
+  ["쿤","NCT","丁酉","火","M","SM"],
+  ["텐","NCT","甲午","木","M","SM"],
+  ["도영","NCT","戊辰","土","M","SM"],
+  ["재현","NCT","丁亥","火","M","SM"],
+  ["윈윈","NCT","癸卯","水","M","SM"],
+  ["정우","NCT","丁酉","火","M","SM"],
+  ["샤오쥔","NCT","壬辰","水","M","SM"],
+  ["헨드리","NCT","癸未","水","M","SM"],
+  ["마크","NCT","丙戌","火","M","SM"],
+  ["런쥔","NCT","庚辰","金","M","SM"],
+  ["제노","NCT","辛亥","金","M","SM"],
+  ["해찬","NCT","乙未","木","M","SM"],
+  ["재민","NCT","癸卯","水","M","SM"],
+  ["양양","NCT","辛丑","金","M","SM"],
+  ["천러","NCT","己丑","土","M","SM"],
+  ["지성","NCT","甲辰","木","M","SM"],
+  ["쇼타로","RIIZE","丁亥","火","M","SM"],
+  ["은석","RIIZE","辛巳","金","M","SM"],
+  ["성찬","RIIZE","己卯","土","M","SM"],
+  ["원빈","RIIZE","己巳","土","M","SM"],
+  ["소희","RIIZE","戊戌","土","M","SM"],
+  ["앤톤","RIIZE","己亥","土","M","SM"],
+  ["루카","BABYMONSTER","丁亥","火","F","YG"],
+  ["파리타","BABYMONSTER","壬午","水","F","YG"],
+  ["아사","BABYMONSTER","丙子","火","F","YG"],
+  ["아현","BABYMONSTER","乙亥","木","F","YG"],
+  ["라미","BABYMONSTER","甲申","木","F","YG"],
+  ["로라","BABYMONSTER","丙戌","火","F","YG"],
+  ["치키타","BABYMONSTER","癸巳","水","F","YG"],
+  ["씨엘","2NE1","丁卯","火","F","YG"],
+  ["산다라박","2NE1","庚戌","金","F","YG"],
+  ["박봄","2NE1","丁巳","火","F","YG"],
+  ["공민지","2NE1","甲辰","木","F","YG"],
+  ["이찬혁","AKMU","壬子","水","M","YG"],
+  ["이수현","AKMU","丙辰","火","F","YG"]
 
 ];
 
@@ -1021,32 +1035,36 @@ function runCalc(){
     bar.appendChild(seg);
   });
 
-  // ---- 오로지 사주 특성으로 점수화 → 성별별 순위 ----
+  // ---- 오로지 사주 특성으로 점수화 → 성별별 순위 (10신 + 천간합 + 지지, 소수 2자리) ----
+  const uSI = dp.stemIdx;
   const scored = IDOLS.map(([name,group,pillar,elem,gender,agency])=>{
-    const rel = relation(userStemElem, elem);
-    const sh  = SHISHIN[rel.label];
+    const tSI = STEMS.indexOf(pillar[0]);
+    const g   = tenGod(uSI, tSI);
     const bIdx = BRANCHES.indexOf(pillar[1]);
     const br  = branchRel(dp.branchIdx, bIdx);
-    let score = sh.base + br.score;
-    let reason = sh.reason;
+    const hap = ganHap(uSI, tSI);
+    let raw = g.w + (hap ? 6 : 0) + br.score;
+    let reason = g.reason;
+    if(hap) reason += " 게다가 일간끼리 천간합(天干合)을 이루는 특별한 인연이에요.";
     if(br.reason) reason += " " + br.reason;
 
     // 시각을 입력하면 나의 시지(時支)와의 궁합을 추가 반영 (가중치 0.6)
     let hourNote = "";
     if(userHourBranch !== null){
       const br2 = branchRel(userHourBranch, bIdx);
-      const add = Math.round(br2.score * 0.6);
-      score += add;
-      if(add !== 0){
+      raw += br2.score * 0.6;
+      if(br2.score !== 0){
         const t = br2.tag.replace("일지 ","");
         hourNote = " · 시지 " + t;
-        reason += ` 태어난 시각의 지지와도 ${t} 관계라 ${add>0?"+":""}${add}점.`;
+        reason += ` 태어난 시각의 지지와도 ${t} 관계예요.`;
       }
     }
 
-    const pct = Math.max(0, Math.min(100, score - 14));
+    // 정규화: 실현 가능한 최소 -8(편관+충) ~ 최대 54(상관+육합) → 0~100 (%), 소수 둘째 자리
+    const pct = Math.round(Math.max(0, Math.min(100, (raw + 8) / 62 * 100)) * 100) / 100;
+    const relLabel = `${g.name}(${g.h})` + (hap ? " · 천간합" : "");
     return {name, group, pillar, elem, gender, agency,
-            relLabel:rel.label, role:sh.role, branchTag:br.tag, hourNote, score, pct, reason};
+            relLabel, role:g.role, branchTag:br.tag, hourNote, score:raw, pct, reason};
   });
 
   const prevGender = (window._saju && window._saju.activeGender) || "F";
@@ -1116,7 +1134,7 @@ function cardHTML(r,i){
         <div class="rank-meta">${r.relLabel} · ${r.role} · ${r.branchTag}${r.hourNote}</div>
         <div class="rank-reason">${r.reason}</div>
       </div>
-      <div class="rank-score"><div class="pct">${r.pct}<span style="font-size:14px">%</span></div><div class="pct-label">궁합</div></div>
+      <div class="rank-score"><div class="pct">${r.pct.toFixed(2)}<span style="font-size:13px">%</span></div><div class="pct-label">궁합</div></div>
     </div>`;
 }
 
@@ -1164,7 +1182,7 @@ function toggleRest(){
           <span class="dot" style="background:${ELEM_COLOR[x.elem]}"></span>
           <span class="r-name">${x.name} <span class="r-grp">${x.group}</span></span>
           <span class="r-rel">${x.relLabel.replace(/\(.*\)/,'')}</span>
-          <span class="r-pct">${x.pct}%</span>
+          <span class="r-pct">${x.pct.toFixed(2)}%</span>
         </div>`).join("");
       el.dataset.built = "1";
     }
@@ -1394,9 +1412,9 @@ function drawShareCard(){
     ctx.fillText(`${r.pillar} · ${r.relLabel} · ${r.branchTag}`, tx+22, top0+79);
     // 궁합 %
     ctx.fillStyle = ink;
-    ctx.font = "40px 'Jua', 'Noto Sans KR', sans-serif";
+    ctx.font = "33px 'Jua', 'Noto Sans KR', sans-serif";
     ctx.textAlign="right";
-    ctx.fillText(`${r.pct}%`, W-M-26, midY+13);
+    ctx.fillText(`${r.pct.toFixed(2)}%`, W-M-26, midY+11);
     ctx.textAlign="left";
   });
 
