@@ -164,8 +164,20 @@
   }
   .toggle-note{margin-top:12px; font-size:12px; color:var(--ink-dim); line-height:1.5;}
 
-  .filter-row{display:flex; align-items:center; gap:12px; margin:0 0 14px;}
-  .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em;}
+  .filter-row{display:flex; align-items:flex-start; gap:12px; margin:0 0 12px;}
+  .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em; padding-top:10px; width:44px;}
+  .agency-btns{display:flex; flex-wrap:wrap; gap:8px; flex:1;}
+  .agbtn{
+    padding:9px 15px; border-radius:999px; cursor:pointer;
+    border:1px solid #ffffff1c; background:#170e2e; color:var(--ink-dim);
+    font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:14px;
+    display:inline-flex; align-items:center; gap:7px; transition:all .14s ease;
+  }
+  .agbtn:hover{border-color:var(--gold-soft); color:var(--ink); transform:translateY(-1px);}
+  .agbtn.active{background:var(--grad); border-color:transparent; color:#fff; box-shadow:0 8px 20px -12px #ff4d97cc;}
+  .agbtn .agn{font-size:11px; opacity:.65;}
+  .agbtn.active .agn{opacity:.9;}
+  .subgroup-row{display:flex; align-items:center; gap:12px; margin:0 0 16px; animation:cardIn .35s ease forwards;}
   select#groupFilter{
     flex:1; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:8px; padding:10px 12px; font-size:14px; font-family:inherit;
@@ -286,7 +298,11 @@
     <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 점수화한 순위입니다. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영돼 순위가 달라집니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
 
     <div class="filter-row">
-      <label class="filter-label" for="groupFilter">범위</label>
+      <label class="filter-label">소속사</label>
+      <div class="agency-btns" id="agencyBtns"></div>
+    </div>
+    <div class="subgroup-row" id="subgroupRow" style="display:none">
+      <label class="filter-label" for="groupFilter">그룹</label>
       <select id="groupFilter" onchange="onGroupChange(this)"></select>
     </div>
 
@@ -522,13 +538,13 @@ function runCalc(){
 
   const prevGender = (window._saju && window._saju.activeGender) || "F";
   const prevScope  = (window._saju && window._saju.scope) || "";
+  const prevAgency = (window._saju && window._saju.activeAgency) || "";
   window._saju = {
     stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
     elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
-    dayHanja, scored, activeGender: prevGender, scope: prevScope
+    dayHanja, scored, activeGender: prevGender, scope: prevScope, activeAgency: prevAgency
   };
-  document.getElementById('groupFilter').value = prevScope;
-  syncControls();
+  applyScopeUI();
   renderRanks();
 
   document.getElementById('shareBtn').disabled = false;
@@ -613,10 +629,11 @@ function switchGender(g){
   renderRanks();
 }
 
-// 범위(전체 / 소속사 / 그룹) 변경
+// 하위 그룹 드롭다운 변경: "" = 소속사 전체 / "gr:그룹" = 특정 그룹
 function onGroupChange(sel){
   if(!window._saju) return;
-  window._saju.scope = sel.value;
+  const v = sel.value;
+  window._saju.scope = v ? v : ("ag:" + window._saju.activeAgency);
   syncControls();
   renderRanks();
 }
@@ -662,34 +679,67 @@ function toggleRest(){
   }
 })();
 
-// 범위 드롭다운 채우기 (대형소속사 → 소속사 전체 + 소속 그룹)
+// 소속사 버튼 만들기 (전체 + 대형소속사)
 (function(){
-  const sel = document.getElementById('groupFilter');
-  if(!sel) return;
-  const order = [], gcount = {}, agCount = {};
-  IDOLS.forEach(([n,g])=>{
-    if(gcount[g]===undefined){ gcount[g]=0; order.push(g); }
-    gcount[g]++;
-    const a = agencyOf(g); agCount[a] = (agCount[a]||0)+1;
-  });
-  const all = document.createElement('option');
-  all.value = ""; all.textContent = `전체 아이돌 (${IDOLS.length}명)`;
-  sel.appendChild(all);
-  AGENCY_ORDER.forEach(ag=>{
-    const groups = order.filter(g=>agencyOf(g)===ag);
-    if(groups.length===0) return;
-    const og = document.createElement('optgroup'); og.label = ag;
-    const oAll = document.createElement('option');
-    oAll.value = `ag:${ag}`; oAll.textContent = `${ag} 전체 (${agCount[ag]}명)`;
-    og.appendChild(oAll);
-    groups.forEach(g=>{
-      const o = document.createElement('option');
-      o.value = `gr:${g}`; o.textContent = `· ${g} (${gcount[g]}명)`;
-      og.appendChild(o);
-    });
-    sel.appendChild(og);
-  });
+  const wrap = document.getElementById('agencyBtns');
+  if(!wrap) return;
+  const counts = {};
+  IDOLS.forEach(([n,g])=>{ const a=agencyOf(g); counts[a]=(counts[a]||0)+1; });
+  const mk = (a,label,cnt)=>`<button class="agbtn${a===''?' active':''}" data-a="${a}" onclick="selectAgency('${a}')">${label}<span class="agn">${cnt}</span></button>`;
+  let html = mk("","전체",IDOLS.length);
+  AGENCY_ORDER.forEach(a=>{ if(counts[a]) html += mk(a,a,counts[a]); });
+  wrap.innerHTML = html;
 })();
+
+// 선택된 소속사의 하위 그룹 드롭다운 채우기
+function populateGroupDropdown(agency){
+  const sel = document.getElementById('groupFilter');
+  sel.innerHTML = "";
+  const gcount = {}, order = [];
+  IDOLS.forEach(([n,g])=>{ if(agencyOf(g)===agency){ if(gcount[g]===undefined){ gcount[g]=0; order.push(g); } gcount[g]++; } });
+  const agTotal = order.reduce((s,g)=>s+gcount[g],0);
+  const oAll = document.createElement('option');
+  oAll.value = ""; oAll.textContent = `${agency} 전체 (${agTotal}명)`;
+  sel.appendChild(oAll);
+  order.forEach(g=>{
+    const o = document.createElement('option');
+    o.value = `gr:${g}`; o.textContent = `${g} (${gcount[g]}명)`;
+    sel.appendChild(o);
+  });
+}
+
+// 소속사 버튼 선택 → 하위 그룹 드롭다운 노출/숨김
+function selectAgency(a){
+  if(!window._saju) return;
+  window._saju.activeAgency = a;
+  document.querySelectorAll('.agbtn').forEach(b=>b.classList.toggle('active', b.dataset.a===a));
+  const row = document.getElementById('subgroupRow');
+  if(a === ""){
+    row.style.display = "none";
+    window._saju.scope = "";
+  }else{
+    populateGroupDropdown(a);
+    row.style.display = "flex";
+    window._saju.scope = "ag:" + a;
+  }
+  syncControls();
+  renderRanks();
+}
+
+// 현재 상태(소속사/그룹)에 맞춰 버튼·드롭다운 UI 동기화
+function applyScopeUI(){
+  const s = window._saju, a = s.activeAgency || "";
+  document.querySelectorAll('.agbtn').forEach(b=>b.classList.toggle('active', b.dataset.a===a));
+  const row = document.getElementById('subgroupRow');
+  if(a === ""){
+    row.style.display = "none";
+  }else{
+    populateGroupDropdown(a);
+    row.style.display = "flex";
+    document.getElementById('groupFilter').value = (s.scope||"").startsWith("gr:") ? s.scope : "";
+  }
+  syncControls();
+}
 
 // ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
 function roundRect(ctx,x,y,w,h,r){
