@@ -166,6 +166,28 @@
   }
   .toggle-note{margin-top:12px; font-size:12px; color:var(--ink-dim); line-height:1.5;}
 
+  .search-row{display:flex; align-items:flex-start; gap:12px; margin:0 0 14px;}
+  .search-wrap{flex:1; position:relative;}
+  input#groupSearch{
+    width:100%; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
+    border-radius:9px; padding:11px 13px; font-size:14px; font-family:inherit;
+  }
+  input#groupSearch:focus{outline:none; border-color:var(--gold);}
+  input#groupSearch::placeholder{color:#6b5f96;}
+  .search-results{
+    position:absolute; top:calc(100% + 6px); left:0; right:0; z-index:20;
+    background:#1a1236; border:1px solid #ff4d9733; border-radius:11px; padding:6px;
+    max-height:280px; overflow-y:auto; box-shadow:0 20px 50px -20px #000b;
+  }
+  .sr-item{
+    display:flex; align-items:center; gap:10px; padding:9px 11px; border-radius:8px;
+    cursor:pointer; font-size:13.5px; color:var(--ink);
+  }
+  .sr-item:hover, .sr-item.on{background:var(--gold-soft);}
+  .sr-item .sr-en{color:var(--ink-dim); font-size:12px;}
+  .sr-item .sr-meta{margin-left:auto; color:var(--ink-dim); font-size:11.5px;}
+  .sr-empty{padding:12px; color:var(--ink-dim); font-size:13px; text-align:center;}
+
   .filter-row{display:flex; align-items:flex-start; gap:12px; margin:0 0 12px;}
   .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em; padding-top:10px; width:44px;}
   .agency-btns{display:flex; flex-wrap:wrap; gap:8px; flex:1;}
@@ -297,7 +319,15 @@
     </div>
 
     <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
-    <p class="tier-note">일간 기준 <b>십신 10신(정/편)</b>과 <b>천간합(天干合)</b>, 일지(日支) 궁합(육합·삼합·충·해 등)을 합산해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 레퍼런스가 많아 동점을 줄이려 음양까지 세분화했어요. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+    <p class="tier-note">일간 기준 <b>십신 10신(정/편)</b>·<b>천간합</b>·<b>지장간</b>·<b>일지/년지(띠)/월지 궁합</b>을 합산하고, <b>당신의 신강·신약(身強身弱)</b>에 따라 가중치를 개인화해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 그래서 같은 아이돌도 사람마다 점수가 달라집니다. 태어난 시각을 넣으면 <b>시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+
+    <div class="search-row">
+      <label class="filter-label" for="groupSearch">검색</label>
+      <div class="search-wrap">
+        <input type="text" id="groupSearch" placeholder="그룹 검색 (한글·영문, 일부만 입력해도 됩니다)" autocomplete="off">
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
+    </div>
 
     <div class="filter-row">
       <label class="filter-label">소속사</label>
@@ -364,6 +394,44 @@ const GROUP_AGENCY = {
   "IVE":"기타","(G)I-DLE":"기타","솔로":"기타","MAMAMOO":"기타"
 };
 const agencyOf = (g)=> GROUP_AGENCY[g] || "기타";
+
+// 그룹 한글명 ↔ 영문명 (데이터의 group 값 → {ko, en}). 검색·표시에 병기.
+const GROUP_NAMES = {
+  "SEVENTEEN":{ko:"세븐틴",en:"SEVENTEEN"},"BTS":{ko:"방탄소년단",en:"BTS"},"BLACKPINK":{ko:"블랙핑크",en:"BLACKPINK"},
+  "EXO":{ko:"엑소",en:"EXO"},"솔로":{ko:"솔로",en:"Solo"},"SNSD":{ko:"소녀시대",en:"Girls' Generation"},
+  "IVE":{ko:"아이브",en:"IVE"},"aespa":{ko:"에스파",en:"aespa"},"르세라핌":{ko:"르세라핌",en:"LE SSERAFIM"},
+  "ITZY":{ko:"있지",en:"ITZY"},"Stray Kids":{ko:"스트레이 키즈",en:"Stray Kids"},"NewJeans":{ko:"뉴진스",en:"NewJeans"},
+  "(G)I-DLE":{ko:"(여자)아이들",en:"(G)I-DLE"},"TWICE":{ko:"트와이스",en:"TWICE"},"Red Velvet":{ko:"레드벨벳",en:"Red Velvet"},
+  "TXT":{ko:"투모로우바이투게더",en:"TXT"},"ENHYPEN":{ko:"엔하이픈",en:"ENHYPEN"},"NCT":{ko:"엔시티",en:"NCT"},
+  "SHINee":{ko:"샤이니",en:"SHINee"},"WINNER":{ko:"위너",en:"WINNER"},"MAMAMOO":{ko:"마마무",en:"MAMAMOO"},
+  "ILLIT":{ko:"아일릿",en:"ILLIT"},"NMIXX":{ko:"엔믹스",en:"NMIXX"},"Super Junior":{ko:"슈퍼주니어",en:"Super Junior"},
+  "RIIZE":{ko:"라이즈",en:"RIIZE"},"TVXQ":{ko:"동방신기",en:"TVXQ"},"BIGBANG":{ko:"빅뱅",en:"BIGBANG"},
+  "iKON":{ko:"아이콘",en:"iKON"},"TREASURE":{ko:"트레저",en:"TREASURE"},"BABYMONSTER":{ko:"베이비몬스터",en:"BABYMONSTER"},
+  "2NE1":{ko:"투애니원",en:"2NE1"},"AKMU":{ko:"악뮤",en:"AKMU"},"GOT7":{ko:"갓세븐",en:"GOT7"},
+  "2PM":{ko:"투피엠",en:"2PM"},"DAY6":{ko:"데이식스",en:"DAY6"},"NiziU":{ko:"니쥬",en:"NiziU"},
+  "&TEAM":{ko:"앤팀",en:"&TEAM"},"BOYNEXTDOOR":{ko:"보이넥스트도어",en:"BOYNEXTDOOR"},"TWS":{ko:"투어스",en:"TWS"},
+  "fromis_9":{ko:"프로미스나인",en:"fromis_9"},"STAYC":{ko:"스테이씨",en:"STAYC"},"Kep1er":{ko:"케플러",en:"Kep1er"},
+  "ATEEZ":{ko:"에이티즈",en:"ATEEZ"},"THE BOYZ":{ko:"더보이즈",en:"THE BOYZ"},"MONSTA X":{ko:"몬스타엑스",en:"MONSTA X"},
+  "PENTAGON":{ko:"펜타곤",en:"PENTAGON"},"BTOB":{ko:"비투비",en:"BTOB"},"Golden Child":{ko:"골든차일드",en:"Golden Child"},
+  "INFINITE":{ko:"인피니트",en:"INFINITE"},"ASTRO":{ko:"아스트로",en:"ASTRO"},"ONEUS":{ko:"원어스",en:"ONEUS"},
+  "VICTON":{ko:"빅톤",en:"VICTON"},"CRAVITY":{ko:"크래비티",en:"CRAVITY"},"SF9":{ko:"에스에프나인",en:"SF9"},
+  "P1Harmony":{ko:"피원하모니",en:"P1Harmony"},"Highlight":{ko:"하이라이트",en:"Highlight"},"CIX":{ko:"씨아이엑스",en:"CIX"},
+  "ZEROBASEONE":{ko:"제로베이스원",en:"ZEROBASEONE"},"OH MY GIRL":{ko:"오마이걸",en:"OH MY GIRL"},"Apink":{ko:"에이핑크",en:"Apink"},
+  "WJSN":{ko:"우주소녀",en:"WJSN"},"Girl's Day":{ko:"걸스데이",en:"Girl's Day"},"KARA":{ko:"카라",en:"KARA"},
+  "Wonder Girls":{ko:"원더걸스",en:"Wonder Girls"},"T-ara":{ko:"티아라",en:"T-ara"},"tripleS":{ko:"트리플에스",en:"tripleS"},
+  "Billlie":{ko:"빌리",en:"Billlie"},"QWER":{ko:"큐더블유이알",en:"QWER"},"LIGHTSUM":{ko:"라잇썸",en:"LIGHTSUM"},
+  "KISS OF LIFE":{ko:"키스오브라이프",en:"KISS OF LIFE"},"VIVIZ":{ko:"비비지",en:"VIVIZ"},"Weeekly":{ko:"위클리",en:"Weeekly"},
+  "GFRIEND":{ko:"여자친구",en:"GFRIEND"},"Lovelyz":{ko:"러블리즈",en:"Lovelyz"},"EXID":{ko:"이엑스아이디",en:"EXID"},
+  "LOONA":{ko:"이달의 소녀",en:"LOONA"},"Rocket Punch":{ko:"로켓펀치",en:"Rocket Punch"},"VERIVERY":{ko:"베리베리",en:"VERIVERY"},
+  "ONF":{ko:"온앤오프",en:"ONF"},"TEMPEST":{ko:"템페스트",en:"TEMPEST"},"DKZ":{ko:"디케이지",en:"DKZ"},
+  "워너원":{ko:"워너원",en:"Wanna One"},"Xdinary Heroes":{ko:"엑스디너리 히어로즈",en:"Xdinary Heroes"}
+};
+// 그룹 표시명: "한글 (영문)". 한글=영문이면 하나만.
+function groupLabel(g){
+  const n=GROUP_NAMES[g];
+  if(!n) return g;
+  return (n.ko===n.en) ? n.ko : `${n.ko} (${n.en})`;
+}
 
 // 십신(十神) 10신 — 일간 기준 상대 천간을 음양(정/편)까지 구분해 세분화한 '덕질 궁합' 가중치.
 // 덕질 = 내가 애정을 쏟는 관계 → 식상·인성을 상위로 두되, 정/편으로 더 잘게 나눠 동점을 줄인다.
@@ -1167,7 +1235,7 @@ function currentLabel(){
     const ag = v.slice(3);
     return genderTabsNeeded() ? `${ag} · ${s.activeGender==="M"?"남자":"여자"}` : ag;
   }
-  if(v.startsWith("gr:")) return v.slice(3);
+  if(v.startsWith("gr:")) return groupLabel(v.slice(3));
   return s.activeGender==="M" ? "남자 아이돌" : "여자 아이돌";
 }
 // 성별 탭 노출/활성 상태 동기화
@@ -1305,7 +1373,7 @@ function populateGroupDropdown(agency){
   sel.appendChild(oAll);
   order.forEach(g=>{
     const o = document.createElement('option');
-    o.value = `gr:${g}`; o.textContent = `${g} (${gcount[g]}명)`;
+    o.value = `gr:${g}`; o.textContent = `${groupLabel(g)} (${gcount[g]}명)`;
     sel.appendChild(o);
   });
 }
@@ -1342,6 +1410,49 @@ function applyScopeUI(){
   }
   syncControls();
 }
+
+// ---- 그룹 검색 (한글·영문 부분일치) ----
+const GROUP_INFO = (function(){
+  const info = {};
+  IDOLS.forEach(([n,g,p,e,ge,a])=>{ if(!info[g]) info[g]={agency:a, count:0}; info[g].count++; });
+  return info;
+})();
+function selectGroupDirect(g){
+  if(!window._saju) return;
+  const a = GROUP_INFO[g] ? GROUP_INFO[g].agency : "기타";
+  window._saju.activeAgency = a;
+  window._saju.scope = "gr:" + g;
+  applyScopeUI();
+  document.getElementById('groupFilter').value = "gr:" + g;
+  document.getElementById('searchResults').classList.add('hidden');
+  document.getElementById('groupSearch').value = groupLabel(g);
+  renderRanks();
+  document.getElementById('ranklist').scrollIntoView({behavior:'smooth', block:'start'});
+}
+function runGroupSearch(){
+  const q = document.getElementById('groupSearch').value.trim().toLowerCase();
+  const box = document.getElementById('searchResults');
+  if(!q){ box.classList.add('hidden'); box.innerHTML=""; return; }
+  const matches = Object.keys(GROUP_INFO).filter(g=>{
+    const nm = GROUP_NAMES[g] || {ko:g,en:g};
+    return g.toLowerCase().includes(q) || nm.ko.toLowerCase().includes(q) || nm.en.toLowerCase().includes(q);
+  }).sort((x,y)=>GROUP_INFO[y].count-GROUP_INFO[x].count).slice(0,30);
+  if(matches.length===0){ box.innerHTML = `<div class="sr-empty">일치하는 그룹이 없어요</div>`; box.classList.remove('hidden'); return; }
+  box.innerHTML = matches.map(g=>{
+    const nm = GROUP_NAMES[g] || {ko:g,en:g};
+    const enPart = (nm.ko===nm.en) ? "" : `<span class="sr-en">${nm.en}</span>`;
+    return `<div class="sr-item" data-g="${g.replace(/"/g,'&quot;')}">${nm.ko} ${enPart}<span class="sr-meta">${GROUP_INFO[g].agency} · ${GROUP_INFO[g].count}명</span></div>`;
+  }).join("");
+  box.classList.remove('hidden');
+  box.querySelectorAll('.sr-item').forEach(el=>el.addEventListener('mousedown', e=>{ e.preventDefault(); selectGroupDirect(el.dataset.g); }));
+}
+(function(){
+  const inp = document.getElementById('groupSearch');
+  if(!inp) return;
+  inp.addEventListener('input', runGroupSearch);
+  inp.addEventListener('focus', runGroupSearch);
+  inp.addEventListener('blur', ()=>{ setTimeout(()=>document.getElementById('searchResults').classList.add('hidden'), 150); });
+})();
 
 // ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
 function roundRect(ctx,x,y,w,h,r){
