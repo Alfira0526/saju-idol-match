@@ -82,11 +82,13 @@
 
   label{display:block; font-size:13px; color:var(--ink-dim); margin-bottom:8px;}
   .row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
-  input[type=date], input[type=time]{
+  input#bdate{
     width:100%; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:8px; padding:11px 12px; font-size:15px; font-family:inherit;
+    letter-spacing:.08em;
   }
-  input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator{filter:invert(.7);}
+  input#bdate:focus{outline:none; border-color:var(--gold);}
+  input#bdate::placeholder{color:#6b5f96; letter-spacing:0;}
 
   .toggle{display:flex; align-items:center; gap:8px; margin-top:10px; font-size:13px; color:var(--ink-dim);}
   .toggle input{accent-color:var(--gold);}
@@ -267,8 +269,8 @@
   <div class="panel">
     <div class="row">
       <div>
-        <label for="bdate">생년월일</label>
-        <input type="date" id="bdate" min="1920-01-01" max="2026-12-31">
+        <label for="bdate">생년월일 (8자리 숫자)</label>
+        <input type="text" id="bdate" inputmode="numeric" maxlength="8" placeholder="예: 19950719" autocomplete="off">
       </div>
       <div>
         <label for="bhour">태어난 시각 (선택 · 24시간 기준)</label>
@@ -327,7 +329,7 @@
         <li>"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
         <li>일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.</li>
         <li>순위 점수는 <b>일간의 십신(식상·인성·재성·비겁·관성) 가중치 + 일지의 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 매깁니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
-        <li>수록된 아이돌 약 530명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
+        <li>수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
         <li>같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.</li>
       </ul>
     </div>
@@ -924,7 +926,18 @@ const IDOLS = [
   ["민규","DKZ","壬申","水","M","기타"],
   ["재찬","DKZ","癸卯","水","M","기타"],
   ["주원","DKZ","辛亥","金","M","기타"],
-  ["기석","DKZ","甲戌","木","M","기타"]
+  ["기석","DKZ","甲戌","木","M","기타"],
+  ["윤지성","워너원","丁丑","火","M","기타"],
+  ["하성운","워너원","丁未","火","M","기타"],
+  ["황민현","워너원","壬申","水","M","기타"],
+  ["옹성우","워너원","戊子","土","M","기타"],
+  ["김재환","워너원","甲子","木","M","기타"],
+  ["강다니엘","워너원","辛巳","金","M","기타"],
+  ["박지훈","워너원","辛巳","金","M","기타"],
+  ["박우진","워너원","戊午","土","M","기타"],
+  ["배진영","워너원","戊辰","土","M","기타"],
+  ["이대휘","워너원","壬辰","水","M","기타"],
+  ["라이관린","워너원","己丑","土","M","기타"]
 
 ];
 
@@ -966,9 +979,10 @@ const TIER_DESC = {
 };
 
 function runCalc(){
-  const dateVal = document.getElementById('bdate').value;
-  if(!dateVal){ alert('생년월일을 입력해 주세요.'); return; }
-  const [y,m,d] = dateVal.split('-').map(Number);
+  const raw = document.getElementById('bdate').value.replace(/\D/g,'');
+  if(raw.length !== 8){ alert('생년월일을 8자리 숫자로 입력해 주세요. 예: 19950719'); return; }
+  const y = +raw.slice(0,4), m = +raw.slice(4,6), d = +raw.slice(6,8);
+  if(y<1920 || y>2026 || m<1 || m>12 || d<1 || d>31){ alert('올바른 날짜가 아닙니다. 8자리 숫자로 입력해 주세요. 예: 19950719'); return; }
 
   const dp = dayPillar(y,m,d);
   const userStemElem = ELEM_NAMES[STEM_ELEM_IDX[dp.stemIdx]];
@@ -1174,6 +1188,14 @@ function toggleRest(){
 
 // 아이돌 총원 표시
 (function(){ const el=document.getElementById('idolCount'); if(el) el.textContent=IDOLS.length; })();
+
+// 생년월일 입력: 숫자만 허용·8자리 제한, Enter로 계산
+(function(){
+  const el = document.getElementById('bdate');
+  if(!el) return;
+  el.addEventListener('input', ()=>{ el.value = el.value.replace(/\D/g,'').slice(0,8); });
+  el.addEventListener('keydown', e=>{ if(e.key === 'Enter') runCalc(); });
+})();
 
 // 소속사 버튼 만들기 (전체 + 대형소속사)
 (function(){
