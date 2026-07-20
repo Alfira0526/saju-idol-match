@@ -137,6 +137,16 @@
   }
   .toggle-note{margin-top:12px; font-size:12px; color:var(--ink-dim); line-height:1.5;}
 
+  .gender-tabs{display:flex; gap:8px; margin:0 0 20px;}
+  .gtab{
+    flex:1; padding:11px 12px; border-radius:9px; cursor:pointer;
+    border:1px solid #ffffff1c; background:#0d1128; color:var(--ink-dim);
+    font-family:'Noto Sans KR', sans-serif; font-size:14px; font-weight:500;
+    transition:all .12s ease;
+  }
+  .gtab:hover{border-color:var(--gold-soft); color:var(--ink);}
+  .gtab.active{background:var(--gold); border-color:var(--gold); color:#1a1305; font-weight:700;}
+
   .rank-card{
     display:flex; align-items:flex-start; gap:16px; padding:16px 18px;
     border:1px solid #ffffff14; border-radius:12px; background:#0d1128; margin-bottom:12px;
@@ -202,7 +212,7 @@
         <select id="bhour"></select>
       </div>
     </div>
-    <div class="toggle-note">일간·일지(궁합 판단 기준)는 태어난 날짜만으로 정확히 계산되므로, 시각을 몰라도 순위 추천에는 영향이 없습니다.</div>
+    <div class="toggle-note">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다.</div>
     <button class="calc" onclick="runCalc()">계산하기</button>
   </div>
 
@@ -222,11 +232,16 @@
     </div>
 
     <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
-    <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 88인을 점수화한 순위입니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+    <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 점수화한 순위입니다. 태어난 시각을 입력하면 <b>당신의 시지(時支) 궁합</b>까지 반영돼 순위가 달라집니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+
+    <div class="gender-tabs">
+      <button class="gtab active" data-g="F" onclick="switchGender('F')">여자 아이돌</button>
+      <button class="gtab" data-g="M" onclick="switchGender('M')">남자 아이돌</button>
+    </div>
 
     <div id="ranklist"></div>
     <div id="rankRest" class="rank-rest hidden"></div>
-    <button class="more-btn" id="moreBtn" onclick="toggleRest()">전체 순위 펼쳐보기 (9~88위)</button>
+    <button class="more-btn" id="moreBtn" onclick="toggleRest()">전체 순위 펼쳐보기</button>
 
     <div class="share-row">
       <button class="share-btn" id="shareBtn" onclick="shareResult()">결과 이미지 저장 · 공유</button>
@@ -238,8 +253,8 @@
       <ul>
         <li>사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.</li>
         <li>"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
-        <li>일간(日干)·일지(日支)는 태어난 날짜만으로 결정되며 시각과 무관해 계산 정확도가 높습니다. 시각(24시간 기준)을 입력하면 시주(時柱)도 함께 표시되지만, 순위 로직 자체에는 사용하지 않습니다.</li>
-        <li>순위 점수는 <b>일간의 십신(식상·인성·재성·비겁·관성) 가중치 + 일지의 지지 관계(육합·삼합·방합·충·해·비화)</b>를 합산해 매깁니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
+        <li>일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.</li>
+        <li>순위 점수는 <b>일간의 십신(식상·인성·재성·비겁·관성) 가중치 + 일지의 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 매깁니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
         <li>수록된 아이돌 생년월일은 공개 정보 기준이며, 소속사 발표와 실제가 다른 사례가 보고된 바 있어 개별 확인이 필요할 수 있습니다.</li>
       </ul>
     </div>
@@ -260,6 +275,9 @@ const STEM_ELEM_IDX = [0,0,1,1,2,2,3,3,4,4];
 
 const GEN_ORDER = ["木","火","土","金","水"];
 const CTRL_ORDER = ["木","土","水","火","金"];
+
+// 성별 분류 (그룹 기준). 목록에 없는 그룹은 여성으로 처리.
+const MALE_GROUPS = new Set(["SEVENTEEN","BTS","EXO","Stray Kids","TXT","ENHYPEN","NCT"]);
 
 // 십신(十神) 기준 '덕질 궁합' 가중치.
 // 덕질 = 내가 상대에게 애정·에너지를 쏟는 관계 → 일간이 주도하는 식상, 내가 받는 인성을 상위로 둠.
@@ -376,10 +394,12 @@ function runCalc(){
   const dayHanja = STEMS[dp.stemIdx] + BRANCHES[dp.branchIdx];
 
   let hourInfo = "";
+  let userHourBranch = null;
   const hourVal = document.getElementById('bhour').value;
   if(hourVal !== ""){
     const hh = Number(hourVal);
     const hp = hourPillar(dp.stemIdx, hh);
+    userHourBranch = hp.branchIdx;
     hourInfo = " · 시주(참고용): " + STEMS[hp.stemIdx] + BRANCHES[hp.branchIdx];
   }
 
@@ -399,50 +419,48 @@ function runCalc(){
     bar.appendChild(seg);
   });
 
-  // ---- 오로지 사주 특성으로 88인 점수화 → 순위 ----
-  const ranked = IDOLS.map(([name,group,pillar,elem])=>{
+  // ---- 오로지 사주 특성으로 점수화 → 성별별 순위 ----
+  const scored = IDOLS.map(([name,group,pillar,elem])=>{
     const rel = relation(userStemElem, elem);
     const sh  = SHISHIN[rel.label];
     const bIdx = BRANCHES.indexOf(pillar[1]);
     const br  = branchRel(dp.branchIdx, bIdx);
-    const score = sh.base + br.score;
-    const pct = Math.max(0, Math.min(100, score - 14));
+    let score = sh.base + br.score;
     let reason = sh.reason;
     if(br.reason) reason += " " + br.reason;
-    return {name, group, pillar, elem, relLabel:rel.label, role:sh.role,
-            branchTag:br.tag, score, pct, reason};
-  });
-  ranked.sort((a,b)=> b.score - a.score); // 안정 정렬: 동점은 데이터 순서 유지
 
-  const TOP = 8;
-  const listEl = document.getElementById('ranklist');
-  listEl.innerHTML = "";
-  ranked.slice(0,TOP).forEach((r,i)=>{
-    const card = document.createElement('div');
-    card.className = 'rank-card' + (i<3 ? ' rank-top' : '');
-    card.innerHTML = `
-      <div class="rank-num">${i+1}</div>
-      <div class="rank-body">
-        <div class="rank-name">${r.name}<span class="grp">${r.group}</span>
-          <span class="pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</span></div>
-        <div class="rank-meta">${r.relLabel} · ${r.role} · ${r.branchTag}</div>
-        <div class="rank-reason">${r.reason}</div>
-      </div>
-      <div class="rank-score"><div class="pct">${r.pct}<span style="font-size:14px">%</span></div><div class="pct-label">궁합</div></div>
-    `;
-    listEl.appendChild(card);
+    // 시각을 입력하면 나의 시지(時支)와의 궁합을 추가 반영 (가중치 0.6)
+    let hourNote = "";
+    if(userHourBranch !== null){
+      const br2 = branchRel(userHourBranch, bIdx);
+      const add = Math.round(br2.score * 0.6);
+      score += add;
+      if(add !== 0){
+        const t = br2.tag.replace("일지 ","");
+        hourNote = " · 시지 " + t;
+        reason += ` 태어난 시각의 지지와도 ${t} 관계라 ${add>0?"+":""}${add}점.`;
+      }
+    }
+
+    const pct = Math.max(0, Math.min(100, score - 14));
+    return {name, group, pillar, elem, gender: MALE_GROUPS.has(group)?"M":"F",
+            relLabel:rel.label, role:sh.role, branchTag:br.tag, hourNote, score, pct, reason};
   });
 
-  // 전체 순위 접힌 상태로 초기화
-  const restEl = document.getElementById('rankRest');
-  restEl.classList.add('hidden'); restEl.dataset.built = ""; restEl.innerHTML = "";
-  document.getElementById('moreBtn').textContent = "전체 순위 펼쳐보기 (9~88위)";
+  const rankedByGender = {
+    M: scored.filter(x=>x.gender==="M").sort((a,b)=> b.score-a.score),
+    F: scored.filter(x=>x.gender==="F").sort((a,b)=> b.score-a.score)
+  };
 
+  const prevGender = (window._saju && window._saju.activeGender) || "F";
   window._saju = {
     stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
     elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
-    dayHanja, ranked
+    dayHanja, rankedByGender, activeGender: prevGender
   };
+  document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===prevGender));
+  renderRanks(prevGender);
+
   document.getElementById('shareBtn').disabled = false;
   document.getElementById('shareHint').textContent = "";
 
@@ -450,16 +468,55 @@ function runCalc(){
   document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-// 전체 순위(9위~) 펼치기/접기
+const TOP_N = 8;
+
+function cardHTML(r,i){
+  return `
+    <div class="rank-card${i<3?' rank-top':''}">
+      <div class="rank-num">${i+1}</div>
+      <div class="rank-body">
+        <div class="rank-name">${r.name}<span class="grp">${r.group}</span>
+          <span class="pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</span></div>
+        <div class="rank-meta">${r.relLabel} · ${r.role} · ${r.branchTag}${r.hourNote}</div>
+        <div class="rank-reason">${r.reason}</div>
+      </div>
+      <div class="rank-score"><div class="pct">${r.pct}<span style="font-size:14px">%</span></div><div class="pct-label">궁합</div></div>
+    </div>`;
+}
+
+function moreLabel(g){
+  const n = window._saju.rankedByGender[g].length;
+  return `전체 순위 펼쳐보기 (9~${n}위)`;
+}
+
+function renderRanks(g){
+  const list = window._saju.rankedByGender[g];
+  document.getElementById('ranklist').innerHTML = list.slice(0,TOP_N).map((r,i)=>cardHTML(r,i)).join("");
+  const restEl = document.getElementById('rankRest');
+  restEl.classList.add('hidden'); restEl.dataset.built = ""; restEl.innerHTML = "";
+  const btn = document.getElementById('moreBtn');
+  btn.textContent = moreLabel(g);
+  btn.style.display = list.length > TOP_N ? "" : "none";
+}
+
+function switchGender(g){
+  if(!window._saju) return;
+  window._saju.activeGender = g;
+  document.querySelectorAll('.gtab').forEach(t=>t.classList.toggle('active', t.dataset.g===g));
+  renderRanks(g);
+}
+
+// 전체 순위(9위~) 펼치기/접기 — 현재 선택된 성별 기준
 function toggleRest(){
   const el = document.getElementById('rankRest');
   const btn = document.getElementById('moreBtn');
+  const g = window._saju.activeGender;
   if(el.classList.contains('hidden')){
     if(!el.dataset.built){
-      const r = window._saju.ranked;
-      el.innerHTML = r.slice(8).map((x,i)=>`
+      const list = window._saju.rankedByGender[g];
+      el.innerHTML = list.slice(TOP_N).map((x,i)=>`
         <div class="rest-row">
-          <span class="r-n">${i+9}</span>
+          <span class="r-n">${i+1+TOP_N}</span>
           <span class="dot" style="background:${ELEM_COLOR[x.elem]}"></span>
           <span class="r-name">${x.name} <span class="r-grp">${x.group}</span></span>
           <span class="r-rel">${x.relLabel.replace(/\(.*\)/,'')}</span>
@@ -471,7 +528,7 @@ function toggleRest(){
     btn.textContent = "접기";
   }else{
     el.classList.add('hidden');
-    btn.textContent = "전체 순위 펼쳐보기 (9~88위)";
+    btn.textContent = moreLabel(g);
   }
 }
 
@@ -572,9 +629,10 @@ function drawShareCard(){
   ctx.fillText("덕질 궁합 추천 순위", M, 540);
   ctx.fillStyle = dim;
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
-  ctx.fillText("오로지 사주 특성으로 선정", M, 574);
+  const gLabel = s.activeGender === "M" ? "남자 아이돌" : "여자 아이돌";
+  ctx.fillText(`${gLabel} · 오로지 사주 특성으로 선정`, M, 574);
 
-  const top = (s.ranked || []).slice(0,6);
+  const top = ((s.rankedByGender && s.rankedByGender[s.activeGender]) || []).slice(0,6);
   const yStart = 606, rowH = 112, cardH = 96;
   top.forEach((r,i)=>{
     const top0 = yStart + i*rowH;
