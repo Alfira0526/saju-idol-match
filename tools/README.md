@@ -56,6 +56,17 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
   do NOT break the 5-bucket model; add finer grouping additively.
 - **1 → Task B · 데이터 추가 (add idols).** Research 1–2 new groups, append to
   `tools/idols.json`, rebuild. Safest task; prefer this when unsure.
+  - **한국 아이돌을 우선 소진**한다. 더 추가할 한국 아이돌 그룹이 없으면(=미수록
+    유명 그룹이 남지 않으면) **카테고리를 확장**한다: 일본 아이돌 → 중국 배우 →
+    미국 배우 등. 카테고리 확장 시 각 항목에 `"cat"` 필드를 넣는다:
+    - `cat`: `"K-idol"`(기본, 한국 아이돌) · `"J-idol"`(일본 아이돌) ·
+      `"C-actor"`(중국 배우) · `"US-actor"`(미국 배우). 새 카테고리가 필요하면
+      `index.html`의 `CAT_NAMES`/`CAT_ORDER`에 `{ko,en}`을 추가한다.
+    - 비(非)한국 카테고리는 `agency`가 5대 소속사일 필요 없이 **자유 하위 라벨**
+      (예: 소속 그룹명·"미국 배우" 같은 버킷)이면 된다. `group`은 그룹명 또는
+      개인명(솔로처럼)으로 둔다. 카테고리 셀렉터 UI는 이미 구현되어 있어
+      카테고리가 2개 이상이면 자동 노출된다.
+    - 배우 등 연령대가 넓을 수 있으니 확실한 **양력 생일**만 넣는다(범위 1940~2015).
 - **2 → Task C · 다국어 (i18n).** Overseas fandom support, **English first**,
   then other regions. If no i18n scaffolding exists yet, add a minimal, safe
   language switcher + English strings this run; otherwise extend translations

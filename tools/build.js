@@ -31,28 +31,31 @@ const rows=[], seen=new Set();
 const errors=[], mismatch=[], dupes=[];
 for(const it of idols){
   const {name,group,agency,gender,dob}=it||{};
+  const cat = (it&&it.cat) || "K-idol"; // 카테고리(기본 한국 아이돌)
   if(!name||!group){ errors.push('missing name/group: '+JSON.stringify(it)); continue; }
-  if(!AGENCIES.has(agency)){ errors.push(`${name}/${group}: bad agency ${agency}`); continue; }
+  // 한국 아이돌만 5대 소속사 버킷을 강제. 그 외 카테고리는 agency가 하위 분류 라벨(자유 문자열).
+  if(cat==="K-idol"){ if(!AGENCIES.has(agency)){ errors.push(`${name}/${group}: bad agency ${agency}`); continue; } }
+  else if(!agency){ errors.push(`${name}/${group}: missing agency label`); continue; }
   if(gender!=='M'&&gender!=='F'){ errors.push(`${name}/${group}: bad gender ${gender}`); continue; }
   if(!/^\d{4}-\d{2}-\d{2}$/.test(dob||'')){ errors.push(`${name}/${group}: bad dob ${dob}`); continue; }
   const [y,m,d]=dob.split('-').map(Number);
-  if(y<1965||y>2013||m<1||m>12||d<1||d>31){ errors.push(`${name}/${group}: dob out of range ${dob}`); continue; }
+  if(y<1940||y>2015||m<1||m>12||d<1||d>31){ errors.push(`${name}/${group}: dob out of range ${dob}`); continue; }
   const a=pillarJDN(y,m,d);
   if(a.p!==pillarDATE(y,m,d)){ mismatch.push(`${name}/${group} ${dob}: JDN=${a.p} DATE=${pillarDATE(y,m,d)}`); continue; }
   const key=name+'|'+group;
   if(seen.has(key)){ dupes.push(key); continue; }
   seen.add(key);
-  rows.push([name,group,a.p,a.e,gender,agency,dob.replace(/-/g,'')]);
+  rows.push([name,group,a.p,a.e,gender,agency,dob.replace(/-/g,''),cat]);
 }
 
 // anchor re-check
 const anchors=[["1993-05-16","丁酉"],["1997-09-01","丙午"],["1995-01-03","甲午"],["1994-09-12","辛丑"],["2004-08-31","壬午"],["1995-07-19","辛亥"]];
 const anchorFails=anchors.filter(([dob,exp])=>{const [y,m,d]=dob.split('-').map(Number);return pillarJDN(y,m,d).p!==exp;});
 
-const agency={}, gender={};
-rows.forEach(r=>{agency[r[5]]=(agency[r[5]]||0)+1; gender[r[4]]=(gender[r[4]]||0)+1;});
+const agency={}, gender={}, category={};
+rows.forEach(r=>{agency[r[5]]=(agency[r[5]]||0)+1; gender[r[4]]=(gender[r[4]]||0)+1; category[r[7]]=(category[r[7]]||0)+1;});
 
-const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), agency, gender};
+const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), category, agency, gender};
 console.log(JSON.stringify(report,null,2));
 
 const fatal = errors.length || mismatch.length || anchorFails.length;
@@ -63,7 +66,7 @@ let html=fs.readFileSync(idxPath,'utf8');
 const open='const IDOLS = [', close='\n];';
 const i=html.indexOf(open); if(i<0){ console.error('IDOLS array not found'); process.exit(1); }
 const j=html.indexOf(close, i);
-const lines=rows.map(r=>`  ["${r[0]}","${r[1]}","${r[2]}","${r[3]}","${r[4]}","${r[5]}","${r[6]}"]`).join(',\n');
+const lines=rows.map(r=>`  ["${r[0]}","${r[1]}","${r[2]}","${r[3]}","${r[4]}","${r[5]}","${r[6]}","${r[7]}"]`).join(',\n');
 html=html.slice(0,i+open.length)+"\n"+lines+"\n"+html.slice(j+1); // +1 drops the leading \n of close
 fs.writeFileSync(idxPath,html);
 console.log(`\nWrote ${rows.length} idols into index.html`);
