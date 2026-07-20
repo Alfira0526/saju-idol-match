@@ -116,6 +116,17 @@
   .chip .dot{width:9px; height:9px; border-radius:50%; flex:none;}
   .chip .grp{color:var(--ink-dim); font-size:11.5px;}
 
+  .share-row{display:flex; align-items:center; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .share-btn{
+    padding:12px 20px; border-radius:9px; border:1px solid var(--gold);
+    background:transparent; color:var(--gold); font-weight:700; font-size:14px;
+    font-family:'Noto Sans KR', sans-serif; cursor:pointer; letter-spacing:.02em;
+    transition:background .12s ease, color .12s ease;
+  }
+  .share-btn:hover{background:var(--gold); color:#1a1305;}
+  .share-btn:disabled{opacity:.5; cursor:default;}
+  .share-hint{font-size:12px; color:var(--ink-dim);}
+
   .disclaimer{
     margin-top:44px; padding:20px 22px; border-radius:12px;
     background:#0d1128; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
@@ -132,7 +143,7 @@
 
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
-  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)을 계산하고, 오행 상생상극 이론에 따라 아이돌 40인을 5단계로 분류합니다. 시간 미상이어도 계산 가능합니다.</p>
+  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)을 계산하고, 오행 상생상극 이론에 따라 아이돌 88인을 5단계로 분류합니다. 시간 미상이어도 계산 가능합니다.</p>
 
   <div class="panel">
     <div class="row">
@@ -172,6 +183,11 @@
 
     <div id="tiers"></div>
 
+    <div class="share-row">
+      <button class="share-btn" id="shareBtn" onclick="shareResult()">결과 이미지 저장 · 공유</button>
+      <span class="share-hint" id="shareHint"></span>
+    </div>
+
     <div class="disclaimer">
       <h3>읽기 전 확인</h3>
       <ul>
@@ -194,6 +210,7 @@ const BRANCHES = ["子","丑","寅","卯","辰","巳","午","未","申","酉","�
 const ELEM_NAMES = ["木","火","土","金","水"];
 const ELEM_KR = ["목","화","토","금","수"];
 const ELEM_COLOR = {"木":"var(--mok)","火":"var(--hwa)","土":"var(--to)","金":"var(--geum)","水":"var(--su)"};
+const ELEM_HEX = {"木":"#4c9a6a","火":"#d1553f","土":"#d4a44c","金":"#c9c9d6","水":"#4c6fa5"};
 const STEM_ELEM_IDX = [0,0,1,1,2,2,3,3,4,4];
 
 const GEN_ORDER = ["木","火","土","金","水"];
@@ -214,7 +231,25 @@ const IDOLS = [
   ["카리나","aespa","己亥","土"],["윈터","aespa","甲子","木"],["닝닝","aespa","甲子","木"],
   ["카즈하","르세라핌","甲寅","木"],["사쿠라","르세라핌","乙丑","木"],
   ["채원","ITZY","乙酉","木"],["리아","ITZY","戊子","土"],
-  ["방찬","Stray Kids","戊寅","土"],["필릭스","Stray Kids","丙子","火"]
+  ["방찬","Stray Kids","戊寅","土"],["필릭스","Stray Kids","丙子","火"],
+  ["지젤","aespa","辛酉","金"],
+  ["가을","IVE","乙未","木"],["레이","IVE","壬子","水"],["리즈","IVE","甲辰","木"],["이서","IVE","丙戌","火"],
+  ["김채원","르세라핌","辛卯","金"],["허윤진","르세라핌","甲辰","木"],["홍은채","르세라핌","癸卯","水"],
+  ["민지","NewJeans","丙戌","火"],["하니","NewJeans","戊午","土"],["다니엘","NewJeans","乙丑","木"],
+  ["해린","NewJeans","甲辰","木"],["혜인","NewJeans","辛卯","金"],
+  ["미연","(G)I-DLE","癸酉","水"],["민니","(G)I-DLE","戊戌","土"],["소연","(G)I-DLE","乙巳","木"],
+  ["우기","(G)I-DLE","戊寅","土"],["슈화","(G)I-DLE","癸亥","水"],
+  ["나연","TWICE","丙辰","火"],["정연","TWICE","壬寅","水"],["모모","TWICE","庚戌","金"],
+  ["사나","TWICE","庚子","金"],["지효","TWICE","甲戌","木"],["미나","TWICE","乙丑","木"],
+  ["다현","TWICE","乙亥","木"],["채영","TWICE","乙巳","木"],["쯔위","TWICE","丁酉","火"],
+  ["아이린","Red Velvet","戊戌","土"],["슬기","Red Velvet","丁卯","火"],["웬디","Red Velvet","戊寅","土"],
+  ["조이","Red Velvet","癸卯","水"],["예리","Red Velvet","丙辰","火"],
+  ["연준","TXT","戊辰","土"],["수빈","TXT","丁酉","火"],["범규","TXT","乙亥","木"],
+  ["태현","TXT","甲辰","木"],["휴닝카이","TXT","甲寅","木"],
+  ["희승","ENHYPEN","辛亥","金"],["제이","ENHYPEN","戊午","土"],["제이크","ENHYPEN","丁亥","火"],
+  ["성훈","ENHYPEN","庚戌","金"],["정원","ENHYPEN","戊午","土"],["선우","ENHYPEN","戊辰","土"],
+  ["니키","ENHYPEN","丁卯","火"],
+  ["태용","NCT","癸巳","水"],["도영","NCT","戊辰","土"],["재현","NCT","丁亥","火"],["마크","NCT","丙戌","火"]
 ];
 
 function jdn(y,m,d){
@@ -313,8 +348,198 @@ function runCalc(){
     tiersEl.appendChild(div);
   }
 
+  window._saju = {
+    stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
+    elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
+    dayHanja, tiers
+  };
+  document.getElementById('shareBtn').disabled = false;
+  document.getElementById('shareHint').textContent = "";
+
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
+function roundRect(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+
+function drawShareCard(){
+  const s = window._saju;
+  const W = 1080, H = 1350;
+  const canvas = document.createElement('canvas');
+  canvas.width = W; canvas.height = H;
+  const ctx = canvas.getContext('2d');
+
+  // 배경
+  const bg = ctx.createLinearGradient(0,0,W,H);
+  bg.addColorStop(0,"#171d3a");
+  bg.addColorStop(1,"#10142a");
+  ctx.fillStyle = bg;
+  ctx.fillRect(0,0,W,H);
+  // 상단 은은한 광원
+  const glow = ctx.createRadialGradient(W*0.2,-80,0,W*0.2,-80,700);
+  glow.addColorStop(0,"#2a2050aa");
+  glow.addColorStop(1,"transparent");
+  ctx.fillStyle = glow;
+  ctx.fillRect(0,0,W,H);
+
+  const gold = "#cf9f3f", ink = "#e9e4d4", dim = "#9aa0c2";
+  const M = 90; // margin
+
+  // eyebrow
+  ctx.fillStyle = gold;
+  ctx.fillRect(M,110,44,3);
+  ctx.font = "500 26px 'Noto Sans KR', sans-serif";
+  ctx.textBaseline = "alphabetic";
+  ctx.fillText("오행 상생상극 · 궁합 매칭", M+62, 122);
+
+  // title
+  ctx.fillStyle = ink;
+  ctx.font = "800 68px 'Nanum Myeongjo', serif";
+  ctx.fillText("사주 궁합 아이돌 매칭", M, 210);
+
+  // day-master badge
+  const cx = M+70, cy = 350, rad = 70;
+  ctx.beginPath();
+  ctx.arc(cx,cy,rad,0,Math.PI*2);
+  ctx.fillStyle = ELEM_HEX[s.elem];
+  ctx.fill();
+  ctx.fillStyle = "#0d1128";
+  ctx.font = "800 62px 'Nanum Myeongjo', serif";
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText(s.stem, cx, cy+4);
+  ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+
+  ctx.fillStyle = ink;
+  ctx.font = "700 42px 'Nanum Myeongjo', serif";
+  ctx.fillText(`일간: ${s.stem}(${s.stemKr}) · ${s.elemKr}(${s.elem})`, cx+rad+40, cy-8);
+  ctx.fillStyle = dim;
+  ctx.font = "400 30px 'Noto Sans KR', sans-serif";
+  ctx.fillText(`일주(日柱): ${s.dayHanja}`, cx+rad+40, cy+40);
+
+  // 오행 막대
+  const barY = 470, barW = (W-2*M-4*10)/5;
+  ELEM_NAMES.forEach((e,i)=>{
+    const x = M + i*(barW+10);
+    ctx.fillStyle = ELEM_HEX[e];
+    ctx.globalAlpha = (e===s.elem)?1:0.22;
+    roundRect(ctx,x,barY,barW,14,7); ctx.fill();
+    ctx.globalAlpha = 1;
+  });
+
+  // 티어 섹션
+  const TIER_ROLE = {1:"인성(印星)",2:"비겁(比劫)",3:"식상(食傷)",4:"재성(財星)",5:"관성(官星)"};
+  let y = 560;
+  ctx.fillStyle = ink;
+  ctx.font = "700 40px 'Nanum Myeongjo', serif";
+  ctx.fillText("추천 순위 (5단계)", M, y);
+  y += 46;
+
+  for(let t=1;t<=5;t++){
+    const list = s.tiers[t];
+    if(!list || list.length===0) continue;
+    // 티어 헤더
+    ctx.fillStyle = gold;
+    ctx.font = "700 30px 'Noto Sans KR', sans-serif";
+    ctx.fillText(`${t}단계 · ${TIER_ROLE[t]}`, M, y);
+    // 개수
+    ctx.fillStyle = dim;
+    ctx.font = "400 26px 'Noto Sans KR', sans-serif";
+    ctx.fillText(`${list.length}명`, W-M-70, y);
+    y += 40;
+
+    // 이름 칩 (줄바꿈 배치)
+    ctx.font = "500 27px 'Noto Sans KR', sans-serif";
+    let x = M;
+    const maxX = W - M;
+    const chipH = 46, pad = 22, gap = 14;
+    let shown = 0;
+    const cap = (t<=2)?list.length:Math.min(list.length, 10); // 하위 티어는 최대 10명
+    for(let i=0;i<cap;i++){
+      const name = list[i].name;
+      const tw = ctx.measureText(name).width;
+      const dotW = 22;
+      const cw = dotW + tw + pad*2;
+      if(x + cw > maxX){ x = M; y += chipH + 12; }
+      // 칩 배경
+      ctx.fillStyle = "#0d1128";
+      roundRect(ctx,x,y,cw,chipH,chipH/2); ctx.fill();
+      // 오행 점
+      ctx.beginPath();
+      ctx.arc(x+pad+5, y+chipH/2, 7, 0, Math.PI*2);
+      ctx.fillStyle = ELEM_HEX[list[i].elem]; ctx.fill();
+      // 이름
+      ctx.fillStyle = ink;
+      ctx.textBaseline = "middle";
+      ctx.fillText(name, x+pad+dotW, y+chipH/2+1);
+      ctx.textBaseline = "alphabetic";
+      x += cw + gap;
+      shown++;
+    }
+    if(cap < list.length){
+      ctx.fillStyle = dim;
+      ctx.font = "400 24px 'Noto Sans KR', sans-serif";
+      const more = `+${list.length-cap}`;
+      if(x + 80 > maxX){ x = M; y += chipH + 12; }
+      ctx.textBaseline = "middle";
+      ctx.fillText(more, x+4, y+chipH/2+1);
+      ctx.textBaseline = "alphabetic";
+    }
+    y += chipH + 34;
+    if(y > H-140) break; // 안전 컷
+  }
+
+  // footer
+  ctx.fillStyle = "#5c6390";
+  ctx.font = "400 24px 'Noto Sans KR', sans-serif";
+  ctx.fillText("사주 궁합 아이돌 매칭 · 오락용 해석", M, H-60);
+
+  return canvas;
+}
+
+async function shareResult(){
+  if(!window._saju){ return; }
+  const hint = document.getElementById('shareHint');
+  hint.textContent = "이미지 생성 중…";
+  try{
+    if(document.fonts && document.fonts.ready){ await document.fonts.ready; }
+  }catch(e){}
+
+  const canvas = drawShareCard();
+  const fileName = `사주궁합_${window._saju.stem}${window._saju.stemKr}.png`;
+
+  canvas.toBlob(async (blob)=>{
+    if(!blob){ hint.textContent = "이미지 생성 실패"; return; }
+    const file = new File([blob], fileName, {type:"image/png"});
+
+    // Web Share API (파일 공유 지원 시 — 주로 모바일)
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      try{
+        await navigator.share({files:[file], title:"사주 궁합 아이돌 매칭",
+          text:"내 일간으로 본 아이돌 궁합 결과"});
+        hint.textContent = "공유 완료";
+        return;
+      }catch(e){
+        if(e && e.name === "AbortError"){ hint.textContent = ""; return; }
+        // 공유 실패 시 다운로드로 폴백
+      }
+    }
+    // 다운로드 폴백 (데스크톱 등)
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = fileName;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 1000);
+    hint.textContent = "이미지를 저장했습니다";
+  }, "image/png");
 }
 </script>
 </body>
