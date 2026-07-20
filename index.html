@@ -127,6 +127,52 @@
   .share-btn:disabled{opacity:.5; cursor:default;}
   .share-hint{font-size:12px; color:var(--ink-dim);}
 
+  select#bhour{
+    width:100%; background:#0d1128; border:1px solid #ffffff22; color:var(--ink);
+    border-radius:8px; padding:11px 12px; font-size:15px; font-family:inherit;
+    appearance:none; -webkit-appearance:none;
+    background-image:linear-gradient(45deg,transparent 50%,var(--ink-dim) 50%),linear-gradient(135deg,var(--ink-dim) 50%,transparent 50%);
+    background-position:calc(100% - 18px) 18px, calc(100% - 13px) 18px;
+    background-size:5px 5px, 5px 5px; background-repeat:no-repeat;
+  }
+  .toggle-note{margin-top:12px; font-size:12px; color:var(--ink-dim); line-height:1.5;}
+
+  .rank-card{
+    display:flex; align-items:flex-start; gap:16px; padding:16px 18px;
+    border:1px solid #ffffff14; border-radius:12px; background:#0d1128; margin-bottom:12px;
+  }
+  .rank-num{
+    flex:none; width:38px; height:38px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Nanum Myeongjo', serif; font-weight:800; font-size:17px;
+    background:var(--gold-soft); color:var(--gold); border:1px solid var(--gold);
+  }
+  .rank-top .rank-num{background:var(--gold); color:#1a1305;}
+  .rank-body{flex:1; min-width:0;}
+  .rank-name{font-size:16px; font-weight:700; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .rank-name .grp{font-size:12px; color:var(--ink-dim); font-weight:400;}
+  .rank-name .pill{font-size:11.5px; color:var(--ink-dim); border:1px solid #ffffff1c; border-radius:20px; padding:2px 9px; display:inline-flex; align-items:center; gap:6px;}
+  .rank-meta{font-size:12.5px; color:var(--gold); margin:5px 0 6px;}
+  .rank-reason{font-size:13px; color:var(--ink-dim); line-height:1.55;}
+  .rank-score{flex:none; text-align:right; padding-top:2px;}
+  .rank-score .pct{font-family:'Nanum Myeongjo', serif; font-size:24px; font-weight:800; color:var(--ink); line-height:1;}
+  .rank-score .pct-label{font-size:10.5px; color:var(--ink-dim); margin-top:3px;}
+  .dot{width:9px; height:9px; border-radius:50%; display:inline-block; flex:none;}
+
+  .more-btn{
+    width:100%; margin-top:6px; padding:12px; border-radius:9px;
+    border:1px solid #ffffff22; background:transparent; color:var(--ink-dim);
+    font-family:'Noto Sans KR', sans-serif; font-size:13.5px; cursor:pointer;
+  }
+  .more-btn:hover{border-color:var(--gold); color:var(--gold);}
+  .rank-rest{margin-top:6px;}
+  .rest-row{display:flex; align-items:center; gap:12px; padding:10px 6px; border-top:1px solid #ffffff10; font-size:13.5px;}
+  .rest-row .r-n{width:30px; text-align:right; color:var(--ink-dim); flex:none;}
+  .rest-row .r-name{flex:1; min-width:0;}
+  .rest-row .r-grp{color:var(--ink-dim); font-size:11.5px;}
+  .rest-row .r-rel{color:var(--ink-dim); font-size:11.5px;}
+  .rest-row .r-pct{color:var(--gold); font-size:12.5px; width:44px; text-align:right; flex:none;}
+
   .disclaimer{
     margin-top:44px; padding:20px 22px; border-radius:12px;
     background:#0d1128; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
@@ -143,7 +189,7 @@
 
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
-  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)을 계산하고, 오행 상생상극 이론에 따라 아이돌 88인을 5단계로 분류합니다. 시간 미상이어도 계산 가능합니다.</p>
+  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 88인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
 
   <div class="panel">
     <div class="row">
@@ -152,14 +198,11 @@
         <input type="date" id="bdate" min="1920-01-01" max="2026-12-31">
       </div>
       <div>
-        <label for="btime">태어난 시각 (선택)</label>
-        <input type="time" id="btime">
+        <label for="bhour">태어난 시각 (선택 · 24시간 기준)</label>
+        <select id="bhour"></select>
       </div>
     </div>
-    <div class="toggle">
-      <input type="checkbox" id="unknownTime">
-      <label for="unknownTime" style="margin:0;">시각 모름 — 일간(궁합 판단 기준)은 시각과 무관하게 정확히 계산됩니다</label>
-    </div>
+    <div class="toggle-note">일간·일지(궁합 판단 기준)는 태어난 날짜만으로 정확히 계산되므로, 시각을 몰라도 순위 추천에는 영향이 없습니다.</div>
     <button class="calc" onclick="runCalc()">계산하기</button>
   </div>
 
@@ -178,10 +221,12 @@
       <span>木</span><span>火</span><span>土</span><span>金</span><span>水</span>
     </div>
 
-    <h2 class="section-title">추천 순위 (5단계)</h2>
-    <p class="tier-note">같은 단계 내에서는 사주만으로 세부 순위를 매길 근거가 없어 동일 등급으로 처리했습니다. 1단계일수록 일간을 생조·보완하는 오행에 가깝다고 보는 전통 해석입니다.</p>
+    <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
+    <p class="tier-note">일간의 오행 십신 관계(식상·인성·재성·비겁·관성)에 일지(日支) 궁합(육합·삼합·충·해 등)을 더해 88인을 점수화한 순위입니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
 
-    <div id="tiers"></div>
+    <div id="ranklist"></div>
+    <div id="rankRest" class="rank-rest hidden"></div>
+    <button class="more-btn" id="moreBtn" onclick="toggleRest()">전체 순위 펼쳐보기 (9~88위)</button>
 
     <div class="share-row">
       <button class="share-btn" id="shareBtn" onclick="shareResult()">결과 이미지 저장 · 공유</button>
@@ -193,8 +238,8 @@
       <ul>
         <li>사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.</li>
         <li>"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
-        <li>일간(日干)은 태어난 날짜만으로 결정되며 시각과 무관해 계산 정확도가 높습니다. 시각을 입력하면 시주(時柱)도 함께 표시되지만, 매칭 로직 자체에는 사용하지 않습니다.</li>
-        <li>등급 순서(인성→비겁→식상→재성→관성)는 개인별 신강·신약을 반영하지 않은 단순화된 일반 기준입니다. 정밀 진단은 아닙니다 — 확인필요.</li>
+        <li>일간(日干)·일지(日支)는 태어난 날짜만으로 결정되며 시각과 무관해 계산 정확도가 높습니다. 시각(24시간 기준)을 입력하면 시주(時柱)도 함께 표시되지만, 순위 로직 자체에는 사용하지 않습니다.</li>
+        <li>순위 점수는 <b>일간의 십신(식상·인성·재성·비겁·관성) 가중치 + 일지의 지지 관계(육합·삼합·방합·충·해·비화)</b>를 합산해 매깁니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
         <li>수록된 아이돌 생년월일은 공개 정보 기준이며, 소속사 발표와 실제가 다른 사례가 보고된 바 있어 개별 확인이 필요할 수 있습니다.</li>
       </ul>
     </div>
@@ -215,6 +260,38 @@ const STEM_ELEM_IDX = [0,0,1,1,2,2,3,3,4,4];
 
 const GEN_ORDER = ["木","火","土","金","水"];
 const CTRL_ORDER = ["木","土","水","火","金"];
+
+// 십신(十神) 기준 '덕질 궁합' 가중치.
+// 덕질 = 내가 상대에게 애정·에너지를 쏟는 관계 → 일간이 주도하는 식상, 내가 받는 인성을 상위로 둠.
+const SHISHIN = {
+  "식상(食傷)":{base:100, role:"애정을 쏟는 최애형",
+    reason:"내 기운이 자연스럽게 흘러가는 오행이라, 응원하고 챙겨주는 '덕질' 그 자체에 가장 잘 맞아요."},
+  "인성(印星)":{base:82, role:"힐링·충전형",
+    reason:"나를 북돋아 주는 오행이라, 보고만 있어도 위로받고 충전되는 최애예요."},
+  "재성(財星)":{base:64, role:"설레는 매력형",
+    reason:"내가 끌어당기는 오행이라, 갖고 싶고 설레는 매력으로 다가와요."},
+  "비겁(比劫)":{base:46, role:"편안한 친구형",
+    reason:"나와 같은 오행이라, 동질감과 친근함이 큰 편한 상대예요."},
+  "관성(官星)":{base:28, role:"긴장·경외형",
+    reason:"나를 조이는 오행이라, 멋있지만 다소 어렵고 부담이 될 수 있어요."}
+};
+
+// 일지(日支) 관계 — 지지 인덱스(子0 … 亥11) 기준
+const LIUHE  = {0:1,1:0,2:11,11:2,3:10,10:3,4:9,9:4,5:8,8:5,6:7,7:6}; // 육합
+const SANHE  = [[8,0,4],[11,3,7],[2,6,10],[5,9,1]];                   // 삼합(申子辰·亥卯未·寅午戌·巳酉丑)
+const BANGHE = [[2,3,4],[5,6,7],[8,9,10],[11,0,1]];                   // 방합
+const HAE    = {0:7,7:0,1:6,6:1,2:5,5:2,3:4,4:3,8:11,11:8,9:10,10:9}; // 육해
+function branchRel(a,b){
+  if(a===b)                return {score:4,  tag:"일지 비화(比和)", reason:"일지가 같아 결이 비슷해요."};
+  if((a+6)%12===b)         return {score:-14,tag:"일지 충(沖)",     reason:"일지가 정반대라 애증이 오갈 수 있어요."};
+  if(LIUHE[a]===b)         return {score:14, tag:"일지 육합(六合)", reason:"일지가 서로 딱 맞물리는 찰떡 인연이에요."};
+  if(SANHE.some(g=>g.includes(a)&&g.includes(b)))
+                           return {score:11, tag:"일지 삼합(三合)", reason:"같은 기운으로 뭉치는 삼합이라 함께할수록 시너지가 나요."};
+  if(HAE[a]===b)           return {score:-6, tag:"일지 해(害)",     reason:"사소하게 엇갈리는 지점이 생길 수 있어요."};
+  if(BANGHE.some(g=>g.includes(a)&&g.includes(b)))
+                           return {score:6,  tag:"일지 방합(方合)", reason:"같은 계절 기운끼리 모여 무난하게 어울려요."};
+  return {score:0, tag:"일지 평(平)", reason:""};
+}
 
 const IDOLS = [
   ["에스쿱스","SEVENTEEN","辛未","金"],["정한","SEVENTEEN","戊辰","土"],["조슈아","SEVENTEEN","乙未","木"],
@@ -299,10 +376,9 @@ function runCalc(){
   const dayHanja = STEMS[dp.stemIdx] + BRANCHES[dp.branchIdx];
 
   let hourInfo = "";
-  const timeVal = document.getElementById('btime').value;
-  const unknownTime = document.getElementById('unknownTime').checked;
-  if(timeVal && !unknownTime){
-    const hh = Number(timeVal.split(':')[0]);
+  const hourVal = document.getElementById('bhour').value;
+  if(hourVal !== ""){
+    const hh = Number(hourVal);
     const hp = hourPillar(dp.stemIdx, hh);
     hourInfo = " · 시주(참고용): " + STEMS[hp.stemIdx] + BRANCHES[hp.branchIdx];
   }
@@ -323,35 +399,49 @@ function runCalc(){
     bar.appendChild(seg);
   });
 
-  const tiers = {1:[],2:[],3:[],4:[],5:[]};
-  IDOLS.forEach(([name,group,pillar,elem])=>{
+  // ---- 오로지 사주 특성으로 88인 점수화 → 순위 ----
+  const ranked = IDOLS.map(([name,group,pillar,elem])=>{
     const rel = relation(userStemElem, elem);
-    tiers[rel.tier].push({name,group,elem,label:rel.label});
+    const sh  = SHISHIN[rel.label];
+    const bIdx = BRANCHES.indexOf(pillar[1]);
+    const br  = branchRel(dp.branchIdx, bIdx);
+    const score = sh.base + br.score;
+    const pct = Math.max(0, Math.min(100, score - 14));
+    let reason = sh.reason;
+    if(br.reason) reason += " " + br.reason;
+    return {name, group, pillar, elem, relLabel:rel.label, role:sh.role,
+            branchTag:br.tag, score, pct, reason};
+  });
+  ranked.sort((a,b)=> b.score - a.score); // 안정 정렬: 동점은 데이터 순서 유지
+
+  const TOP = 8;
+  const listEl = document.getElementById('ranklist');
+  listEl.innerHTML = "";
+  ranked.slice(0,TOP).forEach((r,i)=>{
+    const card = document.createElement('div');
+    card.className = 'rank-card' + (i<3 ? ' rank-top' : '');
+    card.innerHTML = `
+      <div class="rank-num">${i+1}</div>
+      <div class="rank-body">
+        <div class="rank-name">${r.name}<span class="grp">${r.group}</span>
+          <span class="pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</span></div>
+        <div class="rank-meta">${r.relLabel} · ${r.role} · ${r.branchTag}</div>
+        <div class="rank-reason">${r.reason}</div>
+      </div>
+      <div class="rank-score"><div class="pct">${r.pct}<span style="font-size:14px">%</span></div><div class="pct-label">궁합</div></div>
+    `;
+    listEl.appendChild(card);
   });
 
-  const tiersEl = document.getElementById('tiers');
-  tiersEl.innerHTML = "";
-  for(let t=1;t<=5;t++){
-    const list = tiers[t];
-    if(list.length===0) continue;
-    const div = document.createElement('div');
-    div.className = 'tier';
-    div.setAttribute('data-n', t);
-    const roleLabel = list[0].label;
-    div.innerHTML = `
-      <div class="tier-head">${t}단계 · ${roleLabel}</div>
-      <div class="tier-role">${TIER_DESC[t]}</div>
-      <div class="chips">
-        ${list.map(i=>`<span class="chip"><span class="dot" style="background:${ELEM_COLOR[i.elem]}"></span>${i.name} <span class="grp">${i.group}</span></span>`).join("")}
-      </div>
-    `;
-    tiersEl.appendChild(div);
-  }
+  // 전체 순위 접힌 상태로 초기화
+  const restEl = document.getElementById('rankRest');
+  restEl.classList.add('hidden'); restEl.dataset.built = ""; restEl.innerHTML = "";
+  document.getElementById('moreBtn').textContent = "전체 순위 펼쳐보기 (9~88위)";
 
   window._saju = {
     stem: STEMS[dp.stemIdx], stemKr: STEMS_KR[dp.stemIdx],
     elemKr: ELEM_KR[STEM_ELEM_IDX[dp.stemIdx]], elem: userStemElem,
-    dayHanja, tiers
+    dayHanja, ranked
   };
   document.getElementById('shareBtn').disabled = false;
   document.getElementById('shareHint').textContent = "";
@@ -359,6 +449,47 @@ function runCalc(){
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
 }
+
+// 전체 순위(9위~) 펼치기/접기
+function toggleRest(){
+  const el = document.getElementById('rankRest');
+  const btn = document.getElementById('moreBtn');
+  if(el.classList.contains('hidden')){
+    if(!el.dataset.built){
+      const r = window._saju.ranked;
+      el.innerHTML = r.slice(8).map((x,i)=>`
+        <div class="rest-row">
+          <span class="r-n">${i+9}</span>
+          <span class="dot" style="background:${ELEM_COLOR[x.elem]}"></span>
+          <span class="r-name">${x.name} <span class="r-grp">${x.group}</span></span>
+          <span class="r-rel">${x.relLabel.replace(/\(.*\)/,'')}</span>
+          <span class="r-pct">${x.pct}%</span>
+        </div>`).join("");
+      el.dataset.built = "1";
+    }
+    el.classList.remove('hidden');
+    btn.textContent = "접기";
+  }else{
+    el.classList.add('hidden');
+    btn.textContent = "전체 순위 펼쳐보기 (9~88위)";
+  }
+}
+
+// 시각 드롭다운(24시간) 채우기
+(function(){
+  const sel = document.getElementById('bhour');
+  if(!sel) return;
+  const opt0 = document.createElement('option');
+  opt0.value = ""; opt0.textContent = "모름 / 미상";
+  sel.appendChild(opt0);
+  for(let h=0; h<24; h++){
+    const o = document.createElement('option');
+    o.value = String(h);
+    const hh = String(h).padStart(2,'0');
+    o.textContent = `${h}시 (${hh}:00~${hh}:59)`;
+    sel.appendChild(o);
+  }
+})();
 
 // ---- 결과 카드 이미지 생성 (외부 라이브러리 없이 Canvas로 직접 렌더) ----
 function roundRect(ctx,x,y,w,h,r){
@@ -435,67 +566,53 @@ function drawShareCard(){
     ctx.globalAlpha = 1;
   });
 
-  // 티어 섹션
-  const TIER_ROLE = {1:"인성(印星)",2:"비겁(比劫)",3:"식상(食傷)",4:"재성(財星)",5:"관성(官星)"};
-  let y = 560;
+  // 추천 순위 섹션
   ctx.fillStyle = ink;
   ctx.font = "700 40px 'Nanum Myeongjo', serif";
-  ctx.fillText("추천 순위 (5단계)", M, y);
-  y += 46;
+  ctx.fillText("덕질 궁합 추천 순위", M, 540);
+  ctx.fillStyle = dim;
+  ctx.font = "400 24px 'Noto Sans KR', sans-serif";
+  ctx.fillText("오로지 사주 특성으로 선정", M, 574);
 
-  for(let t=1;t<=5;t++){
-    const list = s.tiers[t];
-    if(!list || list.length===0) continue;
-    // 티어 헤더
-    ctx.fillStyle = gold;
-    ctx.font = "700 30px 'Noto Sans KR', sans-serif";
-    ctx.fillText(`${t}단계 · ${TIER_ROLE[t]}`, M, y);
-    // 개수
+  const top = (s.ranked || []).slice(0,6);
+  const yStart = 606, rowH = 112, cardH = 96;
+  top.forEach((r,i)=>{
+    const top0 = yStart + i*rowH;
+    // 카드 배경
+    ctx.fillStyle = "#0d1128";
+    roundRect(ctx, M, top0, W-2*M, cardH, 16); ctx.fill();
+    const midY = top0 + cardH/2;
+    // 랭크 원
+    const rnx = M+48;
+    ctx.beginPath(); ctx.arc(rnx, midY, 29, 0, Math.PI*2);
+    ctx.fillStyle = (i<3) ? gold : "#1e2547"; ctx.fill();
+    ctx.fillStyle = (i<3) ? "#1a1305" : gold;
+    ctx.font = "800 30px 'Nanum Myeongjo', serif";
+    ctx.textAlign="center"; ctx.textBaseline="middle";
+    ctx.fillText(String(i+1), rnx, midY+2);
+    ctx.textAlign="left"; ctx.textBaseline="alphabetic";
+    // 이름 + 그룹
+    const tx = M+100;
+    ctx.fillStyle = ink;
+    ctx.font = "700 34px 'Noto Sans KR', sans-serif";
+    ctx.fillText(r.name, tx, top0+42);
+    const nameW = ctx.measureText(r.name).width;
     ctx.fillStyle = dim;
-    ctx.font = "400 26px 'Noto Sans KR', sans-serif";
-    ctx.fillText(`${list.length}명`, W-M-70, y);
-    y += 40;
-
-    // 이름 칩 (줄바꿈 배치)
-    ctx.font = "500 27px 'Noto Sans KR', sans-serif";
-    let x = M;
-    const maxX = W - M;
-    const chipH = 46, pad = 22, gap = 14;
-    let shown = 0;
-    const cap = (t<=2)?list.length:Math.min(list.length, 10); // 하위 티어는 최대 10명
-    for(let i=0;i<cap;i++){
-      const name = list[i].name;
-      const tw = ctx.measureText(name).width;
-      const dotW = 22;
-      const cw = dotW + tw + pad*2;
-      if(x + cw > maxX){ x = M; y += chipH + 12; }
-      // 칩 배경
-      ctx.fillStyle = "#0d1128";
-      roundRect(ctx,x,y,cw,chipH,chipH/2); ctx.fill();
-      // 오행 점
-      ctx.beginPath();
-      ctx.arc(x+pad+5, y+chipH/2, 7, 0, Math.PI*2);
-      ctx.fillStyle = ELEM_HEX[list[i].elem]; ctx.fill();
-      // 이름
-      ctx.fillStyle = ink;
-      ctx.textBaseline = "middle";
-      ctx.fillText(name, x+pad+dotW, y+chipH/2+1);
-      ctx.textBaseline = "alphabetic";
-      x += cw + gap;
-      shown++;
-    }
-    if(cap < list.length){
-      ctx.fillStyle = dim;
-      ctx.font = "400 24px 'Noto Sans KR', sans-serif";
-      const more = `+${list.length-cap}`;
-      if(x + 80 > maxX){ x = M; y += chipH + 12; }
-      ctx.textBaseline = "middle";
-      ctx.fillText(more, x+4, y+chipH/2+1);
-      ctx.textBaseline = "alphabetic";
-    }
-    y += chipH + 34;
-    if(y > H-140) break; // 안전 컷
-  }
+    ctx.font = "400 23px 'Noto Sans KR', sans-serif";
+    ctx.fillText(r.group, tx+nameW+14, top0+42);
+    // 관계 메타 (오행 점 + 일주 + 십신 + 지지)
+    ctx.beginPath(); ctx.arc(tx+7, top0+72, 7, 0, Math.PI*2);
+    ctx.fillStyle = ELEM_HEX[r.elem]; ctx.fill();
+    ctx.fillStyle = gold;
+    ctx.font = "500 23px 'Noto Sans KR', sans-serif";
+    ctx.fillText(`${r.pillar} · ${r.relLabel} · ${r.branchTag}`, tx+22, top0+79);
+    // 궁합 %
+    ctx.fillStyle = ink;
+    ctx.font = "800 40px 'Nanum Myeongjo', serif";
+    ctx.textAlign="right";
+    ctx.fillText(`${r.pct}%`, W-M-26, midY+13);
+    ctx.textAlign="left";
+  });
 
   // footer
   ctx.fillStyle = "#5c6390";
