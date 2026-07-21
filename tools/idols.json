@@ -553,12 +553,5 @@
 {"name":"샤오잔","group":"샤오잔","agency":"중국 배우","gender":"M","dob":"1991-10-05","cat":"C-actor"},
 {"name":"양양","group":"양양","agency":"중국 배우","gender":"M","dob":"1991-09-09","cat":"C-actor"},
 {"name":"니시노 나나세","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1994-05-25","cat":"J-idol"},
-{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"},
-{"name":"하츠네 미쿠","group":"보컬로이드","agency":"보컬로이드","gender":"F","dob":"2007-08-31","cat":"Character"},
-{"name":"카가미네 린","group":"보컬로이드","agency":"보컬로이드","gender":"F","dob":"2007-12-27","cat":"Character"},
-{"name":"카가미네 렌","group":"보컬로이드","agency":"보컬로이드","gender":"M","dob":"2007-12-27","cat":"Character"},
-{"name":"메구리네 루카","group":"보컬로이드","agency":"보컬로이드","gender":"F","dob":"2009-01-30","cat":"Character"},
-{"name":"KAITO","group":"보컬로이드","agency":"보컬로이드","gender":"M","dob":"2006-02-17","cat":"Character"},
-{"name":"MEIKO","group":"보컬로이드","agency":"보컬로이드","gender":"F","dob":"2004-11-05","cat":"Character"},
-{"name":"카사네 테토","group":"보컬로이드","agency":"보컬로이드","gender":"F","dob":"2008-04-01","cat":"Character"}
+{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"}
 ]
