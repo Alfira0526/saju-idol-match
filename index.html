@@ -1068,7 +1068,14 @@ const IDOLS = [
   ["샤오잔","샤오잔","戊申","土","M","중국 배우","19911005","C-actor"],
   ["양양","양양","壬午","水","M","중국 배우","19910909","C-actor"],
   ["니시노 나나세","노기자카46","辛亥","金","F","노기자카46","19940525","J-idol"],
-  ["시라이시 마이","노기자카46","戊辰","土","F","노기자카46","19920820","J-idol"]
+  ["시라이시 마이","노기자카46","戊辰","土","F","노기자카46","19920820","J-idol"],
+  ["하츠네 미쿠","보컬로이드","丁酉","火","F","보컬로이드","20070831","Character"],
+  ["카가미네 린","보컬로이드","乙未","木","F","보컬로이드","20071227","Character"],
+  ["카가미네 렌","보컬로이드","乙未","木","M","보컬로이드","20071227","Character"],
+  ["메구리네 루카","보컬로이드","乙亥","木","F","보컬로이드","20090130","Character"],
+  ["KAITO","보컬로이드","丁丑","火","M","보컬로이드","20060217","Character"],
+  ["MEIKO","보컬로이드","戊子","土","F","보컬로이드","20041105","Character"],
+  ["카사네 테토","보컬로이드","辛未","金","F","보컬로이드","20080401","Character"]
 ];
 
 function jdn(y,m,d){
@@ -1231,9 +1238,11 @@ const TOP_N = 8;
 // 카테고리(한국 아이돌 / 일본 아이돌 / 중국 배우 / 미국 배우 …)
 const CAT_NAMES = {
   "K-idol":{ko:"한국 아이돌",en:"K-pop"}, "J-idol":{ko:"일본 아이돌",en:"J-pop"},
-  "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"}
+  "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"},
+  "Character":{ko:"캐릭터",en:"Character"}
 };
 const catLabel = c => (CAT_NAMES[c] ? CAT_NAMES[c].ko : c);
+const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
 function scopeMatch(x){
   const s = window._saju;
   if(x.cat !== (s.activeCat || "K-idol")) return false; // 카테고리 우선 필터
@@ -1378,20 +1387,28 @@ function toggleRest(){
 })();
 
 // 카테고리 목록 (데이터에 존재하는 것만, K-idol 우선)
-const CAT_ORDER = ["K-idol","J-idol","C-actor","US-actor"];
+const CAT_ORDER = ["K-idol","J-idol","C-actor","US-actor","Character"];
 function catsPresent(){
   const set={}; IDOLS.forEach(r=>{ set[r[7]||"K-idol"]=(set[r[7]||"K-idol"]||0)+1; });
   const order = CAT_ORDER.filter(c=>set[c]).concat(Object.keys(set).filter(c=>!CAT_ORDER.includes(c)));
   return {order, count:set};
 }
-// 카테고리 버튼 (1개뿐이면 행 숨김 → 지금까지 동작과 동일)
-function renderCategoryButtons(){
+// 노출 대상 카테고리: 데이터가 CAT_MIN(30) 이상 쌓인 것만
+function shownCats(){
   const {order,count}=catsPresent();
+  return order.filter(c=>count[c]>=CAT_MIN);
+}
+// 카테고리 버튼 (노출 대상이 2개 이상일 때만 행 표시)
+function renderCategoryButtons(){
+  const {count}=catsPresent();
+  const shown=shownCats();
   const row=document.getElementById('catRow'), wrap=document.getElementById('catBtns');
   if(!wrap) return;
-  if(order.length<=1){ row.style.display="none"; return; }
-  const cur=window._saju.activeCat||"K-idol";
-  wrap.innerHTML = order.map(c=>`<button class="agbtn${c===cur?' active':''}" data-c="${c}" onclick="selectCategory('${c}')">${catLabel(c)}<span class="agn">${count[c]}</span></button>`).join("");
+  // 활성 카테고리가 노출 대상이 아니면 보정
+  if(!shown.includes(window._saju.activeCat)) window._saju.activeCat = shown[0] || "K-idol";
+  if(shown.length<=1){ row.style.display="none"; return; }
+  const cur=window._saju.activeCat;
+  wrap.innerHTML = shown.map(c=>`<button class="agbtn${c===cur?' active':''}" data-c="${c}" onclick="selectCategory('${c}')">${catLabel(c)}<span class="agn">${count[c]}</span></button>`).join("");
   row.style.display="flex";
 }
 // 활성 카테고리 내에서 소속사 버튼 렌더
@@ -1497,7 +1514,9 @@ function runGroupSearch(){
   const q = document.getElementById('groupSearch').value.trim().toLowerCase();
   const box = document.getElementById('searchResults');
   if(!q){ box.classList.add('hidden'); box.innerHTML=""; return; }
+  const sc = new Set(shownCats()); // 노출 대상 카테고리의 그룹만 검색
   const matches = Object.keys(GROUP_INFO).filter(g=>{
+    if(!sc.has(GROUP_INFO[g].cat)) return false;
     const nm = GROUP_NAMES[g] || {ko:g,en:g};
     return g.toLowerCase().includes(q) || nm.ko.toLowerCase().includes(q) || nm.en.toLowerCase().includes(q);
   }).sort((x,y)=>GROUP_INFO[y].count-GROUP_INFO[x].count).slice(0,30);
