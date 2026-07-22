@@ -480,7 +480,7 @@
   <div class="modal">
     <button class="modal-x" onclick="closeSuggest()" aria-label="닫기">✕</button>
     <h3 class="modal-title">누구를 추가할까요? ✦</h3>
-    <p class="modal-intro">추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. (실존 인물만 가능해요.)</p>
+    <p class="modal-intro">추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. <b>한 명만 알려줘도 그 사람이 속한 그룹 전체</b>를 함께 찾아 추가해드려요. (실존 인물만 가능해요.)</p>
     <div id="suggestForm">
       <label class="m-label">이름 <span class="req">*</span></label>
       <input type="text" id="sgName" class="m-input" maxlength="40" placeholder="예: 하츠네" autocomplete="off">
@@ -514,7 +514,7 @@
     </div>
     <div id="suggestDone" class="hidden">
       <div class="m-done">🎉</div>
-      <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>중복만 확인해서 오늘 밤 우선으로 챙길게요.</p>
+      <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>그룹 전체를 함께 찾아 오늘 밤 우선으로 챙길게요.</p>
       <button class="m-submit" onclick="closeSuggest()">닫기</button>
     </div>
   </div>
