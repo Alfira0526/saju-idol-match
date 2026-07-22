@@ -8,6 +8,10 @@
 
 **프레임워크·빌드·서버 없음.** `index.html` 하나로 동작하며, 모든 계산은 브라우저 안에서만 실행됩니다(생일은 서버로 전송되지 않음). 유일한 외부 의존성은 Google Fonts입니다.
 
+### 🔗 지금 해보기 → **<https://alfira0526.github.io/saju-idol-match/>**
+
+> GitHub Pages 배포 링크입니다. (열리지 않으면 아래 *사용/실행*의 최초 1회 설정이 필요할 수 있어요.)
+
 ---
 
 ## ✨ 주요 기능
@@ -33,7 +37,7 @@
 1. Repository **Settings → Pages**
 2. **Source** → `Deploy from a branch`
 3. **Branch** → `claude/idol-saju-matching-app-752fy3` / `/(root)` → **Save**
-4. 1~2분 뒤 `https://<user>.github.io/saju-idol-match/` 에서 공개
+4. 1~2분 뒤 <https://alfira0526.github.io/saju-idol-match/> 에서 공개
 
 이후에는 브랜치에 push할 때마다 자동으로 갱신됩니다.
 
