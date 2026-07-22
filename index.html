@@ -327,6 +327,17 @@
   .up-item .up-date{color:var(--gold); flex:none; font-size:12.5px;}
   .up-item .up-text{color:var(--ink);}
 
+  .fav-eyebrow{font-size:12px; letter-spacing:.08em; color:var(--gold); margin-bottom:6px;}
+  .fav-card{margin:6px 0 14px; padding:18px 18px 20px; border-radius:14px;
+    background:linear-gradient(160deg,#2a1550,#1a1030); border:1px solid #ff4d9733;
+    box-shadow:0 14px 40px -24px #ff4d97;}
+  .fav-name{font-size:24px; font-weight:800; line-height:1.25;
+    background:linear-gradient(90deg,#ff7ac3,#a98bff,#6fe0ff); -webkit-background-clip:text;
+    background-clip:text; -webkit-text-fill-color:transparent;}
+  .fav-role{font-size:13px; color:var(--gold); margin:4px 0 10px;}
+  .fav-reason{font-size:13.5px; color:var(--ink); line-height:1.6;}
+  .fav-foot{font-size:12.5px; color:var(--ink-dim); margin:0 0 14px;}
+
   .disclaimer{
     margin-top:44px; padding:20px 22px; border-radius:12px;
     background:#170e2e; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
@@ -360,8 +371,16 @@
         <label for="bhour">태어난 시각 (선택 · 24시간 기준)</label>
         <select id="bhour"></select>
       </div>
+      <div>
+        <label for="bsex">내 성별 (선택)</label>
+        <select id="bsex">
+          <option value="">미선택</option>
+          <option value="F">여성</option>
+          <option value="M">남성</option>
+        </select>
+      </div>
     </div>
-    <div class="toggle-note">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다.</div>
+    <div class="toggle-note">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.</div>
     <button class="calc" onclick="runCalc()">계산하기</button>
   </div>
 
@@ -454,6 +473,7 @@
             <option value="J-idol">일본 아이돌</option>
             <option value="C-actor">중국 배우</option>
             <option value="US-actor">미국 배우</option>
+            <option value="Etc">기타 (위에 없는 경우)</option>
           </select>
         </div>
         <div style="flex:1">
@@ -476,6 +496,23 @@
       <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>중복만 확인해서 오늘 밤 우선으로 챙길게요.</p>
       <button class="m-submit" onclick="closeSuggest()">닫기</button>
     </div>
+  </div>
+</div>
+
+<!-- 주간 최애 리포트 팝업 -->
+<div class="modal-overlay hidden" id="favReport" onclick="if(event.target===this)closeFav()">
+  <div class="modal">
+    <button class="modal-x" onclick="closeFav()" aria-label="닫기">✕</button>
+    <div class="fav-eyebrow">💌 이번 주 최애 리포트</div>
+    <h3 class="modal-title" id="favTitle">이번 주, 사주가 콕 집은 최애 ✨</h3>
+    <p class="modal-intro" id="favLead"></p>
+    <div class="fav-card">
+      <div class="fav-name" id="favName"></div>
+      <div class="fav-role" id="favRole"></div>
+      <div class="fav-reason" id="favReason"></div>
+    </div>
+    <p class="fav-foot" id="favFoot"></p>
+    <button class="m-submit" onclick="closeFav()">한 번 더 매칭하기</button>
   </div>
 </div>
 
@@ -1276,6 +1313,10 @@ function runCalc(){
     bar.appendChild(seg);
   });
 
+  // D-1: 신청자 성별 → 명리 '이성 인연' 십신 (남=재성, 여=관성) 소폭 반영. 미선택이면 중립.
+  const userSex = document.getElementById('bsex').value;      // "", "F", "M"
+  const iseongFam = userSex==='M' ? '재성' : (userSex==='F' ? '관성' : null);
+
   // ---- 사주 다층 점수화 (10신 + 천간합 + 지장간 + 일/년/월지 + 신강신약 개인화) ----
   const scored = IDOLS.map(([name,group,pillar,elem,gender,agency,dob,cat])=>{
     const tSI = STEMS.indexOf(pillar[0]);
@@ -1286,6 +1327,16 @@ function runCalc(){
     const adjW = g.w + (FAM_DIR[g.fam]||0) * need * 10;
     const br  = branchRel(dp.branchIdx, tBI);            // 일지 관계
     let raw = adjW + (hap ? 6 : 0) + br.score;
+
+    // 성별 기반 '이성 인연' 가점(+8, 신강신약 가중보다 작게) + 해당 관계 라벨/이유 리프레이즈
+    let sexRole=null, sexReason=null;
+    if(iseongFam && g.fam===iseongFam){
+      raw += 8;
+      sexRole = "이성적 매력형";
+      if(iseongFam==='관성'){ sexReason = (g.name==='정관')
+        ? "나를 듬직하게 이끄는 관계라, 기대고 싶은 이성적 매력이 커요."
+        : "나를 강하게 리드하는 관계라, 카리스마에 이성적으로 끌려요."; }
+    }
 
     // ① 지장간(支藏干): 상대 일지 정기의 십신 (중심 20 기준, 가중 0.15)
     raw += (GODS[godName(uSI, JIJANG[tBI])].w - 20) * 0.15;
@@ -1300,7 +1351,7 @@ function runCalc(){
       if(yb.score >= 11) yjNote = " · 띠 " + yb.tag.replace("일지 ","");
     }
 
-    let reason = g.reason;
+    let reason = sexReason || g.reason;
     if(hap) reason += " 게다가 일간끼리 천간합(天干合)을 이루는 특별한 인연이에요.";
     if(br.reason) reason += " " + br.reason;
 
@@ -1314,7 +1365,7 @@ function runCalc(){
 
     const relLabel = `${g.name}(${g.h})` + (hap ? " · 천간합" : "");
     return {name, group, pillar, elem, gender, agency, cat:cat||"K-idol",
-            relLabel, role:g.role, branchTag:br.tag+yjNote, hourNote, raw, reason};
+            relLabel, role: sexRole || g.role, branchTag:br.tag+yjNote, hourNote, raw, reason};
   });
 
   // 전체 풀(546명) 기준 최소~최대로 정규화 → 0~100(%), 소수 둘째 자리 (필터와 무관하게 고정)
@@ -1322,6 +1373,9 @@ function runCalc(){
   scored.forEach(s=>{ if(s.raw<lo)lo=s.raw; if(s.raw>hi)hi=s.raw; });
   const span = (hi-lo) || 1;
   scored.forEach(s=>{ s.score=s.raw; s.pct = Math.round((s.raw-lo)/span*10000)/100; });
+
+  // 이번 매칭의 전체 1위(내 최애 후보)를 주간 리포트용으로 적립
+  try{ const top = scored.reduce((a,b)=> b.score>a.score?b:a); logFav(top); }catch(e){}
 
   const prevGender = (window._saju && window._saju.activeGender) || "F";
   const prevScope  = (window._saju && window._saju.scope) || "";
@@ -1348,7 +1402,8 @@ const TOP_N = 8;
 // 카테고리(한국 아이돌 / 일본 아이돌 / 중국 배우 / 미국 배우 …)
 const CAT_NAMES = {
   "K-idol":{ko:"한국 아이돌",en:"K-pop"}, "J-idol":{ko:"일본 아이돌",en:"J-pop"},
-  "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"}
+  "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"},
+  "Etc":{ko:"기타",en:"Etc"}
 };
 const catLabel = c => (CAT_NAMES[c] ? CAT_NAMES[c].ko : c);
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
@@ -1496,7 +1551,7 @@ function toggleRest(){
 })();
 
 // 카테고리 목록 (데이터에 존재하는 것만, K-idol 우선)
-const CAT_ORDER = ["K-idol","J-idol","C-actor","US-actor"];
+const CAT_ORDER = ["K-idol","J-idol","C-actor","US-actor","Etc"];
 function catsPresent(){
   const set={}; IDOLS.forEach(r=>{ set[r[7]||"K-idol"]=(set[r[7]||"K-idol"]||0)+1; });
   const order = CAT_ORDER.filter(c=>set[c]).concat(Object.keys(set).filter(c=>!CAT_ORDER.includes(c)));
@@ -1821,7 +1876,7 @@ async function shareResult(){
 
 // ================= 제보 & 업데이트 공지 =================
 // 서버리스(Cloudflare Worker) 제보 엔드포인트. 배포 후 URL을 여기에 넣으면 활성화됩니다.
-const SUGGEST_ENDPOINT = "https://saju-suggest.thsjsl1234.workers.dev/submit";           // 예: "https://saju-suggest.<your>.workers.dev/submit"
+const SUGGEST_ENDPOINT = "https://saju-suggest.thsjsl1234.workers.dev/submit";
 const SUGGEST_COOLDOWN_MS = 60*60*1000; // 소프트 제한: 1시간
 
 function openSuggest(){
@@ -1875,8 +1930,48 @@ function submitSuggest(){
 
 function closeUpdate(){ document.getElementById('updatePopup').classList.add('hidden'); }
 
-// 배너 총원 + 업데이트 팝업(최근 3일 추가분만)
+// ===== 주간 최애 리포트 =====
+// 매칭할 때마다 전체 1위를 적립하고, 일주일 주기로 "내 최애 추천 이유"를 재밌게 보여준다.
+function logFav(top){
+  if(!top) return;
+  let log; try{ log = JSON.parse(localStorage.getItem('fav_log'))||[]; }catch(e){ log=[]; }
+  log.push({ name:top.name, group:top.group, role:top.role, reason:top.reason,
+             pct:top.pct, pillar:top.pillar, elem:top.elem, at:Date.now() });
+  const cut = Date.now() - 30*864e5;            // 최근 30일 + 최대 60건만 유지
+  localStorage.setItem('fav_log', JSON.stringify(log.filter(x=>x.at>=cut).slice(-60)));
+  if(!localStorage.getItem('fav_cycle_start')) localStorage.setItem('fav_cycle_start', String(Date.now()));
+}
+function closeFav(){ document.getElementById('favReport').classList.add('hidden'); }
+function maybeShowFavReport(){
+  const WEEK = 7*864e5;
+  const start = +(localStorage.getItem('fav_cycle_start')||0);
+  if(!start || Date.now()-start < WEEK) return false;   // 이력 없음 or 아직 일주일 전
+  let log; try{ log = JSON.parse(localStorage.getItem('fav_log'))||[]; }catch(e){ log=[]; }
+  const cycle = log.filter(x=>x.at>=start);
+  if(!cycle.length){ localStorage.setItem('fav_cycle_start', String(Date.now())); return false; }
+  // 최애 = 이 주기에 1위로 가장 자주 등장한 인물(동률이면 최고 궁합%)
+  const tally={};
+  cycle.forEach(x=>{ const k=x.name+'|'+x.group;
+    if(!tally[k]) tally[k]={...x, cnt:0};
+    tally[k].cnt++; if(x.pct>tally[k].pct) tally[k].pct=x.pct; });
+  const fav = Object.values(tally).sort((a,b)=> b.cnt-a.cnt || b.pct-a.pct)[0];
+  const total = cycle.length;
+  document.getElementById('favName').textContent   = `${fav.name} · ${fav.group}`;
+  document.getElementById('favRole').textContent   = fav.role || "";
+  document.getElementById('favReason').textContent = fav.reason || "";
+  document.getElementById('favLead').textContent   = total>1
+    ? `이번 주 ${total}번 매칭했는데요, 사주가 가장 자주 콕 집은 최애를 데려왔어요.`
+    : `이번 주 매칭에서 사주가 가장 강하게 밀어준 최애예요.`;
+  document.getElementById('favFoot').textContent =
+    (fav.cnt>1 ? `이번 주 ${total}번 중 ${fav.cnt}번 1위 · ` : '') + `최고 궁합 ${(+fav.pct).toFixed(1)}%`;
+  document.getElementById('favReport').classList.remove('hidden');
+  localStorage.setItem('fav_cycle_start', String(Date.now())); // 다음 주기 시작
+  return true;
+}
+
+// 배너 총원 + 업데이트 팝업(최근 3일 추가분만) + 주간 최애 리포트
 (function initReportUI(){
+  const favShown = maybeShowFavReport();  // 개인 리포트 우선
   fetch('tools/stats.json?t='+Date.now()).then(r=>r.json()).then(st=>{
     if(st && st.total){ const c=document.getElementById('rbCount'); if(c) c.textContent=`지금 ${st.total.toLocaleString()}명과 함께하고 있어요`; }
     const rec = Array.isArray(st.addedRecent) ? st.addedRecent : [];
@@ -1886,6 +1981,7 @@ function closeUpdate(){ document.getElementById('updatePopup').classList.add('hi
     // 마지막으로 본 업데이트 이후 새 게 있을 때만
     const latest = fresh.map(x=>x.date).sort().pop();
     if(localStorage.getItem('upd_seen')===latest) return;
+    if(favShown) return;                       // 최애 리포트가 떴으면 겹치지 않게 이번엔 생략
     const list=document.getElementById('upList');
     list.innerHTML = fresh.map(x=>`<div class="up-item"><span class="up-date">${(x.date||'').replace(/-/g,'.')}</span><span class="up-text">${x.text||''}</span></div>`).join("");
     const n = fresh.reduce((s,x)=>s+(x.count||0),0);

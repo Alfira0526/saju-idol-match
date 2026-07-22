@@ -57,7 +57,7 @@ function normKey(name, group) {
   return `sg:${n(name)}|${n(group)}`;
 }
 
-const CATS = ["K-idol", "J-idol", "C-actor", "US-actor"];
+const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
 
 export default {
   async fetch(request, env) {
