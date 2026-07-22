@@ -20,6 +20,7 @@
     --gold-soft: #ff4d9733;
     --grad: linear-gradient(135deg, #ff4d97 0%, #a855f7 55%, #7c6bff 100%);
     --hair: #ffffff14;
+    --edge-pad: 18px;         /* 제보하기 박스·상단 텍스트 공통 좌우 패딩 */
 
     --mok: #34e0a1;   /* 木 민트그린 */
     --hwa: #ff6b7d;   /* 火 코랄레드 */
@@ -56,6 +57,7 @@
   .eyebrow{
     font-size:12px; letter-spacing:.25em; color:var(--gold);
     text-transform:uppercase; margin-bottom:14px; display:flex; align-items:center; gap:10px;
+    padding-left:var(--edge-pad); padding-right:var(--edge-pad);
   }
   .eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--grad);display:inline-block;}
   .eyebrow::after{content:"✦"; color:var(--gold-3); margin-left:2px; animation:twinkle 1.8s ease-in-out infinite;}
@@ -72,7 +74,8 @@
   }
   @keyframes holo{ to{ background-position:300% 50%; } }
   @media (prefers-reduced-motion: reduce){ h1{ animation:none; } }
-  .sub{color:var(--ink-dim); font-size:14.5px; max-width:56ch; margin:0 0 36px;}
+  .sub{color:var(--ink-dim); font-size:14.5px; max-width:56ch; margin:0 0 36px;
+    padding-left:var(--edge-pad); padding-right:var(--edge-pad);}
 
   .panel{
     background:linear-gradient(180deg, var(--panel), var(--panel-2));
@@ -284,7 +287,7 @@
   .rest-row .r-pct{color:var(--gold); font-size:12.5px; width:44px; text-align:right; flex:none;}
 
   .report-banner{
-    display:flex; align-items:center; gap:14px; margin:0 0 22px; padding:14px 18px;
+    display:flex; align-items:center; gap:14px; margin:0 0 22px; padding:14px var(--edge-pad);
     border-radius:14px; border:1px solid #ff4d9733;
     background:linear-gradient(120deg,#2a1247,#1a1236);
     box-shadow:0 12px 34px -26px #ff2e8a88;
