@@ -260,6 +260,10 @@
   .rank-name .pill{font-size:11.5px; color:var(--ink-dim); border:1px solid #ffffff1c; border-radius:20px; padding:2px 9px; display:inline-flex; align-items:center; gap:6px;}
   .rank-meta{font-size:12.5px; color:var(--gold); margin:5px 0 6px;}
   .rank-reason{font-size:13px; color:var(--ink-dim); line-height:1.55;}
+  .rank-report{margin-top:7px;}
+  .rep-link{background:none; border:none; padding:0; cursor:pointer; font:inherit;
+    font-size:11.5px; color:#7b7396; opacity:.85; transition:color .14s;}
+  .rep-link:hover{color:var(--gold); opacity:1; text-decoration:underline;}
   .rank-score{flex:none; text-align:right; padding-top:2px;}
   .rank-score .pct{font-family:'Jua', 'Noto Sans KR', sans-serif; font-size:26px; font-weight:400; color:var(--ink); line-height:1;}
   .rank-score .pct-label{font-size:10.5px; color:var(--ink-dim); margin-top:3px;}
@@ -506,6 +510,38 @@
       <div class="m-done">🎉</div>
       <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>중복만 확인해서 오늘 밤 우선으로 챙길게요.</p>
       <button class="m-submit" onclick="closeSuggest()">닫기</button>
+    </div>
+  </div>
+</div>
+
+<!-- 오류 제보 모달 -->
+<div class="modal-overlay hidden" id="errorModal" onclick="if(event.target===this)closeError()">
+  <div class="modal">
+    <button class="modal-x" onclick="closeError()" aria-label="닫기">✕</button>
+    <h3 class="modal-title">정보가 틀렸나요? 🛠️</h3>
+    <p class="modal-intro"><b id="erTarget">이름 · 그룹</b>의 정보에 오류가 있으면 알려주세요. 확인해서 바로잡을게요. <b>올바른 값·출처</b>를 함께 적어주시면 훨씬 빨라요.</p>
+    <div id="erForm">
+      <label class="m-label">무엇이 틀렸나요? <span class="req">*</span></label>
+      <select id="erField" class="m-input">
+        <option value="생년월일">생년월일(생일)</option>
+        <option value="활동명">활동명(이름)</option>
+        <option value="소속 그룹">소속 그룹</option>
+        <option value="성별">성별</option>
+        <option value="비실존·중복">비실존 인물 · 중복</option>
+        <option value="기타">기타</option>
+      </select>
+      <label class="m-label">올바른 값 (알면 적어주세요)</label>
+      <input type="text" id="erSuggest" class="m-input" maxlength="60" placeholder="예: 19990507 · 올바른 활동명 등" autocomplete="off">
+      <label class="m-label">근거·출처 (권장)</label>
+      <input type="text" id="erNote" class="m-input" maxlength="120" placeholder="예: 공식 프로필·위키 등 확인할 수 있는 곳" autocomplete="off">
+      <input type="text" id="erHp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="m-submit" id="erSubmit" onclick="submitError()">오류 신고 보내기</button>
+      <p class="m-note">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
+    </div>
+    <div id="erDone" class="hidden">
+      <div class="m-done">🛠️</div>
+      <p class="m-done-msg">고마워요! 잘 받았어요.<br>교차 확인해서 맞으면 바로잡을게요.</p>
+      <button class="m-submit" onclick="closeError()">닫기</button>
     </div>
   </div>
 </div>
@@ -1466,6 +1502,7 @@ function cardHTML(r,i){
           <span class="pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</span></div>
         <div class="rank-meta">${r.relLabel} · ${r.role} · ${r.branchTag}${r.hourNote}</div>
         <div class="rank-reason">${r.reason}</div>
+        <div class="rank-report"><button type="button" class="rep-link" onclick="openError('${encodeURIComponent(r.name)}','${encodeURIComponent(r.group)}')">ⓘ 정보 오류 신고</button></div>
       </div>
       <div class="rank-score"><div class="pct">${r.pct.toFixed(2)}<span style="font-size:13px">%</span></div><div class="pct-label">궁합</div></div>
     </div>`;
@@ -1950,6 +1987,42 @@ function submitSuggest(){
 }
 
 function closeUpdate(){ document.getElementById('updatePopup').classList.add('hidden'); }
+
+// ================= 오류 제보 (기존 제보와 같은 Worker, type:"error") =================
+let _erTarget = { name:"", group:"" };
+function openError(nameEnc, groupEnc){
+  _erTarget = { name: decodeURIComponent(nameEnc), group: decodeURIComponent(groupEnc) };
+  document.getElementById('erTarget').textContent = `${_erTarget.name} · ${_erTarget.group}`;
+  document.getElementById('erForm').classList.remove('hidden');
+  document.getElementById('erDone').classList.add('hidden');
+  const e=document.getElementById('erErr'); if(e) e.remove();
+  document.getElementById('erField').value = '생년월일';
+  document.getElementById('erSuggest').value = '';
+  document.getElementById('erNote').value = '';
+  document.getElementById('errorModal').classList.remove('hidden');
+}
+function closeError(){ document.getElementById('errorModal').classList.add('hidden'); }
+function submitError(){
+  const btn=document.getElementById('erSubmit');
+  if(document.getElementById('erHp').value){ closeError(); return; } // 허니팟
+  const showErr=(msg)=>{ let e=document.getElementById('erErr'); if(!e){ e=document.createElement('p'); e.id='erErr'; e.className='m-err'; btn.after(e);} e.textContent=msg; };
+  // 소프트 레이트리밋 (추가 제보와 공유)
+  const last=+(localStorage.getItem('sg_last')||0), now=Date.now();
+  if(now-last < SUGGEST_COOLDOWN_MS){ const min=Math.ceil((SUGGEST_COOLDOWN_MS-(now-last))/60000); showErr(`방금 제보해주셨어요. 약 ${min}분 뒤에 또 알려주세요 🙂`); return; }
+  const payload={ type:"error", name:_erTarget.name, group:_erTarget.group,
+    field: document.getElementById('erField').value,
+    suggest: document.getElementById('erSuggest').value.trim(),
+    note: document.getElementById('erNote').value.trim(), hp:"" };
+  const done=()=>{ localStorage.setItem('sg_last', String(Date.now()));
+    document.getElementById('erForm').classList.add('hidden');
+    document.getElementById('erDone').classList.remove('hidden'); };
+  if(!SUGGEST_ENDPOINT){ done(); return; }
+  btn.disabled=true; btn.textContent='보내는 중…';
+  fetch(SUGGEST_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(r=>{ if(r.status===429){ showErr('이미 최근에 제보하셨어요. 잠시 뒤 다시 시도해주세요 🙂'); return; } if(!r.ok) throw new Error('bad'); done(); })
+    .catch(()=>showErr('앗, 잠깐 문제가 생겼어요. 잠시 후 다시 시도해주세요.'))
+    .finally(()=>{ btn.disabled=false; btn.textContent='오류 신고 보내기'; });
+}
 
 // ===== 주간 최애 리포트 =====
 // 매칭할 때마다 전체 1위를 적립하고, 일주일 주기로 "내 최애 추천 이유"를 재밌게 보여준다.

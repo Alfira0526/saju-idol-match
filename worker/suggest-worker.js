@@ -4,9 +4,11 @@
  * 정적 GitHub Pages 앱에는 서버가 없어서 IP 기반 레이트리밋·비공개 저장을 할 수 없다.
  * 이 워커가 그 최소한의 백엔드 역할을 한다.
  *
- *   POST /submit            제보 저장 (IP 해시로 1시간 1회 제한 + 이름·그룹 중복 병합)
- *   GET  /suggestions?token=…   루틴이 후보 큐를 읽어감 (요청 횟수 순 정렬)
- *   POST /mark?token=…      루틴이 반영 완료 상태를 기록
+ *   POST /submit            제보 저장. body.type = "add"(신규 인물, 기본) | "error"(오류 신고)
+ *                           add   → sg:{name}|{group}
+ *                           error → er:{name}|{group} (field 표수 + suggest 제안값 + notes 근거)
+ *   GET  /suggestions?token=…&type=add|error   루틴이 후보 큐를 읽어감 (요청 횟수 순 정렬)
+ *   POST /mark?token=…      루틴이 반영 완료 상태 기록 (add→added, error→fixed)
  *
  * KV 네임스페이스 바인딩 이름: SUGGEST_KV
  * 시크릿(wrangler secret put): ADMIN_TOKEN (관리용), IP_SALT (IP 해시 솔트)
@@ -52,10 +54,9 @@ function hourBucket(d) {
   return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}${p(d.getUTCHours())}`;
 }
 
-function normKey(name, group) {
-  const n = (s) => (s || "").trim().toLowerCase().replace(/\s+/g, "");
-  return `sg:${n(name)}|${n(group)}`;
-}
+const normPart = (s) => (s || "").trim().toLowerCase().replace(/\s+/g, "");
+function normKey(name, group) { return `sg:${normPart(name)}|${normPart(group)}`; } // 신규 인물 제보(add)
+function errKey(name, group) { return `er:${normPart(name)}|${normPart(group)}`; } // 오류 제보(error)
 
 const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
 
@@ -83,7 +84,9 @@ export default {
       const group = (body.group || "").toString().trim().slice(0, 40);
       if (!name || !group) return json({ ok: false, error: "missing_fields" }, 400);
 
-      // 레이트리밋: IP 해시 + 현재 UTC 시(hour) 버킷
+      const type = body.type === "error" ? "error" : "add";
+
+      // 레이트리밋: IP 해시 + 현재 UTC 시(hour) 버킷 (add·error 공통)
       const ip = request.headers.get("CF-Connecting-IP") || "0.0.0.0";
       const ipHash = (await sha256Hex(ip + "|" + (env.IP_SALT || "salt"))).slice(0, 24);
       const rlKey = `rl:${ipHash}:${hourBucket(new Date())}`;
@@ -91,15 +94,40 @@ export default {
         return json({ ok: false, error: "rate_limited" }, 429);
       }
 
-      // 정규화된 필드
+      const nowIso = new Date().toISOString();
+      const note = (body.note || "").toString().trim().slice(0, 120);
+
+      // ===== 오류 제보(type=error): er:{name}|{group}, 필드별 표수 + 제안값·근거 누적 =====
+      if (type === "error") {
+        const field = (body.field || "").toString().trim().slice(0, 24);   // 무엇이 틀렸나
+        const suggest = (body.suggest || "").toString().trim().slice(0, 60); // 올바른 값(제안)
+        const key = errKey(name, group);
+        let rec = await env.SUGGEST_KV.get(key, "json");
+        if (rec && rec.status !== "fixed") {
+          rec.count = (rec.count || 1) + 1;
+          rec.lastAt = nowIso;
+          rec.fields = rec.fields || {};
+          if (field) rec.fields[field] = (rec.fields[field] || 0) + 1;
+          if (suggest && rec.suggests.length < 20 && !rec.suggests.includes(suggest)) rec.suggests.push(suggest);
+          if (note && rec.notes.length < 20) rec.notes.push(note);
+        } else if (!rec) {
+          rec = { name, group, count: 1, firstAt: nowIso, lastAt: nowIso, status: "pending",
+                  fields: field ? { [field]: 1 } : {}, suggests: suggest ? [suggest] : [], notes: note ? [note] : [] };
+        } else {
+          rec.count = (rec.count || 1) + 1;
+          rec.lastAt = nowIso; // 이미 fixed면 표수만 참고로 누적
+        }
+        await env.SUGGEST_KV.put(key, JSON.stringify(rec));
+        await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
+        return json({ ok: true, count: rec.count });
+      }
+
+      // ===== 신규 인물 제보(type=add): sg:{name}|{group} =====
       const cat = CATS.includes(body.cat) ? body.cat : "K-idol";
       const gender = ["M", "F"].includes(body.gender) ? body.gender : "";
       const dob = (body.dob || "").toString().replace(/\D/g, "").slice(0, 8);
-      const note = (body.note || "").toString().trim().slice(0, 80);
 
-      // 중복 병합: 같은 이름|그룹이면 count++, 아니면 신규
       const key = normKey(name, group);
-      const nowIso = new Date().toISOString();
       let rec = await env.SUGGEST_KV.get(key, "json");
       if (rec && rec.status !== "added") {
         rec.count = (rec.count || 1) + 1;
@@ -110,7 +138,6 @@ export default {
       } else if (!rec) {
         rec = { name, group, cat, gender, dob, note, count: 1, firstAt: nowIso, lastAt: nowIso, status: "pending" };
       } else {
-        // 이미 반영된(added) 항목에 재제보: count만 참고로 올리되 상태 유지
         rec.count = (rec.count || 1) + 1;
         rec.lastAt = nowIso;
       }
@@ -125,8 +152,10 @@ export default {
       if (url.searchParams.get("token") !== env.ADMIN_TOKEN) {
         return json({ ok: false, error: "unauthorized" }, 401);
       }
-      const status = url.searchParams.get("status") || "pending"; // pending|added|all
-      const list = await env.SUGGEST_KV.list({ prefix: "sg:" });
+      const status = url.searchParams.get("status") || "pending"; // pending|added|fixed|all
+      const type = url.searchParams.get("type") === "error" ? "error" : "add";
+      const prefix = type === "error" ? "er:" : "sg:";
+      const list = await env.SUGGEST_KV.list({ prefix });
       const items = [];
       for (const k of list.keys) {
         const rec = await env.SUGGEST_KV.get(k.name, "json");
@@ -150,10 +179,11 @@ export default {
       } catch {
         return json({ ok: false, error: "bad_json" }, 400);
       }
-      const key = body.key || normKey(body.name, body.group);
+      // key 직접 지정이 우선. 없으면 type(add|error)으로 sg:/er: 키 계산.
+      const key = body.key || (body.type === "error" ? errKey(body.name, body.group) : normKey(body.name, body.group));
       const rec = await env.SUGGEST_KV.get(key, "json");
       if (!rec) return json({ ok: false, error: "not_found" }, 404);
-      rec.status = body.status || "added";
+      rec.status = body.status || (key.startsWith("er:") ? "fixed" : "added");
       rec.markedAt = new Date().toISOString();
       await env.SUGGEST_KV.put(key, JSON.stringify(rec));
       return json({ ok: true, key, status: rec.status });

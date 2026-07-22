@@ -91,8 +91,39 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
 
 ### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
 사용자 제보는 서버리스 인테이크(Cloudflare Worker + KV, [`worker/`](../worker/))에
-쌓인다. **오늘의 태스크가 B(데이터 추가)이거나, 제보 큐에 대기 항목이 있으면 제보를
+쌓인다. 두 종류의 큐가 있다:
+- **오류 제보(error)** — 기존 수록 데이터의 오류 신고. **데이터 품질 = 최우선.**
+  `GET /suggestions?token=…&type=error` 로 읽는다. (아래 *오류 제보 처리* 참고)
+- **추가 제보(add)** — 신규 인물 추가. `GET /suggestions?token=…&type=add`(또는 type 생략).
+
+처리 우선순위: **오류 제보 → 추가 제보 → 그날의 요일 태스크(A/B/C)**.
+**오늘의 태스크가 B(데이터 추가)이거나, 어느 큐든 대기 항목이 있으면 제보를
 일반 후보보다 먼저 반영**한다.
+
+#### 오류 제보 처리 (error queue) — 가장 먼저
+```
+curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>&type=error"
+```
+각 레코드는 `{name, group, fields:{필드:표수}, suggests:[제안값…], notes:[근거…], count}`.
+1. **표수(count·fields) 높은 순**으로 트리아지한다(동일 오류를 여러 명이 신고 = 신빙성↑).
+2. 신고 대상(`name|group`)을 `tools/idols.json`에서 찾아 **원본 값과 대조**한다.
+3. **반드시 웹으로 교차검증**한다. 신고자의 `suggests`(제안값)는 **참고일 뿐 그대로 신뢰하지
+   않는다**(악의적/장난 신고 가능). 공식 프로필 등 **독립 출처로 올바른 값을 확인**한 경우에만 수정.
+   - 확인 결과 **원본이 맞으면**(오신고) 수정하지 말고 `status=fixed`로 표기해 큐에서 정리한다.
+   - 확인 못 하면 **수정하지 말고 `pending`으로 남긴다**(다음 날 재시도).
+4. 검증된 수정만 `idols.json`에 반영(생일/활동명/그룹/성별 정정, 비실존·중복이면 삭제)
+   → `node tools/build.js` → 헤드리스 스모크. **자동 수정 금지: 사람 판단 없이 값을 바꾸지 않는다.**
+   - 참고: **범위·중복·계산 오류는 헬스체크 루틴**이 잡는다. 오류 제보는 **사실 오류**(잘못된
+     생일·이름·소속 등 웹 확인이 필요한 것)를 담당한다.
+5. 반영/오신고 정리한 항목은 완료 표기:
+   ```
+   curl -X POST "https://<worker-url>/mark?token=<ADMIN_TOKEN>" \
+     -H 'Content-Type: application/json' -d '{"key":"<레코드 key>","status":"fixed"}'
+   ```
+6. 데이터가 바뀌었으면 `tools/stats.json`을 갱신한다(total은 실제 수와 일치). 정정은 총원이
+   그대로일 수 있으니 total은 항상 `idols.json` 길이로 재계산한다.
+
+#### 추가 제보 처리 (add queue)
 
 1. 큐를 읽는다 (URL·토큰은 세션에 전달됨):
    ```
