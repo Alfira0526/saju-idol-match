@@ -553,5 +553,12 @@
 {"name":"샤오잔","group":"샤오잔","agency":"중국 배우","gender":"M","dob":"1991-10-05","cat":"C-actor"},
 {"name":"양양","group":"양양","agency":"중국 배우","gender":"M","dob":"1991-09-09","cat":"C-actor"},
 {"name":"니시노 나나세","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1994-05-25","cat":"J-idol"},
-{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"}
+{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"},
+{"name": "이지함", "group": "A.C.E", "agency": "기타", "gender": "M", "dob": "1993-02-28", "cat": "K-idol"},
+{"name": "와우", "group": "A.C.E", "agency": "기타", "gender": "M", "dob": "1993-05-15", "cat": "K-idol"},
+{"name": "박준희", "group": "A.C.E", "agency": "기타", "gender": "M", "dob": "1994-06-02", "cat": "K-idol"},
+{"name": "김병관", "group": "A.C.E", "agency": "기타", "gender": "M", "dob": "1996-08-13", "cat": "K-idol"},
+{"name": "강유찬", "group": "A.C.E", "agency": "기타", "gender": "M", "dob": "1997-12-31", "cat": "K-idol"},
+{"name": "from20", "group": "빅스타", "agency": "기타", "gender": "M", "dob": "1992-02-15", "cat": "K-idol"},
+{"name": "hellogloom", "group": "임팩트", "agency": "기타", "gender": "M", "dob": "1998-05-28", "cat": "K-idol"}
 ]
