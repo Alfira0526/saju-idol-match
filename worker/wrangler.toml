@@ -1,0 +1,13 @@
+name = "saju-suggest"
+main = "suggest-worker.js"
+compatibility_date = "2024-11-01"
+
+# KV 네임스페이스 바인딩.
+# 아래 id 값은 `wrangler kv namespace create SUGGEST_KV` 실행 후 출력되는 값으로 교체하세요.
+[[kv_namespaces]]
+binding = "SUGGEST_KV"
+id = "REPLACE_WITH_YOUR_KV_ID"
+
+# 시크릿(ADMIN_TOKEN, IP_SALT)은 toml에 적지 말고 아래 명령으로 등록하세요.
+#   wrangler secret put ADMIN_TOKEN
+#   wrangler secret put IP_SALT

@@ -82,6 +82,53 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
   language switcher + English strings this run; otherwise extend translations
   incrementally. Geo/browser-language detection may pick the default language.
 
+### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
+사용자 제보는 서버리스 인테이크(Cloudflare Worker + KV, [`worker/`](../worker/))에
+쌓인다. **오늘의 태스크가 B(데이터 추가)이거나, 제보 큐에 대기 항목이 있으면 제보를
+일반 후보보다 먼저 반영**한다.
+
+1. 큐를 읽는다 (URL·토큰은 세션에 전달됨):
+   ```
+   curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>"
+   ```
+   응답은 **요청 횟수(count) 많은 순**으로 정렬돼 있다. 큐가 비었거나 워커 URL이
+   아직 없으면 이 단계를 건너뛰고 평소 태스크를 수행한다.
+2. 각 제보에 대해:
+   - `tools/idols.json` 에 **이미 있으면**(이름|그룹 중복) 건너뛰고, 워커에
+     `status=added` 로 표기(아래 5번)해 큐에서 정리한다.
+   - **실존 인물 + 확실한 양력 생일**을 웹으로 교차 확인한다. 제보의 `dob` 는
+     참고용일 뿐 **그대로 신뢰하지 않는다**(오타·장난 가능). 확인 못 하면 반영하지
+     않고 `pending` 으로 남겨둔다(다음 날 재시도).
+   - 캐릭터(가상 인물)·연도 없는 생일은 제외.
+3. 확인된 항목만 `tools/idols.json` 에 추가 → `node tools/build.js` → 헤드리스
+   스모크 테스트. **자동 커밋 금지**: 빌드·테스트 통과가 반영의 전제.
+4. **`tools/stats.json` 갱신**(배너 숫자 + 게임 시작 팝업 공지의 소스):
+   ```json
+   {
+     "total": <idols.json 총 인원 수>,
+     "addedRecent": [
+       { "date": "YYYY-MM-DD", "text": "<그룹/인물> 추가", "count": <이번에 추가한 수> }
+     ],
+     "updatedAt": "YYYY-MM-DD"
+   }
+   ```
+   - `total` 은 실제 `idols.json` 길이와 **정확히 일치**시킨다(과장 금지).
+   - `addedRecent` 앞쪽에 오늘 항목을 **prepend**한다. 앱 팝업은 **최근 3일치만**
+     노출하므로 4일보다 오래된 항목은 정리해도 된다(선택).
+   - `text` 는 팝업에 그대로 뜬다(토스 기획자 톤, 담백하게). 예: `"엑스디너리히어로즈 추가"`.
+   - 날짜(UTC 실행 기준)를 코드로 만들지 말고, 세션에서 실제 오늘 날짜를 확인해 넣는다.
+5. 반영한 제보는 워커에 완료 표기:
+   ```
+   curl -X POST "https://<worker-url>/mark?token=<ADMIN_TOKEN>" \
+     -H 'Content-Type: application/json' \
+     -d '{"name":"<이름>","group":"<그룹>","status":"added"}'
+   ```
+   (`added` 표기된 항목은 재제보돼도 다시 큐에 오르지 않는다.)
+
+> 워커 URL/토큰이 아직 설정되지 않았다면(사용자가 배포 전) 제보 단계는 전부
+> 건너뛰고 `addedRecent` 만 평소 추가분으로 채운다. 인테이크 배포는
+> [`worker/README.md`](../worker/README.md) 참고.
+
 ### Rules every run must follow
 1. Work on branch `claude/idol-saju-matching-app-752fy3`. `git fetch` + `pull`
    first. If its PR was already merged, restart from the default branch.
@@ -90,3 +137,5 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
 4. **Commit & push only if both pass.** On any failure, do NOT push — stop and
    report what broke.
 5. One small increment per day. Never duplicate existing groups/members.
+6. 제보 큐가 있으면 일반 후보보다 **먼저** 처리하고, 반영분은 `stats.json` 과
+   워커 `status` 에 반드시 기록한다(위 *제보 우선 반영*).

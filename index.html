@@ -103,7 +103,7 @@
   button.calc:hover{transform:translateY(-1px); box-shadow:0 16px 34px -12px #ff4d97cc; filter:brightness(1.06);}
   button.calc:active{transform:translateY(0);}
 
-  .hidden{display:none;}
+  .hidden{display:none !important;}
   .daymaster{
     display:flex; align-items:center; gap:18px; padding:22px 24px;
     border-radius:14px; border:1px solid #ff4d9726;
@@ -270,6 +270,63 @@
   .rest-row .r-rel{color:var(--ink-dim); font-size:11.5px;}
   .rest-row .r-pct{color:var(--gold); font-size:12.5px; width:44px; text-align:right; flex:none;}
 
+  .report-banner{
+    display:flex; align-items:center; gap:14px; margin:0 0 22px; padding:14px 18px;
+    border-radius:14px; border:1px solid #ff4d9733;
+    background:linear-gradient(120deg,#2a1247,#1a1236);
+    box-shadow:0 12px 34px -26px #ff2e8a88;
+  }
+  .rb-text{flex:1; font-size:13.5px; color:var(--ink); line-height:1.5;}
+  .rb-count{display:block; font-size:11.5px; color:var(--ink-dim); margin-top:2px;}
+  .rb-btn{
+    flex:none; padding:10px 16px; border-radius:999px; border:none; cursor:pointer;
+    background:var(--grad); color:#fff; font-family:'Jua','Noto Sans KR',sans-serif; font-size:14px;
+    box-shadow:0 8px 20px -12px #ff4d97cc;
+  }
+  .rb-btn:hover{filter:brightness(1.07);}
+
+  .modal-overlay{
+    position:fixed; inset:0; z-index:60; display:flex; align-items:center; justify-content:center;
+    background:#08061199; backdrop-filter:blur(3px); padding:20px;
+  }
+  .modal{
+    width:100%; max-width:440px; max-height:88vh; overflow-y:auto; position:relative;
+    background:linear-gradient(180deg,#211642,#171029); border:1px solid #ff4d9733;
+    border-radius:18px; padding:26px 24px; box-shadow:0 30px 80px -30px #000;
+    animation:cardIn .28s ease forwards;
+  }
+  .modal-x{position:absolute; top:14px; right:14px; width:30px; height:30px; border-radius:50%;
+    border:1px solid #ffffff1c; background:#170e2e; color:var(--ink-dim); cursor:pointer; font-size:13px;}
+  .modal-x:hover{color:var(--ink); border-color:var(--gold);}
+  .modal-title{font-family:'Jua','Noto Sans KR',sans-serif; font-size:21px; font-weight:400; margin:0 0 8px;}
+  .modal-intro{font-size:13.5px; color:var(--ink-dim); line-height:1.6; margin:0 0 16px;}
+  .m-label{display:block; font-size:12px; color:var(--ink-dim); margin:12px 0 5px;}
+  .req{color:var(--gold);}
+  .m-input{
+    width:100%; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
+    border-radius:9px; padding:10px 12px; font-size:14.5px; font-family:inherit; appearance:none;
+  }
+  .m-input:focus{outline:none; border-color:var(--gold);}
+  .m-input::placeholder{color:#6b5f96;}
+  .m-row{display:flex; gap:12px;}
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; opacity:0;}
+  .m-submit{
+    width:100%; margin-top:18px; padding:13px; border-radius:10px; border:none; cursor:pointer;
+    background:var(--grad); color:#fff; font-family:'Jua','Noto Sans KR',sans-serif; font-size:16px;
+    box-shadow:0 10px 26px -12px #ff4d97aa;
+  }
+  .m-submit:hover{filter:brightness(1.06);}
+  .m-submit:disabled{opacity:.5; cursor:default; filter:none;}
+  .m-note{font-size:11.5px; color:var(--ink-dim); text-align:center; margin:12px 0 0; line-height:1.5;}
+  .m-err{color:var(--hwa); font-size:12.5px; margin:10px 0 0; text-align:center;}
+  .m-done{font-size:44px; text-align:center; margin:8px 0 4px;}
+  .m-done-msg{font-size:15px; color:var(--ink); text-align:center; line-height:1.6; margin:0 0 4px;}
+  .up-list{margin:4px 0 6px;}
+  .up-item{display:flex; gap:10px; padding:10px 12px; border-radius:10px; background:#170e2e;
+    border:1px solid #ffffff12; margin-bottom:8px; font-size:13.5px;}
+  .up-item .up-date{color:var(--gold); flex:none; font-size:12.5px;}
+  .up-item .up-text{color:var(--ink);}
+
   .disclaimer{
     margin-top:44px; padding:20px 22px; border-radius:12px;
     background:#170e2e; border:1px dashed #ffffff26; font-size:12.5px; color:var(--ink-dim);
@@ -287,6 +344,11 @@
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
   <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 <span id="idolCount">110</span>인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 대형소속사(HYBE·SM·YG·JYP·기타)별로도 볼 수 있어요. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
+
+  <div class="report-banner" id="reportBanner">
+    <div class="rb-text">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀<span class="rb-count" id="rbCount"></span></div>
+    <button class="rb-btn" onclick="openSuggest()">제보하기</button>
+  </div>
 
   <div class="panel">
     <div class="row">
@@ -371,6 +433,61 @@
   </div>
 
   <footer>모든 계산은 브라우저 내에서만 실행되며 입력한 생년월일은 서버로 전송되지 않습니다.</footer>
+</div>
+
+<!-- 제보 모달 -->
+<div class="modal-overlay hidden" id="suggestModal" onclick="if(event.target===this)closeSuggest()">
+  <div class="modal">
+    <button class="modal-x" onclick="closeSuggest()" aria-label="닫기">✕</button>
+    <h3 class="modal-title">누구를 추가할까요? ✦</h3>
+    <p class="modal-intro">추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. (실존 인물만 가능해요.)</p>
+    <div id="suggestForm">
+      <label class="m-label">이름 <span class="req">*</span></label>
+      <input type="text" id="sgName" class="m-input" maxlength="40" placeholder="예: 하츠네" autocomplete="off">
+      <label class="m-label">그룹 / 소속 <span class="req">*</span></label>
+      <input type="text" id="sgGroup" class="m-input" maxlength="40" placeholder="예: NewJeans (솔로·배우면 그대로)" autocomplete="off">
+      <div class="m-row">
+        <div style="flex:1">
+          <label class="m-label">카테고리</label>
+          <select id="sgCat" class="m-input">
+            <option value="K-idol">한국 아이돌</option>
+            <option value="J-idol">일본 아이돌</option>
+            <option value="C-actor">중국 배우</option>
+            <option value="US-actor">미국 배우</option>
+          </select>
+        </div>
+        <div style="flex:1">
+          <label class="m-label">성별</label>
+          <select id="sgGender" class="m-input">
+            <option value="">모름</option><option value="F">여</option><option value="M">남</option>
+          </select>
+        </div>
+      </div>
+      <label class="m-label">양력 생년월일 (알면 좋아요)</label>
+      <input type="tel" id="sgDob" class="m-input" inputmode="numeric" maxlength="8" placeholder="예: 20040507 · 모르면 비워두세요" autocomplete="off">
+      <label class="m-label">한마디 (선택)</label>
+      <input type="text" id="sgNote" class="m-input" maxlength="80" placeholder="소속사·추천 이유 등" autocomplete="off">
+      <input type="text" id="sgHp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="m-submit" id="sgSubmit" onclick="submitSuggest()">제보 보내기</button>
+      <p class="m-note">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
+    </div>
+    <div id="suggestDone" class="hidden">
+      <div class="m-done">🎉</div>
+      <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>중복만 확인해서 오늘 밤 우선으로 챙길게요.</p>
+      <button class="m-submit" onclick="closeSuggest()">닫기</button>
+    </div>
+  </div>
+</div>
+
+<!-- 업데이트 팝업 -->
+<div class="modal-overlay hidden" id="updatePopup" onclick="if(event.target===this)closeUpdate()">
+  <div class="modal">
+    <button class="modal-x" onclick="closeUpdate()" aria-label="닫기">✕</button>
+    <h3 class="modal-title" id="upTitle">따끈한 새 얼굴이 왔어요 ✨</h3>
+    <p class="modal-intro" id="upLead"></p>
+    <div id="upList" class="up-list"></div>
+    <button class="m-submit" onclick="closeUpdate()">다시 매칭해보기</button>
+  </div>
 </div>
 
 <script>
@@ -1701,6 +1818,82 @@ async function shareResult(){
     hint.textContent = "이미지를 저장했습니다";
   }, "image/png");
 }
+
+// ================= 제보 & 업데이트 공지 =================
+// 서버리스(Cloudflare Worker) 제보 엔드포인트. 배포 후 URL을 여기에 넣으면 활성화됩니다.
+const SUGGEST_ENDPOINT = "";           // 예: "https://saju-suggest.<your>.workers.dev/submit"
+const SUGGEST_COOLDOWN_MS = 60*60*1000; // 소프트 제한: 1시간
+
+function openSuggest(){
+  document.getElementById('suggestForm').classList.remove('hidden');
+  document.getElementById('suggestDone').classList.add('hidden');
+  const e=document.getElementById('sgErr'); if(e) e.remove();
+  document.getElementById('suggestModal').classList.remove('hidden');
+  document.getElementById('sgName').focus();
+}
+function closeSuggest(){ document.getElementById('suggestModal').classList.add('hidden'); }
+
+function submitSuggest(){
+  const name=document.getElementById('sgName').value.trim();
+  const group=document.getElementById('sgGroup').value.trim();
+  const hp=document.getElementById('sgHp').value;
+  const btn=document.getElementById('sgSubmit');
+  const showErr=(msg)=>{ let e=document.getElementById('sgErr'); if(!e){ e=document.createElement('p'); e.id='sgErr'; e.className='m-err'; btn.after(e);} e.textContent=msg; };
+  if(hp){ closeSuggest(); return; } // 허니팟(봇) → 조용히 종료
+  if(!name || !group){ showErr('이름과 그룹은 꼭 알려주세요 🙏'); return; }
+
+  // 소프트 레이트리밋 (브라우저 기준)
+  const last=+(localStorage.getItem('sg_last')||0), now=Date.now();
+  if(now-last < SUGGEST_COOLDOWN_MS){
+    const min=Math.ceil((SUGGEST_COOLDOWN_MS-(now-last))/60000);
+    showErr(`방금 제보해주셨어요. 약 ${min}분 뒤에 또 알려주세요 🙂`); return;
+  }
+
+  const payload={ name, group,
+    cat: document.getElementById('sgCat').value,
+    gender: document.getElementById('sgGender').value,
+    dob: document.getElementById('sgDob').value.replace(/\D/g,'').slice(0,8),
+    note: document.getElementById('sgNote').value.trim(), hp:"" };
+
+  const done=()=>{ localStorage.setItem('sg_last', String(Date.now()));
+    document.getElementById('suggestForm').classList.add('hidden');
+    document.getElementById('suggestDone').classList.remove('hidden'); };
+
+  if(!SUGGEST_ENDPOINT){ // 엔드포인트 미연결: 로컬 기록 후 감사 메시지(수집은 배포 후)
+    done(); return;
+  }
+  btn.disabled=true; btn.textContent='보내는 중…';
+  fetch(SUGGEST_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(r=>{
+      if(r.status===429){ showErr('이미 최근에 제보하셨어요. 잠시 뒤 다시 시도해주세요 🙂'); return; }
+      if(!r.ok) throw new Error('bad');
+      done();
+    })
+    .catch(()=>showErr('앗, 잠깐 문제가 생겼어요. 잠시 후 다시 시도해주세요.'))
+    .finally(()=>{ btn.disabled=false; btn.textContent='제보 보내기'; });
+}
+
+function closeUpdate(){ document.getElementById('updatePopup').classList.add('hidden'); }
+
+// 배너 총원 + 업데이트 팝업(최근 3일 추가분만)
+(function initReportUI(){
+  fetch('tools/stats.json?t='+Date.now()).then(r=>r.json()).then(st=>{
+    if(st && st.total){ const c=document.getElementById('rbCount'); if(c) c.textContent=`지금 ${st.total.toLocaleString()}명과 함께하고 있어요`; }
+    const rec = Array.isArray(st.addedRecent) ? st.addedRecent : [];
+    const cut = Date.now() - 3*24*60*60*1000; // 최근 3일
+    const fresh = rec.filter(x=>{ const t=Date.parse((x.date||'').replace(/\./g,'-')); return !isNaN(t) && t>=cut; });
+    if(!fresh.length) return;
+    // 마지막으로 본 업데이트 이후 새 게 있을 때만
+    const latest = fresh.map(x=>x.date).sort().pop();
+    if(localStorage.getItem('upd_seen')===latest) return;
+    const list=document.getElementById('upList');
+    list.innerHTML = fresh.map(x=>`<div class="up-item"><span class="up-date">${(x.date||'').replace(/-/g,'.')}</span><span class="up-text">${x.text||''}</span></div>`).join("");
+    const n = fresh.reduce((s,x)=>s+(x.count||0),0);
+    document.getElementById('upLead').textContent = n ? `요 며칠 사이 ${n}명이 새로 합류했어요. 혹시 찾던 그 사람일지도 몰라요.` : '새 얼굴이 도착했어요. 혹시 찾던 그 사람일지도 몰라요.';
+    document.getElementById('updatePopup').classList.remove('hidden');
+    localStorage.setItem('upd_seen', latest);
+  }).catch(()=>{});
+})();
 </script>
 </body>
 </html>
