@@ -1,5 +1,9 @@
 # tools/ — data pipeline & daily update playbook
 
+> 프로젝트 개요는 루트 [`README.md`](../README.md), 점수 이론은
+> [`docs/SCORING.md`](../docs/SCORING.md), 데이터셋 상세는
+> [`docs/DATA.md`](../docs/DATA.md) 를 참고하세요.
+
 ## Source of truth
 `tools/idols.json` is the canonical idol dataset. Each entry:
 
