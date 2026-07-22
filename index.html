@@ -363,10 +363,11 @@
 
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
-  <p class="sub">생년월일(과 태어난 시각)을 입력하면 일간(日干)·일지(日支)를 계산하고, 오행 상생상극과 지지(地支) 궁합만으로 아이돌 <span id="idolCount">110</span>인 중 당신과 가장 잘 맞는 '덕질 상대'를 순위로 추천합니다. 대형소속사(HYBE·SM·YG·JYP·기타)별로도 볼 수 있어요. 아이돌 개인에 대한 사전 정보는 쓰지 않으며, 시각은 몰라도 됩니다.</p>
+  <p class="sub"><b>지금 <span id="groupCount">91</span>개 그룹 · 총 <span id="idolCount">555</span>명</b>의 아이돌과 궁합을 겨뤄볼 수 있어요. <b>데이터는 매일 늘어나는 중!</b> 📈<br>
+  생년월일(과 태어난 시각)만 넣으면 일간(日干)·일지(日支)를 계산해 <b>오행 상생상극·지지(地支) 궁합만으로</b> 당신과 가장 잘 맞는 '덕질 최애'를 순위로 뽑아드려요. 소속사(HYBE·SM·YG·JYP·기타)·성별로도 볼 수 있고, 아이돌 사전 정보 없이 <b>오직 사주로만</b> 골라요. 시각은 몰라도 괜찮아요.</p>
 
   <div class="report-banner" id="reportBanner">
-    <div class="rb-text">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀<span class="rb-count" id="rbCount"></span></div>
+    <div class="rb-text">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀</div>
     <button class="rb-btn" onclick="openSuggest()">제보하기</button>
   </div>
 
@@ -1548,8 +1549,12 @@ function toggleRest(){
   }
 })();
 
-// 아이돌 총원 표시
-(function(){ const el=document.getElementById('idolCount'); if(el) el.textContent=IDOLS.length; })();
+// 아이돌 총원·그룹 수 표시 (매일 데이터가 늘어남)
+(function(){
+  const ic=document.getElementById('idolCount'); if(ic) ic.textContent=IDOLS.length;
+  const gc=document.getElementById('groupCount');
+  if(gc) gc.textContent=new Set(IDOLS.map(r=>r[1])).size;
+})();
 
 // 생년월일 입력: 숫자만 허용·8자리 제한, Enter로 계산
 // 모바일 한글 IME 조합 중에는 값을 건드리지 않아야 입력이 씹히지 않는다.
