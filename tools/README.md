@@ -88,6 +88,17 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
   then other regions. If no i18n scaffolding exists yet, add a minimal, safe
   language switcher + English strings this run; otherwise extend translations
   incrementally. Geo/browser-language detection may pick the default language.
+  - **줄바꿈·가독성 유의(중요).** 번역할 때 문장이 어색하게 끊기지 않게 한다.
+    - 언어별 자연스러운 줄바꿈 규칙을 쓴다: **CJK(한·중·일)는 `word-break:keep-all`**
+      (어절 단위 줄바꿈), 라틴 계열은 단어 단위 기본값. 지금 상단 소개문(`.sub`)이
+      이 방식으로 되어 있으니 참고.
+    - **고유어구·수치·따옴표 구절**(예: 그룹 수·인원, 'OO' 같은 강조구)은 줄 사이에서
+      쪼개지지 않게 `.nowrap`(`white-space:nowrap`)으로 묶는다. 번역문에서도 대응 어구를
+      똑같이 묶는다.
+    - **하드코딩된 `<br>` 남용 금지.** 특정 언어·화면 폭에서 어색해진다. 꼭 필요한 곳만
+      쓰고 나머지는 CSS 줄바꿈에 맡긴다. 기존 `<br>` 위치가 번역 언어에서 어색하면 조정한다.
+    - 번역문이 길어져 **버튼·배지·카드가 넘치거나 잘리지 않는지** 헤드리스로 확인한다
+      (특히 CTA·성별 버튼·소속사 버튼).
 
 ### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
 사용자 제보는 서버리스 인테이크(Cloudflare Worker + KV, [`worker/`](../worker/))에

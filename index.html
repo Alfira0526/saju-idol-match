@@ -75,8 +75,10 @@
   @keyframes holo{ to{ background-position:300% 50%; } }
   @media (prefers-reduced-motion: reduce){ h1{ animation:none; } }
   .sub{color:#d7cff0; font-size:15px; line-height:1.66; max-width:56ch; margin:0 0 36px;
-    padding-left:var(--edge-pad); padding-right:var(--edge-pad);}
+    padding-left:var(--edge-pad); padding-right:var(--edge-pad);
+    word-break:keep-all; overflow-wrap:break-word;} /* 한글은 어절 단위로 줄바꿈 */
   .sub b{color:var(--ink); font-weight:700;}
+  .nowrap{white-space:nowrap;} /* 고유어구·수치가 줄 사이에서 쪼개지지 않게 */
 
   .panel{
     background:linear-gradient(180deg, var(--panel), var(--panel-2));
@@ -372,7 +374,7 @@
   <div class="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1>사주 궁합 아이돌 매칭</h1>
   <p class="sub"><b>내 사주랑 제일 잘 맞는 아이돌은 누구일까?</b> 🔮<br>
-  생년월일(·태어난 시각·성별)만 있으면 매일 늘어나는 <b><span id="groupCount">91</span>개 그룹 · 총 <span id="idolCount">555</span>명</b> 중에서 오행 상생상극·지지(地支) 궁합, 그리고 <b>'이성 인연'</b>까지 따져 당신의 '덕질 최애'를 순위로 찾아드려요. 사전 정보 없이 순수 사주로만.</p>
+  생년월일(·태어난 시각·성별)만 있으면 매일 늘어나는 <b class="nowrap"><span id="groupCount">91</span>개 그룹 · 총 <span id="idolCount">555</span>명</b> 중에서 오행 상생상극·지지(地支) 궁합, 그리고 <b class="nowrap">‘이성 인연’</b>까지 따져 당신의 <span class="nowrap">‘덕질 최애’</span>를 순위로 찾아드려요. 사전 정보 없이 순수 사주로만.</p>
 
   <div class="report-banner" id="reportBanner">
     <div class="rb-text">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀</div>
@@ -400,7 +402,7 @@
       </div>
     </div>
     <div class="toggle-note">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.</div>
-    <button class="calc" onclick="runCalc()">계산하기</button>
+    <button class="calc" onclick="runCalc()">내 최애 찾기</button>
   </div>
 
   <div id="result" class="hidden">
