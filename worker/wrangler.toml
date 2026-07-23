@@ -8,6 +8,12 @@ compatibility_date = "2024-11-01"
 binding = "SUGGEST_KV"
 id = "REPLACE_WITH_YOUR_KV_ID"
 
-# 시크릿(ADMIN_TOKEN, IP_SALT)은 toml에 적지 말고 아래 명령으로 등록하세요.
-#   wrangler secret put ADMIN_TOKEN
-#   wrangler secret put IP_SALT
+# GitHub 미러링 대상(제보를 저장소 파일로 커밋 → 루틴이 egress 없이 로컬로 읽음).
+[vars]
+GH_REPO = "Alfira0526/saju-idol-match"
+GH_BRANCH = "claude/idol-saju-matching-app-752fy3"
+
+# 시크릿은 toml에 적지 말고 아래 명령으로 등록하세요.
+#   wrangler secret put ADMIN_TOKEN   # 관리용 토큰
+#   wrangler secret put IP_SALT       # IP 해시 솔트
+#   wrangler secret put GH_TOKEN      # GitHub fine-grained PAT(contents:read&write) — 미러링용

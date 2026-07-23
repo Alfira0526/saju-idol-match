@@ -60,6 +60,59 @@ function errKey(name, group) { return `er:${normPart(name)}|${normPart(group)}`;
 
 const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
 
+// ===== GitHub 미러링 =====
+// 루틴 실행 환경이 워커에 직접 접속하지 못하는 경우(조직 egress 정책)를 위해, 접수한 제보를
+// 저장소 파일(tools/inbox.json · tools/error-inbox.json)에 커밋해 둔다. 루틴은 저장소를 이미
+// 클론하고 있으므로 이 파일을 '로컬로' 읽어 처리한다 → egress 차단과 무관하게 동작.
+// 필요한 워커 설정: 시크릿 GH_TOKEN(fine-grained PAT, contents:read&write), 변수 GH_REPO·GH_BRANCH.
+function b64encodeUtf8(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return btoa(bin);
+}
+function b64decodeUtf8(b64) {
+  const bin = atob((b64 || "").replace(/\n/g, ""));
+  const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+// path 파일(JSON 배열)에 rec 을 key 기준 upsert. sha 충돌(409) 시 재시도. GH_TOKEN 없으면 skip.
+async function mirrorToRepo(env, path, rec) {
+  if (!env.GH_TOKEN) return { ok: false, skipped: true };
+  const repo = env.GH_REPO || "Alfira0526/saju-idol-match";
+  const branch = env.GH_BRANCH || "claude/idol-saju-matching-app-752fy3";
+  const api = `https://api.github.com/repos/${repo}/contents/${path}`;
+  const headers = {
+    Authorization: `Bearer ${env.GH_TOKEN}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "saju-suggest-worker",
+  };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let sha, arr = [];
+    const g = await fetch(`${api}?ref=${encodeURIComponent(branch)}`, { headers });
+    if (g.status === 200) {
+      const j = await g.json();
+      sha = j.sha;
+      try { arr = JSON.parse(b64decodeUtf8(j.content)) || []; } catch { arr = []; }
+    } else if (g.status !== 404) {
+      return { ok: false, status: g.status };
+    }
+    const i = arr.findIndex((x) => x && x.key === rec.key);
+    if (i >= 0) arr[i] = rec; else arr.push(rec);
+    const body = {
+      message: `chore(inbox): ${rec.key}`,
+      content: b64encodeUtf8(JSON.stringify(arr, null, 2) + "\n"),
+      branch,
+    };
+    if (sha) body.sha = sha;
+    const p = await fetch(api, { method: "PUT", headers: { ...headers, "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (p.ok) return { ok: true };
+    if (p.status === 409) continue; // sha 경쟁 → 재시도
+    return { ok: false, status: p.status };
+  }
+  return { ok: false, status: 409 };
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -119,6 +172,7 @@ export default {
         }
         await env.SUGGEST_KV.put(key, JSON.stringify(rec));
         await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
+        try { await mirrorToRepo(env, "tools/error-inbox.json", { key, ...rec }); } catch (e) {}
         return json({ ok: true, count: rec.count });
       }
 
@@ -143,6 +197,7 @@ export default {
       }
       await env.SUGGEST_KV.put(key, JSON.stringify(rec));
       await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
+      try { await mirrorToRepo(env, "tools/inbox.json", { key, ...rec }); } catch (e) {}
 
       return json({ ok: true, count: rec.count });
     }

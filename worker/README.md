@@ -104,19 +104,32 @@ const SUGGEST_ENDPOINT = "https://saju-suggest.○○○.workers.dev/submit";
 이 두 값을 저에게(또는 루틴 세션에) 알려주시면 루틴이 자동으로 제보를 우선 반영합니다
 (흐름: [`tools/README.md`](../tools/README.md) 의 *제보 우선 반영*).
 
-### ⚠️ 9. 루틴 실행 환경의 네트워크(egress) 요건 — 중요
-루틴은 Claude Code 클라우드 환경에서 실행됩니다. **그 환경의 조직 egress 정책이 외부 HTTPS를
-차단하면**(관측됨: 워커·일반 사이트 `curl` 이 HTTP 000 으로 실패), 루틴이 **워커 큐를 읽지 못해
-제보가 반영되지 않습니다.**
+### ⚠️ 9. GitHub 미러링 — 루틴이 egress 없이 제보를 읽게 하기 (중요)
+루틴은 Claude Code 클라우드 환경에서 돌고, 그 환경은 조직 egress 정책상 **워커(workers.dev)에
+직접 접속하지 못할 수 있습니다**(관측됨: `curl` HTTP 000). 그래서 워커가 접수한 제보를 **GitHub
+저장소 파일로 미러링**하고, 루틴은 그 파일을 **로컬로 읽습니다**(egress 불필요).
 
-- **제보 파이프라인을 켜려면** 환경 네트워크 정책이 최소 `saju-suggest.<...>.workers.dev`
-  아웃바운드를 허용해야 합니다. 정책은 컨테이너 안에서 바꿀 수 없고(우회 금지),
-  [Claude Code on the web 문서](https://code.claude.com/docs/en/claude-code-on-the-web)의
-  네트워크 정책 설정에서 완화하거나, egress가 열린 환경을 사용하세요.
-- **차단 상태여도** 루틴은 제보 큐만 건너뛰고 나머지 데이터 작업(Task A/B/C)은
-  `WebSearch`(호스티드, egress 우회) 기반으로 정상 수행합니다.
-- 정책 변경이 어렵다면 **인테이크를 GitHub 기반(Issues)으로 전환**하는 대안이 있습니다
-  (github.com 은 대개 허용되어 차단 환경에서도 동작).
+워커는 제보 접수 시 다음 파일을 GitHub Contents API로 갱신합니다:
+- `tools/inbox.json` — 추가 제보(add)
+- `tools/error-inbox.json` — 오류 제보(error)
+
+**설정(한 번만):**
+1. **GitHub Fine-grained PAT 발급** — <https://github.com/settings/personal-access-tokens>
+   → *Generate new token* → **Repository access**: `Alfira0526/saju-idol-match` 만 선택
+   → **Permissions → Repository → Contents: Read and write** → 생성 후 토큰 복사.
+2. **워커에 시크릿/변수 등록**(대시보드 또는 CLI):
+   - Secret **`GH_TOKEN`** = 위 PAT
+   - Variable **`GH_REPO`** = `Alfira0526/saju-idol-match` (기본값 내장, 달라지면 지정)
+   - Variable **`GH_BRANCH`** = `claude/idol-saju-matching-app-752fy3` (기본값 내장)
+   대시보드: 워커 → **Settings → Variables and Secrets** → Secret로 `GH_TOKEN`, Text로 `GH_REPO`/`GH_BRANCH` 추가 → 재배포.
+   CLI: `wrangler secret put GH_TOKEN` (GH_REPO/GH_BRANCH는 `wrangler.toml`의 `[vars]`에 이미 있음).
+3. 등록 후 앱에서 제보를 한 번 보내면 `tools/inbox.json`(또는 `error-inbox.json`)에 커밋이 생깁니다.
+
+**GH_TOKEN 미설정 시**: 워커는 미러링만 조용히 건너뛰고 접수/KV는 정상 동작합니다(폼은 계속 됩니다).
+단 그 경우 루틴이 제보를 볼 수 없으니, 제보 반영을 원하면 PAT를 반드시 등록하세요.
+
+> 미러링을 안 쓰고 싶다면(환경 egress가 열려 있어 워커에 직접 접속 가능하면),
+> 정책 문서: [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web).
 
 ---
 

@@ -102,66 +102,49 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
 
 ### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
 
-> **⚠️ 네트워크(egress) 주의 — 반드시 읽을 것.**
-> 실행 환경에 따라 조직 egress 정책이 외부 HTTPS를 차단할 수 있다(워커·일반 사이트 접근 불가).
-> - **워커 `curl`은 best-effort로.** `curl -sS -m 10 --fail "…"` 로 호출하고, **실패하면
->   (HTTP 000/비200/연결오류) "워커 접근 불가 → 제보 큐 이번엔 건너뜀"을 기록하고 그대로
->   Task A/B/C로 진행**한다. 워커 실패가 실행 전체를 중단시키면 안 된다. 절대 우회(다른
->   프록시·IP)하지 말 것(정책 위반).
-> - **웹 조사·검증은 `WebSearch` 툴을 쓴다.** 이 환경에서 `WebFetch`/`curl`로 임의 사이트
->   접속은 차단될 수 있으나 **`WebSearch`(호스티드)는 동작**한다. 생일·멤버·오류 교차검증은
->   WebSearch로 한다.
-> - 마지막 요약에 **워커 접근 가능/차단 여부**를 한 줄 남긴다(사용자가 정책 조정 필요를 인지).
-> - 제보 큐가 차단돼도 Task A/B/C(WebSearch 기반)는 정상 수행·커밋한다.
+> **제보의 소스 = 저장소 파일(로컬).** 워커가 접수한 제보를 GitHub에 미러링해 두므로
+> **루틴은 워커에 접속하지 않는다.** `git pull` 후 아래 파일을 **로컬로 읽는다**(egress 불필요):
+> - `tools/inbox.json` — 추가 제보(add) 목록. 각 항목 `{key, name, group, cat, gender, dob, note, count, status, …}`
+> - `tools/error-inbox.json` — 오류 제보(error) 목록. 각 항목 `{key, name, group, fields:{필드:표수}, suggests:[…], notes:[…], count, status, …}`
+> - `tools/inbox-done.json` — **루틴이 처리 완료한 key 목록**(이 파일만 루틴이 쓴다). 여기 든 key는 건너뛴다.
+>
+> **웹 조사·검증은 `WebSearch` 툴을 쓴다**(이 환경에서 `WebFetch`/`curl`로 임의 사이트 접속은
+> 차단될 수 있으나 `WebSearch`(호스티드)는 동작). 생일·멤버·오류 교차검증은 WebSearch로 한다.
+> egress를 우회하려 하지 말 것(정책 위반).
 
-사용자 제보는 서버리스 인테이크(Cloudflare Worker + KV, [`worker/`](../worker/))에
-쌓인다. 두 종류의 큐가 있다:
-- **오류 제보(error)** — 기존 수록 데이터의 오류 신고. **데이터 품질 = 최우선.**
-  `GET /suggestions?token=…&type=error` 로 읽는다. (아래 *오류 제보 처리* 참고)
-- **추가 제보(add)** — 신규 인물 추가. `GET /suggestions?token=…&type=add`(또는 type 생략).
-
-처리 우선순위: **오류 제보 → 추가 제보 → 그날의 요일 태스크(A/B/C)**.
-**오늘의 태스크가 B(데이터 추가)이거나, 어느 큐든 대기 항목이 있으면 제보를
-일반 후보보다 먼저 반영**한다.
+처리 우선순위: **오류 제보(error-inbox) → 추가 제보(inbox) → 그날의 요일 태스크(A/B/C)**.
+`inbox-done.json`에 이미 있는 key는 처리 완료로 보고 건너뛴다. 처리한 key는 `inbox-done.json`에
+추가하고(루틴 커밋에 포함), 데이터·stats 변경과 함께 push 한다. 두 inbox 파일은 **워커가 쓰므로
+루틴은 읽기만** 한다(경쟁 방지). 파일이 없거나 비었으면(`[]`) 제보 없음으로 보고 요일 태스크 수행.
 
 #### 오류 제보 처리 (error queue) — 가장 먼저
-```
-curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>&type=error"
-```
-각 레코드는 `{name, group, fields:{필드:표수}, suggests:[제안값…], notes:[근거…], count}`.
+`tools/error-inbox.json`을 로컬로 읽는다(`inbox-done.json`에 있는 key는 제외).
+각 레코드는 `{key, name, group, fields:{필드:표수}, suggests:[제안값…], notes:[근거…], count}`.
 1. **표수(count·fields) 높은 순**으로 트리아지한다(동일 오류를 여러 명이 신고 = 신빙성↑).
 2. 신고 대상(`name|group`)을 `tools/idols.json`에서 찾아 **원본 값과 대조**한다.
 3. **반드시 웹으로 교차검증**한다. 신고자의 `suggests`(제안값)는 **참고일 뿐 그대로 신뢰하지
    않는다**(악의적/장난 신고 가능). 공식 프로필 등 **독립 출처로 올바른 값을 확인**한 경우에만 수정.
-   - 확인 결과 **원본이 맞으면**(오신고) 수정하지 말고 `status=fixed`로 표기해 큐에서 정리한다.
-   - 확인 못 하면 **수정하지 말고 `pending`으로 남긴다**(다음 날 재시도).
+   - 확인 결과 **원본이 맞으면**(오신고) 수정하지 말고, 그 `key`를 `inbox-done.json`에 넣어 정리한다.
+   - 확인 못 하면 **수정하지 말고 `inbox-done`에 넣지 않는다**(다음 날 재시도).
 4. 검증된 수정만 `idols.json`에 반영(생일/활동명/그룹/성별 정정, 비실존·중복이면 삭제)
    → `node tools/build.js` → 헤드리스 스모크. **자동 수정 금지: 사람 판단 없이 값을 바꾸지 않는다.**
    - 참고: **범위·중복·계산 오류는 헬스체크 루틴**이 잡는다. 오류 제보는 **사실 오류**(잘못된
      생일·이름·소속 등 웹 확인이 필요한 것)를 담당한다.
-5. 반영/오신고 정리한 항목은 완료 표기:
-   ```
-   curl -X POST "https://<worker-url>/mark?token=<ADMIN_TOKEN>" \
-     -H 'Content-Type: application/json' -d '{"key":"<레코드 key>","status":"fixed"}'
-   ```
+5. 반영/오신고 정리한 항목의 `key`를 **`tools/inbox-done.json`에 추가**한다(루틴 커밋에 포함).
 6. 데이터가 바뀌었으면 `tools/stats.json`을 갱신한다(total은 실제 수와 일치). 정정은 총원이
    그대로일 수 있으니 total은 항상 `idols.json` 길이로 재계산한다.
 
 #### 추가 제보 처리 (add queue)
 
-1. 큐를 읽는다 (URL·토큰은 세션에 전달됨):
-   ```
-   curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>"
-   ```
-   응답은 **요청 횟수(count) 많은 순**으로 정렬돼 있다. 큐가 비었거나 워커 URL이
-   아직 없으면 이 단계를 건너뛰고 평소 태스크를 수행한다.
+1. `tools/inbox.json`을 로컬로 읽는다(`inbox-done.json`에 있는 key는 제외). **요청 횟수(count)
+   많은 순**으로 처리한다. 비었으면(`[]`) 이 단계를 건너뛰고 평소 태스크를 수행한다.
 2. 각 제보에 대해 — **제보된 개인만이 아니라 그 사람이 속한 그룹 전체를 추가한다:**
    - 제보 대상의 **소속 그룹을 식별**하고, 웹으로 **그룹 멤버 전원**(현재 활동 라인업)을
      조사한다. **확실한 양력 생일이 확인되는 멤버를 모두** `idols.json`에 추가한다
      (제보된 그 한 명만 넣지 않는다).
    - **솔로 가수·배우·비그룹**(group이 개인명이거나 그룹 개념이 없으면) 그 사람만 추가한다.
    - `idols.json` 에 **이미 있는 멤버는 건너뛰고**(이름|그룹 중복), **빠진 멤버만** 채운다.
-     그룹의 모든 멤버가 이미 있으면 추가 없이 워커에 `status=added` 표기(아래 5번)만 한다.
+     그룹의 모든 멤버가 이미 있으면 추가 없이 그 제보 key를 `inbox-done.json`에 넣어 정리만 한다.
    - 각 멤버의 생일은 **개별로 교차 확인**한다. 제보의 `dob` 는 참고용일 뿐 **그대로 신뢰하지
      않는다**(오타·장난 가능). 확인 안 되는 멤버는 건너뛰고 다음 기회에(대형·프로젝트 그룹도
      **확실한 멤버만**). 제보 대상 본인조차 확인 못 하면 반영하지 않고 `pending` 유지.
@@ -185,13 +168,9 @@ curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>&type=error"
      노출하므로 4일보다 오래된 항목은 정리해도 된다(선택).
    - `text` 는 팝업에 그대로 뜬다(토스 기획자 톤, 담백하게). 예: `"엑스디너리히어로즈 추가"`.
    - 날짜(UTC 실행 기준)를 코드로 만들지 말고, 세션에서 실제 오늘 날짜를 확인해 넣는다.
-5. 반영한 제보는 워커에 완료 표기:
-   ```
-   curl -X POST "https://<worker-url>/mark?token=<ADMIN_TOKEN>" \
-     -H 'Content-Type: application/json' \
-     -d '{"name":"<이름>","group":"<그룹>","status":"added"}'
-   ```
-   (`added` 표기된 항목은 재제보돼도 다시 큐에 오르지 않는다.)
+5. 반영(또는 이미 존재)한 제보 `key`를 **`tools/inbox-done.json`에 추가**한다(루틴 커밋에 포함).
+   `inbox-done.json`에 든 key는 다음 실행부터 건너뛴다(재처리 방지). 워커 `/mark` 호출은 불필요
+   (egress 차단 환경). idols.json 중복 검사와 inbox-done로 재추가는 원천 차단된다.
 
 > 워커 URL/토큰이 아직 설정되지 않았다면(사용자가 배포 전) 제보 단계는 전부
 > 건너뛰고 `addedRecent` 만 평소 추가분으로 채운다. 인테이크 배포는
@@ -205,5 +184,6 @@ curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>&type=error"
 4. **Commit & push only if both pass.** On any failure, do NOT push — stop and
    report what broke.
 5. One small increment per day. Never duplicate existing groups/members.
-6. 제보 큐가 있으면 일반 후보보다 **먼저** 처리하고, 반영분은 `stats.json` 과
-   워커 `status` 에 반드시 기록한다(위 *제보 우선 반영*).
+6. 제보(`tools/inbox.json`·`tools/error-inbox.json`, 로컬 파일)가 있으면 일반 후보보다
+   **먼저** 처리하고, 반영분은 `stats.json` 과 `tools/inbox-done.json` 에 반드시
+   기록한다(위 *제보 우선 반영*). 워커에는 접속하지 않는다(egress 차단).
