@@ -104,6 +104,20 @@ const SUGGEST_ENDPOINT = "https://saju-suggest.○○○.workers.dev/submit";
 이 두 값을 저에게(또는 루틴 세션에) 알려주시면 루틴이 자동으로 제보를 우선 반영합니다
 (흐름: [`tools/README.md`](../tools/README.md) 의 *제보 우선 반영*).
 
+### ⚠️ 9. 루틴 실행 환경의 네트워크(egress) 요건 — 중요
+루틴은 Claude Code 클라우드 환경에서 실행됩니다. **그 환경의 조직 egress 정책이 외부 HTTPS를
+차단하면**(관측됨: 워커·일반 사이트 `curl` 이 HTTP 000 으로 실패), 루틴이 **워커 큐를 읽지 못해
+제보가 반영되지 않습니다.**
+
+- **제보 파이프라인을 켜려면** 환경 네트워크 정책이 최소 `saju-suggest.<...>.workers.dev`
+  아웃바운드를 허용해야 합니다. 정책은 컨테이너 안에서 바꿀 수 없고(우회 금지),
+  [Claude Code on the web 문서](https://code.claude.com/docs/en/claude-code-on-the-web)의
+  네트워크 정책 설정에서 완화하거나, egress가 열린 환경을 사용하세요.
+- **차단 상태여도** 루틴은 제보 큐만 건너뛰고 나머지 데이터 작업(Task A/B/C)은
+  `WebSearch`(호스티드, egress 우회) 기반으로 정상 수행합니다.
+- 정책 변경이 어렵다면 **인테이크를 GitHub 기반(Issues)으로 전환**하는 대안이 있습니다
+  (github.com 은 대개 허용되어 차단 환경에서도 동작).
+
 ---
 
 ## (선택) 명령어에 익숙하다면 — Wrangler CLI

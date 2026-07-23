@@ -101,6 +101,19 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
       (특히 CTA·성별 버튼·소속사 버튼).
 
 ### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
+
+> **⚠️ 네트워크(egress) 주의 — 반드시 읽을 것.**
+> 실행 환경에 따라 조직 egress 정책이 외부 HTTPS를 차단할 수 있다(워커·일반 사이트 접근 불가).
+> - **워커 `curl`은 best-effort로.** `curl -sS -m 10 --fail "…"` 로 호출하고, **실패하면
+>   (HTTP 000/비200/연결오류) "워커 접근 불가 → 제보 큐 이번엔 건너뜀"을 기록하고 그대로
+>   Task A/B/C로 진행**한다. 워커 실패가 실행 전체를 중단시키면 안 된다. 절대 우회(다른
+>   프록시·IP)하지 말 것(정책 위반).
+> - **웹 조사·검증은 `WebSearch` 툴을 쓴다.** 이 환경에서 `WebFetch`/`curl`로 임의 사이트
+>   접속은 차단될 수 있으나 **`WebSearch`(호스티드)는 동작**한다. 생일·멤버·오류 교차검증은
+>   WebSearch로 한다.
+> - 마지막 요약에 **워커 접근 가능/차단 여부**를 한 줄 남긴다(사용자가 정책 조정 필요를 인지).
+> - 제보 큐가 차단돼도 Task A/B/C(WebSearch 기반)는 정상 수행·커밋한다.
+
 사용자 제보는 서버리스 인테이크(Cloudflare Worker + KV, [`worker/`](../worker/))에
 쌓인다. 두 종류의 큐가 있다:
 - **오류 제보(error)** — 기존 수록 데이터의 오류 신고. **데이터 품질 = 최우선.**
