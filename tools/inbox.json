@@ -3326,5 +3326,18 @@
     "firstAt": "2026-07-23T01:31:58.823Z",
     "lastAt": "2026-07-24T07:18:56.893Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신예찬|lucy",
+    "name": "신예찬",
+    "group": "LUCY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920613",
+    "note": "최애인데 없어요",
+    "count": 3,
+    "firstAt": "2026-07-24T03:24:03.455Z",
+    "lastAt": "2026-07-24T07:20:36.973Z",
+    "status": "pending"
   }
 ]
