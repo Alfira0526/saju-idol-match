@@ -544,5 +544,18 @@
     "firstAt": "2026-07-23T02:16:29.221Z",
     "lastAt": "2026-07-24T04:51:11.424Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:도연|에이티즈",
+    "name": "도연",
+    "group": "에이티즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:51:31.762Z",
+    "lastAt": "2026-07-24T04:51:31.762Z",
+    "status": "pending"
   }
 ]
