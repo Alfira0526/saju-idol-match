@@ -1142,5 +1142,18 @@
     "firstAt": "2026-07-24T05:24:57.449Z",
     "lastAt": "2026-07-24T05:24:57.449Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:doeunho|plave",
+    "name": "Do Eunho",
+    "group": "PLAVE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030524",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:25:33.806Z",
+    "lastAt": "2026-07-24T05:25:33.806Z",
+    "status": "pending"
   }
 ]
