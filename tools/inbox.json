@@ -3612,5 +3612,18 @@
     "firstAt": "2026-07-24T07:31:12.531Z",
     "lastAt": "2026-07-24T07:31:12.531Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오시온|nct",
+    "name": "오시온",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020511",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:31:18.730Z",
+    "lastAt": "2026-07-24T07:31:18.730Z",
+    "status": "pending"
   }
 ]
