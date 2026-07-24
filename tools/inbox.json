@@ -1428,5 +1428,18 @@
     "firstAt": "2026-07-24T04:06:39.870Z",
     "lastAt": "2026-07-24T05:41:04.024Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:바나나|tws",
+    "name": "바나나",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19971008",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:41:56.246Z",
+    "lastAt": "2026-07-24T05:41:56.246Z",
+    "status": "pending"
   }
 ]
