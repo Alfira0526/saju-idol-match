@@ -89,5 +89,18 @@
     "firstAt": "2026-07-22T17:43:26.295Z",
     "lastAt": "2026-07-24T04:23:46.668Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:-|-",
+    "name": "-",
+    "group": "-",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:24:38.883Z",
+    "lastAt": "2026-07-24T04:24:38.883Z",
+    "status": "pending"
   }
 ]
