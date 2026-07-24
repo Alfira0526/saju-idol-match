@@ -3898,5 +3898,18 @@
     "firstAt": "2026-07-24T07:51:10.220Z",
     "lastAt": "2026-07-24T07:51:10.220Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이재현|theboyz",
+    "name": "이재현",
+    "group": "theboyz",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19970913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:51:13.663Z",
+    "lastAt": "2026-07-24T07:51:13.663Z",
+    "status": "pending"
   }
 ]
