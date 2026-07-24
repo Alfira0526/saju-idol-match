@@ -1987,5 +1987,18 @@
     "firstAt": "2026-07-24T06:03:40.054Z",
     "lastAt": "2026-07-24T06:03:40.054Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오연서|treasure",
+    "name": "오연서",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:05:15.468Z",
+    "lastAt": "2026-07-24T06:05:15.468Z",
+    "status": "pending"
   }
 ]
