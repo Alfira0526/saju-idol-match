@@ -4171,5 +4171,18 @@
     "firstAt": "2026-07-24T08:10:44.223Z",
     "lastAt": "2026-07-24T08:10:44.223Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:원이|리센느",
+    "name": "원이",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050525",
+    "note": "",
+    "count": 5,
+    "firstAt": "2026-07-22T21:44:38.916Z",
+    "lastAt": "2026-07-24T08:10:55.344Z",
+    "status": "pending"
   }
 ]
