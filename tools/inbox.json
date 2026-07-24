@@ -1922,5 +1922,18 @@
     "firstAt": "2026-07-24T06:02:25.934Z",
     "lastAt": "2026-07-24T06:02:25.934Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:수티다|라이즈",
+    "name": "수티다",
+    "group": "라이즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:02:42.164Z",
+    "lastAt": "2026-07-24T06:02:42.164Z",
+    "status": "pending"
   }
 ]
