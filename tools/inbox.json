@@ -3703,5 +3703,18 @@
     "firstAt": "2026-07-24T07:39:31.656Z",
     "lastAt": "2026-07-24T07:39:31.656Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유나|tempest",
+    "name": "유나",
+    "group": "Tempest",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:41:08.607Z",
+    "lastAt": "2026-07-24T07:41:08.607Z",
+    "status": "pending"
   }
 ]
