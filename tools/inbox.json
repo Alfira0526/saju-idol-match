@@ -3560,5 +3560,18 @@
     "firstAt": "2026-07-24T07:29:21.309Z",
     "lastAt": "2026-07-24T07:29:21.309Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:팡|txt",
+    "name": "팡",
+    "group": "TXT",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050427",
+    "note": "Hype",
+    "count": 1,
+    "firstAt": "2026-07-24T07:29:53.037Z",
+    "lastAt": "2026-07-24T07:29:53.037Z",
+    "status": "pending"
   }
 ]
