@@ -3638,5 +3638,18 @@
     "firstAt": "2026-07-24T07:32:40.362Z",
     "lastAt": "2026-07-24T07:32:40.362Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조원상|lucy",
+    "name": "조원상",
+    "group": "LUCY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960815",
+    "note": "원상이 귀여워 ! 밴드루시흥해라",
+    "count": 2,
+    "firstAt": "2026-07-23T04:29:26.603Z",
+    "lastAt": "2026-07-24T07:34:58.472Z",
+    "status": "pending"
   }
 ]
