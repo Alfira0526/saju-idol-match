@@ -4015,5 +4015,18 @@
     "firstAt": "2026-07-24T07:59:41.867Z",
     "lastAt": "2026-07-24T07:59:41.867Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유타|nct127",
+    "name": "유타",
+    "group": "NCT127",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951026",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:00:08.433Z",
+    "lastAt": "2026-07-24T08:00:08.433Z",
+    "status": "pending"
   }
 ]
