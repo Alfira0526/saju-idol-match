@@ -1480,5 +1480,18 @@
     "firstAt": "2026-07-24T05:45:38.228Z",
     "lastAt": "2026-07-24T05:45:38.228Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nct|sm",
+    "name": "Nct",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:45:51.225Z",
+    "lastAt": "2026-07-24T05:45:51.225Z",
+    "status": "pending"
   }
 ]
