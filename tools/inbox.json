@@ -4444,5 +4444,18 @@
     "firstAt": "2026-07-24T08:19:12.551Z",
     "lastAt": "2026-07-24T08:19:12.551Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박지성|nctdream",
+    "name": "박지성",
+    "group": "Nctdream",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:19:22.749Z",
+    "lastAt": "2026-07-24T08:19:22.749Z",
+    "status": "pending"
   }
 ]
