@@ -2559,5 +2559,18 @@
     "firstAt": "2026-07-24T06:32:47.179Z",
     "lastAt": "2026-07-24T06:32:47.179Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아사히|트레저",
+    "name": "아사히",
+    "group": "트레저",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:33:28.602Z",
+    "lastAt": "2026-07-24T06:33:28.602Z",
+    "status": "pending"
   }
 ]
