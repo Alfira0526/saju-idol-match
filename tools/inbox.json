@@ -2728,5 +2728,18 @@
     "firstAt": "2026-07-24T06:41:14.022Z",
     "lastAt": "2026-07-24T06:41:14.022Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:boeing|nct",
+    "name": "Boeing",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19931113",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-24T06:43:10.811Z",
+    "lastAt": "2026-07-24T06:43:10.811Z",
+    "status": "pending"
   }
 ]
