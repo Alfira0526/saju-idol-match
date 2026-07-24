@@ -2481,5 +2481,18 @@
     "firstAt": "2026-07-24T06:27:30.680Z",
     "lastAt": "2026-07-24T06:27:30.680Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이해찬|nct",
+    "name": "이해찬",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000606",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:27:42.475Z",
+    "lastAt": "2026-07-24T06:27:42.475Z",
+    "status": "pending"
   }
 ]
