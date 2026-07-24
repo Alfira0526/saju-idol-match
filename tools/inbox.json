@@ -141,5 +141,18 @@
     "firstAt": "2026-07-24T04:26:20.475Z",
     "lastAt": "2026-07-24T04:26:20.475Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sunny|snsd",
+    "name": "Sunny",
+    "group": "Snsd",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "Sm",
+    "count": 1,
+    "firstAt": "2026-07-24T04:26:33.925Z",
+    "lastAt": "2026-07-24T04:26:33.925Z",
+    "status": "pending"
   }
 ]
