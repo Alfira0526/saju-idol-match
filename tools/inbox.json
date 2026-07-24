@@ -1181,5 +1181,18 @@
     "firstAt": "2026-07-23T01:28:47.508Z",
     "lastAt": "2026-07-24T05:26:26.703Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최상엽|루시",
+    "name": "최상엽",
+    "group": "루시",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940227",
+    "note": "루시",
+    "count": 2,
+    "firstAt": "2026-07-23T07:10:52.009Z",
+    "lastAt": "2026-07-24T05:26:50.512Z",
+    "status": "pending"
   }
 ]
