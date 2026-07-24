@@ -765,5 +765,18 @@
     "firstAt": "2026-07-22T17:41:35.381Z",
     "lastAt": "2026-07-24T05:04:58.286Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:tws|pledis",
+    "name": "TWS",
+    "group": "Pledis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:05:00.386Z",
+    "lastAt": "2026-07-24T05:05:00.386Z",
+    "status": "pending"
   }
 ]
