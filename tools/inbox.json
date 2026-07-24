@@ -2195,5 +2195,18 @@
     "firstAt": "2026-07-24T06:10:36.292Z",
     "lastAt": "2026-07-24T06:10:36.292Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jan|nct",
+    "name": "jan",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19950117",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:10:55.379Z",
+    "lastAt": "2026-07-24T06:10:55.379Z",
+    "status": "pending"
   }
 ]
