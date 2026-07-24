@@ -3391,5 +3391,18 @@
     "firstAt": "2026-07-24T07:22:37.503Z",
     "lastAt": "2026-07-24T07:22:37.503Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오율|lngshot",
+    "name": "오율",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "MOREVISION",
+    "count": 5,
+    "firstAt": "2026-07-22T23:53:10.472Z",
+    "lastAt": "2026-07-24T07:22:47.326Z",
+    "status": "pending"
   }
 ]
