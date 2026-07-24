@@ -146,5 +146,19 @@
       "솔로"
     ],
     "notes": []
+  },
+  {
+    "key": "er:윤재혁|treasure",
+    "name": "윤재혁",
+    "group": "TREASURE",
+    "count": 1,
+    "firstAt": "2026-07-24T07:14:29.660Z",
+    "lastAt": "2026-07-24T07:14:29.660Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
