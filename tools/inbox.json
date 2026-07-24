@@ -921,5 +921,18 @@
     "firstAt": "2026-07-24T05:13:55.452Z",
     "lastAt": "2026-07-24T05:13:55.452Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:seochangbin|straykids",
+    "name": "Seo changbin",
+    "group": "Stray kids",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991808",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:14:22.667Z",
+    "lastAt": "2026-07-24T05:14:22.667Z",
+    "status": "pending"
   }
 ]
