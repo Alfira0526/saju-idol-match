@@ -3430,5 +3430,18 @@
     "firstAt": "2026-07-24T07:23:49.711Z",
     "lastAt": "2026-07-24T07:23:49.711Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최현석|treasure",
+    "name": "최현석",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990421",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:24:11.383Z",
+    "lastAt": "2026-07-24T07:24:11.383Z",
+    "status": "pending"
   }
 ]
