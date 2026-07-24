@@ -3274,5 +3274,18 @@
     "firstAt": "2026-07-24T07:14:43.068Z",
     "lastAt": "2026-07-24T07:14:43.068Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:계훈|킥플립",
+    "name": "계훈",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040916",
+    "note": "진짜최애라서",
+    "count": 6,
+    "firstAt": "2026-07-22T19:21:59.751Z",
+    "lastAt": "2026-07-24T07:17:51.741Z",
+    "status": "pending"
   }
 ]
