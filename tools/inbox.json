@@ -1415,5 +1415,18 @@
     "firstAt": "2026-07-24T05:40:59.273Z",
     "lastAt": "2026-07-24T05:40:59.273Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김유겸|got7",
+    "name": "김유겸",
+    "group": "GOT7",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971117",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-24T04:06:39.870Z",
+    "lastAt": "2026-07-24T05:41:04.024Z",
+    "status": "pending"
   }
 ]
