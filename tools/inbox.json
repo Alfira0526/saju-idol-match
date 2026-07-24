@@ -3508,5 +3508,18 @@
     "firstAt": "2026-07-23T04:46:54.005Z",
     "lastAt": "2026-07-24T07:27:50.911Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:라이프|ateez",
+    "name": "라이프",
+    "group": "Ateez",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20021208",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:27:59.286Z",
+    "lastAt": "2026-07-24T07:27:59.286Z",
+    "status": "pending"
   }
 ]
