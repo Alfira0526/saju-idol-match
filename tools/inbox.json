@@ -648,5 +648,18 @@
     "firstAt": "2026-07-22T22:53:20.050Z",
     "lastAt": "2026-07-24T04:56:06.220Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:iz*one|iz*one",
+    "name": "IZ*ONE",
+    "group": "IZ*ONE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "Wakeone",
+    "count": 1,
+    "firstAt": "2026-07-24T04:56:44.257Z",
+    "lastAt": "2026-07-24T04:56:44.257Z",
+    "status": "pending"
   }
 ]
