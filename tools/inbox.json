@@ -1792,5 +1792,18 @@
     "firstAt": "2026-07-24T05:57:50.735Z",
     "lastAt": "2026-07-24T05:57:50.735Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이슬|nct",
+    "name": "이슬",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:57:55.115Z",
+    "lastAt": "2026-07-24T05:57:55.115Z",
+    "status": "pending"
   }
 ]
