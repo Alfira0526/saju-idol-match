@@ -3716,5 +3716,18 @@
     "firstAt": "2026-07-24T07:41:08.607Z",
     "lastAt": "2026-07-24T07:41:08.607Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:rora|babymonster",
+    "name": "rora",
+    "group": "Babymonster",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080814",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-24T07:42:23.600Z",
+    "lastAt": "2026-07-24T07:42:23.600Z",
+    "status": "pending"
   }
 ]
