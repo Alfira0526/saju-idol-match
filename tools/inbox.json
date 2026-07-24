@@ -4730,5 +4730,18 @@
     "firstAt": "2026-07-24T08:27:32.794Z",
     "lastAt": "2026-07-24T08:27:32.794Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yu|txt",
+    "name": "yu",
+    "group": "txt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20100126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:28:16.117Z",
+    "lastAt": "2026-07-24T08:28:16.117Z",
+    "status": "pending"
   }
 ]
