@@ -180,5 +180,18 @@
     "firstAt": "2026-07-24T04:30:20.801Z",
     "lastAt": "2026-07-24T04:30:20.801Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:승한|승한앤소울",
+    "name": "승한",
+    "group": "승한앤소울",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031002",
+    "note": "잘생김",
+    "count": 2,
+    "firstAt": "2026-07-23T08:01:52.805Z",
+    "lastAt": "2026-07-24T04:30:33.656Z",
+    "status": "pending"
   }
 ]
