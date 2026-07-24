@@ -3118,5 +3118,18 @@
     "firstAt": "2026-07-24T07:08:26.477Z",
     "lastAt": "2026-07-24T07:08:26.477Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:renjun|nctdream/sm",
+    "name": "Renjun",
+    "group": "Nctdream/sm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "23032000",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:08:29.595Z",
+    "lastAt": "2026-07-24T07:08:29.595Z",
+    "status": "pending"
   }
 ]
