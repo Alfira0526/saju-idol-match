@@ -2962,5 +2962,18 @@
     "firstAt": "2026-07-24T06:54:39.779Z",
     "lastAt": "2026-07-24T06:54:39.779Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤재혁|treasure",
+    "name": "윤재혁",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010723",
+    "note": "yg",
+    "count": 1,
+    "firstAt": "2026-07-24T06:59:50.832Z",
+    "lastAt": "2026-07-24T06:59:50.832Z",
+    "status": "pending"
   }
 ]
