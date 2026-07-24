@@ -1961,5 +1961,18 @@
     "firstAt": "2026-07-24T06:03:05.672Z",
     "lastAt": "2026-07-24T06:03:05.672Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서창빈|straykids",
+    "name": "서창빈",
+    "group": "Straykids",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990811",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-24T06:03:13.501Z",
+    "lastAt": "2026-07-24T06:03:13.501Z",
+    "status": "pending"
   }
 ]
