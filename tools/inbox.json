@@ -2104,5 +2104,18 @@
     "firstAt": "2026-07-24T06:08:32.071Z",
     "lastAt": "2026-07-24T06:08:32.071Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이승협|n.flying",
+    "name": "이승협",
+    "group": "N.Flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921031",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-24T06:08:47.329Z",
+    "lastAt": "2026-07-24T06:08:47.329Z",
+    "status": "pending"
   }
 ]
