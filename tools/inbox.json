@@ -3885,5 +3885,18 @@
     "firstAt": "2026-07-24T07:51:05.478Z",
     "lastAt": "2026-07-24T07:51:05.478Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최영재|tws",
+    "name": "최 영재",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050531",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:51:10.220Z",
+    "lastAt": "2026-07-24T07:51:10.220Z",
+    "status": "pending"
   }
 ]
