@@ -174,5 +174,23 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:르우|tempest",
+    "name": "르우",
+    "group": "TEMPEST",
+    "count": 1,
+    "firstAt": "2026-07-24T07:26:25.042Z",
+    "lastAt": "2026-07-24T07:26:25.042Z",
+    "status": "pending",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "루 (LEW)"
+    ],
+    "notes": [
+      "https://x.com/i/status/2067546612399054951"
+    ]
   }
 ]
