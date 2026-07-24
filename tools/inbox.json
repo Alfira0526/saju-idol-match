@@ -2806,5 +2806,18 @@
     "firstAt": "2026-07-24T06:45:50.349Z",
     "lastAt": "2026-07-24T06:45:50.349Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:뻡아이|아이린",
+    "name": "뻡아이",
+    "group": "아이린",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "20020121",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:46:24.294Z",
+    "lastAt": "2026-07-24T06:46:24.294Z",
+    "status": "pending"
   }
 ]
