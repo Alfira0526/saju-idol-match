@@ -4119,5 +4119,18 @@
     "firstAt": "2026-07-24T08:06:55.282Z",
     "lastAt": "2026-07-24T08:06:55.282Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:储蓥|tws",
+    "name": "储蓥",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070801",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:07:23.732Z",
+    "lastAt": "2026-07-24T08:07:23.732Z",
+    "status": "pending"
   }
 ]
