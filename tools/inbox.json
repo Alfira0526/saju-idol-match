@@ -1168,5 +1168,18 @@
     "firstAt": "2026-07-22T19:26:02.615Z",
     "lastAt": "2026-07-24T05:26:09.109Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:은호|plave",
+    "name": "은호",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030524",
+    "note": "Vlast",
+    "count": 2,
+    "firstAt": "2026-07-23T01:28:47.508Z",
+    "lastAt": "2026-07-24T05:26:26.703Z",
+    "status": "pending"
   }
 ]
