@@ -3950,5 +3950,18 @@
     "firstAt": "2026-07-24T07:52:39.799Z",
     "lastAt": "2026-07-24T07:52:39.799Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서수진|솔로",
+    "name": "서수진",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19980309",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:54:40.208Z",
+    "lastAt": "2026-07-24T07:54:40.208Z",
+    "status": "pending"
   }
 ]
