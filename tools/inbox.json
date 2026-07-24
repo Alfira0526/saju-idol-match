@@ -3677,5 +3677,18 @@
     "firstAt": "2026-07-24T07:38:56.630Z",
     "lastAt": "2026-07-24T07:38:56.630Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:백호|뉴이스트",
+    "name": "백호",
+    "group": "뉴이스트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950721",
+    "note": "",
+    "count": 3,
+    "firstAt": "2026-07-22T23:45:47.814Z",
+    "lastAt": "2026-07-24T07:39:06.283Z",
+    "status": "pending"
   }
 ]
