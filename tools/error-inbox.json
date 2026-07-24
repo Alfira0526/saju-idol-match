@@ -74,5 +74,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:범규|txt",
+    "name": "범규",
+    "group": "TXT",
+    "count": 1,
+    "firstAt": "2026-07-24T04:47:46.298Z",
+    "lastAt": "2026-07-24T04:47:46.298Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
