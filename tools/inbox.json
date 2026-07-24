@@ -63,5 +63,18 @@
     "firstAt": "2026-07-24T04:23:30.242Z",
     "lastAt": "2026-07-24T04:23:30.242Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:leena|엔시티",
+    "name": "Leena",
+    "group": "엔시티",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20011029",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:23:40.804Z",
+    "lastAt": "2026-07-24T04:23:40.804Z",
+    "status": "pending"
   }
 ]
