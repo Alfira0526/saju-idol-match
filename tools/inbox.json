@@ -1285,5 +1285,18 @@
     "firstAt": "2026-07-24T05:31:37.234Z",
     "lastAt": "2026-07-24T05:31:37.234Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nawinda|nctdream",
+    "name": "Nawinda",
+    "group": "Nct dream",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010703",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:32:01.437Z",
+    "lastAt": "2026-07-24T05:32:01.437Z",
+    "status": "pending"
   }
 ]
