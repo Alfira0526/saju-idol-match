@@ -1077,5 +1077,18 @@
     "firstAt": "2026-07-24T05:20:34.625Z",
     "lastAt": "2026-07-24T05:20:34.625Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전지우|kard",
+    "name": "전지우",
+    "group": "KARD",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "소속사 DSP (카라와 같은 소속사)",
+    "count": 1,
+    "firstAt": "2026-07-24T05:21:52.919Z",
+    "lastAt": "2026-07-24T05:21:52.919Z",
+    "status": "pending"
   }
 ]
