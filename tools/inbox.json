@@ -1467,5 +1467,18 @@
     "firstAt": "2026-07-24T05:45:27.373Z",
     "lastAt": "2026-07-24T05:45:27.373Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박종성|enhypen",
+    "name": "박종성",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:45:38.228Z",
+    "lastAt": "2026-07-24T05:45:38.228Z",
+    "status": "pending"
   }
 ]
