@@ -1649,5 +1649,18 @@
     "firstAt": "2026-07-24T05:55:21.738Z",
     "lastAt": "2026-07-24T05:55:21.738Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:woozi|seventeen",
+    "name": "Woozi",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:55:30.090Z",
+    "lastAt": "2026-07-24T05:55:30.090Z",
+    "status": "pending"
   }
 ]
