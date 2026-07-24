@@ -1220,5 +1220,18 @@
     "firstAt": "2026-07-24T05:28:23.159Z",
     "lastAt": "2026-07-24T05:28:23.159Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kq|ateez",
+    "name": "kq",
+    "group": "ateez",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:28:53.673Z",
+    "lastAt": "2026-07-24T05:28:53.673Z",
+    "status": "pending"
   }
 ]
