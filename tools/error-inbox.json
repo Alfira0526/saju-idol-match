@@ -44,5 +44,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:여상|ateez",
+    "name": "여상",
+    "group": "ATEEZ",
+    "count": 1,
+    "firstAt": "2026-07-24T04:42:07.680Z",
+    "lastAt": "2026-07-24T04:42:07.680Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19990523"
+    ],
+    "notes": []
   }
 ]
