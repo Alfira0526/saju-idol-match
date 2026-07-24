@@ -2754,5 +2754,18 @@
     "firstAt": "2026-07-24T06:43:52.715Z",
     "lastAt": "2026-07-24T06:43:52.715Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:milk|nct",
+    "name": "Milk",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "25072003",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:44:02.005Z",
+    "lastAt": "2026-07-24T06:44:02.005Z",
+    "status": "pending"
   }
 ]
