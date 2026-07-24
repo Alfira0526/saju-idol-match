@@ -1662,5 +1662,18 @@
     "firstAt": "2026-07-24T05:55:30.090Z",
     "lastAt": "2026-07-24T05:55:30.090Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강다니엘|솔러",
+    "name": "강다니엘",
+    "group": "솔러",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19951210",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:55:35.736Z",
+    "lastAt": "2026-07-24T05:55:35.736Z",
+    "status": "pending"
   }
 ]
