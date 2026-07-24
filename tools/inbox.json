@@ -2039,5 +2039,18 @@
     "firstAt": "2026-07-24T06:06:07.103Z",
     "lastAt": "2026-07-24T06:06:07.103Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:시온|nctwish",
+    "name": "시온",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020511",
+    "note": "SM",
+    "count": 7,
+    "firstAt": "2026-07-22T23:00:47.656Z",
+    "lastAt": "2026-07-24T06:06:11.797Z",
+    "status": "pending"
   }
 ]
