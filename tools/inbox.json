@@ -453,5 +453,18 @@
     "firstAt": "2026-07-24T04:47:14.989Z",
     "lastAt": "2026-07-24T04:47:14.989Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bright|straykids",
+    "name": "Bright",
+    "group": "Stray Kids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19930803",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:47:17.554Z",
+    "lastAt": "2026-07-24T04:47:17.554Z",
+    "status": "pending"
   }
 ]
