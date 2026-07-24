@@ -1350,5 +1350,18 @@
     "firstAt": "2026-07-23T00:01:23.194Z",
     "lastAt": "2026-07-24T05:35:53.264Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:grammy|라이즈",
+    "name": "Grammy",
+    "group": "라이즈",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20010608",
+    "note": "-",
+    "count": 1,
+    "firstAt": "2026-07-24T05:35:57.624Z",
+    "lastAt": "2026-07-24T05:35:57.624Z",
+    "status": "pending"
   }
 ]
