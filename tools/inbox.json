@@ -3209,5 +3209,18 @@
     "firstAt": "2026-07-24T07:10:55.505Z",
     "lastAt": "2026-07-24T07:10:55.505Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리|라이즈",
+    "name": "리",
+    "group": "라이즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030714",
+    "note": "🖤",
+    "count": 1,
+    "firstAt": "2026-07-24T07:12:13.903Z",
+    "lastAt": "2026-07-24T07:12:13.903Z",
+    "status": "pending"
   }
 ]
