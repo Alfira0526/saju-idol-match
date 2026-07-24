@@ -1259,5 +1259,18 @@
     "firstAt": "2026-07-24T05:29:17.833Z",
     "lastAt": "2026-07-24T05:29:17.833Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nine|onlyoneof",
+    "name": "Nine",
+    "group": "OnlyOneOf",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19991213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:30:33.497Z",
+    "lastAt": "2026-07-24T05:30:33.497Z",
+    "status": "pending"
   }
 ]
