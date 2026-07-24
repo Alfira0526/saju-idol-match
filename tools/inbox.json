@@ -11,5 +11,18 @@
     "firstAt": "2026-07-24T04:21:22.990Z",
     "lastAt": "2026-07-24T04:21:22.990Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강동원|배우",
+    "name": "강동원",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:21:32.202Z",
+    "lastAt": "2026-07-24T04:21:32.202Z",
+    "status": "pending"
   }
 ]
