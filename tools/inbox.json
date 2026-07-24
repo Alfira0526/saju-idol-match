@@ -4041,5 +4041,18 @@
     "firstAt": "2026-07-22T19:49:43.334Z",
     "lastAt": "2026-07-24T08:00:11.600Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:춘춘이|세븐틴",
+    "name": "춘춘이",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010201",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:02:17.035Z",
+    "lastAt": "2026-07-24T08:02:17.035Z",
+    "status": "pending"
   }
 ]
