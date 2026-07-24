@@ -3157,5 +3157,18 @@
     "firstAt": "2026-07-22T20:11:47.377Z",
     "lastAt": "2026-07-24T07:08:44.729Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jeonghan|seventeen",
+    "name": "Jeonghan",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950410",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:08:45.602Z",
+    "lastAt": "2026-07-24T07:08:45.602Z",
+    "status": "pending"
   }
 ]
