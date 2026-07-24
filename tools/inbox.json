@@ -1545,5 +1545,18 @@
     "firstAt": "2026-07-24T05:47:22.125Z",
     "lastAt": "2026-07-24T05:47:22.125Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:flmoonstar|mamamoo",
+    "name": "flmoonstar",
+    "group": "mamamoo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020819",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:47:37.693Z",
+    "lastAt": "2026-07-24T05:47:37.693Z",
+    "status": "pending"
   }
 ]
