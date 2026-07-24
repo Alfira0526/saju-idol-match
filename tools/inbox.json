@@ -3781,5 +3781,18 @@
     "firstAt": "2026-07-24T07:46:16.341Z",
     "lastAt": "2026-07-24T07:46:16.341Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hyui|nexz",
+    "name": "Hyui",
+    "group": "Nexz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070511",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-24T07:47:21.555Z",
+    "lastAt": "2026-07-24T07:47:21.555Z",
+    "status": "pending"
   }
 ]
