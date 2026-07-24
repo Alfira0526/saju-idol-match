@@ -440,5 +440,18 @@
     "firstAt": "2026-07-23T04:29:12.548Z",
     "lastAt": "2026-07-24T04:46:33.339Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:j|treasure",
+    "name": "J",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19950529",
+    "note": "J",
+    "count": 1,
+    "firstAt": "2026-07-24T04:47:14.989Z",
+    "lastAt": "2026-07-24T04:47:14.989Z",
+    "status": "pending"
   }
 ]
