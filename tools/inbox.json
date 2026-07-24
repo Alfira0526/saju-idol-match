@@ -3456,5 +3456,18 @@
     "firstAt": "2026-07-24T07:25:51.122Z",
     "lastAt": "2026-07-24T07:25:51.122Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:루이|롱샷",
+    "name": "루이",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20100501",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:26:40.132Z",
+    "lastAt": "2026-07-24T07:26:40.132Z",
+    "status": "pending"
   }
 ]
