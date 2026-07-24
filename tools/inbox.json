@@ -492,5 +492,18 @@
     "firstAt": "2026-07-23T00:12:24.941Z",
     "lastAt": "2026-07-24T04:48:43.381Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정우영|에이티즈",
+    "name": "정우영",
+    "group": "에이티즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:49:49.490Z",
+    "lastAt": "2026-07-24T04:49:49.490Z",
+    "status": "pending"
   }
 ]
