@@ -4470,5 +4470,18 @@
     "firstAt": "2026-07-24T08:19:39.360Z",
     "lastAt": "2026-07-24T08:19:39.360Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조이|theboyz",
+    "name": "조이",
+    "group": "The boyz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20081224",
+    "note": "100",
+    "count": 1,
+    "firstAt": "2026-07-24T08:19:41.369Z",
+    "lastAt": "2026-07-24T08:19:41.369Z",
+    "status": "pending"
   }
 ]
