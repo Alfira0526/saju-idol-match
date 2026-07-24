@@ -4301,5 +4301,18 @@
     "firstAt": "2026-07-24T08:15:54.843Z",
     "lastAt": "2026-07-24T08:15:54.843Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재희|nct",
+    "name": "재희",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050621",
+    "note": "NCT 위시까지 포함해주세용",
+    "count": 3,
+    "firstAt": "2026-07-23T05:33:01.494Z",
+    "lastAt": "2026-07-24T08:15:58.413Z",
+    "status": "pending"
   }
 ]
