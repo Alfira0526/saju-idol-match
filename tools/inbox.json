@@ -843,5 +843,18 @@
     "firstAt": "2026-07-24T05:10:19.001Z",
     "lastAt": "2026-07-24T05:10:19.001Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:권오율|lngshot",
+    "name": "권오율",
+    "group": "Lngshot",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "한마디",
+    "count": 5,
+    "firstAt": "2026-07-22T23:58:33.064Z",
+    "lastAt": "2026-07-24T05:10:42.603Z",
+    "status": "pending"
   }
 ]
