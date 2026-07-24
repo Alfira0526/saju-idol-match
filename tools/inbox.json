@@ -2585,5 +2585,18 @@
     "firstAt": "2026-07-24T06:34:19.283Z",
     "lastAt": "2026-07-24T06:34:19.283Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:쇠산|에이티즈",
+    "name": "쇠산",
+    "group": "에이티즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990710",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:35:54.816Z",
+    "lastAt": "2026-07-24T06:35:54.816Z",
+    "status": "pending"
   }
 ]
