@@ -2572,5 +2572,18 @@
     "firstAt": "2026-07-24T06:33:28.602Z",
     "lastAt": "2026-07-24T06:33:28.602Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:동현|에이비식스",
+    "name": "동현",
+    "group": "에이비식스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980917",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:34:19.283Z",
+    "lastAt": "2026-07-24T06:34:19.283Z",
+    "status": "pending"
   }
 ]
