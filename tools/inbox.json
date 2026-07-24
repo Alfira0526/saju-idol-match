@@ -739,5 +739,18 @@
     "firstAt": "2026-07-23T04:42:13.844Z",
     "lastAt": "2026-07-24T05:00:53.556Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강다니엘|ara",
+    "name": "강다니엘",
+    "group": "ARA",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19961210",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:02:34.503Z",
+    "lastAt": "2026-07-24T05:02:34.503Z",
+    "status": "pending"
   }
 ]
