@@ -4067,5 +4067,18 @@
     "firstAt": "2026-07-24T08:02:42.817Z",
     "lastAt": "2026-07-24T08:02:42.817Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:solar,moonbyul,wheein,hwasa|mamamoo",
+    "name": "Solar, Moonbyul, Wheein, Hwasa",
+    "group": "MAMAMOO",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19910221",
+    "note": "RBW",
+    "count": 1,
+    "firstAt": "2026-07-24T08:05:04.885Z",
+    "lastAt": "2026-07-24T08:05:04.885Z",
+    "status": "pending"
   }
 ]
