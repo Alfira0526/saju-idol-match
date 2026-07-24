@@ -2117,5 +2117,18 @@
     "firstAt": "2026-07-24T06:08:47.329Z",
     "lastAt": "2026-07-24T06:08:47.329Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유마|&team",
+    "name": "유마",
+    "group": "&TEAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:09:03.368Z",
+    "lastAt": "2026-07-24T06:09:03.368Z",
+    "status": "pending"
   }
 ]
