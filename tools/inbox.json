@@ -3586,5 +3586,18 @@
     "firstAt": "2026-07-24T07:29:54.373Z",
     "lastAt": "2026-07-24T07:29:54.373Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:토쿠노유우시|nctwish",
+    "name": "토쿠노 유우시",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "엔시티에 엔시티 위시가 없어요",
+    "count": 6,
+    "firstAt": "2026-07-22T18:33:33.566Z",
+    "lastAt": "2026-07-24T07:30:25.148Z",
+    "status": "pending"
   }
 ]
