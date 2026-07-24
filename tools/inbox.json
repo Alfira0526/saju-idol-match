@@ -3222,5 +3222,18 @@
     "firstAt": "2026-07-24T07:12:13.903Z",
     "lastAt": "2026-07-24T07:12:13.903Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김종현|샤이니",
+    "name": "김종현",
+    "group": "샤이니",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900408",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:12:15.129Z",
+    "lastAt": "2026-07-24T07:12:15.129Z",
+    "status": "pending"
   }
 ]
