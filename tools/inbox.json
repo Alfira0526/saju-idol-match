@@ -1701,5 +1701,18 @@
     "firstAt": "2026-07-24T05:56:21.591Z",
     "lastAt": "2026-07-24T05:56:21.591Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강현|원위",
+    "name": "강현",
+    "group": "원위",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19981124",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T00:26:54.295Z",
+    "lastAt": "2026-07-24T05:56:32.572Z",
+    "status": "pending"
   }
 ]
