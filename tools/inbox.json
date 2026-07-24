@@ -3521,5 +3521,18 @@
     "firstAt": "2026-07-24T07:27:59.286Z",
     "lastAt": "2026-07-24T07:27:59.286Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:문빈|아스트로",
+    "name": "문빈",
+    "group": "아스트로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:28:20.073Z",
+    "lastAt": "2026-07-24T07:28:20.073Z",
+    "status": "pending"
   }
 ]
