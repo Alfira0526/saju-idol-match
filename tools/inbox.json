@@ -1324,5 +1324,18 @@
     "firstAt": "2026-07-24T05:34:36.425Z",
     "lastAt": "2026-07-24T05:34:36.425Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:원영|exo",
+    "name": "원영",
+    "group": "Exo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20041002",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:35:33.238Z",
+    "lastAt": "2026-07-24T05:35:33.238Z",
+    "status": "pending"
   }
 ]
