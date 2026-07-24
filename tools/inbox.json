@@ -2546,5 +2546,18 @@
     "firstAt": "2026-07-24T06:31:36.752Z",
     "lastAt": "2026-07-24T06:31:36.752Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:chu|jungkook",
+    "name": "Chu",
+    "group": "Jungkook",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "19940520",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:32:47.179Z",
+    "lastAt": "2026-07-24T06:32:47.179Z",
+    "status": "pending"
   }
 ]
