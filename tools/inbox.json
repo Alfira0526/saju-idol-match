@@ -4223,5 +4223,18 @@
     "firstAt": "2026-07-24T08:12:35.250Z",
     "lastAt": "2026-07-24T08:12:35.250Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:위시|이펙스",
+    "name": "위시",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020611",
+    "note": "소속사 씨나인",
+    "count": 1,
+    "firstAt": "2026-07-24T08:14:20.684Z",
+    "lastAt": "2026-07-24T08:14:20.684Z",
+    "status": "pending"
   }
 ]
