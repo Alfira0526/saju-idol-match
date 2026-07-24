@@ -1389,5 +1389,18 @@
     "firstAt": "2026-07-24T05:37:43.423Z",
     "lastAt": "2026-07-24T05:37:43.423Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:보|seventeen",
+    "name": "보",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19901226",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:39:59.841Z",
+    "lastAt": "2026-07-24T05:39:59.841Z",
+    "status": "pending"
   }
 ]
