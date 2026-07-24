@@ -4353,5 +4353,18 @@
     "firstAt": "2026-07-24T08:18:12.250Z",
     "lastAt": "2026-07-24T08:18:12.250Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민제|킥플립",
+    "name": "민제",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060512",
+    "note": "jyp",
+    "count": 2,
+    "firstAt": "2026-07-23T08:03:48.690Z",
+    "lastAt": "2026-07-24T08:18:15.904Z",
+    "status": "pending"
   }
 ]
