@@ -4392,5 +4392,18 @@
     "firstAt": "2026-07-22T17:49:00.459Z",
     "lastAt": "2026-07-24T08:18:37.164Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최수빈|tomorrowxtogether",
+    "name": "최수빈",
+    "group": "TOMORROW X TOGETHER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001205",
+    "note": "투모로우바이투게더",
+    "count": 1,
+    "firstAt": "2026-07-24T08:18:44.912Z",
+    "lastAt": "2026-07-24T08:18:44.912Z",
+    "status": "pending"
   }
 ]
