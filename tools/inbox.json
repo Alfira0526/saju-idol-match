@@ -3105,5 +3105,18 @@
     "firstAt": "2026-07-24T07:06:49.483Z",
     "lastAt": "2026-07-24T07:06:49.483Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ricky|and2ble",
+    "name": "Ricky",
+    "group": "AND2BLE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040520",
+    "note": "หล่อ รวย สูง เหมียวๆ",
+    "count": 1,
+    "firstAt": "2026-07-24T07:08:26.477Z",
+    "lastAt": "2026-07-24T07:08:26.477Z",
+    "status": "pending"
   }
 ]
