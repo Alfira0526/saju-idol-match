@@ -553,5 +553,9 @@
 {"name":"샤오잔","group":"샤오잔","agency":"중국 배우","gender":"M","dob":"1991-10-05","cat":"C-actor"},
 {"name":"양양","group":"양양","agency":"중국 배우","gender":"M","dob":"1991-09-09","cat":"C-actor"},
 {"name":"니시노 나나세","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1994-05-25","cat":"J-idol"},
-{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"}
+{"name":"시라이시 마이","group":"노기자카46","agency":"노기자카46","gender":"F","dob":"1992-08-20","cat":"J-idol"},
+{"name":"이유","group":"EVERGLOW","agency":"기타","gender":"F","dob":"1998-05-19","cat":"K-idol"},
+{"name":"시현","group":"EVERGLOW","agency":"기타","gender":"F","dob":"1999-08-05","cat":"K-idol"},
+{"name":"온다","group":"EVERGLOW","agency":"기타","gender":"F","dob":"2000-05-18","cat":"K-idol"},
+{"name":"아샤","group":"EVERGLOW","agency":"기타","gender":"F","dob":"2000-07-21","cat":"K-idol"}
 ]

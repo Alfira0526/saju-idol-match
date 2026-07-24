@@ -1,5 +1,7 @@
 {
-  "total": 555,
-  "addedRecent": [],
-  "updatedAt": "2026-07-22"
+  "total": 559,
+  "addedRecent": [
+    { "date": "2026-07-24", "text": "에버글로우 추가", "count": 4 }
+  ],
+  "updatedAt": "2026-07-24"
 }
