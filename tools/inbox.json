@@ -2780,5 +2780,18 @@
     "firstAt": "2026-07-24T06:44:13.516Z",
     "lastAt": "2026-07-24T06:44:13.516Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:로즈|에이티즈",
+    "name": "로즈",
+    "group": "에이티즈",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19940818",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:45:23.842Z",
+    "lastAt": "2026-07-24T06:45:23.842Z",
+    "status": "pending"
   }
 ]
