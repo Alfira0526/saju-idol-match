@@ -206,5 +206,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:초단|qwer",
+    "name": "초단",
+    "group": "QWER",
+    "count": 1,
+    "firstAt": "2026-07-24T07:39:47.442Z",
+    "lastAt": "2026-07-24T07:39:47.442Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "쵸단"
+    ],
+    "notes": []
   }
 ]
