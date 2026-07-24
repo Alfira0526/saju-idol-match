@@ -2923,5 +2923,18 @@
     "firstAt": "2026-07-24T06:51:39.163Z",
     "lastAt": "2026-07-24T06:51:39.163Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mai|riize",
+    "name": "mai",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070517",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:52:56.074Z",
+    "lastAt": "2026-07-24T06:52:56.074Z",
+    "status": "pending"
   }
 ]
