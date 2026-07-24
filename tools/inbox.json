@@ -2130,5 +2130,18 @@
     "firstAt": "2026-07-24T06:09:03.368Z",
     "lastAt": "2026-07-24T06:09:03.368Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:상현|알파드라이브원(alphadriveone)",
+    "name": "상현",
+    "group": "알파드라이브원(ALPHA DRIVE ONE)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070919",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:09:17.135Z",
+    "lastAt": "2026-07-24T06:09:17.135Z",
+    "status": "pending"
   }
 ]
