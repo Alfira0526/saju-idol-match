@@ -1064,5 +1064,18 @@
     "firstAt": "2026-07-23T03:48:01.774Z",
     "lastAt": "2026-07-24T05:19:37.124Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:srlkkxx|nct",
+    "name": "srlkkxx",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19920612",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:20:34.625Z",
+    "lastAt": "2026-07-24T05:20:34.625Z",
+    "status": "pending"
   }
 ]
