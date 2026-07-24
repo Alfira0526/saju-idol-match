@@ -3820,5 +3820,18 @@
     "firstAt": "2026-07-24T07:48:30.030Z",
     "lastAt": "2026-07-24T07:48:30.030Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김선우|theboyz",
+    "name": "김선우",
+    "group": "theboyz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000412",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:48:30.158Z",
+    "lastAt": "2026-07-24T07:48:30.158Z",
+    "status": "pending"
   }
 ]
