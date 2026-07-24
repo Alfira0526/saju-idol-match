@@ -1246,5 +1246,18 @@
     "firstAt": "2026-07-24T05:29:16.471Z",
     "lastAt": "2026-07-24T05:29:16.471Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:riize|sm",
+    "name": "Riize",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:29:17.833Z",
+    "lastAt": "2026-07-24T05:29:17.833Z",
+    "status": "pending"
   }
 ]
