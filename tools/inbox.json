@@ -2741,5 +2741,18 @@
     "firstAt": "2026-07-24T06:43:10.811Z",
     "lastAt": "2026-07-24T06:43:10.811Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:뮤|이펙스",
+    "name": "뮤",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030914",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:43:52.715Z",
+    "lastAt": "2026-07-24T06:43:52.715Z",
+    "status": "pending"
   }
 ]
