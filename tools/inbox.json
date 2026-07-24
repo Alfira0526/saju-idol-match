@@ -3066,5 +3066,18 @@
     "firstAt": "2026-07-24T07:04:24.027Z",
     "lastAt": "2026-07-24T07:04:24.027Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yihuen|treasure",
+    "name": "yihuen",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070516",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-24T07:04:32.300Z",
+    "lastAt": "2026-07-24T07:04:32.300Z",
+    "status": "pending"
   }
 ]
