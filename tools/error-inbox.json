@@ -222,5 +222,19 @@
       "쵸단"
     ],
     "notes": []
+  },
+  {
+    "key": "er:쿤|nct",
+    "name": "쿤",
+    "group": "NCT",
+    "count": 1,
+    "firstAt": "2026-07-24T08:07:14.073Z",
+    "lastAt": "2026-07-24T08:07:14.073Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
