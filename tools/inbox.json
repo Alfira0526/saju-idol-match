@@ -3170,5 +3170,18 @@
     "firstAt": "2026-07-24T07:08:45.602Z",
     "lastAt": "2026-07-24T07:08:45.602Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박지민|방탄소년단",
+    "name": "박지민",
+    "group": "방탄소년단",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951013",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:10:00.664Z",
+    "lastAt": "2026-07-24T07:10:00.664Z",
+    "status": "pending"
   }
 ]
