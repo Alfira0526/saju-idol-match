@@ -570,5 +570,18 @@
     "firstAt": "2026-07-24T04:51:45.297Z",
     "lastAt": "2026-07-24T04:51:45.297Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:률|롱샷",
+    "name": "률",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060918",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:52:28.151Z",
+    "lastAt": "2026-07-24T04:52:28.151Z",
+    "status": "pending"
   }
 ]
