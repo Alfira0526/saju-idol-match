@@ -2936,5 +2936,18 @@
     "firstAt": "2026-07-24T06:52:56.074Z",
     "lastAt": "2026-07-24T06:52:56.074Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:르르|treasure",
+    "name": "르르",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19970311",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:53:21.723Z",
+    "lastAt": "2026-07-24T06:53:21.723Z",
+    "status": "pending"
   }
 ]
