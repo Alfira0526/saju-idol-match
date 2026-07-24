@@ -3235,5 +3235,18 @@
     "firstAt": "2026-07-24T07:12:15.129Z",
     "lastAt": "2026-07-24T07:12:15.129Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sungchan|riize",
+    "name": "Sungchan",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:12:16.986Z",
+    "lastAt": "2026-07-24T07:12:16.986Z",
+    "status": "pending"
   }
 ]
