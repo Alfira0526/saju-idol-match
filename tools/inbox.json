@@ -219,5 +219,18 @@
     "firstAt": "2026-07-24T04:33:40.632Z",
     "lastAt": "2026-07-24T04:33:40.632Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이민혁|비투비",
+    "name": "이민혁",
+    "group": "비투비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19901129",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:34:23.809Z",
+    "lastAt": "2026-07-24T04:34:23.809Z",
+    "status": "pending"
   }
 ]
