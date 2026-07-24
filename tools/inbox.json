@@ -2065,5 +2065,18 @@
     "firstAt": "2026-07-24T06:06:34.123Z",
     "lastAt": "2026-07-24T06:06:34.123Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박성진|데이식스",
+    "name": "박성진",
+    "group": "데이식스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930116",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-24T06:07:18.694Z",
+    "lastAt": "2026-07-24T06:07:18.694Z",
+    "status": "pending"
   }
 ]
