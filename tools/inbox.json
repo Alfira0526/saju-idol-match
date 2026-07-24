@@ -3989,5 +3989,18 @@
     "firstAt": "2026-07-24T07:58:57.238Z",
     "lastAt": "2026-07-24T07:58:57.238Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:baekhyun|exo",
+    "name": "Baekhyun",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19920506",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:59:40.845Z",
+    "lastAt": "2026-07-24T07:59:40.845Z",
+    "status": "pending"
   }
 ]
