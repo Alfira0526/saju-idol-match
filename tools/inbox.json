@@ -102,5 +102,18 @@
     "firstAt": "2026-07-24T04:24:38.883Z",
     "lastAt": "2026-07-24T04:24:38.883Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:なお|wayv",
+    "name": "なお",
+    "group": "WayV",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19890723",
+    "note": "SM！！！",
+    "count": 1,
+    "firstAt": "2026-07-24T04:25:53.525Z",
+    "lastAt": "2026-07-24T04:25:53.525Z",
+    "status": "pending"
   }
 ]
