@@ -2208,5 +2208,18 @@
     "firstAt": "2026-07-24T06:10:55.379Z",
     "lastAt": "2026-07-24T06:10:55.379Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김재중|인코드",
+    "name": "김재중",
+    "group": "인코드",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:11:25.304Z",
+    "lastAt": "2026-07-24T06:11:25.304Z",
+    "status": "pending"
   }
 ]
