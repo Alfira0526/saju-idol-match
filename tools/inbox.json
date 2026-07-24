@@ -3027,5 +3027,18 @@
     "firstAt": "2026-07-24T07:03:36.371Z",
     "lastAt": "2026-07-24T07:03:36.371Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:변예지|exo",
+    "name": "변예지",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19991206",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:04:06.255Z",
+    "lastAt": "2026-07-24T07:04:06.255Z",
+    "status": "pending"
   }
 ]
