@@ -2468,5 +2468,18 @@
     "firstAt": "2026-07-24T06:26:46.388Z",
     "lastAt": "2026-07-24T06:26:46.388Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:승협|nflying",
+    "name": "승협",
+    "group": "Nflying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-24T06:27:30.680Z",
+    "lastAt": "2026-07-24T06:27:30.680Z",
+    "status": "pending"
   }
 ]
