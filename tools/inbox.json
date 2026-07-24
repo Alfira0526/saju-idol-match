@@ -596,5 +596,18 @@
     "firstAt": "2026-07-24T04:52:32.386Z",
     "lastAt": "2026-07-24T04:52:32.386Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:i|redvelvet",
+    "name": "I",
+    "group": "redvelvet",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:53:08.266Z",
+    "lastAt": "2026-07-24T04:53:08.266Z",
+    "status": "pending"
   }
 ]
