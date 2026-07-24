@@ -401,5 +401,18 @@
     "firstAt": "2026-07-24T04:44:33.741Z",
     "lastAt": "2026-07-24T04:44:33.741Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이한|boynextdor",
+    "name": "이한",
+    "group": "boynextdor",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20041020",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:45:16.198Z",
+    "lastAt": "2026-07-24T04:45:16.198Z",
+    "status": "pending"
   }
 ]
