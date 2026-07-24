@@ -960,5 +960,18 @@
     "firstAt": "2026-07-24T05:15:24.736Z",
     "lastAt": "2026-07-24T05:15:24.736Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리쿠|nctwish",
+    "name": "리쿠",
+    "group": "Nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030628",
+    "note": "Sm",
+    "count": 8,
+    "firstAt": "2026-07-22T18:41:08.724Z",
+    "lastAt": "2026-07-24T05:15:53.616Z",
+    "status": "pending"
   }
 ]
