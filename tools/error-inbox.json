@@ -160,5 +160,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:조|&team",
+    "name": "조",
+    "group": "&TEAM",
+    "count": 1,
+    "firstAt": "2026-07-24T07:23:48.983Z",
+    "lastAt": "2026-07-24T07:23:48.983Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
