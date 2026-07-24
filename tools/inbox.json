@@ -3131,5 +3131,18 @@
     "firstAt": "2026-07-24T07:08:29.595Z",
     "lastAt": "2026-07-24T07:08:29.595Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신유나|있지",
+    "name": "신유나",
+    "group": "있지",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:08:34.505Z",
+    "lastAt": "2026-07-24T07:08:34.505Z",
+    "status": "pending"
   }
 ]
