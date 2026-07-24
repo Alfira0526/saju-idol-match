@@ -2442,5 +2442,18 @@
     "firstAt": "2026-07-24T06:25:03.093Z",
     "lastAt": "2026-07-24T06:25:03.093Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sakuya|nctwish",
+    "name": "sakuya",
+    "group": "nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "sm ent",
+    "count": 1,
+    "firstAt": "2026-07-24T06:26:39.122Z",
+    "lastAt": "2026-07-24T06:26:39.122Z",
+    "status": "pending"
   }
 ]
