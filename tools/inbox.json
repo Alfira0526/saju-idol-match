@@ -1103,5 +1103,18 @@
     "firstAt": "2026-07-24T05:22:28.575Z",
     "lastAt": "2026-07-24T05:22:28.575Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:쟈니|nct",
+    "name": "쟈니",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950209",
+    "note": "쟈니가 ‘자니’로 표기되어 있어 수정 요청드립니다.",
+    "count": 2,
+    "firstAt": "2026-07-23T03:07:43.769Z",
+    "lastAt": "2026-07-24T05:23:15.028Z",
+    "status": "pending"
   }
 ]
