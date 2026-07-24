@@ -4561,5 +4561,18 @@
     "firstAt": "2026-07-24T08:21:51.209Z",
     "lastAt": "2026-07-24T08:21:51.209Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:thitapha|배우",
+    "name": "Thitapha",
+    "group": "배우",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19960107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:22:54.420Z",
+    "lastAt": "2026-07-24T08:22:54.420Z",
+    "status": "pending"
   }
 ]
