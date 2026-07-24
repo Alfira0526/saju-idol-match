@@ -1779,5 +1779,18 @@
     "firstAt": "2026-07-24T05:57:26.142Z",
     "lastAt": "2026-07-24T05:57:26.142Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:세훈|exo",
+    "name": "세훈",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:57:50.735Z",
+    "lastAt": "2026-07-24T05:57:50.735Z",
+    "status": "pending"
   }
 ]
