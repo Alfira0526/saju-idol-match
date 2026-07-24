@@ -2247,5 +2247,18 @@
     "firstAt": "2026-07-24T02:24:01.223Z",
     "lastAt": "2026-07-24T06:13:23.305Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:끄림|에스엠",
+    "name": "끄림",
+    "group": "에스엠",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:15:17.964Z",
+    "lastAt": "2026-07-24T06:15:17.964Z",
+    "status": "pending"
   }
 ]
