@@ -1831,5 +1831,18 @@
     "firstAt": "2026-07-24T05:59:04.863Z",
     "lastAt": "2026-07-24T05:59:04.863Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김민재|idid/starship",
+    "name": "김민재",
+    "group": "IDID / STARSHIP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050817",
+    "note": "저희오빠랑어울리는지보고싶어욤",
+    "count": 1,
+    "firstAt": "2026-07-24T05:59:11.094Z",
+    "lastAt": "2026-07-24T05:59:11.094Z",
+    "status": "pending"
   }
 ]
