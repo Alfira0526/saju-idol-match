@@ -4535,5 +4535,18 @@
     "firstAt": "2026-07-24T08:21:14.844Z",
     "lastAt": "2026-07-24T08:21:14.844Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:후이|펜타곤",
+    "name": "후이",
+    "group": "펜타곤",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930828",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:21:23.100Z",
+    "lastAt": "2026-07-24T08:21:23.100Z",
+    "status": "pending"
   }
 ]
