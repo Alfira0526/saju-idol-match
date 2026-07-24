@@ -3664,5 +3664,18 @@
     "firstAt": "2026-07-24T07:35:13.551Z",
     "lastAt": "2026-07-24T07:35:13.551Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김준민|whib",
+    "name": "김준민",
+    "group": "WHIB",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021231",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:38:56.630Z",
+    "lastAt": "2026-07-24T07:38:56.630Z",
+    "status": "pending"
   }
 ]
