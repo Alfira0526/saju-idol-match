@@ -3625,5 +3625,18 @@
     "firstAt": "2026-07-24T07:31:18.730Z",
     "lastAt": "2026-07-24T07:31:18.730Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:구현빈|파우",
+    "name": "구현빈",
+    "group": "파우",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030529",
+    "note": "귀여워",
+    "count": 1,
+    "firstAt": "2026-07-24T07:32:40.362Z",
+    "lastAt": "2026-07-24T07:32:40.362Z",
+    "status": "pending"
   }
 ]
