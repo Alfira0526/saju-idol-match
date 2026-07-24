@@ -479,5 +479,18 @@
     "firstAt": "2026-07-24T04:47:49.913Z",
     "lastAt": "2026-07-24T04:48:07.920Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김률|롱샷",
+    "name": "김률",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060918",
+    "note": "모어비전",
+    "count": 2,
+    "firstAt": "2026-07-23T00:12:24.941Z",
+    "lastAt": "2026-07-24T04:48:43.381Z",
+    "status": "pending"
   }
 ]
