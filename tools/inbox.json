@@ -2364,5 +2364,18 @@
     "firstAt": "2026-07-23T09:26:40.221Z",
     "lastAt": "2026-07-24T06:22:17.815Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장용훈|아이딧",
+    "name": "장용훈",
+    "group": "아이딧",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050420",
+    "note": "스타쉽",
+    "count": 5,
+    "firstAt": "2026-07-22T18:26:21.315Z",
+    "lastAt": "2026-07-24T06:22:27.451Z",
+    "status": "pending"
   }
 ]
