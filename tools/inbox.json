@@ -3976,5 +3976,18 @@
     "firstAt": "2026-07-24T07:55:25.832Z",
     "lastAt": "2026-07-24T07:55:25.832Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민서|투어스",
+    "name": "민서",
+    "group": "투어스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050723",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:58:57.238Z",
+    "lastAt": "2026-07-24T07:58:57.238Z",
+    "status": "pending"
   }
 ]
