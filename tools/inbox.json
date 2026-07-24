@@ -1233,5 +1233,18 @@
     "firstAt": "2026-07-24T05:28:53.673Z",
     "lastAt": "2026-07-24T05:28:53.673Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:원호|솔로",
+    "name": "원호",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19930301",
+    "note": "스타쉽엔",
+    "count": 1,
+    "firstAt": "2026-07-24T05:29:16.471Z",
+    "lastAt": "2026-07-24T05:29:16.471Z",
+    "status": "pending"
   }
 ]
