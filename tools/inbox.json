@@ -3924,5 +3924,18 @@
     "firstAt": "2026-07-24T01:15:03.312Z",
     "lastAt": "2026-07-24T07:51:21.821Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:pingku|hearts2hearts",
+    "name": "Pingku",
+    "group": "Hearts2Hearts",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19970501",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:52:14.540Z",
+    "lastAt": "2026-07-24T07:52:14.540Z",
+    "status": "pending"
   }
 ]
