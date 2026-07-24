@@ -3014,5 +3014,18 @@
     "firstAt": "2026-07-23T08:31:44.037Z",
     "lastAt": "2026-07-24T07:02:41.207Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:baekho|nu’est",
+    "name": "Baekho",
+    "group": "Nu’est",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950721",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:03:36.371Z",
+    "lastAt": "2026-07-24T07:03:36.371Z",
+    "status": "pending"
   }
 ]
