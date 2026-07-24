@@ -3911,5 +3911,18 @@
     "firstAt": "2026-07-24T07:51:13.663Z",
     "lastAt": "2026-07-24T07:51:13.663Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:태산|boynextdoor",
+    "name": "태산",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-24T01:15:03.312Z",
+    "lastAt": "2026-07-24T07:51:21.821Z",
+    "status": "pending"
   }
 ]
