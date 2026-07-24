@@ -3183,5 +3183,18 @@
     "firstAt": "2026-07-24T07:10:00.664Z",
     "lastAt": "2026-07-24T07:10:00.664Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:前田陆|nct",
+    "name": "前田陆",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:10:14.886Z",
+    "lastAt": "2026-07-24T07:10:14.886Z",
+    "status": "pending"
   }
 ]
