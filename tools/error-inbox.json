@@ -192,5 +192,19 @@
     "notes": [
       "https://x.com/i/status/2067546612399054951"
     ]
+  },
+  {
+    "key": "er:성찬|riize",
+    "name": "성찬",
+    "group": "RIIZE",
+    "count": 1,
+    "firstAt": "2026-07-24T07:29:46.401Z",
+    "lastAt": "2026-07-24T07:29:46.401Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
