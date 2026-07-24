@@ -4743,5 +4743,18 @@
     "firstAt": "2026-07-24T08:28:16.117Z",
     "lastAt": "2026-07-24T08:28:16.117Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소건|nexz",
+    "name": "소건",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060913",
+    "note": "jyp",
+    "count": 2,
+    "firstAt": "2026-07-23T05:00:40.134Z",
+    "lastAt": "2026-07-24T08:28:37.446Z",
+    "status": "pending"
   }
 ]
