@@ -778,5 +778,18 @@
     "firstAt": "2026-07-24T05:05:00.386Z",
     "lastAt": "2026-07-24T05:05:00.386Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:비아이|솔로",
+    "name": "비아이",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961022",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:06:07.360Z",
+    "lastAt": "2026-07-24T05:06:07.360Z",
+    "status": "pending"
   }
 ]
