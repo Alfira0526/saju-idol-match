@@ -3248,5 +3248,18 @@
     "firstAt": "2026-07-24T07:12:16.986Z",
     "lastAt": "2026-07-24T07:12:16.986Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:cherry|straykids",
+    "name": "Cherry",
+    "group": "stray kids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:13:54.431Z",
+    "lastAt": "2026-07-24T07:13:54.431Z",
+    "status": "pending"
   }
 ]
