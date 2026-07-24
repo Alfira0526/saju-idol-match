@@ -3040,5 +3040,18 @@
     "firstAt": "2026-07-24T07:04:06.255Z",
     "lastAt": "2026-07-24T07:04:06.255Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bambam|got7",
+    "name": "Bambam",
+    "group": "Got7",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:04:16.702Z",
+    "lastAt": "2026-07-24T07:04:16.702Z",
+    "status": "pending"
   }
 ]
