@@ -24,5 +24,18 @@
     "firstAt": "2026-07-24T04:21:32.202Z",
     "lastAt": "2026-07-24T04:21:32.202Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:chenle|nct",
+    "name": "Chenle",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20011122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:22:11.845Z",
+    "lastAt": "2026-07-24T04:22:11.845Z",
+    "status": "pending"
   }
 ]
