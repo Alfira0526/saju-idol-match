@@ -830,5 +830,18 @@
     "firstAt": "2026-07-24T05:08:45.533Z",
     "lastAt": "2026-07-24T05:08:45.533Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:thunwa|riizetomorrowxtogether",
+    "name": "Thunwa",
+    "group": "Riize tomorrow x together",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19911201",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:10:19.001Z",
+    "lastAt": "2026-07-24T05:10:19.001Z",
+    "status": "pending"
   }
 ]
