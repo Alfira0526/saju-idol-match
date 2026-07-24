@@ -2169,5 +2169,18 @@
     "firstAt": "2026-07-24T06:09:57.173Z",
     "lastAt": "2026-07-24T06:09:57.173Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재민|엔시티드림",
+    "name": "재민",
+    "group": "엔시티 드림",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:10:36.084Z",
+    "lastAt": "2026-07-24T06:10:36.084Z",
+    "status": "pending"
   }
 ]
