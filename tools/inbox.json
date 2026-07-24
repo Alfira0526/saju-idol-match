@@ -2897,5 +2897,18 @@
     "firstAt": "2026-07-24T06:51:21.072Z",
     "lastAt": "2026-07-24T06:51:21.072Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:잭|re:revolution(혁명의심장)",
+    "name": "잭",
+    "group": "RE:REVOLUTION (혁명의심장)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "한국최초 남자버추얼아이돌",
+    "count": 1,
+    "firstAt": "2026-07-24T06:51:26.526Z",
+    "lastAt": "2026-07-24T06:51:26.526Z",
+    "status": "pending"
   }
 ]
