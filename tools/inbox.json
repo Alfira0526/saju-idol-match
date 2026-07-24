@@ -427,5 +427,18 @@
     "firstAt": "2026-07-24T04:46:23.204Z",
     "lastAt": "2026-07-24T04:46:23.204Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:우즈|솔로",
+    "name": "우즈",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960805",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T04:29:12.548Z",
+    "lastAt": "2026-07-24T04:46:33.339Z",
+    "status": "pending"
   }
 ]
