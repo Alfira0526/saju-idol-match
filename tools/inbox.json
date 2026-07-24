@@ -999,5 +999,18 @@
     "firstAt": "2026-07-24T05:17:18.943Z",
     "lastAt": "2026-07-24T05:17:18.943Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예주|ichillin",
+    "name": "예주",
+    "group": "ICHILLIN",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040901",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:17:23.375Z",
+    "lastAt": "2026-07-24T05:17:23.375Z",
+    "status": "pending"
   }
 ]
