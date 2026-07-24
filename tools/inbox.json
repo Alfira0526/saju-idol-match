@@ -297,5 +297,18 @@
     "firstAt": "2026-07-24T04:38:56.965Z",
     "lastAt": "2026-07-24T04:38:56.965Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jiae|아이들",
+    "name": "jiae",
+    "group": "아이들",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060314",
+    "note": "cube",
+    "count": 1,
+    "firstAt": "2026-07-24T04:40:54.400Z",
+    "lastAt": "2026-07-24T04:40:54.400Z",
+    "status": "pending"
   }
 ]
