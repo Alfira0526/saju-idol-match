@@ -30,6 +30,16 @@ duplicate `name|group`. So a wrong birthdate can never silently ship.
 2. `node tools/build.js` — must print `errors: [] / computeMismatch: [] / anchorFails: []`.
 3. Headless smoke test (see below), then commit.
 
+### 밴드 분류 (band classification) — `tools/bands.json`
+앱의 **‘🎸 밴드만’ 필터**는 `tools/bands.json`(밴드 그룹명 배열)을 씁니다. build.js가 이 목록을
+`index.html`의 `const BAND_GROUPS = new Set([...])` 에 주입합니다.
+- **추가하는 그룹이 밴드(멤버가 악기를 직접 연주하는 록/팝록 밴드)면** 그룹명을 `bands.json`에
+  **정확히 idols.json의 `group`과 똑같이** 넣는다(예: `"DAY6"`, `"Xdinary Heroes"`, `"QWER"`, `"Dragon Pony"`).
+- **판단 기준(엄격):** 무대에서 악기를 연주하는 밴드만. **댄스·보컬 아이돌 그룹은 제외.**
+  자작곡을 하는 싱어송라이터 듀오(예: AKMU)도 ‘밴드’ 아님 → 제외. **애매하면 넣지 않는다.**
+- `build.js`가 `bands.notInData`(bands.json엔 있으나 idols.json엔 없는 그룹)를 리포트한다 —
+  오타·미수록을 잡는 용도. 비어 있어야 정상.
+
 ## Headless smoke test
 ```
 node - <<'EOF'

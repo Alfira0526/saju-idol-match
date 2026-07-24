@@ -445,6 +445,13 @@
       <select id="groupFilter" onchange="onGroupChange(this)"></select>
     </div>
 
+    <div class="filter-row" id="bandRow" style="display:none">
+      <label class="filter-label">유형</label>
+      <div class="agency-btns">
+        <button class="agbtn" id="bandToggle" type="button" onclick="toggleBand()">🎸 밴드만</button>
+      </div>
+    </div>
+
     <div class="gender-tabs" id="genderTabs">
       <button class="gtab active" data-g="F" onclick="switchGender('F')">여자 아이돌</button>
       <button class="gtab" data-g="M" onclick="switchGender('M')">남자 아이돌</button>
@@ -1495,6 +1502,8 @@ const CAT_NAMES = {
 };
 const catLabel = c => (CAT_NAMES[c] ? CAT_NAMES[c].ko : c);
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
+// 밴드(악기 연주) 그룹 — tools/bands.json에서 build.js가 주입. '밴드만' 필터에 사용.
+const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony"]);
 function scopeMatch(x){
   const s = window._saju;
   if(x.cat !== (s.activeCat || "K-idol")) return false; // 카테고리 우선 필터
@@ -1515,7 +1524,22 @@ function currentList(){
   const s = window._saju;
   let base = s.scored.filter(scopeMatch);
   if(genderTabsNeeded()) base = base.filter(x=>x.gender===s.activeGender);
+  if(s.bandOnly) base = base.filter(x=>BAND_GROUPS.has(x.group));
   return base.slice().sort((a,b)=> b.score-a.score);
+}
+// 현재 범위에 밴드가 있으면 '밴드만' 필터 노출·상태 동기화
+function syncBandRow(){
+  const s = window._saju; if(!s) return;
+  const hasBand = s.scored.filter(scopeMatch).some(x=>BAND_GROUPS.has(x.group));
+  document.getElementById('bandRow').style.display = hasBand ? "" : "none";
+  if(!hasBand) s.bandOnly = false;
+  document.getElementById('bandToggle').classList.toggle('active', !!s.bandOnly);
+}
+function toggleBand(){
+  const s = window._saju; if(!s) return;
+  s.bandOnly = !s.bandOnly;
+  document.getElementById('bandToggle').classList.toggle('active', !!s.bandOnly);
+  renderRanks();
 }
 function currentLabel(){
   const s = window._saju, v = s.scope || "";
@@ -1555,6 +1579,7 @@ function moreLabel(){
 }
 
 function renderRanks(){
+  syncBandRow();
   const list = currentList();
   document.getElementById('ranklist').innerHTML = list.slice(0,TOP_N).map((r,i)=>cardHTML(r,i)).join("");
   const restEl = document.getElementById('rankRest');

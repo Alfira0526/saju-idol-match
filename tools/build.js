@@ -26,6 +26,10 @@ const idxPath = path.join(ROOT, 'index.html');
 const CHECK = process.argv.includes('--check');
 
 const idols = JSON.parse(fs.readFileSync(path.join(__dirname,'idols.json'),'utf8'));
+// 밴드(악기 연주) 그룹 목록 — 데이터로 관리(검증·수정 용이). 없으면 빈 목록.
+let bands=[];
+try{ bands = JSON.parse(fs.readFileSync(path.join(__dirname,'bands.json'),'utf8')); }catch(e){}
+if(!Array.isArray(bands)) bands=[];
 
 const rows=[], seen=new Set();
 const errors=[], mismatch=[], dupes=[];
@@ -55,7 +59,9 @@ const anchorFails=anchors.filter(([dob,exp])=>{const [y,m,d]=dob.split('-').map(
 const agency={}, gender={}, category={};
 rows.forEach(r=>{agency[r[5]]=(agency[r[5]]||0)+1; gender[r[4]]=(gender[r[4]]||0)+1; category[r[7]]=(category[r[7]]||0)+1;});
 
-const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), category, agency, gender};
+const allGroups=new Set(rows.map(r=>r[1]));
+const bandsNotInData=bands.filter(g=>!allGroups.has(g));
+const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), category, agency, gender, bands:{count:bands.length, notInData:bandsNotInData}};
 console.log(JSON.stringify(report,null,2));
 
 const fatal = errors.length || mismatch.length || anchorFails.length;
@@ -68,5 +74,13 @@ const i=html.indexOf(open); if(i<0){ console.error('IDOLS array not found'); pro
 const j=html.indexOf(close, i);
 const lines=rows.map(r=>`  ["${r[0]}","${r[1]}","${r[2]}","${r[3]}","${r[4]}","${r[5]}","${r[6]}","${r[7]}"]`).join(',\n');
 html=html.slice(0,i+open.length)+"\n"+lines+"\n"+html.slice(j+1); // +1 drops the leading \n of close
+
+// 밴드 목록 주입: `const BAND_GROUPS = new Set([...]);` 한 줄을 교체
+const bopen='const BAND_GROUPS = new Set([', bclose=']);';
+const bi=html.indexOf(bopen);
+if(bi>=0){
+  const bj=html.indexOf(bclose, bi);
+  if(bj>=0){ html=html.slice(0,bi+bopen.length)+bands.map(g=>JSON.stringify(g)).join(',')+html.slice(bj); }
+}
 fs.writeFileSync(idxPath,html);
-console.log(`\nWrote ${rows.length} idols into index.html`);
+console.log(`\nWrote ${rows.length} idols and ${bands.length} band groups into index.html`);
