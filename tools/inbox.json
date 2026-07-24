@@ -1012,5 +1012,18 @@
     "firstAt": "2026-07-24T05:17:23.375Z",
     "lastAt": "2026-07-24T05:17:23.375Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유우시|nct",
+    "name": "유우시",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "위시멤버들의궁합도궁금해요",
+    "count": 6,
+    "firstAt": "2026-07-22T17:38:59.687Z",
+    "lastAt": "2026-07-24T05:17:46.646Z",
+    "status": "pending"
   }
 ]
