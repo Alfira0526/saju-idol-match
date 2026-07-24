@@ -1532,5 +1532,18 @@
     "firstAt": "2026-07-24T05:46:36.124Z",
     "lastAt": "2026-07-24T05:46:36.124Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nctdream|sm",
+    "name": "Nctdream",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:47:22.125Z",
+    "lastAt": "2026-07-24T05:47:22.125Z",
+    "status": "pending"
   }
 ]
