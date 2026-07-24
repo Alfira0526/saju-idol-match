@@ -687,5 +687,18 @@
     "firstAt": "2026-07-24T04:57:14.680Z",
     "lastAt": "2026-07-24T04:57:14.680Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jinyonghoon|onewe",
+    "name": "Jin Yonghoon",
+    "group": "ONEWE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940817",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:59:25.190Z",
+    "lastAt": "2026-07-24T04:59:25.190Z",
+    "status": "pending"
   }
 ]
