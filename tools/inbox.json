@@ -4080,5 +4080,18 @@
     "firstAt": "2026-07-24T08:05:04.885Z",
     "lastAt": "2026-07-24T08:05:04.885Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:riwoo|boynextdoor",
+    "name": "RIWOO",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031022",
+    "note": "我喜歡他",
+    "count": 1,
+    "firstAt": "2026-07-24T08:05:15.476Z",
+    "lastAt": "2026-07-24T08:05:15.476Z",
+    "status": "pending"
   }
 ]
