@@ -1935,5 +1935,18 @@
     "firstAt": "2026-07-24T06:02:42.164Z",
     "lastAt": "2026-07-24T06:02:42.164Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:achiraya|redvelvet",
+    "name": "Achiraya",
+    "group": "Red Velvet",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070719",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:02:55.899Z",
+    "lastAt": "2026-07-24T06:02:55.899Z",
+    "status": "pending"
   }
 ]
