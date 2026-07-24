@@ -2910,5 +2910,18 @@
     "firstAt": "2026-07-24T06:51:26.526Z",
     "lastAt": "2026-07-24T06:51:26.526Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:haneul|kissoflife",
+    "name": "HANEUL",
+    "group": "KISS OF LIFE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050525",
+    "note": "Cute",
+    "count": 1,
+    "firstAt": "2026-07-24T06:51:39.163Z",
+    "lastAt": "2026-07-24T06:51:39.163Z",
+    "status": "pending"
   }
 ]
