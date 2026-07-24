@@ -2403,5 +2403,18 @@
     "firstAt": "2026-07-24T06:23:23.168Z",
     "lastAt": "2026-07-24T06:23:23.168Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:보|아이브",
+    "name": "보",
+    "group": "아이브",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "22050611",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:24:26.717Z",
+    "lastAt": "2026-07-24T06:24:26.717Z",
+    "status": "pending"
   }
 ]
