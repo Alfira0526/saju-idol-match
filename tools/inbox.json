@@ -674,5 +674,18 @@
     "firstAt": "2026-07-24T04:56:50.492Z",
     "lastAt": "2026-07-24T04:56:50.492Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:felix|straykids",
+    "name": "Felix",
+    "group": "Stray Kids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "15092000",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:57:14.680Z",
+    "lastAt": "2026-07-24T04:57:14.680Z",
+    "status": "pending"
   }
 ]
