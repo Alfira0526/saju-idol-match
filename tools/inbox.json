@@ -3807,5 +3807,18 @@
     "firstAt": "2026-07-23T08:02:02.433Z",
     "lastAt": "2026-07-24T07:47:41.659Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jenny|nctdream,riize",
+    "name": "Jenny",
+    "group": "Nct dream , riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001007",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:48:30.030Z",
+    "lastAt": "2026-07-24T07:48:30.030Z",
+    "status": "pending"
   }
 ]
