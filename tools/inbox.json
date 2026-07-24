@@ -1896,5 +1896,18 @@
     "firstAt": "2026-07-24T06:00:31.469Z",
     "lastAt": "2026-07-24T06:01:33.817Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nathawan|nct",
+    "name": "Nathawan",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19951009",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:02:13.454Z",
+    "lastAt": "2026-07-24T06:02:13.454Z",
+    "status": "pending"
   }
 ]
