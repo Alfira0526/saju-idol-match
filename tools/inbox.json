@@ -2949,5 +2949,18 @@
     "firstAt": "2026-07-24T06:53:21.723Z",
     "lastAt": "2026-07-24T06:53:21.723Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yoonjaehyuk|treasure",
+    "name": "Yoon Jaehyuk",
+    "group": "treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:54:39.779Z",
+    "lastAt": "2026-07-24T06:54:39.779Z",
+    "status": "pending"
   }
 ]
