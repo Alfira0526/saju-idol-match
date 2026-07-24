@@ -505,5 +505,18 @@
     "firstAt": "2026-07-24T04:49:49.490Z",
     "lastAt": "2026-07-24T04:49:49.490Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:xiaojun|wayv",
+    "name": "XIAOJUN",
+    "group": "WayV",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990808",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:50:13.101Z",
+    "lastAt": "2026-07-24T04:50:13.101Z",
+    "status": "pending"
   }
 ]
