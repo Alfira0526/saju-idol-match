@@ -2832,5 +2832,18 @@
     "firstAt": "2026-07-24T06:47:26.970Z",
     "lastAt": "2026-07-24T06:47:26.970Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ㄴㄴ|treasure",
+    "name": "ㄴㄴ",
+    "group": "Treasure",
+    "cat": "C-actor",
+    "gender": "F",
+    "dob": "20060425",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:48:49.227Z",
+    "lastAt": "2026-07-24T06:48:49.227Z",
+    "status": "pending"
   }
 ]
