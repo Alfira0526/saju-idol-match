@@ -635,5 +635,18 @@
     "firstAt": "2026-07-24T04:55:38.403Z",
     "lastAt": "2026-07-24T04:55:38.403Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지성|nctdream",
+    "name": "지성",
+    "group": "NCT DREAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "SM",
+    "count": 2,
+    "firstAt": "2026-07-22T22:53:20.050Z",
+    "lastAt": "2026-07-24T04:56:06.220Z",
+    "status": "pending"
   }
 ]
