@@ -2156,5 +2156,18 @@
     "firstAt": "2026-07-24T06:09:56.103Z",
     "lastAt": "2026-07-24T06:09:56.103Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤정한|seventeen",
+    "name": "윤정한",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951004",
+    "note": "잘생겼어요",
+    "count": 1,
+    "firstAt": "2026-07-24T06:09:57.173Z",
+    "lastAt": "2026-07-24T06:09:57.173Z",
+    "status": "pending"
   }
 ]
