@@ -3768,5 +3768,18 @@
     "firstAt": "2026-07-24T07:45:10.619Z",
     "lastAt": "2026-07-24T07:45:10.619Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jungyonghwa|cnblue",
+    "name": "Jung Yonghwa",
+    "group": "CNBLUE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19980622",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:46:16.341Z",
+    "lastAt": "2026-07-24T07:46:16.341Z",
+    "status": "pending"
   }
 ]
