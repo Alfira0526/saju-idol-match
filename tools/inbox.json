@@ -2312,5 +2312,18 @@
     "firstAt": "2026-07-24T06:18:27.341Z",
     "lastAt": "2026-07-24T06:18:27.341Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimjonghyeon|nu'est",
+    "name": "Kim Jong Hyeon",
+    "group": "Nu'est",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950608",
+    "note": "Pledis",
+    "count": 1,
+    "firstAt": "2026-07-24T06:19:44.463Z",
+    "lastAt": "2026-07-24T06:19:44.463Z",
+    "status": "pending"
   }
 ]
