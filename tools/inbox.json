@@ -1363,5 +1363,18 @@
     "firstAt": "2026-07-24T05:35:57.624Z",
     "lastAt": "2026-07-24T05:35:57.624Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김재중|jyj",
+    "name": "김재중",
+    "group": "JYJ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19860126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:37:10.135Z",
+    "lastAt": "2026-07-24T05:37:10.135Z",
+    "status": "pending"
   }
 ]
