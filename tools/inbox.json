@@ -472,12 +472,12 @@
     "name": "Jaehyun",
     "group": "NCT",
     "cat": "K-idol",
-    "gender": "",
-    "dob": "",
+    "gender": "M",
+    "dob": "19970214",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T04:47:49.913Z",
-    "lastAt": "2026-07-24T04:47:49.913Z",
+    "lastAt": "2026-07-24T04:48:07.920Z",
     "status": "pending"
   }
 ]
