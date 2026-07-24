@@ -4106,5 +4106,18 @@
     "firstAt": "2026-07-24T08:05:50.215Z",
     "lastAt": "2026-07-24T08:05:50.215Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:라이즈|riize",
+    "name": "라이즈",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:06:55.282Z",
+    "lastAt": "2026-07-24T08:06:55.282Z",
+    "status": "pending"
   }
 ]
