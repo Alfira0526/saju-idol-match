@@ -2715,5 +2715,18 @@
     "firstAt": "2026-07-24T06:40:28.101Z",
     "lastAt": "2026-07-24T06:40:28.101Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:dino|seventeen",
+    "name": "Dino",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:41:14.022Z",
+    "lastAt": "2026-07-24T06:41:14.022Z",
+    "status": "pending"
   }
 ]
