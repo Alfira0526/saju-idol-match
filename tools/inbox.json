@@ -3053,5 +3053,18 @@
     "firstAt": "2026-07-24T07:04:16.702Z",
     "lastAt": "2026-07-24T07:04:16.702Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ink|sm",
+    "name": "Ink",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060129",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:04:24.027Z",
+    "lastAt": "2026-07-24T07:04:24.027Z",
+    "status": "pending"
   }
 ]
