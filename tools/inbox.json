@@ -2429,5 +2429,18 @@
     "firstAt": "2026-07-24T06:24:53.285Z",
     "lastAt": "2026-07-24T06:24:53.285Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:닝닝|에스파",
+    "name": "닝닝",
+    "group": "에스파",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20021023",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:25:03.093Z",
+    "lastAt": "2026-07-24T06:25:03.093Z",
+    "status": "pending"
   }
 ]
