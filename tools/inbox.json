@@ -167,5 +167,18 @@
     "firstAt": "2026-07-24T04:29:42.078Z",
     "lastAt": "2026-07-24T04:29:42.078Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민니|ateez",
+    "name": "민니",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20031124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:30:20.801Z",
+    "lastAt": "2026-07-24T04:30:20.801Z",
+    "status": "pending"
   }
 ]
