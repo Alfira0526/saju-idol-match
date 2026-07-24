@@ -4665,5 +4665,18 @@
     "firstAt": "2026-07-24T08:26:47.737Z",
     "lastAt": "2026-07-24T08:26:47.737Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:eric|theboyz",
+    "name": "ERIC",
+    "group": "Theboyz",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20001222",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:27:12.823Z",
+    "lastAt": "2026-07-24T08:27:12.823Z",
+    "status": "pending"
   }
 ]
