@@ -2611,5 +2611,18 @@
     "firstAt": "2026-07-24T06:35:58.657Z",
     "lastAt": "2026-07-24T06:35:58.657Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이제노|nctdream",
+    "name": "이제노",
+    "group": "Nct dream",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000423",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:36:01.750Z",
+    "lastAt": "2026-07-24T06:36:01.750Z",
+    "status": "pending"
   }
 ]
