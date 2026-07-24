@@ -2338,5 +2338,18 @@
     "firstAt": "2026-07-24T06:20:19.107Z",
     "lastAt": "2026-07-24T06:20:19.107Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이주헌|몬스타엑스",
+    "name": "이주헌",
+    "group": "몬스타엑스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:21:18.912Z",
+    "lastAt": "2026-07-24T06:21:18.912Z",
+    "status": "pending"
   }
 ]
