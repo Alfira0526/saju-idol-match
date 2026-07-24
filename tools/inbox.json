@@ -4704,5 +4704,18 @@
     "firstAt": "2026-07-22T19:28:06.678Z",
     "lastAt": "2026-07-24T08:27:20.965Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:구준회|ikon",
+    "name": "구준회",
+    "group": "iKON",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970331",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:27:31.962Z",
+    "lastAt": "2026-07-24T08:27:31.962Z",
+    "status": "pending"
   }
 ]
