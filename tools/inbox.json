@@ -2624,5 +2624,18 @@
     "firstAt": "2026-07-24T06:36:01.750Z",
     "lastAt": "2026-07-24T06:36:01.750Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yu-n|treasure",
+    "name": "Yu-n",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20120814",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:36:44.447Z",
+    "lastAt": "2026-07-24T06:36:44.447Z",
+    "status": "pending"
   }
 ]
