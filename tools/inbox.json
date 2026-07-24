@@ -895,5 +895,18 @@
     "firstAt": "2026-07-24T05:12:38.639Z",
     "lastAt": "2026-07-24T05:12:38.639Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:seventeen,tws|pledis",
+    "name": "SEVENTEEN,TWS",
+    "group": "Pledis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:13:53.798Z",
+    "lastAt": "2026-07-24T05:13:53.798Z",
+    "status": "pending"
   }
 ]
