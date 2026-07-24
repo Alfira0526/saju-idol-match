@@ -4717,5 +4717,18 @@
     "firstAt": "2026-07-24T08:27:31.962Z",
     "lastAt": "2026-07-24T08:27:31.962Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:radio|이경민",
+    "name": "radio",
+    "group": "이경민",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071002",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:27:32.794Z",
+    "lastAt": "2026-07-24T08:27:32.794Z",
+    "status": "pending"
   }
 ]
