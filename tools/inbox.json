@@ -2026,5 +2026,18 @@
     "firstAt": "2026-07-24T06:05:57.720Z",
     "lastAt": "2026-07-24T06:05:57.720Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신예찬|오메가엑스omegax",
+    "name": "신예찬",
+    "group": "오메가엑스 omega x",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010514",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:06:07.103Z",
+    "lastAt": "2026-07-24T06:06:07.103Z",
+    "status": "pending"
   }
 ]
