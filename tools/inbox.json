@@ -1727,5 +1727,18 @@
     "firstAt": "2026-07-24T05:56:33.035Z",
     "lastAt": "2026-07-24T05:56:33.035Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:시온|nct",
+    "name": "시온",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020511",
+    "note": "NCT WICH 멤버",
+    "count": 5,
+    "firstAt": "2026-07-22T18:00:35.234Z",
+    "lastAt": "2026-07-24T05:56:50.615Z",
+    "status": "pending"
   }
 ]
