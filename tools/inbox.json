@@ -2013,5 +2013,18 @@
     "firstAt": "2026-07-24T06:05:49.950Z",
     "lastAt": "2026-07-24T06:05:49.950Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:준규|treasure",
+    "name": "준규",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "09092000",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:05:57.720Z",
+    "lastAt": "2026-07-24T06:05:57.720Z",
+    "status": "pending"
   }
 ]
