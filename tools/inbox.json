@@ -1272,5 +1272,18 @@
     "firstAt": "2026-07-24T05:30:33.497Z",
     "lastAt": "2026-07-24T05:30:33.497Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kiku|enhypen",
+    "name": "kiku",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990625",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:31:37.234Z",
+    "lastAt": "2026-07-24T05:31:37.234Z",
+    "status": "pending"
   }
 ]
