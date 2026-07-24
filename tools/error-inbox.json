@@ -102,5 +102,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:이민혁|btob",
+    "name": "이민혁",
+    "group": "BTOB",
+    "count": 1,
+    "firstAt": "2026-07-24T05:48:39.770Z",
+    "lastAt": "2026-07-24T05:48:39.770Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
