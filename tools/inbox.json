@@ -2871,5 +2871,18 @@
     "firstAt": "2026-07-23T08:38:35.367Z",
     "lastAt": "2026-07-24T06:50:42.550Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimryul|morevision",
+    "name": "Kim ryul",
+    "group": "Morevision",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "18092006",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:51:17.078Z",
+    "lastAt": "2026-07-24T06:51:17.078Z",
+    "status": "pending"
   }
 ]
