@@ -1610,5 +1610,18 @@
     "firstAt": "2026-07-24T05:54:37.056Z",
     "lastAt": "2026-07-24T05:54:37.056Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:백승|이펙스",
+    "name": "백승",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041005",
+    "note": "C9엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-24T05:55:03.606Z",
+    "lastAt": "2026-07-24T05:55:03.606Z",
+    "status": "pending"
   }
 ]
