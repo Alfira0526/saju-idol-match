@@ -2234,5 +2234,18 @@
     "firstAt": "2026-07-24T06:13:11.543Z",
     "lastAt": "2026-07-24T06:13:11.543Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:솔라|마마무",
+    "name": "솔라",
+    "group": "마마무",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19910221",
+    "note": "RBW",
+    "count": 2,
+    "firstAt": "2026-07-24T02:24:01.223Z",
+    "lastAt": "2026-07-24T06:13:23.305Z",
+    "status": "pending"
   }
 ]
