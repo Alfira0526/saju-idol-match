@@ -2260,5 +2260,18 @@
     "firstAt": "2026-07-24T06:15:17.964Z",
     "lastAt": "2026-07-24T06:15:17.964Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:황정의|alphadriveone",
+    "name": "황정의",
+    "group": "Alpha drive one",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "19951027",
+    "note": ".",
+    "count": 1,
+    "firstAt": "2026-07-24T06:16:42.055Z",
+    "lastAt": "2026-07-24T06:16:42.055Z",
+    "status": "pending"
   }
 ]
