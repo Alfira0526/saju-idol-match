@@ -661,5 +661,18 @@
     "firstAt": "2026-07-24T04:56:44.257Z",
     "lastAt": "2026-07-24T04:56:44.257Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:기욱|원위/onewe",
+    "name": "기욱",
+    "group": "원위/ONEWE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:56:50.492Z",
+    "lastAt": "2026-07-24T04:56:50.492Z",
+    "status": "pending"
   }
 ]
