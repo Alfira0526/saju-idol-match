@@ -2819,5 +2819,18 @@
     "firstAt": "2026-07-24T06:46:24.294Z",
     "lastAt": "2026-07-24T06:46:24.294Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김재현|nflying",
+    "name": "김재현",
+    "group": "NFlying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940715",
+    "note": "FNC엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-24T06:47:26.970Z",
+    "lastAt": "2026-07-24T06:47:26.970Z",
+    "status": "pending"
   }
 ]
