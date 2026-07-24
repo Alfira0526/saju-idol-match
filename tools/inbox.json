@@ -1844,5 +1844,18 @@
     "firstAt": "2026-07-24T05:59:11.094Z",
     "lastAt": "2026-07-24T05:59:11.094Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하투하전원|하츠투하츠",
+    "name": "하투하 전원",
+    "group": "하츠투하츠",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "에스엠",
+    "count": 1,
+    "firstAt": "2026-07-24T05:59:34.291Z",
+    "lastAt": "2026-07-24T05:59:34.291Z",
+    "status": "pending"
   }
 ]
