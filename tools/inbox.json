@@ -4145,5 +4145,18 @@
     "firstAt": "2026-07-23T02:39:11.043Z",
     "lastAt": "2026-07-24T08:09:54.036Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진|bts",
+    "name": "진",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:10:33.389Z",
+    "lastAt": "2026-07-24T08:10:33.389Z",
+    "status": "pending"
   }
 ]
