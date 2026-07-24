@@ -1740,5 +1740,18 @@
     "firstAt": "2026-07-22T18:00:35.234Z",
     "lastAt": "2026-07-24T05:56:50.615Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ammin|sm",
+    "name": "AmMin",
+    "group": "SM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980221",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:56:58.064Z",
+    "lastAt": "2026-07-24T05:56:58.064Z",
+    "status": "pending"
   }
 ]
