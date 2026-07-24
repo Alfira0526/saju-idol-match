@@ -4574,5 +4574,18 @@
     "firstAt": "2026-07-24T08:22:54.420Z",
     "lastAt": "2026-07-24T08:22:54.420Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박석준|82major",
+    "name": "박석준",
+    "group": "82major",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041215",
+    "note": "아이돌이에요",
+    "count": 3,
+    "firstAt": "2026-07-23T04:25:45.589Z",
+    "lastAt": "2026-07-24T08:23:05.871Z",
+    "status": "pending"
   }
 ]
