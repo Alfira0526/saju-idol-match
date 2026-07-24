@@ -1870,5 +1870,18 @@
     "firstAt": "2026-07-22T22:42:07.971Z",
     "lastAt": "2026-07-24T06:00:02.503Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:공찬|b1a4",
+    "name": "공찬",
+    "group": "B1A4",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930814",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:00:02.745Z",
+    "lastAt": "2026-07-24T06:00:02.745Z",
+    "status": "pending"
   }
 ]
