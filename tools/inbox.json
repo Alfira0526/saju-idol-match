@@ -258,5 +258,18 @@
     "firstAt": "2026-07-23T01:58:01.485Z",
     "lastAt": "2026-07-24T04:35:32.184Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박누리|idntt",
+    "name": "박누리",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20081204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:36:40.502Z",
+    "lastAt": "2026-07-24T04:36:40.502Z",
+    "status": "pending"
   }
 ]
