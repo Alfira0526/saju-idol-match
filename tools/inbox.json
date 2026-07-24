@@ -115,5 +115,18 @@
     "firstAt": "2026-07-24T04:25:53.525Z",
     "lastAt": "2026-07-24T04:25:53.525Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:성일|82major",
+    "name": "성일",
+    "group": "82MAJOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040329",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:26:16.157Z",
+    "lastAt": "2026-07-24T04:26:16.157Z",
+    "status": "pending"
   }
 ]
