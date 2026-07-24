@@ -4197,5 +4197,18 @@
     "firstAt": "2026-07-24T08:11:23.478Z",
     "lastAt": "2026-07-24T08:11:23.478Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sion|nctwish",
+    "name": "Sion",
+    "group": "NCTwish",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:12:27.093Z",
+    "lastAt": "2026-07-24T08:12:27.093Z",
+    "status": "pending"
   }
 ]
