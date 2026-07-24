@@ -2884,5 +2884,18 @@
     "firstAt": "2026-07-24T06:51:17.078Z",
     "lastAt": "2026-07-24T06:51:17.078Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도훈|투어스",
+    "name": "김도훈",
+    "group": "투어스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050130",
+    "note": "플래디스",
+    "count": 1,
+    "firstAt": "2026-07-24T06:51:21.072Z",
+    "lastAt": "2026-07-24T06:51:21.072Z",
+    "status": "pending"
   }
 ]
