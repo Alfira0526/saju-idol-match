@@ -4275,5 +4275,18 @@
     "firstAt": "2026-07-24T08:15:39.706Z",
     "lastAt": "2026-07-24T08:15:39.706Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kqentertainment|ateez",
+    "name": "KQ entertainment",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:15:52.688Z",
+    "lastAt": "2026-07-24T08:15:52.688Z",
+    "status": "pending"
   }
 ]
