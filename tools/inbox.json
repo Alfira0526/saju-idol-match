@@ -2325,5 +2325,18 @@
     "firstAt": "2026-07-24T06:19:44.463Z",
     "lastAt": "2026-07-24T06:19:44.463Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bambino|riize",
+    "name": "Bambino",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000719",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:20:19.107Z",
+    "lastAt": "2026-07-24T06:20:19.107Z",
+    "status": "pending"
   }
 ]
