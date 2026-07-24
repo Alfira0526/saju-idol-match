@@ -1805,5 +1805,18 @@
     "firstAt": "2026-07-24T05:57:55.115Z",
     "lastAt": "2026-07-24T05:57:55.115Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이승현|aimers",
+    "name": "이승현",
+    "group": "AIMERS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980717",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:58:04.258Z",
+    "lastAt": "2026-07-24T05:58:04.258Z",
+    "status": "pending"
   }
 ]
