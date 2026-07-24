@@ -4262,5 +4262,18 @@
     "firstAt": "2026-07-24T08:14:30.900Z",
     "lastAt": "2026-07-24T08:14:30.900Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:左依诺|boynextdoor",
+    "name": "左依诺",
+    "group": "boynextdoor",
+    "cat": "C-actor",
+    "gender": "F",
+    "dob": "20061225",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:15:39.706Z",
+    "lastAt": "2026-07-24T08:15:39.706Z",
+    "status": "pending"
   }
 ]
