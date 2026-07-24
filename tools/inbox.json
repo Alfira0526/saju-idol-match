@@ -3651,5 +3651,18 @@
     "firstAt": "2026-07-23T04:29:26.603Z",
     "lastAt": "2026-07-24T07:34:58.472Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:karina|aespa",
+    "name": "Karina",
+    "group": "aespa",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:35:13.551Z",
+    "lastAt": "2026-07-24T07:35:13.551Z",
+    "status": "pending"
   }
 ]
