@@ -3794,5 +3794,18 @@
     "firstAt": "2026-07-24T07:47:21.555Z",
     "lastAt": "2026-07-24T07:47:21.555Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지코|블락비",
+    "name": "지코",
+    "group": "블락비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920914",
+    "note": "KOZ",
+    "count": 3,
+    "firstAt": "2026-07-23T08:02:02.433Z",
+    "lastAt": "2026-07-24T07:47:41.659Z",
+    "status": "pending"
   }
 ]
