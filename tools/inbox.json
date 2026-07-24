@@ -2520,5 +2520,18 @@
     "firstAt": "2026-07-24T06:30:27.237Z",
     "lastAt": "2026-07-24T06:30:27.237Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동화|킥플립",
+    "name": "이동화",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060311",
+    "note": "얘네도 jyp인데 포함시켜주세요",
+    "count": 2,
+    "firstAt": "2026-07-23T05:18:39.387Z",
+    "lastAt": "2026-07-24T06:31:36.921Z",
+    "status": "pending"
   }
 ]
