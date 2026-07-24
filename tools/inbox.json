@@ -1116,5 +1116,18 @@
     "firstAt": "2026-07-23T03:07:43.769Z",
     "lastAt": "2026-07-24T05:23:15.028Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:피치|redvelvet",
+    "name": "피치",
+    "group": "Red Velvet",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20031019",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:23:56.859Z",
+    "lastAt": "2026-07-24T05:23:56.859Z",
+    "status": "pending"
   }
 ]
