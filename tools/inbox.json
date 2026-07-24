@@ -791,5 +791,18 @@
     "firstAt": "2026-07-24T05:06:07.360Z",
     "lastAt": "2026-07-24T05:06:07.360Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:doyoung|nct127",
+    "name": "Doyoung",
+    "group": "Nct127",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:06:45.955Z",
+    "lastAt": "2026-07-24T05:06:45.955Z",
+    "status": "pending"
   }
 ]
