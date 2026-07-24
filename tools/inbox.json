@@ -1311,5 +1311,18 @@
     "firstAt": "2026-07-22T18:31:45.920Z",
     "lastAt": "2026-07-24T05:32:17.771Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:우즈(woodz)|edam",
+    "name": "우즈 (WOODZ)",
+    "group": "EDAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950805",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:34:36.425Z",
+    "lastAt": "2026-07-24T05:34:36.425Z",
+    "status": "pending"
   }
 ]
