@@ -1441,5 +1441,18 @@
     "firstAt": "2026-07-24T05:41:56.246Z",
     "lastAt": "2026-07-24T05:41:56.246Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sm|sm",
+    "name": "Sm",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:45:00.754Z",
+    "lastAt": "2026-07-24T05:45:00.754Z",
+    "status": "pending"
   }
 ]
