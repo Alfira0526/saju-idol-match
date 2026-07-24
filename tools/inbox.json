@@ -583,5 +583,18 @@
     "firstAt": "2026-07-24T04:52:28.151Z",
     "lastAt": "2026-07-24T04:52:28.151Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:네오|리센느",
+    "name": "네오",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19981126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:52:32.386Z",
+    "lastAt": "2026-07-24T04:52:32.386Z",
+    "status": "pending"
   }
 ]
