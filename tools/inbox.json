@@ -3079,5 +3079,18 @@
     "firstAt": "2026-07-24T07:04:32.300Z",
     "lastAt": "2026-07-24T07:04:32.300Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사쿠야|nctwish",
+    "name": "사쿠야",
+    "group": "Nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071118",
+    "note": "내 최애인데 없어요 ㅠ 엔시티위시 추가해주세요",
+    "count": 3,
+    "firstAt": "2026-07-23T02:39:51.183Z",
+    "lastAt": "2026-07-24T07:04:59.552Z",
+    "status": "pending"
   }
 ]
