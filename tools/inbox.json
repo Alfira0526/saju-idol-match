@@ -2507,5 +2507,18 @@
     "firstAt": "2026-07-24T06:30:18.484Z",
     "lastAt": "2026-07-24T06:30:18.484Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이준영|유키스",
+    "name": "이준영",
+    "group": "유키스",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:30:27.237Z",
+    "lastAt": "2026-07-24T06:30:27.237Z",
+    "status": "pending"
   }
 ]
