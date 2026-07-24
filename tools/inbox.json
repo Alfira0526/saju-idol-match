@@ -4327,5 +4327,18 @@
     "firstAt": "2026-07-22T22:12:08.465Z",
     "lastAt": "2026-07-24T08:16:16.076Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하시모토에리코|akb48",
+    "name": "하시모토 에리코",
+    "group": "AKB48",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "20060416",
+    "note": "이친구 귀여워요",
+    "count": 1,
+    "firstAt": "2026-07-24T08:17:34.839Z",
+    "lastAt": "2026-07-24T08:17:34.839Z",
+    "status": "pending"
   }
 ]
