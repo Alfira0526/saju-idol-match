@@ -414,5 +414,18 @@
     "firstAt": "2026-07-24T04:45:16.198Z",
     "lastAt": "2026-07-24T04:45:16.198Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:daranee|sm",
+    "name": "Daranee",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:46:23.204Z",
+    "lastAt": "2026-07-24T04:46:23.204Z",
+    "status": "pending"
   }
 ]
