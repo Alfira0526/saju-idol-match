@@ -388,5 +388,18 @@
     "firstAt": "2026-07-24T04:42:49.005Z",
     "lastAt": "2026-07-24T04:42:49.005Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:기타|exo2pmmonstax",
+    "name": "기타",
+    "group": "Exo 2PM Monsta X",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020203",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:44:33.741Z",
+    "lastAt": "2026-07-24T04:44:33.741Z",
+    "status": "pending"
   }
 ]
