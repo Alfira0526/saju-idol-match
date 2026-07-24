@@ -4028,5 +4028,18 @@
     "firstAt": "2026-07-24T08:00:08.433Z",
     "lastAt": "2026-07-24T08:00:08.433Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:운학|boynextdoor",
+    "name": "운학",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061129",
+    "note": "HYBE",
+    "count": 2,
+    "firstAt": "2026-07-22T19:49:43.334Z",
+    "lastAt": "2026-07-24T08:00:11.600Z",
+    "status": "pending"
   }
 ]
