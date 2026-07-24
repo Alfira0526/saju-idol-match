@@ -2689,5 +2689,18 @@
     "firstAt": "2026-07-24T06:39:40.483Z",
     "lastAt": "2026-07-24T06:39:40.483Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:케이주|킥플립",
+    "name": "케이주",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061004",
+    "note": "Jyp",
+    "count": 4,
+    "firstAt": "2026-07-22T18:08:32.873Z",
+    "lastAt": "2026-07-24T06:39:42.727Z",
+    "status": "pending"
   }
 ]
