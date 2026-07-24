@@ -4769,5 +4769,18 @@
     "firstAt": "2026-07-24T08:28:53.376Z",
     "lastAt": "2026-07-24T08:28:53.376Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:계훈|킥풀립",
+    "name": "계훈",
+    "group": "킥풀립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040916",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-24T08:29:01.140Z",
+    "lastAt": "2026-07-24T08:29:01.140Z",
+    "status": "pending"
   }
 ]
