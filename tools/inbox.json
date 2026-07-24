@@ -76,5 +76,18 @@
     "firstAt": "2026-07-24T04:23:40.804Z",
     "lastAt": "2026-07-24T04:23:40.804Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:건호|코르티스",
+    "name": "건호",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090214",
+    "note": "잘생김",
+    "count": 4,
+    "firstAt": "2026-07-22T17:43:26.295Z",
+    "lastAt": "2026-07-24T04:23:46.668Z",
+    "status": "pending"
   }
 ]
