@@ -3482,5 +3482,18 @@
     "firstAt": "2026-07-24T07:26:58.865Z",
     "lastAt": "2026-07-24T07:26:58.865Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:exo|sm",
+    "name": "Exo",
+    "group": "Sm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:27:27.337Z",
+    "lastAt": "2026-07-24T07:27:27.337Z",
+    "status": "pending"
   }
 ]
