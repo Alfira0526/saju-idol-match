@@ -2494,5 +2494,18 @@
     "firstAt": "2026-07-24T06:27:42.475Z",
     "lastAt": "2026-07-24T06:27:42.475Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:skyy|superjunior",
+    "name": "Skyy",
+    "group": "Super junior",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940806",
+    "note": "18.52",
+    "count": 1,
+    "firstAt": "2026-07-24T06:30:18.484Z",
+    "lastAt": "2026-07-24T06:30:18.484Z",
+    "status": "pending"
   }
 ]
