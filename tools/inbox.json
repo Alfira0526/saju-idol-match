@@ -3573,5 +3573,18 @@
     "firstAt": "2026-07-24T07:29:53.037Z",
     "lastAt": "2026-07-24T07:29:53.037Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:보너스|세븐틴",
+    "name": "보너스",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001130",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:29:54.373Z",
+    "lastAt": "2026-07-24T07:29:54.373Z",
+    "status": "pending"
   }
 ]
