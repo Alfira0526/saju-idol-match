@@ -37,5 +37,18 @@
     "firstAt": "2026-07-24T04:22:11.845Z",
     "lastAt": "2026-07-24T04:22:11.845Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:태규|dragopony",
+    "name": "태규",
+    "group": "Dragopony",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000729",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:22:13.067Z",
+    "lastAt": "2026-07-24T04:22:13.067Z",
+    "status": "pending"
   }
 ]
