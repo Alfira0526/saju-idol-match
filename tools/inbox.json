@@ -3963,5 +3963,18 @@
     "firstAt": "2026-07-24T07:54:40.208Z",
     "lastAt": "2026-07-24T07:54:40.208Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김준수|팜트리",
+    "name": "김준수",
+    "group": "팜트리",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:55:25.832Z",
+    "lastAt": "2026-07-24T07:55:25.832Z",
+    "status": "pending"
   }
 ]
