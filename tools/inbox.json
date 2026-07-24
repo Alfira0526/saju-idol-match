@@ -986,5 +986,18 @@
     "firstAt": "2026-07-24T05:16:59.455Z",
     "lastAt": "2026-07-24T05:16:59.455Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진재인|키빗업",
+    "name": "진재인",
+    "group": "키빗업",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071020",
+    "note": "인코드",
+    "count": 1,
+    "firstAt": "2026-07-24T05:17:18.943Z",
+    "lastAt": "2026-07-24T05:17:18.943Z",
+    "status": "pending"
   }
 ]
