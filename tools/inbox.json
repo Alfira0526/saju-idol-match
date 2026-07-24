@@ -284,5 +284,18 @@
     "firstAt": "2026-07-24T04:36:48.345Z",
     "lastAt": "2026-07-24T04:36:48.345Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:haruto|treasure",
+    "name": "Haruto",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:38:56.965Z",
+    "lastAt": "2026-07-24T04:38:56.965Z",
+    "status": "pending"
   }
 ]
