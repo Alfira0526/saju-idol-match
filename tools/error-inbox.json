@@ -130,5 +130,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:마크|nct",
+    "name": "마크",
+    "group": "NCT",
+    "count": 1,
+    "firstAt": "2026-07-24T07:01:51.536Z",
+    "lastAt": "2026-07-24T07:01:51.536Z",
+    "status": "pending",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "솔로"
+    ],
+    "notes": []
   }
 ]
