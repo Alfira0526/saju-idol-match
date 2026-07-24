@@ -2182,5 +2182,18 @@
     "firstAt": "2026-07-24T06:10:36.084Z",
     "lastAt": "2026-07-24T06:10:36.084Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jisung|nct",
+    "name": "Jisung",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:10:36.292Z",
+    "lastAt": "2026-07-24T06:10:36.292Z",
+    "status": "pending"
   }
 ]
