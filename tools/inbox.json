@@ -2793,5 +2793,18 @@
     "firstAt": "2026-07-24T06:45:23.842Z",
     "lastAt": "2026-07-24T06:45:23.842Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mink|riize",
+    "name": "Mink",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050712",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:45:50.349Z",
+    "lastAt": "2026-07-24T06:45:50.349Z",
+    "status": "pending"
   }
 ]
