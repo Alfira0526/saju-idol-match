@@ -3495,5 +3495,18 @@
     "firstAt": "2026-07-24T07:27:27.337Z",
     "lastAt": "2026-07-24T07:27:27.337Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정용화|씨엔블루",
+    "name": "정용화",
+    "group": "씨엔블루",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19890622",
+    "note": "fnc소속",
+    "count": 3,
+    "firstAt": "2026-07-23T04:46:54.005Z",
+    "lastAt": "2026-07-24T07:27:50.911Z",
+    "status": "pending"
   }
 ]
