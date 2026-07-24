@@ -1194,5 +1194,18 @@
     "firstAt": "2026-07-23T07:10:52.009Z",
     "lastAt": "2026-07-24T05:26:50.512Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:song|nct",
+    "name": "Song",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19941110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:28:15.688Z",
+    "lastAt": "2026-07-24T05:28:15.688Z",
+    "status": "pending"
   }
 ]
