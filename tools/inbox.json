@@ -3092,5 +3092,18 @@
     "firstAt": "2026-07-23T02:39:51.183Z",
     "lastAt": "2026-07-24T07:04:59.552Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:haechan|sm",
+    "name": "haechan",
+    "group": "SM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "06062000",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:06:49.483Z",
+    "lastAt": "2026-07-24T07:06:49.483Z",
+    "status": "pending"
   }
 ]
