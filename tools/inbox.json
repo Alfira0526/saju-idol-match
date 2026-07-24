@@ -726,5 +726,18 @@
     "firstAt": "2026-07-24T04:59:31.048Z",
     "lastAt": "2026-07-24T04:59:31.048Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진영|b1a4",
+    "name": "진영",
+    "group": "B1A4",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19911118",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T04:42:13.844Z",
+    "lastAt": "2026-07-24T05:00:53.556Z",
+    "status": "pending"
   }
 ]
