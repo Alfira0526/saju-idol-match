@@ -3287,5 +3287,18 @@
     "firstAt": "2026-07-22T19:21:59.751Z",
     "lastAt": "2026-07-24T07:17:51.741Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:디노|seventeen",
+    "name": "디노",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:18:06.381Z",
+    "lastAt": "2026-07-24T07:18:06.381Z",
+    "status": "pending"
   }
 ]
