@@ -1597,5 +1597,18 @@
     "firstAt": "2026-07-24T05:54:12.862Z",
     "lastAt": "2026-07-24T05:54:12.862Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:xc|redvelvet",
+    "name": "XC",
+    "group": "Red Velvet",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20001230",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:54:37.056Z",
+    "lastAt": "2026-07-24T05:54:37.056Z",
+    "status": "pending"
   }
 ]
