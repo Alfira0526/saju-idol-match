@@ -2000,5 +2000,18 @@
     "firstAt": "2026-07-24T06:05:15.468Z",
     "lastAt": "2026-07-24T06:05:15.468Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nattada|lngshot",
+    "name": "Nattada",
+    "group": "Lngshot",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940703",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:05:49.950Z",
+    "lastAt": "2026-07-24T06:05:49.950Z",
+    "status": "pending"
   }
 ]
