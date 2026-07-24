@@ -310,5 +310,18 @@
     "firstAt": "2026-07-24T04:40:54.400Z",
     "lastAt": "2026-07-24T04:40:54.400Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한유진|and2ble",
+    "name": "한유진",
+    "group": "And2ble",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070320",
+    "note": "위에화 소속 신인 남자아이돌",
+    "count": 2,
+    "firstAt": "2026-07-22T20:35:51.130Z",
+    "lastAt": "2026-07-24T04:40:55.836Z",
+    "status": "pending"
   }
 ]
