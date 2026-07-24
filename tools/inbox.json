@@ -4093,5 +4093,18 @@
     "firstAt": "2026-07-24T08:05:15.476Z",
     "lastAt": "2026-07-24T08:05:15.476Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:금준현|티아이오티",
+    "name": "금준현",
+    "group": "티아이오티",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:05:50.215Z",
+    "lastAt": "2026-07-24T08:05:50.215Z",
+    "status": "pending"
   }
 ]
