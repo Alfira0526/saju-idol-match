@@ -60,5 +60,19 @@
       "19990523"
     ],
     "notes": []
+  },
+  {
+    "key": "er:자니|nct",
+    "name": "자니",
+    "group": "NCT",
+    "count": 1,
+    "firstAt": "2026-07-24T04:42:36.881Z",
+    "lastAt": "2026-07-24T04:42:36.881Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
