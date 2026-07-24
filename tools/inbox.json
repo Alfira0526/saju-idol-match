@@ -2455,5 +2455,18 @@
     "firstAt": "2026-07-24T06:26:39.122Z",
     "lastAt": "2026-07-24T06:26:39.122Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:안나|ateez",
+    "name": "안나",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:26:46.388Z",
+    "lastAt": "2026-07-24T06:26:46.388Z",
+    "status": "pending"
   }
 ]
