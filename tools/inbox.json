@@ -3534,5 +3534,18 @@
     "firstAt": "2026-07-24T07:28:20.073Z",
     "lastAt": "2026-07-24T07:28:20.073Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김석진|bts",
+    "name": "김석진",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:28:28.183Z",
+    "lastAt": "2026-07-24T07:28:28.183Z",
+    "status": "pending"
   }
 ]
