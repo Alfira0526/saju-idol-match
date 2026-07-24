@@ -2988,5 +2988,18 @@
     "firstAt": "2026-07-24T07:00:18.908Z",
     "lastAt": "2026-07-24T07:00:18.908Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하나|구구단",
+    "name": "하나",
+    "group": "구구단",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19930430",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:01:29.528Z",
+    "lastAt": "2026-07-24T07:01:29.528Z",
+    "status": "pending"
   }
 ]
