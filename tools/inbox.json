@@ -1883,5 +1883,18 @@
     "firstAt": "2026-07-24T06:00:02.745Z",
     "lastAt": "2026-07-24T06:00:02.745Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:은석|riize",
+    "name": "은석",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19032001",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:00:31.469Z",
+    "lastAt": "2026-07-24T06:00:31.469Z",
+    "status": "pending"
   }
 ]
