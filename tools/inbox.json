@@ -4010,10 +4010,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20010818",
-    "note": "소속사는 YG입니다",
-    "count": 1,
+    "note": "소속사: YG",
+    "count": 2,
     "firstAt": "2026-07-24T07:59:41.867Z",
-    "lastAt": "2026-07-24T07:59:41.867Z",
+    "lastAt": "2026-07-24T08:02:31.186Z",
     "status": "pending"
   },
   {
