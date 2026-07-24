@@ -3378,5 +3378,18 @@
     "firstAt": "2026-07-23T00:56:10.931Z",
     "lastAt": "2026-07-24T07:21:47.949Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李泰容|nct",
+    "name": "李泰容",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950701",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-24T07:22:37.503Z",
+    "lastAt": "2026-07-24T07:22:37.503Z",
+    "status": "pending"
   }
 ]
