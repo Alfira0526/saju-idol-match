@@ -1766,5 +1766,18 @@
     "firstAt": "2026-07-24T05:57:03.504Z",
     "lastAt": "2026-07-24T05:57:03.504Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:myj|nct127",
+    "name": "MYJ",
+    "group": "NCT127",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:57:26.142Z",
+    "lastAt": "2026-07-24T05:57:26.142Z",
+    "status": "pending"
   }
 ]
