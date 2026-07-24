@@ -1818,5 +1818,18 @@
     "firstAt": "2026-07-24T05:58:04.258Z",
     "lastAt": "2026-07-24T05:58:04.258Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장세빈|omegax",
+    "name": "장세빈",
+    "group": "Omega x",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960424",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:59:04.863Z",
+    "lastAt": "2026-07-24T05:59:04.863Z",
+    "status": "pending"
   }
 ]
