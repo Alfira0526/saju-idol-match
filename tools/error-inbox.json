@@ -30,5 +30,19 @@
     "notes": [
       "공식프로필. 현재 신묘일주는 92년생으로 계산된 사주."
     ]
+  },
+  {
+    "key": "er:문별|mamamoo",
+    "name": "문별",
+    "group": "MAMAMOO",
+    "count": 1,
+    "firstAt": "2026-07-24T04:41:23.081Z",
+    "lastAt": "2026-07-24T04:41:23.081Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
