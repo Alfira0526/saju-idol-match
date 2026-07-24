@@ -3937,5 +3937,18 @@
     "firstAt": "2026-07-24T07:52:14.540Z",
     "lastAt": "2026-07-24T07:52:14.540Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jaemin|nctdream",
+    "name": "Jaemin",
+    "group": "NCT Dream",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000813",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:52:39.799Z",
+    "lastAt": "2026-07-24T07:52:39.799Z",
+    "status": "pending"
   }
 ]
