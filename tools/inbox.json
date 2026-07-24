@@ -1909,5 +1909,18 @@
     "firstAt": "2026-07-24T06:02:13.454Z",
     "lastAt": "2026-07-24T06:02:13.454Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:harua|&team",
+    "name": "Harua",
+    "group": "&team",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20050501",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:02:25.934Z",
+    "lastAt": "2026-07-24T06:02:25.934Z",
+    "status": "pending"
   }
 ]
