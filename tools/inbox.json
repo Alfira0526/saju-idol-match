@@ -4288,5 +4288,18 @@
     "firstAt": "2026-07-24T08:15:52.688Z",
     "lastAt": "2026-07-24T08:15:52.688Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kiiikiii|kiiikiii（女团）",
+    "name": "kiiikiii",
+    "group": "kiiikiii（女团）",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "starship girl idol group",
+    "count": 1,
+    "firstAt": "2026-07-24T08:15:54.843Z",
+    "lastAt": "2026-07-24T08:15:54.843Z",
+    "status": "pending"
   }
 ]
