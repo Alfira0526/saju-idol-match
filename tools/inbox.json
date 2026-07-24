@@ -4678,5 +4678,18 @@
     "firstAt": "2026-07-24T08:27:12.823Z",
     "lastAt": "2026-07-24T08:27:12.823Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마크|nct",
+    "name": "마크",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990802",
+    "note": "sm",
+    "count": 4,
+    "firstAt": "2026-07-23T03:11:47.465Z",
+    "lastAt": "2026-07-24T08:27:14.044Z",
+    "status": "pending"
   }
 ]
