@@ -700,5 +700,18 @@
     "firstAt": "2026-07-24T04:59:25.190Z",
     "lastAt": "2026-07-24T04:59:25.190Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:여린|엔시티드림",
+    "name": "여린",
+    "group": "엔시티 드림",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:59:29.957Z",
+    "lastAt": "2026-07-24T04:59:29.957Z",
+    "status": "pending"
   }
 ]
