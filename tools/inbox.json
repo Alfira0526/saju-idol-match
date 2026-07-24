@@ -3755,5 +3755,18 @@
     "firstAt": "2026-07-23T04:24:20.514Z",
     "lastAt": "2026-07-24T07:43:57.077Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:exo|smentertainment",
+    "name": "Exo",
+    "group": "Sm entertainment",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:45:10.619Z",
+    "lastAt": "2026-07-24T07:45:10.619Z",
+    "status": "pending"
   }
 ]
