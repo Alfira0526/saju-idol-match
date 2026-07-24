@@ -3690,5 +3690,18 @@
     "firstAt": "2026-07-22T23:45:47.814Z",
     "lastAt": "2026-07-24T07:39:06.283Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김동윤|드리핀",
+    "name": "김동윤",
+    "group": "드리핀",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:39:31.656Z",
+    "lastAt": "2026-07-24T07:39:31.656Z",
+    "status": "pending"
   }
 ]
