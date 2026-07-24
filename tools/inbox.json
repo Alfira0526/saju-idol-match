@@ -4600,5 +4600,18 @@
     "firstAt": "2026-07-24T08:23:55.636Z",
     "lastAt": "2026-07-24T08:23:55.636Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:boom|treasure",
+    "name": "BooM",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19870731",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:23:58.047Z",
+    "lastAt": "2026-07-24T08:23:58.047Z",
+    "status": "pending"
   }
 ]
