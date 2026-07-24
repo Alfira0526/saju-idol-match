@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "key": "er:은석|riize",
+    "name": "은석",
+    "group": "RIIZE",
+    "count": 1,
+    "firstAt": "2026-07-24T04:31:51.301Z",
+    "lastAt": "2026-07-24T04:31:51.301Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
+  }
+]
