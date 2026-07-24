@@ -3365,5 +3365,18 @@
     "firstAt": "2026-07-24T07:20:56.660Z",
     "lastAt": "2026-07-24T07:20:56.660Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김민재|아이딧",
+    "name": "김민재",
+    "group": "아이딧",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050817",
+    "note": "스타쉽",
+    "count": 2,
+    "firstAt": "2026-07-23T00:56:10.931Z",
+    "lastAt": "2026-07-24T07:21:47.949Z",
+    "status": "pending"
   }
 ]
