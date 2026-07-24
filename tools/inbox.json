@@ -3300,5 +3300,18 @@
     "firstAt": "2026-07-24T07:18:06.381Z",
     "lastAt": "2026-07-24T07:18:06.381Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최수민|xikers",
+    "name": "최수민",
+    "group": "Xikers",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040407",
+    "note": "Xikers다 넣어주세요",
+    "count": 1,
+    "firstAt": "2026-07-24T07:18:47.295Z",
+    "lastAt": "2026-07-24T07:18:47.295Z",
+    "status": "pending"
   }
 ]
