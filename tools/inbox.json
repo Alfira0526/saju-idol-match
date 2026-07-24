@@ -1714,5 +1714,18 @@
     "firstAt": "2026-07-23T00:26:54.295Z",
     "lastAt": "2026-07-24T05:56:32.572Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kangdaniel|solo",
+    "name": "Kang Daniel",
+    "group": "Solo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:56:33.035Z",
+    "lastAt": "2026-07-24T05:56:33.035Z",
+    "status": "pending"
   }
 ]
