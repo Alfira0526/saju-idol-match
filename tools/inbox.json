@@ -1636,5 +1636,18 @@
     "firstAt": "2026-07-24T05:55:07.689Z",
     "lastAt": "2026-07-24T05:55:07.689Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:babyblue|bts",
+    "name": "babyblue",
+    "group": "Bts",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19950927",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:55:21.738Z",
+    "lastAt": "2026-07-24T05:55:21.738Z",
+    "status": "pending"
   }
 ]
