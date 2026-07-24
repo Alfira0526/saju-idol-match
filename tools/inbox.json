@@ -947,5 +947,18 @@
     "firstAt": "2026-07-24T05:15:03.041Z",
     "lastAt": "2026-07-24T05:15:03.041Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:high|sm",
+    "name": "High",
+    "group": "SM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960603",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:15:24.736Z",
+    "lastAt": "2026-07-24T05:15:24.736Z",
+    "status": "pending"
   }
 ]
