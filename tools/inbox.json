@@ -4626,5 +4626,18 @@
     "firstAt": "2026-07-24T08:24:09.372Z",
     "lastAt": "2026-07-24T08:24:09.372Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도균|82major",
+    "name": "김도균",
+    "group": "82major",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:25:16.037Z",
+    "lastAt": "2026-07-24T08:25:16.037Z",
+    "status": "pending"
   }
 ]
