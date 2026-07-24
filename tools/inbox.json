@@ -4249,5 +4249,18 @@
     "firstAt": "2026-07-24T08:14:28.099Z",
     "lastAt": "2026-07-24T08:14:28.099Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최우진|티아이오티",
+    "name": "최우진",
+    "group": "티아이오티",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:14:30.900Z",
+    "lastAt": "2026-07-24T08:14:30.900Z",
+    "status": "pending"
   }
 ]
