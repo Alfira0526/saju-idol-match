@@ -1952,10 +1952,11 @@ async function shareResult(){
     const file = new File([blob], fileName, {type:"image/png"});
 
     // Web Share API (파일 공유 지원 시 — 주로 모바일)
+    const shareText = "내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝";
     if(navigator.canShare && navigator.canShare({files:[file]})){
       try{
         await navigator.share({files:[file], title:"사주 궁합 아이돌 매칭",
-          text:"내 일간으로 본 아이돌 궁합 결과"});
+          text:shareText});
         hint.textContent = "공유 완료";
         return;
       }catch(e){
