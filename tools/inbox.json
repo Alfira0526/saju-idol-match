@@ -271,5 +271,18 @@
     "firstAt": "2026-07-24T04:36:40.502Z",
     "lastAt": "2026-07-24T04:36:40.502Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:เมเม่|exo",
+    "name": "เมเม่",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "12041994",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:36:48.345Z",
+    "lastAt": "2026-07-24T04:36:48.345Z",
+    "status": "pending"
   }
 ]
