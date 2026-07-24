@@ -3196,5 +3196,18 @@
     "firstAt": "2026-07-24T07:10:14.886Z",
     "lastAt": "2026-07-24T07:10:14.886Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:anotaiwarit|nu'est",
+    "name": "Anotai Warit",
+    "group": "Nu'est",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19900518",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:10:55.505Z",
+    "lastAt": "2026-07-24T07:10:55.505Z",
+    "status": "pending"
   }
 ]
