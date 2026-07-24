@@ -4639,5 +4639,18 @@
     "firstAt": "2026-07-24T08:25:16.037Z",
     "lastAt": "2026-07-24T08:25:16.037Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신유|tws",
+    "name": "신유",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:26:21.940Z",
+    "lastAt": "2026-07-24T08:26:21.940Z",
+    "status": "pending"
   }
 ]
