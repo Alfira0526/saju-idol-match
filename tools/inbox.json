@@ -1025,5 +1025,18 @@
     "firstAt": "2026-07-22T17:38:59.687Z",
     "lastAt": "2026-07-24T05:17:46.646Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정진영|배우",
+    "name": "정진영",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19911118",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:18:02.892Z",
+    "lastAt": "2026-07-24T05:18:02.892Z",
+    "status": "pending"
   }
 ]
