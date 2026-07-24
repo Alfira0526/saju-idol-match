@@ -934,5 +934,18 @@
     "firstAt": "2026-07-24T05:14:22.667Z",
     "lastAt": "2026-07-24T05:14:22.667Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:앤톤|라이즈",
+    "name": "앤톤",
+    "group": "라이즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040321",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:15:03.041Z",
+    "lastAt": "2026-07-24T05:15:03.041Z",
+    "status": "pending"
   }
 ]
