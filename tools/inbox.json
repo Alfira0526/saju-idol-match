@@ -2221,5 +2221,18 @@
     "firstAt": "2026-07-24T06:11:25.304Z",
     "lastAt": "2026-07-24T06:11:25.304Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박지훈|wannaone",
+    "name": "박지훈",
+    "group": "Wannaone",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:13:11.543Z",
+    "lastAt": "2026-07-24T06:13:11.543Z",
+    "status": "pending"
   }
 ]
