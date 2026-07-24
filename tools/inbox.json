@@ -1454,5 +1454,18 @@
     "firstAt": "2026-07-24T05:45:00.754Z",
     "lastAt": "2026-07-24T05:45:00.754Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:배진영|워너원",
+    "name": "배진영",
+    "group": "워너원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000510",
+    "note": "aura",
+    "count": 1,
+    "firstAt": "2026-07-24T05:45:27.373Z",
+    "lastAt": "2026-07-24T05:45:27.373Z",
+    "status": "pending"
   }
 ]
