@@ -3729,5 +3729,18 @@
     "firstAt": "2026-07-24T07:42:23.600Z",
     "lastAt": "2026-07-24T07:42:23.600Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kan|하이라이트",
+    "name": "KAN",
+    "group": "하이라이트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19820524",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:43:04.467Z",
+    "lastAt": "2026-07-24T07:43:04.467Z",
+    "status": "pending"
   }
 ]
