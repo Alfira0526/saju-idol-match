@@ -3417,5 +3417,18 @@
     "firstAt": "2026-07-24T07:23:15.524Z",
     "lastAt": "2026-07-24T07:23:15.524Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:lia|zerobaseone",
+    "name": "Lia",
+    "group": "Zerobaseone",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20110831",
+    "note": "Butterfly",
+    "count": 1,
+    "firstAt": "2026-07-24T07:23:49.711Z",
+    "lastAt": "2026-07-24T07:23:49.711Z",
+    "status": "pending"
   }
 ]
