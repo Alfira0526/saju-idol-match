@@ -2390,5 +2390,18 @@
     "firstAt": "2026-07-23T01:23:29.194Z",
     "lastAt": "2026-07-24T06:22:45.103Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현진|straykids",
+    "name": "현진",
+    "group": "Stray kids",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:23:23.168Z",
+    "lastAt": "2026-07-24T06:23:23.168Z",
+    "status": "pending"
   }
 ]
