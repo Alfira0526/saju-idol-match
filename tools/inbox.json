@@ -193,5 +193,18 @@
     "firstAt": "2026-07-23T08:01:52.805Z",
     "lastAt": "2026-07-24T04:30:33.656Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:teayong|nct127",
+    "name": "teayong",
+    "group": "Nct 127",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19980114",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T04:31:12.165Z",
+    "lastAt": "2026-07-24T04:31:12.165Z",
+    "status": "pending"
   }
 ]
