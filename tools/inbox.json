@@ -2676,5 +2676,18 @@
     "firstAt": "2026-07-24T06:38:11.651Z",
     "lastAt": "2026-07-24T06:38:11.651Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李灿荣|riize",
+    "name": "李灿荣",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040321",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T06:39:40.483Z",
+    "lastAt": "2026-07-24T06:39:40.483Z",
+    "status": "pending"
   }
 ]
