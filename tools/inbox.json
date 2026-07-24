@@ -1376,5 +1376,18 @@
     "firstAt": "2026-07-24T05:37:10.135Z",
     "lastAt": "2026-07-24T05:37:10.135Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이진혁|업텐선",
+    "name": "이진혁",
+    "group": "업텐선",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T05:37:43.423Z",
+    "lastAt": "2026-07-24T05:37:43.423Z",
+    "status": "pending"
   }
 ]
