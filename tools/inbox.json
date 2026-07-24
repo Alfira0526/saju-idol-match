@@ -3443,5 +3443,18 @@
     "firstAt": "2026-07-24T07:24:11.383Z",
     "lastAt": "2026-07-24T07:24:11.383Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:晶晶|exo",
+    "name": "晶晶",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921127",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T07:25:51.122Z",
+    "lastAt": "2026-07-24T07:25:51.122Z",
+    "status": "pending"
   }
 ]
