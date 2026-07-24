@@ -1298,5 +1298,18 @@
     "firstAt": "2026-07-24T05:32:01.437Z",
     "lastAt": "2026-07-24T05:32:01.437Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장하오|앤더블",
+    "name": "장하오",
+    "group": "앤더블",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000725",
+    "note": "YH",
+    "count": 6,
+    "firstAt": "2026-07-22T18:31:45.920Z",
+    "lastAt": "2026-07-24T05:32:17.771Z",
+    "status": "pending"
   }
 ]
