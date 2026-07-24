@@ -1974,5 +1974,18 @@
     "firstAt": "2026-07-24T06:03:13.501Z",
     "lastAt": "2026-07-24T06:03:13.501Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유우|넥스지(nexz)",
+    "name": "유우",
+    "group": "넥스지 (NEXZ)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "jyp의 아이돌 넥스지를 제보합니다!",
+    "count": 1,
+    "firstAt": "2026-07-24T06:03:40.054Z",
+    "lastAt": "2026-07-24T06:03:40.054Z",
+    "status": "pending"
   }
 ]
