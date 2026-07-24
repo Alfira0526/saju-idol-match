@@ -4210,5 +4210,18 @@
     "firstAt": "2026-07-24T08:12:27.093Z",
     "lastAt": "2026-07-24T08:12:27.093Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ryul|lngshot",
+    "name": "Ryul",
+    "group": "Lngshot",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060916",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:12:35.250Z",
+    "lastAt": "2026-07-24T08:12:35.250Z",
+    "status": "pending"
   }
 ]
