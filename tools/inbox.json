@@ -4366,5 +4366,18 @@
     "firstAt": "2026-07-23T08:03:48.690Z",
     "lastAt": "2026-07-24T08:18:15.904Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:은나|&team",
+    "name": "은나",
+    "group": "&team",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20201207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-24T08:18:36.604Z",
+    "lastAt": "2026-07-24T08:18:36.604Z",
+    "status": "pending"
   }
 ]
