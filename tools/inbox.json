@@ -4925,5 +4925,18 @@
     "firstAt": "2026-07-25T00:24:13.756Z",
     "lastAt": "2026-07-25T00:24:13.756Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:周姵縜|tomorrowxtogether",
+    "name": "周姵縜",
+    "group": "Tomorrow X Together",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080708",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:28:48.639Z",
+    "lastAt": "2026-07-25T00:28:48.639Z",
+    "status": "pending"
   }
 ]
