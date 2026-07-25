@@ -5900,5 +5900,18 @@
     "firstAt": "2026-07-25T02:38:15.896Z",
     "lastAt": "2026-07-25T02:38:15.896Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:황민현|원너원",
+    "name": "황민현",
+    "group": "원너원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950809",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:38:49.878Z",
+    "lastAt": "2026-07-25T02:38:49.878Z",
+    "status": "pending"
   }
 ]
