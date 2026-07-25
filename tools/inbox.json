@@ -6693,5 +6693,18 @@
     "firstAt": "2026-07-25T03:58:34.549Z",
     "lastAt": "2026-07-25T03:58:34.549Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:haha|seventeen",
+    "name": "Haha",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:59:13.427Z",
+    "lastAt": "2026-07-25T03:59:13.427Z",
+    "status": "pending"
   }
 ]
