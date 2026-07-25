@@ -10099,5 +10099,18 @@
     "firstAt": "2026-07-25T11:30:36.864Z",
     "lastAt": "2026-07-25T11:30:36.864Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:羅婉瑜|seventeen",
+    "name": "羅婉瑜",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T11:35:35.667Z",
+    "lastAt": "2026-07-25T11:35:35.667Z",
+    "status": "pending"
   }
 ]
