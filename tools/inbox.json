@@ -4912,5 +4912,18 @@
     "firstAt": "2026-07-25T00:18:35.678Z",
     "lastAt": "2026-07-25T00:18:35.678Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강다니엘|solo",
+    "name": "강다니엘",
+    "group": "solo",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961210",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:24:13.756Z",
+    "lastAt": "2026-07-25T00:24:13.756Z",
+    "status": "pending"
   }
 ]
