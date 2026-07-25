@@ -6004,5 +6004,18 @@
     "firstAt": "2026-07-25T02:49:33.528Z",
     "lastAt": "2026-07-25T02:49:33.528Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:rosé|blackpink",
+    "name": "Rosé",
+    "group": "BLACKPINK",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19970211",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:50:11.887Z",
+    "lastAt": "2026-07-25T02:50:11.887Z",
+    "status": "pending"
   }
 ]
