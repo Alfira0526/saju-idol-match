@@ -9748,5 +9748,18 @@
     "firstAt": "2026-07-25T10:18:44.331Z",
     "lastAt": "2026-07-25T10:18:44.331Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재희|엔시티위시",
+    "name": "재희",
+    "group": "엔시티위시",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050621",
+    "note": "SM",
+    "count": 2,
+    "firstAt": "2026-07-23T07:27:26.374Z",
+    "lastAt": "2026-07-25T10:19:41.400Z",
+    "status": "pending"
   }
 ]
