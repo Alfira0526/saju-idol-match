@@ -6095,5 +6095,18 @@
     "firstAt": "2026-07-25T02:53:24.620Z",
     "lastAt": "2026-07-25T02:53:24.620Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재이|newjeans",
+    "name": "재이",
+    "group": "NewJeans",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20120807",
+    "note": "HYBE",
+    "count": 1,
+    "firstAt": "2026-07-25T02:53:43.371Z",
+    "lastAt": "2026-07-25T02:53:43.371Z",
+    "status": "pending"
   }
 ]
