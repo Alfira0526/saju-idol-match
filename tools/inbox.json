@@ -10060,5 +10060,18 @@
     "firstAt": "2026-07-25T11:11:17.660Z",
     "lastAt": "2026-07-25T11:11:17.660Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:nct팀분리해주세요|nct127,nctdream,wayv",
+    "name": "NCT 팀 분리해주세요",
+    "group": "NCT127, NCT DREAM, WayV",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "위시만 분리돼있고 다 합쳐져있내요 분리해주세요",
+    "count": 1,
+    "firstAt": "2026-07-25T11:11:46.930Z",
+    "lastAt": "2026-07-25T11:11:46.930Z",
+    "status": "pending"
   }
 ]
