@@ -6524,5 +6524,18 @@
     "firstAt": "2026-07-25T03:45:51.796Z",
     "lastAt": "2026-07-25T03:45:51.796Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이혜연|방탄소년단",
+    "name": "이혜연",
+    "group": "방탄소년단",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "951230",
+    "note": "하이브",
+    "count": 1,
+    "firstAt": "2026-07-25T03:47:04.648Z",
+    "lastAt": "2026-07-25T03:47:04.648Z",
+    "status": "pending"
   }
 ]
