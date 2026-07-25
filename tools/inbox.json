@@ -6719,5 +6719,18 @@
     "firstAt": "2026-07-25T03:59:49.682Z",
     "lastAt": "2026-07-25T03:59:49.682Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李予伶|seventeen",
+    "name": "李予伶",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20121124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:00:56.015Z",
+    "lastAt": "2026-07-25T04:00:56.015Z",
+    "status": "pending"
   }
 ]
