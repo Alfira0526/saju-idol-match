@@ -8526,5 +8526,18 @@
     "firstAt": "2026-07-25T07:07:50.056Z",
     "lastAt": "2026-07-25T07:07:50.056Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조승연|엑스원",
+    "name": "조승연",
+    "group": "엑스원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960805",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:11:21.296Z",
+    "lastAt": "2026-07-25T07:11:21.296Z",
+    "status": "pending"
   }
 ]
