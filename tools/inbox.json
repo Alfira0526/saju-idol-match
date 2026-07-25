@@ -4808,5 +4808,18 @@
     "firstAt": "2026-07-24T08:29:37.008Z",
     "lastAt": "2026-07-24T08:29:37.008Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:동현|킥플립",
+    "name": "동현",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070313",
+    "note": "JYP",
+    "count": 6,
+    "firstAt": "2026-07-22T18:13:31.317Z",
+    "lastAt": "2026-07-25T00:00:09.253Z",
+    "status": "pending"
   }
 ]
