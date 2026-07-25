@@ -5315,5 +5315,18 @@
     "firstAt": "2026-07-25T01:22:52.410Z",
     "lastAt": "2026-07-25T01:22:52.410Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:郭諼|bts",
+    "name": "郭諼",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20030718",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:23:20.225Z",
+    "lastAt": "2026-07-25T01:23:20.225Z",
+    "status": "pending"
   }
 ]
