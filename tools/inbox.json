@@ -9007,5 +9007,18 @@
     "firstAt": "2026-07-25T08:15:01.446Z",
     "lastAt": "2026-07-25T08:15:01.446Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:seventeen|seventeen",
+    "name": "Seventeen",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:16:38.695Z",
+    "lastAt": "2026-07-25T08:16:38.695Z",
+    "status": "pending"
   }
 ]
