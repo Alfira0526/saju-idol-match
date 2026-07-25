@@ -7031,5 +7031,18 @@
     "firstAt": "2026-07-25T04:28:04.567Z",
     "lastAt": "2026-07-25T04:28:04.567Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강향기|noacoast",
+    "name": "강향기",
+    "group": "noa coast",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001020",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:28:47.188Z",
+    "lastAt": "2026-07-25T04:28:47.188Z",
+    "status": "pending"
   }
 ]
