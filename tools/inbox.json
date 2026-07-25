@@ -5523,5 +5523,18 @@
     "firstAt": "2026-07-22T17:28:06.044Z",
     "lastAt": "2026-07-25T01:37:27.001Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:공유빈|triples",
+    "name": "공유빈",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:38:44.080Z",
+    "lastAt": "2026-07-25T01:38:44.080Z",
+    "status": "pending"
   }
 ]
