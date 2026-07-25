@@ -8357,5 +8357,18 @@
     "firstAt": "2026-07-25T06:53:53.832Z",
     "lastAt": "2026-07-25T06:53:53.832Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:gongyubin|triples",
+    "name": "gong yubin",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:54:01.996Z",
+    "lastAt": "2026-07-25T06:54:01.996Z",
+    "status": "pending"
   }
 ]
