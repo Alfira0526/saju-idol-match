@@ -5042,5 +5042,18 @@
     "firstAt": "2026-07-25T00:43:59.655Z",
     "lastAt": "2026-07-25T00:43:59.655Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:우진|lngshot",
+    "name": "우진",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080308",
+    "note": "롱샷이 없네요. 요즘 인기 많은데",
+    "count": 2,
+    "firstAt": "2026-07-22T18:37:56.243Z",
+    "lastAt": "2026-07-25T00:44:32.579Z",
+    "status": "pending"
   }
 ]
