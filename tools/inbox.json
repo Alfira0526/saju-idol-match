@@ -6888,5 +6888,18 @@
     "firstAt": "2026-07-25T04:15:46.914Z",
     "lastAt": "2026-07-25T04:15:46.914Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ching|txttaehyun",
+    "name": "ching",
+    "group": "TxT TAEHYUN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20081208",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:16:36.687Z",
+    "lastAt": "2026-07-25T04:16:36.687Z",
+    "status": "pending"
   }
 ]
