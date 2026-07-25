@@ -5926,5 +5926,18 @@
     "firstAt": "2026-07-25T02:40:07.451Z",
     "lastAt": "2026-07-25T02:40:07.451Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ningning|aespa",
+    "name": "ningning",
+    "group": "aespa",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20021023",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:40:15.772Z",
+    "lastAt": "2026-07-25T02:40:15.772Z",
+    "status": "pending"
   }
 ]
