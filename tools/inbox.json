@@ -7876,5 +7876,18 @@
     "firstAt": "2026-07-25T05:50:59.478Z",
     "lastAt": "2026-07-25T05:50:59.478Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:植村朋哉|nexz",
+    "name": "植村朋哉",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060119",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-25T05:53:18.019Z",
+    "lastAt": "2026-07-25T05:53:18.019Z",
+    "status": "pending"
   }
 ]
