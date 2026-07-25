@@ -9592,5 +9592,18 @@
     "firstAt": "2026-07-25T09:43:00.638Z",
     "lastAt": "2026-07-25T09:43:00.638Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:申惟|tws",
+    "name": "申惟",
+    "group": "Tws",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:45:02.537Z",
+    "lastAt": "2026-07-25T09:45:02.537Z",
+    "status": "pending"
   }
 ]
