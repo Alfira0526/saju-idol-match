@@ -7408,5 +7408,18 @@
     "firstAt": "2026-07-25T05:05:04.850Z",
     "lastAt": "2026-07-25T05:05:04.850Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ohyul|lngshot",
+    "name": "OHYUL",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "MORE VISION",
+    "count": 1,
+    "firstAt": "2026-07-25T05:05:11.273Z",
+    "lastAt": "2026-07-25T05:05:11.273Z",
+    "status": "pending"
   }
 ]
