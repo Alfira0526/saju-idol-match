@@ -6459,5 +6459,18 @@
     "firstAt": "2026-07-25T03:39:47.040Z",
     "lastAt": "2026-07-25T03:39:47.040Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도훈|idntt",
+    "name": "김도훈",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030303",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:40:18.882Z",
+    "lastAt": "2026-07-25T03:40:18.882Z",
+    "status": "pending"
   }
 ]
