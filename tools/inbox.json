@@ -5367,5 +5367,18 @@
     "firstAt": "2026-07-23T03:33:25.484Z",
     "lastAt": "2026-07-25T01:25:31.530Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:백준혁|idid",
+    "name": "백준혁",
+    "group": "IDID",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20080607",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:26:06.869Z",
+    "lastAt": "2026-07-25T01:26:06.869Z",
+    "status": "pending"
   }
 ]
