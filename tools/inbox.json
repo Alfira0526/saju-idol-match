@@ -5198,5 +5198,18 @@
     "firstAt": "2026-07-25T01:02:48.466Z",
     "lastAt": "2026-07-25T01:02:48.466Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:카로|nct",
+    "name": "카로",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970830",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:05:20.716Z",
+    "lastAt": "2026-07-25T01:05:20.716Z",
+    "status": "pending"
   }
 ]
