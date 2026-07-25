@@ -7967,5 +7967,18 @@
     "firstAt": "2026-07-25T06:07:43.486Z",
     "lastAt": "2026-07-25T06:07:43.486Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:claire|straykids",
+    "name": "Claire",
+    "group": "stray kids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:08:51.775Z",
+    "lastAt": "2026-07-25T06:08:51.775Z",
+    "status": "pending"
   }
 ]
