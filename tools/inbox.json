@@ -6758,5 +6758,18 @@
     "firstAt": "2026-07-23T07:51:17.928Z",
     "lastAt": "2026-07-25T04:02:47.719Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:miffy|seventeen",
+    "name": "Miffy",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20010503",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:03:00.631Z",
+    "lastAt": "2026-07-25T04:03:00.631Z",
+    "status": "pending"
   }
 ]
