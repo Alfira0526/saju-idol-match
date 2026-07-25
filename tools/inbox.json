@@ -9033,5 +9033,18 @@
     "firstAt": "2026-07-25T08:17:03.622Z",
     "lastAt": "2026-07-25T08:17:03.622Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김태래|zerobaseone",
+    "name": "김태래",
+    "group": "Zerobaseone",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020714",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:18:07.052Z",
+    "lastAt": "2026-07-25T08:18:07.052Z",
+    "status": "pending"
   }
 ]
