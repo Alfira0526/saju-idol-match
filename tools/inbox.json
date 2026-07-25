@@ -8760,5 +8760,18 @@
     "firstAt": "2026-07-25T07:42:13.164Z",
     "lastAt": "2026-07-25T07:42:13.164Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:퀸니|seventeen",
+    "name": "퀸니",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20081006",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:42:43.426Z",
+    "lastAt": "2026-07-25T07:42:43.426Z",
+    "status": "pending"
   }
 ]
