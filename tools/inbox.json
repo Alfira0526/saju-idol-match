@@ -8019,5 +8019,18 @@
     "firstAt": "2026-07-25T06:14:24.921Z",
     "lastAt": "2026-07-25T06:14:24.921Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:woojin|morevision",
+    "name": "woojin",
+    "group": "morevision",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080308",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:15:57.367Z",
+    "lastAt": "2026-07-25T06:15:57.367Z",
+    "status": "pending"
   }
 ]
