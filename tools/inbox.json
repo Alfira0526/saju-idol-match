@@ -9085,5 +9085,18 @@
     "firstAt": "2026-07-25T08:24:17.173Z",
     "lastAt": "2026-07-25T08:24:17.173Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:宋奕爽|nctwish",
+    "name": "宋奕爽",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060604",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:25:02.268Z",
+    "lastAt": "2026-07-25T08:25:02.268Z",
+    "status": "pending"
   }
 ]
