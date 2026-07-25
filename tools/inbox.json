@@ -10034,5 +10034,18 @@
     "firstAt": "2026-07-25T11:10:08.827Z",
     "lastAt": "2026-07-25T11:10:08.827Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:키야|키키",
+    "name": "키야",
+    "group": "키키",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20101218",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-25T11:10:38.548Z",
+    "lastAt": "2026-07-25T11:10:38.548Z",
+    "status": "pending"
   }
 ]
