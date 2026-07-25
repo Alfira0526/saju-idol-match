@@ -8981,5 +8981,18 @@
     "firstAt": "2026-07-23T05:45:16.994Z",
     "lastAt": "2026-07-25T08:13:43.019Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jisung|nctdream",
+    "name": "jisung",
+    "group": "NCTDREAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T08:13:52.795Z",
+    "lastAt": "2026-07-25T08:13:52.795Z",
+    "status": "pending"
   }
 ]
