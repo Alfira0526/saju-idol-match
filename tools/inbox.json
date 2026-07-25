@@ -5328,5 +5328,18 @@
     "firstAt": "2026-07-25T01:23:20.225Z",
     "lastAt": "2026-07-25T01:23:20.225Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:디디|enhypen",
+    "name": "디디",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020104",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:25:03.111Z",
+    "lastAt": "2026-07-25T01:25:03.111Z",
+    "status": "pending"
   }
 ]
