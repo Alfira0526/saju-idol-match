@@ -6615,5 +6615,18 @@
     "firstAt": "2026-07-25T03:54:56.329Z",
     "lastAt": "2026-07-25T03:54:56.329Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:laissuni|bts",
+    "name": "LAI SSUNI",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000424",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:56:17.283Z",
+    "lastAt": "2026-07-25T03:56:17.283Z",
+    "status": "pending"
   }
 ]
