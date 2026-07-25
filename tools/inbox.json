@@ -8058,5 +8058,18 @@
     "firstAt": "2026-07-25T06:21:49.425Z",
     "lastAt": "2026-07-25T06:21:49.425Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조승연(우즈)|edam",
+    "name": "조승연 (우즈)",
+    "group": "edam",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960805",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:22:07.728Z",
+    "lastAt": "2026-07-25T06:22:07.728Z",
+    "status": "pending"
   }
 ]
