@@ -4977,5 +4977,18 @@
     "firstAt": "2026-07-25T00:34:09.106Z",
     "lastAt": "2026-07-25T00:34:09.106Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:주은|riize",
+    "name": "주은",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:38:45.551Z",
+    "lastAt": "2026-07-25T00:38:45.551Z",
+    "status": "pending"
   }
 ]
