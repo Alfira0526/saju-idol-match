@@ -8253,5 +8253,18 @@
     "firstAt": "2026-07-25T06:48:50.622Z",
     "lastAt": "2026-07-25T06:48:50.622Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박세은|xikers/kq엔터테이먼트",
+    "name": "박세은",
+    "group": "xikers / KQ엔터테이먼트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050817",
+    "note": "싸이커스 멤버들도 사주 매칭 해보고 싶어요",
+    "count": 1,
+    "firstAt": "2026-07-25T06:48:56.765Z",
+    "lastAt": "2026-07-25T06:48:56.765Z",
+    "status": "pending"
   }
 ]
