@@ -5978,5 +5978,18 @@
     "firstAt": "2026-07-23T07:24:51.306Z",
     "lastAt": "2026-07-25T02:45:21.154Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:shamaine|nct",
+    "name": "shamaine",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991116",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:48:10.363Z",
+    "lastAt": "2026-07-25T02:48:10.363Z",
+    "status": "pending"
   }
 ]
