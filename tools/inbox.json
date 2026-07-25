@@ -5848,5 +5848,18 @@
     "firstAt": "2026-07-25T02:33:35.069Z",
     "lastAt": "2026-07-25T02:33:35.069Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:청신이|exo",
+    "name": "청신이",
+    "group": "EXO",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "19980819",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:34:48.662Z",
+    "lastAt": "2026-07-25T02:34:48.662Z",
+    "status": "pending"
   }
 ]
