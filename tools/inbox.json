@@ -9241,5 +9241,18 @@
     "firstAt": "2026-07-25T08:45:23.028Z",
     "lastAt": "2026-07-25T08:45:23.028Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:suho|exo",
+    "name": "SUHO",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910522",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T08:46:59.558Z",
+    "lastAt": "2026-07-25T08:46:59.558Z",
+    "status": "pending"
   }
 ]
