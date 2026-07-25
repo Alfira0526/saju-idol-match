@@ -5341,5 +5341,18 @@
     "firstAt": "2026-07-25T01:25:03.111Z",
     "lastAt": "2026-07-25T01:25:03.111Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:엄성현|cortis",
+    "name": "엄성현",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090113",
+    "note": "하이브 존잘아기남돌",
+    "count": 3,
+    "firstAt": "2026-07-23T06:52:26.706Z",
+    "lastAt": "2026-07-25T01:25:25.736Z",
+    "status": "pending"
   }
 ]
