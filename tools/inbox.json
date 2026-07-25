@@ -6602,5 +6602,18 @@
     "firstAt": "2026-07-24T03:28:15.639Z",
     "lastAt": "2026-07-25T03:52:28.051Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:세이타|nexz",
+    "name": "세이타",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061128",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:54:56.329Z",
+    "lastAt": "2026-07-25T03:54:56.329Z",
+    "status": "pending"
   }
 ]
