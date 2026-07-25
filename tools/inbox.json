@@ -7759,5 +7759,18 @@
     "firstAt": "2026-07-25T05:46:17.396Z",
     "lastAt": "2026-07-25T05:46:17.396Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:zi|treasure",
+    "name": "Zi",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20050313",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-25T05:47:22.489Z",
+    "lastAt": "2026-07-25T05:47:22.489Z",
+    "status": "pending"
   }
 ]
