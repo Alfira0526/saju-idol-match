@@ -10138,5 +10138,18 @@
     "firstAt": "2026-07-25T11:36:02.828Z",
     "lastAt": "2026-07-25T11:36:02.828Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:张艳阳|alphadriveone",
+    "name": "张艳阳",
+    "group": "Alphadriveone",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040510",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T11:39:10.631Z",
+    "lastAt": "2026-07-25T11:39:10.631Z",
+    "status": "pending"
   }
 ]
