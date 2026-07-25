@@ -7018,5 +7018,18 @@
     "firstAt": "2026-07-25T04:27:25.218Z",
     "lastAt": "2026-07-25T04:27:25.218Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:앤톤|riize",
+    "name": "앤톤",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040321",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:28:04.567Z",
+    "lastAt": "2026-07-25T04:28:04.567Z",
+    "status": "pending"
   }
 ]
