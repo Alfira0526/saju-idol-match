@@ -6667,5 +6667,18 @@
     "firstAt": "2026-07-25T03:58:02.569Z",
     "lastAt": "2026-07-25T03:58:02.569Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정용화|cnblue",
+    "name": "정용화",
+    "group": "CNBLUE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19890622",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:58:07.012Z",
+    "lastAt": "2026-07-25T03:58:07.012Z",
+    "status": "pending"
   }
 ]
