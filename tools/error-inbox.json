@@ -300,5 +300,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:원빈|riize",
+    "name": "원빈",
+    "group": "RIIZE",
+    "count": 1,
+    "firstAt": "2026-07-25T01:20:37.110Z",
+    "lastAt": "2026-07-25T01:20:37.110Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
