@@ -7941,5 +7941,18 @@
     "firstAt": "2026-07-24T03:12:28.807Z",
     "lastAt": "2026-07-25T06:05:15.895Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:뿌|앤하이밴",
+    "name": "뿌",
+    "group": "앤하이밴",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20030405",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:05:32.362Z",
+    "lastAt": "2026-07-25T06:05:32.362Z",
+    "status": "pending"
   }
 ]
