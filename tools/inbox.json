@@ -6446,5 +6446,18 @@
     "firstAt": "2026-07-25T03:38:55.588Z",
     "lastAt": "2026-07-25T03:38:55.588Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:채현|nct",
+    "name": "채현",
+    "group": "nct",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:39:47.040Z",
+    "lastAt": "2026-07-25T03:39:47.040Z",
+    "status": "pending"
   }
 ]
