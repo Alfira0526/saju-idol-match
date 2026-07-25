@@ -9189,5 +9189,18 @@
     "firstAt": "2026-07-25T08:31:37.021Z",
     "lastAt": "2026-07-25T08:31:37.021Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:차훈|엔플라잉",
+    "name": "차훈",
+    "group": "엔플라잉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940712",
+    "note": "",
+    "count": 3,
+    "firstAt": "2026-07-22T18:14:13.902Z",
+    "lastAt": "2026-07-25T08:40:11.497Z",
+    "status": "pending"
   }
 ]
