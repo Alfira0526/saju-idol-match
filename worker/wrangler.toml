@@ -2,6 +2,11 @@ name = "saju-suggest"
 main = "suggest-worker.js"
 compatibility_date = "2024-11-01"
 
+# Cron: 큐를 GitHub에 배치 반영(제보 1건마다 커밋하지 않도록). 10분마다.
+# 대시보드 배포 시엔 toml이 안 읽히므로 워커 Settings→Triggers→Cron Triggers에서 동일하게 추가.
+[triggers]
+crons = ["*/10 * * * *"]
+
 # KV 네임스페이스 바인딩.
 # 아래 id 값은 `wrangler kv namespace create SUGGEST_KV` 실행 후 출력되는 값으로 교체하세요.
 [[kv_namespaces]]

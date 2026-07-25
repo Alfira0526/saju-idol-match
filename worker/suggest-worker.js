@@ -1,31 +1,28 @@
 /**
- * 사주 아이돌 매칭 — 제보 인테이크 (Cloudflare Worker + KV)
+ * 사주 아이돌 매칭 — 제보 인테이크 (Cloudflare Worker + KV, 배치 미러링)
  *
- * 정적 GitHub Pages 앱에는 서버가 없어서 IP 기반 레이트리밋·비공개 저장을 할 수 없다.
- * 이 워커가 그 최소한의 백엔드 역할을 한다.
+ * 리소스 절약 설계: 정적 GitHub Pages 앱에는 서버가 없고, 루틴 실행 환경은 워커에 직접
+ * 접속하지 못한다(egress). 그래서 워커가 제보를 GitHub 저장소 파일에 미러링해 두고 루틴이
+ * 로컬로 읽는다. 단, 제보마다 GitHub에 커밋하면 워커 서브요청/CPU 부담과 커밋 폭증이 생긴다.
+ *   → POST /submit 은 KV 큐에 적재만 하고(GitHub 호출 없음),
+ *     Cron 스케줄러(scheduled)가 주기적으로 큐를 모아 한 번에 inbox.json/error-inbox.json에 커밋.
  *
- *   POST /submit            제보 저장. body.type = "add"(신규 인물, 기본) | "error"(오류 신고)
- *                           add   → sg:{name}|{group}
- *                           error → er:{name}|{group} (field 표수 + suggest 제안값 + notes 근거)
- *   GET  /suggestions?token=…&type=add|error   루틴이 후보 큐를 읽어감 (요청 횟수 순 정렬)
- *   POST /mark?token=…      루틴이 반영 완료 상태 기록 (add→added, error→fixed)
+ *   POST /submit          제보 접수 (IP 해시 1시간 1회 제한 + KV 큐 적재만)
+ *   (cron) scheduled()    KV 큐 → GitHub 배치 flush (type별 1커밋)
+ *   GET  /                헬스체크
  *
- * KV 네임스페이스 바인딩 이름: SUGGEST_KV
- * 시크릿(wrangler secret put): ADMIN_TOKEN (관리용), IP_SALT (IP 해시 솔트)
+ * KV
+ *   rl:{ipHash}:{YYYYMMDDHH}   레이트리밋 마커, TTL 1h
+ *   q:add:{id} / q:err:{id}    큐 항목(JSON). flush가 소비 후 삭제.
+ * 설정: 바인딩 SUGGEST_KV · 시크릿 IP_SALT·GH_TOKEN · 변수 GH_REPO·GH_BRANCH
+ * Cron: wrangler.toml [triggers] crons(대시보드에선 Settings→Triggers→Cron Triggers).
  *
- * KV 스키마
- *   rl:{ipHash}:{YYYYMMDDHH}   "1"           TTL 1h   레이트리밋 마커
- *   sg:{name}|{group}          JSON          제보 레코드(중복 병합, count 누적)
- *
- * 개인정보: 원본 IP는 저장하지 않는다. IP+솔트의 SHA-256 해시만 레이트리밋 키에 쓰고
- * 1시간 뒤 자동 소멸한다. 제보 레코드에는 제보자 정보를 담지 않는다.
+ * 개인정보: 원본 IP 미저장(해시만, TTL 1h). 제보 레코드에 제보자 정보 없음.
  */
 
 const COOLDOWN_SECONDS = 60 * 60; // 1시간
-
-// CORS: GitHub Pages 도메인에서의 cross-origin 요청 허용.
-// 배포 후 ALLOW_ORIGIN 을 본인 Pages 주소로 좁히는 것을 권장(예: "https://<user>.github.io").
 const ALLOW_ORIGIN = "*";
+const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
 
 function cors(extra = {}) {
   return {
@@ -35,36 +32,25 @@ function cors(extra = {}) {
     ...extra,
   };
 }
-
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), {
     status,
     headers: cors({ "Content-Type": "application/json; charset=utf-8" }),
   });
 }
-
 async function sha256Hex(str) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
-
-// UTC 시각 → "YYYYMMDDHH" (레이트리밋 버킷). 최소 단위가 1시간이면 충분.
 function hourBucket(d) {
   const p = (n) => String(n).padStart(2, "0");
   return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}${p(d.getUTCHours())}`;
 }
-
 const normPart = (s) => (s || "").trim().toLowerCase().replace(/\s+/g, "");
-function normKey(name, group) { return `sg:${normPart(name)}|${normPart(group)}`; } // 신규 인물 제보(add)
-function errKey(name, group) { return `er:${normPart(name)}|${normPart(group)}`; } // 오류 제보(error)
+function normKey(name, group) { return `sg:${normPart(name)}|${normPart(group)}`; } // 추가 제보
+function errKey(name, group) { return `er:${normPart(name)}|${normPart(group)}`; }  // 오류 제보
 
-const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
-
-// ===== GitHub 미러링 =====
-// 루틴 실행 환경이 워커에 직접 접속하지 못하는 경우(조직 egress 정책)를 위해, 접수한 제보를
-// 저장소 파일(tools/inbox.json · tools/error-inbox.json)에 커밋해 둔다. 루틴은 저장소를 이미
-// 클론하고 있으므로 이 파일을 '로컬로' 읽어 처리한다 → egress 차단과 무관하게 동작.
-// 필요한 워커 설정: 시크릿 GH_TOKEN(fine-grained PAT, contents:read&write), 변수 GH_REPO·GH_BRANCH.
+// ---- base64 (UTF-8 안전) ----
 function b64encodeUtf8(str) {
   const bytes = new TextEncoder().encode(str);
   let bin = "";
@@ -76,177 +62,142 @@ function b64decodeUtf8(b64) {
   const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
   return new TextDecoder().decode(bytes);
 }
-// path 파일(JSON 배열)에 rec 을 key 기준 upsert. sha 충돌(409) 시 재시도. GH_TOKEN 없으면 skip.
-async function mirrorToRepo(env, path, rec) {
-  if (!env.GH_TOKEN) return { ok: false, skipped: true };
-  const repo = env.GH_REPO || "Alfira0526/saju-idol-match";
-  const branch = env.GH_BRANCH || "claude/idol-saju-matching-app-752fy3";
-  const api = `https://api.github.com/repos/${repo}/contents/${path}`;
-  const headers = {
+
+// ---- GitHub Contents API ----
+function ghHeaders(env) {
+  return {
     Authorization: `Bearer ${env.GH_TOKEN}`,
     Accept: "application/vnd.github+json",
     "User-Agent": "saju-suggest-worker",
   };
-  for (let attempt = 0; attempt < 3; attempt++) {
-    let sha, arr = [];
-    const g = await fetch(`${api}?ref=${encodeURIComponent(branch)}`, { headers });
-    if (g.status === 200) {
-      const j = await g.json();
-      sha = j.sha;
-      try { arr = JSON.parse(b64decodeUtf8(j.content)) || []; } catch { arr = []; }
-    } else if (g.status !== 404) {
-      return { ok: false, status: g.status };
-    }
-    const i = arr.findIndex((x) => x && x.key === rec.key);
-    if (i >= 0) arr[i] = rec; else arr.push(rec);
-    const body = {
-      message: `chore(inbox): ${rec.key}`,
-      content: b64encodeUtf8(JSON.stringify(arr, null, 2) + "\n"),
-      branch,
-    };
-    if (sha) body.sha = sha;
-    const p = await fetch(api, { method: "PUT", headers: { ...headers, "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (p.ok) return { ok: true };
-    if (p.status === 409) continue; // sha 경쟁 → 재시도
-    return { ok: false, status: p.status };
+}
+function ghRepo(env) { return env.GH_REPO || "Alfira0526/saju-idol-match"; }
+function ghBranch(env) { return env.GH_BRANCH || "claude/idol-saju-matching-app-752fy3"; }
+async function ghGet(env, filePath) {
+  const url = `https://api.github.com/repos/${ghRepo(env)}/contents/${filePath}?ref=${encodeURIComponent(ghBranch(env))}`;
+  const r = await fetch(url, { headers: ghHeaders(env) });
+  if (r.status === 200) {
+    const j = await r.json();
+    let arr = [];
+    try { arr = JSON.parse(b64decodeUtf8(j.content)) || []; } catch { arr = []; }
+    return { sha: j.sha, arr };
   }
-  return { ok: false, status: 409 };
+  if (r.status === 404) return { sha: null, arr: [] };
+  throw new Error("gh get " + r.status);
+}
+async function ghPut(env, filePath, arr, sha, message) {
+  const url = `https://api.github.com/repos/${ghRepo(env)}/contents/${filePath}`;
+  const body = { message, content: b64encodeUtf8(JSON.stringify(arr, null, 2) + "\n"), branch: ghBranch(env) };
+  if (sha) body.sha = sha;
+  const r = await fetch(url, { method: "PUT", headers: { ...ghHeaders(env), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  if (!r.ok && r.status !== 409) throw new Error("gh put " + r.status);
+  return r.status;
+}
+
+// ---- Cron flush: KV 큐 → GitHub 파일 배치 병합 ----
+async function flush(env) {
+  if (!env.GH_TOKEN) return; // 토큰 없으면 미러링 스킵(큐는 KV에 남음)
+  await flushType(env, "add", "tools/inbox.json");
+  await flushType(env, "err", "tools/error-inbox.json");
+}
+async function flushType(env, type, filePath) {
+  const list = await env.SUGGEST_KV.list({ prefix: `q:${type}:` });
+  if (!list.keys.length) return; // 큐 비었으면 GitHub 호출 없이 종료(유휴 cron은 저비용)
+  const items = [];
+  for (const k of list.keys) {
+    const v = await env.SUGGEST_KV.get(k.name);
+    if (v) { try { items.push({ kvKey: k.name, sub: JSON.parse(v) }); } catch {} }
+  }
+  if (!items.length) return;
+
+  // sha 충돌(409) 시 재시도하며 현재 파일에 병합
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { sha, arr } = await ghGet(env, filePath);
+    const map = new Map(arr.map((x) => [x.key, x]));
+    const now = new Date().toISOString();
+    for (const { sub } of items) {
+      const key = type === "add" ? normKey(sub.name, sub.group) : errKey(sub.name, sub.group);
+      let rec = map.get(key);
+      if (!rec) {
+        rec = type === "add"
+          ? { key, name: sub.name, group: sub.group, cat: sub.cat, gender: sub.gender, dob: sub.dob, note: sub.note, count: 0, firstAt: sub.at || now, lastAt: sub.at || now, status: "pending" }
+          : { key, name: sub.name, group: sub.group, fields: {}, suggests: [], notes: [], count: 0, firstAt: sub.at || now, lastAt: sub.at || now, status: "pending" };
+        map.set(key, rec);
+      }
+      rec.count = (rec.count || 0) + 1;
+      rec.lastAt = sub.at || now;
+      if (type === "add") {
+        if (sub.dob && !rec.dob) rec.dob = sub.dob;
+        if (sub.gender && !rec.gender) rec.gender = sub.gender;
+        if (sub.note) rec.note = sub.note;
+      } else {
+        if (sub.field) rec.fields[sub.field] = (rec.fields[sub.field] || 0) + 1;
+        if (sub.suggest && rec.suggests.length < 20 && !rec.suggests.includes(sub.suggest)) rec.suggests.push(sub.suggest);
+        if (sub.note && rec.notes.length < 20) rec.notes.push(sub.note);
+      }
+    }
+    const st = await ghPut(env, filePath, [...map.values()], sha, `chore(inbox): flush ${items.length} ${type}`);
+    if (st !== 409) break; // 성공
+  }
+  // 반영한 큐 삭제
+  for (const { kvKey } of items) await env.SUGGEST_KV.delete(kvKey);
 }
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors() });
 
-    if (request.method === "OPTIONS") {
-      return new Response(null, { status: 204, headers: cors() });
-    }
-
-    // ---- POST /submit : 제보 접수 ----
+    // ---- POST /submit : 접수(큐 적재만, GitHub 호출 없음) ----
     if (url.pathname === "/submit" && request.method === "POST") {
       let body;
-      try {
-        body = await request.json();
-      } catch {
-        return json({ ok: false, error: "bad_json" }, 400);
-      }
-
-      // 허니팟(봇 필드)이 채워져 있으면 성공한 척 조용히 버린다.
-      if (body.hp) return json({ ok: true });
+      try { body = await request.json(); } catch { return json({ ok: false, error: "bad_json" }, 400); }
+      if (body.hp) return json({ ok: true }); // 허니팟
 
       const name = (body.name || "").toString().trim().slice(0, 40);
       const group = (body.group || "").toString().trim().slice(0, 40);
       if (!name || !group) return json({ ok: false, error: "missing_fields" }, 400);
+      const type = body.type === "error" ? "err" : "add";
 
-      const type = body.type === "error" ? "error" : "add";
-
-      // 레이트리밋: IP 해시 + 현재 UTC 시(hour) 버킷 (add·error 공통)
+      // 레이트리밋
       const ip = request.headers.get("CF-Connecting-IP") || "0.0.0.0";
       const ipHash = (await sha256Hex(ip + "|" + (env.IP_SALT || "salt"))).slice(0, 24);
       const rlKey = `rl:${ipHash}:${hourBucket(new Date())}`;
-      if (await env.SUGGEST_KV.get(rlKey)) {
-        return json({ ok: false, error: "rate_limited" }, 429);
-      }
+      if (await env.SUGGEST_KV.get(rlKey)) return json({ ok: false, error: "rate_limited" }, 429);
 
-      const nowIso = new Date().toISOString();
+      const at = new Date().toISOString();
       const note = (body.note || "").toString().trim().slice(0, 120);
-
-      // ===== 오류 제보(type=error): er:{name}|{group}, 필드별 표수 + 제안값·근거 누적 =====
-      if (type === "error") {
-        const field = (body.field || "").toString().trim().slice(0, 24);   // 무엇이 틀렸나
-        const suggest = (body.suggest || "").toString().trim().slice(0, 60); // 올바른 값(제안)
-        const key = errKey(name, group);
-        let rec = await env.SUGGEST_KV.get(key, "json");
-        if (rec && rec.status !== "fixed") {
-          rec.count = (rec.count || 1) + 1;
-          rec.lastAt = nowIso;
-          rec.fields = rec.fields || {};
-          if (field) rec.fields[field] = (rec.fields[field] || 0) + 1;
-          if (suggest && rec.suggests.length < 20 && !rec.suggests.includes(suggest)) rec.suggests.push(suggest);
-          if (note && rec.notes.length < 20) rec.notes.push(note);
-        } else if (!rec) {
-          rec = { name, group, count: 1, firstAt: nowIso, lastAt: nowIso, status: "pending",
-                  fields: field ? { [field]: 1 } : {}, suggests: suggest ? [suggest] : [], notes: note ? [note] : [] };
-        } else {
-          rec.count = (rec.count || 1) + 1;
-          rec.lastAt = nowIso; // 이미 fixed면 표수만 참고로 누적
-        }
-        await env.SUGGEST_KV.put(key, JSON.stringify(rec));
-        await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
-        try { await mirrorToRepo(env, "tools/error-inbox.json", { key, ...rec }); } catch (e) {}
-        return json({ ok: true, count: rec.count });
-      }
-
-      // ===== 신규 인물 제보(type=add): sg:{name}|{group} =====
-      const cat = CATS.includes(body.cat) ? body.cat : "K-idol";
-      const gender = ["M", "F"].includes(body.gender) ? body.gender : "";
-      const dob = (body.dob || "").toString().replace(/\D/g, "").slice(0, 8);
-
-      const key = normKey(name, group);
-      let rec = await env.SUGGEST_KV.get(key, "json");
-      if (rec && rec.status !== "added") {
-        rec.count = (rec.count || 1) + 1;
-        rec.lastAt = nowIso;
-        if (dob && !rec.dob) rec.dob = dob;
-        if (gender && !rec.gender) rec.gender = gender;
-        if (note) rec.note = note;
-      } else if (!rec) {
-        rec = { name, group, cat, gender, dob, note, count: 1, firstAt: nowIso, lastAt: nowIso, status: "pending" };
+      let sub;
+      if (type === "err") {
+        sub = { name, group,
+          field: (body.field || "").toString().trim().slice(0, 24),
+          suggest: (body.suggest || "").toString().trim().slice(0, 60), note, at };
       } else {
-        rec.count = (rec.count || 1) + 1;
-        rec.lastAt = nowIso;
+        sub = { name, group,
+          cat: CATS.includes(body.cat) ? body.cat : "K-idol",
+          gender: ["M", "F"].includes(body.gender) ? body.gender : "",
+          dob: (body.dob || "").toString().replace(/\D/g, "").slice(0, 8), note, at };
       }
-      await env.SUGGEST_KV.put(key, JSON.stringify(rec));
+      // 큐 적재(고유 id) + 레이트리밋 마커
+      const id = Date.now().toString(36) + "-" + crypto.randomUUID().slice(0, 8);
+      await env.SUGGEST_KV.put(`q:${type}:${id}`, JSON.stringify(sub));
       await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
-      try { await mirrorToRepo(env, "tools/inbox.json", { key, ...rec }); } catch (e) {}
-
-      return json({ ok: true, count: rec.count });
+      return json({ ok: true });
     }
 
-    // ---- GET /suggestions?token=… : 루틴이 후보 큐를 읽음 ----
-    if (url.pathname === "/suggestions" && request.method === "GET") {
-      if (url.searchParams.get("token") !== env.ADMIN_TOKEN) {
-        return json({ ok: false, error: "unauthorized" }, 401);
-      }
-      const status = url.searchParams.get("status") || "pending"; // pending|added|fixed|all
-      const type = url.searchParams.get("type") === "error" ? "error" : "add";
-      const prefix = type === "error" ? "er:" : "sg:";
-      const list = await env.SUGGEST_KV.list({ prefix });
-      const items = [];
-      for (const k of list.keys) {
-        const rec = await env.SUGGEST_KV.get(k.name, "json");
-        if (!rec) continue;
-        if (status !== "all" && rec.status !== status) continue;
-        items.push({ key: k.name, ...rec });
-      }
-      // 요청 횟수 많은 순 → 오래된 순
-      items.sort((a, b) => (b.count || 0) - (a.count || 0) || (a.firstAt || "").localeCompare(b.firstAt || ""));
-      return json({ ok: true, count: items.length, items });
+    // ---- (선택) 관리자용 수동 flush: GET /flush?token=ADMIN_TOKEN ----
+    if (url.pathname === "/flush" && request.method === "GET") {
+      if (url.searchParams.get("token") !== env.ADMIN_TOKEN) return json({ ok: false, error: "unauthorized" }, 401);
+      await flush(env);
+      return json({ ok: true, flushed: true });
     }
 
-    // ---- POST /mark?token=… : 반영 완료 상태 기록 ----
-    if (url.pathname === "/mark" && request.method === "POST") {
-      if (url.searchParams.get("token") !== env.ADMIN_TOKEN) {
-        return json({ ok: false, error: "unauthorized" }, 401);
-      }
-      let body;
-      try {
-        body = await request.json();
-      } catch {
-        return json({ ok: false, error: "bad_json" }, 400);
-      }
-      // key 직접 지정이 우선. 없으면 type(add|error)으로 sg:/er: 키 계산.
-      const key = body.key || (body.type === "error" ? errKey(body.name, body.group) : normKey(body.name, body.group));
-      const rec = await env.SUGGEST_KV.get(key, "json");
-      if (!rec) return json({ ok: false, error: "not_found" }, 404);
-      rec.status = body.status || (key.startsWith("er:") ? "fixed" : "added");
-      rec.markedAt = new Date().toISOString();
-      await env.SUGGEST_KV.put(key, JSON.stringify(rec));
-      return json({ ok: true, key, status: rec.status });
-    }
-
-    // 헬스체크
-    if (url.pathname === "/" ) return json({ ok: true, service: "saju-suggest" });
-
+    if (url.pathname === "/") return json({ ok: true, service: "saju-suggest" });
     return json({ ok: false, error: "not_found" }, 404);
+  },
+
+  // Cron: 주기적으로 큐를 GitHub에 배치 반영
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(flush(env));
   },
 };

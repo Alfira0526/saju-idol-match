@@ -5,10 +5,15 @@
 (제보 트래픽은 하루 수십~수백 건 수준).
 
 ```
-POST /submit               제보 접수 (IP 해시로 1시간 1회 제한 + 이름·그룹 중복 병합)
-GET  /suggestions?token=…  루틴이 후보 큐를 읽음 (요청 횟수 많은 순)
-POST /mark?token=…         루틴이 반영 완료 상태 기록
+POST /submit          제보 접수 (IP 해시로 1시간 1회 제한 + KV 큐 적재만, GitHub 호출 없음)
+(cron) scheduled()    KV 큐 → GitHub 배치 flush (tools/inbox.json·error-inbox.json, type별 1커밋)
+GET  /                헬스체크
+GET  /flush?token=…   (선택) 관리자 수동 flush
 ```
+
+> **리소스 절약(중요):** 예전엔 제보 1건마다 GitHub에 커밋해 워커 서브요청/CPU 부담과 커밋 폭증이
+> 있었습니다. 이제 `/submit`은 **KV 큐에 넣기만** 하고, **Cron이 10분마다 모아서 한 번에** 커밋합니다.
+> → 워커 리소스·커밋 수 대폭 감소. 루틴은 예전처럼 `tools/inbox.json`을 로컬로 읽으면 됩니다.
 
 ## 개인정보 원칙
 - 원본 IP는 **저장하지 않습니다.** `IP + 솔트`의 SHA-256 해시만 레이트리밋 키에 쓰고,
@@ -78,12 +83,10 @@ POST /mark?token=…         루틴이 반영 완료 상태 기록
 5. 변경 후 화면에 **재배포(Deploy)** 하라고 하면 눌러줍니다.
 
 ### 6. 잘 됐는지 확인 (브라우저로)
-1. **주소창 테스트**: 브라우저 새 탭에 아래를 붙여넣고 이동(`<...>` 부분만 본인 값으로):
-   ```
-   https://saju-suggest.○○○.workers.dev/suggestions?token=<ADMIN_TOKEN>
-   ```
-   → 화면에 `{"ok":true,"count":0,"items":[]}` 비슷하게 뜨면 **성공**입니다.
-   `unauthorized` 가 뜨면 토큰을 잘못 넣은 것, 그 외 에러면 5번 연결을 다시 확인.
+1. **헬스체크**: 브라우저 새 탭에 워커 주소만 열기 → `https://saju-suggest.○○○.workers.dev/`
+   → `{"ok":true,"service":"saju-suggest"}` 가 뜨면 배포 OK.
+2. 실제 제보 반영은 앱에서 제보 → **최대 10분 뒤(Cron)** `tools/inbox.json`에 커밋이 생기면 성공.
+   (급하면 관리자 수동 flush: `…/flush?token=<ADMIN_TOKEN>` 를 브라우저로 열면 즉시 반영.)
 2. **진짜 제보 테스트**는 7번까지 하고 앱에서 직접 제보해 보면 됩니다.
 
 ### 7. 앱에 워커 주소 연결
@@ -99,10 +102,11 @@ const SUGGEST_ENDPOINT = "https://saju-suggest.○○○.workers.dev/submit";
 > **원하시면 이 줄 수정·커밋은 제가 대신 해드립니다** — 배포하고 나온 워커 주소만
 > 알려주세요. 비워두면(`""`) 폼은 감사 메시지까지만 뜨고 서버로 안 보냅니다(안전장치).
 
-### 8. 매일 밤 루틴에 값 전달
-매일 데이터 취합 Routine이 제보 큐를 읽으려면 **워커 주소 + `ADMIN_TOKEN`** 이 필요합니다.
-이 두 값을 저에게(또는 루틴 세션에) 알려주시면 루틴이 자동으로 제보를 우선 반영합니다
-(흐름: [`tools/README.md`](../tools/README.md) 의 *제보 우선 반영*).
+### 8. 루틴은 별도 설정 불필요
+루틴은 워커에 접속하지 않고 **저장소의 `tools/inbox.json`을 로컬로 읽습니다**(egress 차단 대응).
+워커가 Cron으로 그 파일을 채워두므로, 루틴 쪽에 워커 주소·토큰을 넘길 필요가 없습니다
+(흐름: [`tools/README.md`](../tools/README.md) 의 *제보 우선 반영*). `ADMIN_TOKEN`은 이제
+관리자 수동 `/flush` 에만 쓰입니다(선택).
 
 ### ⚠️ 9. GitHub 미러링 — 루틴이 egress 없이 제보를 읽게 하기 (중요)
 루틴은 Claude Code 클라우드 환경에서 돌고, 그 환경은 조직 egress 정책상 **워커(workers.dev)에
@@ -123,10 +127,15 @@ const SUGGEST_ENDPOINT = "https://saju-suggest.○○○.workers.dev/submit";
    - Variable **`GH_BRANCH`** = `claude/idol-saju-matching-app-752fy3` (기본값 내장)
    대시보드: 워커 → **Settings → Variables and Secrets** → Secret로 `GH_TOKEN`, Text로 `GH_REPO`/`GH_BRANCH` 추가 → 재배포.
    CLI: `wrangler secret put GH_TOKEN` (GH_REPO/GH_BRANCH는 `wrangler.toml`의 `[vars]`에 이미 있음).
-3. 등록 후 앱에서 제보를 한 번 보내면 `tools/inbox.json`(또는 `error-inbox.json`)에 커밋이 생깁니다.
+3. **Cron Trigger 등록(리소스 절약 — 필수):** 제보는 큐에 쌓였다가 **Cron이 주기적으로 모아서
+   커밋**합니다. 워커 → **Settings → Triggers → Cron Triggers → Add Cron Trigger** → `*/10 * * * *`
+   (10분마다) 입력 → 저장. (CLI로 배포하면 `wrangler.toml`의 `[triggers]`가 자동 등록됩니다.)
+4. 등록 후 앱에서 제보를 한 번 보내면 **최대 10분 뒤** `tools/inbox.json`(또는 `error-inbox.json`)에
+   커밋이 생깁니다. 즉시 확인하려면 브라우저로 `…/flush?token=<ADMIN_TOKEN>` 를 한 번 여세요.
 
-**GH_TOKEN 미설정 시**: 워커는 미러링만 조용히 건너뛰고 접수/KV는 정상 동작합니다(폼은 계속 됩니다).
+**GH_TOKEN 미설정 시**: 워커는 flush만 건너뛰고 접수/큐는 정상입니다(폼은 계속 됩니다).
 단 그 경우 루틴이 제보를 볼 수 없으니, 제보 반영을 원하면 PAT를 반드시 등록하세요.
+**Cron 미등록 시**: 큐에 쌓이기만 하고 GitHub에 안 올라갑니다 → Cron Trigger를 꼭 추가하세요.
 
 > 미러링을 안 쓰고 싶다면(환경 egress가 열려 있어 워커에 직접 접속 가능하면),
 > 정책 문서: [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web).
@@ -149,28 +158,19 @@ wrangler deploy
 ## 동작 확인 (명령어로, 선택)
 ```bash
 curl -X POST https://<worker-url>/submit -H 'Content-Type: application/json' \
-  -d '{"name":"테스트","group":"테스트그룹","cat":"K-idol"}'   # → {"ok":true,"count":1}
-curl "https://<worker-url>/suggestions?token=<ADMIN_TOKEN>"      # 큐 읽기
-curl -X POST "https://<worker-url>/mark?token=<ADMIN_TOKEN>" -H 'Content-Type: application/json' \
-  -d '{"name":"테스트","group":"테스트그룹","status":"added"}'  # 반영 완료 표기
+  -d '{"name":"테스트","group":"테스트그룹","cat":"K-idol"}'   # → {"ok":true}  (큐 적재)
+curl "https://<worker-url>/flush?token=<ADMIN_TOKEN>"           # 즉시 flush → GitHub 커밋
 ```
 
 ## KV 스키마
 | 키 | 값 | 비고 |
 |---|---|---|
 | `rl:{ipHash}:{YYYYMMDDHH}` | `"1"` | 레이트리밋 마커, TTL 1h |
-| `sg:{name}|{group}` | JSON 레코드 | 제보 병합(count 누적) |
+| `q:add:{id}` / `q:err:{id}` | 큐 항목(JSON) | 접수 시 적재 → Cron flush가 소비 후 삭제 |
 
-제보 레코드 JSON:
-```json
-{
-  "name": "하츠네", "group": "NewJeans", "cat": "K-idol",
-  "gender": "F", "dob": "20040507", "note": "...",
-  "count": 3, "firstAt": "2026-07-22T...", "lastAt": "2026-07-22T...",
-  "status": "pending"
-}
-```
-`status`: `pending`(대기) → `added`(반영 완료). 반영된 항목은 재제보해도 다시 큐에 오르지 않습니다.
+flush가 `tools/inbox.json`(추가)·`tools/error-inbox.json`(오류)에 `key`(=`sg:이름|그룹`/`er:이름|그룹`)
+기준으로 병합하며, `count`(제보 횟수) 누적. 반영/오신고 처리 여부는 루틴이 `tools/inbox-done.json`으로
+관리합니다(워커는 관여하지 않음).
 
 ## 비용
 Cloudflare 무료 플랜: 워커 하루 100,000 요청, KV 하루 읽기 100,000 / 쓰기 1,000.
