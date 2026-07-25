@@ -4886,5 +4886,18 @@
     "firstAt": "2026-07-25T00:12:06.316Z",
     "lastAt": "2026-07-25T00:12:06.316Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李浩妤|seventeen",
+    "name": "李浩妤",
+    "group": "SEVENTEEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:16:00.387Z",
+    "lastAt": "2026-07-25T00:16:00.387Z",
+    "status": "pending"
   }
 ]
