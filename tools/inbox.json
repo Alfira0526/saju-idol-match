@@ -7044,5 +7044,18 @@
     "firstAt": "2026-07-25T04:28:47.188Z",
     "lastAt": "2026-07-25T04:28:47.188Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yu|seventeen",
+    "name": "Yu",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:31:02.385Z",
+    "lastAt": "2026-07-25T04:31:02.385Z",
+    "status": "pending"
   }
 ]
