@@ -9709,5 +9709,18 @@
     "firstAt": "2026-07-25T10:05:19.993Z",
     "lastAt": "2026-07-25T10:05:19.993Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:카르멘|hearts2hearts",
+    "name": "카르멘",
+    "group": "Hearts2Hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060328",
+    "note": "SM女团",
+    "count": 1,
+    "firstAt": "2026-07-25T10:07:12.193Z",
+    "lastAt": "2026-07-25T10:07:12.193Z",
+    "status": "pending"
   }
 ]
