@@ -9111,5 +9111,18 @@
     "firstAt": "2026-07-25T08:25:18.027Z",
     "lastAt": "2026-07-25T08:25:18.027Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:무이|seventeen",
+    "name": "무이",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030930",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:26:39.289Z",
+    "lastAt": "2026-07-25T08:26:39.289Z",
+    "status": "pending"
   }
 ]
