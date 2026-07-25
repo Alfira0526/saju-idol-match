@@ -8331,5 +8331,18 @@
     "firstAt": "2026-07-25T06:51:46.933Z",
     "lastAt": "2026-07-25T06:51:46.933Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유의정|nctwish",
+    "name": "유의정",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:52:18.612Z",
+    "lastAt": "2026-07-25T06:52:18.612Z",
+    "status": "pending"
   }
 ]
