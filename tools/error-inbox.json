@@ -268,5 +268,23 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:리키|zerobaseone",
+    "name": "리키",
+    "group": "ZEROBASEONE",
+    "count": 1,
+    "firstAt": "2026-07-25T01:04:43.982Z",
+    "lastAt": "2026-07-25T01:04:43.982Z",
+    "status": "pending",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "AND2BLE"
+    ],
+    "notes": [
+      "https://namu.wiki/w/AND2BLE"
+    ]
   }
 ]
