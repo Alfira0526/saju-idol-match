@@ -9202,5 +9202,18 @@
     "firstAt": "2026-07-22T18:14:13.902Z",
     "lastAt": "2026-07-25T08:40:11.497Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김명수|인피니트",
+    "name": "김명수",
+    "group": "인피니트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920313",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T04:27:42.654Z",
+    "lastAt": "2026-07-25T08:41:34.402Z",
+    "status": "pending"
   }
 ]
