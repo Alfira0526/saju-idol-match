@@ -5549,5 +5549,18 @@
     "firstAt": "2026-07-25T01:47:57.084Z",
     "lastAt": "2026-07-25T01:47:57.084Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유유|nctwish",
+    "name": "유유",
+    "group": "NCTWISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030413",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:49:02.278Z",
+    "lastAt": "2026-07-25T01:49:02.278Z",
+    "status": "pending"
   }
 ]
