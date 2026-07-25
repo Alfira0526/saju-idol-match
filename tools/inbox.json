@@ -6732,5 +6732,18 @@
     "firstAt": "2026-07-25T04:00:56.015Z",
     "lastAt": "2026-07-25T04:00:56.015Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유우시/리쿠|nctwish",
+    "name": "유우시/리쿠",
+    "group": "NCTWISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:01:39.559Z",
+    "lastAt": "2026-07-25T04:01:39.559Z",
+    "status": "pending"
   }
 ]
