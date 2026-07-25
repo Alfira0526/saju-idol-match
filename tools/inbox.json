@@ -8955,5 +8955,18 @@
     "firstAt": "2026-07-25T08:12:19.131Z",
     "lastAt": "2026-07-25T08:12:19.131Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:해솔|riize",
+    "name": "해솔",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19960704",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:12:35.564Z",
+    "lastAt": "2026-07-25T08:12:35.564Z",
+    "status": "pending"
   }
 ]
