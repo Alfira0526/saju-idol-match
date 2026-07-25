@@ -567,5 +567,23 @@
       "20000113"
     ],
     "notes": []
+  },
+  {
+    "key": "er:엠케이|onf",
+    "name": "엠케이",
+    "group": "ONF",
+    "count": 1,
+    "firstAt": "2026-07-25T10:05:34.121Z",
+    "lastAt": "2026-07-25T10:05:34.121Z",
+    "status": "pending",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "민균"
+    ],
+    "notes": [
+      "https://kient.co.kr/artists/onf/member/"
+    ]
   }
 ]
