@@ -7720,5 +7720,18 @@
     "firstAt": "2026-07-22T18:18:30.650Z",
     "lastAt": "2026-07-25T05:42:42.598Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조윤후|newbeat",
+    "name": "조윤후",
+    "group": "Newbeat",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070212",
+    "note": "비트인터렉티브•조윤후잘생겻고요다른멤버도추가되면좋겟습니당….",
+    "count": 1,
+    "firstAt": "2026-07-25T05:44:08.106Z",
+    "lastAt": "2026-07-25T05:44:08.106Z",
+    "status": "pending"
   }
 ]
