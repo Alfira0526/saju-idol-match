@@ -585,5 +585,19 @@
     "notes": [
       "https://kient.co.kr/artists/onf/member/"
     ]
+  },
+  {
+    "key": "er:청하|솔로",
+    "name": "청하",
+    "group": "솔로",
+    "count": 1,
+    "firstAt": "2026-07-25T10:24:52.122Z",
+    "lastAt": "2026-07-25T10:24:52.122Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
