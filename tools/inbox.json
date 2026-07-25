@@ -5432,5 +5432,18 @@
     "firstAt": "2026-07-25T01:32:56.876Z",
     "lastAt": "2026-07-25T01:32:56.876Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신예찬|루시(lucy)",
+    "name": "신예찬",
+    "group": "루시(LUCY)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920613",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:34:24.488Z",
+    "lastAt": "2026-07-25T01:34:24.488Z",
+    "status": "pending"
   }
 ]
