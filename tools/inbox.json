@@ -4938,5 +4938,18 @@
     "firstAt": "2026-07-25T00:28:48.639Z",
     "lastAt": "2026-07-25T00:28:48.639Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:권정열|십센치",
+    "name": "권정열",
+    "group": "십센치",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19830301",
+    "note": "CAM",
+    "count": 1,
+    "firstAt": "2026-07-25T00:31:06.626Z",
+    "lastAt": "2026-07-25T00:31:06.626Z",
+    "status": "pending"
   }
 ]
