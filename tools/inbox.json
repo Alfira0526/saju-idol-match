@@ -5302,5 +5302,18 @@
     "firstAt": "2026-07-25T01:21:53.156Z",
     "lastAt": "2026-07-25T01:21:53.156Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:郭子涵|ive",
+    "name": "郭子涵",
+    "group": "ive",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070527",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:22:52.410Z",
+    "lastAt": "2026-07-25T01:22:52.410Z",
+    "status": "pending"
   }
 ]
