@@ -6810,5 +6810,18 @@
     "firstAt": "2026-07-25T04:08:33.111Z",
     "lastAt": "2026-07-25T04:08:33.111Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:즈언|아홉",
+    "name": "즈언",
+    "group": "아홉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061028",
+    "note": "진짜 잘생김",
+    "count": 1,
+    "firstAt": "2026-07-25T04:08:47.228Z",
+    "lastAt": "2026-07-25T04:08:47.228Z",
+    "status": "pending"
   }
 ]
