@@ -8695,5 +8695,18 @@
     "firstAt": "2026-07-25T07:34:52.980Z",
     "lastAt": "2026-07-25T07:34:52.980Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마징시앙|closeyoureyes",
+    "name": "마징시앙",
+    "group": "close your eyes",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040216",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:35:17.896Z",
+    "lastAt": "2026-07-25T07:35:17.896Z",
+    "status": "pending"
   }
 ]
