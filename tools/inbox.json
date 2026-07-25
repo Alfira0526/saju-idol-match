@@ -9657,5 +9657,18 @@
     "firstAt": "2026-07-25T09:55:28.721Z",
     "lastAt": "2026-07-25T09:55:28.721Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:나재민|nctdream",
+    "name": "나재민",
+    "group": "NCT DREAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000813",
+    "note": "SM엔터테인먼트 소속 NCT DREAM 멤버",
+    "count": 1,
+    "firstAt": "2026-07-25T09:57:23.011Z",
+    "lastAt": "2026-07-25T09:57:23.011Z",
+    "status": "pending"
   }
 ]
