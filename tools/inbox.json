@@ -8578,5 +8578,18 @@
     "firstAt": "2026-07-25T07:16:22.207Z",
     "lastAt": "2026-07-25T07:16:22.207Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유준|싸이커스",
+    "name": "유준",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051005",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:16:28.233Z",
+    "lastAt": "2026-07-25T07:16:28.233Z",
+    "status": "pending"
   }
 ]
