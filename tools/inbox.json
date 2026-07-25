@@ -5783,5 +5783,18 @@
     "firstAt": "2026-07-25T02:20:25.371Z",
     "lastAt": "2026-07-25T02:20:25.371Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:계현|verivery",
+    "name": "계현",
+    "group": "verivery",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990514",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:25:01.220Z",
+    "lastAt": "2026-07-25T02:25:01.220Z",
+    "status": "pending"
   }
 ]
