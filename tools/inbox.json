@@ -9540,5 +9540,18 @@
     "firstAt": "2026-07-22T18:30:46.419Z",
     "lastAt": "2026-07-25T09:25:05.681Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:尹淨漢|seventeen",
+    "name": "尹淨漢",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20101106",
+    "note": "帥",
+    "count": 1,
+    "firstAt": "2026-07-25T09:25:25.607Z",
+    "lastAt": "2026-07-25T09:25:25.607Z",
+    "status": "pending"
   }
 ]
