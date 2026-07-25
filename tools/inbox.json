@@ -5770,5 +5770,18 @@
     "firstAt": "2026-07-25T02:14:35.174Z",
     "lastAt": "2026-07-25T02:14:35.174Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김영수|infinite",
+    "name": "김영수",
+    "group": "Infinite",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920313",
+    "note": "Infinite company",
+    "count": 1,
+    "firstAt": "2026-07-25T02:20:25.371Z",
+    "lastAt": "2026-07-25T02:20:25.371Z",
+    "status": "pending"
   }
 ]
