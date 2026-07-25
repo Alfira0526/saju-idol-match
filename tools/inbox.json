@@ -9410,5 +9410,18 @@
     "firstAt": "2026-07-25T09:11:25.405Z",
     "lastAt": "2026-07-25T09:11:25.405Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:aria|plave",
+    "name": "Aria",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19931207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:13:31.229Z",
+    "lastAt": "2026-07-25T09:13:31.229Z",
+    "status": "pending"
   }
 ]
