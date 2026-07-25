@@ -99,14 +99,16 @@
     "key": "er:박정우|treasure",
     "name": "박정우",
     "group": "TREASURE",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T05:44:46.605Z",
-    "lastAt": "2026-07-24T05:44:46.605Z",
+    "lastAt": "2026-07-25T08:16:25.828Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 2
     },
-    "suggests": [],
+    "suggests": [
+      "20010319"
+    ],
     "notes": []
   },
   {
