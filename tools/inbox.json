@@ -8968,5 +8968,18 @@
     "firstAt": "2026-07-25T08:12:35.564Z",
     "lastAt": "2026-07-25T08:12:35.564Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:도경수|exo",
+    "name": "도경수",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930112",
+    "note": "SM",
+    "count": 2,
+    "firstAt": "2026-07-23T05:45:16.994Z",
+    "lastAt": "2026-07-25T08:13:43.019Z",
+    "status": "pending"
   }
 ]
