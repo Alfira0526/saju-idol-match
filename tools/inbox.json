@@ -7252,5 +7252,18 @@
     "firstAt": "2026-07-25T04:52:14.018Z",
     "lastAt": "2026-07-25T04:52:14.018Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:솜사|exo",
+    "name": "솜사",
+    "group": "Exo",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041019",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:53:30.363Z",
+    "lastAt": "2026-07-25T04:53:30.363Z",
+    "status": "pending"
   }
 ]
