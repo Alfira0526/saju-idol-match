@@ -6940,5 +6940,18 @@
     "firstAt": "2026-07-22T17:37:34.626Z",
     "lastAt": "2026-07-25T04:20:17.368Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:준서|alphadriveone",
+    "name": "준서",
+    "group": "alpha drive one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20011120",
+    "note": "아아아아 제가 좋아해여ㅠㅠ",
+    "count": 2,
+    "firstAt": "2026-07-23T06:55:57.787Z",
+    "lastAt": "2026-07-25T04:21:01.431Z",
+    "status": "pending"
   }
 ]
