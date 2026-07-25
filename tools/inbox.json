@@ -5601,5 +5601,18 @@
     "firstAt": "2026-07-25T01:56:59.225Z",
     "lastAt": "2026-07-25T01:56:59.225Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박성현|아이딧",
+    "name": "박성현",
+    "group": "아이딧",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051005",
+    "note": "스타쉽",
+    "count": 3,
+    "firstAt": "2026-07-22T22:37:22.074Z",
+    "lastAt": "2026-07-25T01:59:12.809Z",
+    "status": "pending"
   }
 ]
