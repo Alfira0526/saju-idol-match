@@ -8214,5 +8214,18 @@
     "firstAt": "2026-07-25T06:46:51.597Z",
     "lastAt": "2026-07-25T06:46:51.597Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:s|cortis",
+    "name": "S",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031006",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:47:33.834Z",
+    "lastAt": "2026-07-25T06:47:33.834Z",
+    "status": "pending"
   }
 ]
