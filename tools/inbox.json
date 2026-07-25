@@ -8175,5 +8175,18 @@
     "firstAt": "2026-07-23T05:07:01.465Z",
     "lastAt": "2026-07-25T06:39:49.074Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이민우|신화",
+    "name": "이민우",
+    "group": "신화",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:44:34.491Z",
+    "lastAt": "2026-07-25T06:44:34.491Z",
+    "status": "pending"
   }
 ]
