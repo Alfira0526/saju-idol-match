@@ -5562,5 +5562,18 @@
     "firstAt": "2026-07-25T01:49:02.278Z",
     "lastAt": "2026-07-25T01:49:02.278Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:동화|킥플립(kickflip)",
+    "name": "동화",
+    "group": "킥플립(KickFlip)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060311",
+    "note": "jyp 의리... 감사합니다",
+    "count": 1,
+    "firstAt": "2026-07-25T01:52:57.742Z",
+    "lastAt": "2026-07-25T01:52:57.742Z",
+    "status": "pending"
   }
 ]
