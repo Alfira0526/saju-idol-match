@@ -7265,5 +7265,18 @@
     "firstAt": "2026-07-25T04:53:30.363Z",
     "lastAt": "2026-07-25T04:53:30.363Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:陈炳帆|nouera",
+    "name": "陈炳帆",
+    "group": "NouerA",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:54:33.989Z",
+    "lastAt": "2026-07-25T04:54:33.989Z",
+    "status": "pending"
   }
 ]
