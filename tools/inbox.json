@@ -6654,5 +6654,18 @@
     "firstAt": "2026-07-25T03:57:59.801Z",
     "lastAt": "2026-07-25T03:57:59.801Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:吳是溫|nctwish",
+    "name": "吳是溫",
+    "group": "Nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020511",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T03:58:02.569Z",
+    "lastAt": "2026-07-25T03:58:02.569Z",
+    "status": "pending"
   }
 ]
