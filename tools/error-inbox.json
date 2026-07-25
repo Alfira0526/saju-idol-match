@@ -328,5 +328,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:버논|seventeen",
+    "name": "버논",
+    "group": "SEVENTEEN",
+    "count": 1,
+    "firstAt": "2026-07-25T02:03:40.945Z",
+    "lastAt": "2026-07-25T02:03:40.945Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19980218"
+    ],
+    "notes": []
   }
 ]
