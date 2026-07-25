@@ -7395,5 +7395,18 @@
     "firstAt": "2026-07-25T05:04:36.878Z",
     "lastAt": "2026-07-25T05:04:36.878Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:stella|hearts2hearts",
+    "name": "stella",
+    "group": "Hearts2Hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070617",
+    "note": "The hottest girl group right now, please add them! Love you, thank you🥰🥰",
+    "count": 1,
+    "firstAt": "2026-07-25T05:05:04.850Z",
+    "lastAt": "2026-07-25T05:05:04.850Z",
+    "status": "pending"
   }
 ]
