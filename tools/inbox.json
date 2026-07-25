@@ -8422,5 +8422,18 @@
     "firstAt": "2026-07-25T06:57:13.887Z",
     "lastAt": "2026-07-25T06:57:13.887Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마에다리쿠|nct위시",
+    "name": "마에다 리쿠",
+    "group": "NCT 위시",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030628",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:58:32.732Z",
+    "lastAt": "2026-07-25T06:58:32.732Z",
+    "status": "pending"
   }
 ]
