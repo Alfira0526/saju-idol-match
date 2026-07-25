@@ -6056,5 +6056,18 @@
     "firstAt": "2026-07-25T02:52:01.910Z",
     "lastAt": "2026-07-25T02:52:01.910Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리은|ateez",
+    "name": "리은",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:52:40.648Z",
+    "lastAt": "2026-07-25T02:52:40.648Z",
+    "status": "pending"
   }
 ]
