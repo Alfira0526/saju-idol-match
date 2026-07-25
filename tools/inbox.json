@@ -9306,5 +9306,18 @@
     "firstAt": "2026-07-25T08:54:26.626Z",
     "lastAt": "2026-07-25T08:54:26.626Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:江露|boynextdoor/hybe",
+    "name": "江露",
+    "group": "boynextdoor/hybe",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050615",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:01:30.886Z",
+    "lastAt": "2026-07-25T09:01:30.886Z",
+    "status": "pending"
   }
 ]
