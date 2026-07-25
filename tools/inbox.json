@@ -9852,5 +9852,18 @@
     "firstAt": "2026-07-25T10:33:01.899Z",
     "lastAt": "2026-07-25T10:33:01.899Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:卷卷|riize",
+    "name": "卷卷",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:33:02.651Z",
+    "lastAt": "2026-07-25T10:33:02.651Z",
+    "status": "pending"
   }
 ]
