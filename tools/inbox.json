@@ -10164,5 +10164,18 @@
     "firstAt": "2026-07-25T11:41:46.080Z",
     "lastAt": "2026-07-25T11:41:46.080Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:트레저|treasure",
+    "name": "트레저",
+    "group": "treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T11:46:16.742Z",
+    "lastAt": "2026-07-25T11:46:16.742Z",
+    "status": "pending"
   }
 ]
