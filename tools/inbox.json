@@ -8188,5 +8188,18 @@
     "firstAt": "2026-07-25T06:44:34.491Z",
     "lastAt": "2026-07-25T06:44:34.491Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:dououng|nct",
+    "name": "Dououng",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:45:54.266Z",
+    "lastAt": "2026-07-25T06:45:54.266Z",
+    "status": "pending"
   }
 ]
