@@ -7733,5 +7733,18 @@
     "firstAt": "2026-07-25T05:44:08.106Z",
     "lastAt": "2026-07-25T05:44:08.106Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유사랑|izna",
+    "name": "유사랑",
+    "group": "izna",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070418",
+    "note": "5세대 대표 그룹중 하나인데 아직도 없다니",
+    "count": 1,
+    "firstAt": "2026-07-25T05:45:17.906Z",
+    "lastAt": "2026-07-25T05:45:17.906Z",
+    "status": "pending"
   }
 ]
