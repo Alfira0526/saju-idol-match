@@ -8474,5 +8474,18 @@
     "firstAt": "2026-07-25T07:04:00.260Z",
     "lastAt": "2026-07-25T07:04:00.260Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jenny|nctdream",
+    "name": "Jenny",
+    "group": "Nct dream",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060909",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:04:41.884Z",
+    "lastAt": "2026-07-25T07:04:41.884Z",
+    "status": "pending"
   }
 ]
