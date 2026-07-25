@@ -5718,5 +5718,18 @@
     "firstAt": "2026-07-25T02:11:44.356Z",
     "lastAt": "2026-07-25T02:11:44.356Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:여영|더보이즈",
+    "name": "여영",
+    "group": "더보이즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031004",
+    "note": "멋잇다",
+    "count": 1,
+    "firstAt": "2026-07-25T02:13:50.802Z",
+    "lastAt": "2026-07-25T02:13:50.802Z",
+    "status": "pending"
   }
 ]
