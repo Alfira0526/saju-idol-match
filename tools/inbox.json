@@ -6043,5 +6043,18 @@
     "firstAt": "2026-07-25T02:52:02.822Z",
     "lastAt": "2026-07-25T02:52:02.822Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金泰亨|bts",
+    "name": "金泰亨",
+    "group": "bts",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:52:01.910Z",
+    "lastAt": "2026-07-25T02:52:01.910Z",
+    "status": "pending"
   }
 ]
