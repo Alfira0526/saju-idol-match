@@ -9384,5 +9384,18 @@
     "firstAt": "2026-07-23T04:16:34.790Z",
     "lastAt": "2026-07-25T09:10:33.600Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:satang|sm",
+    "name": "satang",
+    "group": "sm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010530",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:10:39.731Z",
+    "lastAt": "2026-07-25T09:10:39.731Z",
+    "status": "pending"
   }
 ]
