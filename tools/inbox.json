@@ -8110,5 +8110,18 @@
     "firstAt": "2026-07-23T01:59:56.697Z",
     "lastAt": "2026-07-25T06:27:37.054Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:txt|txt",
+    "name": "TXT",
+    "group": "TXT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "HYBE",
+    "count": 1,
+    "firstAt": "2026-07-25T06:27:52.094Z",
+    "lastAt": "2026-07-25T06:27:52.094Z",
+    "status": "pending"
   }
 ]
