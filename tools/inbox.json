@@ -7096,5 +7096,18 @@
     "firstAt": "2026-07-24T03:41:06.869Z",
     "lastAt": "2026-07-25T04:35:50.363Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민제|kickflip",
+    "name": "민제",
+    "group": "KickFlip",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060512",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T00:45:37.320Z",
+    "lastAt": "2026-07-25T04:35:54.512Z",
+    "status": "pending"
   }
 ]
