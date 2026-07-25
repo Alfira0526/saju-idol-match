@@ -8227,5 +8227,18 @@
     "firstAt": "2026-07-25T06:47:33.834Z",
     "lastAt": "2026-07-25T06:47:33.834Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:aria|nctwish",
+    "name": "aria",
+    "group": "nct wish",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:48:06.013Z",
+    "lastAt": "2026-07-25T06:48:06.013Z",
+    "status": "pending"
   }
 ]
