@@ -9761,5 +9761,18 @@
     "firstAt": "2026-07-23T07:27:26.374Z",
     "lastAt": "2026-07-25T10:19:41.400Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:taki|andteam",
+    "name": "taki",
+    "group": "andteam",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050504",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:19:56.932Z",
+    "lastAt": "2026-07-25T10:19:56.932Z",
+    "status": "pending"
   }
 ]
