@@ -445,5 +445,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:이특|superjunior",
+    "name": "이특",
+    "group": "Super Junior",
+    "count": 1,
+    "firstAt": "2026-07-25T05:16:29.218Z",
+    "lastAt": "2026-07-25T05:16:29.218Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19830701"
+    ],
+    "notes": []
   }
 ]
