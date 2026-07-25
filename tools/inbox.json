@@ -4203,12 +4203,12 @@
     "name": "Sion",
     "group": "NCTwish",
     "cat": "K-idol",
-    "gender": "",
-    "dob": "",
+    "gender": "M",
+    "dob": "20020511",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T08:12:27.093Z",
-    "lastAt": "2026-07-24T08:12:27.093Z",
+    "lastAt": "2026-07-25T02:08:41.774Z",
     "status": "pending"
   },
   {
