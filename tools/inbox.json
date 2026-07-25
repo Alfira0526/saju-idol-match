@@ -9579,5 +9579,18 @@
     "firstAt": "2026-07-25T09:31:45.652Z",
     "lastAt": "2026-07-25T09:31:45.652Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:alisa|i-dle",
+    "name": "Alisa",
+    "group": "I-dle",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "24200210",
+    "note": "Sex",
+    "count": 1,
+    "firstAt": "2026-07-25T09:43:00.638Z",
+    "lastAt": "2026-07-25T09:43:00.638Z",
+    "status": "pending"
   }
 ]
