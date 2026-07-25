@@ -7824,5 +7824,18 @@
     "firstAt": "2026-07-25T05:50:31.772Z",
     "lastAt": "2026-07-25T05:50:31.772Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:thanatorn|thewind",
+    "name": "Thanatorn",
+    "group": "The Wind",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:50:46.976Z",
+    "lastAt": "2026-07-25T05:50:46.976Z",
+    "status": "pending"
   }
 ]
