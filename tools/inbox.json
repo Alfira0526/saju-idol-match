@@ -9982,5 +9982,18 @@
     "firstAt": "2026-07-25T10:49:48.881Z",
     "lastAt": "2026-07-25T10:49:48.881Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박정우|treasure",
+    "name": "박정우",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040928",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:56:33.370Z",
+    "lastAt": "2026-07-25T10:56:33.370Z",
+    "status": "pending"
   }
 ]
