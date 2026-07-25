@@ -35,12 +35,12 @@
     "key": "er:문별|mamamoo",
     "name": "문별",
     "group": "MAMAMOO",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T04:41:23.081Z",
-    "lastAt": "2026-07-24T04:41:23.081Z",
+    "lastAt": "2026-07-25T01:16:37.396Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 2
     },
     "suggests": [],
     "notes": []
