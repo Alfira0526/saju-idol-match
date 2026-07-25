@@ -8370,5 +8370,18 @@
     "firstAt": "2026-07-25T06:54:01.996Z",
     "lastAt": "2026-07-25T06:54:01.996Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리브|리센느",
+    "name": "리브",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:54:24.419Z",
+    "lastAt": "2026-07-25T06:54:24.419Z",
+    "status": "pending"
   }
 ]
