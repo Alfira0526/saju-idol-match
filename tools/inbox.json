@@ -6342,5 +6342,18 @@
     "firstAt": "2026-07-25T03:26:28.787Z",
     "lastAt": "2026-07-25T03:26:28.787Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:권순영|세븐틴",
+    "name": "권순영",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960615",
+    "note": "hybe",
+    "count": 2,
+    "firstAt": "2026-07-23T07:53:30.329Z",
+    "lastAt": "2026-07-25T03:26:45.905Z",
+    "status": "pending"
   }
 ]
