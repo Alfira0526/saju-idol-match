@@ -9254,5 +9254,18 @@
     "firstAt": "2026-07-25T08:46:59.558Z",
     "lastAt": "2026-07-25T08:46:59.558Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:wan|infinite",
+    "name": "wan",
+    "group": "INFINITE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:48:04.718Z",
+    "lastAt": "2026-07-25T08:48:04.718Z",
+    "status": "pending"
   }
 ]
