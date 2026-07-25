@@ -431,5 +431,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:현진|straykids",
+    "name": "현진",
+    "group": "Stray Kids",
+    "count": 1,
+    "firstAt": "2026-07-25T05:06:47.641Z",
+    "lastAt": "2026-07-25T05:06:47.641Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
