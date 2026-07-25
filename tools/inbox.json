@@ -9332,5 +9332,18 @@
     "firstAt": "2026-07-25T09:03:00.207Z",
     "lastAt": "2026-07-25T09:03:00.207Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:all|closeyoureyes",
+    "name": "all",
+    "group": "CLOSEYOUREYES",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:03:58.635Z",
+    "lastAt": "2026-07-25T09:03:58.635Z",
+    "status": "pending"
   }
 ]
