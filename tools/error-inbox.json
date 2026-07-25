@@ -518,5 +518,23 @@
     "notes": [
       "일간: 戊(무) · 토(土) · 신약(身弱) 일주 戊寅 · 월주 辛卯 · 년주 丙寅 · 시주 庚申"
     ]
+  },
+  {
+    "key": "er:장하오|zerobaseone",
+    "name": "장하오",
+    "group": "ZEROBASEONE",
+    "count": 1,
+    "firstAt": "2026-07-25T08:45:34.837Z",
+    "lastAt": "2026-07-25T08:45:34.837Z",
+    "status": "pending",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "and2ble"
+    ],
+    "notes": [
+      "서치하면 다 나옴"
+    ]
   }
 ]
