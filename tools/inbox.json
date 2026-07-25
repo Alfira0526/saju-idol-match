@@ -5211,5 +5211,18 @@
     "firstAt": "2026-07-25T01:05:20.716Z",
     "lastAt": "2026-07-25T01:05:20.716Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yk524|infinite",
+    "name": "Yk524",
+    "group": "INFINITE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19890428",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:06:37.526Z",
+    "lastAt": "2026-07-25T01:06:37.526Z",
+    "status": "pending"
   }
 ]
