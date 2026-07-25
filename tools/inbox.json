@@ -9774,5 +9774,18 @@
     "firstAt": "2026-07-25T10:19:56.932Z",
     "lastAt": "2026-07-25T10:19:56.932Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:동현|kickfilp",
+    "name": "동현",
+    "group": "Kick filp",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070313",
+    "note": "Jyp",
+    "count": 1,
+    "firstAt": "2026-07-25T10:20:18.595Z",
+    "lastAt": "2026-07-25T10:20:18.595Z",
+    "status": "pending"
   }
 ]
