@@ -5796,5 +5796,18 @@
     "firstAt": "2026-07-25T02:25:01.220Z",
     "lastAt": "2026-07-25T02:25:01.220Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:범규|tomorrowxtogether",
+    "name": "범규",
+    "group": "Tomorrow x Together",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "20070211",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:25:33.315Z",
+    "lastAt": "2026-07-25T02:25:33.315Z",
+    "status": "pending"
   }
 ]
