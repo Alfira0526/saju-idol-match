@@ -8669,5 +8669,18 @@
     "firstAt": "2026-07-25T07:31:41.268Z",
     "lastAt": "2026-07-25T07:31:41.268Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동화|kickfilp",
+    "name": "이동화",
+    "group": "kickfilp",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060311",
+    "note": "jyp",
+    "count": 1,
+    "firstAt": "2026-07-25T07:33:06.714Z",
+    "lastAt": "2026-07-25T07:33:06.714Z",
+    "status": "pending"
   }
 ]
