@@ -8591,5 +8591,18 @@
     "firstAt": "2026-07-25T07:16:28.233Z",
     "lastAt": "2026-07-25T07:16:28.233Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ㅅㅅ|seventeen",
+    "name": "ㅅㅅ",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090801",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:20:40.939Z",
+    "lastAt": "2026-07-25T07:20:40.939Z",
+    "status": "pending"
   }
 ]
