@@ -7525,5 +7525,18 @@
     "firstAt": "2026-07-25T05:16:16.148Z",
     "lastAt": "2026-07-25T05:16:16.148Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:alphadriveone|상원",
+    "name": "ALPHA DRIVE ONE",
+    "group": "상원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030508",
+    "note": "Wakeone",
+    "count": 1,
+    "firstAt": "2026-07-25T05:17:37.308Z",
+    "lastAt": "2026-07-25T05:17:37.308Z",
+    "status": "pending"
   }
 ]
