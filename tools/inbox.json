@@ -7668,5 +7668,18 @@
     "firstAt": "2026-07-23T03:53:22.850Z",
     "lastAt": "2026-07-25T05:32:51.398Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:soobin|txt",
+    "name": "soobin",
+    "group": "TXT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:34:54.725Z",
+    "lastAt": "2026-07-25T05:34:54.725Z",
+    "status": "pending"
   }
 ]
