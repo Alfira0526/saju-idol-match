@@ -6823,5 +6823,18 @@
     "firstAt": "2026-07-25T04:08:47.228Z",
     "lastAt": "2026-07-25T04:08:47.228Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:스텔라|하츠투하츠",
+    "name": "스텔라",
+    "group": "하츠투하츠",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070618",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T04:08:53.877Z",
+    "lastAt": "2026-07-25T04:08:53.877Z",
+    "status": "pending"
   }
 ]
