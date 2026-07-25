@@ -6121,5 +6121,18 @@
     "firstAt": "2026-07-25T02:56:25.116Z",
     "lastAt": "2026-07-25T02:56:25.116Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:姜太显|txt",
+    "name": "姜太显",
+    "group": "txt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:58:46.798Z",
+    "lastAt": "2026-07-25T02:58:46.798Z",
+    "status": "pending"
   }
 ]
