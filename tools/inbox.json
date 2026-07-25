@@ -8656,5 +8656,18 @@
     "firstAt": "2026-07-25T07:26:50.884Z",
     "lastAt": "2026-07-25T07:26:50.884Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:헤라|seventeen",
+    "name": "헤라",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20021213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:31:41.268Z",
+    "lastAt": "2026-07-25T07:31:41.268Z",
+    "status": "pending"
   }
 ]
