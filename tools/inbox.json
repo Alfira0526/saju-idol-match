@@ -8292,5 +8292,18 @@
     "firstAt": "2026-07-25T06:50:43.140Z",
     "lastAt": "2026-07-25T06:50:43.140Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:豆浆|nct",
+    "name": "豆浆",
+    "group": "nct",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:51:17.802Z",
+    "lastAt": "2026-07-25T06:51:17.802Z",
+    "status": "pending"
   }
 ]
