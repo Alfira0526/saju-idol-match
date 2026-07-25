@@ -9553,5 +9553,18 @@
     "firstAt": "2026-07-25T09:25:25.607Z",
     "lastAt": "2026-07-25T09:25:25.607Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최연준|txt",
+    "name": "최 연준",
+    "group": "txt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990913",
+    "note": "hybe",
+    "count": 1,
+    "firstAt": "2026-07-25T09:29:59.854Z",
+    "lastAt": "2026-07-25T09:29:59.854Z",
+    "status": "pending"
   }
 ]
