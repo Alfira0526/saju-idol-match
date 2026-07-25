@@ -8851,5 +8851,18 @@
     "firstAt": "2026-07-25T07:56:33.522Z",
     "lastAt": "2026-07-25T07:56:33.522Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:方燦|straykids",
+    "name": "方燦",
+    "group": "Stray Kids",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971003",
+    "note": "JYPE",
+    "count": 1,
+    "firstAt": "2026-07-25T07:58:00.980Z",
+    "lastAt": "2026-07-25T07:58:00.980Z",
+    "status": "pending"
   }
 ]
