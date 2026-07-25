@@ -7694,5 +7694,18 @@
     "firstAt": "2026-07-22T18:18:23.235Z",
     "lastAt": "2026-07-25T05:35:41.308Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:asahi|treasure",
+    "name": "Asahi",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010820",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-25T05:41:24.735Z",
+    "lastAt": "2026-07-25T05:41:24.735Z",
+    "status": "pending"
   }
 ]
