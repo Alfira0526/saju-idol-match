@@ -389,5 +389,19 @@
       "의주"
     ],
     "notes": []
+  },
+  {
+    "key": "er:아사히|treasure",
+    "name": "아사히",
+    "group": "TREASURE",
+    "count": 1,
+    "firstAt": "2026-07-25T04:48:57.445Z",
+    "lastAt": "2026-07-25T04:48:57.445Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
