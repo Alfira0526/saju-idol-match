@@ -8539,5 +8539,18 @@
     "firstAt": "2026-07-25T07:11:21.296Z",
     "lastAt": "2026-07-25T07:11:21.296Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:루이스|lngshot",
+    "name": "루이스",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20100501",
+    "note": "MORE VISION",
+    "count": 1,
+    "firstAt": "2026-07-25T07:12:16.740Z",
+    "lastAt": "2026-07-25T07:12:16.740Z",
+    "status": "pending"
   }
 ]
