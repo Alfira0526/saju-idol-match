@@ -9800,5 +9800,18 @@
     "firstAt": "2026-07-23T04:34:35.654Z",
     "lastAt": "2026-07-25T10:26:09.675Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤규|8turn(에잇턴)",
+    "name": "윤규",
+    "group": "8TURN(에잇턴)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050907",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:27:04.444Z",
+    "lastAt": "2026-07-25T10:27:04.444Z",
+    "status": "pending"
   }
 ]
