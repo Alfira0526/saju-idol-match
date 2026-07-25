@@ -7642,5 +7642,18 @@
     "firstAt": "2026-07-25T05:31:13.358Z",
     "lastAt": "2026-07-25T05:31:13.358Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하민|smtr25",
+    "name": "하민",
+    "group": "SMTR25",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060805",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T05:32:44.649Z",
+    "lastAt": "2026-07-25T05:32:44.649Z",
+    "status": "pending"
   }
 ]
