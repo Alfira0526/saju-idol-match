@@ -8604,5 +8604,18 @@
     "firstAt": "2026-07-25T07:20:40.939Z",
     "lastAt": "2026-07-25T07:20:40.939Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이하민|smtr25",
+    "name": "이하민",
+    "group": "SMTR25",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060805",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T07:21:54.285Z",
+    "lastAt": "2026-07-25T07:21:54.285Z",
+    "status": "pending"
   }
 ]
