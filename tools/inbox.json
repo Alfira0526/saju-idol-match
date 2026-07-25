@@ -4847,5 +4847,18 @@
     "firstAt": "2026-07-25T00:03:37.298Z",
     "lastAt": "2026-07-25T00:03:37.298Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:wonbin|riize",
+    "name": "wonbin",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020302",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:05:47.054Z",
+    "lastAt": "2026-07-25T00:05:47.054Z",
+    "status": "pending"
   }
 ]
