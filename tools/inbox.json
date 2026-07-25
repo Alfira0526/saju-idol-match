@@ -8565,5 +8565,18 @@
     "firstAt": "2026-07-25T07:14:39.910Z",
     "lastAt": "2026-07-25T07:14:39.910Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한승우|솔로",
+    "name": "한승우",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19941224",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:16:22.207Z",
+    "lastAt": "2026-07-25T07:16:22.207Z",
+    "status": "pending"
   }
 ]
