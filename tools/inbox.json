@@ -9462,5 +9462,18 @@
     "firstAt": "2026-07-25T09:15:55.722Z",
     "lastAt": "2026-07-25T09:15:55.722Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박성호|boynextdoor",
+    "name": "박성호",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:16:10.660Z",
+    "lastAt": "2026-07-25T09:16:10.660Z",
+    "status": "pending"
   }
 ]
