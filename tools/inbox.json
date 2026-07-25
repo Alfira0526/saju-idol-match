@@ -7798,5 +7798,18 @@
     "firstAt": "2026-07-25T05:48:37.365Z",
     "lastAt": "2026-07-25T05:48:37.365Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아사히|treasure",
+    "name": "아사히",
+    "group": "Treasure",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20010820",
+    "note": "yg",
+    "count": 1,
+    "firstAt": "2026-07-25T05:49:55.947Z",
+    "lastAt": "2026-07-25T05:49:55.947Z",
+    "status": "pending"
   }
 ]
