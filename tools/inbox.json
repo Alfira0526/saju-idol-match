@@ -6901,5 +6901,18 @@
     "firstAt": "2026-07-25T04:16:36.687Z",
     "lastAt": "2026-07-25T04:16:36.687Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:p1harmony|p1harmony",
+    "name": "p1harmony",
+    "group": "p1harmony",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:16:42.750Z",
+    "lastAt": "2026-07-25T04:16:42.750Z",
+    "status": "pending"
   }
 ]
