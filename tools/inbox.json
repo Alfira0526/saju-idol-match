@@ -4951,5 +4951,18 @@
     "firstAt": "2026-07-25T00:31:06.626Z",
     "lastAt": "2026-07-25T00:31:06.626Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이태민|shinee",
+    "name": "이태민",
+    "group": "SHINee",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930718",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:34:02.708Z",
+    "lastAt": "2026-07-25T00:34:02.708Z",
+    "status": "pending"
   }
 ]
