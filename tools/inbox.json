@@ -7421,5 +7421,18 @@
     "firstAt": "2026-07-25T05:05:11.273Z",
     "lastAt": "2026-07-25T05:05:11.273Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김정수|xdinaryheroes",
+    "name": "김정수",
+    "group": "XdinaryHeroes",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010626",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:06:31.476Z",
+    "lastAt": "2026-07-25T05:06:31.476Z",
+    "status": "pending"
   }
 ]
