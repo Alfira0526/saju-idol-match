@@ -7161,5 +7161,18 @@
     "firstAt": "2026-07-23T09:06:25.475Z",
     "lastAt": "2026-07-25T04:38:25.347Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정세민|idid",
+    "name": "정세민",
+    "group": "idid",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20081010",
+    "note": "저희 5대 남자 아이돌 좋아하는 분들에게 기회를 주세요",
+    "count": 3,
+    "firstAt": "2026-07-23T00:54:07.434Z",
+    "lastAt": "2026-07-25T04:43:23.341Z",
+    "status": "pending"
   }
 ]
