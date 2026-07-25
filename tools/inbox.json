@@ -8786,5 +8786,18 @@
     "firstAt": "2026-07-23T02:24:45.303Z",
     "lastAt": "2026-07-25T07:44:56.334Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현우|싸이커스",
+    "name": "현우",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:46:41.893Z",
+    "lastAt": "2026-07-25T07:46:41.893Z",
+    "status": "pending"
   }
 ]
