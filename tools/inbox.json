@@ -10047,5 +10047,18 @@
     "firstAt": "2026-07-25T11:10:38.548Z",
     "lastAt": "2026-07-25T11:10:38.548Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전원우|seventeen",
+    "name": "전원우",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19960717",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T11:11:17.660Z",
+    "lastAt": "2026-07-25T11:11:17.660Z",
+    "status": "pending"
   }
 ]
