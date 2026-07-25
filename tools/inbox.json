@@ -6186,5 +6186,18 @@
     "firstAt": "2026-07-25T03:02:52.029Z",
     "lastAt": "2026-07-25T03:02:52.029Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金奎彬|zerobaseone",
+    "name": "金奎彬",
+    "group": "ZEROBASEONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040830",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:03:11.162Z",
+    "lastAt": "2026-07-25T03:03:11.162Z",
+    "status": "pending"
   }
 ]
