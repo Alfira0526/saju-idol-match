@@ -5692,5 +5692,18 @@
     "firstAt": "2026-07-25T02:07:34.130Z",
     "lastAt": "2026-07-25T02:07:34.130Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kamden|앰퍼샌드원",
+    "name": "kamden",
+    "group": "앰퍼샌드원",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010609",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:08:02.183Z",
+    "lastAt": "2026-07-25T02:08:02.183Z",
+    "status": "pending"
   }
 ]
