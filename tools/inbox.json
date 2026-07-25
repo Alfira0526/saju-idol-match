@@ -6849,5 +6849,18 @@
     "firstAt": "2026-07-25T04:12:20.408Z",
     "lastAt": "2026-07-25T04:12:20.408Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:닝|boynextdoor(성호)",
+    "name": "닝",
+    "group": "BOYNEXTDOOR (성호)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001209",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:14:04.809Z",
+    "lastAt": "2026-07-25T04:14:04.809Z",
+    "status": "pending"
   }
 ]
