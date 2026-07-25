@@ -403,5 +403,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:세림|cravity",
+    "name": "세림",
+    "group": "CRAVITY",
+    "count": 1,
+    "firstAt": "2026-07-25T05:04:03.469Z",
+    "lastAt": "2026-07-25T05:04:03.469Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
