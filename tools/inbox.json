@@ -6485,5 +6485,18 @@
     "firstAt": "2026-07-25T03:42:09.427Z",
     "lastAt": "2026-07-25T03:42:09.427Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리리|treasure",
+    "name": "리리",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:43:06.455Z",
+    "lastAt": "2026-07-25T03:43:06.455Z",
+    "status": "pending"
   }
 ]
