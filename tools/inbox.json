@@ -5068,5 +5068,18 @@
     "firstAt": "2026-07-25T00:47:01.754Z",
     "lastAt": "2026-07-25T00:47:01.754Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전웅woong|에이비식스ab6ix",
+    "name": "전웅 Woong",
+    "group": "에이비식스 AB6IX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971015",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:47:04.935Z",
+    "lastAt": "2026-07-25T00:47:04.935Z",
+    "status": "pending"
   }
 ]
