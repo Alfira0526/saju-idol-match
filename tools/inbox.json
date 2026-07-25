@@ -9150,5 +9150,18 @@
     "firstAt": "2026-07-25T08:28:43.897Z",
     "lastAt": "2026-07-25T08:28:43.897Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:beomgyu|txt",
+    "name": "Beomgyu",
+    "group": "TXT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:31:12.022Z",
+    "lastAt": "2026-07-25T08:31:12.022Z",
+    "status": "pending"
   }
 ]
