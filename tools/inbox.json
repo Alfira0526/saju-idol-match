@@ -7213,5 +7213,18 @@
     "firstAt": "2026-07-25T04:47:54.065Z",
     "lastAt": "2026-07-25T04:47:54.065Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:shotaro|riize",
+    "name": "Shotaro",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001125",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T04:47:59.517Z",
+    "lastAt": "2026-07-25T04:47:59.517Z",
+    "status": "pending"
   }
 ]
