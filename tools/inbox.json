@@ -8461,5 +8461,18 @@
     "firstAt": "2026-07-23T00:46:33.706Z",
     "lastAt": "2026-07-25T07:02:43.384Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하는|소녀시대",
+    "name": "하는",
+    "group": "소녀시대",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20021030",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:04:00.260Z",
+    "lastAt": "2026-07-25T07:04:00.260Z",
+    "status": "pending"
   }
 ]
