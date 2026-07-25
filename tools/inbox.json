@@ -8266,5 +8266,18 @@
     "firstAt": "2026-07-25T06:48:56.765Z",
     "lastAt": "2026-07-25T06:48:56.765Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지니|제로베이스원",
+    "name": "지니",
+    "group": "제로베이스원",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19970825",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:49:24.888Z",
+    "lastAt": "2026-07-25T06:49:24.888Z",
+    "status": "pending"
   }
 ]
