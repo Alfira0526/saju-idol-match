@@ -10008,5 +10008,18 @@
     "firstAt": "2026-07-25T10:57:39.422Z",
     "lastAt": "2026-07-25T10:57:39.422Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:999|nmixx",
+    "name": "999",
+    "group": "NMIXX",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20000505",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T11:07:42.454Z",
+    "lastAt": "2026-07-25T11:07:42.454Z",
+    "status": "pending"
   }
 ]
