@@ -5627,5 +5627,18 @@
     "firstAt": "2026-07-25T02:04:03.630Z",
     "lastAt": "2026-07-25T02:04:03.630Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동현|kickflip",
+    "name": "이동현",
+    "group": "kickflip",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070313",
+    "note": "jyp",
+    "count": 1,
+    "firstAt": "2026-07-25T02:04:05.601Z",
+    "lastAt": "2026-07-25T02:04:05.601Z",
+    "status": "pending"
   }
 ]
