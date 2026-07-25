@@ -314,5 +314,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:유리|snsd",
+    "name": "유리",
+    "group": "SNSD",
+    "count": 1,
+    "firstAt": "2026-07-25T01:39:25.497Z",
+    "lastAt": "2026-07-25T01:39:25.497Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
