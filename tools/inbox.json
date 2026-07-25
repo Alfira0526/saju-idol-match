@@ -5679,5 +5679,18 @@
     "firstAt": "2026-07-25T02:06:23.705Z",
     "lastAt": "2026-07-25T02:06:23.705Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:iris|day6",
+    "name": "Iris",
+    "group": "Day6",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19940626",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:07:34.130Z",
+    "lastAt": "2026-07-25T02:07:34.130Z",
+    "status": "pending"
   }
 ]
