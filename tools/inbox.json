@@ -9098,5 +9098,18 @@
     "firstAt": "2026-07-25T08:25:02.268Z",
     "lastAt": "2026-07-25T08:25:02.268Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장연|seventeen",
+    "name": "장연",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20120815",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:25:18.027Z",
+    "lastAt": "2026-07-25T08:25:18.027Z",
+    "status": "pending"
   }
 ]
