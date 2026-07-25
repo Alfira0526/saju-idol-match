@@ -7603,5 +7603,18 @@
     "firstAt": "2026-07-25T05:24:36.498Z",
     "lastAt": "2026-07-25T05:24:36.498Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이서호|oneus",
+    "name": "이서호",
+    "group": "ONEUS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960607",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:25:41.293Z",
+    "lastAt": "2026-07-25T05:25:41.293Z",
+    "status": "pending"
   }
 ]
