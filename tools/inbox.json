@@ -6433,5 +6433,18 @@
     "firstAt": "2026-07-22T22:41:45.533Z",
     "lastAt": "2026-07-25T03:37:54.779Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:나캠듬|앰퍼샌드원",
+    "name": "나캠듬",
+    "group": "앰퍼샌드원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010609",
+    "note": "FNC엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-25T03:38:55.588Z",
+    "lastAt": "2026-07-25T03:38:55.588Z",
+    "status": "pending"
   }
 ]
