@@ -9449,5 +9449,18 @@
     "firstAt": "2026-07-25T09:15:32.112Z",
     "lastAt": "2026-07-25T09:15:32.112Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:애리|nctwish",
+    "name": "애리",
+    "group": "NCTWISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041113",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:15:55.722Z",
+    "lastAt": "2026-07-25T09:15:55.722Z",
+    "status": "pending"
   }
 ]
