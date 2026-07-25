@@ -6225,5 +6225,18 @@
     "firstAt": "2026-07-23T01:34:09.494Z",
     "lastAt": "2026-07-25T03:06:53.865Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:케이주|kickflip",
+    "name": "케이주",
+    "group": "Kickflip",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061004",
+    "note": "JYP",
+    "count": 5,
+    "firstAt": "2026-07-22T19:39:21.031Z",
+    "lastAt": "2026-07-25T03:08:12.630Z",
+    "status": "pending"
   }
 ]
