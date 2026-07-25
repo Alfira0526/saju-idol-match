@@ -346,6 +346,20 @@
   .up-item .up-date{color:var(--gold); flex:none; font-size:12.5px;}
   .up-item .up-text{color:var(--ink);}
 
+  .up-toast{position:fixed; left:50%; top:14px; transform:translateX(-50%) translateY(-10px);
+    z-index:70; max-width:min(92vw,540px); display:flex; align-items:center; gap:9px;
+    padding:10px 10px 10px 14px; border-radius:999px; color:var(--ink); font-size:13px; line-height:1.4;
+    background:linear-gradient(120deg,#2a1247,#1a1236); border:1px solid #ff4d9744;
+    box-shadow:0 16px 40px -22px #000; opacity:0; pointer-events:none;
+    transition:opacity .28s ease, transform .28s ease;}
+  .up-toast.show{opacity:1; transform:translateX(-50%) translateY(0); pointer-events:auto;}
+  .up-toast-ico{flex:none;}
+  .up-toast-text{flex:1; min-width:0;}
+  .up-toast-text b{color:var(--gold);}
+  .up-toast-x{flex:none; background:none; border:none; color:var(--ink-dim); cursor:pointer;
+    font-size:13px; padding:2px 6px; border-radius:50%;}
+  .up-toast-x:hover{color:var(--ink);}
+
   .fav-eyebrow{font-size:12px; letter-spacing:.08em; color:var(--gold); margin-bottom:6px;}
   .fav-card{margin:6px 0 14px; padding:18px 18px 20px; border-radius:14px;
     background:linear-gradient(160deg,#2a1550,#1a1030); border:1px solid #ff4d9733;
@@ -577,14 +591,11 @@
 </div>
 
 <!-- 업데이트 팝업 -->
-<div class="modal-overlay hidden" id="updatePopup" onclick="if(event.target===this)closeUpdate()">
-  <div class="modal">
-    <button class="modal-x" onclick="closeUpdate()" aria-label="닫기">✕</button>
-    <h3 class="modal-title" id="upTitle">따끈한 새 얼굴이 왔어요 ✨</h3>
-    <p class="modal-intro" id="upLead"></p>
-    <div id="upList" class="up-list"></div>
-    <button class="m-submit" onclick="closeUpdate()">다시 매칭해보기</button>
-  </div>
+<!-- 새 그룹 추가 공지: 화면을 가리지 않는 상단 토스트 -->
+<div id="updateToast" class="up-toast" role="status" aria-live="polite">
+  <span class="up-toast-ico">✨</span>
+  <span class="up-toast-text" id="upToastText"></span>
+  <button class="up-toast-x" onclick="closeUpdate()" aria-label="닫기">✕</button>
 </div>
 
 <script>
@@ -2078,7 +2089,8 @@ function submitSuggest(){
     .finally(()=>{ btn.disabled=false; btn.textContent='제보 보내기'; });
 }
 
-function closeUpdate(){ document.getElementById('updatePopup').classList.add('hidden'); }
+let _upToastTimer=null;
+function closeUpdate(){ const t=document.getElementById('updateToast'); if(t) t.classList.remove('show'); if(_upToastTimer){clearTimeout(_upToastTimer);_upToastTimer=null;} }
 
 // ================= 오류 제보 (기존 제보와 같은 Worker, type:"error") =================
 let _erTarget = { name:"", group:"" };
@@ -2168,11 +2180,17 @@ function maybeShowFavReport(){
     const latest = fresh.map(x=>x.date).sort().pop();
     if(localStorage.getItem('upd_seen')===latest) return;
     if(favShown) return;                       // 최애 리포트가 떴으면 겹치지 않게 이번엔 생략
-    const list=document.getElementById('upList');
-    list.innerHTML = fresh.map(x=>`<div class="up-item"><span class="up-date">${(x.date||'').replace(/-/g,'.')}</span><span class="up-text">${x.text||''}</span></div>`).join("");
+    // 그룹명만 추려 토스트로(화면 안 가림)
+    const names = fresh.map(x=>(x.text||'').replace(/\s*추가\s*$/,'').trim()).filter(Boolean);
+    const shown = names.slice(0,2).join(', ') + (names.length>2 ? ` 외 ${names.length-2}` : '');
     const n = fresh.reduce((s,x)=>s+(x.count||0),0);
-    document.getElementById('upLead').textContent = n ? `요 며칠 사이 ${n}명이 새로 합류했어요. 혹시 찾던 그 사람일지도 몰라요.` : '새 얼굴이 도착했어요. 혹시 찾던 그 사람일지도 몰라요.';
-    document.getElementById('updatePopup').classList.remove('hidden');
+    const txt = document.getElementById('upToastText');
+    txt.innerHTML = shown
+      ? `요 며칠 <b>${shown}</b>${n?` 등 ${n}명`:''} 새로 합류했어요`
+      : '새 얼굴이 도착했어요';
+    const t = document.getElementById('updateToast');
+    t.classList.add('show');
+    _upToastTimer = setTimeout(closeUpdate, 8000); // 8초 뒤 자동 사라짐
     localStorage.setItem('upd_seen', latest);
   }).catch(()=>{});
 })();
