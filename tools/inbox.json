@@ -5250,5 +5250,18 @@
     "firstAt": "2026-07-23T02:10:52.414Z",
     "lastAt": "2026-07-25T01:14:02.908Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuikka|nctwish쿠리",
+    "name": "yuikka",
+    "group": "nctwish 쿠리",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030628",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T01:17:00.741Z",
+    "lastAt": "2026-07-25T01:17:00.741Z",
+    "status": "pending"
   }
 ]
