@@ -484,5 +484,19 @@
       "金俊奎"
     ],
     "notes": []
+  },
+  {
+    "key": "er:슬기|redvelvet",
+    "name": "슬기",
+    "group": "Red Velvet",
+    "count": 1,
+    "firstAt": "2026-07-25T07:49:45.586Z",
+    "lastAt": "2026-07-25T07:49:45.586Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
