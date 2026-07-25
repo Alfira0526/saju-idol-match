@@ -8929,5 +8929,18 @@
     "firstAt": "2026-07-25T08:09:06.661Z",
     "lastAt": "2026-07-25T08:09:06.661Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이욱헌|svt",
+    "name": "이욱헌",
+    "group": "SVT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20090304",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:11:33.662Z",
+    "lastAt": "2026-07-25T08:11:33.662Z",
+    "status": "pending"
   }
 ]
