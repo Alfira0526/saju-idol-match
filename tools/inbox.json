@@ -10021,5 +10021,18 @@
     "firstAt": "2026-07-25T11:07:42.454Z",
     "lastAt": "2026-07-25T11:07:42.454Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:napassornhuttakhun|smentertainment",
+    "name": "Napassorn Huttakhun",
+    "group": "Sm entertainment",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "16122001",
+    "note": "Yesung",
+    "count": 1,
+    "firstAt": "2026-07-25T11:10:08.827Z",
+    "lastAt": "2026-07-25T11:10:08.827Z",
+    "status": "pending"
   }
 ]
