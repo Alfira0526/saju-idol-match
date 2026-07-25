@@ -10112,5 +10112,18 @@
     "firstAt": "2026-07-25T11:35:35.667Z",
     "lastAt": "2026-07-25T11:35:35.667Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jaemin|nct",
+    "name": "Jaemin",
+    "group": "nct",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000813",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T11:35:49.381Z",
+    "lastAt": "2026-07-25T11:35:49.381Z",
+    "status": "pending"
   }
 ]
