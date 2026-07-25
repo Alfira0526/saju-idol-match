@@ -8890,5 +8890,18 @@
     "firstAt": "2026-07-25T08:05:45.117Z",
     "lastAt": "2026-07-25T08:05:45.117Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:lun|boynextdoor",
+    "name": "Lun",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990803",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:08:03.821Z",
+    "lastAt": "2026-07-25T08:08:03.821Z",
+    "status": "pending"
   }
 ]
