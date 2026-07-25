@@ -6966,5 +6966,18 @@
     "firstAt": "2026-07-25T04:21:07.839Z",
     "lastAt": "2026-07-25T04:21:07.839Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박원빈|riize",
+    "name": "박원빈",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020302",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T04:22:44.603Z",
+    "lastAt": "2026-07-25T04:22:44.603Z",
+    "status": "pending"
   }
 ]
