@@ -9618,5 +9618,18 @@
     "firstAt": "2026-07-25T09:46:35.392Z",
     "lastAt": "2026-07-25T09:46:35.392Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김률|lngshot",
+    "name": "김률",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060918",
+    "note": "모어비전 잘생겼어요 김률이가",
+    "count": 3,
+    "firstAt": "2026-07-23T01:38:33.212Z",
+    "lastAt": "2026-07-25T09:51:09.149Z",
+    "status": "pending"
   }
 ]
