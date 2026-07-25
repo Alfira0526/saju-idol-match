@@ -9358,5 +9358,18 @@
     "firstAt": "2026-07-22T23:49:16.937Z",
     "lastAt": "2026-07-25T09:05:25.684Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:종성|enhypen",
+    "name": "종성",
+    "group": "enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020420",
+    "note": "hybe",
+    "count": 1,
+    "firstAt": "2026-07-25T09:05:57.168Z",
+    "lastAt": "2026-07-25T09:05:57.168Z",
+    "status": "pending"
   }
 ]
