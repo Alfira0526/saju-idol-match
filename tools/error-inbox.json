@@ -358,5 +358,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:태양|bigbang",
+    "name": "태양",
+    "group": "BIGBANG",
+    "count": 1,
+    "firstAt": "2026-07-25T02:22:45.808Z",
+    "lastAt": "2026-07-25T02:22:45.808Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
