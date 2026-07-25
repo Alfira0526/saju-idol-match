@@ -9943,5 +9943,18 @@
     "firstAt": "2026-07-25T10:45:34.461Z",
     "lastAt": "2026-07-25T10:45:34.461Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:히나타|xg(엑스지)",
+    "name": "히나타",
+    "group": "XG (엑스지)",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020611",
+    "note": "XGALX",
+    "count": 1,
+    "firstAt": "2026-07-25T10:45:47.814Z",
+    "lastAt": "2026-07-25T10:45:47.814Z",
+    "status": "pending"
   }
 ]
