@@ -5055,5 +5055,18 @@
     "firstAt": "2026-07-22T18:37:56.243Z",
     "lastAt": "2026-07-25T00:44:32.579Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:비아이|131",
+    "name": "비아이",
+    "group": "131",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961022",
+    "note": "131",
+    "count": 1,
+    "firstAt": "2026-07-25T00:47:01.754Z",
+    "lastAt": "2026-07-25T00:47:01.754Z",
+    "status": "pending"
   }
 ]
