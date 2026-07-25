@@ -6589,5 +6589,18 @@
     "firstAt": "2026-07-25T03:50:26.017Z",
     "lastAt": "2026-07-25T03:50:26.017Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전웅|ab6ix",
+    "name": "전웅",
+    "group": "AB6IX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971015",
+    "note": "브랜뉴뮤직/ 내 사주 궁합에 있을까 궁금해서",
+    "count": 2,
+    "firstAt": "2026-07-24T03:28:15.639Z",
+    "lastAt": "2026-07-25T03:52:28.051Z",
+    "status": "pending"
   }
 ]
