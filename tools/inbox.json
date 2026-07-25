@@ -8630,5 +8630,18 @@
     "firstAt": "2026-07-24T03:37:06.047Z",
     "lastAt": "2026-07-25T07:25:42.574Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:변백현|exo-cbx",
+    "name": "변백현",
+    "group": "EXO-CBX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920506",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:26:36.506Z",
+    "lastAt": "2026-07-25T07:26:36.506Z",
+    "status": "pending"
   }
 ]
