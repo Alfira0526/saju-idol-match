@@ -7278,5 +7278,18 @@
     "firstAt": "2026-07-25T04:54:33.989Z",
     "lastAt": "2026-07-25T04:54:33.989Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이청명|idntt",
+    "name": "이청명",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030604",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T07:43:18.012Z",
+    "lastAt": "2026-07-25T04:55:10.233Z",
+    "status": "pending"
   }
 ]
