@@ -8240,5 +8240,18 @@
     "firstAt": "2026-07-25T06:48:06.013Z",
     "lastAt": "2026-07-25T06:48:06.013Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최민호|샤이니",
+    "name": "최민호",
+    "group": "샤이니",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19911209",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:48:50.622Z",
+    "lastAt": "2026-07-25T06:48:50.622Z",
+    "status": "pending"
   }
 ]
