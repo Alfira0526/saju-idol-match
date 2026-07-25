@@ -5653,5 +5653,18 @@
     "firstAt": "2026-07-23T04:56:10.666Z",
     "lastAt": "2026-07-25T02:04:21.493Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:boseok|exo",
+    "name": "Boseok",
+    "group": "Exo",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030301",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:05:01.513Z",
+    "lastAt": "2026-07-25T02:05:01.513Z",
+    "status": "pending"
   }
 ]
