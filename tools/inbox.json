@@ -6680,5 +6680,18 @@
     "firstAt": "2026-07-25T03:58:07.012Z",
     "lastAt": "2026-07-25T03:58:07.012Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:임이진|에이티즈",
+    "name": "임이진",
+    "group": "에이티즈",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20010416",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:58:34.549Z",
+    "lastAt": "2026-07-25T03:58:34.549Z",
+    "status": "pending"
   }
 ]
