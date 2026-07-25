@@ -5744,5 +5744,18 @@
     "firstAt": "2026-07-25T02:14:00.272Z",
     "lastAt": "2026-07-25T02:14:00.272Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:양흔선|nctdream",
+    "name": "양흔선",
+    "group": "Nct Dream",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000313",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:14:10.021Z",
+    "lastAt": "2026-07-25T02:14:10.021Z",
+    "status": "pending"
   }
 ]
