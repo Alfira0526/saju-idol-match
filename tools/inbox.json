@@ -8643,5 +8643,18 @@
     "firstAt": "2026-07-25T07:26:36.506Z",
     "lastAt": "2026-07-25T07:26:36.506Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:추이산|ateez",
+    "name": "추이산",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:26:50.884Z",
+    "lastAt": "2026-07-25T07:26:50.884Z",
+    "status": "pending"
   }
 ]
