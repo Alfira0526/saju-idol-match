@@ -9878,5 +9878,18 @@
     "firstAt": "2026-07-25T10:33:47.630Z",
     "lastAt": "2026-07-25T10:33:47.630Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진위|vayonn",
+    "name": "진위",
+    "group": "VAYONN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060310",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:34:06.891Z",
+    "lastAt": "2026-07-25T10:34:06.891Z",
+    "status": "pending"
   }
 ]
