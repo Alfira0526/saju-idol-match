@@ -7785,5 +7785,18 @@
     "firstAt": "2026-07-25T05:47:39.058Z",
     "lastAt": "2026-07-25T05:47:39.058Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:饭饭|boynextdoor",
+    "name": "饭饭",
+    "group": "boynextdoor",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:48:37.365Z",
+    "lastAt": "2026-07-25T05:48:37.365Z",
+    "status": "pending"
   }
 ]
