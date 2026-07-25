@@ -5380,5 +5380,18 @@
     "firstAt": "2026-07-25T01:26:06.869Z",
     "lastAt": "2026-07-25T01:26:06.869Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:심재윤|enhypen",
+    "name": "심재윤",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20021115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:26:59.333Z",
+    "lastAt": "2026-07-25T01:26:59.333Z",
+    "status": "pending"
   }
 ]
