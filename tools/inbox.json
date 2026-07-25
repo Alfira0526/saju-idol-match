@@ -7057,5 +7057,18 @@
     "firstAt": "2026-07-25T04:31:02.385Z",
     "lastAt": "2026-07-25T04:31:02.385Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:핸신영|theboyz",
+    "name": "핸신영",
+    "group": "THEBOYZ",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080429",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:31:25.856Z",
+    "lastAt": "2026-07-25T04:31:25.856Z",
+    "status": "pending"
   }
 ]
