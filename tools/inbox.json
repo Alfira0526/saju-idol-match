@@ -7070,5 +7070,18 @@
     "firstAt": "2026-07-25T04:31:25.856Z",
     "lastAt": "2026-07-25T04:31:25.856Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:poman|인피니트",
+    "name": "POMAN",
+    "group": "인피니트",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19930522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:33:08.654Z",
+    "lastAt": "2026-07-25T04:33:08.654Z",
+    "status": "pending"
   }
 ]
