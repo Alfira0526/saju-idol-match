@@ -6979,5 +6979,18 @@
     "firstAt": "2026-07-25T04:22:44.603Z",
     "lastAt": "2026-07-25T04:22:44.603Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소타로|라이즈",
+    "name": "소타로",
+    "group": "라이즈",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20001125",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-25T04:23:46.247Z",
+    "lastAt": "2026-07-25T04:23:46.247Z",
+    "status": "pending"
   }
 ]
