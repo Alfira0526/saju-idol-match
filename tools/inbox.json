@@ -6563,5 +6563,18 @@
     "firstAt": "2026-07-25T03:48:43.269Z",
     "lastAt": "2026-07-25T03:48:43.269Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:exonct127nctdream|exonct127nctdream",
+    "name": "EXO NCT127 NCTDREAM",
+    "group": "EXO NCT127 NCTDREAM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "SMTOWN",
+    "count": 1,
+    "firstAt": "2026-07-25T03:50:21.852Z",
+    "lastAt": "2026-07-25T03:50:21.852Z",
+    "status": "pending"
   }
 ]
