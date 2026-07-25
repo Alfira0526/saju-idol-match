@@ -6082,5 +6082,18 @@
     "firstAt": "2026-07-22T21:20:01.331Z",
     "lastAt": "2026-07-25T02:53:10.097Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:씨씨|infinite",
+    "name": "씨씨",
+    "group": "Infinite",
+    "cat": "C-actor",
+    "gender": "F",
+    "dob": "19971208",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:53:24.620Z",
+    "lastAt": "2026-07-25T02:53:24.620Z",
+    "status": "pending"
   }
 ]
