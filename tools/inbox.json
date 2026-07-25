@@ -8747,5 +8747,18 @@
     "firstAt": "2026-07-25T07:40:59.935Z",
     "lastAt": "2026-07-25T07:40:59.935Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:tritti|nctwish",
+    "name": "tritti",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:42:13.164Z",
+    "lastAt": "2026-07-25T07:42:13.164Z",
+    "status": "pending"
   }
 ]
