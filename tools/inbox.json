@@ -5887,5 +5887,18 @@
     "firstAt": "2026-07-25T02:35:56.339Z",
     "lastAt": "2026-07-25T02:35:56.339Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:银河|nctwish",
+    "name": "银河",
+    "group": "NCTWISH",
+    "cat": "J-idol",
+    "gender": "",
+    "dob": "20040905",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:38:15.896Z",
+    "lastAt": "2026-07-25T02:38:15.896Z",
+    "status": "pending"
   }
 ]
