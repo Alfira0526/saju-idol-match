@@ -9527,5 +9527,18 @@
     "firstAt": "2026-07-25T09:24:23.733Z",
     "lastAt": "2026-07-25T09:24:23.733Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한유진|앤더블",
+    "name": "한유진",
+    "group": "앤더블",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070320",
+    "note": "최애",
+    "count": 3,
+    "firstAt": "2026-07-22T18:30:46.419Z",
+    "lastAt": "2026-07-25T09:25:05.681Z",
+    "status": "pending"
   }
 ]
