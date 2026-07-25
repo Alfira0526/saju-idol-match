@@ -7616,5 +7616,18 @@
     "firstAt": "2026-07-25T05:25:41.293Z",
     "lastAt": "2026-07-25T05:25:41.293Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:junkyu|yg-treasure",
+    "name": "Junkyu",
+    "group": "YG-Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000909",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:31:10.752Z",
+    "lastAt": "2026-07-25T05:31:10.752Z",
+    "status": "pending"
   }
 ]
