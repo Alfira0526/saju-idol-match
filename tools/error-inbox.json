@@ -536,5 +536,19 @@
     "notes": [
       "서치하면 다 나옴"
     ]
+  },
+  {
+    "key": "er:샤오쥔|nct",
+    "name": "샤오쥔",
+    "group": "NCT",
+    "count": 1,
+    "firstAt": "2026-07-25T08:51:25.467Z",
+    "lastAt": "2026-07-25T08:51:25.467Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
