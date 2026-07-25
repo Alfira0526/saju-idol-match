@@ -7109,5 +7109,18 @@
     "firstAt": "2026-07-23T00:45:37.320Z",
     "lastAt": "2026-07-25T04:35:54.512Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yukjji|blackpink",
+    "name": "yukjji",
+    "group": "BLACKPINK",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060607",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:37:04.558Z",
+    "lastAt": "2026-07-25T04:37:04.558Z",
+    "status": "pending"
   }
 ]
