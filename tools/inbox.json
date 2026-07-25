@@ -7629,5 +7629,18 @@
     "firstAt": "2026-07-25T05:31:10.752Z",
     "lastAt": "2026-07-25T05:31:10.752Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:anxin|alphadriveone",
+    "name": "ANXIN",
+    "group": "ALPHADRIVEONE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20061225",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:31:13.358Z",
+    "lastAt": "2026-07-25T05:31:13.358Z",
+    "status": "pending"
   }
 ]
