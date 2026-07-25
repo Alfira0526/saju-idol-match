@@ -372,5 +372,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:이제이|&team",
+    "name": "이제이",
+    "group": "&TEAM",
+    "count": 1,
+    "firstAt": "2026-07-25T03:05:32.937Z",
+    "lastAt": "2026-07-25T03:05:32.937Z",
+    "status": "pending",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "의주"
+    ],
+    "notes": []
   }
 ]
