@@ -9735,5 +9735,18 @@
     "firstAt": "2026-07-25T10:17:43.692Z",
     "lastAt": "2026-07-25T10:17:43.692Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이레|세븐어스",
+    "name": "이레",
+    "group": "세븐어스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940325",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:18:44.331Z",
+    "lastAt": "2026-07-25T10:18:44.331Z",
+    "status": "pending"
   }
 ]
