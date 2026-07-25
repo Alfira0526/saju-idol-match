@@ -7304,5 +7304,18 @@
     "firstAt": "2026-07-25T04:55:39.257Z",
     "lastAt": "2026-07-25T04:55:39.257Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:fenny|마마무",
+    "name": "Fenny",
+    "group": "마마무",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20011023",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:57:20.424Z",
+    "lastAt": "2026-07-25T04:57:20.424Z",
+    "status": "pending"
   }
 ]
