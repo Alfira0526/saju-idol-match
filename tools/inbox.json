@@ -5003,5 +5003,18 @@
     "firstAt": "2026-07-25T00:38:52.459Z",
     "lastAt": "2026-07-25T00:38:52.459Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:marklee|소로",
+    "name": "Mark lee",
+    "group": "소로",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19990802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:39:07.056Z",
+    "lastAt": "2026-07-25T00:39:07.056Z",
+    "status": "pending"
   }
 ]
