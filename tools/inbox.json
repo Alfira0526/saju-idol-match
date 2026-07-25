@@ -7486,5 +7486,18 @@
     "firstAt": "2026-07-25T05:15:17.827Z",
     "lastAt": "2026-07-25T05:15:17.827Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:백준혁|아이딧",
+    "name": "백준혁",
+    "group": "아이딧",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080607",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-25T05:15:28.167Z",
+    "lastAt": "2026-07-25T05:15:28.167Z",
+    "status": "pending"
   }
 ]
