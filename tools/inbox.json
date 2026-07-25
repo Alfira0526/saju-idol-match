@@ -7850,5 +7850,18 @@
     "firstAt": "2026-07-25T05:50:47.861Z",
     "lastAt": "2026-07-25T05:50:47.861Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리구|nctwish",
+    "name": "리구",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030628",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T05:50:52.637Z",
+    "lastAt": "2026-07-25T05:50:52.637Z",
+    "status": "pending"
   }
 ]
