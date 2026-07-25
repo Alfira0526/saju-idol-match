@@ -8383,5 +8383,18 @@
     "firstAt": "2026-07-25T06:54:24.419Z",
     "lastAt": "2026-07-25T06:54:24.419Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소빈|nctwish",
+    "name": "소빈",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20001204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:55:30.588Z",
+    "lastAt": "2026-07-25T06:55:30.588Z",
+    "status": "pending"
   }
 ]
