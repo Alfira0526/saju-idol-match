@@ -8097,5 +8097,18 @@
     "firstAt": "2026-07-22T23:54:01.796Z",
     "lastAt": "2026-07-25T06:25:32.544Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:동화|kickflip",
+    "name": "동화",
+    "group": "Kickflip",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060311",
+    "note": "JYP",
+    "count": 4,
+    "firstAt": "2026-07-23T01:59:56.697Z",
+    "lastAt": "2026-07-25T06:27:37.054Z",
+    "status": "pending"
   }
 ]
