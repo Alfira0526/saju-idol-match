@@ -7200,5 +7200,18 @@
     "firstAt": "2026-07-25T04:47:30.996Z",
     "lastAt": "2026-07-25T04:47:30.996Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지유|kiiikiii",
+    "name": "지유",
+    "group": "kiiikiii",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060514",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-25T04:47:54.065Z",
+    "lastAt": "2026-07-25T04:47:54.065Z",
+    "status": "pending"
   }
 ]
