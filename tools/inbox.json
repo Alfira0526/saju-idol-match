@@ -6212,5 +6212,18 @@
     "firstAt": "2026-07-25T03:06:42.027Z",
     "lastAt": "2026-07-25T03:06:42.027Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:킥플립|킥플립",
+    "name": "킥플립",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "Jyp 남자아이돌",
+    "count": 2,
+    "firstAt": "2026-07-23T01:34:09.494Z",
+    "lastAt": "2026-07-25T03:06:53.865Z",
+    "status": "pending"
   }
 ]
