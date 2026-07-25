@@ -6862,5 +6862,18 @@
     "firstAt": "2026-07-25T04:14:04.809Z",
     "lastAt": "2026-07-25T04:14:04.809Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최현우|싸이커스",
+    "name": "최현우",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20041204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:14:41.535Z",
+    "lastAt": "2026-07-25T04:14:41.535Z",
+    "status": "pending"
   }
 ]
