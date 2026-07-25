@@ -7356,5 +7356,18 @@
     "firstAt": "2026-07-25T04:57:40.749Z",
     "lastAt": "2026-07-25T04:57:40.749Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김규빈|yuehua",
+    "name": "김규빈",
+    "group": "Yuehua",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040830",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:01:08.218Z",
+    "lastAt": "2026-07-25T05:01:08.218Z",
+    "status": "pending"
   }
 ]
