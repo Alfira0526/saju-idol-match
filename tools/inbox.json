@@ -5666,5 +5666,18 @@
     "firstAt": "2026-07-25T02:05:01.513Z",
     "lastAt": "2026-07-25T02:05:01.513Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:솔라、문별、휘인、화사|mamamoo",
+    "name": "솔라、문별、휘인、화사",
+    "group": "MAMAMOO",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:06:23.705Z",
+    "lastAt": "2026-07-25T02:06:23.705Z",
+    "status": "pending"
   }
 ]
