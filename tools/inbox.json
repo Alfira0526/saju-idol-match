@@ -7499,5 +7499,18 @@
     "firstAt": "2026-07-25T05:15:28.167Z",
     "lastAt": "2026-07-25T05:15:28.167Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:손립선|seventeen",
+    "name": "손립선",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:15:41.726Z",
+    "lastAt": "2026-07-25T05:15:41.726Z",
+    "status": "pending"
   }
 ]
