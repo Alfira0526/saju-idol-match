@@ -6381,5 +6381,18 @@
     "firstAt": "2026-07-25T03:29:16.683Z",
     "lastAt": "2026-07-25T03:29:16.683Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:wenny|itzy",
+    "name": "wenny",
+    "group": "itzy",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:29:18.441Z",
+    "lastAt": "2026-07-25T03:29:18.441Z",
+    "status": "pending"
   }
 ]
