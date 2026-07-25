@@ -5835,5 +5835,18 @@
     "firstAt": "2026-07-25T02:31:07.403Z",
     "lastAt": "2026-07-25T02:31:07.403Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:뷰티|트레저",
+    "name": "뷰티",
+    "group": "트레저",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-25T02:33:35.069Z",
+    "lastAt": "2026-07-25T02:33:35.069Z",
+    "status": "pending"
   }
 ]
