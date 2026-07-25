@@ -9020,5 +9020,18 @@
     "firstAt": "2026-07-25T08:16:38.695Z",
     "lastAt": "2026-07-25T08:16:38.695Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김우석|엑스원",
+    "name": "김우석",
+    "group": "엑스원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961027",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:17:03.622Z",
+    "lastAt": "2026-07-25T08:17:03.622Z",
+    "status": "pending"
   }
 ]
