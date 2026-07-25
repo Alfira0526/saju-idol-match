@@ -7863,5 +7863,18 @@
     "firstAt": "2026-07-25T05:50:52.637Z",
     "lastAt": "2026-07-25T05:50:52.637Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유요린|p1harmony",
+    "name": "유요린",
+    "group": "P1Harmony",
+    "cat": "C-actor",
+    "gender": "F",
+    "dob": "20070829",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:50:59.478Z",
+    "lastAt": "2026-07-25T05:50:59.478Z",
+    "status": "pending"
   }
 ]
