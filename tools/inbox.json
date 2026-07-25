@@ -8396,5 +8396,18 @@
     "firstAt": "2026-07-25T06:55:30.588Z",
     "lastAt": "2026-07-25T06:55:30.588Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최태인|idntt",
+    "name": "최태인",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051117",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-22T19:12:59.937Z",
+    "lastAt": "2026-07-25T06:55:38.866Z",
+    "status": "pending"
   }
 ]
