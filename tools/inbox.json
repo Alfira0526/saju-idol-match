@@ -6498,5 +6498,18 @@
     "firstAt": "2026-07-25T03:43:06.455Z",
     "lastAt": "2026-07-25T03:43:06.455Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:위준|axmxp",
+    "name": "위준",
+    "group": "AXMXP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050706",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:43:41.029Z",
+    "lastAt": "2026-07-25T03:43:41.029Z",
+    "status": "pending"
   }
 ]
