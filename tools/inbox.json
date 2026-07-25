@@ -6277,5 +6277,18 @@
     "firstAt": "2026-07-25T03:10:43.402Z",
     "lastAt": "2026-07-25T03:10:43.402Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:moonbyul|mamamoo",
+    "name": "Moonbyul",
+    "group": "MAMAMOO",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:17:51.188Z",
+    "lastAt": "2026-07-25T03:17:51.188Z",
+    "status": "pending"
   }
 ]
