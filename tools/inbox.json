@@ -6394,5 +6394,18 @@
     "firstAt": "2026-07-25T03:29:18.441Z",
     "lastAt": "2026-07-25T03:29:18.441Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:키나|피프티피프티",
+    "name": "키나",
+    "group": "피프티피프티",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020709",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:32:10.151Z",
+    "lastAt": "2026-07-25T03:32:10.151Z",
+    "status": "pending"
   }
 ]
