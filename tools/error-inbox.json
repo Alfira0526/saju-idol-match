@@ -466,5 +466,21 @@
       "19830701"
     ],
     "notes": []
+  },
+  {
+    "key": "er:준규|treasure",
+    "name": "준규",
+    "group": "TREASURE",
+    "count": 1,
+    "firstAt": "2026-07-25T07:39:28.342Z",
+    "lastAt": "2026-07-25T07:39:28.342Z",
+    "status": "pending",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "金俊奎"
+    ],
+    "notes": []
   }
 ]
