@@ -5640,5 +5640,18 @@
     "firstAt": "2026-07-25T02:04:05.601Z",
     "lastAt": "2026-07-25T02:04:05.601Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장용훈|idid",
+    "name": "장용훈",
+    "group": "IDID",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050422",
+    "note": "스타쉽",
+    "count": 5,
+    "firstAt": "2026-07-23T04:56:10.666Z",
+    "lastAt": "2026-07-25T02:04:21.493Z",
+    "status": "pending"
   }
 ]
