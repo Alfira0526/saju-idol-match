@@ -4990,5 +4990,18 @@
     "firstAt": "2026-07-25T00:38:45.551Z",
     "lastAt": "2026-07-25T00:38:45.551Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yesung|superjunior",
+    "name": "yesung",
+    "group": "super junior",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:38:52.459Z",
+    "lastAt": "2026-07-25T00:38:52.459Z",
+    "status": "pending"
   }
 ]
