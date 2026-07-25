@@ -94,10 +94,12 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
       애니/게임 캐릭터는 대개 월·일만 있고 출생 연도가 없어 일주를 계산할 수
       없다. 실존 인물만 추가한다.
     - 배우 등 연령대가 넓을 수 있으니 확실한 **양력 생일**만 넣는다(범위 1940~2015).
-- **2 → Task C · 다국어 (i18n).** Overseas fandom support, **English first**,
-  then other regions. If no i18n scaffolding exists yet, add a minimal, safe
-  language switcher + English strings this run; otherwise extend translations
-  incrementally. Geo/browser-language detection may pick the default language.
+- **2 → Task C · 다국어 (i18n).** 해외 팬덤 지원, **영어 먼저**.
+  **진행은 반드시 [`tools/i18n-plan.md`](./i18n-plan.md)를 따른다** — 그 파일의 체크리스트에서
+  미완료(`[ ]`) 청크 맨 위 1개를 이번 실행에 처리하고 `[x]`로 표시·커밋한다.
+  - **중요(우선 모드):** `i18n-plan.md`의 **P1이 아직 안 끝났으면**(P1에 `[ ]`가 남아 있으면),
+    제보/오류 처리 다음으로 **요일 순환(A/B/C)보다 i18n을 우선**해 매일 i18n 청크를 수행한다.
+    P1·P2가 모두 끝나면 우선 모드를 풀고 요일 순환으로 복귀한다(자세한 규칙은 그 파일 참고).
   - **줄바꿈·가독성 유의(중요).** 번역할 때 문장이 어색하게 끊기지 않게 한다.
     - 언어별 자연스러운 줄바꿈 규칙을 쓴다: **CJK(한·중·일)는 `word-break:keep-all`**
       (어절 단위 줄바꿈), 라틴 계열은 단어 단위 기본값. 지금 상단 소개문(`.sub`)이
