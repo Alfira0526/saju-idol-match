@@ -7551,5 +7551,18 @@
     "firstAt": "2026-07-25T05:17:37.187Z",
     "lastAt": "2026-07-25T05:17:37.187Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:อาบีหย๊ะ|treasure",
+    "name": "อาบีหย๊ะ",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19960307",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:20:57.672Z",
+    "lastAt": "2026-07-25T05:20:57.672Z",
+    "status": "pending"
   }
 ]
