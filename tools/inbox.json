@@ -7187,5 +7187,18 @@
     "firstAt": "2026-07-25T04:44:07.225Z",
     "lastAt": "2026-07-25T04:44:07.225Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김민규|seventeen",
+    "name": "김민규",
+    "group": "SEVENTEEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970406",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:47:30.996Z",
+    "lastAt": "2026-07-25T04:47:30.996Z",
+    "status": "pending"
   }
 ]
