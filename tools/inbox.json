@@ -7928,5 +7928,18 @@
     "firstAt": "2026-07-23T06:05:31.942Z",
     "lastAt": "2026-07-25T06:04:37.168Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이홍기|ftisland",
+    "name": "이홍기",
+    "group": "FTISLAND",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900302",
+    "note": "FNC",
+    "count": 2,
+    "firstAt": "2026-07-24T03:12:28.807Z",
+    "lastAt": "2026-07-25T06:05:15.895Z",
+    "status": "pending"
   }
 ]
