@@ -6992,5 +6992,18 @@
     "firstAt": "2026-07-25T04:23:46.247Z",
     "lastAt": "2026-07-25T04:23:46.247Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이창섭|ㅣ투비",
+    "name": "이창섭",
+    "group": "ㅣ투비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910226",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:26:35.300Z",
+    "lastAt": "2026-07-25T04:26:35.300Z",
+    "status": "pending"
   }
 ]
