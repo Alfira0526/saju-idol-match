@@ -8162,5 +8162,18 @@
     "firstAt": "2026-07-25T06:38:16.325Z",
     "lastAt": "2026-07-25T06:38:16.325Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:스텔라|hearts2hearts",
+    "name": "스텔라",
+    "group": "hearts2hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070618",
+    "note": "SM",
+    "count": 2,
+    "firstAt": "2026-07-23T05:07:01.465Z",
+    "lastAt": "2026-07-25T06:39:49.074Z",
+    "status": "pending"
   }
 ]
