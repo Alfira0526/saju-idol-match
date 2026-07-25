@@ -6329,5 +6329,18 @@
     "firstAt": "2026-07-25T03:25:15.158Z",
     "lastAt": "2026-07-25T03:25:15.158Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:플로이|nct",
+    "name": "플로이",
+    "group": "Nct",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19951115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:26:28.787Z",
+    "lastAt": "2026-07-25T03:26:28.787Z",
+    "status": "pending"
   }
 ]
