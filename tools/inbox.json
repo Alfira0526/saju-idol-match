@@ -5757,5 +5757,18 @@
     "firstAt": "2026-07-25T02:14:10.021Z",
     "lastAt": "2026-07-25T02:14:10.021Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:pani|nct127",
+    "name": "Pani",
+    "group": "Nct127",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19980114",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:14:35.174Z",
+    "lastAt": "2026-07-25T02:14:35.174Z",
+    "status": "pending"
   }
 ]
