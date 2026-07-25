@@ -8136,5 +8136,18 @@
     "firstAt": "2026-07-25T06:27:58.530Z",
     "lastAt": "2026-07-25T06:27:58.530Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:빅토리아|f(x)",
+    "name": "빅토리아",
+    "group": "F(x)",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:29:50.575Z",
+    "lastAt": "2026-07-25T06:29:50.575Z",
+    "status": "pending"
   }
 ]
