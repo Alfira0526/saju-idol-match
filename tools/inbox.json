@@ -6537,5 +6537,18 @@
     "firstAt": "2026-07-25T03:47:04.648Z",
     "lastAt": "2026-07-25T03:47:04.648Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정은지|에이핑크",
+    "name": "정은지",
+    "group": "에이핑크",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19930818",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:47:47.742Z",
+    "lastAt": "2026-07-25T03:47:47.742Z",
+    "status": "pending"
   }
 ]
