@@ -6173,5 +6173,18 @@
     "firstAt": "2026-07-23T00:31:21.313Z",
     "lastAt": "2026-07-25T03:02:47.068Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:판|누에라",
+    "name": "판",
+    "group": "누에라",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:02:52.029Z",
+    "lastAt": "2026-07-25T03:02:52.029Z",
+    "status": "pending"
   }
 ]
