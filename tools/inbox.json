@@ -9046,5 +9046,18 @@
     "firstAt": "2026-07-25T08:18:07.052Z",
     "lastAt": "2026-07-25T08:18:07.052Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유이시|nctwish",
+    "name": "유이시",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T08:18:11.609Z",
+    "lastAt": "2026-07-25T08:18:11.609Z",
+    "status": "pending"
   }
 ]
