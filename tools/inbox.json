@@ -8279,5 +8279,18 @@
     "firstAt": "2026-07-25T06:49:24.888Z",
     "lastAt": "2026-07-25T06:49:24.888Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:朴元彬|riize",
+    "name": "朴元彬",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020302",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:50:43.140Z",
+    "lastAt": "2026-07-25T06:50:43.140Z",
+    "status": "pending"
   }
 ]
