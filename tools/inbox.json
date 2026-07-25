@@ -8617,5 +8617,18 @@
     "firstAt": "2026-07-25T07:21:54.285Z",
     "lastAt": "2026-07-25T07:21:54.285Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도훈|tws",
+    "name": "김도훈",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050130",
+    "note": "HYBE",
+    "count": 2,
+    "firstAt": "2026-07-24T03:37:06.047Z",
+    "lastAt": "2026-07-25T07:25:42.574Z",
+    "status": "pending"
   }
 ]
