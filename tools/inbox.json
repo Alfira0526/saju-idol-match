@@ -8799,5 +8799,18 @@
     "firstAt": "2026-07-25T07:46:41.893Z",
     "lastAt": "2026-07-25T07:46:41.893Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:허씬롱|alphadriveone",
+    "name": "허씬롱",
+    "group": "ALPHADRIVEONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050311",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:52:14.053Z",
+    "lastAt": "2026-07-25T07:52:14.053Z",
+    "status": "pending"
   }
 ]
