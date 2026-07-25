@@ -5939,5 +5939,18 @@
     "firstAt": "2026-07-25T02:40:15.772Z",
     "lastAt": "2026-07-25T02:40:15.772Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이승협|n.flying엔플라잉",
+    "name": "이승협",
+    "group": "N.Flying 엔플라잉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921031",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-25T02:41:29.698Z",
+    "lastAt": "2026-07-25T02:41:29.698Z",
+    "status": "pending"
   }
 ]
