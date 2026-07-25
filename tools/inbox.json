@@ -3828,10 +3828,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20000412",
-    "note": "",
-    "count": 1,
+    "note": "100",
+    "count": 3,
     "firstAt": "2026-07-24T07:48:30.158Z",
-    "lastAt": "2026-07-24T07:48:30.158Z",
+    "lastAt": "2026-07-25T00:19:06.822Z",
     "status": "pending"
   },
   {
