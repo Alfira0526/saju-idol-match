@@ -6355,5 +6355,18 @@
     "firstAt": "2026-07-23T07:53:30.329Z",
     "lastAt": "2026-07-25T03:26:45.905Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:안시운|nctwish",
+    "name": "안시운",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:28:10.490Z",
+    "lastAt": "2026-07-25T03:28:10.490Z",
+    "status": "pending"
   }
 ]
