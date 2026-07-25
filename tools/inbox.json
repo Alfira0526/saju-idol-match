@@ -5484,5 +5484,18 @@
     "firstAt": "2026-07-25T01:36:11.725Z",
     "lastAt": "2026-07-25T01:36:11.725Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:양정원|enhypen",
+    "name": "양정원",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "040209",
+    "note": "좋아하는 그룹",
+    "count": 3,
+    "firstAt": "2026-07-23T03:42:06.298Z",
+    "lastAt": "2026-07-25T01:36:37.661Z",
+    "status": "pending"
   }
 ]
