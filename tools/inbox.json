@@ -6797,5 +6797,18 @@
     "firstAt": "2026-07-25T04:06:33.230Z",
     "lastAt": "2026-07-25T04:06:33.230Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:홍정|ateez",
+    "name": "홍정",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19981107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:08:33.111Z",
+    "lastAt": "2026-07-25T04:08:33.111Z",
+    "status": "pending"
   }
 ]
