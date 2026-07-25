@@ -268,12 +268,13 @@
     "key": "er:준|seventeen",
     "name": "준",
     "group": "SEVENTEEN",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T01:03:25.069Z",
-    "lastAt": "2026-07-25T01:03:25.069Z",
+    "lastAt": "2026-07-25T10:34:36.062Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 1,
+      "활동명": 1
     },
     "suggests": [],
     "notes": []
