@@ -7902,5 +7902,18 @@
     "firstAt": "2026-07-25T05:56:08.167Z",
     "lastAt": "2026-07-25T05:56:08.167Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:쉬에수런|모디세이",
+    "name": "쉬에수런",
+    "group": "모디세이",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041109",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:04:00.247Z",
+    "lastAt": "2026-07-25T06:04:00.247Z",
+    "status": "pending"
   }
 ]
