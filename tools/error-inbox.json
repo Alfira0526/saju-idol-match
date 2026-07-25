@@ -236,5 +236,23 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:김규빈|zerobaseone",
+    "name": "김규빈",
+    "group": "ZEROBASEONE",
+    "count": 1,
+    "firstAt": "2026-07-25T00:00:57.297Z",
+    "lastAt": "2026-07-25T00:00:57.297Z",
+    "status": "pending",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "AND2BLE"
+    ],
+    "notes": [
+      "https://namu.wiki/w/AND2BLE"
+    ]
   }
 ]
