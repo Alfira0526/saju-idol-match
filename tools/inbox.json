@@ -8916,5 +8916,18 @@
     "firstAt": "2026-07-25T08:08:52.643Z",
     "lastAt": "2026-07-25T08:08:52.643Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박한|ahof",
+    "name": "박한",
+    "group": "AHOF",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030925",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:09:06.661Z",
+    "lastAt": "2026-07-25T08:09:06.661Z",
+    "status": "pending"
   }
 ]
