@@ -8487,5 +8487,18 @@
     "firstAt": "2026-07-25T07:04:41.884Z",
     "lastAt": "2026-07-25T07:04:41.884Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김운학|보이넥스트도어",
+    "name": "김운학",
+    "group": "보이넥스트도어",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061129",
+    "note": "KOZ,Hybe",
+    "count": 2,
+    "firstAt": "2026-07-23T09:00:56.675Z",
+    "lastAt": "2026-07-25T07:05:03.180Z",
+    "status": "pending"
   }
 ]
