@@ -7681,5 +7681,18 @@
     "firstAt": "2026-07-25T05:34:54.725Z",
     "lastAt": "2026-07-25T05:34:54.725Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오율|롱샷",
+    "name": "오율",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "🤞",
+    "count": 2,
+    "firstAt": "2026-07-22T18:18:23.235Z",
+    "lastAt": "2026-07-25T05:35:41.308Z",
+    "status": "pending"
   }
 ]
