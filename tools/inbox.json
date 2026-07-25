@@ -7915,5 +7915,18 @@
     "firstAt": "2026-07-25T06:04:00.247Z",
     "lastAt": "2026-07-25T06:04:00.247Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:니키|enhypen",
+    "name": "니키",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051209",
+    "note": "belift",
+    "count": 2,
+    "firstAt": "2026-07-23T06:05:31.942Z",
+    "lastAt": "2026-07-25T06:04:37.168Z",
+    "status": "pending"
   }
 ]
