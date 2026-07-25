@@ -5536,5 +5536,18 @@
     "firstAt": "2026-07-25T01:38:44.080Z",
     "lastAt": "2026-07-25T01:38:44.080Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아이린|레드벨벳",
+    "name": "아이린",
+    "group": "레드벨벳",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:47:57.084Z",
+    "lastAt": "2026-07-25T01:47:57.084Z",
+    "status": "pending"
   }
 ]
