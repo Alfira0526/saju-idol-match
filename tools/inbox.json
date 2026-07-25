@@ -5289,5 +5289,18 @@
     "firstAt": "2026-07-25T01:20:51.736Z",
     "lastAt": "2026-07-25T01:20:51.736Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yiyi|and2ble",
+    "name": "yiyi",
+    "group": "and2ble",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:21:53.156Z",
+    "lastAt": "2026-07-25T01:21:53.156Z",
+    "status": "pending"
   }
 ]
