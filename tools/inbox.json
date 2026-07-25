@@ -9891,5 +9891,18 @@
     "firstAt": "2026-07-25T10:34:06.891Z",
     "lastAt": "2026-07-25T10:34:06.891Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:선우|연하이픈",
+    "name": "선우",
+    "group": "연하이픈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030624",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:41:05.463Z",
+    "lastAt": "2026-07-25T10:41:05.463Z",
+    "status": "pending"
   }
 ]
