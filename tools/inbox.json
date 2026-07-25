@@ -6160,5 +6160,18 @@
     "firstAt": "2026-07-25T02:59:25.557Z",
     "lastAt": "2026-07-25T02:59:25.557Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김민재|idid",
+    "name": "김민재",
+    "group": "IDID",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050817",
+    "note": "스타쉽",
+    "count": 3,
+    "firstAt": "2026-07-23T00:31:21.313Z",
+    "lastAt": "2026-07-25T03:02:47.068Z",
+    "status": "pending"
   }
 ]
