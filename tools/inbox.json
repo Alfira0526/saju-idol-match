@@ -9930,5 +9930,18 @@
     "firstAt": "2026-07-25T10:44:45.717Z",
     "lastAt": "2026-07-25T10:44:45.717Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진우함|방탄소년단",
+    "name": "진우함",
+    "group": "방탄소년단",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19951013",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:45:34.461Z",
+    "lastAt": "2026-07-25T10:45:34.461Z",
+    "status": "pending"
   }
 ]
