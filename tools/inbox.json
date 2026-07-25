@@ -8448,5 +8448,18 @@
     "firstAt": "2026-07-25T07:00:27.877Z",
     "lastAt": "2026-07-25T07:00:27.877Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오시온|nctwish",
+    "name": "오시온",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020511",
+    "note": "SM/ 엔시티나머지멤도채워주세용❤︎",
+    "count": 5,
+    "firstAt": "2026-07-23T00:46:33.706Z",
+    "lastAt": "2026-07-25T07:02:43.384Z",
+    "status": "pending"
   }
 ]
