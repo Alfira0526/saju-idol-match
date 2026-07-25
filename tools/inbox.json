@@ -8734,5 +8734,18 @@
     "firstAt": "2026-07-25T07:36:21.977Z",
     "lastAt": "2026-07-25T07:36:21.977Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hyunsuk|treasure",
+    "name": "Hyunsuk",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "Yg",
+    "count": 1,
+    "firstAt": "2026-07-25T07:40:59.935Z",
+    "lastAt": "2026-07-25T07:40:59.935Z",
+    "status": "pending"
   }
 ]
