@@ -5107,5 +5107,18 @@
     "firstAt": "2026-07-25T00:49:59.505Z",
     "lastAt": "2026-07-25T00:49:59.505Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金硕珍|bts",
+    "name": "金硕珍",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19921204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:51:52.686Z",
+    "lastAt": "2026-07-25T00:51:52.686Z",
+    "status": "pending"
   }
 ]
