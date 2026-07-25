@@ -6836,5 +6836,18 @@
     "firstAt": "2026-07-25T04:08:53.877Z",
     "lastAt": "2026-07-25T04:08:53.877Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:나캠든|ampers&one",
+    "name": "나캠든",
+    "group": "AMPERS&ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010609",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:12:20.408Z",
+    "lastAt": "2026-07-25T04:12:20.408Z",
+    "status": "pending"
   }
 ]
