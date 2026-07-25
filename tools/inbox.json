@@ -9644,5 +9644,18 @@
     "firstAt": "2026-07-23T05:26:19.300Z",
     "lastAt": "2026-07-25T09:52:15.835Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:키이|&team",
+    "name": "키이",
+    "group": "&team",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "19971021",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:55:28.721Z",
+    "lastAt": "2026-07-25T09:55:28.721Z",
+    "status": "pending"
   }
 ]
