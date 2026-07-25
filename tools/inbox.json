@@ -9904,5 +9904,18 @@
     "firstAt": "2026-07-25T10:41:05.463Z",
     "lastAt": "2026-07-25T10:41:05.463Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sasa|straykids",
+    "name": "sasa",
+    "group": "stray kids",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20090328",
+    "note": "i love handsome guy",
+    "count": 1,
+    "firstAt": "2026-07-25T10:41:15.275Z",
+    "lastAt": "2026-07-25T10:41:15.275Z",
+    "status": "pending"
   }
 ]
