@@ -5094,5 +5094,18 @@
     "firstAt": "2026-07-25T00:48:58.097Z",
     "lastAt": "2026-07-25T00:48:58.097Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:choisan|ateez",
+    "name": "ChoiSan",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990710",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:49:59.505Z",
+    "lastAt": "2026-07-25T00:49:59.505Z",
+    "status": "pending"
   }
 ]
