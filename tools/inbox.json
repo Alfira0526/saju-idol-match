@@ -7473,5 +7473,18 @@
     "firstAt": "2026-07-25T05:09:05.732Z",
     "lastAt": "2026-07-25T05:09:05.732Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예미|데이식스",
+    "name": "예미",
+    "group": "데이식스",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:15:17.827Z",
+    "lastAt": "2026-07-25T05:15:17.827Z",
+    "status": "pending"
   }
 ]
