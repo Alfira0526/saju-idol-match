@@ -5705,5 +5705,18 @@
     "firstAt": "2026-07-25T02:08:02.183Z",
     "lastAt": "2026-07-25T02:08:02.183Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:송은석|riize",
+    "name": "송은석",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010319",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:11:44.356Z",
+    "lastAt": "2026-07-25T02:11:44.356Z",
+    "status": "pending"
   }
 ]
