@@ -6030,5 +6030,18 @@
     "firstAt": "2026-07-25T02:50:59.005Z",
     "lastAt": "2026-07-25T02:50:59.005Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:켄신|closeyoureyes",
+    "name": "켄신",
+    "group": "CLOSE YOUR EYES",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071202",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:52:02.822Z",
+    "lastAt": "2026-07-25T02:52:02.822Z",
+    "status": "pending"
   }
 ]
