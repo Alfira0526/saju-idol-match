@@ -7655,5 +7655,18 @@
     "firstAt": "2026-07-25T05:32:44.649Z",
     "lastAt": "2026-07-25T05:32:44.649Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김건우|alphadriveone",
+    "name": "김건우",
+    "group": "Alpha Drive One",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030411",
+    "note": "웨이크원",
+    "count": 2,
+    "firstAt": "2026-07-23T03:53:22.850Z",
+    "lastAt": "2026-07-25T05:32:51.398Z",
+    "status": "pending"
   }
 ]
