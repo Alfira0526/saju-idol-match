@@ -6706,5 +6706,18 @@
     "firstAt": "2026-07-25T03:59:13.427Z",
     "lastAt": "2026-07-25T03:59:13.427Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도영|treasure",
+    "name": "김도영",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:59:49.682Z",
+    "lastAt": "2026-07-25T03:59:49.682Z",
+    "status": "pending"
   }
 ]
