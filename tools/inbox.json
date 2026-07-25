@@ -5497,5 +5497,18 @@
     "firstAt": "2026-07-23T03:42:06.298Z",
     "lastAt": "2026-07-25T01:36:37.661Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제이크|enhypen",
+    "name": "제이크",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20080125",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:37:25.712Z",
+    "lastAt": "2026-07-25T01:37:25.712Z",
+    "status": "pending"
   }
 ]
