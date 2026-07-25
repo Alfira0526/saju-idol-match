@@ -9501,5 +9501,18 @@
     "firstAt": "2026-07-22T19:45:54.242Z",
     "lastAt": "2026-07-25T09:18:52.484Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:q|nctwish",
+    "name": "q",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20071218",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-25T09:20:33.563Z",
+    "lastAt": "2026-07-25T09:20:33.563Z",
+    "status": "pending"
   }
 ]
