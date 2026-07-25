@@ -5861,5 +5861,18 @@
     "firstAt": "2026-07-25T02:34:48.662Z",
     "lastAt": "2026-07-25T02:34:48.662Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:미나미|리센느",
+    "name": "미나미",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 3,
+    "firstAt": "2026-07-22T23:56:05.141Z",
+    "lastAt": "2026-07-25T02:34:52.311Z",
+    "status": "pending"
   }
 ]
