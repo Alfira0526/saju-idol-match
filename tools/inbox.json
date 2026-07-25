@@ -5029,5 +5029,18 @@
     "firstAt": "2026-07-25T00:41:36.500Z",
     "lastAt": "2026-07-25T00:41:36.500Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:seungchan|riize",
+    "name": "Seungchan",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:43:59.655Z",
+    "lastAt": "2026-07-25T00:43:59.655Z",
+    "status": "pending"
   }
 ]
