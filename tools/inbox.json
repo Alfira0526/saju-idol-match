@@ -7811,5 +7811,18 @@
     "firstAt": "2026-07-25T05:49:55.947Z",
     "lastAt": "2026-07-25T05:49:55.947Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장영제|엔시티워시",
+    "name": "장영제",
+    "group": "엔시티 워시",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "20070731",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:50:31.772Z",
+    "lastAt": "2026-07-25T05:50:31.772Z",
+    "status": "pending"
   }
 ]
