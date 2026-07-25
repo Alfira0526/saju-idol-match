@@ -8708,5 +8708,18 @@
     "firstAt": "2026-07-25T07:35:17.896Z",
     "lastAt": "2026-07-25T07:35:17.896Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:an|riize",
+    "name": "An",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050402",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:35:21.571Z",
+    "lastAt": "2026-07-25T07:35:21.571Z",
+    "status": "pending"
   }
 ]
