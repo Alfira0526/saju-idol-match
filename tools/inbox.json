@@ -7772,5 +7772,18 @@
     "firstAt": "2026-07-25T05:47:22.489Z",
     "lastAt": "2026-07-25T05:47:22.489Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:방지민|이즈나izna",
+    "name": "방지민",
+    "group": "이즈나 izna",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050508",
+    "note": "제가 이즈나를 좋아합니다",
+    "count": 1,
+    "firstAt": "2026-07-25T05:47:39.058Z",
+    "lastAt": "2026-07-25T05:47:39.058Z",
+    "status": "pending"
   }
 ]
