@@ -6108,5 +6108,18 @@
     "firstAt": "2026-07-25T02:53:43.371Z",
     "lastAt": "2026-07-25T02:53:43.371Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동화|킥플립/jyp",
+    "name": "이동화",
+    "group": "킥플립/JYP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060311",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:56:25.116Z",
+    "lastAt": "2026-07-25T02:56:25.116Z",
+    "status": "pending"
   }
 ]
