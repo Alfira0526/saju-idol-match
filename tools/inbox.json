@@ -9839,5 +9839,18 @@
     "firstAt": "2026-07-25T10:32:28.200Z",
     "lastAt": "2026-07-25T10:32:28.200Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:鄭亦彤|seventeen",
+    "name": "鄭亦彤",
+    "group": "seventeen",
+    "cat": "US-actor",
+    "gender": "F",
+    "dob": "19820709",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T10:33:01.899Z",
+    "lastAt": "2026-07-25T10:33:01.899Z",
+    "status": "pending"
   }
 ]
