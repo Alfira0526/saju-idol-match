@@ -8409,5 +8409,18 @@
     "firstAt": "2026-07-22T19:12:59.937Z",
     "lastAt": "2026-07-25T06:55:38.866Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리노|스키즈",
+    "name": "리노",
+    "group": "스키즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19981025",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:57:13.887Z",
+    "lastAt": "2026-07-25T06:57:13.887Z",
+    "status": "pending"
   }
 ]
