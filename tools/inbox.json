@@ -7538,5 +7538,18 @@
     "firstAt": "2026-07-25T05:17:37.308Z",
     "lastAt": "2026-07-25T05:17:37.308Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김도영|트레저",
+    "name": "김도영",
+    "group": "트레저",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:17:37.187Z",
+    "lastAt": "2026-07-25T05:17:37.187Z",
+    "status": "pending"
   }
 ]
