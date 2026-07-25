@@ -7148,5 +7148,18 @@
     "firstAt": "2026-07-25T04:38:22.446Z",
     "lastAt": "2026-07-25T04:38:22.446Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장하오|and2ble",
+    "name": "장하오",
+    "group": "AND2BLE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000725",
+    "note": "YH엔터테인먼트",
+    "count": 2,
+    "firstAt": "2026-07-23T09:06:25.475Z",
+    "lastAt": "2026-07-25T04:38:25.347Z",
+    "status": "pending"
   }
 ]
