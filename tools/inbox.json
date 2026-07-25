@@ -5172,5 +5172,18 @@
     "firstAt": "2026-07-23T08:43:01.927Z",
     "lastAt": "2026-07-25T00:57:34.845Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:張文嘉|enhypen",
+    "name": "張文嘉",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060704",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:02:30.061Z",
+    "lastAt": "2026-07-25T01:02:30.061Z",
+    "status": "pending"
   }
 ]
