@@ -6914,5 +6914,18 @@
     "firstAt": "2026-07-25T04:16:42.750Z",
     "lastAt": "2026-07-25T04:16:42.750Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이즈나|웨크원",
+    "name": "이즈나",
+    "group": "웨크원",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:20:13.513Z",
+    "lastAt": "2026-07-25T04:20:13.513Z",
+    "status": "pending"
   }
 ]
