@@ -8812,5 +8812,18 @@
     "firstAt": "2026-07-25T07:52:14.053Z",
     "lastAt": "2026-07-25T07:52:14.053Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:저우이루|txt",
+    "name": "저우이루",
+    "group": "TXT",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20110819",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T07:56:15.461Z",
+    "lastAt": "2026-07-25T07:56:15.461Z",
+    "status": "pending"
   }
 ]
