@@ -279,18 +279,20 @@
     "key": "er:리키|zerobaseone",
     "name": "리키",
     "group": "ZEROBASEONE",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T01:04:43.982Z",
-    "lastAt": "2026-07-25T01:04:43.982Z",
+    "lastAt": "2026-07-25T07:48:39.504Z",
     "status": "pending",
     "fields": {
-      "소속 그룹": 1
+      "소속 그룹": 2
     },
     "suggests": [
-      "AND2BLE"
+      "AND2BLE",
+      "AND2BLE(앤더블)"
     ],
     "notes": [
-      "https://namu.wiki/w/AND2BLE"
+      "https://namu.wiki/w/AND2BLE",
+      "공식 프로필, 나무위키"
     ]
   },
   {
