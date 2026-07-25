@@ -5146,5 +5146,18 @@
     "firstAt": "2026-07-25T00:53:11.643Z",
     "lastAt": "2026-07-25T00:53:11.643Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오세훈|엑소",
+    "name": "오세훈",
+    "group": "엑소",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940412",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T00:54:58.059Z",
+    "lastAt": "2026-07-25T00:54:58.059Z",
+    "status": "pending"
   }
 ]
