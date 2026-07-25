@@ -5393,5 +5393,18 @@
     "firstAt": "2026-07-25T01:26:59.333Z",
     "lastAt": "2026-07-25T01:26:59.333Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동해|superjunior",
+    "name": "이동해",
+    "group": "Super Junior",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19861015",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T01:27:26.055Z",
+    "lastAt": "2026-07-25T01:27:26.055Z",
+    "status": "pending"
   }
 ]
