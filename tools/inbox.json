@@ -7330,5 +7330,18 @@
     "firstAt": "2026-07-25T04:57:29.728Z",
     "lastAt": "2026-07-25T04:57:29.728Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전민욱|closeyoureyes",
+    "name": "전민욱",
+    "group": "Close Your Eyes",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991016",
+    "note": "5세대 아이돌이 궁금해요.",
+    "count": 1,
+    "firstAt": "2026-07-25T04:57:31.753Z",
+    "lastAt": "2026-07-25T04:57:31.753Z",
+    "status": "pending"
   }
 ]
