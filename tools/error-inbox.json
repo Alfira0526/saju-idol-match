@@ -344,5 +344,19 @@
       "19980218"
     ],
     "notes": []
+  },
+  {
+    "key": "er:제이어스|onf",
+    "name": "제이어스",
+    "group": "ONF",
+    "count": 1,
+    "firstAt": "2026-07-25T02:21:24.085Z",
+    "lastAt": "2026-07-25T02:21:24.085Z",
+    "status": "pending",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
