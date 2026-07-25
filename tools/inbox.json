@@ -6303,5 +6303,18 @@
     "firstAt": "2026-07-25T03:18:16.200Z",
     "lastAt": "2026-07-25T03:18:16.200Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예성|superjunior",
+    "name": "예성",
+    "group": "super junior",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19840824",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:19:23.171Z",
+    "lastAt": "2026-07-25T03:19:23.171Z",
+    "status": "pending"
   }
 ]
