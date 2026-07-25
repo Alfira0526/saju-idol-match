@@ -7954,5 +7954,18 @@
     "firstAt": "2026-07-25T06:05:32.362Z",
     "lastAt": "2026-07-25T06:05:32.362Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김성준|아이덴티티(idntt)",
+    "name": "김성준",
+    "group": "아이덴티티(idntt)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "소속사는 모드하우스입니다 제 최애 아이돌이에요 ㅠㅠㅠ",
+    "count": 1,
+    "firstAt": "2026-07-25T06:07:43.486Z",
+    "lastAt": "2026-07-25T06:07:43.486Z",
+    "status": "pending"
   }
 ]
