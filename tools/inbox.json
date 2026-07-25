@@ -6511,5 +6511,18 @@
     "firstAt": "2026-07-25T03:43:41.029Z",
     "lastAt": "2026-07-25T03:43:41.029Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:arno|alphadriveone",
+    "name": "ARNO",
+    "group": "ALPHA DRIVE ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020527",
+    "note": "公历20020707",
+    "count": 1,
+    "firstAt": "2026-07-25T03:45:51.796Z",
+    "lastAt": "2026-07-25T03:45:51.796Z",
+    "status": "pending"
   }
 ]
