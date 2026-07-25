@@ -7122,5 +7122,18 @@
     "firstAt": "2026-07-25T04:37:04.558Z",
     "lastAt": "2026-07-25T04:37:04.558Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:문별이|mamamoo",
+    "name": "문별이",
+    "group": "Mamamoo",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19921222",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T04:38:05.759Z",
+    "lastAt": "2026-07-25T04:38:05.759Z",
+    "status": "pending"
   }
 ]
