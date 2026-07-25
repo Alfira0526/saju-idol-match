@@ -6017,5 +6017,18 @@
     "firstAt": "2026-07-25T02:50:11.887Z",
     "lastAt": "2026-07-25T02:50:11.887Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:방용국|b.a.p",
+    "name": "방용국",
+    "group": "B.A.P",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900331",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:50:59.005Z",
+    "lastAt": "2026-07-25T02:50:59.005Z",
+    "status": "pending"
   }
 ]
