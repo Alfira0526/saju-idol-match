@@ -5614,5 +5614,18 @@
     "firstAt": "2026-07-22T22:37:22.074Z",
     "lastAt": "2026-07-25T01:59:12.809Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이찬|디크비",
+    "name": "이찬",
+    "group": "디크비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970219",
+    "note": "brave entertainment",
+    "count": 1,
+    "firstAt": "2026-07-25T02:04:03.630Z",
+    "lastAt": "2026-07-25T02:04:03.630Z",
+    "status": "pending"
   }
 ]
