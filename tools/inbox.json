@@ -6134,5 +6134,18 @@
     "firstAt": "2026-07-25T02:58:46.798Z",
     "lastAt": "2026-07-25T02:58:46.798Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:천관루이|xlov",
+    "name": "천관루이",
+    "group": "xlov",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001228",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T02:59:05.403Z",
+    "lastAt": "2026-07-25T02:59:05.403Z",
+    "status": "pending"
   }
 ]
