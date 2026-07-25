@@ -8344,5 +8344,18 @@
     "firstAt": "2026-07-25T06:52:18.612Z",
     "lastAt": "2026-07-25T06:52:18.612Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:chensijia|boynextdor",
+    "name": "chensijia",
+    "group": "boynextdor",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20130120",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T06:53:53.832Z",
+    "lastAt": "2026-07-25T06:53:53.832Z",
+    "status": "pending"
   }
 ]
