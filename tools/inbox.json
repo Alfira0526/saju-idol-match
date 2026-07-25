@@ -9319,5 +9319,18 @@
     "firstAt": "2026-07-25T09:01:30.886Z",
     "lastAt": "2026-07-25T09:01:30.886Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장여준|closeyoureyes",
+    "name": "장여준",
+    "group": "CLOSE YOUR EYES",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050927",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:03:00.207Z",
+    "lastAt": "2026-07-25T09:03:00.207Z",
+    "status": "pending"
   }
 ]
