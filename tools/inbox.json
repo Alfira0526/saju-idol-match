@@ -5991,5 +5991,18 @@
     "firstAt": "2026-07-25T02:48:10.363Z",
     "lastAt": "2026-07-25T02:48:10.363Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제프(jeff)|이펙스(epex)",
+    "name": "제프(JEFF)",
+    "group": "이펙스(EPEX)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050421",
+    "note": "C9엔터테인먼트•귀엽고착하고열심히하는아이입니당",
+    "count": 1,
+    "firstAt": "2026-07-25T02:49:33.528Z",
+    "lastAt": "2026-07-25T02:49:33.528Z",
+    "status": "pending"
   }
 ]
