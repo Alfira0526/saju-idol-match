@@ -9514,5 +9514,18 @@
     "firstAt": "2026-07-25T09:20:33.563Z",
     "lastAt": "2026-07-25T09:20:33.563Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정모|cravity",
+    "name": "정모",
+    "group": "CRAVITY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T09:24:23.733Z",
+    "lastAt": "2026-07-25T09:24:23.733Z",
+    "status": "pending"
   }
 ]
