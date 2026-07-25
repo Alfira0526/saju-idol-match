@@ -6576,5 +6576,18 @@
     "firstAt": "2026-07-25T03:50:21.852Z",
     "lastAt": "2026-07-25T03:50:21.852Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동열|이동열",
+    "name": "이동열",
+    "group": "이동열",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19981213",
+    "note": "내 최애예요",
+    "count": 1,
+    "firstAt": "2026-07-25T03:50:26.017Z",
+    "lastAt": "2026-07-25T03:50:26.017Z",
+    "status": "pending"
   }
 ]
