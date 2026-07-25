@@ -9137,5 +9137,18 @@
     "firstAt": "2026-07-25T08:27:43.850Z",
     "lastAt": "2026-07-25T08:27:43.850Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최범규|tomorrowxtogether",
+    "name": "최범규",
+    "group": "TOMORROW X TOGETHER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010313",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T08:28:43.897Z",
+    "lastAt": "2026-07-25T08:28:43.897Z",
+    "status": "pending"
   }
 ]
