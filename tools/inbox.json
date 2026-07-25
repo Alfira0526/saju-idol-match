@@ -6641,5 +6641,18 @@
     "firstAt": "2026-07-25T03:57:38.586Z",
     "lastAt": "2026-07-25T03:57:38.586Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimjunkyu|treasure",
+    "name": "KIMJUNKYU",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000909",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T03:57:59.801Z",
+    "lastAt": "2026-07-25T03:57:59.801Z",
+    "status": "pending"
   }
 ]
