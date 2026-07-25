@@ -8435,5 +8435,18 @@
     "firstAt": "2026-07-25T06:58:32.732Z",
     "lastAt": "2026-07-25T06:58:32.732Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:률|lngshot",
+    "name": "률",
+    "group": "LNGSHOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060918",
+    "note": "sigma boy",
+    "count": 1,
+    "firstAt": "2026-07-25T07:00:27.877Z",
+    "lastAt": "2026-07-25T07:00:27.877Z",
+    "status": "pending"
   }
 ]
