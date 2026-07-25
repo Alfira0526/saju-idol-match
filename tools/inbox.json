@@ -9267,5 +9267,18 @@
     "firstAt": "2026-07-25T08:48:04.718Z",
     "lastAt": "2026-07-25T08:48:04.718Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예나|솔로",
+    "name": "예나",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990929",
+    "note": "위에화",
+    "count": 1,
+    "firstAt": "2026-07-25T08:49:57.789Z",
+    "lastAt": "2026-07-25T08:49:57.789Z",
+    "status": "pending"
   }
 ]
