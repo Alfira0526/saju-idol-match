@@ -7460,5 +7460,18 @@
     "firstAt": "2026-07-25T05:07:11.296Z",
     "lastAt": "2026-07-25T05:07:11.296Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제현|오메가엑스",
+    "name": "제현",
+    "group": "오메가엑스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990420",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-25T05:09:05.732Z",
+    "lastAt": "2026-07-25T05:09:05.732Z",
+    "status": "pending"
   }
 ]
