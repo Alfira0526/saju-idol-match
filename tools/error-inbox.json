@@ -818,5 +818,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:백현|exo",
+    "name": "백현",
+    "group": "EXO",
+    "count": 1,
+    "firstAt": "2026-07-26T11:58:22.361Z",
+    "lastAt": "2026-07-26T11:58:22.361Z",
+    "status": "pending",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [],
+    "notes": [
+      "sm이 아닙니다"
+    ]
   }
 ]
