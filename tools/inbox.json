@@ -10918,5 +10918,18 @@
     "firstAt": "2026-07-23T06:20:34.294Z",
     "lastAt": "2026-07-26T04:14:29.156Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신위|triples",
+    "name": "신위",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20021013",
+    "note": "모드하우스",
+    "count": 3,
+    "firstAt": "2026-07-22T18:54:04.563Z",
+    "lastAt": "2026-07-26T04:15:45.462Z",
+    "status": "pending"
   }
 ]
