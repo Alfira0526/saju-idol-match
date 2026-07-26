@@ -10996,5 +10996,18 @@
     "firstAt": "2026-07-26T04:26:45.329Z",
     "lastAt": "2026-07-26T04:26:45.329Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진규륜|i-dle",
+    "name": "진규륜",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060111",
+    "note": "LOVE",
+    "count": 1,
+    "firstAt": "2026-07-26T04:27:27.318Z",
+    "lastAt": "2026-07-26T04:27:27.318Z",
+    "status": "pending"
   }
 ]
