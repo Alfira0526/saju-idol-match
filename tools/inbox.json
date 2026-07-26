@@ -10593,5 +10593,18 @@
     "firstAt": "2026-07-26T02:45:04.491Z",
     "lastAt": "2026-07-26T02:45:04.491Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:문재일|yuhz",
+    "name": "문재일",
+    "group": "Yuhz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:45:18.052Z",
+    "lastAt": "2026-07-26T02:45:18.052Z",
+    "status": "pending"
   }
 ]
