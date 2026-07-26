@@ -11321,5 +11321,18 @@
     "firstAt": "2026-07-26T05:55:07.950Z",
     "lastAt": "2026-07-26T05:55:07.950Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재희|nctwish",
+    "name": "재희",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050621",
+    "note": "SM",
+    "count": 5,
+    "firstAt": "2026-07-22T17:44:53.218Z",
+    "lastAt": "2026-07-26T05:57:19.544Z",
+    "status": "pending"
   }
 ]
