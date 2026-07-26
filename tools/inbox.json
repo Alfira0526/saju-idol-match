@@ -10905,5 +10905,18 @@
     "firstAt": "2026-07-26T04:04:31.574Z",
     "lastAt": "2026-07-26T04:04:31.574Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사쿠야|엔시티위시",
+    "name": "사쿠야",
+    "group": "엔시티 위시",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071118",
+    "note": "sm",
+    "count": 3,
+    "firstAt": "2026-07-23T06:20:34.294Z",
+    "lastAt": "2026-07-26T04:14:29.156Z",
+    "status": "pending"
   }
 ]
