@@ -11633,5 +11633,18 @@
     "firstAt": "2026-07-26T07:13:50.277Z",
     "lastAt": "2026-07-26T07:13:50.277Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:기욱|원위",
+    "name": "기욱",
+    "group": "원위",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000124",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-22T17:58:41.647Z",
+    "lastAt": "2026-07-26T07:16:30.807Z",
+    "status": "pending"
   }
 ]
