@@ -12244,5 +12244,18 @@
     "firstAt": "2026-07-26T10:10:09.093Z",
     "lastAt": "2026-07-26T10:10:09.093Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:우하준|솔로",
+    "name": "우하준",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020815",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:20:26.500Z",
+    "lastAt": "2026-07-26T10:20:26.500Z",
+    "status": "pending"
   }
 ]
