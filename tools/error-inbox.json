@@ -804,5 +804,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:아르노|alphadriveone",
+    "name": "아르노",
+    "group": "ALPHA DRIVE ONE",
+    "count": 1,
+    "firstAt": "2026-07-26T11:45:05.560Z",
+    "lastAt": "2026-07-26T11:45:05.560Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
