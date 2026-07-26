@@ -11477,5 +11477,18 @@
     "firstAt": "2026-07-26T06:39:07.823Z",
     "lastAt": "2026-07-26T06:39:07.823Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:황안리|idle",
+    "name": "황안리",
+    "group": "Idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19900904",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:41:07.647Z",
+    "lastAt": "2026-07-26T06:41:07.647Z",
+    "status": "pending"
   }
 ]
