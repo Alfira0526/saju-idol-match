@@ -10242,5 +10242,18 @@
     "firstAt": "2026-07-26T00:37:41.055Z",
     "lastAt": "2026-07-26T00:37:41.055Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jules|seventeentriples",
+    "name": "jules",
+    "group": "seventeen tripleS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T00:45:14.744Z",
+    "lastAt": "2026-07-26T00:45:14.744Z",
+    "status": "pending"
   }
 ]
