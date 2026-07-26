@@ -12452,5 +12452,18 @@
     "firstAt": "2026-07-26T11:49:54.417Z",
     "lastAt": "2026-07-26T11:49:54.417Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이상원|알파드라이브원(alphadriveone)",
+    "name": "이상원",
+    "group": "알파 드라이브 원 (alpha drive one)",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20030508",
+    "note": "wk1",
+    "count": 1,
+    "firstAt": "2026-07-26T11:52:31.866Z",
+    "lastAt": "2026-07-26T11:52:31.866Z",
+    "status": "pending"
   }
 ]
