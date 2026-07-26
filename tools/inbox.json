@@ -58,10 +58,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040321",
-    "note": "",
-    "count": 5,
+    "note": "SM",
+    "count": 6,
     "firstAt": "2026-07-24T04:23:30.242Z",
-    "lastAt": "2026-07-26T06:59:11.776Z",
+    "lastAt": "2026-07-26T14:39:44.979Z",
     "status": "pending"
   },
   {
@@ -1866,9 +1866,9 @@
     "gender": "M",
     "dob": "20080929",
     "note": "언코어 / 클로즈유어아이즈 전원 추가해주세요",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-22T22:42:07.971Z",
-    "lastAt": "2026-07-26T06:10:20.717Z",
+    "lastAt": "2026-07-26T14:33:06.068Z",
     "status": "pending"
   },
   {
@@ -4140,10 +4140,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030508",
-    "note": "wakeone",
-    "count": 13,
+    "note": "wk1",
+    "count": 14,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T14:15:52.754Z",
+    "lastAt": "2026-07-26T14:36:06.807Z",
     "status": "pending"
   },
   {
@@ -7338,10 +7338,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19991016",
-    "note": "제 최애라서…",
-    "count": 3,
+    "note": "UNCORE",
+    "count": 4,
     "firstAt": "2026-07-25T04:57:31.753Z",
-    "lastAt": "2026-07-26T04:20:17.193Z",
+    "lastAt": "2026-07-26T14:37:59.066Z",
     "status": "pending"
   },
   {
@@ -8456,10 +8456,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20020511",
-    "note": "SM/ 엔시티나머지멤도채워주세용❤︎",
-    "count": 7,
+    "note": "sm",
+    "count": 8,
     "firstAt": "2026-07-23T00:46:33.706Z",
-    "lastAt": "2026-07-26T14:22:40.656Z",
+    "lastAt": "2026-07-26T14:32:11.958Z",
     "status": "pending"
   },
   {
@@ -12900,12 +12900,12 @@
     "name": "송은석",
     "group": "라이즈",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "20010319",
-    "note": "",
-    "count": 1,
+    "note": "라이즈 다른 멤버들도 다 해주세요",
+    "count": 2,
     "firstAt": "2026-07-26T13:32:31.633Z",
-    "lastAt": "2026-07-26T13:32:31.633Z",
+    "lastAt": "2026-07-26T14:38:06.071Z",
     "status": "pending"
   },
   {
@@ -13322,6 +13322,84 @@
     "count": 1,
     "firstAt": "2026-07-26T14:29:26.922Z",
     "lastAt": "2026-07-26T14:29:26.922Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:oo|20101210",
+    "name": "OO",
+    "group": "20101210",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:36:46.986Z",
+    "lastAt": "2026-07-26T14:36:46.986Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김규빈|앤더블",
+    "name": "김규빈",
+    "group": "앤더블",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040830",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:38:34.140Z",
+    "lastAt": "2026-07-26T14:38:34.140Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:yejun|plave",
+    "name": "Yejun",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010912",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:38:51.358Z",
+    "lastAt": "2026-07-26T14:38:51.358Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:plave|plave",
+    "name": "Plave",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "Vlast",
+    "count": 1,
+    "firstAt": "2026-07-26T14:39:05.361Z",
+    "lastAt": "2026-07-26T14:39:05.361Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:鍾明希|twshanjin",
+    "name": "鍾明希",
+    "group": "TWS HANJIN",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060105",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:40:02.751Z",
+    "lastAt": "2026-07-26T14:40:02.751Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이상워ㆍ|알파드라이브원",
+    "name": "이상워ㆍ",
+    "group": "알파드라이브원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030508",
+    "note": "잘생김",
+    "count": 1,
+    "firstAt": "2026-07-26T14:40:29.563Z",
+    "lastAt": "2026-07-26T14:40:29.563Z",
     "status": "pending"
   }
 ]
