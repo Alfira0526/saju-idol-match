@@ -12296,5 +12296,18 @@
     "firstAt": "2026-07-26T10:27:40.631Z",
     "lastAt": "2026-07-26T10:27:40.631Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강우진|flareu",
+    "name": "강우진",
+    "group": "FLARE U",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070607",
+    "note": "FNC 엔터테이먼트 소속 2인조 보이즈2플래닛 공식 파생그룹 남자 듀오 막내 보컬천재 우지니 넣어주세요!!",
+    "count": 2,
+    "firstAt": "2026-07-23T04:18:35.518Z",
+    "lastAt": "2026-07-26T10:42:52.208Z",
+    "status": "pending"
   }
 ]
