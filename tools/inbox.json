@@ -10177,5 +10177,18 @@
     "firstAt": "2026-07-25T11:46:16.742Z",
     "lastAt": "2026-07-25T11:46:16.742Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유승언|and2ble",
+    "name": "유승언",
+    "group": "AND2BLE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040102",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T00:15:32.706Z",
+    "lastAt": "2026-07-26T00:15:32.706Z",
+    "status": "pending"
   }
 ]
