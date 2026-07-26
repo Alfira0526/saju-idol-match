@@ -11152,5 +11152,18 @@
     "firstAt": "2026-07-26T04:54:33.925Z",
     "lastAt": "2026-07-26T04:54:33.925Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:도균|82major",
+    "name": "도균",
+    "group": "82major",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060914",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:56:04.901Z",
+    "lastAt": "2026-07-26T04:56:04.901Z",
+    "status": "pending"
   }
 ]
