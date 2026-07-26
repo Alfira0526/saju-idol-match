@@ -787,9 +787,9 @@
     "gender": "M",
     "dob": "19961022",
     "note": "너무귀여움",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T05:06:07.360Z",
-    "lastAt": "2026-07-25T04:04:09.403Z",
+    "lastAt": "2026-07-26T13:06:07.928Z",
     "status": "pending"
   },
   {
@@ -4141,9 +4141,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "wakeone",
-    "count": 10,
+    "count": 11,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T12:58:54.448Z",
+    "lastAt": "2026-07-26T13:03:54.272Z",
     "status": "pending"
   },
   {
@@ -7924,9 +7924,9 @@
     "gender": "M",
     "dob": "20051209",
     "note": "belift",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-23T06:05:31.942Z",
-    "lastAt": "2026-07-25T06:04:37.168Z",
+    "lastAt": "2026-07-26T13:01:20.976Z",
     "status": "pending"
   },
   {
@@ -12724,6 +12724,58 @@
     "count": 1,
     "firstAt": "2026-07-26T13:00:12.839Z",
     "lastAt": "2026-07-26T13:00:12.839Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:baekhyun|cbx",
+    "name": "baekhyun",
+    "group": "cbx",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920506",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:01:13.325Z",
+    "lastAt": "2026-07-26T13:01:13.325Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:aa|alphadriveone",
+    "name": "a a",
+    "group": "alpha drive one",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040717",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:04:51.806Z",
+    "lastAt": "2026-07-26T13:04:51.806Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:백승|epex",
+    "name": "백승",
+    "group": "Epex",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041005",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:05:00.354Z",
+    "lastAt": "2026-07-26T13:05:00.354Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:kaede|triples",
+    "name": "Kaede",
+    "group": "Triples",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:09:48.022Z",
+    "lastAt": "2026-07-26T13:09:48.022Z",
     "status": "pending"
   }
 ]
