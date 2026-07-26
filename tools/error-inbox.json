@@ -633,12 +633,12 @@
     "key": "er:시온|billlie",
     "name": "시온",
     "group": "Billlie",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T01:49:16.903Z",
-    "lastAt": "2026-07-26T01:49:16.903Z",
+    "lastAt": "2026-07-26T03:26:35.198Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 2
     },
     "suggests": [],
     "notes": [
