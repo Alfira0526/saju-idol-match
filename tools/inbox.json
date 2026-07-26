@@ -11607,5 +11607,18 @@
     "firstAt": "2026-07-22T18:00:02.240Z",
     "lastAt": "2026-07-26T07:05:56.319Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마노|vayonn(베이온)",
+    "name": "마노",
+    "group": "Vayonn(베이온)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090227",
+    "note": "인코드/김재중 소속사의 그룹, 그룹 내 보이즈플래닛2 출연자 다수",
+    "count": 1,
+    "firstAt": "2026-07-26T07:08:15.423Z",
+    "lastAt": "2026-07-26T07:08:15.423Z",
+    "status": "pending"
   }
 ]
