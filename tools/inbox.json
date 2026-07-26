@@ -10476,5 +10476,18 @@
     "firstAt": "2026-07-26T02:10:01.074Z",
     "lastAt": "2026-07-26T02:10:01.074Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kazuta|n.ssign",
+    "name": "Kazuta",
+    "group": "n.SSign",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971231",
+    "note": "nCH Entertainment, reason is because i love him",
+    "count": 1,
+    "firstAt": "2026-07-26T02:10:54.013Z",
+    "lastAt": "2026-07-26T02:10:54.013Z",
+    "status": "pending"
   }
 ]
