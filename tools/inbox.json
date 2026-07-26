@@ -12465,5 +12465,18 @@
     "firstAt": "2026-07-26T11:52:31.866Z",
     "lastAt": "2026-07-26T11:52:31.866Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bbb|alphadriveone",
+    "name": "bbb",
+    "group": "ALPHA DRIVE ONE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T11:54:39.136Z",
+    "lastAt": "2026-07-26T11:54:39.136Z",
+    "status": "pending"
   }
 ]
