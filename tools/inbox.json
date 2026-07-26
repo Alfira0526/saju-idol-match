@@ -11347,5 +11347,18 @@
     "firstAt": "2026-07-26T06:08:18.381Z",
     "lastAt": "2026-07-26T06:08:18.381Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민재|xikers",
+    "name": "민재",
+    "group": "xikers",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030410",
+    "note": "kq",
+    "count": 1,
+    "firstAt": "2026-07-26T06:08:29.703Z",
+    "lastAt": "2026-07-26T06:08:29.703Z",
+    "status": "pending"
   }
 ]
