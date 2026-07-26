@@ -12179,5 +12179,18 @@
     "firstAt": "2026-07-26T10:00:14.302Z",
     "lastAt": "2026-07-26T10:00:14.302Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이계훈|킥플립/jyp",
+    "name": "이계훈",
+    "group": "킥플립/jyp",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:01:46.020Z",
+    "lastAt": "2026-07-26T10:01:46.020Z",
+    "status": "pending"
   }
 ]
