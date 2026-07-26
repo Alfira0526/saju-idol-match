@@ -11555,5 +11555,18 @@
     "firstAt": "2026-07-26T06:50:03.517Z",
     "lastAt": "2026-07-26T06:50:03.517Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:릴리|엔믹스",
+    "name": "릴리",
+    "group": "엔믹스",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030905",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:01:47.608Z",
+    "lastAt": "2026-07-26T07:01:47.608Z",
+    "status": "pending"
   }
 ]
