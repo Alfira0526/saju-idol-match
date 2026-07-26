@@ -10853,5 +10853,18 @@
     "firstAt": "2026-07-26T03:52:31.332Z",
     "lastAt": "2026-07-26T03:52:31.332Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:엄지원|keyveatz",
+    "name": "엄지원",
+    "group": "Keyveatz",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20090921",
+    "note": "키비츠만능캐!!!!사랑해",
+    "count": 1,
+    "firstAt": "2026-07-26T03:54:36.252Z",
+    "lastAt": "2026-07-26T03:54:36.252Z",
+    "status": "pending"
   }
 ]
