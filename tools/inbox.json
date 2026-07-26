@@ -2971,9 +2971,9 @@
     "gender": "M",
     "dob": "20010723",
     "note": "yg",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T06:59:50.832Z",
-    "lastAt": "2026-07-24T06:59:50.832Z",
+    "lastAt": "2026-07-26T13:23:37.697Z",
     "status": "pending"
   },
   {
@@ -7663,10 +7663,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030411",
-    "note": "웨이크원",
-    "count": 2,
+    "note": "WK1",
+    "count": 3,
     "firstAt": "2026-07-23T03:53:22.850Z",
-    "lastAt": "2026-07-25T05:32:51.398Z",
+    "lastAt": "2026-07-26T13:26:52.368Z",
     "status": "pending"
   },
   {
@@ -8457,9 +8457,9 @@
     "gender": "M",
     "dob": "20020511",
     "note": "SM/ 엔시티나머지멤도채워주세용❤︎",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T00:46:33.706Z",
-    "lastAt": "2026-07-25T07:02:43.384Z",
+    "lastAt": "2026-07-26T13:29:37.083Z",
     "status": "pending"
   },
   {
@@ -10550,9 +10550,9 @@
     "gender": "M",
     "dob": "20040405",
     "note": "sm",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-25T03:17:39.109Z",
-    "lastAt": "2026-07-26T09:49:32.774Z",
+    "lastAt": "2026-07-26T13:30:21.537Z",
     "status": "pending"
   },
   {
@@ -12854,6 +12854,32 @@
     "count": 1,
     "firstAt": "2026-07-26T13:20:40.581Z",
     "lastAt": "2026-07-26T13:20:40.581Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:케이크|straykids",
+    "name": "케이크",
+    "group": "Stray kids",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20080926",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:24:07.953Z",
+    "lastAt": "2026-07-26T13:24:07.953Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:kotone|triples",
+    "name": "Kotone",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040310",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:25:09.036Z",
+    "lastAt": "2026-07-26T13:25:09.036Z",
     "status": "pending"
   }
 ]
