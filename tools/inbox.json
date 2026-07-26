@@ -12322,5 +12322,18 @@
     "firstAt": "2026-07-26T10:44:32.070Z",
     "lastAt": "2026-07-26T10:44:32.070Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:레오|빅스",
+    "name": "레오",
+    "group": "빅스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19901110",
+    "note": "내남자",
+    "count": 3,
+    "firstAt": "2026-07-23T02:25:10.508Z",
+    "lastAt": "2026-07-26T10:45:11.667Z",
+    "status": "pending"
   }
 ]
