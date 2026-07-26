@@ -12088,5 +12088,18 @@
     "firstAt": "2026-07-26T09:33:10.546Z",
     "lastAt": "2026-07-26T09:33:10.546Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:판저이|모디세이",
+    "name": "판저이",
+    "group": "모디세이",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060122",
+    "note": "Jyp",
+    "count": 1,
+    "firstAt": "2026-07-26T09:36:29.245Z",
+    "lastAt": "2026-07-26T09:36:29.245Z",
+    "status": "pending"
   }
 ]
