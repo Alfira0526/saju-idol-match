@@ -903,5 +903,19 @@
     "firstAt": "2026-07-26T14:50:26.576Z",
     "lastAt": "2026-07-26T14:50:26.576Z",
     "status": "pending"
+  },
+  {
+    "key": "er:장하오|and2ble",
+    "name": "장하오",
+    "group": "AND2BLE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-26T15:21:31.209Z",
+    "lastAt": "2026-07-26T15:21:31.209Z",
+    "status": "pending"
   }
 ]
