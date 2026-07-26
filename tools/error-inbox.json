@@ -853,5 +853,19 @@
     "firstAt": "2026-07-26T12:38:08.802Z",
     "lastAt": "2026-07-26T12:38:08.802Z",
     "status": "pending"
+  },
+  {
+    "key": "er:민제|kickflip",
+    "name": "민제",
+    "group": "KickFlip",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-26T13:39:59.642Z",
+    "lastAt": "2026-07-26T13:39:59.642Z",
+    "status": "pending"
   }
 ]
