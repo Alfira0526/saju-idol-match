@@ -674,5 +674,23 @@
       "20100907"
     ],
     "notes": []
+  },
+  {
+    "key": "er:윤호|ateez",
+    "name": "윤호",
+    "group": "ATEEZ",
+    "count": 1,
+    "firstAt": "2026-07-26T04:13:55.750Z",
+    "lastAt": "2026-07-26T04:13:55.750Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19990323 22:30"
+    ],
+    "notes": [
+      "Ateez YouTube"
+    ]
   }
 ]
