@@ -12348,5 +12348,18 @@
     "firstAt": "2026-07-26T10:45:49.767Z",
     "lastAt": "2026-07-26T10:45:49.767Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kun|wayv",
+    "name": "KUN",
+    "group": "WayV",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:46:45.709Z",
+    "lastAt": "2026-07-26T10:46:45.709Z",
+    "status": "pending"
   }
 ]
