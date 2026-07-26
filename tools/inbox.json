@@ -1865,10 +1865,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20080929",
-    "note": "언코어 / 클로즈유어아이즈 전원 추가해주세요",
-    "count": 11,
+    "note": "너무너무너무잘생겻고요즘인기가많아요",
+    "count": 12,
     "firstAt": "2026-07-22T22:42:07.971Z",
-    "lastAt": "2026-07-26T16:18:29.288Z",
+    "lastAt": "2026-07-26T20:59:26.866Z",
     "status": "pending"
   },
   {
@@ -14544,6 +14544,19 @@
     "count": 1,
     "firstAt": "2026-07-26T20:26:07.447Z",
     "lastAt": "2026-07-26T20:26:07.447Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:郑秀晶|bana",
+    "name": "郑秀晶",
+    "group": "bana",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19941024",
+    "note": "Krystal",
+    "count": 1,
+    "firstAt": "2026-07-26T20:53:56.107Z",
+    "lastAt": "2026-07-26T20:53:56.107Z",
     "status": "pending"
   }
 ]
