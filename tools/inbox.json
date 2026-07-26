@@ -10944,5 +10944,18 @@
     "firstAt": "2026-07-26T04:20:46.356Z",
     "lastAt": "2026-07-26T04:20:46.356Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:夫胜宽|seventeen",
+    "name": "夫胜宽",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980116",
+    "note": "pledis",
+    "count": 1,
+    "firstAt": "2026-07-26T04:20:58.587Z",
+    "lastAt": "2026-07-26T04:20:58.587Z",
+    "status": "pending"
   }
 ]
