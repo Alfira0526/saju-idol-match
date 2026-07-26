@@ -194,6 +194,25 @@
   .sr-item .sr-meta{margin-left:auto; color:var(--ink-dim); font-size:11.5px;}
   .sr-empty{padding:12px; color:var(--ink-dim); font-size:13px; text-align:center;}
 
+  /* 접이식 필터 */
+  .filter-toggle{display:flex; align-items:center; gap:9px; width:100%; margin:0 0 12px;
+    padding:11px 14px; border-radius:12px; cursor:pointer; text-align:left;
+    background:#170e2e; border:1px solid #ffffff1c; color:var(--ink);
+    font-family:'Jua','Noto Sans KR',sans-serif; font-size:14px; transition:border-color .15s, background .15s;}
+  .filter-toggle:hover{border-color:var(--gold-soft); background:#1c1338;}
+  .filter-toggle .ft-ico{flex:none;}
+  .filter-toggle .ft-label{flex:1;}
+  .filter-toggle .ft-badge{flex:none; display:none; min-width:18px; text-align:center;
+    font-size:11.5px; font-weight:700; color:#fff; background:var(--grad, var(--gold));
+    border-radius:999px; padding:1px 7px;}
+  .filter-toggle.has-active .ft-badge{display:inline-block;}
+  .filter-toggle .ft-caret{flex:none; color:var(--ink-dim); font-size:15px; transition:transform .2s ease;}
+  .filter-toggle.open .ft-caret{transform:rotate(180deg);}
+  .filter-panel{overflow:hidden; max-height:0; opacity:0;
+    transition:max-height .3s ease, opacity .2s ease;}
+  .filter-panel.open{max-height:820px; opacity:1;}
+  .filter-panel > *:last-child{margin-bottom:0;}
+
   .filter-row{display:flex; align-items:flex-start; gap:12px; margin:0 0 12px;}
   .filter-label{font-size:12px; color:var(--ink-dim); margin:0; flex:none; letter-spacing:.02em; padding-top:10px; width:52px;}
   .agency-btns{display:flex; flex-wrap:wrap; gap:8px; flex:1;}
@@ -442,27 +461,36 @@
       <div class="agency-btns" id="catBtns"></div>
     </div>
 
-    <div class="search-row">
-      <label class="filter-label" for="groupSearch">검색</label>
-      <div class="search-wrap">
-        <input type="text" id="groupSearch" placeholder="그룹 검색 (한글·영문, 일부만 입력해도 됩니다)" autocomplete="off">
-        <div id="searchResults" class="search-results hidden"></div>
+    <button type="button" id="filterToggle" class="filter-toggle" onclick="toggleFilters()" aria-expanded="false" aria-controls="filterPanel">
+      <span class="ft-ico">🔎</span>
+      <span class="ft-label">특정 그룹·소속사로 좁혀보기</span>
+      <span class="ft-badge" id="filterBadge"></span>
+      <span class="ft-caret">⌄</span>
+    </button>
+
+    <div class="filter-panel" id="filterPanel">
+      <div class="search-row">
+        <label class="filter-label" for="groupSearch">검색</label>
+        <div class="search-wrap">
+          <input type="text" id="groupSearch" placeholder="그룹 검색 (한글·영문, 일부만 입력해도 됩니다)" autocomplete="off">
+          <div id="searchResults" class="search-results hidden"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="filter-row">
-      <label class="filter-label">소속사</label>
-      <div class="agency-btns" id="agencyBtns"></div>
-    </div>
-    <div class="subgroup-row" id="subgroupRow" style="display:none">
-      <label class="filter-label" for="groupFilter">그룹</label>
-      <select id="groupFilter" onchange="onGroupChange(this)"></select>
-    </div>
+      <div class="filter-row">
+        <label class="filter-label">소속사</label>
+        <div class="agency-btns" id="agencyBtns"></div>
+      </div>
+      <div class="subgroup-row" id="subgroupRow" style="display:none">
+        <label class="filter-label" for="groupFilter">그룹</label>
+        <select id="groupFilter" onchange="onGroupChange(this)"></select>
+      </div>
 
-    <div class="filter-row" id="bandRow" style="display:none">
-      <label class="filter-label">유형</label>
-      <div class="agency-btns">
-        <button class="agbtn" id="bandToggle" type="button" onclick="toggleBand()">🎸 밴드만</button>
+      <div class="filter-row" id="bandRow" style="display:none">
+        <label class="filter-label">유형</label>
+        <div class="agency-btns">
+          <button class="agbtn" id="bandToggle" type="button" onclick="toggleBand()">🎸 밴드만</button>
+        </div>
       </div>
     </div>
 
@@ -1587,6 +1615,28 @@ function currentLabel(){
   if(v.startsWith("gr:")) return catPre + groupLabel(v.slice(3));
   return catPre + (s.activeGender==="M" ? "남자" : "여자") + (s.activeCat==="K-idol"?" 아이돌":"");
 }
+// 접이식 필터 열기/닫기 (검색 드롭다운이 잘리지 않게 열린 뒤 overflow 해제)
+function toggleFilters(){
+  const t=document.getElementById('filterToggle'), p=document.getElementById('filterPanel');
+  if(!t||!p) return;
+  const open = !t.classList.contains('open');
+  t.classList.toggle('open', open);
+  p.classList.toggle('open', open);
+  t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  if(open){ setTimeout(()=>{ if(p.classList.contains('open')) p.style.overflow='visible'; }, 300); }
+  else { p.style.overflow='hidden'; }
+}
+// 적용 중인 필터 개수를 토글 배지로 표시 (접혀 있어도 상태를 알 수 있게)
+function syncFilterBadge(){
+  const s=window._saju, t=document.getElementById('filterToggle'), b=document.getElementById('filterBadge');
+  if(!s||!t||!b) return;
+  let n=0;
+  const sc=s.scope||"";
+  if(sc.startsWith('ag:')||sc.startsWith('gr:')) n++;
+  if(s.bandOnly) n++;
+  t.classList.toggle('has-active', n>0);
+  b.textContent = n>0 ? String(n) : '';
+}
 // 성별 탭 노출/활성 상태 동기화
 function syncControls(){
   const need = genderTabsNeeded();
@@ -1623,6 +1673,7 @@ function renderRanks(){
   const btn = document.getElementById('moreBtn');
   btn.textContent = moreLabel();
   btn.style.display = list.length > TOP_N ? "" : "none";
+  syncFilterBadge();
 }
 
 function switchGender(g){
