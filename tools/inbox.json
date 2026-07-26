@@ -11204,5 +11204,18 @@
     "firstAt": "2026-07-26T05:06:04.167Z",
     "lastAt": "2026-07-26T05:06:04.167Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지우|키키",
+    "name": "지우",
+    "group": "키키",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T05:07:11.411Z",
+    "lastAt": "2026-07-26T05:07:11.411Z",
+    "status": "pending"
   }
 ]
