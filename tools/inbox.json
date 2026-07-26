@@ -11035,5 +11035,18 @@
     "firstAt": "2026-07-26T04:31:08.033Z",
     "lastAt": "2026-07-26T04:31:08.033Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:신예찬|tiot",
+    "name": "신예찬",
+    "group": "TIOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070409",
+    "note": "정말 귀여워요.",
+    "count": 1,
+    "firstAt": "2026-07-26T04:37:47.722Z",
+    "lastAt": "2026-07-26T04:37:47.722Z",
+    "status": "pending"
   }
 ]
