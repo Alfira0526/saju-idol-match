@@ -10658,5 +10658,18 @@
     "firstAt": "2026-07-26T03:06:09.079Z",
     "lastAt": "2026-07-26T03:06:09.079Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:雨琦|i-dle",
+    "name": "雨琦",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990923",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T03:06:26.336Z",
+    "lastAt": "2026-07-26T03:06:26.336Z",
+    "status": "pending"
   }
 ]
