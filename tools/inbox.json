@@ -11646,5 +11646,18 @@
     "firstAt": "2026-07-22T17:58:41.647Z",
     "lastAt": "2026-07-26T07:16:30.807Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김대영|nctwish",
+    "name": "김대영",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050621",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:16:45.121Z",
+    "lastAt": "2026-07-26T07:16:45.121Z",
+    "status": "pending"
   }
 ]
