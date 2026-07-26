@@ -11568,5 +11568,18 @@
     "firstAt": "2026-07-26T07:01:47.608Z",
     "lastAt": "2026-07-26T07:01:47.608Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:heyingxian|riize",
+    "name": "He Yingxian",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:01:48.347Z",
+    "lastAt": "2026-07-26T07:01:48.347Z",
+    "status": "pending"
   }
 ]
