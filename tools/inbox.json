@@ -11711,5 +11711,18 @@
     "firstAt": "2026-07-22T17:50:08.867Z",
     "lastAt": "2026-07-26T07:20:34.786Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서명호|seventeen",
+    "name": "서명호",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:22:02.367Z",
+    "lastAt": "2026-07-26T07:22:02.367Z",
+    "status": "pending"
   }
 ]
