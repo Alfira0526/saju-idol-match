@@ -11113,5 +11113,18 @@
     "firstAt": "2026-07-26T04:51:51.640Z",
     "lastAt": "2026-07-26T04:51:51.640Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:자진혁|나우즈",
+    "name": "자진혁",
+    "group": "나우즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:52:58.527Z",
+    "lastAt": "2026-07-26T04:52:58.527Z",
+    "status": "pending"
   }
 ]
