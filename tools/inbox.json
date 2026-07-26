@@ -1502,9 +1502,9 @@
     "gender": "M",
     "dob": "20030628",
     "note": "Sm",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T06:49:49.694Z",
-    "lastAt": "2026-07-25T07:07:04.178Z",
+    "lastAt": "2026-07-26T15:07:12.124Z",
     "status": "pending"
   },
   {
@@ -3400,9 +3400,9 @@
     "gender": "M",
     "dob": "20060121",
     "note": "MOREVISION",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-22T23:53:10.472Z",
-    "lastAt": "2026-07-25T03:58:19.229Z",
+    "lastAt": "2026-07-26T15:05:26.895Z",
     "status": "pending"
   },
   {
@@ -4206,9 +4206,9 @@
     "gender": "M",
     "dob": "20020511",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T08:12:27.093Z",
-    "lastAt": "2026-07-25T02:08:41.774Z",
+    "lastAt": "2026-07-26T15:03:40.201Z",
     "status": "pending"
   },
   {
@@ -8313,10 +8313,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20050927",
-    "note": "",
-    "count": 1,
+    "note": "언코어",
+    "count": 2,
     "firstAt": "2026-07-25T06:51:37.216Z",
-    "lastAt": "2026-07-25T06:51:37.216Z",
+    "lastAt": "2026-07-26T15:06:07.925Z",
     "status": "pending"
   },
   {
@@ -8379,9 +8379,9 @@
     "gender": "F",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T06:54:24.419Z",
-    "lastAt": "2026-07-25T06:54:24.419Z",
+    "lastAt": "2026-07-26T15:06:18.279Z",
     "status": "pending"
   },
   {
@@ -13543,6 +13543,97 @@
     "count": 1,
     "firstAt": "2026-07-26T15:00:27.227Z",
     "lastAt": "2026-07-26T15:00:27.227Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:luoyujia|alphadriveone",
+    "name": "LUO YUJIA",
+    "group": "Alpha drive one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041120",
+    "note": "WK1",
+    "count": 1,
+    "firstAt": "2026-07-26T15:01:46.615Z",
+    "lastAt": "2026-07-26T15:01:46.615Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:李相沅|alphadriveone",
+    "name": "李相沅",
+    "group": "alpha drive one",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:02:24.524Z",
+    "lastAt": "2026-07-26T15:02:24.524Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조서인|nctwish",
+    "name": "조서인",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080528",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-26T15:03:21.927Z",
+    "lastAt": "2026-07-26T15:03:21.927Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:하유준|axmxp",
+    "name": "하유준",
+    "group": "AxMxP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050706",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:05:28.551Z",
+    "lastAt": "2026-07-26T15:05:28.551Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:리오|alphadriveone",
+    "name": "리오",
+    "group": "alpha Drive one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020822",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-26T15:05:57.415Z",
+    "lastAt": "2026-07-26T15:10:34.457Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유승언|앤더블",
+    "name": "유승언",
+    "group": "앤더블",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040102",
+    "note": "앤더블 멤버에서 빠져있습니다ㅠ",
+    "count": 1,
+    "firstAt": "2026-07-26T15:07:50.032Z",
+    "lastAt": "2026-07-26T15:07:50.032Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:최상엽|밴드루시",
+    "name": "최상엽",
+    "group": "밴드 루시",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19940227",
+    "note": "이 사람 생시도 있어요 오전 10:15",
+    "count": 1,
+    "firstAt": "2026-07-26T15:08:33.880Z",
+    "lastAt": "2026-07-26T15:08:33.880Z",
     "status": "pending"
   }
 ]
