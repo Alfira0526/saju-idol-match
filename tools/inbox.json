@@ -4141,9 +4141,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "wakeone",
-    "count": 11,
+    "count": 12,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T13:03:54.272Z",
+    "lastAt": "2026-07-26T14:03:34.386Z",
     "status": "pending"
   },
   {
@@ -11329,10 +11329,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20050621",
-    "note": "SM",
-    "count": 5,
+    "note": "사랑함",
+    "count": 6,
     "firstAt": "2026-07-22T17:44:53.218Z",
-    "lastAt": "2026-07-26T05:57:19.544Z",
+    "lastAt": "2026-07-26T14:07:34.562Z",
     "status": "pending"
   },
   {
@@ -13045,10 +13045,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20011022",
-    "note": "",
-    "count": 1,
+    "note": "노래",
+    "count": 2,
     "firstAt": "2026-07-26T13:56:44.353Z",
-    "lastAt": "2026-07-26T13:56:44.353Z",
+    "lastAt": "2026-07-26T14:02:49.152Z",
     "status": "pending"
   },
   {
@@ -13088,6 +13088,71 @@
     "count": 1,
     "firstAt": "2026-07-26T14:00:19.517Z",
     "lastAt": "2026-07-26T14:00:19.517Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:炫|nctwish",
+    "name": "炫",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20050324",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:02:09.423Z",
+    "lastAt": "2026-07-26T14:02:09.423Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:keonho|cortis",
+    "name": "kEONHO",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20090214",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:03:17.417Z",
+    "lastAt": "2026-07-26T14:03:17.417Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:로민|엘라스트",
+    "name": "로민",
+    "group": "엘라스트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010424",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:08:59.468Z",
+    "lastAt": "2026-07-26T14:08:59.468Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:treasure|treasure",
+    "name": "Treasure",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:10:17.120Z",
+    "lastAt": "2026-07-26T14:10:17.120Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:시온|엔시티위시",
+    "name": "시온",
+    "group": "엔시티위시",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020511",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:10:28.782Z",
+    "lastAt": "2026-07-26T14:10:28.782Z",
     "status": "pending"
   }
 ]
