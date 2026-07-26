@@ -10697,5 +10697,18 @@
     "firstAt": "2026-07-26T03:11:01.651Z",
     "lastAt": "2026-07-26T03:11:01.651Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:youngjae|got7",
+    "name": "Youngjae",
+    "group": "Got7",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T03:11:20.546Z",
+    "lastAt": "2026-07-26T03:11:20.546Z",
+    "status": "pending"
   }
 ]
