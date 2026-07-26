@@ -4752,9 +4752,9 @@
     "gender": "M",
     "dob": "20060913",
     "note": "JYP",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T05:00:40.134Z",
-    "lastAt": "2026-07-25T08:58:15.086Z",
+    "lastAt": "2026-07-26T12:26:08.812Z",
     "status": "pending"
   },
   {
@@ -8782,9 +8782,9 @@
     "gender": "M",
     "dob": "20070313",
     "note": "JYP",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-07-23T02:24:45.303Z",
-    "lastAt": "2026-07-26T09:08:17.342Z",
+    "lastAt": "2026-07-26T12:24:54.084Z",
     "status": "pending"
   },
   {
@@ -11369,9 +11369,9 @@
     "gender": "M",
     "dob": "20020822",
     "note": "잘생겼어요,,",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T06:12:47.550Z",
-    "lastAt": "2026-07-26T06:12:47.550Z",
+    "lastAt": "2026-07-26T12:21:24.321Z",
     "status": "pending"
   },
   {
@@ -12581,6 +12581,45 @@
     "count": 1,
     "firstAt": "2026-07-26T12:15:25.371Z",
     "lastAt": "2026-07-26T12:15:25.371Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:壹加一|treasure",
+    "name": "壹加一",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20051118",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:22:53.708Z",
+    "lastAt": "2026-07-26T12:22:53.708Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김준민|휘브",
+    "name": "김준민",
+    "group": "휘브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021231",
+    "note": "같은 그룹 전이전까지 부탁드립니다",
+    "count": 1,
+    "firstAt": "2026-07-26T12:29:31.191Z",
+    "lastAt": "2026-07-26T12:29:31.191Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:rachel|ald1",
+    "name": "RACHEL",
+    "group": "ALD1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970329",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:29:51.355Z",
+    "lastAt": "2026-07-26T12:29:51.355Z",
     "status": "pending"
   }
 ]
