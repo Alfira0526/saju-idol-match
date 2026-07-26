@@ -11893,5 +11893,18 @@
     "firstAt": "2026-07-26T08:31:24.579Z",
     "lastAt": "2026-07-26T08:31:24.579Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하유준|에이엠피",
+    "name": "하유준",
+    "group": "에이엠피",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050706",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-26T08:37:52.061Z",
+    "lastAt": "2026-07-26T08:37:52.061Z",
+    "status": "pending"
   }
 ]
