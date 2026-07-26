@@ -11763,5 +11763,18 @@
     "firstAt": "2026-07-26T07:25:47.226Z",
     "lastAt": "2026-07-26T07:25:47.226Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제프|이펙스",
+    "name": "제프",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050421",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:33:51.507Z",
+    "lastAt": "2026-07-26T07:33:51.507Z",
+    "status": "pending"
   }
 ]
