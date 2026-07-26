@@ -11438,5 +11438,18 @@
     "firstAt": "2026-07-26T06:29:35.574Z",
     "lastAt": "2026-07-26T06:29:35.574Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아이딧|스타쉽",
+    "name": "아이딧",
+    "group": "스타쉽",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:30:34.357Z",
+    "lastAt": "2026-07-26T06:30:34.357Z",
+    "status": "pending"
   }
 ]
