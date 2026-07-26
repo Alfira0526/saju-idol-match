@@ -11126,5 +11126,18 @@
     "firstAt": "2026-07-26T04:52:58.527Z",
     "lastAt": "2026-07-26T04:52:58.527Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:양경호|idntt(아이덴티티)",
+    "name": "양경호",
+    "group": "idntt(아이덴티티)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080225",
+    "note": "제가 너무 좋아하는 아이돌이라서요ㅜㅜ",
+    "count": 1,
+    "firstAt": "2026-07-26T04:53:59.685Z",
+    "lastAt": "2026-07-26T04:53:59.685Z",
+    "status": "pending"
   }
 ]
