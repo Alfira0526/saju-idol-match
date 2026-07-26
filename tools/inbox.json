@@ -11737,5 +11737,18 @@
     "firstAt": "2026-07-23T02:31:50.430Z",
     "lastAt": "2026-07-26T07:22:46.735Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마키|앤팀",
+    "name": "마키",
+    "group": "앤팀",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20060217",
+    "note": "하이브재팬",
+    "count": 1,
+    "firstAt": "2026-07-26T07:25:07.894Z",
+    "lastAt": "2026-07-26T07:25:07.894Z",
+    "status": "pending"
   }
 ]
