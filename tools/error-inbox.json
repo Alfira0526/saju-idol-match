@@ -644,5 +644,19 @@
     "notes": [
       "시온이 누구죠"
     ]
+  },
+  {
+    "key": "er:예지|itzy",
+    "name": "예지",
+    "group": "ITZY",
+    "count": 1,
+    "firstAt": "2026-07-26T03:54:26.156Z",
+    "lastAt": "2026-07-26T03:54:26.156Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
