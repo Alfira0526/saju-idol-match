@@ -10541,5 +10541,18 @@
     "firstAt": "2026-07-26T02:26:56.782Z",
     "lastAt": "2026-07-26T02:26:56.782Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yushi|nctwish",
+    "name": "yushi",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "SM",
+    "count": 2,
+    "firstAt": "2026-07-25T03:17:39.109Z",
+    "lastAt": "2026-07-26T02:30:12.548Z",
+    "status": "pending"
   }
 ]
