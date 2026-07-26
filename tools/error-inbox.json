@@ -303,12 +303,12 @@
     "key": "er:리쿠|nctwish",
     "name": "리쿠",
     "group": "NCT WISH",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T01:18:24.746Z",
-    "lastAt": "2026-07-25T01:18:24.746Z",
+    "lastAt": "2026-07-26T14:45:34.383Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 2
     },
     "suggests": [],
     "notes": []
@@ -888,6 +888,20 @@
     "count": 1,
     "firstAt": "2026-07-26T13:55:31.207Z",
     "lastAt": "2026-07-26T13:55:31.207Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:상현|alphadriveone",
+    "name": "상현",
+    "group": "ALPHA DRIVE ONE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-26T14:50:26.576Z",
+    "lastAt": "2026-07-26T14:50:26.576Z",
     "status": "pending"
   }
 ]
