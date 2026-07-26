@@ -12413,5 +12413,18 @@
     "firstAt": "2026-07-26T11:23:01.979Z",
     "lastAt": "2026-07-26T11:23:01.979Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:lukkaew|ateez",
+    "name": "Lukkaew",
+    "group": "Ateez",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T11:29:27.826Z",
+    "lastAt": "2026-07-26T11:29:27.826Z",
+    "status": "pending"
   }
 ]
