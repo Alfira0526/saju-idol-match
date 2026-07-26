@@ -10562,10 +10562,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090227",
-    "note": "방금 데뷔한 신인이고 나날이 늘어나는 인기가 굉장합니다… 이제 곧 제2의 비티에스가 될 그룹",
-    "count": 2,
+    "note": "제발제발제발추가해주시몀안될가요베이온을추가해주시면이사이트의이용자수가폭등할것입니다",
+    "count": 3,
     "firstAt": "2026-07-23T04:21:24.254Z",
-    "lastAt": "2026-07-26T02:35:47.106Z",
+    "lastAt": "2026-07-26T21:00:42.366Z",
     "status": "pending"
   },
   {
@@ -14557,6 +14557,19 @@
     "count": 1,
     "firstAt": "2026-07-26T20:53:56.107Z",
     "lastAt": "2026-07-26T20:53:56.107Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:duchmilk|monstax",
+    "name": "Duchmilk",
+    "group": "Monsta x",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031021",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T21:02:26.435Z",
+    "lastAt": "2026-07-26T21:02:26.435Z",
     "status": "pending"
   }
 ]
