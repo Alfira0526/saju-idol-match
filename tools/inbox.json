@@ -10515,5 +10515,18 @@
     "firstAt": "2026-07-26T02:22:17.198Z",
     "lastAt": "2026-07-26T02:22:17.198Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:쑨지아양|베이온",
+    "name": "쑨지아양",
+    "group": "베이온",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060105",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:26:29.131Z",
+    "lastAt": "2026-07-26T02:26:29.131Z",
+    "status": "pending"
   }
 ]
