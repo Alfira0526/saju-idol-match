@@ -11451,5 +11451,18 @@
     "firstAt": "2026-07-26T06:30:34.357Z",
     "lastAt": "2026-07-26T06:30:34.357Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소건|넥스지(nexz)",
+    "name": "소건",
+    "group": "넥스지(NEXZ)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060913",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-26T06:35:22.355Z",
+    "lastAt": "2026-07-26T06:35:22.355Z",
+    "status": "pending"
   }
 ]
