@@ -4140,10 +4140,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030508",
-    "note": "웨이크원 소속이고 완벽해",
-    "count": 8,
+    "note": "wakeone",
+    "count": 9,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T02:42:16.352Z",
+    "lastAt": "2026-07-26T12:12:45.927Z",
     "status": "pending"
   },
   {
@@ -10288,11 +10288,11 @@
     "group": "ALPHA DRIVE ONE",
     "cat": "K-idol",
     "gender": "M",
-    "dob": "",
+    "dob": "20011120",
     "note": "웨이크원 진짜 ㄹㅇ 좋음 한번만요ㅠㅠㅠ",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T01:11:58.905Z",
-    "lastAt": "2026-07-26T01:11:58.905Z",
+    "lastAt": "2026-07-26T12:09:26.374Z",
     "status": "pending"
   },
   {
@@ -12516,6 +12516,71 @@
     "count": 1,
     "firstAt": "2026-07-26T11:58:54.475Z",
     "lastAt": "2026-07-26T11:58:54.475Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:juun|hearts2hearts",
+    "name": "JUUN",
+    "group": "Hearts2hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20081203",
+    "note": "My one pick",
+    "count": 1,
+    "firstAt": "2026-07-26T12:03:08.473Z",
+    "lastAt": "2026-07-26T12:03:08.473Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:siwon|alphadriveone",
+    "name": "siwon",
+    "group": "alphadriveone",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20880205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:04:10.112Z",
+    "lastAt": "2026-07-26T12:04:10.112Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:지연/jiyeon|triples",
+    "name": "지연 / Jiyeon",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:08:05.595Z",
+    "lastAt": "2026-07-26T12:08:05.595Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:허중싱|솔로",
+    "name": "허중싱",
+    "group": "솔로",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20030808",
+    "note": "중싱이가너무보고싶어요….",
+    "count": 1,
+    "firstAt": "2026-07-26T12:13:12.418Z",
+    "lastAt": "2026-07-26T12:13:12.418Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:jiwoo|hearts2hearts",
+    "name": "Jiwoo",
+    "group": "Hearts2Hearts",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:15:25.371Z",
+    "lastAt": "2026-07-26T12:15:25.371Z",
     "status": "pending"
   }
 ]
