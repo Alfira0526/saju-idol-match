@@ -10450,5 +10450,18 @@
     "firstAt": "2026-07-26T02:02:31.924Z",
     "lastAt": "2026-07-26T02:02:31.924Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아민|epex",
+    "name": "아민",
+    "group": "epex",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:04:00.679Z",
+    "lastAt": "2026-07-26T02:04:00.679Z",
+    "status": "pending"
   }
 ]
