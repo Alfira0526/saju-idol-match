@@ -724,5 +724,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:한유진|and2ble",
+    "name": "한유진",
+    "group": "AND2BLE",
+    "count": 1,
+    "firstAt": "2026-07-26T09:19:12.868Z",
+    "lastAt": "2026-07-26T09:19:12.868Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
