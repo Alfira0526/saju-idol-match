@@ -754,5 +754,19 @@
       "활동중단멤버"
     ],
     "notes": []
+  },
+  {
+    "key": "er:사쿠야|nctwish",
+    "name": "사쿠야",
+    "group": "NCT WISH",
+    "count": 1,
+    "firstAt": "2026-07-26T10:58:49.595Z",
+    "lastAt": "2026-07-26T10:58:49.595Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
