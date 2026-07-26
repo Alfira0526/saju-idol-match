@@ -11165,5 +11165,18 @@
     "firstAt": "2026-07-26T04:56:04.901Z",
     "lastAt": "2026-07-26T04:56:04.901Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강예슬|keyveatz",
+    "name": "강예슬",
+    "group": "Keyveatz",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20061015",
+    "note": "AOMG",
+    "count": 1,
+    "firstAt": "2026-07-26T04:58:02.197Z",
+    "lastAt": "2026-07-26T04:58:02.197Z",
+    "status": "pending"
   }
 ]
