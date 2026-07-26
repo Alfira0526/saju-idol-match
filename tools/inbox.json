@@ -11672,5 +11672,18 @@
     "firstAt": "2026-07-26T07:17:20.281Z",
     "lastAt": "2026-07-26T07:17:20.281Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yx|riize",
+    "name": "Yx",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20030111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:18:10.831Z",
+    "lastAt": "2026-07-26T07:18:10.831Z",
+    "status": "pending"
   }
 ]
