@@ -692,5 +692,23 @@
     "notes": [
       "Ateez YouTube"
     ]
+  },
+  {
+    "key": "er:윤아|illit",
+    "name": "윤아",
+    "group": "ILLIT",
+    "count": 1,
+    "firstAt": "2026-07-26T05:27:01.746Z",
+    "lastAt": "2026-07-26T05:27:01.746Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20040115"
+    ],
+    "notes": [
+      "공식프로필, 사주 일주가 틀려서 제보드립니다"
+    ]
   }
 ]
