@@ -14532,5 +14532,18 @@
     "firstAt": "2026-07-26T20:06:18.768Z",
     "lastAt": "2026-07-26T20:06:18.768Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정윤|enhypen",
+    "name": "정윤",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T20:26:07.447Z",
+    "lastAt": "2026-07-26T20:26:07.447Z",
+    "status": "pending"
   }
 ]
