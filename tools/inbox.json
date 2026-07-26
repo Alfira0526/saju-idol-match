@@ -14623,5 +14623,18 @@
     "firstAt": "2026-07-26T22:24:40.953Z",
     "lastAt": "2026-07-26T22:24:40.953Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:플레이브|플레이브",
+    "name": "플레이브",
+    "group": "플레이브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T23:04:41.429Z",
+    "lastAt": "2026-07-26T23:04:41.429Z",
+    "status": "pending"
   }
 ]
