@@ -11360,5 +11360,18 @@
     "firstAt": "2026-07-26T06:08:29.703Z",
     "lastAt": "2026-07-26T06:08:29.703Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이리오|alphadriveone",
+    "name": "이리오",
+    "group": "ALPHA DRIVE ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020822",
+    "note": "잘생겼어요,,",
+    "count": 1,
+    "firstAt": "2026-07-26T06:12:47.550Z",
+    "lastAt": "2026-07-26T06:12:47.550Z",
+    "status": "pending"
   }
 ]
