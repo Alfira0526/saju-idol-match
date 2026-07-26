@@ -4141,9 +4141,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "wakeone",
-    "count": 9,
+    "count": 10,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T12:12:45.927Z",
+    "lastAt": "2026-07-26T12:58:54.448Z",
     "status": "pending"
   },
   {
@@ -10289,10 +10289,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20011120",
-    "note": "웨이크원 진짜 ㄹㅇ 좋음 한번만요ㅠㅠㅠ",
-    "count": 2,
+    "note": "wk1",
+    "count": 3,
     "firstAt": "2026-07-26T01:11:58.905Z",
-    "lastAt": "2026-07-26T12:09:26.374Z",
+    "lastAt": "2026-07-26T12:57:33.751Z",
     "status": "pending"
   },
   {
@@ -11368,10 +11368,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20020822",
-    "note": "잘생겼어요,,",
-    "count": 2,
+    "note": "제가 매우 좋아하는 연예인",
+    "count": 3,
     "firstAt": "2026-07-26T06:12:47.550Z",
-    "lastAt": "2026-07-26T12:21:24.321Z",
+    "lastAt": "2026-07-26T12:59:46.735Z",
     "status": "pending"
   },
   {
@@ -12672,6 +12672,58 @@
     "count": 1,
     "firstAt": "2026-07-26T12:47:28.137Z",
     "lastAt": "2026-07-26T12:47:28.137Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:薇娟、米妮、小娟、雨琦、舒華|idle",
+    "name": "薇娟、米妮、小娟、雨琦、舒華",
+    "group": "idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:52:38.782Z",
+    "lastAt": "2026-07-26T12:52:38.782Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:박원빈|idid",
+    "name": "박원빈",
+    "group": "IDID",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060419",
+    "note": "스타쉽 엔터테이먼트이고 데뷔스 플랜에서 데뷔한 예쁜 친구입니다! 다른 멤버들은 있는데 원빈이는 없더라구요…원빈이를 대중들에게 알리기위해 추천해요",
+    "count": 1,
+    "firstAt": "2026-07-26T12:52:39.947Z",
+    "lastAt": "2026-07-26T12:52:39.947Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:pika|riize",
+    "name": "pika",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:57:20.364Z",
+    "lastAt": "2026-07-26T12:57:20.364Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:wu|kickflip",
+    "name": "Wu",
+    "group": "kickflip",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:00:12.839Z",
+    "lastAt": "2026-07-26T13:00:12.839Z",
     "status": "pending"
   }
 ]
