@@ -10970,5 +10970,18 @@
     "firstAt": "2026-07-23T03:06:42.228Z",
     "lastAt": "2026-07-26T04:21:49.178Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김나경|트리플에스",
+    "name": "김나경",
+    "group": "트리플에스",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:23:55.428Z",
+    "lastAt": "2026-07-26T04:23:55.428Z",
+    "status": "pending"
   }
 ]
