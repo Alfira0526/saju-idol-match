@@ -10879,5 +10879,18 @@
     "firstAt": "2026-07-26T03:55:22.902Z",
     "lastAt": "2026-07-26T03:55:22.902Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:송우기|i-dle",
+    "name": "송우기",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990923",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:01:10.496Z",
+    "lastAt": "2026-07-26T04:01:10.496Z",
+    "status": "pending"
   }
 ]
