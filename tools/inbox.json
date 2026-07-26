@@ -11659,5 +11659,18 @@
     "firstAt": "2026-07-26T07:16:45.121Z",
     "lastAt": "2026-07-26T07:16:45.121Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김명수|infinite",
+    "name": "김명수",
+    "group": "infinite",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:17:20.281Z",
+    "lastAt": "2026-07-26T07:17:20.281Z",
+    "status": "pending"
   }
 ]
