@@ -12023,5 +12023,18 @@
     "firstAt": "2026-07-26T08:56:17.727Z",
     "lastAt": "2026-07-26T08:56:17.727Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:로재민|nct",
+    "name": "로재민",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000813",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:00:33.183Z",
+    "lastAt": "2026-07-26T09:00:33.183Z",
+    "status": "pending"
   }
 ]
