@@ -11581,5 +11581,18 @@
     "firstAt": "2026-07-26T07:01:48.347Z",
     "lastAt": "2026-07-26T07:01:48.347Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:winter|aespa",
+    "name": "winter",
+    "group": "aespa",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:02:56.812Z",
+    "lastAt": "2026-07-26T07:02:56.812Z",
+    "status": "pending"
   }
 ]
