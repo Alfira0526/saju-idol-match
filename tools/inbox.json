@@ -12062,5 +12062,18 @@
     "firstAt": "2026-07-26T09:19:42.302Z",
     "lastAt": "2026-07-26T09:19:42.302Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:onedoor|boynextdoor",
+    "name": "ONEDOOR",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080222",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:24:28.509Z",
+    "lastAt": "2026-07-26T09:24:28.509Z",
+    "status": "pending"
   }
 ]
