@@ -11685,5 +11685,18 @@
     "firstAt": "2026-07-26T07:18:10.831Z",
     "lastAt": "2026-07-26T07:18:10.831Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:momo|twice",
+    "name": "Momo",
+    "group": "Twice",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "19961109",
+    "note": "Jyp",
+    "count": 1,
+    "firstAt": "2026-07-26T07:18:57.873Z",
+    "lastAt": "2026-07-26T07:18:57.873Z",
+    "status": "pending"
   }
 ]
