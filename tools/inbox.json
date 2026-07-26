@@ -10307,5 +10307,18 @@
     "firstAt": "2026-07-22T20:29:53.269Z",
     "lastAt": "2026-07-26T01:16:19.704Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:b.i|b.i",
+    "name": "B.I",
+    "group": "B.I",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "961022",
+    "note": "131레이블",
+    "count": 1,
+    "firstAt": "2026-07-26T01:19:04.053Z",
+    "lastAt": "2026-07-26T01:19:04.053Z",
+    "status": "pending"
   }
 ]
