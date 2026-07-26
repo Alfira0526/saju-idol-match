@@ -10580,5 +10580,18 @@
     "firstAt": "2026-07-26T02:38:09.743Z",
     "lastAt": "2026-07-26T02:38:09.743Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:기타|(g)i-dle",
+    "name": "기타",
+    "group": "(G)I-DLE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20090221",
+    "note": "cube",
+    "count": 1,
+    "firstAt": "2026-07-26T02:45:04.491Z",
+    "lastAt": "2026-07-26T02:45:04.491Z",
+    "status": "pending"
   }
 ]
