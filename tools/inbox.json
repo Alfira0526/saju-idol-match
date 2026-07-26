@@ -760,10 +760,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040405",
-    "note": "유우시",
-    "count": 18,
+    "note": "Sm",
+    "count": 19,
     "firstAt": "2026-07-22T17:41:35.381Z",
-    "lastAt": "2026-07-25T09:47:54.806Z",
+    "lastAt": "2026-07-26T15:28:30.552Z",
     "status": "pending"
   },
   {
@@ -3646,10 +3646,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19960815",
-    "note": "원상이 귀여워 ! 밴드루시흥해라",
-    "count": 3,
+    "note": "미스틱스토리 소속 밴드",
+    "count": 4,
     "firstAt": "2026-07-23T04:29:26.603Z",
-    "lastAt": "2026-07-26T09:20:33.415Z",
+    "lastAt": "2026-07-26T15:22:08.778Z",
     "status": "pending"
   },
   {
@@ -8457,9 +8457,9 @@
     "gender": "M",
     "dob": "20020511",
     "note": "sm",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-23T00:46:33.706Z",
-    "lastAt": "2026-07-26T14:32:11.958Z",
+    "lastAt": "2026-07-26T15:27:47.548Z",
     "status": "pending"
   },
   {
@@ -9964,10 +9964,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030604",
-    "note": "모드하우스",
-    "count": 2,
+    "note": "아이덴티티 전원 넣어주세요…",
+    "count": 3,
     "firstAt": "2026-07-25T10:49:14.562Z",
-    "lastAt": "2026-07-26T04:46:21.290Z",
+    "lastAt": "2026-07-26T15:21:44.745Z",
     "status": "pending"
   },
   {
@@ -12382,10 +12382,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19940817",
-    "note": "",
-    "count": 1,
+    "note": "RBW 잘생긴 밴드입니다",
+    "count": 2,
     "firstAt": "2026-07-26T11:07:44.676Z",
-    "lastAt": "2026-07-26T11:07:44.676Z",
+    "lastAt": "2026-07-26T15:26:41.624Z",
     "status": "pending"
   },
   {
@@ -13725,6 +13725,71 @@
     "count": 1,
     "firstAt": "2026-07-26T15:20:25.010Z",
     "lastAt": "2026-07-26T15:20:25.010Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정성찬|riize",
+    "name": "정성찬",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010913",
+    "note": "오조하",
+    "count": 1,
+    "firstAt": "2026-07-26T15:22:04.310Z",
+    "lastAt": "2026-07-26T15:22:04.310Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:라이|nctwish",
+    "name": "라이",
+    "group": "nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991004",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:23:45.056Z",
+    "lastAt": "2026-07-26T15:23:45.056Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:신위|트리플에스",
+    "name": "신위",
+    "group": "트리플에스",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:24:39.056Z",
+    "lastAt": "2026-07-26T15:24:39.056Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:키노|펜타곤",
+    "name": "키노",
+    "group": "펜타곤",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980127",
+    "note": "내가 사랑해서",
+    "count": 1,
+    "firstAt": "2026-07-26T15:25:53.939Z",
+    "lastAt": "2026-07-26T15:25:53.939Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:남예준|plave",
+    "name": "남예준",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010912",
+    "note": "버추얼 아이돌은 안되려나요..ㅜㅜ",
+    "count": 1,
+    "firstAt": "2026-07-26T15:27:41.332Z",
+    "lastAt": "2026-07-26T15:27:41.332Z",
     "status": "pending"
   }
 ]
