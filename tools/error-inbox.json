@@ -619,14 +619,16 @@
     "key": "er:건호|cortis",
     "name": "건호",
     "group": "CORTIS",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T01:42:44.463Z",
-    "lastAt": "2026-07-26T01:42:44.463Z",
+    "lastAt": "2026-07-26T14:33:04.625Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 2
     },
-    "suggests": [],
+    "suggests": [
+      "20090214"
+    ],
     "notes": []
   },
   {
@@ -748,15 +750,17 @@
     "key": "er:건우|alphadriveone",
     "name": "건우",
     "group": "ALPHA DRIVE ONE",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-26T09:34:30.045Z",
-    "lastAt": "2026-07-26T09:52:05.986Z",
+    "lastAt": "2026-07-26T14:32:26.881Z",
     "status": "pending",
     "fields": {
-      "비실존·중복": 5
+      "비실존·중복": 5,
+      "생년월일": 1
     },
     "suggests": [
-      "활동중단멤버"
+      "활동중단멤버",
+      "멤버가 아님"
     ],
     "notes": []
   },
