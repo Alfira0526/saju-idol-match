@@ -11529,5 +11529,18 @@
     "firstAt": "2026-07-26T06:44:11.777Z",
     "lastAt": "2026-07-26T06:44:11.777Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:卿|nct",
+    "name": "卿",
+    "group": "NCT",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "260605",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:48:19.996Z",
+    "lastAt": "2026-07-26T06:48:19.996Z",
+    "status": "pending"
   }
 ]
