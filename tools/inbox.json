@@ -12205,5 +12205,18 @@
     "firstAt": "2026-07-26T10:03:12.332Z",
     "lastAt": "2026-07-26T10:03:12.332Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:임현식|비투비",
+    "name": "임현식",
+    "group": "비투비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:06:53.710Z",
+    "lastAt": "2026-07-26T10:06:53.710Z",
+    "status": "pending"
   }
 ]
