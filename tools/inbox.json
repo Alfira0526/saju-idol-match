@@ -12309,5 +12309,18 @@
     "firstAt": "2026-07-23T04:18:35.518Z",
     "lastAt": "2026-07-26T10:42:52.208Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:차웅기|ahof",
+    "name": "차웅기",
+    "group": "Ahof",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020423",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:44:32.070Z",
+    "lastAt": "2026-07-26T10:44:32.070Z",
+    "status": "pending"
   }
 ]
