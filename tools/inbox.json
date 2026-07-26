@@ -12478,5 +12478,18 @@
     "firstAt": "2026-07-26T11:54:39.136Z",
     "lastAt": "2026-07-26T11:54:39.136Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:xinlong|alphadriveone",
+    "name": "Xinlong",
+    "group": "Alpha drive one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050311",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T11:58:21.548Z",
+    "lastAt": "2026-07-26T11:58:21.548Z",
+    "status": "pending"
   }
 ]
