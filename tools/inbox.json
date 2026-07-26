@@ -11022,5 +11022,18 @@
     "firstAt": "2026-07-26T04:29:51.883Z",
     "lastAt": "2026-07-26T04:29:51.883Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사샤|ifeye",
+    "name": "사샤",
+    "group": "ifeye",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20090520",
+    "note": "하이헷",
+    "count": 1,
+    "firstAt": "2026-07-26T04:31:08.033Z",
+    "lastAt": "2026-07-26T04:31:08.033Z",
+    "status": "pending"
   }
 ]
