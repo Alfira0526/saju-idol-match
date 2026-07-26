@@ -10645,5 +10645,18 @@
     "firstAt": "2026-07-22T18:38:40.266Z",
     "lastAt": "2026-07-26T02:55:52.190Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김민재|idid아이딧스타쉽",
+    "name": "김민재",
+    "group": "IDID 아이딧 스타쉽",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050817",
+    "note": "왜 아이딧 4명밖에없죠",
+    "count": 1,
+    "firstAt": "2026-07-26T03:06:09.079Z",
+    "lastAt": "2026-07-26T03:06:09.079Z",
+    "status": "pending"
   }
 ]
