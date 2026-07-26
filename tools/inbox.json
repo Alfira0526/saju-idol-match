@@ -11282,5 +11282,18 @@
     "firstAt": "2026-07-26T05:45:08.818Z",
     "lastAt": "2026-07-26T05:45:08.818Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장한음|장한음(솔로",
+    "name": "장한음",
+    "group": "장한음 (솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041221",
+    "note": "소속사: ES NATION",
+    "count": 1,
+    "firstAt": "2026-07-26T05:47:21.902Z",
+    "lastAt": "2026-07-26T05:47:21.902Z",
+    "status": "pending"
   }
 ]
