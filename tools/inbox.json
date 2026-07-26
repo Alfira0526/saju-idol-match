@@ -11048,5 +11048,18 @@
     "firstAt": "2026-07-26T04:37:47.722Z",
     "lastAt": "2026-07-26T04:37:47.722Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:토모야|nexz",
+    "name": "토모야",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060119",
+    "note": "JYP",
+    "count": 2,
+    "firstAt": "2026-07-24T03:26:20.327Z",
+    "lastAt": "2026-07-26T04:46:17.938Z",
+    "status": "pending"
   }
 ]
