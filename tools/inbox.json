@@ -12374,5 +12374,18 @@
     "firstAt": "2026-07-26T10:53:22.072Z",
     "lastAt": "2026-07-26T10:53:22.072Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진용훈|onewe",
+    "name": "진용훈",
+    "group": "ONEWE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940817",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T11:07:44.676Z",
+    "lastAt": "2026-07-26T11:07:44.676Z",
+    "status": "pending"
   }
 ]
