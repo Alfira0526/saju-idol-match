@@ -10190,5 +10190,18 @@
     "firstAt": "2026-07-26T00:15:32.706Z",
     "lastAt": "2026-07-26T00:15:32.706Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:zhouxinyu|triples",
+    "name": "Zhou Xinyu",
+    "group": "TripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T00:21:31.359Z",
+    "lastAt": "2026-07-26T00:21:31.359Z",
+    "status": "pending"
   }
 ]
