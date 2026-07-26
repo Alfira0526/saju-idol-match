@@ -11217,5 +11217,18 @@
     "firstAt": "2026-07-26T05:07:11.411Z",
     "lastAt": "2026-07-26T05:07:11.411Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:변백현|solo",
+    "name": "변백현",
+    "group": "solo",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920506",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T05:14:58.617Z",
+    "lastAt": "2026-07-26T05:14:58.617Z",
+    "status": "pending"
   }
 ]
