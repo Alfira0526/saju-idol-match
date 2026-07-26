@@ -12881,5 +12881,57 @@
     "firstAt": "2026-07-26T13:25:09.036Z",
     "lastAt": "2026-07-26T13:25:09.036Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:coco|nctwish",
+    "name": "coco",
+    "group": "nctwish",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:31:13.900Z",
+    "lastAt": "2026-07-26T13:31:13.900Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:송은석|라이즈",
+    "name": "송은석",
+    "group": "라이즈",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010319",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:32:31.633Z",
+    "lastAt": "2026-07-26T13:32:31.633Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:옹성우|워너원/배우",
+    "name": "옹성우",
+    "group": "워너원 / 배우",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950825",
+    "note": "판타지오",
+    "count": 1,
+    "firstAt": "2026-07-26T13:35:35.646Z",
+    "lastAt": "2026-07-26T13:35:35.646Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김준서|알파드라이브원",
+    "name": "김준서",
+    "group": "알파드라이브원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20011120",
+    "note": "잘생김 인성바름 똑똑함 착실함",
+    "count": 1,
+    "firstAt": "2026-07-26T13:36:35.546Z",
+    "lastAt": "2026-07-26T13:36:35.546Z",
+    "status": "pending"
   }
 ]
