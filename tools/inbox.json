@@ -11516,5 +11516,18 @@
     "firstAt": "2026-07-26T06:41:38.832Z",
     "lastAt": "2026-07-26T06:41:38.832Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:shuhua슈화|i-dle",
+    "name": "Shuhua 슈화",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:44:11.777Z",
+    "lastAt": "2026-07-26T06:44:11.777Z",
+    "status": "pending"
   }
 ]
