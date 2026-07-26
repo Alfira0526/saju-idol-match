@@ -11802,5 +11802,18 @@
     "firstAt": "2026-07-26T07:43:31.883Z",
     "lastAt": "2026-07-26T07:43:31.883Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정재현|nct",
+    "name": "정재현",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970214",
+    "note": "NCT 127 멤버",
+    "count": 1,
+    "firstAt": "2026-07-26T07:48:50.301Z",
+    "lastAt": "2026-07-26T07:48:50.301Z",
+    "status": "pending"
   }
 ]
