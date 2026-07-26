@@ -11399,5 +11399,18 @@
     "firstAt": "2026-07-26T06:21:57.529Z",
     "lastAt": "2026-07-26T06:21:57.529Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박준일|솔로",
+    "name": "박준일",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:23:11.543Z",
+    "lastAt": "2026-07-26T06:23:11.543Z",
+    "status": "pending"
   }
 ]
