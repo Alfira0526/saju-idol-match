@@ -10528,5 +10528,18 @@
     "firstAt": "2026-07-26T02:26:29.131Z",
     "lastAt": "2026-07-26T02:26:29.131Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김상균|jbj",
+    "name": "김상균",
+    "group": "JBJ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950523",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:26:56.782Z",
+    "lastAt": "2026-07-26T02:26:56.782Z",
+    "status": "pending"
   }
 ]
