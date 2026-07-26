@@ -12121,11 +12121,11 @@
     "group": "tripleS",
     "cat": "K-idol",
     "gender": "F",
-    "dob": "",
-    "note": "",
-    "count": 1,
+    "dob": "20040213",
+    "note": "트리플에스 신위, 지연 2명 빠져있음",
+    "count": 2,
     "firstAt": "2026-07-26T09:50:20.159Z",
-    "lastAt": "2026-07-26T09:50:20.159Z",
+    "lastAt": "2026-07-26T10:18:31.239Z",
     "status": "pending"
   },
   {
