@@ -969,9 +969,9 @@
     "gender": "M",
     "dob": "20030628",
     "note": "내최애인데없어서",
-    "count": 13,
+    "count": 14,
     "firstAt": "2026-07-22T18:41:08.724Z",
-    "lastAt": "2026-07-26T07:37:27.822Z",
+    "lastAt": "2026-07-26T13:15:37.787Z",
     "status": "pending"
   },
   {
@@ -5493,9 +5493,9 @@
     "gender": "M",
     "dob": "040209",
     "note": "좋아하는 그룹",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-23T03:42:06.298Z",
-    "lastAt": "2026-07-26T07:53:36.179Z",
+    "lastAt": "2026-07-26T13:18:44.833Z",
     "status": "pending"
   },
   {
@@ -12776,6 +12776,84 @@
     "count": 1,
     "firstAt": "2026-07-26T13:09:48.022Z",
     "lastAt": "2026-07-26T13:09:48.022Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:吳怡萱|idle",
+    "name": "吳怡萱",
+    "group": "idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20010708",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:11:29.203Z",
+    "lastAt": "2026-07-26T13:11:29.203Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유용하|위아이",
+    "name": "유용하",
+    "group": "위아이",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:13:39.224Z",
+    "lastAt": "2026-07-26T13:13:39.224Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:sphynx|triples",
+    "name": "sphynx",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20060921",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:15:00.620Z",
+    "lastAt": "2026-07-26T13:15:00.620Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:리키|틴탑(teentop)",
+    "name": "리키",
+    "group": "틴탑 (Teentop)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950227",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:17:46.180Z",
+    "lastAt": "2026-07-26T13:17:46.180Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:solar|mamamoo",
+    "name": "SOLAR",
+    "group": "MAMAMOO",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19910221",
+    "note": "RBW",
+    "count": 1,
+    "firstAt": "2026-07-26T13:19:34.505Z",
+    "lastAt": "2026-07-26T13:19:34.505Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:parkjeaongwoo|treasure",
+    "name": "PARK JEAONGWOO",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040928",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:20:40.581Z",
+    "lastAt": "2026-07-26T13:20:40.581Z",
     "status": "pending"
   }
 ]
