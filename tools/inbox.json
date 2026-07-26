@@ -12491,5 +12491,18 @@
     "firstAt": "2026-07-26T11:58:21.548Z",
     "lastAt": "2026-07-26T11:58:21.548Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:naj|aespanct",
+    "name": "Naj",
+    "group": "Aespa NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19991029",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-26T11:58:40.273Z",
+    "lastAt": "2026-07-26T11:58:40.273Z",
+    "status": "pending"
   }
 ]
