@@ -12335,5 +12335,18 @@
     "firstAt": "2026-07-23T02:25:10.508Z",
     "lastAt": "2026-07-26T10:45:11.667Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박한|아홉(ahof)",
+    "name": "박한",
+    "group": "아홉(AHOF)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030925",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:45:49.767Z",
+    "lastAt": "2026-07-26T10:45:49.767Z",
+    "status": "pending"
   }
 ]
