@@ -11880,5 +11880,18 @@
     "firstAt": "2026-07-26T08:22:26.697Z",
     "lastAt": "2026-07-26T08:22:26.697Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:taeyeon,chorong,miyeon|i-dle,girlsgeneration,apink",
+    "name": "Taeyeon,chorong,miyeon",
+    "group": "I-dle,girls generation,apink",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T08:31:24.579Z",
+    "lastAt": "2026-07-26T08:31:24.579Z",
+    "status": "pending"
   }
 ]
