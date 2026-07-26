@@ -12075,5 +12075,18 @@
     "firstAt": "2026-07-26T09:24:28.509Z",
     "lastAt": "2026-07-26T09:24:28.509Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuma|&team",
+    "name": "YUMA",
+    "group": "&TEAM",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20040207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:33:10.546Z",
+    "lastAt": "2026-07-26T09:33:10.546Z",
+    "status": "pending"
   }
 ]
