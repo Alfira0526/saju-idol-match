@@ -10892,5 +10892,18 @@
     "firstAt": "2026-07-26T04:01:10.496Z",
     "lastAt": "2026-07-26T04:01:10.496Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:주산니|nctwish",
+    "name": "주산니",
+    "group": "nctwish",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:04:31.574Z",
+    "lastAt": "2026-07-26T04:04:31.574Z",
+    "status": "pending"
   }
 ]
