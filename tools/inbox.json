@@ -11100,5 +11100,18 @@
     "firstAt": "2026-07-26T04:50:44.752Z",
     "lastAt": "2026-07-26T04:50:44.752Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:성한빈|zerobaseone",
+    "name": "성한빈",
+    "group": "ZEROBASEONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010613",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:51:51.640Z",
+    "lastAt": "2026-07-26T04:51:51.640Z",
+    "status": "pending"
   }
 ]
