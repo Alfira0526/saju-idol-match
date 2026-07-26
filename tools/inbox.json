@@ -10606,5 +10606,18 @@
     "firstAt": "2026-07-26T02:45:18.052Z",
     "lastAt": "2026-07-26T02:45:18.052Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:금준현|tiot",
+    "name": "금준현",
+    "group": "TIOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040115",
+    "note": "내 최애",
+    "count": 1,
+    "firstAt": "2026-07-26T02:52:17.382Z",
+    "lastAt": "2026-07-26T02:52:17.382Z",
+    "status": "pending"
   }
 ]
