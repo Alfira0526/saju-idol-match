@@ -7338,10 +7338,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19991016",
-    "note": "UNCORE",
-    "count": 5,
+    "note": "uncore",
+    "count": 6,
     "firstAt": "2026-07-25T04:57:31.753Z",
-    "lastAt": "2026-07-26T16:14:46.185Z",
+    "lastAt": "2026-07-26T20:07:36.136Z",
     "status": "pending"
   },
   {
@@ -14505,6 +14505,32 @@
     "count": 1,
     "firstAt": "2026-07-26T19:30:13.476Z",
     "lastAt": "2026-07-26T19:30:13.476Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:stevenkim|ahof",
+    "name": "stevenkim",
+    "group": "ahof",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000117",
+    "note": "fnf",
+    "count": 1,
+    "firstAt": "2026-07-26T20:02:33.043Z",
+    "lastAt": "2026-07-26T20:02:33.043Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유준|xikers",
+    "name": "유준",
+    "group": "xikers",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051005",
+    "note": "제가좋아해요…",
+    "count": 1,
+    "firstAt": "2026-07-26T20:06:18.768Z",
+    "lastAt": "2026-07-26T20:06:18.768Z",
     "status": "pending"
   }
 ]
