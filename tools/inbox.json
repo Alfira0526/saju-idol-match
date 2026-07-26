@@ -12101,5 +12101,18 @@
     "firstAt": "2026-07-26T09:36:29.245Z",
     "lastAt": "2026-07-26T09:36:29.245Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김요한|엑스원",
+    "name": "김요한",
+    "group": "엑스원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990922",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:46:50.876Z",
+    "lastAt": "2026-07-26T09:46:50.876Z",
+    "status": "pending"
   }
 ]
