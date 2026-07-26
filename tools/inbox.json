@@ -12218,5 +12218,18 @@
     "firstAt": "2026-07-26T10:06:53.710Z",
     "lastAt": "2026-07-26T10:06:53.710Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuunnii|exo",
+    "name": "Yuunnii",
+    "group": "EXO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:09:45.531Z",
+    "lastAt": "2026-07-26T10:09:45.531Z",
+    "status": "pending"
   }
 ]
