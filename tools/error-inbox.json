@@ -614,5 +614,19 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:건호|cortis",
+    "name": "건호",
+    "group": "CORTIS",
+    "count": 1,
+    "firstAt": "2026-07-26T01:42:44.463Z",
+    "lastAt": "2026-07-26T01:42:44.463Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": []
   }
 ]
