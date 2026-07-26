@@ -5116,9 +5116,9 @@
     "gender": "",
     "dob": "19921204",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T00:51:52.686Z",
-    "lastAt": "2026-07-25T00:51:52.686Z",
+    "lastAt": "2026-07-26T15:30:58.751Z",
     "status": "pending"
   },
   {
@@ -9536,9 +9536,9 @@
     "gender": "M",
     "dob": "20070320",
     "note": "최애",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-22T18:30:46.419Z",
-    "lastAt": "2026-07-25T09:25:05.681Z",
+    "lastAt": "2026-07-26T15:36:41.906Z",
     "status": "pending"
   },
   {
@@ -11642,9 +11642,9 @@
     "gender": "M",
     "dob": "20000124",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-22T17:58:41.647Z",
-    "lastAt": "2026-07-26T07:16:30.807Z",
+    "lastAt": "2026-07-26T15:33:39.622Z",
     "status": "pending"
   },
   {
@@ -13790,6 +13790,71 @@
     "count": 1,
     "firstAt": "2026-07-26T15:27:41.332Z",
     "lastAt": "2026-07-26T15:27:41.332Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:wonwoo|seventeen",
+    "name": "wonwoo",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:31:56.306Z",
+    "lastAt": "2026-07-26T15:31:56.306Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조우안신|alphadriveone",
+    "name": "조우안신",
+    "group": "ALPHA DRIVE ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061225",
+    "note": "wake one",
+    "count": 1,
+    "firstAt": "2026-07-26T15:33:12.411Z",
+    "lastAt": "2026-07-26T15:33:12.411Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마사토|베이온",
+    "name": "마사토",
+    "group": "베이온",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030921",
+    "note": "보이즈플래닛2 핑크머리 마사토 드디어 데뷔했습니다",
+    "count": 1,
+    "firstAt": "2026-07-26T15:34:00.674Z",
+    "lastAt": "2026-07-26T15:34:00.674Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:로완|모디세이(modyssey)",
+    "name": "로완",
+    "group": "모디세이(Modyssey)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021013",
+    "note": "Onecead",
+    "count": 1,
+    "firstAt": "2026-07-26T15:34:54.034Z",
+    "lastAt": "2026-07-26T15:34:54.034Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:하루|엑스러브",
+    "name": "하루",
+    "group": "엑스러브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T15:36:42.508Z",
+    "lastAt": "2026-07-26T15:36:42.508Z",
     "status": "pending"
   }
 ]
