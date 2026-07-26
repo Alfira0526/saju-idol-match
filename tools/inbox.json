@@ -11828,5 +11828,18 @@
     "firstAt": "2026-07-26T07:49:09.543Z",
     "lastAt": "2026-07-26T07:49:09.543Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김선우|enhypen",
+    "name": "김선우",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:57:03.769Z",
+    "lastAt": "2026-07-26T07:57:03.769Z",
+    "status": "pending"
   }
 ]
