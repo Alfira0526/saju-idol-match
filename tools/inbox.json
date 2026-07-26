@@ -12114,5 +12114,18 @@
     "firstAt": "2026-07-26T09:46:50.876Z",
     "lastAt": "2026-07-26T09:46:50.876Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지연|triples",
+    "name": "지연",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:50:20.159Z",
+    "lastAt": "2026-07-26T09:50:20.159Z",
+    "status": "pending"
   }
 ]
