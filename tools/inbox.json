@@ -11984,5 +11984,18 @@
     "firstAt": "2026-07-26T08:49:52.496Z",
     "lastAt": "2026-07-26T08:49:52.496Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:零杠|nctdream",
+    "name": "零杠",
+    "group": "NCTDream",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20081227",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T08:50:28.686Z",
+    "lastAt": "2026-07-26T08:50:28.686Z",
+    "status": "pending"
   }
 ]
