@@ -633,16 +633,20 @@
     "key": "er:시온|billlie",
     "name": "시온",
     "group": "Billlie",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-26T01:49:16.903Z",
-    "lastAt": "2026-07-26T03:26:35.198Z",
+    "lastAt": "2026-07-26T11:12:18.355Z",
     "status": "pending",
     "fields": {
-      "생년월일": 2
+      "생년월일": 2,
+      "활동명": 1
     },
-    "suggests": [],
+    "suggests": [
+      "션"
+    ],
     "notes": [
-      "시온이 누구죠"
+      "시온이 누구죠",
+      "나무위키"
     ]
   },
   {
