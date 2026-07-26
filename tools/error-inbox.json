@@ -743,14 +743,16 @@
     "key": "er:건우|alphadriveone",
     "name": "건우",
     "group": "ALPHA DRIVE ONE",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T09:34:30.045Z",
-    "lastAt": "2026-07-26T09:34:30.045Z",
+    "lastAt": "2026-07-26T09:46:43.017Z",
     "status": "pending",
     "fields": {
-      "비실존·중복": 1
+      "비실존·중복": 2
     },
-    "suggests": [],
+    "suggests": [
+      "활동중단멤버"
+    ],
     "notes": []
   }
 ]
