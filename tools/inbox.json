@@ -12270,5 +12270,18 @@
     "firstAt": "2026-07-26T10:21:35.104Z",
     "lastAt": "2026-07-26T10:21:35.104Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김세정|ioi아이오아이",
+    "name": "김세정",
+    "group": "IOI 아이오아이",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19960828",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T10:26:06.831Z",
+    "lastAt": "2026-07-26T10:26:06.831Z",
+    "status": "pending"
   }
 ]
