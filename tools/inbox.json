@@ -10185,10 +10185,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040102",
-    "note": "",
-    "count": 1,
+    "note": "AND2BLE 멤버인데 아예 누락됨",
+    "count": 2,
     "firstAt": "2026-07-26T00:15:32.706Z",
-    "lastAt": "2026-07-26T00:15:32.706Z",
+    "lastAt": "2026-07-26T09:22:06.623Z",
     "status": "pending"
   },
   {
