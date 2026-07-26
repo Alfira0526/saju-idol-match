@@ -11906,5 +11906,18 @@
     "firstAt": "2026-07-26T08:37:52.061Z",
     "lastAt": "2026-07-26T08:37:52.061Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:호시|세븐틴",
+    "name": "호시",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T08:40:04.117Z",
+    "lastAt": "2026-07-26T08:40:04.117Z",
+    "status": "pending"
   }
 ]
