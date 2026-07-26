@@ -12166,5 +12166,18 @@
     "firstAt": "2026-07-26T09:57:05.972Z",
     "lastAt": "2026-07-26T09:57:05.972Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:수런|jyp/modyssey",
+    "name": "수런",
+    "group": "JYP/ MODYSSEY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041109",
+    "note": "제 최애예요",
+    "count": 1,
+    "firstAt": "2026-07-26T10:00:14.302Z",
+    "lastAt": "2026-07-26T10:00:14.302Z",
+    "status": "pending"
   }
 ]
