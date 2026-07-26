@@ -12153,5 +12153,18 @@
     "firstAt": "2026-07-26T09:54:57.269Z",
     "lastAt": "2026-07-26T09:54:57.269Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지우|하츠투하츠/sm",
+    "name": "지우",
+    "group": "하츠투하츠 / sm",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060907",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:57:05.972Z",
+    "lastAt": "2026-07-26T09:57:05.972Z",
+    "status": "pending"
   }
 ]
