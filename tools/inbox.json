@@ -4141,9 +4141,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "wakeone",
-    "count": 12,
+    "count": 13,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T14:03:34.386Z",
+    "lastAt": "2026-07-26T14:15:52.754Z",
     "status": "pending"
   },
   {
@@ -7456,9 +7456,9 @@
     "gender": "M",
     "dob": "20040102",
     "note": "FNC",
-    "count": 4,
+    "count": 6,
     "firstAt": "2026-07-25T05:07:11.296Z",
-    "lastAt": "2026-07-26T09:49:23.013Z",
+    "lastAt": "2026-07-26T14:12:29.646Z",
     "status": "pending"
   },
   {
@@ -10744,10 +10744,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20071005",
-    "note": "스타쉽",
-    "count": 4,
+    "note": "스타쉽에서 젤잘생김",
+    "count": 5,
     "firstAt": "2026-07-22T17:30:54.932Z",
-    "lastAt": "2026-07-26T07:41:11.110Z",
+    "lastAt": "2026-07-26T14:18:13.818Z",
     "status": "pending"
   },
   {
@@ -13153,6 +13153,84 @@
     "count": 1,
     "firstAt": "2026-07-26T14:10:28.782Z",
     "lastAt": "2026-07-26T14:10:28.782Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:강현구|onewe",
+    "name": "강현구",
+    "group": "ONEWE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19981124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:12:15.015Z",
+    "lastAt": "2026-07-26T14:12:15.015Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유회승|엔플라잉",
+    "name": "유회승",
+    "group": "엔플라잉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950228",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:15:41.811Z",
+    "lastAt": "2026-07-26T14:15:41.811Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김준규|treasure",
+    "name": "김준규",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000909",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-26T14:19:01.444Z",
+    "lastAt": "2026-07-26T14:19:01.444Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:한태산|보이넥스트도어",
+    "name": "한태산",
+    "group": "보이넥스트도어",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040810",
+    "note": "천상아이돌",
+    "count": 1,
+    "firstAt": "2026-07-26T14:19:20.643Z",
+    "lastAt": "2026-07-26T14:19:20.643Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:shermingchow|alphadriveone",
+    "name": "Sherming Chow",
+    "group": "Alpha Drive One",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19801031",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:19:52.749Z",
+    "lastAt": "2026-07-26T14:19:52.749Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:윤지성|워너원",
+    "name": "윤지성",
+    "group": "워너원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910308",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:20:05.653Z",
+    "lastAt": "2026-07-26T14:20:05.653Z",
     "status": "pending"
   }
 ]
