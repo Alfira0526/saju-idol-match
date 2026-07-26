@@ -10255,5 +10255,18 @@
     "firstAt": "2026-07-26T00:45:14.744Z",
     "lastAt": "2026-07-26T00:45:14.744Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:葉舒華|i-dle",
+    "name": "葉舒華",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20000106",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T01:02:31.052Z",
+    "lastAt": "2026-07-26T01:02:31.052Z",
+    "status": "pending"
   }
 ]
