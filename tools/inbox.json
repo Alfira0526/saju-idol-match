@@ -12036,5 +12036,18 @@
     "firstAt": "2026-07-26T09:00:33.183Z",
     "lastAt": "2026-07-26T09:00:33.183Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:13866|nct",
+    "name": "13866",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20041204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T09:05:31.290Z",
+    "lastAt": "2026-07-26T09:05:31.290Z",
+    "status": "pending"
   }
 ]
