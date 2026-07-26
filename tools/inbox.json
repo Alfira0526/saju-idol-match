@@ -12049,5 +12049,18 @@
     "firstAt": "2026-07-26T09:05:31.290Z",
     "lastAt": "2026-07-26T09:05:31.290Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사노유다이|ini",
+    "name": "사노유다이",
+    "group": "INI",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20001010",
+    "note": "라포네라는 대형 소속사에 소속되어있습니다",
+    "count": 1,
+    "firstAt": "2026-07-26T09:19:42.302Z",
+    "lastAt": "2026-07-26T09:19:42.302Z",
+    "status": "pending"
   }
 ]
