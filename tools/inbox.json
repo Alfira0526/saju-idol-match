@@ -969,9 +969,9 @@
     "gender": "M",
     "dob": "20030628",
     "note": "내최애인데없어서",
-    "count": 14,
+    "count": 15,
     "firstAt": "2026-07-22T18:41:08.724Z",
-    "lastAt": "2026-07-26T13:15:37.787Z",
+    "lastAt": "2026-07-26T14:29:42.355Z",
     "status": "pending"
   },
   {
@@ -3672,10 +3672,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20021231",
-    "note": "",
-    "count": 1,
+    "note": "씨제스 스튜디오",
+    "count": 2,
     "firstAt": "2026-07-24T07:38:56.630Z",
-    "lastAt": "2026-07-24T07:38:56.630Z",
+    "lastAt": "2026-07-26T14:21:16.040Z",
     "status": "pending"
   },
   {
@@ -8457,9 +8457,9 @@
     "gender": "M",
     "dob": "20020511",
     "note": "SM/ 엔시티나머지멤도채워주세용❤︎",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-23T00:46:33.706Z",
-    "lastAt": "2026-07-26T13:29:37.083Z",
+    "lastAt": "2026-07-26T14:22:40.656Z",
     "status": "pending"
   },
   {
@@ -10393,10 +10393,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20091009",
-    "note": "유명함",
-    "count": 1,
+    "note": "SM",
+    "count": 2,
     "firstAt": "2026-07-26T01:56:30.566Z",
-    "lastAt": "2026-07-26T01:56:30.566Z",
+    "lastAt": "2026-07-26T14:26:00.916Z",
     "status": "pending"
   },
   {
@@ -11329,10 +11329,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20050621",
-    "note": "사랑함",
-    "count": 6,
+    "note": "SM엔터테인먼트",
+    "count": 7,
     "firstAt": "2026-07-22T17:44:53.218Z",
-    "lastAt": "2026-07-26T14:07:34.562Z",
+    "lastAt": "2026-07-26T14:26:47.007Z",
     "status": "pending"
   },
   {
@@ -13231,6 +13231,97 @@
     "count": 1,
     "firstAt": "2026-07-26T14:20:05.653Z",
     "lastAt": "2026-07-26T14:20:05.653Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조원상|루시/lucy",
+    "name": "조원상",
+    "group": "루시/LUCY",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19960815",
+    "note": "미스틱/저도최애와의궁합을보고싶습니다제발요..",
+    "count": 1,
+    "firstAt": "2026-07-26T14:21:04.082Z",
+    "lastAt": "2026-07-26T14:21:04.082Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:wms|bonbon.",
+    "name": "wms",
+    "group": "Bonbon.",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20001211",
+    "note": "前Jo1멤버",
+    "count": 1,
+    "firstAt": "2026-07-26T14:21:15.254Z",
+    "lastAt": "2026-07-26T14:21:15.254Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:전이정|whib",
+    "name": "전이정",
+    "group": "WHIB",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030908",
+    "note": "Really like him <3",
+    "count": 1,
+    "firstAt": "2026-07-26T14:22:20.716Z",
+    "lastAt": "2026-07-26T14:22:20.716Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:전이정|휘브",
+    "name": "전이정",
+    "group": "휘브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030908",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:22:34.840Z",
+    "lastAt": "2026-07-26T14:22:34.840Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:황은수|idntt",
+    "name": "황은수",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090610",
+    "note": "모드하우스 소속 유일 남돌입니다ㅠㅜㅠ 모든멤버 등록 원해여…",
+    "count": 1,
+    "firstAt": "2026-07-26T14:23:53.493Z",
+    "lastAt": "2026-07-26T14:23:53.493Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:小嘟|alphadriveone",
+    "name": "小嘟",
+    "group": "Alphadriveone",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070501",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:25:13.208Z",
+    "lastAt": "2026-07-26T14:25:13.208Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이기욱|onewe",
+    "name": "이기욱",
+    "group": "ONEWE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T14:29:26.922Z",
+    "lastAt": "2026-07-26T14:29:26.922Z",
     "status": "pending"
   }
 ]
