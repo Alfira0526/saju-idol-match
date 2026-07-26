@@ -11919,5 +11919,18 @@
     "firstAt": "2026-07-26T08:40:04.117Z",
     "lastAt": "2026-07-26T08:40:04.117Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제임스|코르티스",
+    "name": "제임스",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-23T06:52:50.855Z",
+    "lastAt": "2026-07-26T08:40:08.253Z",
+    "status": "pending"
   }
 ]
