@@ -12933,5 +12933,44 @@
     "firstAt": "2026-07-26T13:36:35.546Z",
     "lastAt": "2026-07-26T13:36:35.546Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hoshi|seventeen",
+    "name": "hoshi",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:43:21.178Z",
+    "lastAt": "2026-07-26T13:43:21.178Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:yan|riize",
+    "name": "Yan",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060315",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:46:57.262Z",
+    "lastAt": "2026-07-26T13:46:57.262Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:earn|세븐틴",
+    "name": "Earn",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T13:47:44.702Z",
+    "lastAt": "2026-07-26T13:47:44.702Z",
+    "status": "pending"
   }
 ]
