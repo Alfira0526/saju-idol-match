@@ -658,5 +658,21 @@
     },
     "suggests": [],
     "notes": []
+  },
+  {
+    "key": "er:계훈|kickflip",
+    "name": "계훈",
+    "group": "KickFlip",
+    "count": 1,
+    "firstAt": "2026-07-26T04:08:20.434Z",
+    "lastAt": "2026-07-26T04:08:20.434Z",
+    "status": "pending",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20100907"
+    ],
+    "notes": []
   }
 ]
