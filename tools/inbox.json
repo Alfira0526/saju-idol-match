@@ -10359,5 +10359,18 @@
     "firstAt": "2026-07-26T01:35:54.834Z",
     "lastAt": "2026-07-26T01:35:54.834Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:wms|jo1",
+    "name": "wms",
+    "group": "JO1",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T01:46:39.901Z",
+    "lastAt": "2026-07-26T01:46:39.901Z",
+    "status": "pending"
   }
 ]
