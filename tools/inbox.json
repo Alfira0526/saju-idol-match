@@ -11412,5 +11412,18 @@
     "firstAt": "2026-07-26T06:23:11.543Z",
     "lastAt": "2026-07-26T06:23:11.543Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jjeu-i|treasure",
+    "name": "Jjeu-i",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:27:55.185Z",
+    "lastAt": "2026-07-26T06:27:55.185Z",
+    "status": "pending"
   }
 ]
