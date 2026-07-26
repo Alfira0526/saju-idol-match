@@ -917,5 +917,19 @@
     "firstAt": "2026-07-26T15:21:31.209Z",
     "lastAt": "2026-07-26T15:21:31.209Z",
     "status": "pending"
+  },
+  {
+    "key": "er:윤지성|워너원",
+    "name": "윤지성",
+    "group": "워너원",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-26T19:05:42.887Z",
+    "lastAt": "2026-07-26T19:05:42.887Z",
+    "status": "pending"
   }
 ]
