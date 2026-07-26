@@ -10216,5 +10216,18 @@
     "firstAt": "2026-07-23T00:34:59.775Z",
     "lastAt": "2026-07-26T00:24:43.052Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예왕|epex",
+    "name": "예왕",
+    "group": "Epex",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050312",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T00:27:03.259Z",
+    "lastAt": "2026-07-26T00:27:03.259Z",
+    "status": "pending"
   }
 ]
