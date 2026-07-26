@@ -10203,5 +10203,18 @@
     "firstAt": "2026-07-26T00:21:31.359Z",
     "lastAt": "2026-07-26T00:21:31.359Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김희주|idntt",
+    "name": "김희주",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061025",
+    "note": "모드하우스",
+    "count": 2,
+    "firstAt": "2026-07-23T00:34:59.775Z",
+    "lastAt": "2026-07-26T00:24:43.052Z",
+    "status": "pending"
   }
 ]
