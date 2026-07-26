@@ -10567,5 +10567,18 @@
     "firstAt": "2026-07-23T04:21:24.254Z",
     "lastAt": "2026-07-26T02:35:47.106Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:minnie|idle",
+    "name": "Minnie",
+    "group": "Idle",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:38:09.743Z",
+    "lastAt": "2026-07-26T02:38:09.743Z",
+    "status": "pending"
   }
 ]
