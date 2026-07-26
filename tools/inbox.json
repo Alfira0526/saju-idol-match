@@ -11815,5 +11815,18 @@
     "firstAt": "2026-07-26T07:48:50.301Z",
     "lastAt": "2026-07-26T07:48:50.301Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:변우석|배우",
+    "name": "변우석",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19911031",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T07:49:09.543Z",
+    "lastAt": "2026-07-26T07:49:09.543Z",
+    "status": "pending"
   }
 ]
