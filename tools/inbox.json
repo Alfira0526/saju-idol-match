@@ -10268,5 +10268,18 @@
     "firstAt": "2026-07-26T01:02:31.052Z",
     "lastAt": "2026-07-26T01:02:31.052Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hye|triples",
+    "name": "Hye",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T01:09:46.460Z",
+    "lastAt": "2026-07-26T01:09:46.460Z",
+    "status": "pending"
   }
 ]
