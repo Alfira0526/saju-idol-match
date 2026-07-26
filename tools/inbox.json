@@ -10957,5 +10957,18 @@
     "firstAt": "2026-07-26T04:20:58.587Z",
     "lastAt": "2026-07-26T04:20:58.587Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사쿠야|nct",
+    "name": "사쿠야",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071118",
+    "note": "Wish멤버들도 궁금해요",
+    "count": 2,
+    "firstAt": "2026-07-23T03:06:42.228Z",
+    "lastAt": "2026-07-26T04:21:49.178Z",
+    "status": "pending"
   }
 ]
