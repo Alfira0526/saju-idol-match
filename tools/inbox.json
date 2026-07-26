@@ -11334,5 +11334,18 @@
     "firstAt": "2026-07-22T17:44:53.218Z",
     "lastAt": "2026-07-26T05:57:19.544Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박지후|evnne",
+    "name": "박지후",
+    "group": "EVNNE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060714",
+    "note": "없어서..",
+    "count": 1,
+    "firstAt": "2026-07-26T06:08:18.381Z",
+    "lastAt": "2026-07-26T06:08:18.381Z",
+    "status": "pending"
   }
 ]
