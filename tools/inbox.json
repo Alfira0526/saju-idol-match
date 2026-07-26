@@ -11854,5 +11854,18 @@
     "firstAt": "2026-07-26T08:00:20.671Z",
     "lastAt": "2026-07-26T08:00:20.671Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:곽기웅|idntt(아이덴티티)",
+    "name": "곽기웅",
+    "group": "idntt(아이덴티티)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071203",
+    "note": "모드하우스",
+    "count": 1,
+    "firstAt": "2026-07-26T08:06:57.898Z",
+    "lastAt": "2026-07-26T08:06:57.898Z",
+    "status": "pending"
   }
 ]
