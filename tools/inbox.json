@@ -12257,5 +12257,18 @@
     "firstAt": "2026-07-26T10:20:26.500Z",
     "lastAt": "2026-07-26T10:20:26.500Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:토모야(tomoya)|넥스지(nexz)",
+    "name": "토모야(TOMOYA)",
+    "group": "넥스지(NEXZ)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060119",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-26T10:21:35.104Z",
+    "lastAt": "2026-07-26T10:21:35.104Z",
+    "status": "pending"
   }
 ]
