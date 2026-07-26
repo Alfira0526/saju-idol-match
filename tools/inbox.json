@@ -11750,5 +11750,18 @@
     "firstAt": "2026-07-26T07:25:07.894Z",
     "lastAt": "2026-07-26T07:25:07.894Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유즈|sf9",
+    "name": "유즈",
+    "group": "SF9",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20060327",
+    "note": "찬희오빠가사랑합니당",
+    "count": 1,
+    "firstAt": "2026-07-26T07:25:47.226Z",
+    "lastAt": "2026-07-26T07:25:47.226Z",
+    "status": "pending"
   }
 ]
