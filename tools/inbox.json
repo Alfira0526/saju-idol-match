@@ -10437,5 +10437,18 @@
     "firstAt": "2026-07-23T03:00:28.885Z",
     "lastAt": "2026-07-26T02:01:45.595Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유우(yu)|nexz(넥스지)",
+    "name": "유우(YU)",
+    "group": "NEXZ(넥스지)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050427",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-26T02:02:31.924Z",
+    "lastAt": "2026-07-26T02:02:31.924Z",
+    "status": "pending"
   }
 ]
