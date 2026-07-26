@@ -10411,5 +10411,18 @@
     "firstAt": "2026-07-22T17:37:21.089Z",
     "lastAt": "2026-07-26T01:59:50.081Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:잔한|seventeen",
+    "name": "잔한",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T02:00:07.660Z",
+    "lastAt": "2026-07-26T02:00:07.660Z",
+    "status": "pending"
   }
 ]
