@@ -11087,5 +11087,18 @@
     "firstAt": "2026-07-26T04:49:43.655Z",
     "lastAt": "2026-07-26T04:49:43.655Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박준민|싸이커스",
+    "name": "박준민",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030524",
+    "note": "KQ",
+    "count": 1,
+    "firstAt": "2026-07-26T04:50:44.752Z",
+    "lastAt": "2026-07-26T04:50:44.752Z",
+    "status": "pending"
   }
 ]
