@@ -10788,5 +10788,18 @@
     "firstAt": "2026-07-26T03:19:39.744Z",
     "lastAt": "2026-07-26T03:19:39.744Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장한음|솔로",
+    "name": "장한음",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T03:21:28.657Z",
+    "lastAt": "2026-07-26T03:21:28.657Z",
+    "status": "pending"
   }
 ]
