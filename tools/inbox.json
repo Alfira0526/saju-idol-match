@@ -11243,5 +11243,18 @@
     "firstAt": "2026-07-26T05:22:05.161Z",
     "lastAt": "2026-07-26T05:22:05.161Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:임창균|monstax",
+    "name": "임창균",
+    "group": "Monsta x",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T05:29:40.828Z",
+    "lastAt": "2026-07-26T05:29:40.828Z",
+    "status": "pending"
   }
 ]
