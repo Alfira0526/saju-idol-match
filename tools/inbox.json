@@ -14597,5 +14597,18 @@
     "firstAt": "2026-07-26T21:53:51.539Z",
     "lastAt": "2026-07-26T21:53:51.539Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최지호|ampers&one",
+    "name": "최지호",
+    "group": "AMPERS&ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040610",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-26T22:03:18.231Z",
+    "lastAt": "2026-07-26T22:03:18.231Z",
+    "status": "pending"
   }
 ]
