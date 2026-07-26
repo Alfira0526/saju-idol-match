@@ -11386,5 +11386,18 @@
     "firstAt": "2026-07-26T06:17:17.881Z",
     "lastAt": "2026-07-26T06:17:17.881Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장주왕|킥플립(kickflip)/jyp",
+    "name": "장주왕",
+    "group": "킥플립(kickflip) / jyp",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060502",
+    "note": "내가 너무 좋아함",
+    "count": 1,
+    "firstAt": "2026-07-26T06:21:57.529Z",
+    "lastAt": "2026-07-26T06:21:57.529Z",
+    "status": "pending"
   }
 ]
