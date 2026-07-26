@@ -11932,5 +11932,18 @@
     "firstAt": "2026-07-23T06:52:50.855Z",
     "lastAt": "2026-07-26T08:40:08.253Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:miyeon|i-dle",
+    "name": "miyeon",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19970131",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T08:41:42.071Z",
+    "lastAt": "2026-07-26T08:41:42.071Z",
+    "status": "pending"
   }
 ]
