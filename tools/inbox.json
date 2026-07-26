@@ -11139,5 +11139,18 @@
     "firstAt": "2026-07-26T04:53:59.685Z",
     "lastAt": "2026-07-26T04:53:59.685Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최수빈|txt",
+    "name": "최수빈",
+    "group": "txt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:54:33.925Z",
+    "lastAt": "2026-07-26T04:54:33.925Z",
+    "status": "pending"
   }
 ]
