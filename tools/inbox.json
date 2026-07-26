@@ -11698,5 +11698,18 @@
     "firstAt": "2026-07-26T07:18:57.873Z",
     "lastAt": "2026-07-26T07:18:57.873Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:밤비|plave",
+    "name": "밤비",
+    "group": "PLAVE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020715",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-22T17:50:08.867Z",
+    "lastAt": "2026-07-26T07:20:34.786Z",
+    "status": "pending"
   }
 ]
