@@ -14584,5 +14584,18 @@
     "firstAt": "2026-07-26T21:29:28.214Z",
     "lastAt": "2026-07-26T21:29:28.214Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:lily|csr",
+    "name": "lily",
+    "group": "csr",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050827",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T21:53:51.539Z",
+    "lastAt": "2026-07-26T21:53:51.539Z",
+    "status": "pending"
   }
 ]
