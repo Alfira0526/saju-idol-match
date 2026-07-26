@@ -11503,5 +11503,18 @@
     "firstAt": "2026-07-26T06:41:12.105Z",
     "lastAt": "2026-07-26T06:41:12.105Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:宋|idle",
+    "name": "宋",
+    "group": "idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990923",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T06:41:38.832Z",
+    "lastAt": "2026-07-26T06:41:38.832Z",
+    "status": "pending"
   }
 ]
