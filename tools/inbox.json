@@ -14571,5 +14571,18 @@
     "firstAt": "2026-07-26T21:02:26.435Z",
     "lastAt": "2026-07-26T21:02:26.435Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:미크|nct",
+    "name": "미크",
+    "group": "nct",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20090727",
+    "note": "사랑해",
+    "count": 1,
+    "firstAt": "2026-07-26T21:29:28.214Z",
+    "lastAt": "2026-07-26T21:29:28.214Z",
+    "status": "pending"
   }
 ]
