@@ -12140,5 +12140,18 @@
     "firstAt": "2026-07-22T21:10:20.721Z",
     "lastAt": "2026-07-26T09:53:44.252Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:요시|treasure",
+    "name": "요시",
+    "group": "TREASURE",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20000515",
+    "note": "yg",
+    "count": 1,
+    "firstAt": "2026-07-26T09:54:57.269Z",
+    "lastAt": "2026-07-26T09:54:57.269Z",
+    "status": "pending"
   }
 ]
