@@ -12010,5 +12010,18 @@
     "firstAt": "2026-07-22T23:21:03.867Z",
     "lastAt": "2026-07-26T08:52:13.278Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예수화|idle",
+    "name": "예수화",
+    "group": "idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20000106",
+    "note": "Cube Entertainment",
+    "count": 1,
+    "firstAt": "2026-07-26T08:56:17.727Z",
+    "lastAt": "2026-07-26T08:56:17.727Z",
+    "status": "pending"
   }
 ]
