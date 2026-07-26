@@ -6169,9 +6169,9 @@
     "gender": "M",
     "dob": "20050817",
     "note": "가나디",
-    "count": 14,
+    "count": 15,
     "firstAt": "2026-07-23T00:31:21.313Z",
-    "lastAt": "2026-07-26T11:37:37.749Z",
+    "lastAt": "2026-07-26T12:31:14.831Z",
     "status": "pending"
   },
   {
@@ -12005,10 +12005,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20070412",
-    "note": "저는유하언니를너무사랑해요제발만들어주세요",
-    "count": 4,
+    "note": "SM",
+    "count": 5,
     "firstAt": "2026-07-22T23:21:03.867Z",
-    "lastAt": "2026-07-26T08:52:13.278Z",
+    "lastAt": "2026-07-26T12:31:26.477Z",
     "status": "pending"
   },
   {
@@ -12620,6 +12620,45 @@
     "count": 1,
     "firstAt": "2026-07-26T12:29:51.355Z",
     "lastAt": "2026-07-26T12:29:51.355Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:woodz|솔로",
+    "name": "WOODZ",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960805",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:31:48.545Z",
+    "lastAt": "2026-07-26T12:31:48.545Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:leo|alphadriveone",
+    "name": "leo",
+    "group": "alpha drive one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T12:34:27.015Z",
+    "lastAt": "2026-07-26T12:34:27.015Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:소정환|treasure",
+    "name": "소정환",
+    "group": "treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050218",
+    "note": "yg, 소처럼 매일 먹어",
+    "count": 1,
+    "firstAt": "2026-07-26T12:37:48.646Z",
+    "lastAt": "2026-07-26T12:37:48.646Z",
     "status": "pending"
   }
 ]
