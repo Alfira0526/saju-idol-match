@@ -867,5 +867,23 @@
     "firstAt": "2026-07-26T13:39:59.642Z",
     "lastAt": "2026-07-26T13:39:59.642Z",
     "status": "pending"
+  },
+  {
+    "key": "er:에스쿱스|seventeen",
+    "name": "에스쿱스",
+    "group": "SEVENTEEN",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19950808"
+    ],
+    "notes": [
+      "공식프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-26T13:55:31.207Z",
+    "lastAt": "2026-07-26T13:55:31.207Z",
+    "status": "pending"
   }
 ]
