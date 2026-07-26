@@ -10723,5 +10723,18 @@
     "firstAt": "2026-07-23T00:46:38.221Z",
     "lastAt": "2026-07-26T03:11:26.450Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:후지나가사쿠야|nctwish",
+    "name": "후지나가 사쿠야",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071118",
+    "note": "SM 왜 없음?",
+    "count": 4,
+    "firstAt": "2026-07-22T18:53:41.610Z",
+    "lastAt": "2026-07-26T03:11:47.434Z",
+    "status": "pending"
   }
 ]
