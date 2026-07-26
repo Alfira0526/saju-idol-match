@@ -11945,5 +11945,18 @@
     "firstAt": "2026-07-26T08:41:42.071Z",
     "lastAt": "2026-07-26T08:41:42.071Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:튜넥스|ist",
+    "name": "튜넥스",
+    "group": "Ist",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T08:44:13.491Z",
+    "lastAt": "2026-07-26T08:44:13.491Z",
+    "status": "pending"
   }
 ]
