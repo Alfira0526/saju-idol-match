@@ -10983,5 +10983,18 @@
     "firstAt": "2026-07-26T04:23:55.428Z",
     "lastAt": "2026-07-26T04:23:55.428Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지우|hearts2hearts",
+    "name": "지우",
+    "group": "Hearts2Hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060907",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T04:26:45.329Z",
+    "lastAt": "2026-07-26T04:26:45.329Z",
+    "status": "pending"
   }
 ]
