@@ -14610,5 +14610,18 @@
     "firstAt": "2026-07-26T22:03:18.231Z",
     "lastAt": "2026-07-26T22:03:18.231Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한유진|and2ble（yhentertainment）",
+    "name": "한유진",
+    "group": "and2ble（YH Entertainment）",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-26T22:24:40.953Z",
+    "lastAt": "2026-07-26T22:24:40.953Z",
+    "status": "pending"
   }
 ]
