@@ -11464,5 +11464,18 @@
     "firstAt": "2026-07-26T06:35:22.355Z",
     "lastAt": "2026-07-26T06:35:22.355Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuqi|idle",
+    "name": "Yuqi",
+    "group": "idle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990923",
+    "note": "I love",
+    "count": 1,
+    "firstAt": "2026-07-26T06:39:07.823Z",
+    "lastAt": "2026-07-26T06:39:07.823Z",
+    "status": "pending"
   }
 ]
