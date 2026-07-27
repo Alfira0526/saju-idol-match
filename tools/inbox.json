@@ -15286,5 +15286,18 @@
     "firstAt": "2026-07-27T06:27:05.637Z",
     "lastAt": "2026-07-27T06:27:05.637Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:마틴|cortis",
+    "name": "마틴",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "2008320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T06:33:16.063Z",
+    "lastAt": "2026-07-27T06:33:16.063Z",
+    "status": "pending"
   }
 ]
