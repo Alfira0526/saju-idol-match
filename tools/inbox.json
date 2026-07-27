@@ -15351,5 +15351,18 @@
     "firstAt": "2026-07-27T07:42:36.164Z",
     "lastAt": "2026-07-27T07:42:36.164Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:진보민|aen",
+    "name": "진보민",
+    "group": "AEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040222",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-27T07:55:33.592Z",
+    "lastAt": "2026-07-27T07:55:33.592Z",
+    "status": "pending"
   }
 ]
