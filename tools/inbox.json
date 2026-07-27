@@ -14740,5 +14740,18 @@
     "firstAt": "2026-07-27T01:26:32.873Z",
     "lastAt": "2026-07-27T01:26:32.873Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:黄|riize",
+    "name": "黄",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070725",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T01:34:47.755Z",
+    "lastAt": "2026-07-27T01:34:47.755Z",
+    "status": "pending"
   }
 ]
