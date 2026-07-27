@@ -14935,5 +14935,31 @@
     "firstAt": "2026-07-27T03:47:30.097Z",
     "lastAt": "2026-07-27T03:47:30.097Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:lynnlynn|modyssey",
+    "name": "lynnlynn",
+    "group": "MODYSSEY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031103",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-07-27T03:57:53.888Z",
+    "lastAt": "2026-07-27T03:57:53.888Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:주안신|alphadriveone",
+    "name": "주안신",
+    "group": "ALPHADRIVEONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061225",
+    "note": "WEKAONE，그는 가족 외에 내가 가장 가까이 하고 싶어 하는 사람이다.",
+    "count": 1,
+    "firstAt": "2026-07-27T04:00:10.950Z",
+    "lastAt": "2026-07-27T04:00:10.950Z",
+    "status": "pending"
   }
 ]
