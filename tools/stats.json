@@ -1,6 +1,9 @@
 {
-  "total": 634,
+  "total": 651,
   "addedRecent": [
+    { "date": "2026-07-27", "text": "Hearts2Hearts 추가", "count": 8 },
+    { "date": "2026-07-27", "text": "CLOSE YOUR EYES 추가", "count": 7 },
+    { "date": "2026-07-27", "text": "tripleS 멤버 추가", "count": 2 },
     { "date": "2026-07-26", "text": "IDID 멤버 추가", "count": 3 },
     { "date": "2026-07-26", "text": "B1A4 추가", "count": 5 },
     { "date": "2026-07-26", "text": "N.Flying 추가", "count": 5 },
@@ -8,16 +11,7 @@
     { "date": "2026-07-26", "text": "FLARE U 추가", "count": 2 },
     { "date": "2026-07-25", "text": "킥플립 추가", "count": 7 },
     { "date": "2026-07-25", "text": "ALPHA DRIVE ONE 추가", "count": 8 },
-    { "date": "2026-07-25", "text": "IDID 멤버 추가", "count": 4 },
-    { "date": "2026-07-24", "text": "NCT WISH 추가", "count": 6 },
-    { "date": "2026-07-24", "text": "승한 추가", "count": 1 },
-    { "date": "2026-07-24", "text": "82MAJOR 추가", "count": 6 },
-    { "date": "2026-07-24", "text": "CORTIS 추가", "count": 5 },
-    { "date": "2026-07-24", "text": "ZEROBASEONE 멤버 추가", "count": 4 },
-    { "date": "2026-07-24", "text": "Dragon Pony 추가", "count": 3 },
-    { "date": "2026-07-24", "text": "강동원 추가", "count": 1 },
-    { "date": "2026-07-24", "text": "빅스 · 드림캐쳐 추가", "count": 11 },
-    { "date": "2026-07-24", "text": "에버글로우 추가", "count": 4 }
+    { "date": "2026-07-25", "text": "IDID 멤버 추가", "count": 4 }
   ],
-  "updatedAt": "2026-07-26"
+  "updatedAt": "2026-07-27"
 }
