@@ -931,5 +931,23 @@
     "firstAt": "2026-07-26T19:05:42.887Z",
     "lastAt": "2026-07-26T19:05:42.887Z",
     "status": "pending"
+  },
+  {
+    "key": "er:이채영|fromis_9",
+    "name": "이채영",
+    "group": "fromis_9",
+    "fields": {
+      "기타": 1
+    },
+    "suggests": [
+      "어센드"
+    ],
+    "notes": [
+      "나무위키"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-27T00:00:45.196Z",
+    "lastAt": "2026-07-27T00:00:45.196Z",
+    "status": "pending"
   }
 ]
