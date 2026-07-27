@@ -14649,5 +14649,18 @@
     "firstAt": "2026-07-27T00:08:14.223Z",
     "lastAt": "2026-07-27T00:08:14.223Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:okubonalu|dxteen",
+    "name": "OKUBO NALU",
+    "group": "DXTEEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20040703",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T00:25:56.436Z",
+    "lastAt": "2026-07-27T00:25:56.436Z",
+    "status": "pending"
   }
 ]
