@@ -760,10 +760,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040405",
-    "note": "Sm",
-    "count": 19,
+    "note": "내윳냥이사랑해",
+    "count": 20,
     "firstAt": "2026-07-22T17:41:35.381Z",
-    "lastAt": "2026-07-26T15:28:30.552Z",
+    "lastAt": "2026-07-27T06:00:02.067Z",
     "status": "pending"
   },
   {
@@ -11824,9 +11824,9 @@
     "gender": "M",
     "dob": "19911031",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T07:49:09.543Z",
-    "lastAt": "2026-07-26T07:49:09.543Z",
+    "lastAt": "2026-07-27T06:00:32.235Z",
     "status": "pending"
   },
   {
@@ -15194,6 +15194,45 @@
     "count": 1,
     "firstAt": "2026-07-27T05:47:17.796Z",
     "lastAt": "2026-07-27T05:47:17.796Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마크|upperroom",
+    "name": "마크",
+    "group": "upper room",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T05:53:53.345Z",
+    "lastAt": "2026-07-27T05:53:53.345Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:우진|롱샷",
+    "name": "우진",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080308",
+    "note": "모어비전",
+    "count": 1,
+    "firstAt": "2026-07-27T05:56:45.865Z",
+    "lastAt": "2026-07-27T05:56:45.865Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:​​최현석|treasure",
+    "name": "​​최현석",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990421",
+    "note": "YG cool",
+    "count": 1,
+    "firstAt": "2026-07-27T05:57:23.682Z",
+    "lastAt": "2026-07-27T05:57:23.682Z",
     "status": "pending"
   }
 ]
