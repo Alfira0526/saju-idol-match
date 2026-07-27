@@ -967,5 +967,21 @@
     "firstAt": "2026-07-27T01:57:05.295Z",
     "lastAt": "2026-07-27T01:57:05.295Z",
     "status": "pending"
+  },
+  {
+    "key": "er:비니|ohmygirl",
+    "name": "비니",
+    "group": "OH MY GIRL",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "유빈"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T02:17:41.708Z",
+    "lastAt": "2026-07-27T02:17:41.708Z",
+    "status": "pending"
   }
 ]
