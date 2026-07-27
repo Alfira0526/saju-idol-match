@@ -15312,5 +15312,18 @@
     "firstAt": "2026-07-27T06:52:14.717Z",
     "lastAt": "2026-07-27T06:52:14.717Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한비|smtr25",
+    "name": "한비",
+    "group": "SMTR25",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031024",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-27T07:04:13.390Z",
+    "lastAt": "2026-07-27T07:04:13.390Z",
+    "status": "pending"
   }
 ]
