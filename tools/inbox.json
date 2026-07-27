@@ -969,9 +969,9 @@
     "gender": "M",
     "dob": "20030628",
     "note": "내최애인데없어서",
-    "count": 16,
+    "count": 17,
     "firstAt": "2026-07-22T18:41:08.724Z",
-    "lastAt": "2026-07-26T14:57:44.088Z",
+    "lastAt": "2026-07-27T03:14:15.772Z",
     "status": "pending"
   },
   {
@@ -14908,6 +14908,19 @@
     "count": 1,
     "firstAt": "2026-07-27T03:09:29.698Z",
     "lastAt": "2026-07-27T03:09:29.698Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:teraokoshin|dxteen",
+    "name": "TERAO KOSHIN",
+    "group": "DXTEEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20030805",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T03:19:10.910Z",
+    "lastAt": "2026-07-27T03:19:10.910Z",
     "status": "pending"
   }
 ]
