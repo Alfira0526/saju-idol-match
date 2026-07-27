@@ -3854,10 +3854,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19921031",
-    "note": "fnc",
-    "count": 8,
+    "note": "생시 신사시 금수토화목 순",
+    "count": 9,
     "firstAt": "2026-07-22T17:28:40.319Z",
-    "lastAt": "2026-07-26T01:28:12.323Z",
+    "lastAt": "2026-07-27T04:27:24.966Z",
     "status": "pending"
   },
   {
@@ -15025,6 +15025,32 @@
     "count": 1,
     "firstAt": "2026-07-27T04:14:09.576Z",
     "lastAt": "2026-07-27T04:14:09.576Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:오세훈|exo",
+    "name": "오세훈",
+    "group": "exo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T04:22:11.436Z",
+    "lastAt": "2026-07-27T04:22:11.436Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이사히|treasure",
+    "name": "이사히",
+    "group": "treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010820",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-27T04:22:27.590Z",
+    "lastAt": "2026-07-27T04:22:27.590Z",
     "status": "pending"
   }
 ]
