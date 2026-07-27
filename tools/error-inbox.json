@@ -983,5 +983,19 @@
     "firstAt": "2026-07-27T02:17:41.708Z",
     "lastAt": "2026-07-27T02:17:41.708Z",
     "status": "pending"
+  },
+  {
+    "key": "er:강민|verivery",
+    "name": "강민",
+    "group": "VERIVERY",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T07:06:52.030Z",
+    "lastAt": "2026-07-27T07:06:52.030Z",
+    "status": "pending"
   }
 ]
