@@ -10719,9 +10719,9 @@
     "gender": "F",
     "dob": "20081220",
     "note": "SM..",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-23T00:46:38.221Z",
-    "lastAt": "2026-07-26T16:02:24.756Z",
+    "lastAt": "2026-07-27T01:17:00.214Z",
     "status": "pending"
   },
   {
@@ -14700,6 +14700,32 @@
     "count": 1,
     "firstAt": "2026-07-27T01:03:14.350Z",
     "lastAt": "2026-07-27T01:03:14.350Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정상현|알파드라이브원",
+    "name": "정상현",
+    "group": "알파드라이브원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070919",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T01:11:36.542Z",
+    "lastAt": "2026-07-27T01:11:36.542Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조은찬|idntt",
+    "name": "조은찬",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070907",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T01:12:41.860Z",
+    "lastAt": "2026-07-27T01:12:41.860Z",
     "status": "pending"
   }
 ]
