@@ -14636,5 +14636,18 @@
     "firstAt": "2026-07-26T23:04:41.429Z",
     "lastAt": "2026-07-26T23:04:41.429Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:영재|bap",
+    "name": "영재",
+    "group": "BAP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940124",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T00:08:14.223Z",
+    "lastAt": "2026-07-27T00:08:14.223Z",
+    "status": "pending"
   }
 ]
