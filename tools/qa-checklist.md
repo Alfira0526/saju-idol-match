@@ -5,6 +5,9 @@ JS 에러만 잡으므로, 레이아웃·번역 누락·데이터 정합성은 �
 
 ## 자동 (필수 통과)
 - [ ] `node tools/build.js` — errors/computeMismatch/anchorFails/duplicates 모두 빈 배열, `bands.notInData` 빈 배열
+  (errors에는 **카테고리 라벨 무결성**(모든 `cat`이 CAT_ORDER·CAT_NAMES에 존재)과
+  **subAgency 배치**(K-idol `기타`에만) 검증도 포함된다)
+- [ ] `node tools/ops-metrics.js --check` — 에러 없이 실행(파이프라인 지표 툴 무결성)
 - [ ] 헤드리스 스모크 — 페이지 로드 + 계산 실행 시 **JS 에러 0**, `IDOLS.length > 0`
 - [ ] 정합성 — `idols.json` 수 == `stats.json.total` == 빌드본 `IDOLS` 길이, `name|group` 중복 0
 

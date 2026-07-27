@@ -53,6 +53,7 @@ for(const it of idols){
   seen.add(key);
   rows.push([name,group,a.p,a.e,gender,agency,dob.replace(/-/g,''),cat]);
   // 기타 소속사 세분화 진척(subAgency는 선택 필드 · IDOLS 배열엔 주입하지 않음)
+  if(it.subAgency && !(cat==="K-idol" && agency==="기타")){ errors.push(`${name}/${group}: subAgency는 K-idol '기타'에만 허용(cat=${cat}, agency=${agency})`); }
   if(cat==="K-idol" && agency==="기타"){ etcTotal++; const sub=(it.subAgency||'').trim(); if(sub){ subAgencyTally[sub]=(subAgencyTally[sub]||0)+1; etcAssigned++; } }
 }
 
@@ -62,6 +63,20 @@ const anchorFails=anchors.filter(([dob,exp])=>{const [y,m,d]=dob.split('-').map(
 
 const agency={}, gender={}, category={};
 rows.forEach(r=>{agency[r[5]]=(agency[r[5]]||0)+1; gender[r[4]]=(gender[r[4]]||0)+1; category[r[7]]=(category[r[7]]||0)+1;});
+
+// 카테고리 라벨/순서 무결성: 존재하는 모든 cat은 index.html의 CAT_ORDER·CAT_NAMES에
+// 있어야 UI에서 정상 표시된다(누락 시 원시 키 노출/정렬 누락). 없으면 build 실패.
+try{
+  const h=fs.readFileSync(idxPath,'utf8');
+  const ordM=h.match(/const CAT_ORDER\s*=\s*\[([^\]]*)\]/);
+  const ord=new Set(ordM?(ordM[1].match(/"([^"]+)"/g)||[]).map(s=>s.slice(1,-1)):[]);
+  const nmM=h.match(/const CAT_NAMES\s*=\s*\{([\s\S]*?)\};/);
+  const nm=new Set(nmM?[...nmM[1].matchAll(/"([^"]+)"\s*:\s*\{/g)].map(m=>m[1]):[]);
+  for(const c of Object.keys(category)){
+    if(!ord.has(c)) errors.push(`category ${c}: CAT_ORDER에 없음(index.html) — 추가 필요`);
+    if(!nm.has(c))  errors.push(`category ${c}: CAT_NAMES에 없음(index.html) — {ko,en} 추가 필요`);
+  }
+}catch(e){ errors.push('CAT_NAMES/CAT_ORDER 검증 실패: '+e.message); }
 
 const allGroups=new Set(rows.map(r=>r[1]));
 const bandsNotInData=bands.filter(g=>!allGroups.has(g));
