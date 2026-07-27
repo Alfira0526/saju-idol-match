@@ -7703,9 +7703,9 @@
     "gender": "M",
     "dob": "20010820",
     "note": "YG",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-25T05:41:24.735Z",
-    "lastAt": "2026-07-26T11:09:40.286Z",
+    "lastAt": "2026-07-27T02:33:33.420Z",
     "status": "pending"
   },
   {
@@ -14830,6 +14830,19 @@
     "count": 1,
     "firstAt": "2026-07-27T02:30:36.358Z",
     "lastAt": "2026-07-27T02:30:36.358Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:깅도영|treasure",
+    "name": "깅도영",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031204",
+    "note": "YG",
+    "count": 1,
+    "firstAt": "2026-07-27T02:35:13.748Z",
+    "lastAt": "2026-07-27T02:35:13.748Z",
     "status": "pending"
   }
 ]
