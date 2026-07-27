@@ -14727,5 +14727,18 @@
     "firstAt": "2026-07-27T01:12:41.860Z",
     "lastAt": "2026-07-27T01:12:41.860Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하츠투하트|sm",
+    "name": "하츠투하트",
+    "group": "sm",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T01:26:32.873Z",
+    "lastAt": "2026-07-27T01:26:32.873Z",
+    "status": "pending"
   }
 ]
