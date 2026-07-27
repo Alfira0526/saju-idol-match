@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-07-27",
+  "dataset": {
+    "totalIdols": 651,
+    "totalGroups": 111,
+    "statsTotal": 651,
+    "byCategory": {
+      "K-idol": {
+        "count": 641,
+        "visible": true
+      },
+      "US-actor": {
+        "count": 4,
+        "visible": false
+      },
+      "C-actor": {
+        "count": 3,
+        "visible": false
+      },
+      "J-idol": {
+        "count": 2,
+        "visible": false
+      },
+      "Etc": {
+        "count": 1,
+        "visible": false
+      }
+    },
+    "byAgency": {
+      "HYBE": 73,
+      "YG": 40,
+      "기타": 381,
+      "SM": 80,
+      "JYP": 67,
+      "미국 배우": 4,
+      "중국 배우": 3,
+      "노기자카46": 2,
+      "배우": 1
+    },
+    "byGender": {
+      "M": 378,
+      "F": 273
+    },
+    "recentAddsListed": 55
+  },
+  "integrity": {
+    "statsTotalMatches": true,
+    "duplicateCount": 0,
+    "duplicateSamples": []
+  },
+  "backlog": {
+    "handled": 257,
+    "addPending": 1012,
+    "errorPending": 0,
+    "oldestAddPending": "2026-07-22T17:28:06.044Z",
+    "oldestErrorPending": null,
+    "topAddPending": [
+      {
+        "name": "최상엽",
+        "group": "루시",
+        "count": 10
+      },
+      {
+        "name": "지연",
+        "group": "트리플에스",
+        "count": 7
+      },
+      {
+        "name": "소건",
+        "group": "NEXZ",
+        "count": 6
+      },
+      {
+        "name": "엄성현",
+        "group": "CORTIS",
+        "count": 6
+      },
+      {
+        "name": "Asahi",
+        "group": "Treasure",
+        "count": 6
+      }
+    ],
+    "topErrorPending": []
+  },
+  "i18n": {
+    "chunksDone": 2,
+    "chunksTotal": 15,
+    "percent": 13
+  }
+}
