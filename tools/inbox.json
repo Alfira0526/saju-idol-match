@@ -14818,5 +14818,18 @@
     "firstAt": "2026-07-27T02:19:32.741Z",
     "lastAt": "2026-07-27T02:19:32.741Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:周安信|alphadriveone",
+    "name": "周安信",
+    "group": "alphadriveone",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20100809",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T02:30:36.358Z",
+    "lastAt": "2026-07-27T02:30:36.358Z",
+    "status": "pending"
   }
 ]
