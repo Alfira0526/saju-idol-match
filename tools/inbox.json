@@ -14779,5 +14779,18 @@
     "firstAt": "2026-07-27T01:59:34.006Z",
     "lastAt": "2026-07-27T01:59:34.006Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sakuradakenshin|closeyoureyes",
+    "name": "SAKURADA KENSHIN",
+    "group": "closeyoureyes",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071202",
+    "note": "회사는 uncore，사랑스러운 웃는 얼굴을 가지고 있다",
+    "count": 1,
+    "firstAt": "2026-07-27T02:01:29.265Z",
+    "lastAt": "2026-07-27T02:01:29.265Z",
+    "status": "pending"
   }
 ]
