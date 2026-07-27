@@ -65,9 +65,10 @@ A scheduled Routine runs once a day and performs **one** task, chosen by a
 
 | 요일 (UTC `%u`) | 그날 작업 |
 |---|---|
-| **월·수·금** (1·3·5) | **Task B** · 데이터 추가 |
-| **화·토** (2·6) | **Task A** · 소속사 세분화 |
-| **목·일** (4·7) | **Task C** · 다국어 i18n |
+| **월·수·금** (1·3·5) | **Task B** · 데이터 추가 (한국 우선) |
+| **화·토** (2·6) | **Task A** · 소속사 세분화 (`subAgency` 부여) |
+| **목** (4) | **Task C** · 다국어 i18n |
+| **일** (7) | **Task D** · 비(非)K 카테고리 확장 |
 
 > 이 표는 **제보(inbox) 처리분이 없을 때/처리 후** 수행하는 요일 작업이다. 제보가
 > 있으면 항상 요일 작업보다 **먼저** 처리한다(아래 *제보 우선 반영*). 과거에는
@@ -78,6 +79,14 @@ A scheduled Routine runs once a day and performs **one** task, chosen by a
   큐브/Cube, RBW, KQ, IST, WM, Woollim, Fantagio, WakeOne …). Implement as a
   *sub-agency* layer so the existing HYBE/SM/YG/JYP/기타 buttons keep working —
   do NOT break the 5-bucket model; add finer grouping additively.
+  - **구현(P2 Phase 1 · 데이터만):** `기타`(K-idol) 항목에 **선택 필드 `subAgency`**를
+    실제 중견 소속사명으로 채운다(예: `"agency":"기타","subAgency":"KQ"`). `agency`는
+    `기타` 그대로 두어 5버튼 모델·UI 불변(=무위험). `node tools/build.js` 리포트의
+    `subAgency`(etcTotal/assigned/unassigned/byLabel)와 `ops-metrics.js`의
+    `dataset.subAgency`로 진척을 추적한다. 한 소속사가 `AGENCY_MIN`(15) 이상 쌓이면
+    `promotable`에 잡힌다 → 상단 버튼 승격(Phase 2)은 **사용자 승인 후** 별도 진행.
+  - 매 슬롯 **표수 많은/큰 뭉치부터**(tripleS·LOONA→Modhaus, ATEEZ→KQ, WJSN→스타쉽,
+    PENTAGON→큐브, Golden Child·Lovelyz→울림 …) 조금씩 부여. 출처 확인분만.
 - **Task B · 데이터 추가 (add idols).** Research 1–2 new groups, append to
   `tools/idols.json`, rebuild. Safest task; prefer this when unsure.
   - **한국 아이돌을 우선 소진**한다. 더 추가할 한국 아이돌 그룹이 없으면(=미수록
@@ -120,6 +129,15 @@ A scheduled Routine runs once a day and performs **one** task, chosen by a
       쓰고 나머지는 CSS 줄바꿈에 맡긴다. 기존 `<br>` 위치가 번역 언어에서 어색하면 조정한다.
     - 번역문이 길어져 **버튼·배지·카드가 넘치거나 잘리지 않는지** 헤드리스로 확인한다
       (특히 CTA·성별 버튼·소속사 버튼).
+- **Task D · 비(非)K 카테고리 확장 (일요일 전용 슬롯).** K 백로그가 아직 많아 Task B는
+  한국 우선인데, 카테고리 노출(`CAT_MIN=30`)을 열려면 별도 슬롯이 필요하다. **한 카테고리를
+  30까지 몰아붙인다**(여러 개 조금씩 금지 — 30 넘어야 UI 노출·검색 대상이 됨).
+  - **우선 대상: J-idol**(대형 일본 아이돌 그룹 하나로 30 최단 — 노기자카46 등). 그 다음
+    C-actor/US-actor. 각 항목에 `"cat"` 지정(`J-idol`/`C-actor`/`US-actor`/`Etc`),
+    `agency`는 그룹/레이블(자유 문자열), **확실한 양력 생일만**. 필요 시 `index.html`의
+    `CAT_NAMES`/`CAT_ORDER`에 `{ko,en}` 추가.
+  - 한 카테고리가 30 도달 시 `renderCategoryButtons`가 자동 노출 → **UI 코드 변경 없음**.
+    `node tools/build.js` + 헤드리스 스모크로 검증. 캐릭터·연도 없는 생일 제외.
 
 ### 제보 우선 반영 (suggestion priority) — 매일 Task B 전에 확인
 

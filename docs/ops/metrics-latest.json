@@ -37,6 +37,14 @@
       "노기자카46": 2,
       "배우": 1
     },
+    "subAgency": {
+      "etcTotal": 381,
+      "assigned": 0,
+      "unassigned": 381,
+      "coveragePct": 0,
+      "byLabel": {},
+      "promotable": []
+    },
     "byGender": {
       "M": 378,
       "F": 273
@@ -87,5 +95,63 @@
     "chunksDone": 2,
     "chunksTotal": 15,
     "percent": 13
+  },
+  "flushCadence": {
+    "windowDays": 7,
+    "flushCount": 90,
+    "maxBatch": 83,
+    "avgBatch": 5.6,
+    "medianGapMin": 10,
+    "surges": [
+      {
+        "at": "2026-07-27T01:10:50+09:00",
+        "batch": 34,
+        "gapMin": 30,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T04:50:59+09:00",
+        "batch": 83,
+        "gapMin": 220,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T06:00:45+09:00",
+        "batch": 2,
+        "gapMin": 30,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T07:00:44+09:00",
+        "batch": 1,
+        "gapMin": 30,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T09:10:44+09:00",
+        "batch": 1,
+        "gapMin": 50,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T19:00:50+09:00",
+        "batch": 29,
+        "gapMin": 120,
+        "likely": "cron-delay"
+      },
+      {
+        "at": "2026-07-27T19:10:50+09:00",
+        "batch": 31,
+        "gapMin": 10,
+        "likely": "inflow-surge"
+      },
+      {
+        "at": "2026-07-27T19:40:52+09:00",
+        "batch": 38,
+        "gapMin": 30,
+        "likely": "cron-delay"
+      }
+    ],
+    "note": "gap>20m→cron-delay 의심 / gap≈10m인데 batch>15→inflow-surge"
   }
 }

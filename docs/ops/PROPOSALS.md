@@ -10,7 +10,11 @@
 ---
 
 ## P1 · 비(非)K 카테고리 하나를 30까지 몰아 UI 노출 열기
-**상태: 제안(승인 대기) · 우선순위: 낮음**
+**상태: ✅ 승인·반영(2026-07-27) — (b) 전용 슬롯 신설 · 우선순위: 중**
+
+> **결정:** 일요일을 **Task D(비K 카테고리 확장)** 전용 슬롯으로 신설(요일 고정에 반영).
+> K 소진(월·수·금 Task B)과 병행. 우선 대상 J-idol. `tools/README.md` Task D + 일일
+> 트리거 step 4에 반영 완료. 실행은 매주 일요일 슬롯에서 점진.
 
 - **배경.** 카테고리 노출 임계값 `CAT_MIN=30`(index.html). 현재 K-idol 641만 노출,
   나머지는 전부 문턱 미달로 숨김: J-idol 2 · C-actor 3 · US-actor 4 · Etc 1. → 해외/배우
@@ -41,7 +45,13 @@
 ---
 
 ## P2 · `기타` 소속사 381명(58.5%) 2단계 세분화
-**상태: 제안(승인 대기) · 우선순위: 중**
+**상태: ✅ 승인·Phase 1 기반 구축(2026-07-27) · Phase 2(UI 승격)는 승인 대기 · 우선순위: 중**
+
+> **결정:** Phase 1(데이터만) 승인. 기반 구축 완료 — `build.js`가 `subAgency`(선택 필드)
+> 수용·집계(`report.subAgency`), `ops-metrics.js`가 `dataset.subAgency`(assigned/unassigned/
+> byLabel/promotable≥15) 산출, Task A SOP·일일 트리거에 subAgency 부여 지시 반영.
+> **IDOLS 배열·UI 불변(무위험).** 데이터는 Task A가 매주 화·토 슬롯에서 점진 부여.
+> Phase 2(AGENCY_MIN=15 상단 버튼 승격)는 커버리지가 쌓인 뒤 별도 승인.
 
 - **배경.** K-idol 소속사 분포: 기타 **381(58.5%)** · SM 80 · HYBE 73 · JYP 67 · YG 40.
   `기타`는 60개 그룹의 잡탕(tripleS 24, LOONA 12, 워너원 11, THE BOYZ 10, WJSN 10,
@@ -70,7 +80,12 @@
 ---
 
 ## P3 · Flush 배치 급증 원인 구분(관찰용 계측)
-**상태: 제안(승인 대기) · 우선순위: 중(관찰), 낮음(리팩터)**
+**상태: ✅ 완료 — 3A 구현(2026-07-27) · 3B(워커 로깅)는 보류 · 우선순위: 완료**
+
+> **결정:** 3A만. `ops-metrics.js`에 `flushCadence`(최근 7일 `chore(inbox): flush` 커밋의
+> 간격·배치 분석) 구현 완료 — `gap>20m→cron-delay` / `gap≈10m·batch>15→inflow-surge`로
+> 자동 분류. 첫 산출에서 19:10 batch 31(gap 10)=inflow-surge, gap 120·220m=cron-delay(오늘
+> Cron 등록 전 수동 flush 흔적)를 구분 확인. 3B(워커 lastFlushAt 로깅·재배포)는 필요 시로 보류.
 
 - **배경.** 7/27 19:00~19:40 flush 배치가 29/31/38건으로 평소(1~6) 대비 급증. 데이터 무결성
   영향은 없으나(카운트 동기화), 원인이 **①제보 유입 폭주** vs **②Cron 지연 누적**인지 미구분.

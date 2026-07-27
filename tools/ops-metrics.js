@@ -9,8 +9,10 @@
 //   node tools/ops-metrics.js --check         # print to stdout, do not write
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
+const AGENCY_MIN = 15; // 기타 하위 소속사가 이 이상이면 P2 Phase 2에서 상단 버튼 승격 후보
 const T = (p) => path.join(ROOT, 'tools', p);
 const readJSON = (p, fallback) => {
   try { return JSON.parse(fs.readFileSync(p, 'utf8')); }
@@ -28,13 +30,26 @@ const doneSet = new Set((Array.isArray(done) ? done : []).map(x => (typeof x ===
 
 // ---- dataset coverage ----
 const groups = new Set(), byCat = {}, byAgency = {}, byGender = {};
+const subTally = {}; let etcTotal = 0, etcAssigned = 0; // P2: 기타 세분화 진척
 for (const it of idols) {
   const cat = it.cat || 'K-idol';
+  const agency = it.agency || '기타';
   byCat[cat] = (byCat[cat] || 0) + 1;
-  byAgency[it.agency || '기타'] = (byAgency[it.agency || '기타'] || 0) + 1;
+  byAgency[agency] = (byAgency[agency] || 0) + 1;
   byGender[it.gender || '?'] = (byGender[it.gender || '?'] || 0) + 1;
   groups.add(`${it.group}`);
+  if (cat === 'K-idol' && agency === '기타') {
+    etcTotal++;
+    const s = (it.subAgency || '').trim();
+    if (s) { subTally[s] = (subTally[s] || 0) + 1; etcAssigned++; }
+  }
 }
+const subAgency = {
+  etcTotal, assigned: etcAssigned, unassigned: etcTotal - etcAssigned,
+  coveragePct: etcTotal ? Math.round((etcAssigned / etcTotal) * 100) : 0,
+  byLabel: Object.fromEntries(Object.entries(subTally).sort((a, b) => b[1] - a[1])),
+  promotable: Object.entries(subTally).filter(([, n]) => n >= AGENCY_MIN).map(([k]) => k),
+};
 const categories = Object.fromEntries(
   Object.entries(byCat).sort((a, b) => b[1] - a[1])
     .map(([c, n]) => [c, { count: n, visible: n >= CAT_MIN }])
@@ -61,6 +76,45 @@ try {
   i18nTotal = (plan.match(/\[[ x]\]/gi) || []).length;
 } catch {}
 
+// ---- P3(3A): flush 배치 급증 원인 구분 (git log 분석, 인프라 변경 0) ----
+// Cron은 10분 주기. 간격≫10분(예: >20분) → Cron 지연 누적 의심 / 간격≈10분인데
+// 배치 큼(>15) → 제보 유입 폭주. 재배포 없이 커밋 타임스탬프로 판별.
+function flushCadence(days = 7) {
+  try {
+    const out = execSync(`git log --since="${days} days ago" --pretty=format:%cI%x09%s`,
+      { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    const flushes = [];
+    for (const ln of out.split('\n')) {
+      const tab = ln.indexOf('\t'); if (tab < 0) continue;
+      const iso = ln.slice(0, tab), subj = ln.slice(tab + 1);
+      const m = /chore\(inbox\): flush (\d+) (add|err)/.exec(subj);
+      if (m) flushes.push({ at: iso, n: +m[1], type: m[2] });
+    }
+    flushes.reverse(); // git log는 최신순 → 시간순으로
+    const gaps = [];
+    for (let i = 1; i < flushes.length; i++) {
+      const dt = Math.round((new Date(flushes[i].at) - new Date(flushes[i - 1].at)) / 60000);
+      gaps.push({ at: flushes[i].at, gapMin: dt, n: flushes[i].n, type: flushes[i].type });
+    }
+    const batches = flushes.map(f => f.n);
+    const sortedGaps = gaps.map(g => g.gapMin).sort((a, b) => a - b);
+    const surges = gaps
+      .filter(g => g.n > 15 || g.gapMin > 20)
+      .map(g => ({ at: g.at, batch: g.n, gapMin: g.gapMin,
+        likely: g.gapMin > 20 ? 'cron-delay' : (g.n > 15 ? 'inflow-surge' : 'watch') }))
+      .slice(-10);
+    return {
+      windowDays: days,
+      flushCount: flushes.length,
+      maxBatch: batches.length ? Math.max(...batches) : 0,
+      avgBatch: batches.length ? Math.round((batches.reduce((a, b) => a + b, 0) / batches.length) * 10) / 10 : 0,
+      medianGapMin: sortedGaps.length ? sortedGaps[Math.floor(sortedGaps.length / 2)] : null,
+      surges,
+      note: 'gap>20m→cron-delay 의심 / gap≈10m인데 batch>15→inflow-surge',
+    };
+  } catch (e) { return { error: String((e && e.message) || e) }; }
+}
+
 const argDate = (process.argv.find(a => a.startsWith('--date=')) || '').slice(7);
 const generatedAt = argDate || new Date().toISOString().slice(0, 10);
 
@@ -72,6 +126,7 @@ const metrics = {
     statsTotal: stats.total,
     byCategory: categories,
     byAgency,
+    subAgency,
     byGender,
     recentAddsListed: (stats.addedRecent || []).reduce((s, x) => s + (x.count || 0), 0),
   },
@@ -96,6 +151,7 @@ const metrics = {
     chunksTotal: i18nTotal,
     percent: i18nTotal ? Math.round((i18nDone / i18nTotal) * 100) : 0,
   },
+  flushCadence: flushCadence(7),
 };
 
 if (process.argv.includes('--check')) {

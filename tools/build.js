@@ -33,6 +33,8 @@ if(!Array.isArray(bands)) bands=[];
 
 const rows=[], seen=new Set();
 const errors=[], mismatch=[], dupes=[];
+// P2 Phase 1: 기타(K-idol) 하위 소속사 세분화 커버리지 집계(선택 필드 subAgency, UI 무영향)
+const subAgencyTally={}; let etcTotal=0, etcAssigned=0;
 for(const it of idols){
   const {name,group,agency,gender,dob}=it||{};
   const cat = (it&&it.cat) || "K-idol"; // 카테고리(기본 한국 아이돌)
@@ -50,6 +52,8 @@ for(const it of idols){
   if(seen.has(key)){ dupes.push(key); continue; }
   seen.add(key);
   rows.push([name,group,a.p,a.e,gender,agency,dob.replace(/-/g,''),cat]);
+  // 기타 소속사 세분화 진척(subAgency는 선택 필드 · IDOLS 배열엔 주입하지 않음)
+  if(cat==="K-idol" && agency==="기타"){ etcTotal++; const sub=(it.subAgency||'').trim(); if(sub){ subAgencyTally[sub]=(subAgencyTally[sub]||0)+1; etcAssigned++; } }
 }
 
 // anchor re-check
@@ -61,7 +65,8 @@ rows.forEach(r=>{agency[r[5]]=(agency[r[5]]||0)+1; gender[r[4]]=(gender[r[4]]||0
 
 const allGroups=new Set(rows.map(r=>r[1]));
 const bandsNotInData=bands.filter(g=>!allGroups.has(g));
-const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), category, agency, gender, bands:{count:bands.length, notInData:bandsNotInData}};
+const subAgency={etcTotal, assigned:etcAssigned, unassigned:etcTotal-etcAssigned, byLabel:subAgencyTally};
+const report={total:rows.length, errors, computeMismatch:mismatch, duplicates:dupes, anchorFails:anchorFails.map(a=>a.join('->')), category, agency, gender, subAgency, bands:{count:bands.length, notInData:bandsNotInData}};
 console.log(JSON.stringify(report,null,2));
 
 const fatal = errors.length || mismatch.length || anchorFails.length;
