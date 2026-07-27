@@ -9497,9 +9497,9 @@
     "gender": "F",
     "dob": "20091009",
     "note": "SM",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-22T19:45:54.242Z",
-    "lastAt": "2026-07-26T19:54:33.709Z",
+    "lastAt": "2026-07-27T05:42:04.277Z",
     "status": "pending"
   },
   {
@@ -10719,9 +10719,9 @@
     "gender": "F",
     "dob": "20081220",
     "note": "SM..",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-23T00:46:38.221Z",
-    "lastAt": "2026-07-27T03:36:43.223Z",
+    "lastAt": "2026-07-27T05:47:15.300Z",
     "status": "pending"
   },
   {
@@ -15155,6 +15155,45 @@
     "count": 1,
     "firstAt": "2026-07-27T05:24:16.531Z",
     "lastAt": "2026-07-27T05:24:16.531Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:박성진|day6",
+    "name": "박성진",
+    "group": "day6",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930116",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T05:41:25.815Z",
+    "lastAt": "2026-07-27T05:41:25.815Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:권오율|롱샷",
+    "name": "권오율",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "롱샷 전멤버 해주세요ㅠ",
+    "count": 1,
+    "firstAt": "2026-07-27T05:43:34.468Z",
+    "lastAt": "2026-07-27T05:43:34.468Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:fukudaayuta|dxteen",
+    "name": "FUKUDA AYUTA",
+    "group": "DXTEEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20030330",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T05:47:17.796Z",
+    "lastAt": "2026-07-27T05:47:17.796Z",
     "status": "pending"
   }
 ]
