@@ -2513,12 +2513,12 @@
     "name": "이준영",
     "group": "유키스",
     "cat": "K-idol",
-    "gender": "",
-    "dob": "",
+    "gender": "M",
+    "dob": "19970122",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T06:30:27.237Z",
-    "lastAt": "2026-07-24T06:30:27.237Z",
+    "lastAt": "2026-07-27T03:40:01.682Z",
     "status": "pending"
   },
   {
@@ -10719,9 +10719,9 @@
     "gender": "F",
     "dob": "20081220",
     "note": "SM..",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-07-23T00:46:38.221Z",
-    "lastAt": "2026-07-27T01:17:00.214Z",
+    "lastAt": "2026-07-27T03:36:43.223Z",
     "status": "pending"
   },
   {
@@ -14921,6 +14921,19 @@
     "count": 1,
     "firstAt": "2026-07-27T03:19:10.910Z",
     "lastAt": "2026-07-27T03:19:10.910Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:심재륜|enhypen",
+    "name": "심재륜",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021115",
+    "note": "HYBE",
+    "count": 1,
+    "firstAt": "2026-07-27T03:47:30.097Z",
+    "lastAt": "2026-07-27T03:47:30.097Z",
     "status": "pending"
   }
 ]
