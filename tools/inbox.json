@@ -916,10 +916,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20021130",
-    "note": "안테나 소속 아이돌 밴드",
-    "count": 3,
+    "note": "안테나. 드래곤포니 다른 멤버들은 있는데 고강훈만 없네요",
+    "count": 4,
     "firstAt": "2026-07-24T05:13:55.452Z",
-    "lastAt": "2026-07-26T02:49:08.201Z",
+    "lastAt": "2026-07-27T05:26:13.219Z",
     "status": "pending"
   },
   {
@@ -14020,10 +14020,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19940227",
-    "note": "미스틱스토리, 밴드",
-    "count": 2,
+    "note": "미스틱스토리",
+    "count": 3,
     "firstAt": "2026-07-26T15:58:57.176Z",
-    "lastAt": "2026-07-26T15:58:57.176Z",
+    "lastAt": "2026-07-27T05:25:02.761Z",
     "status": "pending"
   },
   {
@@ -15129,6 +15129,32 @@
     "count": 1,
     "firstAt": "2026-07-27T05:11:36.353Z",
     "lastAt": "2026-07-27T05:11:36.353Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:xinyu|triples",
+    "name": "xinyu",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T05:21:19.360Z",
+    "lastAt": "2026-07-27T05:21:19.360Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이진솔|에이프릴",
+    "name": "이진솔",
+    "group": "에이프릴",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20011204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T05:24:16.531Z",
+    "lastAt": "2026-07-27T05:24:16.531Z",
     "status": "pending"
   }
 ]
