@@ -15260,5 +15260,31 @@
     "firstAt": "2026-07-27T06:08:32.730Z",
     "lastAt": "2026-07-27T06:08:32.730Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李欣然|cortis",
+    "name": "李欣然",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040424",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T06:22:34.529Z",
+    "lastAt": "2026-07-27T06:22:34.529Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:남예준|플레이브/vlast",
+    "name": "남예준",
+    "group": "플레이브/VLAST",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010912",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T06:27:05.637Z",
+    "lastAt": "2026-07-27T06:27:05.637Z",
+    "status": "pending"
   }
 ]
