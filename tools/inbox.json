@@ -14753,5 +14753,31 @@
     "firstAt": "2026-07-27T01:34:47.755Z",
     "lastAt": "2026-07-27T01:34:47.755Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:覃思诗|ald1",
+    "name": "覃思诗",
+    "group": "ald1",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20110305",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T01:55:03.918Z",
+    "lastAt": "2026-07-27T01:55:03.918Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:尹净汉|seventeen",
+    "name": "尹净汉",
+    "group": "SEVENTEEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951004",
+    "note": "帅妈妈",
+    "count": 1,
+    "firstAt": "2026-07-27T01:59:34.006Z",
+    "lastAt": "2026-07-27T01:59:34.006Z",
+    "status": "pending"
   }
 ]
