@@ -7937,9 +7937,9 @@
     "gender": "M",
     "dob": "19900302",
     "note": "FNC",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T03:12:28.807Z",
-    "lastAt": "2026-07-25T06:05:15.895Z",
+    "lastAt": "2026-07-27T04:34:38.703Z",
     "status": "pending"
   },
   {
@@ -15051,6 +15051,19 @@
     "count": 1,
     "firstAt": "2026-07-27T04:22:27.590Z",
     "lastAt": "2026-07-27T04:22:27.590Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정택운(레오)|vixx",
+    "name": "정택운 (레오)",
+    "group": "VIXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19901110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T04:31:48.371Z",
+    "lastAt": "2026-07-27T04:31:48.371Z",
     "status": "pending"
   }
 ]
