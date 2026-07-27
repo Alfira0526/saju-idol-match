@@ -14675,5 +14675,18 @@
     "firstAt": "2026-07-27T00:50:18.126Z",
     "lastAt": "2026-07-27T00:50:18.126Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:cyee|girlgeneration,twice",
+    "name": "Cyee",
+    "group": "Girl generation , TWICE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19871211",
+    "note": "Na",
+    "count": 1,
+    "firstAt": "2026-07-27T00:56:11.213Z",
+    "lastAt": "2026-07-27T00:56:11.213Z",
+    "status": "pending"
   }
 ]
