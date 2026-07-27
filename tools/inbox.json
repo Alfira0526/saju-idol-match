@@ -15117,5 +15117,18 @@
     "firstAt": "2026-07-27T05:02:17.800Z",
     "lastAt": "2026-07-27T05:02:17.800Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hikaru|aoen",
+    "name": "Hikaru",
+    "group": "aoen",
+    "cat": "J-idol",
+    "gender": "",
+    "dob": "20050328",
+    "note": "hybe Japan",
+    "count": 1,
+    "firstAt": "2026-07-27T05:11:36.353Z",
+    "lastAt": "2026-07-27T05:11:36.353Z",
+    "status": "pending"
   }
 ]
