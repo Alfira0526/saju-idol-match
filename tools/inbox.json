@@ -761,7 +761,7 @@
     "gender": "M",
     "dob": "20040405",
     "note": "SM",
-    "count": 22,
+    "count": 23,
     "firstAt": "2026-07-22T17:41:35.381Z",
     "lastAt": "2026-07-27T08:10:37.824Z",
     "status": "pending"
@@ -1346,7 +1346,7 @@
     "gender": "M",
     "dob": "20020511",
     "note": "제 최애인데 없더요ㅠ",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-23T00:01:23.194Z",
     "lastAt": "2026-07-27T09:40:29.458Z",
     "status": "pending"
@@ -1579,10 +1579,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030508",
-    "note": "소속사 웨이크원, 보이즈 II 플래닛 결성 그룹 데뷔일 20260112, 제로베이스원 직속 후배입니다",
-    "count": 3,
+    "note": "웨이크원",
+    "count": 4,
     "firstAt": "2026-07-23T03:24:30.252Z",
-    "lastAt": "2026-07-27T06:02:51.606Z",
+    "lastAt": "2026-07-27T10:14:14.649Z",
     "status": "pending"
   },
   {
@@ -2854,7 +2854,7 @@
     "gender": "M",
     "dob": "20070919",
     "note": "wk1",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-24T03:59:06.203Z",
     "lastAt": "2026-07-27T08:04:15.366Z",
     "status": "pending"
@@ -4310,7 +4310,7 @@
     "gender": "M",
     "dob": "20050621",
     "note": "Nct니까",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T05:33:01.494Z",
     "lastAt": "2026-07-27T09:30:01.561Z",
     "status": "pending"
@@ -6416,7 +6416,7 @@
     "gender": "M",
     "dob": "20070801",
     "note": "",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-23T02:47:53.970Z",
     "lastAt": "2026-07-27T10:00:23.232Z",
     "status": "pending"
@@ -7742,7 +7742,7 @@
     "gender": "F",
     "dob": "20070418",
     "note": "5세대 대표 그룹중 하나인데 아직도 없다니",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-25T05:45:17.906Z",
     "lastAt": "2026-07-27T08:53:25.808Z",
     "status": "pending"
@@ -7806,10 +7806,10 @@
     "cat": "J-idol",
     "gender": "M",
     "dob": "20010820",
-    "note": "YG",
-    "count": 3,
+    "note": "일본 멤버 아사히, 함다 아사히",
+    "count": 4,
     "firstAt": "2026-07-25T05:49:55.947Z",
-    "lastAt": "2026-07-26T01:19:45.770Z",
+    "lastAt": "2026-07-27T10:27:51.915Z",
     "status": "pending"
   },
   {
@@ -8404,10 +8404,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20051117",
-    "note": "Modhaus",
-    "count": 4,
+    "note": "아이덴티티부탁드립니다제발",
+    "count": 6,
     "firstAt": "2026-07-22T19:12:59.937Z",
-    "lastAt": "2026-07-27T08:42:44.488Z",
+    "lastAt": "2026-07-27T10:35:43.972Z",
     "status": "pending"
   },
   {
@@ -9041,10 +9041,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20020714",
-    "note": "",
-    "count": 2,
+    "note": "웨이크원",
+    "count": 3,
     "firstAt": "2026-07-25T08:18:07.052Z",
-    "lastAt": "2026-07-26T09:27:20.948Z",
+    "lastAt": "2026-07-27T10:17:09.982Z",
     "status": "pending"
   },
   {
@@ -9133,7 +9133,7 @@
     "gender": "F",
     "dob": "20070412",
     "note": "소속사 sm이구 유하 외에 하츠투하츠 전체 바랍니당!!ㅜㅜ",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-25T08:27:43.850Z",
     "lastAt": "2026-07-27T08:34:33.475Z",
     "status": "pending"
@@ -9354,7 +9354,7 @@
     "gender": "F",
     "dob": "",
     "note": "더블랙레이블 소속 입니당",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-22T23:49:16.937Z",
     "lastAt": "2026-07-27T08:23:04.165Z",
     "status": "pending"
@@ -12123,7 +12123,7 @@
     "gender": "F",
     "dob": "20040213",
     "note": "트리플에스 신위, 지연 2명 빠져있음",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-26T09:50:20.159Z",
     "lastAt": "2026-07-27T08:01:01.334Z",
     "status": "pending"
@@ -14827,7 +14827,7 @@
     "gender": "M",
     "dob": "20100809",
     "note": "无",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T02:30:36.358Z",
     "lastAt": "2026-07-27T10:05:09.515Z",
     "status": "pending"
@@ -15373,7 +15373,7 @@
     "gender": "M",
     "dob": "20080607",
     "note": "잘생겼어요 ㅎㅎ",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:09:58.771Z",
     "lastAt": "2026-07-27T08:09:58.771Z",
     "status": "pending"
@@ -15386,7 +15386,7 @@
     "gender": "M",
     "dob": "20070920",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:09:59.501Z",
     "lastAt": "2026-07-27T08:09:59.501Z",
     "status": "pending"
@@ -15399,7 +15399,7 @@
     "gender": "",
     "dob": "20020831",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:10:24.283Z",
     "lastAt": "2026-07-27T08:10:24.283Z",
     "status": "pending"
@@ -15412,7 +15412,7 @@
     "gender": "F",
     "dob": "20010427",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:10:50.494Z",
     "lastAt": "2026-07-27T08:10:50.494Z",
     "status": "pending"
@@ -15425,7 +15425,7 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:16:06.322Z",
     "lastAt": "2026-07-27T08:16:06.322Z",
     "status": "pending"
@@ -15438,7 +15438,7 @@
     "gender": "M",
     "dob": "19970214",
     "note": "sm",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:31:02.098Z",
     "lastAt": "2026-07-27T08:31:02.098Z",
     "status": "pending"
@@ -15451,7 +15451,7 @@
     "gender": "M",
     "dob": "20040405",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:32:07.261Z",
     "lastAt": "2026-07-27T08:32:07.261Z",
     "status": "pending"
@@ -15464,7 +15464,7 @@
     "gender": "",
     "dob": "20030904",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:33:56.680Z",
     "lastAt": "2026-07-27T08:33:56.680Z",
     "status": "pending"
@@ -15477,7 +15477,7 @@
     "gender": "M",
     "dob": "20000914",
     "note": "jyp",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:43:32.609Z",
     "lastAt": "2026-07-27T08:43:32.609Z",
     "status": "pending"
@@ -15490,7 +15490,7 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:56:23.399Z",
     "lastAt": "2026-07-27T08:56:23.399Z",
     "status": "pending"
@@ -15503,7 +15503,7 @@
     "gender": "M",
     "dob": "20030923",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T08:59:01.509Z",
     "lastAt": "2026-07-27T08:59:01.509Z",
     "status": "pending"
@@ -15516,7 +15516,7 @@
     "gender": "M",
     "dob": "20060119",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:03:56.526Z",
     "lastAt": "2026-07-27T09:03:56.526Z",
     "status": "pending"
@@ -15529,7 +15529,7 @@
     "gender": "M",
     "dob": "20060516",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:07:31.379Z",
     "lastAt": "2026-07-27T09:07:31.379Z",
     "status": "pending"
@@ -15542,7 +15542,7 @@
     "gender": "F",
     "dob": "20060619",
     "note": "티오피미디어",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:07:38.340Z",
     "lastAt": "2026-07-27T09:07:38.340Z",
     "status": "pending"
@@ -15555,7 +15555,7 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:18:00.375Z",
     "lastAt": "2026-07-27T09:18:00.375Z",
     "status": "pending"
@@ -15568,7 +15568,7 @@
     "gender": "F",
     "dob": "20010101",
     "note": "？",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:20:09.485Z",
     "lastAt": "2026-07-27T09:20:09.485Z",
     "status": "pending"
@@ -15581,7 +15581,7 @@
     "gender": "M",
     "dob": "",
     "note": "너무너무 사랑합니다",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:33:36.697Z",
     "lastAt": "2026-07-27T09:33:36.697Z",
     "status": "pending"
@@ -15594,7 +15594,7 @@
     "gender": "M",
     "dob": "20050830",
     "note": "피네이션",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:46:56.574Z",
     "lastAt": "2026-07-27T09:46:56.574Z",
     "status": "pending"
@@ -15607,7 +15607,7 @@
     "gender": "M",
     "dob": "090113",
     "note": "내남자",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T09:50:00.287Z",
     "lastAt": "2026-07-27T09:50:00.287Z",
     "status": "pending"
@@ -15620,9 +15620,48 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T10:06:48.927Z",
     "lastAt": "2026-07-27T10:06:48.927Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:martin|cortis",
+    "name": "Martin",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T10:24:01.565Z",
+    "lastAt": "2026-07-27T10:24:01.565Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:lamto|triples",
+    "name": "Lam To",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T10:35:44.932Z",
+    "lastAt": "2026-07-27T10:35:44.932Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:nct|nct",
+    "name": "NCT",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T10:40:13.941Z",
+    "lastAt": "2026-07-27T10:40:13.941Z",
     "status": "pending"
   }
 ]
