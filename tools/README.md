@@ -60,15 +60,25 @@ EOF
 ---
 
 ## Daily automation playbook
-A scheduled Routine runs once a day and performs **one** task, chosen by
-`(UTC day-of-year) mod 3`:
+A scheduled Routine runs once a day and performs **one** task, chosen by a
+**fixed weekly schedule** (UTC weekday via `date -u +%u`; `1`=Mon … `7`=Sun):
 
-- **0 → Task A · 소속사 세분화 (agency refinement).** Research (web) the real
+| 요일 (UTC `%u`) | 그날 작업 |
+|---|---|
+| **월·수·금** (1·3·5) | **Task B** · 데이터 추가 |
+| **화·토** (2·6) | **Task A** · 소속사 세분화 |
+| **목·일** (4·7) | **Task C** · 다국어 i18n |
+
+> 이 표는 **제보(inbox) 처리분이 없을 때/처리 후** 수행하는 요일 작업이다. 제보가
+> 있으면 항상 요일 작업보다 **먼저** 처리한다(아래 *제보 우선 반영*). 과거에는
+> `(day-of-year) mod 3`으로 무작위처럼 골랐으나, 예측 가능하도록 요일 고정으로 바꿨다.
+
+- **Task A · 소속사 세분화 (agency refinement).** Research (web) the real
   agency of groups currently in `기타` and add mid-size labels (스타쉽/Starship,
   큐브/Cube, RBW, KQ, IST, WM, Woollim, Fantagio, WakeOne …). Implement as a
   *sub-agency* layer so the existing HYBE/SM/YG/JYP/기타 buttons keep working —
   do NOT break the 5-bucket model; add finer grouping additively.
-- **1 → Task B · 데이터 추가 (add idols).** Research 1–2 new groups, append to
+- **Task B · 데이터 추가 (add idols).** Research 1–2 new groups, append to
   `tools/idols.json`, rebuild. Safest task; prefer this when unsure.
   - **한국 아이돌을 우선 소진**한다. 더 추가할 한국 아이돌 그룹이 없으면(=미수록
     유명 그룹이 남지 않으면) **카테고리를 확장**한다: 일본 아이돌 → 중국 배우 →
@@ -94,7 +104,7 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
       애니/게임 캐릭터는 대개 월·일만 있고 출생 연도가 없어 일주를 계산할 수
       없다. 실존 인물만 추가한다.
     - 배우 등 연령대가 넓을 수 있으니 확실한 **양력 생일**만 넣는다(범위 1940~2015).
-- **2 → Task C · 다국어 (i18n).** 해외 팬덤 지원, **영어 먼저**. 진행은 반드시
+- **Task C · 다국어 (i18n).** 해외 팬덤 지원, **영어 먼저**. 진행은 반드시
   [`tools/i18n-plan.md`](./i18n-plan.md)를 따른다 — 체크리스트에서 미완료(`[ ]`) 청크 맨 위 1개를
   처리하고 `[x]`로 표시·커밋. **각 청크는 KO 폴백 보장(중간 상태에서도 KO 화면 정상).**
   > 일정 방침(팀장 판정): i18n은 **매일 최우선이 아니라 이 Task C 순환 슬롯**에서 진행한다.
@@ -164,7 +174,7 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
      `Etc`에 같은 유형이 30명 가까이 쌓이면 위의 *승격 규칙*대로 독립 카테고리로 뺀다.
 3. 확인된 항목만 `tools/idols.json` 에 추가 → `node tools/build.js` → 헤드리스
    스모크 테스트. **자동 커밋 금지**: 빌드·테스트 통과가 반영의 전제.
-4. **`tools/stats.json` 갱신**(배너 숫자 + 게임 시작 팝업 공지의 소스):
+4. **`tools/stats.json` 갱신**(배너 숫자 + 첫 진입 **토스트**(구 팝업) 공지의 소스):
    ```json
    {
      "total": <idols.json 총 인원 수>,
@@ -175,9 +185,10 @@ A scheduled Routine runs once a day and performs **one** task, chosen by
    }
    ```
    - `total` 은 실제 `idols.json` 길이와 **정확히 일치**시킨다(과장 금지).
-   - `addedRecent` 앞쪽에 오늘 항목을 **prepend**한다. 앱 팝업은 **최근 3일치만**
+   - `addedRecent` 앞쪽에 오늘 항목을 **prepend**한다. 앱 토스트는 **최근 3일치만**
      노출하므로 4일보다 오래된 항목은 정리해도 된다(선택).
-   - `text` 는 팝업에 그대로 뜬다(토스 기획자 톤, 담백하게). 예: `"엑스디너리히어로즈 추가"`.
+   - `text` 는 상단 토스트에 그룹명으로 뜬다(`"추가"` 접미사는 앱이 떼어내 표시). 토스
+     기획자 톤, 담백하게. 예: `"엑스디너리히어로즈 추가"`.
    - 날짜(UTC 실행 기준)를 코드로 만들지 말고, 세션에서 실제 오늘 날짜를 확인해 넣는다.
 5. 반영(또는 이미 존재)한 제보 `key`를 **`tools/inbox-done.json`에 추가**한다(루틴 커밋에 포함).
    `inbox-done.json`에 든 key는 다음 실행부터 건너뛴다(재처리 방지). 워커 `/mark` 호출은 불필요
