@@ -7703,9 +7703,9 @@
     "gender": "M",
     "dob": "20010820",
     "note": "YG",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-25T05:41:24.735Z",
-    "lastAt": "2026-07-27T02:33:33.420Z",
+    "lastAt": "2026-07-27T03:06:44.731Z",
     "status": "pending"
   },
   {
@@ -10459,9 +10459,9 @@
     "gender": "M",
     "dob": "20040522",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T02:04:00.679Z",
-    "lastAt": "2026-07-26T02:04:00.679Z",
+    "lastAt": "2026-07-27T03:04:48.964Z",
     "status": "pending"
   },
   {
@@ -14856,6 +14856,58 @@
     "count": 1,
     "firstAt": "2026-07-27T02:59:16.842Z",
     "lastAt": "2026-07-27T02:59:16.842Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김동현|ab6ix(에이비식스)",
+    "name": "김동현",
+    "group": "AB6IX (에이비식스)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980917",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T03:00:46.760Z",
+    "lastAt": "2026-07-27T03:00:46.760Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:취영|charmain",
+    "name": "취영",
+    "group": "Charmain",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T03:02:27.639Z",
+    "lastAt": "2026-07-27T03:02:27.639Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:zhugudanqing|seventeen",
+    "name": "Zhu Gudanqing",
+    "group": "seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951216",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T03:09:00.327Z",
+    "lastAt": "2026-07-27T03:09:00.327Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:taniguchitaichi|dxteen",
+    "name": "TANIGUCHI TAICHI",
+    "group": "DXTEEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20020711",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T03:09:29.698Z",
+    "lastAt": "2026-07-27T03:09:29.698Z",
     "status": "pending"
   }
 ]
