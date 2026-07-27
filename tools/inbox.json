@@ -15000,5 +15000,31 @@
     "firstAt": "2026-07-27T04:09:47.321Z",
     "lastAt": "2026-07-27T04:09:47.321Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김승모|ampers&one",
+    "name": "김승모",
+    "group": "AMPERS&ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060703",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-27T04:11:18.904Z",
+    "lastAt": "2026-07-27T04:11:18.904Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:쉬멍한|theboyz",
+    "name": "쉬멍한",
+    "group": "theboyz",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070104",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T04:14:09.576Z",
+    "lastAt": "2026-07-27T04:14:09.576Z",
+    "status": "pending"
   }
 ]
