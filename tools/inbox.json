@@ -15325,5 +15325,31 @@
     "firstAt": "2026-07-27T07:04:13.390Z",
     "lastAt": "2026-07-27T07:04:13.390Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이희승|enhypen",
+    "name": "이희승",
+    "group": "enhypen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T07:41:51.957Z",
+    "lastAt": "2026-07-27T07:41:51.957Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:양요섭|하이라이트",
+    "name": "양요섭",
+    "group": "하이라이트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900105",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T07:42:36.164Z",
+    "lastAt": "2026-07-27T07:42:36.164Z",
+    "status": "pending"
   }
 ]
