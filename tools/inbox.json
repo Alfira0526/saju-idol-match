@@ -85,9 +85,9 @@
     "gender": "M",
     "dob": "20090214",
     "note": "잘생김",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-22T17:43:26.295Z",
-    "lastAt": "2026-07-24T04:23:46.668Z",
+    "lastAt": "2026-07-27T02:20:26.883Z",
     "status": "pending"
   },
   {
@@ -14791,6 +14791,32 @@
     "count": 1,
     "firstAt": "2026-07-27T02:01:29.265Z",
     "lastAt": "2026-07-27T02:01:29.265Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마카야|ampers&one",
+    "name": "마카야",
+    "group": "AMPERS&ONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060121",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-27T02:16:03.860Z",
+    "lastAt": "2026-07-27T02:16:03.860Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김동현|ab6ix",
+    "name": "김동현",
+    "group": "AB6IX",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19980917",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T02:19:32.741Z",
+    "lastAt": "2026-07-27T02:19:32.741Z",
     "status": "pending"
   }
 ]
