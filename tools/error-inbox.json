@@ -949,5 +949,23 @@
     "firstAt": "2026-07-27T00:00:45.196Z",
     "lastAt": "2026-07-27T00:00:45.196Z",
     "status": "pending"
+  },
+  {
+    "key": "er:박성현|idid",
+    "name": "박성현",
+    "group": "IDID",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20071005"
+    ],
+    "notes": [
+      "네이버"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-27T01:57:05.295Z",
+    "lastAt": "2026-07-27T01:57:05.295Z",
+    "status": "pending"
   }
 ]
