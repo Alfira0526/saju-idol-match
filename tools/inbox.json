@@ -7157,9 +7157,9 @@
     "gender": "M",
     "dob": "20000725",
     "note": "YH엔터테인먼트",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-23T09:06:25.475Z",
-    "lastAt": "2026-07-25T04:38:25.347Z",
+    "lastAt": "2026-07-27T04:49:49.519Z",
     "status": "pending"
   },
   {
@@ -10211,10 +10211,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20061025",
-    "note": "모드하우스",
-    "count": 4,
+    "note": "아이덴티티요즘붐업합니다",
+    "count": 5,
     "firstAt": "2026-07-23T00:34:59.775Z",
-    "lastAt": "2026-07-27T01:50:32.793Z",
+    "lastAt": "2026-07-27T04:45:59.076Z",
     "status": "pending"
   },
   {
@@ -13409,10 +13409,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20020218",
-    "note": "",
-    "count": 1,
+    "note": "woollim",
+    "count": 2,
     "firstAt": "2026-07-26T14:45:26.252Z",
-    "lastAt": "2026-07-26T14:45:26.252Z",
+    "lastAt": "2026-07-27T04:49:46.634Z",
     "status": "pending"
   },
   {
@@ -15064,6 +15064,45 @@
     "count": 1,
     "firstAt": "2026-07-27T04:31:48.371Z",
     "lastAt": "2026-07-27T04:31:48.371Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hiramotoken|dxteen",
+    "name": "HIRAMOTO KEN",
+    "group": "DXTEEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20041218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T04:48:59.904Z",
+    "lastAt": "2026-07-27T04:48:59.904Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:林琬婷|riize",
+    "name": "林琬婷",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050913",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-07-27T04:50:13.173Z",
+    "lastAt": "2026-07-27T04:50:13.173Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:rev'yoda|triples",
+    "name": "Rev'yoda",
+    "group": "tripleS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070612",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T04:50:40.467Z",
+    "lastAt": "2026-07-27T04:50:40.467Z",
     "status": "pending"
   }
 ]
