@@ -14662,5 +14662,18 @@
     "firstAt": "2026-07-27T00:25:56.436Z",
     "lastAt": "2026-07-27T00:25:56.436Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jooyen|xdinaryheroes",
+    "name": "Jooyen",
+    "group": "xdinary heroes",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020912",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-27T00:50:18.126Z",
+    "lastAt": "2026-07-27T00:50:18.126Z",
+    "status": "pending"
   }
 ]
