@@ -18926,5 +18926,18 @@
     "firstAt": "2026-07-28T15:56:47.869Z",
     "lastAt": "2026-07-28T15:56:47.869Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하루|nexz",
+    "name": "하루",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060123",
+    "note": "JYP엔터테인먼트 소속 남자 아이돌입니다",
+    "count": 1,
+    "firstAt": "2026-07-28T16:00:53.618Z",
+    "lastAt": "2026-07-28T16:00:53.618Z",
+    "status": "pending"
   }
 ]
