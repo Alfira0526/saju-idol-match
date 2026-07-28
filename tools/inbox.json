@@ -2566,11 +2566,11 @@
     "group": "트레저",
     "cat": "K-idol",
     "gender": "M",
-    "dob": "",
+    "dob": "20010820",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T06:33:28.602Z",
-    "lastAt": "2026-07-24T08:13:11.531Z",
+    "lastAt": "2026-07-28T12:52:36.993Z",
     "status": "pending"
   },
   {
@@ -6546,9 +6546,9 @@
     "gender": "F",
     "dob": "19930818",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T03:47:47.742Z",
-    "lastAt": "2026-07-25T03:47:47.742Z",
+    "lastAt": "2026-07-28T12:54:59.056Z",
     "status": "pending"
   },
   {
@@ -18626,6 +18626,19 @@
     "count": 1,
     "firstAt": "2026-07-28T12:27:20.472Z",
     "lastAt": "2026-07-28T12:27:20.472Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:인후|tunexx",
+    "name": "인후",
+    "group": "TUNEXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T12:54:29.978Z",
+    "lastAt": "2026-07-28T12:54:29.978Z",
     "status": "pending"
   }
 ]
