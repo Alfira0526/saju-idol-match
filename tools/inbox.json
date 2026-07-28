@@ -4856,9 +4856,9 @@
     "gender": "",
     "dob": "20020302",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T00:05:47.054Z",
-    "lastAt": "2026-07-28T08:28:10.651Z",
+    "lastAt": "2026-07-28T12:19:13.014Z",
     "status": "pending"
   },
   {
@@ -18600,6 +18600,19 @@
     "count": 1,
     "firstAt": "2026-07-28T12:09:58.346Z",
     "lastAt": "2026-07-28T12:09:58.346Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:해민|8turn",
+    "name": "해민",
+    "group": "8turn",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040316",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T12:14:22.184Z",
+    "lastAt": "2026-07-28T12:14:22.184Z",
     "status": "pending"
   }
 ]
