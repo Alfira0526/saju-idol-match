@@ -33,3 +33,8 @@
   신설(우선 J-idol). (P2) `기타` 세분화 **Phase 1**(subAgency 필드) 기반 구축 — build.js·
   ops-metrics 지원, Task A가 점진 부여, UI 불변. (P3) **flushCadence 계측 완료**(3A) —
   cron-delay/inflow-surge 자동 구분. 요일 고정표: 월·수·금 B / 화·토 A / 목 C / 일 D.
+- 2026-07-27 — **build.js `--check` 가드 강화**: 카테고리 라벨(CAT_ORDER·CAT_NAMES)·subAgency
+  배치 무결성 → 3개 루틴 공통 자동 차단. 헬스체크에 ops-metrics 무결성(d)·flushCadence
+  Cron 생존 관찰(5) 추가.
+- 2026-07-27 — **P4 수익화(광고) 검토 → 보류.** 5인 페르소나 토의 완료(`monetization-review.md`).
+  실비용 ~0라 침습적 광고 미도입. 재검토 트리거: Worker 무료 티어 한계 접근·트래픽 급증.
