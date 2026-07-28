@@ -864,10 +864,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20021130",
-    "note": "안테나/드래곤포니 멤버에 고강훈이 빠졌어요",
-    "count": 3,
+    "note": "드래곤포니 멤버인데 왜 혼자 빠져있나요 ㅜㅜ 추가 부탁드려용..",
+    "count": 4,
     "firstAt": "2026-07-24T05:11:30.858Z",
-    "lastAt": "2026-07-25T10:34:21.351Z",
+    "lastAt": "2026-07-28T05:46:20.441Z",
     "status": "pending"
   },
   {
@@ -916,10 +916,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20021130",
-    "note": "드래곤포니 드럼 멤버에요!",
-    "count": 5,
+    "note": "드포중에 강훈이만없습니다",
+    "count": 6,
     "firstAt": "2026-07-24T05:13:55.452Z",
-    "lastAt": "2026-07-28T01:58:27.957Z",
+    "lastAt": "2026-07-28T05:36:27.686Z",
     "status": "pending"
   },
   {
@@ -969,9 +969,9 @@
     "gender": "M",
     "dob": "20030628",
     "note": "SM",
-    "count": 23,
+    "count": 24,
     "firstAt": "2026-07-22T18:41:08.724Z",
-    "lastAt": "2026-07-28T03:42:09.695Z",
+    "lastAt": "2026-07-28T05:52:01.499Z",
     "status": "pending"
   },
   {
@@ -1580,9 +1580,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "웨이크원",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T03:24:30.252Z",
-    "lastAt": "2026-07-27T10:14:14.649Z",
+    "lastAt": "2026-07-28T06:29:35.630Z",
     "status": "pending"
   },
   {
@@ -3334,10 +3334,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19920613",
-    "note": "궁합 보고 싶어서... 루시 멤버 전체 들어오면 좋을 것 같아요..!",
-    "count": 5,
+    "note": "제 최애라서…",
+    "count": 6,
     "firstAt": "2026-07-24T03:24:03.455Z",
-    "lastAt": "2026-07-28T00:00:03.437Z",
+    "lastAt": "2026-07-28T06:10:11.203Z",
     "status": "pending"
   },
   {
@@ -7547,9 +7547,9 @@
     "gender": "M",
     "dob": "20031204",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T05:17:37.187Z",
-    "lastAt": "2026-07-25T05:17:37.187Z",
+    "lastAt": "2026-07-28T05:39:08.263Z",
     "status": "pending"
   },
   {
@@ -9014,11 +9014,11 @@
     "group": "Seventeen",
     "cat": "K-idol",
     "gender": "",
-    "dob": "",
+    "dob": "20040925",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T08:16:38.695Z",
-    "lastAt": "2026-07-25T08:16:38.695Z",
+    "lastAt": "2026-07-28T06:01:15.575Z",
     "status": "pending"
   },
   {
@@ -12760,9 +12760,9 @@
     "gender": "M",
     "dob": "20041005",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T13:05:00.354Z",
-    "lastAt": "2026-07-26T13:05:00.354Z",
+    "lastAt": "2026-07-28T05:45:51.617Z",
     "status": "pending"
   },
   {
@@ -16491,9 +16491,9 @@
     "gender": "M",
     "dob": "19940817",
     "note": "RBW 잘생기고 실력파 밴드입니당 🫰🏻☺️🩷🩷",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T14:37:10.130Z",
-    "lastAt": "2026-07-27T14:37:10.130Z",
+    "lastAt": "2026-07-28T06:15:05.984Z",
     "status": "pending"
   },
   {
@@ -17846,6 +17846,123 @@
     "count": 1,
     "firstAt": "2026-07-28T05:14:46.302Z",
     "lastAt": "2026-07-28T05:14:46.302Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김률|lngshot(롱샷)",
+    "name": "김률",
+    "group": "Lngshot (롱샷)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060918",
+    "note": "모어비전",
+    "count": 1,
+    "firstAt": "2026-07-28T05:22:34.204Z",
+    "lastAt": "2026-07-28T05:22:34.204Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:왕루이|hearts2hearts",
+    "name": "왕루이",
+    "group": "hearts2hearts",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T05:38:16.044Z",
+    "lastAt": "2026-07-28T05:38:16.044Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:pledis|seventeen",
+    "name": "Pledis",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 2,
+    "firstAt": "2026-07-28T05:40:37.476Z",
+    "lastAt": "2026-07-28T06:06:29.044Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:안건호|cortis",
+    "name": "안건호",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090214",
+    "note": "빅히트뮤직",
+    "count": 1,
+    "firstAt": "2026-07-28T05:44:11.046Z",
+    "lastAt": "2026-07-28T05:44:11.046Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:니엘|솔로,틴탑",
+    "name": "니엘",
+    "group": "솔로, 틴탑",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940816",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T05:48:51.040Z",
+    "lastAt": "2026-07-28T05:48:51.040Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:브라이언|앰퍼샌드원",
+    "name": "브라이언",
+    "group": "앰퍼샌드원",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020827",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-07-28T05:52:35.047Z",
+    "lastAt": "2026-07-28T05:52:35.047Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:성현|코르티스",
+    "name": "성현",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090113",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T05:53:09.229Z",
+    "lastAt": "2026-07-28T05:53:09.229Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:chenyanxi|hearts2hearts",
+    "name": "chenyanxi",
+    "group": "hearts2hearts",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070120",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T06:02:08.218Z",
+    "lastAt": "2026-07-28T06:02:08.218Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:moka|illit",
+    "name": "moka",
+    "group": "illit",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20041008",
+    "note": "hybe",
+    "count": 1,
+    "firstAt": "2026-07-28T06:03:46.594Z",
+    "lastAt": "2026-07-28T06:03:46.594Z",
     "status": "pending"
   }
 ]
