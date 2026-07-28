@@ -4180,9 +4180,9 @@
     "gender": "F",
     "dob": "20050525",
     "note": "",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-22T21:44:38.916Z",
-    "lastAt": "2026-07-24T08:10:55.344Z",
+    "lastAt": "2026-07-28T07:15:45.861Z",
     "status": "pending"
   },
   {
@@ -18067,6 +18067,19 @@
     "count": 1,
     "firstAt": "2026-07-28T07:02:16.947Z",
     "lastAt": "2026-07-28T07:02:16.947Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정훈|xikers",
+    "name": "정훈",
+    "group": "xikers",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20050705",
+    "note": "싸이커스 넣어주세용..",
+    "count": 1,
+    "firstAt": "2026-07-28T07:16:28.629Z",
+    "lastAt": "2026-07-28T07:16:28.629Z",
     "status": "pending"
   }
 ]
