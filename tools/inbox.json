@@ -1239,12 +1239,12 @@
     "name": "원호",
     "group": "솔로",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "19930301",
-    "note": "스타쉽엔",
-    "count": 1,
+    "note": "Highline Entertainment",
+    "count": 2,
     "firstAt": "2026-07-24T05:29:16.471Z",
-    "lastAt": "2026-07-24T05:29:16.471Z",
+    "lastAt": "2026-07-28T04:11:20.657Z",
     "status": "pending"
   },
   {
@@ -13292,10 +13292,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090610",
-    "note": "모드하우스",
-    "count": 2,
+    "note": "다른 망돌은 다 있는데 왜 아덴은 없나요…ㅠ",
+    "count": 3,
     "firstAt": "2026-07-26T14:23:53.493Z",
-    "lastAt": "2026-07-27T10:48:26.110Z",
+    "lastAt": "2026-07-28T04:13:46.776Z",
     "status": "pending"
   },
   {
@@ -17531,9 +17531,9 @@
     "gender": "M",
     "dob": "20050107",
     "note": "스타쉽",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-28T03:19:08.760Z",
-    "lastAt": "2026-07-28T03:19:08.760Z",
+    "lastAt": "2026-07-28T04:12:39.582Z",
     "status": "pending"
   },
   {
@@ -17716,6 +17716,32 @@
     "count": 1,
     "firstAt": "2026-07-28T04:06:51.085Z",
     "lastAt": "2026-07-28T04:06:51.085Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:yeonjun|txy",
+    "name": "yeonjun",
+    "group": "txy",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:13:28.966Z",
+    "lastAt": "2026-07-28T04:13:28.966Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:노아|plave",
+    "name": "노아",
+    "group": "PLAVE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010210",
+    "note": "플레이브 제발 부탁드립니다",
+    "count": 1,
+    "firstAt": "2026-07-28T04:18:42.532Z",
+    "lastAt": "2026-07-28T04:18:42.532Z",
     "status": "pending"
   }
 ]
