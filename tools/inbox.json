@@ -18718,5 +18718,18 @@
     "firstAt": "2026-07-28T13:35:46.706Z",
     "lastAt": "2026-07-28T13:35:46.706Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:페드로파스칼|배우",
+    "name": "페드로 파스칼",
+    "group": "배우",
+    "cat": "US-actor",
+    "gender": "M",
+    "dob": "19750402",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T13:43:47.682Z",
+    "lastAt": "2026-07-28T13:43:47.682Z",
+    "status": "pending"
   }
 ]
