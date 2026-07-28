@@ -787,9 +787,9 @@
     "gender": "M",
     "dob": "19961022",
     "note": "궁합에 보고싶어서",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-24T05:06:07.360Z",
-    "lastAt": "2026-07-28T10:40:11.260Z",
+    "lastAt": "2026-07-28T15:24:31.373Z",
     "status": "pending"
   },
   {
@@ -18886,6 +18886,19 @@
     "count": 1,
     "firstAt": "2026-07-28T15:01:19.176Z",
     "lastAt": "2026-07-28T15:01:19.176Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:종현|남:shinee",
+    "name": "종현",
+    "group": "남:SHINee",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900408",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T15:22:05.529Z",
+    "lastAt": "2026-07-28T15:22:05.529Z",
     "status": "pending"
   }
 ]
