@@ -1311,5 +1311,21 @@
     "firstAt": "2026-07-28T17:56:28.156Z",
     "lastAt": "2026-07-28T17:56:28.156Z",
     "status": "pending"
+  },
+  {
+    "key": "er:모카|illit",
+    "name": "모카",
+    "group": "ILLIT",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20041008"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T20:12:50.502Z",
+    "lastAt": "2026-07-28T20:12:50.502Z",
+    "status": "pending"
   }
 ]
