@@ -13800,9 +13800,9 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T15:31:56.306Z",
-    "lastAt": "2026-07-26T15:31:56.306Z",
+    "lastAt": "2026-07-28T04:35:56.579Z",
     "status": "pending"
   },
   {
@@ -15294,10 +15294,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "2008320",
-    "note": "g",
-    "count": 2,
+    "note": "HYBE",
+    "count": 3,
     "firstAt": "2026-07-27T06:33:16.063Z",
-    "lastAt": "2026-07-28T03:28:21.607Z",
+    "lastAt": "2026-07-28T04:39:18.261Z",
     "status": "pending"
   },
   {
@@ -17755,6 +17755,45 @@
     "count": 1,
     "firstAt": "2026-07-28T04:24:18.462Z",
     "lastAt": "2026-07-28T04:24:18.462Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:리키|틴탑",
+    "name": "리키",
+    "group": "틴탑",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950227",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:36:57.575Z",
+    "lastAt": "2026-07-28T04:36:57.575Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:the8|seventeen",
+    "name": "The8",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:37:06.453Z",
+    "lastAt": "2026-07-28T04:37:06.453Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hanyujin|and2ble",
+    "name": "hanyujin",
+    "group": "and2ble",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:38:28.547Z",
+    "lastAt": "2026-07-28T04:38:28.547Z",
     "status": "pending"
   }
 ]
