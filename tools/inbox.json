@@ -266,10 +266,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20081204",
-    "note": "",
-    "count": 3,
+    "note": "잘 생기고 착합니다….아이덴티티는 진짜 재밌어요!!",
+    "count": 4,
     "firstAt": "2026-07-24T04:36:40.502Z",
-    "lastAt": "2026-07-28T05:15:44.873Z",
+    "lastAt": "2026-07-28T16:47:27.061Z",
     "status": "pending"
   },
   {
@@ -10796,10 +10796,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20041221",
-    "note": "제발 넣어주세요",
-    "count": 4,
+    "note": "ES NATION",
+    "count": 5,
     "firstAt": "2026-07-26T03:21:28.657Z",
-    "lastAt": "2026-07-28T06:33:55.886Z",
+    "lastAt": "2026-07-28T16:41:46.935Z",
     "status": "pending"
   },
   {
@@ -18938,6 +18938,32 @@
     "count": 1,
     "firstAt": "2026-07-28T16:00:53.618Z",
     "lastAt": "2026-07-28T16:00:53.618Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:i.n|straykids",
+    "name": "I.N",
+    "group": "Stray Kids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010208",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T16:46:09.080Z",
+    "lastAt": "2026-07-28T16:46:09.080Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:서정우|아홉(ahof)",
+    "name": "서정우",
+    "group": "아홉(AHOF)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010906",
+    "note": "F&F 엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-28T16:47:38.122Z",
+    "lastAt": "2026-07-28T16:47:38.122Z",
     "status": "pending"
   }
 ]
