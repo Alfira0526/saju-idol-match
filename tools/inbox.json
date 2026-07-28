@@ -1580,9 +1580,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "넘 멋지고 잘생기고 예쁘다",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-23T03:24:30.252Z",
-    "lastAt": "2026-07-28T12:34:26.703Z",
+    "lastAt": "2026-07-28T12:45:27.715Z",
     "status": "pending"
   },
   {
@@ -17829,10 +17829,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20010622",
-    "note": "jyp",
-    "count": 1,
+    "note": "JYP",
+    "count": 2,
     "firstAt": "2026-07-28T05:14:20.098Z",
-    "lastAt": "2026-07-28T05:14:20.098Z",
+    "lastAt": "2026-07-28T12:46:25.564Z",
     "status": "pending"
   },
   {
