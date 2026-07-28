@@ -786,10 +786,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19961022",
-    "note": "너무귀여움",
-    "count": 4,
+    "note": "궁합에 보고싶어서",
+    "count": 5,
     "firstAt": "2026-07-24T05:06:07.360Z",
-    "lastAt": "2026-07-27T12:57:57.845Z",
+    "lastAt": "2026-07-28T10:40:11.260Z",
     "status": "pending"
   },
   {
@@ -3556,9 +3556,9 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T07:29:21.309Z",
-    "lastAt": "2026-07-24T07:29:21.309Z",
+    "lastAt": "2026-07-28T08:59:33.129Z",
     "status": "pending"
   },
   {
@@ -5349,10 +5349,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090113",
-    "note": "귀여운아가라서..ㅠ",
-    "count": 8,
+    "note": "엄성현존잘",
+    "count": 9,
     "firstAt": "2026-07-23T06:52:26.706Z",
-    "lastAt": "2026-07-27T16:21:34.494Z",
+    "lastAt": "2026-07-28T09:46:41.298Z",
     "status": "pending"
   },
   {
@@ -9757,9 +9757,9 @@
     "gender": "M",
     "dob": "20050621",
     "note": "SM",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-23T07:27:26.374Z",
-    "lastAt": "2026-07-25T10:19:41.400Z",
+    "lastAt": "2026-07-28T09:29:25.410Z",
     "status": "pending"
   },
   {
@@ -11330,9 +11330,9 @@
     "gender": "M",
     "dob": "20050621",
     "note": "SM엔터테인먼트",
-    "count": 10,
+    "count": 11,
     "firstAt": "2026-07-22T17:44:53.218Z",
-    "lastAt": "2026-07-27T18:15:53.628Z",
+    "lastAt": "2026-07-28T10:33:57.129Z",
     "status": "pending"
   },
   {
@@ -12370,9 +12370,9 @@
     "gender": "M",
     "dob": "20041022",
     "note": "ONCEADE/ 제 최애거든요!!",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T10:53:22.072Z",
-    "lastAt": "2026-07-26T10:53:22.072Z",
+    "lastAt": "2026-07-28T08:59:10.870Z",
     "status": "pending"
   },
   {
@@ -13149,10 +13149,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20020511",
-    "note": "",
-    "count": 3,
+    "note": "이케맨",
+    "count": 4,
     "firstAt": "2026-07-26T14:10:28.782Z",
-    "lastAt": "2026-07-27T12:10:43.450Z",
+    "lastAt": "2026-07-28T09:37:03.089Z",
     "status": "pending"
   },
   {
@@ -14203,9 +14203,9 @@
     "gender": "M",
     "dob": "20080308",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T16:30:54.333Z",
-    "lastAt": "2026-07-26T16:30:54.333Z",
+    "lastAt": "2026-07-28T10:00:43.109Z",
     "status": "pending"
   },
   {
@@ -16620,10 +16620,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20071003",
-    "note": "모드하우스",
-    "count": 2,
+    "note": "20명",
+    "count": 3,
     "firstAt": "2026-07-27T15:22:06.892Z",
-    "lastAt": "2026-07-27T17:22:45.935Z",
+    "lastAt": "2026-07-28T10:46:37.333Z",
     "status": "pending"
   },
   {
@@ -16998,9 +16998,9 @@
     "gender": "M",
     "dob": "20060105",
     "note": "Hybe",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T18:18:14.960Z",
-    "lastAt": "2026-07-27T18:18:14.960Z",
+    "lastAt": "2026-07-28T10:30:23.461Z",
     "status": "pending"
   },
   {
@@ -17544,9 +17544,9 @@
     "gender": "M",
     "dob": "20041221",
     "note": "소속사:이에스네이션",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-28T03:19:51.294Z",
-    "lastAt": "2026-07-28T03:19:51.294Z",
+    "lastAt": "2026-07-28T09:12:38.937Z",
     "status": "pending"
   },
   {
@@ -18233,9 +18233,9 @@
     "gender": "M",
     "dob": "20041111",
     "note": "피네이션",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-28T08:27:08.759Z",
-    "lastAt": "2026-07-28T08:27:08.759Z",
+    "lastAt": "2026-07-28T10:49:29.472Z",
     "status": "pending"
   },
   {
@@ -18249,6 +18249,188 @@
     "count": 1,
     "firstAt": "2026-07-28T08:33:20.197Z",
     "lastAt": "2026-07-28T08:33:20.197Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:안건호|코르티스",
+    "name": "안건호",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090214",
+    "note": "하이브",
+    "count": 1,
+    "firstAt": "2026-07-28T08:57:50.327Z",
+    "lastAt": "2026-07-28T08:57:50.327Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:려원|보이넥스트도어",
+    "name": "려원",
+    "group": "보이넥스트도어",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20110917",
+    "note": "ㄴ",
+    "count": 1,
+    "firstAt": "2026-07-28T09:17:34.710Z",
+    "lastAt": "2026-07-28T09:17:34.710Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:andreakimiantonelli|메르세데스f1팀",
+    "name": "Andrea Kimi Antonelli",
+    "group": "메르세데스 f1 팀",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20060825",
+    "note": "안토넬리보고싶다",
+    "count": 1,
+    "firstAt": "2026-07-28T09:28:32.454Z",
+    "lastAt": "2026-07-28T09:28:32.454Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:도경수|엑소",
+    "name": "도경수",
+    "group": "엑소",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930112",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T09:34:27.982Z",
+    "lastAt": "2026-07-28T09:34:27.982Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이정현|이븐",
+    "name": "이정현",
+    "group": "이븐",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20020911",
+    "note": "잘생김",
+    "count": 1,
+    "firstAt": "2026-07-28T09:49:07.374Z",
+    "lastAt": "2026-07-28T09:49:07.374Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:kimtaeyoung|cravity",
+    "name": "kim taeyoung",
+    "group": "cravity",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T09:50:32.172Z",
+    "lastAt": "2026-07-28T09:50:32.172Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김재호|히스토리",
+    "name": "김재호",
+    "group": "히스토리",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920917",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T09:54:10.905Z",
+    "lastAt": "2026-07-28T09:54:10.905Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:문정현|이븐",
+    "name": "문정현",
+    "group": "이븐",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050331",
+    "note": "젤리피쉬",
+    "count": 2,
+    "firstAt": "2026-07-28T10:03:14.539Z",
+    "lastAt": "2026-07-28T10:03:59.964Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hunter|xikers",
+    "name": "Hunter",
+    "group": "Xikers",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T10:13:26.280Z",
+    "lastAt": "2026-07-28T10:13:26.280Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:서준휘|세이마이네임",
+    "name": "서준휘",
+    "group": "세이마이네임",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070611",
+    "note": "제가진짜좋아하는여자아이입니다…",
+    "count": 1,
+    "firstAt": "2026-07-28T10:13:53.687Z",
+    "lastAt": "2026-07-28T10:13:53.687Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:李柱延|theboyz",
+    "name": "李柱延",
+    "group": "the boyz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T10:20:33.266Z",
+    "lastAt": "2026-07-28T10:20:33.266Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:휴이|nexz",
+    "name": "휴이",
+    "group": "NEXZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070511",
+    "note": "JYPE",
+    "count": 1,
+    "firstAt": "2026-07-28T10:22:26.369Z",
+    "lastAt": "2026-07-28T10:22:26.369Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:수이|kiiikiii",
+    "name": "수이",
+    "group": "KiiiKiii",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060410",
+    "note": "소속사: 스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-28T10:31:01.694Z",
+    "lastAt": "2026-07-28T10:31:01.694Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이해리|다비치",
+    "name": "이해리",
+    "group": "다비치",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19850214",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T10:41:27.540Z",
+    "lastAt": "2026-07-28T10:41:27.540Z",
     "status": "pending"
   }
 ]
