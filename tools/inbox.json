@@ -18874,5 +18874,18 @@
     "firstAt": "2026-07-28T14:58:53.317Z",
     "lastAt": "2026-07-28T14:58:53.317Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:수빈|tomorrowxtogether",
+    "name": "수빈",
+    "group": "TOMORROW X TOGETHER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001205",
+    "note": "Big Hit Music，TXT members",
+    "count": 1,
+    "firstAt": "2026-07-28T15:01:19.176Z",
+    "lastAt": "2026-07-28T15:01:19.176Z",
+    "status": "pending"
   }
 ]
