@@ -17795,5 +17795,31 @@
     "firstAt": "2026-07-28T04:38:28.547Z",
     "lastAt": "2026-07-28T04:38:28.547Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mew|riize",
+    "name": "Mew",
+    "group": "Riize",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19970602",
+    "note": "-",
+    "count": 1,
+    "firstAt": "2026-07-28T05:04:34.241Z",
+    "lastAt": "2026-07-28T05:04:34.241Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유우|nexz넥스지",
+    "name": "유우",
+    "group": "NEXZ 넥스지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050427",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T05:08:10.277Z",
+    "lastAt": "2026-07-28T05:08:10.277Z",
+    "status": "pending"
   }
 ]
