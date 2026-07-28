@@ -1175,5 +1175,23 @@
     "firstAt": "2026-07-28T03:24:36.773Z",
     "lastAt": "2026-07-28T03:24:36.773Z",
     "status": "pending"
+  },
+  {
+    "key": "er:이승협|n.flying",
+    "name": "이승협",
+    "group": "N.Flying",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19921031"
+    ],
+    "notes": [
+      "공식 프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-28T04:50:36.362Z",
+    "lastAt": "2026-07-28T04:50:36.362Z",
+    "status": "pending"
   }
 ]
