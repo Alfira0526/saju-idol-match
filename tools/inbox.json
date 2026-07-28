@@ -19043,5 +19043,18 @@
     "firstAt": "2026-07-28T18:12:40.294Z",
     "lastAt": "2026-07-28T18:12:40.294Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ymwkk|cortis",
+    "name": "Ymwkk",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "61618188",
+    "note": "Beys",
+    "count": 1,
+    "firstAt": "2026-07-28T19:08:48.689Z",
+    "lastAt": "2026-07-28T19:08:48.689Z",
+    "status": "pending"
   }
 ]
