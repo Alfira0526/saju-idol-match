@@ -7988,10 +7988,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20101218",
-    "note": "",
-    "count": 1,
+    "note": "星船",
+    "count": 2,
     "firstAt": "2026-07-25T06:10:13.947Z",
-    "lastAt": "2026-07-25T06:10:13.947Z",
+    "lastAt": "2026-07-28T14:38:12.869Z",
     "status": "pending"
   },
   {
@@ -18821,6 +18821,19 @@
     "count": 1,
     "firstAt": "2026-07-28T14:30:16.330Z",
     "lastAt": "2026-07-28T14:30:16.330Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:zuri|cortisjames",
+    "name": "Zuri",
+    "group": "Cortis James",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050706",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T14:31:25.396Z",
+    "lastAt": "2026-07-28T14:31:25.396Z",
     "status": "pending"
   }
 ]
