@@ -18861,5 +18861,18 @@
     "firstAt": "2026-07-28T14:46:00.735Z",
     "lastAt": "2026-07-28T14:46:00.735Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:준휘|saymyname(세이마이네임)",
+    "name": "준휘",
+    "group": "SAY MY NAME (세이마이네임)",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T14:58:53.317Z",
+    "lastAt": "2026-07-28T14:58:53.317Z",
+    "status": "pending"
   }
 ]
