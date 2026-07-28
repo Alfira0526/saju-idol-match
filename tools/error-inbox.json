@@ -66,19 +66,21 @@
     "key": "er:자니|nct",
     "name": "자니",
     "group": "NCT",
-    "count": 2,
+    "count": 6,
     "firstAt": "2026-07-24T04:42:36.881Z",
-    "lastAt": "2026-07-25T06:22:33.132Z",
+    "lastAt": "2026-07-28T01:41:02.687Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1,
-      "활동명": 1
+      "생년월일": 2,
+      "활동명": 4
     },
     "suggests": [
       "쟈니"
     ],
     "notes": [
-      "팬들도 이렇게 부르고 공식 채널 자막도 쟈니라고 달려요 ㅠㅠ"
+      "팬들도 이렇게 부르고 공식 채널 자막도 쟈니라고 달려요 ㅠㅠ",
+      "공식 프로필",
+      "https://namu.wiki/w/%EC%9F%88%EB%8B%88(NCT)"
     ]
   },
   {
@@ -543,14 +545,17 @@
     "key": "er:샤오쥔|nct",
     "name": "샤오쥔",
     "group": "NCT",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T08:51:25.467Z",
-    "lastAt": "2026-07-25T08:51:25.467Z",
+    "lastAt": "2026-07-27T15:35:03.309Z",
     "status": "pending",
     "fields": {
-      "생년월일": 1
+      "생년월일": 1,
+      "소속 그룹": 1
     },
-    "suggests": [],
+    "suggests": [
+      "277₩&8"
+    ],
     "notes": []
   },
   {
@@ -996,6 +1001,164 @@
     "count": 1,
     "firstAt": "2026-07-27T07:06:52.030Z",
     "lastAt": "2026-07-27T07:06:52.030Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:박원빈|idid",
+    "name": "박원빈",
+    "group": "IDID",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20060419"
+    ],
+    "notes": [
+      "10:30"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-27T09:06:16.218Z",
+    "lastAt": "2026-07-27T09:06:16.218Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:정우|nct",
+    "name": "정우",
+    "group": "NCT",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19980219"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T12:35:53.373Z",
+    "lastAt": "2026-07-27T12:35:53.373Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:첸|exo",
+    "name": "첸",
+    "group": "EXO",
+    "fields": {
+      "기타": 1
+    },
+    "suggests": [
+      "19920921"
+    ],
+    "notes": [
+      "exo에서 빼주세요"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-27T12:39:29.518Z",
+    "lastAt": "2026-07-27T12:39:29.518Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:에반|에반",
+    "name": "에반",
+    "group": "에반",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T12:40:09.462Z",
+    "lastAt": "2026-07-27T12:40:09.462Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:유우시|nctwish",
+    "name": "유우시",
+    "group": "NCT WISH",
+    "fields": {
+      "생년월일": 2
+    },
+    "suggests": [
+      "20111111"
+    ],
+    "notes": [],
+    "count": 2,
+    "firstAt": "2026-07-27T13:37:08.977Z",
+    "lastAt": "2026-07-27T16:40:35.401Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:유타|nct",
+    "name": "유타",
+    "group": "NCT",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T14:56:12.891Z",
+    "lastAt": "2026-07-27T14:56:12.891Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:사나|twice",
+    "name": "사나",
+    "group": "TWICE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19961229"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T15:27:12.804Z",
+    "lastAt": "2026-07-27T15:27:12.804Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:성현|cortis",
+    "name": "성현",
+    "group": "CORTIS",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T16:13:07.483Z",
+    "lastAt": "2026-07-27T16:13:07.483Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:유|onf",
+    "name": "유",
+    "group": "ONF",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "유"
+    ],
+    "notes": [
+      "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bjky&pkid=1&os=6151838&qvt=0&query=%EC%9C%A0%ED%86%A"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-27T16:15:25.026Z",
+    "lastAt": "2026-07-27T16:15:25.026Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:소희|riize",
+    "name": "소희",
+    "group": "RIIZE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-27T17:07:55.633Z",
+    "lastAt": "2026-07-27T17:07:55.633Z",
     "status": "pending"
   }
 ]
