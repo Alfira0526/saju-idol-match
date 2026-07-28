@@ -15828,9 +15828,9 @@
     "gender": "M",
     "dob": "20030908",
     "note": "씨제스",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T11:48:27.556Z",
-    "lastAt": "2026-07-27T11:48:27.556Z",
+    "lastAt": "2026-07-28T04:28:15.948Z",
     "status": "pending"
   },
   {
@@ -17742,6 +17742,19 @@
     "count": 1,
     "firstAt": "2026-07-28T04:18:42.532Z",
     "lastAt": "2026-07-28T04:18:42.532Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:林|tws",
+    "name": "林",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19981026",
+    "note": "申惟",
+    "count": 1,
+    "firstAt": "2026-07-28T04:24:18.462Z",
+    "lastAt": "2026-07-28T04:24:18.462Z",
     "status": "pending"
   }
 ]
