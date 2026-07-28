@@ -19004,5 +19004,18 @@
     "firstAt": "2026-07-28T17:38:36.732Z",
     "lastAt": "2026-07-28T17:38:36.732Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이솔|키키",
+    "name": "이솔",
+    "group": "키키",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T17:48:58.224Z",
+    "lastAt": "2026-07-28T17:48:58.224Z",
+    "status": "pending"
   }
 ]
