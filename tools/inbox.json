@@ -18055,5 +18055,18 @@
     "firstAt": "2026-07-28T07:00:04.735Z",
     "lastAt": "2026-07-28T07:00:04.735Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:张瑞尔|nctwish",
+    "name": "张瑞尔",
+    "group": "nct wish",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20130221",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-28T07:02:16.947Z",
+    "lastAt": "2026-07-28T07:02:16.947Z",
+    "status": "pending"
   }
 ]
