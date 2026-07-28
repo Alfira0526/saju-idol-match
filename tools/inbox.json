@@ -8093,9 +8093,9 @@
     "gender": "M",
     "dob": "19980115",
     "note": "내가 가장 사랑하는 고양이",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-22T23:54:01.796Z",
-    "lastAt": "2026-07-28T03:52:40.473Z",
+    "lastAt": "2026-07-28T04:02:25.598Z",
     "status": "pending"
   },
   {
@@ -10732,9 +10732,9 @@
     "gender": "M",
     "dob": "20071118",
     "note": "SM 왜 없음?",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-22T18:53:41.610Z",
-    "lastAt": "2026-07-26T03:11:47.434Z",
+    "lastAt": "2026-07-28T04:09:52.691Z",
     "status": "pending"
   },
   {
@@ -16399,10 +16399,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "19930516",
-    "note": "EDAM",
-    "count": 1,
+    "note": "이담엔터테이먼트",
+    "count": 2,
     "firstAt": "2026-07-27T14:10:47.651Z",
-    "lastAt": "2026-07-27T14:10:47.651Z",
+    "lastAt": "2026-07-28T04:04:42.595Z",
     "status": "pending"
   },
   {
@@ -17165,11 +17165,11 @@
     "group": "코르티스",
     "cat": "K-idol",
     "gender": "M",
-    "dob": "",
+    "dob": "20080103",
     "note": "하이브(빅히트)",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T23:36:07.255Z",
-    "lastAt": "2026-07-27T23:36:07.255Z",
+    "lastAt": "2026-07-28T04:02:47.654Z",
     "status": "pending"
   },
   {
@@ -17638,6 +17638,84 @@
     "count": 1,
     "firstAt": "2026-07-28T03:55:30.683Z",
     "lastAt": "2026-07-28T03:55:30.683Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:판저이|modyssey",
+    "name": "판저이",
+    "group": "MODYSSEY",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "20060122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:00:51.739Z",
+    "lastAt": "2026-07-28T04:00:51.739Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정우진|롱샷",
+    "name": "정우진",
+    "group": "롱샷",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080308",
+    "note": "소속사:모어비전",
+    "count": 1,
+    "firstAt": "2026-07-28T04:02:07.192Z",
+    "lastAt": "2026-07-28T04:02:07.192Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:nichapha|exo",
+    "name": "Nichapha",
+    "group": "Exo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "04021993",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:02:23.303Z",
+    "lastAt": "2026-07-28T04:02:23.303Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hybe|txt",
+    "name": "hybe",
+    "group": "txt",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:04:05.992Z",
+    "lastAt": "2026-07-28T04:04:05.992Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:오현준|smtr25",
+    "name": "오현준",
+    "group": "smtr25",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060212",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:05:36.337Z",
+    "lastAt": "2026-07-28T04:05:36.337Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정용화|cnblur",
+    "name": "정용화",
+    "group": "CNBLUR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T04:06:51.085Z",
+    "lastAt": "2026-07-28T04:06:51.085Z",
     "status": "pending"
   }
 ]
