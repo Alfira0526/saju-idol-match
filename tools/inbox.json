@@ -18003,5 +18003,57 @@
     "firstAt": "2026-07-28T06:49:58.957Z",
     "lastAt": "2026-07-28T06:49:58.957Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:james|cortis",
+    "name": "james",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T06:54:24.459Z",
+    "lastAt": "2026-07-28T06:54:24.459Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마이|izna",
+    "name": "마이",
+    "group": "izna",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20041028",
+    "note": "웨이크원",
+    "count": 1,
+    "firstAt": "2026-07-28T06:55:58.718Z",
+    "lastAt": "2026-07-28T06:55:58.718Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:왕여의|하츠투하츠",
+    "name": "왕여의",
+    "group": "하츠투하츠",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20070320",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T06:59:32.309Z",
+    "lastAt": "2026-07-28T06:59:32.309Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:闵玧其|bts",
+    "name": "闵玧其",
+    "group": "BTS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20050802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T07:00:04.735Z",
+    "lastAt": "2026-07-28T07:00:04.735Z",
+    "status": "pending"
   }
 ]
