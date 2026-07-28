@@ -3088,9 +3088,9 @@
     "gender": "M",
     "dob": "20071118",
     "note": "sm",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-23T02:39:51.183Z",
-    "lastAt": "2026-07-27T05:36:59.853Z",
+    "lastAt": "2026-07-28T02:40:50.066Z",
     "status": "pending"
   },
   {
@@ -10186,9 +10186,9 @@
     "gender": "M",
     "dob": "20040102",
     "note": "왜 앤더블에 유승언은 빼고 있나요...",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-26T00:15:32.706Z",
-    "lastAt": "2026-07-27T18:15:59.825Z",
+    "lastAt": "2026-07-28T02:49:29.020Z",
     "status": "pending"
   },
   {
@@ -17404,6 +17404,58 @@
     "count": 1,
     "firstAt": "2026-07-28T02:27:41.163Z",
     "lastAt": "2026-07-28T02:27:41.163Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:uu|tws",
+    "name": "uu",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20040229",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T02:42:07.409Z",
+    "lastAt": "2026-07-28T02:42:07.409Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:s.coups|seventeen",
+    "name": "S.coups",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T02:44:10.981Z",
+    "lastAt": "2026-07-28T02:44:10.981Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:메이|리센느",
+    "name": "메이",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080819",
+    "note": "더뮤즈엔터테인먼트 / 제가 너무 사랑해서 해보고싶어요",
+    "count": 1,
+    "firstAt": "2026-07-28T02:50:17.612Z",
+    "lastAt": "2026-07-28T02:50:17.612Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:n.ssign도하|기타",
+    "name": "n.SSign 도하",
+    "group": "기타",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010927",
+    "note": "엔싸인 만들어주세요 제발....",
+    "count": 1,
+    "firstAt": "2026-07-28T02:50:35.475Z",
+    "lastAt": "2026-07-28T02:50:35.475Z",
     "status": "pending"
   }
 ]
