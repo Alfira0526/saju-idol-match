@@ -17894,10 +17894,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090214",
-    "note": "빅히트뮤직",
-    "count": 2,
+    "note": "이상형",
+    "count": 3,
     "firstAt": "2026-07-28T05:44:11.046Z",
-    "lastAt": "2026-07-28T05:44:11.046Z",
+    "lastAt": "2026-07-28T11:35:24.331Z",
     "status": "pending"
   },
   {
@@ -18470,6 +18470,71 @@
     "count": 1,
     "firstAt": "2026-07-28T11:12:46.179Z",
     "lastAt": "2026-07-28T11:12:46.179Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:장현준|nouera",
+    "name": "장현준",
+    "group": "NouerA",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031129",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T11:33:03.300Z",
+    "lastAt": "2026-07-28T11:33:03.300Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:지코|blockb",
+    "name": "지코",
+    "group": "Block B",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19920914",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T11:34:01.351Z",
+    "lastAt": "2026-07-28T11:34:01.351Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김희주|아이덴티",
+    "name": "김희주",
+    "group": "아이덴티",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061025",
+    "note": "모드하우스",
+    "count": 1,
+    "firstAt": "2026-07-28T11:35:22.635Z",
+    "lastAt": "2026-07-28T11:35:22.635Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:new|seventeen",
+    "name": "New",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20110720",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T11:40:09.212Z",
+    "lastAt": "2026-07-28T11:40:09.212Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:제니|blackpink",
+    "name": "제니",
+    "group": "BlackPink",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19960116",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T11:40:22.596Z",
+    "lastAt": "2026-07-28T11:40:22.596Z",
     "status": "pending"
   }
 ]
