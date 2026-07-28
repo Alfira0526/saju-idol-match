@@ -1263,5 +1263,23 @@
     "firstAt": "2026-07-28T09:58:21.707Z",
     "lastAt": "2026-07-28T09:58:21.707Z",
     "status": "pending"
+  },
+  {
+    "key": "er:후마|&team",
+    "name": "후마",
+    "group": "&TEAM",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19980629"
+    ],
+    "notes": [
+      "공식 프로필 / 나무위키"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-28T13:48:45.425Z",
+    "lastAt": "2026-07-28T13:48:45.425Z",
+    "status": "pending"
   }
 ]
