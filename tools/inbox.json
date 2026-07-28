@@ -19030,5 +19030,18 @@
     "firstAt": "2026-07-28T18:02:23.958Z",
     "lastAt": "2026-07-28T18:02:23.958Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:莫丽霞|riize",
+    "name": "莫丽霞",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050505",
+    "note": "sm",
+    "count": 1,
+    "firstAt": "2026-07-28T18:12:40.294Z",
+    "lastAt": "2026-07-28T18:12:40.294Z",
+    "status": "pending"
   }
 ]
