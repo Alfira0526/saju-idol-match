@@ -11733,9 +11733,9 @@
     "gender": "M",
     "dob": "20080103",
     "note": "빅히트 잘생겨서",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-23T02:31:50.430Z",
-    "lastAt": "2026-07-26T07:22:46.735Z",
+    "lastAt": "2026-07-28T03:33:54.070Z",
     "status": "pending"
   },
   {
@@ -17573,6 +17573,19 @@
     "count": 1,
     "firstAt": "2026-07-28T03:28:31.398Z",
     "lastAt": "2026-07-28T03:28:31.398Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:박성훈|enhypen",
+    "name": "박성훈",
+    "group": "enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021208",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T03:33:09.516Z",
+    "lastAt": "2026-07-28T03:33:09.516Z",
     "status": "pending"
   }
 ]
