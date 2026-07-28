@@ -17457,5 +17457,44 @@
     "firstAt": "2026-07-28T02:50:35.475Z",
     "lastAt": "2026-07-28T02:50:35.475Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:건호|all(h)ours",
+    "name": "건호",
+    "group": "ALL(H)OURS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030403",
+    "note": "이든엔터테인먼트 올아워즈",
+    "count": 1,
+    "firstAt": "2026-07-28T02:58:50.713Z",
+    "lastAt": "2026-07-28T02:58:50.713Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조계현|베리베리",
+    "name": "조계현",
+    "group": "베리베리",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990514",
+    "note": "제가 좋아해요…",
+    "count": 1,
+    "firstAt": "2026-07-28T02:59:21.127Z",
+    "lastAt": "2026-07-28T02:59:21.127Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:토와|idntt",
+    "name": "토와",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060409",
+    "note": "모드하우스",
+    "count": 1,
+    "firstAt": "2026-07-28T03:00:19.315Z",
+    "lastAt": "2026-07-28T03:00:19.315Z",
+    "status": "pending"
   }
 ]
