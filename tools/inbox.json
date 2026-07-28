@@ -267,9 +267,9 @@
     "gender": "M",
     "dob": "20081204",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T04:36:40.502Z",
-    "lastAt": "2026-07-25T04:54:25.437Z",
+    "lastAt": "2026-07-28T05:15:44.873Z",
     "status": "pending"
   },
   {
@@ -17820,6 +17820,32 @@
     "count": 1,
     "firstAt": "2026-07-28T05:08:10.277Z",
     "lastAt": "2026-07-28T05:08:10.277Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:쑨헝위|모디세이",
+    "name": "쑨헝위",
+    "group": "모디세이",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010622",
+    "note": "jyp",
+    "count": 1,
+    "firstAt": "2026-07-28T05:14:20.098Z",
+    "lastAt": "2026-07-28T05:14:20.098Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유노윤호|동방신기",
+    "name": "유노윤호",
+    "group": "동방신기",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19860206",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T05:14:46.302Z",
+    "lastAt": "2026-07-28T05:14:46.302Z",
     "status": "pending"
   }
 ]
