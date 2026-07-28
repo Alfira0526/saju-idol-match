@@ -624,12 +624,12 @@
     "key": "er:건호|cortis",
     "name": "건호",
     "group": "CORTIS",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-26T01:42:44.463Z",
-    "lastAt": "2026-07-26T14:33:04.625Z",
+    "lastAt": "2026-07-28T10:09:30.862Z",
     "status": "pending",
     "fields": {
-      "생년월일": 2
+      "생년월일": 3
     },
     "suggests": [
       "20090214"
@@ -1241,6 +1241,22 @@
     "count": 1,
     "firstAt": "2026-07-28T06:48:13.204Z",
     "lastAt": "2026-07-28T06:48:13.204Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:엔|vixx",
+    "name": "엔",
+    "group": "VIXX",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "그룹명 한글로도 검색할수있게 ‘빅스(VIXX)’로 수정해주세요!!"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T09:58:21.707Z",
+    "lastAt": "2026-07-28T09:58:21.707Z",
     "status": "pending"
   }
 ]
