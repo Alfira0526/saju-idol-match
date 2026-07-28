@@ -319,9 +319,9 @@
     "gender": "M",
     "dob": "20070320",
     "note": "위에화 소속 신인 남자아이돌",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-22T20:35:51.130Z",
-    "lastAt": "2026-07-25T06:37:40.002Z",
+    "lastAt": "2026-07-28T11:11:07.418Z",
     "status": "pending"
   },
   {
@@ -11834,12 +11834,12 @@
     "name": "김선우",
     "group": "ENHYPEN",
     "cat": "K-idol",
-    "gender": "",
-    "dob": "",
+    "gender": "F",
+    "dob": "20030624",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T07:57:03.769Z",
-    "lastAt": "2026-07-26T07:57:03.769Z",
+    "lastAt": "2026-07-28T11:16:44.043Z",
     "status": "pending"
   },
   {
@@ -12682,9 +12682,9 @@
     "gender": "F",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T12:52:38.782Z",
-    "lastAt": "2026-07-26T12:52:38.782Z",
+    "lastAt": "2026-07-28T11:10:56.589Z",
     "status": "pending"
   },
   {
@@ -18444,6 +18444,32 @@
     "count": 1,
     "firstAt": "2026-07-28T11:06:55.978Z",
     "lastAt": "2026-07-28T11:06:55.978Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:juhoon|cortis",
+    "name": "Juhoon",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "13012008",
+    "note": "Model",
+    "count": 1,
+    "firstAt": "2026-07-28T11:12:18.160Z",
+    "lastAt": "2026-07-28T11:12:18.160Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:ainur|cortis",
+    "name": "Ainur",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T11:12:46.179Z",
+    "lastAt": "2026-07-28T11:12:46.179Z",
     "status": "pending"
   }
 ]
