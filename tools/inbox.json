@@ -17880,11 +17880,11 @@
     "group": "Seventeen",
     "cat": "K-idol",
     "gender": "M",
-    "dob": "",
+    "dob": "1997711",
     "note": "",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-28T05:40:37.476Z",
-    "lastAt": "2026-07-28T06:06:29.044Z",
+    "lastAt": "2026-07-28T15:14:50.509Z",
     "status": "pending"
   },
   {
@@ -17960,9 +17960,9 @@
     "gender": "F",
     "dob": "20041008",
     "note": "hybe",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-28T06:03:46.594Z",
-    "lastAt": "2026-07-28T06:03:46.594Z",
+    "lastAt": "2026-07-28T15:15:30.261Z",
     "status": "pending"
   },
   {
