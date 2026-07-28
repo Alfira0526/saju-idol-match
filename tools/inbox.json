@@ -358,9 +358,9 @@
     "gender": "M",
     "dob": "19990529",
     "note": "와이와이엔터테인먼트",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T04:41:27.749Z",
-    "lastAt": "2026-07-24T04:41:27.749Z",
+    "lastAt": "2026-07-28T13:59:30.679Z",
     "status": "pending"
   },
   {
@@ -13797,12 +13797,12 @@
     "name": "wonwoo",
     "group": "seventeen",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-26T15:31:56.306Z",
-    "lastAt": "2026-07-28T04:35:56.579Z",
+    "lastAt": "2026-07-28T13:58:50.824Z",
     "status": "pending"
   },
   {
@@ -18730,6 +18730,45 @@
     "count": 1,
     "firstAt": "2026-07-28T13:43:47.682Z",
     "lastAt": "2026-07-28T13:43:47.682Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:장향여|boynextdoor",
+    "name": "장향여",
+    "group": "boynextdoor",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T13:50:52.396Z",
+    "lastAt": "2026-07-28T13:50:52.396Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이휘원|can'tbeblue",
+    "name": "이휘원",
+    "group": "Can't be blue",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030805",
+    "note": "너무 잘생겼어요",
+    "count": 1,
+    "firstAt": "2026-07-28T13:52:50.571Z",
+    "lastAt": "2026-07-28T13:52:50.571Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:화사|마마무",
+    "name": "화사",
+    "group": "마마무",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T13:59:12.167Z",
+    "lastAt": "2026-07-28T13:59:12.167Z",
     "status": "pending"
   }
 ]
