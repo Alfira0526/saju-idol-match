@@ -1224,5 +1224,23 @@
     "firstAt": "2026-07-28T06:19:58.151Z",
     "lastAt": "2026-07-28T06:19:58.151Z",
     "status": "pending"
+  },
+  {
+    "key": "er:줄리|kissoflife",
+    "name": "줄리",
+    "group": "KISS OF LIFE",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "쥴리"
+    ],
+    "notes": [
+      "공식 프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-28T06:48:13.204Z",
+    "lastAt": "2026-07-28T06:48:13.204Z",
+    "status": "pending"
   }
 ]
