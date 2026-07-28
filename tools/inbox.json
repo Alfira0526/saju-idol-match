@@ -8093,9 +8093,9 @@
     "gender": "M",
     "dob": "19980115",
     "note": "내가 가장 사랑하는 고양이",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-22T23:54:01.796Z",
-    "lastAt": "2026-07-25T06:25:32.544Z",
+    "lastAt": "2026-07-28T03:52:40.473Z",
     "status": "pending"
   },
   {
@@ -13617,10 +13617,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040102",
-    "note": "앤더블 멤버에서 빠져있습니다ㅠ",
-    "count": 2,
+    "note": "위에화",
+    "count": 3,
     "firstAt": "2026-07-26T15:07:50.032Z",
-    "lastAt": "2026-07-26T16:23:51.570Z",
+    "lastAt": "2026-07-28T03:53:49.651Z",
     "status": "pending"
   },
   {
@@ -17612,6 +17612,32 @@
     "count": 1,
     "firstAt": "2026-07-28T03:47:12.088Z",
     "lastAt": "2026-07-28T03:47:12.088Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:곽기웅|idntt",
+    "name": "곽기웅",
+    "group": "IDNTT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080101",
+    "note": "제가조아해서",
+    "count": 1,
+    "firstAt": "2026-07-28T03:51:56.194Z",
+    "lastAt": "2026-07-28T03:51:56.194Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:원이미나미리브메이제나|리센느",
+    "name": "원이 미나미 리브 메이 제나",
+    "group": "리센느",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T03:55:30.683Z",
+    "lastAt": "2026-07-28T03:55:30.683Z",
     "status": "pending"
   }
 ]
