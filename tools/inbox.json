@@ -18185,5 +18185,31 @@
     "firstAt": "2026-07-28T08:08:42.371Z",
     "lastAt": "2026-07-28T08:08:42.371Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소건|nexz/jyp",
+    "name": "소건",
+    "group": "NEXZ / JYP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T08:13:26.057Z",
+    "lastAt": "2026-07-28T08:13:26.057Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:엄성현|코르티스/cortis",
+    "name": "엄성현",
+    "group": "코르티스/ Cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090113",
+    "note": "좆나잘샐김",
+    "count": 1,
+    "firstAt": "2026-07-28T08:13:37.816Z",
+    "lastAt": "2026-07-28T08:13:37.816Z",
+    "status": "pending"
   }
 ]
