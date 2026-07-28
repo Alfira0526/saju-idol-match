@@ -1112,7 +1112,7 @@ const IDOLS = [
   ["효민","T-ara","庚寅","金","F","기타","19890530","K-idol"],
   ["아름","T-ara","乙亥","木","F","기타","19940419","K-idol"],
   ["화영","T-ara","癸酉","水","F","기타","19930422","K-idol"],
-  ["줄리","KISS OF LIFE","丙戌","火","F","기타","20000329","K-idol"],
+  ["쥴리","KISS OF LIFE","丙戌","火","F","기타","20000329","K-idol"],
   ["나띠","KISS OF LIFE","戊戌","土","F","기타","20020530","K-idol"],
   ["벨","KISS OF LIFE","戊戌","土","F","기타","20040320","K-idol"],
   ["하늘","KISS OF LIFE","己酉","土","F","기타","20050525","K-idol"],
@@ -1417,7 +1417,31 @@ const IDOLS = [
   ["에이나","Hearts2Hearts","甲午","木","F","SM","20081220","K-idol"],
   ["이안","Hearts2Hearts","丁亥","火","F","SM","20091009","K-idol"],
   ["예온","Hearts2Hearts","己亥","土","F","SM","20100419","K-idol"],
-  ["신위","tripleS","癸巳","水","F","기타","20020525","K-idol"]
+  ["신위","tripleS","癸巳","水","F","기타","20020525","K-idol"],
+  ["태일","NCT","辛未","金","M","SM","19940614","K-idol"],
+  ["원이","RESCENE","甲辰","木","F","기타","20040525","K-idol"],
+  ["메이","RESCENE","辛卯","金","F","기타","20080819","K-idol"],
+  ["리브","RESCENE","癸酉","水","F","기타","20061011","K-idol"],
+  ["미나미","RESCENE","壬戌","水","F","기타","20061129","K-idol"],
+  ["제나","RESCENE","辛未","金","F","기타","20081127","K-idol"],
+  ["예준","PLAVE","戊寅","土","M","기타","20010912","K-idol"],
+  ["노아","PLAVE","甲辰","木","M","기타","20010210","K-idol"],
+  ["밤비","PLAVE","甲申","木","M","기타","20020715","K-idol"],
+  ["은호","PLAVE","丁酉","火","M","기타","20030524","K-idol"],
+  ["마이","izna","庚辰","金","F","기타","20041028","K-idol"],
+  ["최정은","izna","己巳","土","F","기타","20070803","K-idol"],
+  ["유사랑","izna","壬午","水","F","기타","20070418","K-idol"],
+  ["유키","NEXZ","丁巳","火","M","JYP","20070920","K-idol"],
+  ["유우","NEXZ","辛巳","金","M","JYP","20050427","K-idol"],
+  ["토모야","NEXZ","戊申","土","M","JYP","20060119","K-idol"],
+  ["신예찬","LUCY","庚申","金","M","기타","19920613","K-idol"],
+  ["신광일","LUCY","丁卯","火","M","기타","19970525","K-idol"],
+  ["용훈","ONEWE","乙亥","木","M","기타","19940817","K-idol"],
+  ["하린","ONEWE","乙亥","木","M","기타","19980329","K-idol"],
+  ["강현","ONEWE","乙亥","木","M","기타","19981124","K-idol"],
+  ["동명","ONEWE","丁卯","火","M","기타","20000110","K-idol"],
+  ["기욱","ONEWE","辛巳","金","M","기타","20000124","K-idol"],
+  ["최태인","idntt","乙巳","木","M","기타","20051117","K-idol"]
 ];
 
 function jdn(y,m,d){
@@ -1603,7 +1627,7 @@ const CAT_NAMES = {
 const catLabel = c => (CAT_NAMES[c] ? CAT_NAMES[c].ko : c);
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
 // 밴드(악기 연주) 그룹 — tools/bands.json에서 build.js가 주입. '밴드만' 필터에 사용.
-const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony","N.Flying"]);
+const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony","N.Flying","ONEWE","LUCY"]);
 function scopeMatch(x){
   const s = window._saju;
   if(x.cat !== (s.activeCat || "K-idol")) return false; // 카테고리 우선 필터
