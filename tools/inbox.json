@@ -15292,12 +15292,12 @@
     "name": "마틴",
     "group": "cortis",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "2008320",
-    "note": "",
-    "count": 1,
+    "note": "g",
+    "count": 2,
     "firstAt": "2026-07-27T06:33:16.063Z",
-    "lastAt": "2026-07-27T06:33:16.063Z",
+    "lastAt": "2026-07-28T03:28:21.607Z",
     "status": "pending"
   },
   {
@@ -17560,6 +17560,19 @@
     "count": 1,
     "firstAt": "2026-07-28T03:20:36.368Z",
     "lastAt": "2026-07-28T03:20:36.368Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:马彤昕|theboyz",
+    "name": "马彤昕",
+    "group": "THE BOYZ",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20010920",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T03:28:31.398Z",
+    "lastAt": "2026-07-28T03:28:31.398Z",
     "status": "pending"
   }
 ]
