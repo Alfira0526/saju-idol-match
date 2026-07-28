@@ -17509,5 +17509,57 @@
     "firstAt": "2026-07-28T03:09:03.794Z",
     "lastAt": "2026-07-28T03:09:03.794Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박혜성|vannet",
+    "name": "박혜성",
+    "group": "vannet",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960117",
+    "note": "씹덕멤",
+    "count": 1,
+    "firstAt": "2026-07-28T03:15:26.571Z",
+    "lastAt": "2026-07-28T03:15:26.571Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:규현|aen",
+    "name": "규현",
+    "group": "AEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050107",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-07-28T03:19:08.760Z",
+    "lastAt": "2026-07-28T03:19:08.760Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:장한음|장한음",
+    "name": "장한음",
+    "group": "장한음",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041221",
+    "note": "소속사:이에스네이션",
+    "count": 1,
+    "firstAt": "2026-07-28T03:19:51.294Z",
+    "lastAt": "2026-07-28T03:19:51.294Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:leesangwon|ald1",
+    "name": "Leesangwon",
+    "group": "Ald1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030508",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T03:20:36.368Z",
+    "lastAt": "2026-07-28T03:20:36.368Z",
+    "status": "pending"
   }
 ]
