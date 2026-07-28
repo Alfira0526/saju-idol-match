@@ -9977,10 +9977,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20031204",
-    "note": "하이브 나의 최애 존나 좋늠",
-    "count": 2,
+    "note": "koz",
+    "count": 3,
     "firstAt": "2026-07-25T10:49:48.881Z",
-    "lastAt": "2026-07-27T15:29:51.709Z",
+    "lastAt": "2026-07-28T08:32:16.686Z",
     "status": "pending"
   },
   {
@@ -18236,6 +18236,19 @@
     "count": 1,
     "firstAt": "2026-07-28T08:27:08.759Z",
     "lastAt": "2026-07-28T08:27:08.759Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:roda|m.o.n.t",
+    "name": "Roda",
+    "group": "M.O.N.T",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980919",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T08:33:20.197Z",
+    "lastAt": "2026-07-28T08:33:20.197Z",
     "status": "pending"
   }
 ]
