@@ -1160,5 +1160,19 @@
     "firstAt": "2026-07-27T17:07:55.633Z",
     "lastAt": "2026-07-27T17:07:55.633Z",
     "status": "pending"
+  },
+  {
+    "key": "er:연준|txt",
+    "name": "연준",
+    "group": "TXT",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T03:24:36.773Z",
+    "lastAt": "2026-07-28T03:24:36.773Z",
+    "status": "pending"
   }
 ]
