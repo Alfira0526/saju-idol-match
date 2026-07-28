@@ -2489,10 +2489,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20000606",
-    "note": "",
-    "count": 1,
+    "note": "sm",
+    "count": 2,
     "firstAt": "2026-07-24T06:27:42.475Z",
-    "lastAt": "2026-07-24T06:27:42.475Z",
+    "lastAt": "2026-07-28T07:53:02.328Z",
     "status": "pending"
   },
   {
@@ -4141,9 +4141,9 @@
     "gender": "M",
     "dob": "20030508",
     "note": "Wakeone",
-    "count": 17,
+    "count": 18,
     "firstAt": "2026-07-23T02:39:11.043Z",
-    "lastAt": "2026-07-26T15:49:12.622Z",
+    "lastAt": "2026-07-28T07:58:27.162Z",
     "status": "pending"
   },
   {
@@ -11342,10 +11342,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20060714",
-    "note": "없어서..",
-    "count": 2,
+    "note": "젤리피쉬",
+    "count": 3,
     "firstAt": "2026-07-26T06:08:18.381Z",
-    "lastAt": "2026-07-27T04:04:27.957Z",
+    "lastAt": "2026-07-28T07:52:50.551Z",
     "status": "pending"
   },
   {
@@ -18119,6 +18119,19 @@
     "count": 1,
     "firstAt": "2026-07-28T07:47:06.084Z",
     "lastAt": "2026-07-28T07:47:06.084Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:에스쿱스|세븐틴",
+    "name": "에스쿱스",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950808",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T07:58:26.015Z",
+    "lastAt": "2026-07-28T07:58:26.015Z",
     "status": "pending"
   }
 ]
