@@ -7806,10 +7806,10 @@
     "cat": "J-idol",
     "gender": "M",
     "dob": "20010820",
-    "note": "일본 멤버 아사히, 함다 아사히",
-    "count": 6,
+    "note": "YG",
+    "count": 7,
     "firstAt": "2026-07-25T05:49:55.947Z",
-    "lastAt": "2026-07-27T12:31:15.363Z",
+    "lastAt": "2026-07-28T07:29:26.088Z",
     "status": "pending"
   },
   {
@@ -18080,6 +18080,32 @@
     "count": 1,
     "firstAt": "2026-07-28T07:16:28.629Z",
     "lastAt": "2026-07-28T07:16:28.629Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:방윤하|유니스",
+    "name": "방윤하",
+    "group": "유니스",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20090228",
+    "note": "F&F 엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-28T07:22:39.121Z",
+    "lastAt": "2026-07-28T07:22:39.121Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마크|솔로",
+    "name": "마크",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T07:27:22.109Z",
+    "lastAt": "2026-07-28T07:27:22.109Z",
     "status": "pending"
   }
 ]
