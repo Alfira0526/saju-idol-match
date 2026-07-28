@@ -11057,9 +11057,9 @@
     "gender": "M",
     "dob": "20060119",
     "note": "JYP",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-24T03:26:20.327Z",
-    "lastAt": "2026-07-27T17:05:42.008Z",
+    "lastAt": "2026-07-28T12:01:56.356Z",
     "status": "pending"
   },
   {
@@ -12135,10 +12135,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030508",
-    "note": "웨이크원",
-    "count": 3,
+    "note": "예쁘고멋지고귀여움",
+    "count": 4,
     "firstAt": "2026-07-22T21:10:20.721Z",
-    "lastAt": "2026-07-28T11:27:46.015Z",
+    "lastAt": "2026-07-28T12:01:40.048Z",
     "status": "pending"
   },
   {
@@ -18574,6 +18574,32 @@
     "count": 1,
     "firstAt": "2026-07-28T11:57:01.153Z",
     "lastAt": "2026-07-28T11:57:01.153Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:джухун|cortis",
+    "name": "Джухун",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080103",
+    "note": "Hybe labels, он мой кумир",
+    "count": 1,
+    "firstAt": "2026-07-28T12:08:51.078Z",
+    "lastAt": "2026-07-28T12:08:51.078Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:루카|babymonster",
+    "name": "루카",
+    "group": "Babymonster",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020320",
+    "note": "제최애라서요",
+    "count": 1,
+    "firstAt": "2026-07-28T12:09:58.346Z",
+    "lastAt": "2026-07-28T12:09:58.346Z",
     "status": "pending"
   }
 ]
