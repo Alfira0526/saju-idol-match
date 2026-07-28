@@ -16803,9 +16803,9 @@
     "gender": "M",
     "dob": "19990802",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T16:27:37.110Z",
-    "lastAt": "2026-07-27T16:27:37.110Z",
+    "lastAt": "2026-07-28T14:46:45.320Z",
     "status": "pending"
   },
   {
@@ -18834,6 +18834,32 @@
     "count": 1,
     "firstAt": "2026-07-28T14:31:25.396Z",
     "lastAt": "2026-07-28T14:31:25.396Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김민재|싸이커스",
+    "name": "김민재",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030410",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T14:43:45.232Z",
+    "lastAt": "2026-07-28T14:43:45.232Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김정훈|싸이커스",
+    "name": "김정훈",
+    "group": "싸이커스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040705",
+    "note": "KQ엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-07-28T14:46:00.735Z",
+    "lastAt": "2026-07-28T14:46:00.735Z",
     "status": "pending"
   }
 ]
