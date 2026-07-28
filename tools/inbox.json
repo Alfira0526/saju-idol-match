@@ -18913,5 +18913,18 @@
     "firstAt": "2026-07-28T15:49:18.345Z",
     "lastAt": "2026-07-28T15:49:18.345Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kazuha|lesserafim",
+    "name": "Kazuha",
+    "group": "Le Sserafim",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030809",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T15:56:47.869Z",
+    "lastAt": "2026-07-28T15:56:47.869Z",
+    "status": "pending"
   }
 ]
