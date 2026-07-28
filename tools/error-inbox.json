@@ -1281,5 +1281,21 @@
     "firstAt": "2026-07-28T13:48:45.425Z",
     "lastAt": "2026-07-28T13:48:45.425Z",
     "status": "pending"
+  },
+  {
+    "key": "er:최립우|flareu",
+    "name": "최립우",
+    "group": "FLARE U",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20040102"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T14:04:49.961Z",
+    "lastAt": "2026-07-28T14:04:49.961Z",
+    "status": "pending"
   }
 ]
