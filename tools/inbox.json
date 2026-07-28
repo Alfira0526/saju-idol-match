@@ -11732,10 +11732,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20080103",
-    "note": "빅히트 잘생겨서",
-    "count": 4,
+    "note": "그냥..",
+    "count": 5,
     "firstAt": "2026-07-23T02:31:50.430Z",
-    "lastAt": "2026-07-28T03:33:54.070Z",
+    "lastAt": "2026-07-28T06:46:00.989Z",
     "status": "pending"
   },
   {
@@ -17989,6 +17989,19 @@
     "count": 1,
     "firstAt": "2026-07-28T06:38:56.017Z",
     "lastAt": "2026-07-28T06:38:56.017Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:bitsaeon|m.o.n.t",
+    "name": "Bitsaeon",
+    "group": "M.O.N.T",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950604",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T06:49:58.957Z",
+    "lastAt": "2026-07-28T06:49:58.957Z",
     "status": "pending"
   }
 ]
