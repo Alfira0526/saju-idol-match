@@ -7417,9 +7417,9 @@
     "gender": "M",
     "dob": "20060121",
     "note": "MORE VISION",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T05:05:11.273Z",
-    "lastAt": "2026-07-26T16:16:14.214Z",
+    "lastAt": "2026-07-28T03:05:11.582Z",
     "status": "pending"
   },
   {
@@ -17495,6 +17495,19 @@
     "count": 1,
     "firstAt": "2026-07-28T03:00:19.315Z",
     "lastAt": "2026-07-28T03:00:19.315Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:parkjihoon|wannaone",
+    "name": "parkjihoon",
+    "group": "wanna one",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990529",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T03:09:03.794Z",
+    "lastAt": "2026-07-28T03:09:03.794Z",
     "status": "pending"
   }
 ]
