@@ -1196,5 +1196,33 @@
     "firstAt": "2026-07-28T04:50:36.362Z",
     "lastAt": "2026-07-28T04:50:36.362Z",
     "status": "pending"
+  },
+  {
+    "key": "er:주훈|cortis",
+    "name": "주훈",
+    "group": "CORTIS",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T06:04:25.168Z",
+    "lastAt": "2026-07-28T06:04:25.168Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:뷔|bts",
+    "name": "뷔",
+    "group": "BTS",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T06:19:58.151Z",
+    "lastAt": "2026-07-28T06:19:58.151Z",
+    "status": "pending"
   }
 ]
