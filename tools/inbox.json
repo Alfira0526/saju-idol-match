@@ -18012,9 +18012,9 @@
     "gender": "M",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-28T06:54:24.459Z",
-    "lastAt": "2026-07-28T06:54:24.459Z",
+    "lastAt": "2026-07-28T13:06:19.781Z",
     "status": "pending"
   },
   {
@@ -18639,6 +18639,19 @@
     "count": 1,
     "firstAt": "2026-07-28T12:54:29.978Z",
     "lastAt": "2026-07-28T12:54:29.978Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:양정원|엔하이픈",
+    "name": "양정원",
+    "group": "엔하이픈",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T13:05:50.290Z",
+    "lastAt": "2026-07-28T13:05:50.290Z",
     "status": "pending"
   }
 ]
