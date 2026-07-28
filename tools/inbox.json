@@ -4856,9 +4856,9 @@
     "gender": "",
     "dob": "20020302",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-25T00:05:47.054Z",
-    "lastAt": "2026-07-25T00:05:47.054Z",
+    "lastAt": "2026-07-28T08:28:10.651Z",
     "status": "pending"
   },
   {
@@ -18210,6 +18210,32 @@
     "count": 1,
     "firstAt": "2026-07-28T08:13:37.816Z",
     "lastAt": "2026-07-28T08:13:37.816Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:ara|cortis",
+    "name": "Ara",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-28T08:26:19.114Z",
+    "lastAt": "2026-07-28T08:26:19.114Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:은휘|tnx",
+    "name": "은휘",
+    "group": "TNX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041111",
+    "note": "피네이션",
+    "count": 1,
+    "firstAt": "2026-07-28T08:27:08.759Z",
+    "lastAt": "2026-07-28T08:27:08.759Z",
     "status": "pending"
   }
 ]
