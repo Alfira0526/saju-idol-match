@@ -1297,5 +1297,19 @@
     "firstAt": "2026-07-28T14:04:49.961Z",
     "lastAt": "2026-07-28T14:04:49.961Z",
     "status": "pending"
+  },
+  {
+    "key": "er:김나경|triples",
+    "name": "김나경",
+    "group": "tripleS",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-28T17:56:28.156Z",
+    "lastAt": "2026-07-28T17:56:28.156Z",
+    "status": "pending"
   }
 ]
