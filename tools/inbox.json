@@ -19602,5 +19602,31 @@
     "firstAt": "2026-07-29T18:18:20.794Z",
     "lastAt": "2026-07-29T18:18:20.794Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이지훈|seventeen",
+    "name": "이지훈",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T18:33:39.308Z",
+    "lastAt": "2026-07-29T18:33:39.308Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:애니|올데이프로젝트",
+    "name": "애니",
+    "group": "올데이 프로젝트",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020123",
+    "note": "더블랙",
+    "count": 1,
+    "firstAt": "2026-07-29T18:37:39.509Z",
+    "lastAt": "2026-07-29T18:37:39.509Z",
+    "status": "pending"
   }
 ]
