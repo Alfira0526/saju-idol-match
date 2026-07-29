@@ -435,10 +435,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "19960805",
-    "note": "이담엔터테인먼트",
-    "count": 4,
+    "note": "EDAM",
+    "count": 5,
     "firstAt": "2026-07-23T04:29:12.548Z",
-    "lastAt": "2026-07-26T04:57:53.891Z",
+    "lastAt": "2026-07-29T02:12:32.303Z",
     "status": "pending"
   },
   {
@@ -19146,6 +19146,32 @@
     "count": 1,
     "firstAt": "2026-07-29T01:51:17.574Z",
     "lastAt": "2026-07-29T01:51:17.574Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:juniel|juniel",
+    "name": "Juniel",
+    "group": "Juniel",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19930903",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T02:15:28.659Z",
+    "lastAt": "2026-07-29T02:15:28.659Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:하루|xlov",
+    "name": "하루",
+    "group": "XLOV",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20060218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T02:16:35.311Z",
+    "lastAt": "2026-07-29T02:16:35.311Z",
     "status": "pending"
   }
 ]
