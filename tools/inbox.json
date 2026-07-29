@@ -19212,5 +19212,18 @@
     "firstAt": "2026-07-29T03:05:26.650Z",
     "lastAt": "2026-07-29T03:05:26.650Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:taeyeon|girlsgeneration",
+    "name": "taeyeon",
+    "group": "girls generation",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19890309",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T03:28:43.917Z",
+    "lastAt": "2026-07-29T03:28:43.917Z",
+    "status": "pending"
   }
 ]
