@@ -19641,5 +19641,18 @@
     "firstAt": "2026-07-29T20:58:25.421Z",
     "lastAt": "2026-07-29T20:58:25.421Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유승언|and2ble(앤더블)",
+    "name": "유승언",
+    "group": "AND2BLE (앤더블)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040102",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T21:02:19.481Z",
+    "lastAt": "2026-07-29T21:02:19.481Z",
+    "status": "pending"
   }
 ]
