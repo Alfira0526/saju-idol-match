@@ -19173,5 +19173,31 @@
     "firstAt": "2026-07-29T02:16:35.311Z",
     "lastAt": "2026-07-29T02:16:35.311Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:원이|리센느/더뮤즈엔터테인먼트",
+    "name": "원이",
+    "group": "리센느 / 더뮤즈엔터테인먼트",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040525",
+    "note": "내가하고싶어서",
+    "count": 1,
+    "firstAt": "2026-07-29T02:54:14.542Z",
+    "lastAt": "2026-07-29T02:54:14.542Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김민수|dailydirection",
+    "name": "김민수",
+    "group": "DAILYDIRECTION",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020615",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T02:59:44.948Z",
+    "lastAt": "2026-07-29T02:59:44.948Z",
+    "status": "pending"
   }
 ]
