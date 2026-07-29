@@ -19537,5 +19537,18 @@
     "firstAt": "2026-07-29T14:46:11.884Z",
     "lastAt": "2026-07-29T14:46:11.884Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:호시|seventeen",
+    "name": "호시",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T15:04:30.876Z",
+    "lastAt": "2026-07-29T15:04:30.876Z",
+    "status": "pending"
   }
 ]
