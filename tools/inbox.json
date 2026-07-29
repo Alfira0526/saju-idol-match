@@ -19108,5 +19108,18 @@
     "firstAt": "2026-07-29T00:06:02.168Z",
     "lastAt": "2026-07-29T00:06:02.168Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정택운|vixx",
+    "name": "정택운",
+    "group": "Vixx",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19901110",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T00:20:16.109Z",
+    "lastAt": "2026-07-29T00:20:16.109Z",
+    "status": "pending"
   }
 ]
