@@ -19121,5 +19121,18 @@
     "firstAt": "2026-07-29T00:20:16.109Z",
     "lastAt": "2026-07-29T00:20:16.109Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이창민|dkb",
+    "name": "이창민",
+    "group": "DKB",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970219",
+    "note": "Brave",
+    "count": 1,
+    "firstAt": "2026-07-29T00:53:52.776Z",
+    "lastAt": "2026-07-29T00:53:52.776Z",
+    "status": "pending"
   }
 ]
