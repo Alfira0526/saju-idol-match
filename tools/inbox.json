@@ -19654,5 +19654,18 @@
     "firstAt": "2026-07-29T21:02:19.481Z",
     "lastAt": "2026-07-29T21:02:19.481Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:泰妍|少女时代",
+    "name": "泰妍",
+    "group": "少女时代",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19890309",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T22:09:13.929Z",
+    "lastAt": "2026-07-29T22:09:13.929Z",
+    "status": "pending"
   }
 ]
