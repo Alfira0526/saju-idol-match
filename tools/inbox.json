@@ -19134,5 +19134,18 @@
     "firstAt": "2026-07-29T00:53:52.776Z",
     "lastAt": "2026-07-29T00:53:52.776Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yu|i-dle",
+    "name": "Yu",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20110625",
+    "note": "여성을 위해 목소리를 내다",
+    "count": 1,
+    "firstAt": "2026-07-29T01:51:17.574Z",
+    "lastAt": "2026-07-29T01:51:17.574Z",
+    "status": "pending"
   }
 ]
