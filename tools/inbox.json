@@ -85,7 +85,7 @@
     "gender": "M",
     "dob": "20090214",
     "note": "잘생김",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-22T17:43:26.295Z",
     "lastAt": "2026-07-29T05:49:41.858Z",
     "status": "pending"
@@ -6299,7 +6299,7 @@
     "gender": "M",
     "dob": "20060119",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T03:18:16.200Z",
     "lastAt": "2026-07-29T05:46:36.507Z",
     "status": "pending"
@@ -6871,7 +6871,7 @@
     "gender": "M",
     "dob": "20041204",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T04:14:41.535Z",
     "lastAt": "2026-07-29T09:11:32.662Z",
     "status": "pending"
@@ -7287,7 +7287,7 @@
     "gender": "M",
     "dob": "20030604",
     "note": "모드하우스",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T07:43:18.012Z",
     "lastAt": "2026-07-29T11:12:49.596Z",
     "status": "pending"
@@ -7664,7 +7664,7 @@
     "gender": "M",
     "dob": "20030411",
     "note": "WAKEONE",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-23T03:53:22.850Z",
     "lastAt": "2026-07-29T07:28:51.070Z",
     "status": "pending"
@@ -7807,7 +7807,7 @@
     "gender": "M",
     "dob": "20010820",
     "note": "YG",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-25T05:49:55.947Z",
     "lastAt": "2026-07-29T09:30:41.379Z",
     "status": "pending"
@@ -7937,7 +7937,7 @@
     "gender": "M",
     "dob": "19900302",
     "note": "FNC",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-24T03:12:28.807Z",
     "lastAt": "2026-07-29T10:18:07.524Z",
     "status": "pending"
@@ -9536,7 +9536,7 @@
     "gender": "M",
     "dob": "20070320",
     "note": "위에화(YUEHWA)",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-22T18:30:46.419Z",
     "lastAt": "2026-07-29T09:24:42.582Z",
     "status": "pending"
@@ -10550,9 +10550,9 @@
     "gender": "M",
     "dob": "20040405",
     "note": "sm",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-07-25T03:17:39.109Z",
-    "lastAt": "2026-07-27T13:29:07.512Z",
+    "lastAt": "2026-07-29T12:10:26.160Z",
     "status": "pending"
   },
   {
@@ -10563,7 +10563,7 @@
     "gender": "M",
     "dob": "20090227",
     "note": "김재중의소속사에서나온첫남돌!따끈따끈한신인!입니다제발추가해주세요부탁드리게습니다",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T04:21:24.254Z",
     "lastAt": "2026-07-29T09:39:43.246Z",
     "status": "pending"
@@ -10731,10 +10731,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20071118",
-    "note": "SM 왜 없음?",
-    "count": 5,
+    "note": "잘생겼음",
+    "count": 6,
     "firstAt": "2026-07-22T18:53:41.610Z",
-    "lastAt": "2026-07-28T04:09:52.691Z",
+    "lastAt": "2026-07-29T12:12:10.668Z",
     "status": "pending"
   },
   {
@@ -10797,7 +10797,7 @@
     "gender": "M",
     "dob": "20041221",
     "note": "ES NATION",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-26T03:21:28.657Z",
     "lastAt": "2026-07-29T11:04:54.119Z",
     "status": "pending"
@@ -11603,9 +11603,9 @@
     "gender": "M",
     "dob": "20050427",
     "note": "JYPE",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-22T18:00:02.240Z",
-    "lastAt": "2026-07-28T18:39:02.988Z",
+    "lastAt": "2026-07-29T11:35:39.000Z",
     "status": "pending"
   },
   {
@@ -13345,7 +13345,7 @@
     "gender": "M",
     "dob": "20040830",
     "note": "Yh 소속사 출신이고 활발하다",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-26T14:38:34.140Z",
     "lastAt": "2026-07-29T09:02:31.119Z",
     "status": "pending"
@@ -13722,7 +13722,7 @@
     "gender": "M",
     "dob": "20091027",
     "note": "",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-26T15:20:25.010Z",
     "lastAt": "2026-07-29T09:51:23.893Z",
     "status": "pending"
@@ -15607,7 +15607,7 @@
     "gender": "M",
     "dob": "090113",
     "note": "하이브",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-27T09:50:00.287Z",
     "lastAt": "2026-07-29T11:13:32.625Z",
     "status": "pending"
@@ -16790,7 +16790,7 @@
     "gender": "F",
     "dob": "20070611",
     "note": "인코드",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T16:26:16.279Z",
     "lastAt": "2026-07-29T06:53:24.057Z",
     "status": "pending"
@@ -17648,7 +17648,7 @@
     "gender": "M",
     "dob": "20060122",
     "note": "보이즈플래닛2에 출연했고 보이즈플래닛2 스핀오프 서바이벌에서 2위로 데뷔한 아이돌입니다! 중국 국적이에요",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-28T04:00:51.739Z",
     "lastAt": "2026-07-29T07:43:42.462Z",
     "status": "pending"
@@ -17739,7 +17739,7 @@
     "gender": "M",
     "dob": "20010210",
     "note": "플레이브 제발 부탁드립니다",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-28T04:18:42.532Z",
     "lastAt": "2026-07-29T06:52:54.515Z",
     "status": "pending"
@@ -18558,7 +18558,7 @@
     "gender": "M",
     "dob": "080103",
     "note": "추천",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-28T11:52:27.159Z",
     "lastAt": "2026-07-29T10:55:17.443Z",
     "status": "pending"
@@ -19312,7 +19312,7 @@
     "gender": "M",
     "dob": "20051005",
     "note": "KQ엔터테인먼트",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T06:20:44.617Z",
     "lastAt": "2026-07-29T06:20:44.617Z",
     "status": "pending"
@@ -19325,7 +19325,7 @@
     "gender": "",
     "dob": "20100205",
     "note": "Starship",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T06:34:06.660Z",
     "lastAt": "2026-07-29T06:34:06.660Z",
     "status": "pending"
@@ -19338,7 +19338,7 @@
     "gender": "",
     "dob": "19990303",
     "note": "사랑",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T06:43:03.816Z",
     "lastAt": "2026-07-29T06:43:03.816Z",
     "status": "pending"
@@ -19351,7 +19351,7 @@
     "gender": "M",
     "dob": "20040730",
     "note": "제가 너무 궁금해서요... ㅋㅋㅋ",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T07:48:57.605Z",
     "lastAt": "2026-07-29T07:48:57.605Z",
     "status": "pending"
@@ -19364,7 +19364,7 @@
     "gender": "M",
     "dob": "20041111",
     "note": "피네이션",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T07:50:34.863Z",
     "lastAt": "2026-07-29T07:50:34.863Z",
     "status": "pending"
@@ -19377,7 +19377,7 @@
     "gender": "M",
     "dob": "20040730",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T08:00:26.535Z",
     "lastAt": "2026-07-29T08:00:26.535Z",
     "status": "pending"
@@ -19390,7 +19390,7 @@
     "gender": "M",
     "dob": "20031107",
     "note": "hybe",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T08:12:27.493Z",
     "lastAt": "2026-07-29T08:12:27.493Z",
     "status": "pending"
@@ -19403,7 +19403,7 @@
     "gender": "F",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T08:50:12.432Z",
     "lastAt": "2026-07-29T08:50:12.432Z",
     "status": "pending"
@@ -19416,7 +19416,7 @@
     "gender": "M",
     "dob": "19930609",
     "note": "보이프렌드가 데뷔 15주년을 맞아 활동 재개했어요",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T09:23:57.695Z",
     "lastAt": "2026-07-29T09:23:57.695Z",
     "status": "pending"
@@ -19429,7 +19429,7 @@
     "gender": "",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T09:39:53.961Z",
     "lastAt": "2026-07-29T09:39:53.961Z",
     "status": "pending"
@@ -19442,9 +19442,61 @@
     "gender": "M",
     "dob": "20051005",
     "note": "KQ엔터테인먼트",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-29T09:45:34.090Z",
     "lastAt": "2026-07-29T09:45:34.090Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:keny|코르티스",
+    "name": "keny",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T11:42:37.491Z",
+    "lastAt": "2026-07-29T11:42:37.491Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:정시만|treasure",
+    "name": "정시만",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060505",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T11:46:57.294Z",
+    "lastAt": "2026-07-29T11:46:57.294Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:제임스|코르티스(빅히트)",
+    "name": "제임스",
+    "group": "코르티스 (빅히트)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "051014",
+    "note": "추천",
+    "count": 1,
+    "firstAt": "2026-07-29T11:59:10.438Z",
+    "lastAt": "2026-07-29T11:59:10.438Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:韓維辰|and2ble",
+    "name": "韓維辰",
+    "group": "AND2BLE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "2007032",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T12:17:55.463Z",
+    "lastAt": "2026-07-29T12:17:55.463Z",
     "status": "pending"
   }
 ]
