@@ -19225,5 +19225,44 @@
     "firstAt": "2026-07-29T03:28:43.917Z",
     "lastAt": "2026-07-29T03:28:43.917Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제임스|cortis",
+    "name": "제임스",
+    "group": "CORTIS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T03:43:03.489Z",
+    "lastAt": "2026-07-29T03:43:03.489Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:haruta|smtr25",
+    "name": "HARUTA",
+    "group": "SMTR25",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060305",
+    "note": "爱",
+    "count": 1,
+    "firstAt": "2026-07-29T03:47:38.466Z",
+    "lastAt": "2026-07-29T03:47:38.466Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:렌|뉴이스트",
+    "name": "렌",
+    "group": "뉴이스트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951103",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T03:48:52.030Z",
+    "lastAt": "2026-07-29T03:48:52.030Z",
+    "status": "pending"
   }
 ]
