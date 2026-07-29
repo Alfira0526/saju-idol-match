@@ -5285,9 +5285,9 @@
     "gender": "M",
     "dob": "20040102",
     "note": "fnc",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T01:20:51.736Z",
-    "lastAt": "2026-07-26T11:38:12.604Z",
+    "lastAt": "2026-07-29T02:23:37.370Z",
     "status": "pending"
   },
   {
@@ -17073,12 +17073,12 @@
     "name": "yoshi",
     "group": "treasure",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-27T20:00:17.477Z",
-    "lastAt": "2026-07-27T20:00:17.477Z",
+    "lastAt": "2026-07-29T02:30:03.812Z",
     "status": "pending"
   },
   {
