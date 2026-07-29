@@ -7703,9 +7703,9 @@
     "gender": "M",
     "dob": "20010820",
     "note": "YG",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-25T05:41:24.735Z",
-    "lastAt": "2026-07-27T03:06:44.731Z",
+    "lastAt": "2026-07-29T14:36:57.787Z",
     "status": "pending"
   },
   {
@@ -19510,6 +19510,19 @@
     "count": 1,
     "firstAt": "2026-07-29T12:59:43.976Z",
     "lastAt": "2026-07-29T12:59:43.976Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hwasa|mamamoo",
+    "name": "HWASA",
+    "group": "MAMAMOO",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19950723",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T14:33:44.196Z",
+    "lastAt": "2026-07-29T14:33:44.196Z",
     "status": "pending"
   }
 ]
