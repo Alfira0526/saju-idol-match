@@ -11356,9 +11356,9 @@
     "gender": "M",
     "dob": "20030410",
     "note": "kq",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-26T06:08:29.703Z",
-    "lastAt": "2026-07-26T06:08:29.703Z",
+    "lastAt": "2026-07-29T05:40:12.761Z",
     "status": "pending"
   },
   {
@@ -19289,6 +19289,19 @@
     "count": 1,
     "firstAt": "2026-07-29T05:08:12.004Z",
     "lastAt": "2026-07-29T05:08:12.004Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:쯔위|트와이스",
+    "name": "쯔위",
+    "group": "트와이스",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990614",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-29T05:33:08.566Z",
+    "lastAt": "2026-07-29T05:33:08.566Z",
     "status": "pending"
   }
 ]
