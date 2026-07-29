@@ -19550,5 +19550,18 @@
     "firstAt": "2026-07-29T15:04:30.876Z",
     "lastAt": "2026-07-29T15:04:30.876Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한유진|앤더블(and2ble)",
+    "name": "한유진",
+    "group": "앤더블 (AND2BLE)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070320",
+    "note": "위에화 엔터테인먼트 (전 제로베이스원 소속이라서요)",
+    "count": 1,
+    "firstAt": "2026-07-29T15:28:06.044Z",
+    "lastAt": "2026-07-29T15:28:06.044Z",
+    "status": "pending"
   }
 ]
