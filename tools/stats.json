@@ -1,6 +1,7 @@
 {
-  "total": 651,
+  "total": 658,
   "addedRecent": [
+    { "date": "2026-07-29", "text": "NEXZ 추가", "count": 7 },
     { "date": "2026-07-27", "text": "Hearts2Hearts 추가", "count": 8 },
     { "date": "2026-07-27", "text": "CLOSE YOUR EYES 추가", "count": 7 },
     { "date": "2026-07-27", "text": "tripleS 멤버 추가", "count": 2 },
@@ -8,10 +9,7 @@
     { "date": "2026-07-26", "text": "B1A4 추가", "count": 5 },
     { "date": "2026-07-26", "text": "N.Flying 추가", "count": 5 },
     { "date": "2026-07-26", "text": "LNGSHOT 추가", "count": 4 },
-    { "date": "2026-07-26", "text": "FLARE U 추가", "count": 2 },
-    { "date": "2026-07-25", "text": "킥플립 추가", "count": 7 },
-    { "date": "2026-07-25", "text": "ALPHA DRIVE ONE 추가", "count": 8 },
-    { "date": "2026-07-25", "text": "IDID 멤버 추가", "count": 4 }
+    { "date": "2026-07-26", "text": "FLARE U 추가", "count": 2 }
   ],
-  "updatedAt": "2026-07-27"
+  "updatedAt": "2026-07-29"
 }

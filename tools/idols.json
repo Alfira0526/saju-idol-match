@@ -88,7 +88,7 @@
 {"name":"화사","group":"MAMAMOO","agency":"기타","gender":"F","dob":"1995-07-23","cat":"K-idol"},
 {"name":"윤아","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2004-01-15","cat":"K-idol"},
 {"name":"민주","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2004-05-18","cat":"K-idol"},
-{"name":"모카","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2004-07-01","cat":"K-idol"},
+{"name":"모카","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2004-10-08","cat":"K-idol"},
 {"name":"원희","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2007-06-26","cat":"K-idol"},
 {"name":"이로하","group":"ILLIT","agency":"HYBE","gender":"F","dob":"2008-02-04","cat":"K-idol"},
 {"name":"지드래곤","group":"BIGBANG","agency":"YG","gender":"M","dob":"1988-08-18","cat":"K-idol"},
@@ -450,7 +450,7 @@
 {"name":"승준","group":"ONF","agency":"기타","gender":"M","dob":"1995-01-13","cat":"K-idol"},
 {"name":"와이엇","group":"ONF","agency":"기타","gender":"M","dob":"1995-01-23","cat":"K-idol"},
 {"name":"민균","group":"ONF","agency":"기타","gender":"M","dob":"1995-11-16","cat":"K-idol"},
-{"name":"유","group":"ONF","agency":"기타","gender":"M","dob":"1999-03-16","cat":"K-idol"},
+{"name":"유토","group":"ONF","agency":"기타","gender":"M","dob":"1999-03-16","cat":"K-idol"},
 {"name":"한빈","group":"TEMPEST","agency":"기타","gender":"M","dob":"1998-01-19","cat":"K-idol"},
 {"name":"형섭","group":"TEMPEST","agency":"기타","gender":"M","dob":"1999-08-09","cat":"K-idol"},
 {"name":"혁","group":"TEMPEST","agency":"기타","gender":"M","dob":"2000-04-17","cat":"K-idol"},
@@ -649,5 +649,12 @@
 {"name":"에이나","group":"Hearts2Hearts","agency":"SM","gender":"F","dob":"2008-12-20","cat":"K-idol"},
 {"name":"이안","group":"Hearts2Hearts","agency":"SM","gender":"F","dob":"2009-10-09","cat":"K-idol"},
 {"name":"예온","group":"Hearts2Hearts","agency":"SM","gender":"F","dob":"2010-04-19","cat":"K-idol"},
-{"name":"신위","group":"tripleS","agency":"기타","gender":"F","dob":"2002-05-25","cat":"K-idol"}
+{"name":"신위","group":"tripleS","agency":"기타","gender":"F","dob":"2002-05-25","cat":"K-idol"},
+{"name":"유우","group":"NEXZ","agency":"JYP","gender":"M","dob":"2005-04-27","cat":"K-idol"},
+{"name":"토모야","group":"NEXZ","agency":"JYP","gender":"M","dob":"2006-01-19","cat":"K-idol"},
+{"name":"하루","group":"NEXZ","agency":"JYP","gender":"M","dob":"2006-01-23","cat":"K-idol"},
+{"name":"소건","group":"NEXZ","agency":"JYP","gender":"M","dob":"2006-09-13","cat":"K-idol"},
+{"name":"세이타","group":"NEXZ","agency":"JYP","gender":"M","dob":"2006-11-28","cat":"K-idol"},
+{"name":"휴이","group":"NEXZ","agency":"JYP","gender":"M","dob":"2007-05-11","cat":"K-idol"},
+{"name":"유키","group":"NEXZ","agency":"JYP","gender":"M","dob":"2007-09-20","cat":"K-idol"}
 ]
