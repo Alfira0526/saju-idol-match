@@ -19264,5 +19264,18 @@
     "firstAt": "2026-07-29T03:48:52.030Z",
     "lastAt": "2026-07-29T03:48:52.030Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김주호|idntt",
+    "name": "김주호",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060728",
+    "note": "모드하우스",
+    "count": 1,
+    "firstAt": "2026-07-29T04:41:14.674Z",
+    "lastAt": "2026-07-29T04:41:14.674Z",
+    "status": "pending"
   }
 ]
