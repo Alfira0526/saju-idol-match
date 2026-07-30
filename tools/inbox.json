@@ -9873,10 +9873,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "040830",
-    "note": "위에화",
-    "count": 4,
+    "note": "위에화(YH)•제 최애가 여기에 없어요..ㅠ",
+    "count": 5,
     "firstAt": "2026-07-25T10:33:47.630Z",
-    "lastAt": "2026-07-28T12:22:48.230Z",
+    "lastAt": "2026-07-30T00:30:58.082Z",
     "status": "pending"
   },
   {
@@ -19679,6 +19679,19 @@
     "count": 1,
     "firstAt": "2026-07-30T00:22:53.004Z",
     "lastAt": "2026-07-30T00:22:53.004Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:李碩珉|seventeen",
+    "name": "李碩珉",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T00:31:41.637Z",
+    "lastAt": "2026-07-30T00:31:41.637Z",
     "status": "pending"
   }
 ]
