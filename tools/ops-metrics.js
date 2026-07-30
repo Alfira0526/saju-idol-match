@@ -68,6 +68,27 @@ const pendErr = errInbox.filter(x => !doneSet.has(x.key));
 const byCountDesc = (a, b) => (b.count || 0) - (a.count || 0);
 const minFirstAt = (arr) => arr.reduce((m, x) => (x.firstAt && (!m || x.firstAt < m) ? x.firstAt : m), null);
 
+// 진짜 작업 단위는 '고유 그룹'이다(루틴은 그룹 단위로 처리). 개인 제보 수(addPending)는
+// 로마자⇄한글 변형·오타로 부풀려져 오해를 준다. 아래로 그룹 단위 실질 백로그를 본다.
+const nrm = (s) => (s || '').trim().toLowerCase().replace(/\s+/g, '');
+const presentPerson = new Set(idols.map(it => `${nrm(it.name)}|${nrm(it.group)}`));
+const presentGroup = new Set(idols.map(it => nrm(it.group)));
+const pendGroups = new Set(), pendGroupsNew = new Set();
+let alreadyPresentPersons = 0;
+for (const x of pendAdd) {
+  if (presentPerson.has(`${nrm(x.name)}|${nrm(x.group)}`)) { alreadyPresentPersons++; continue; }
+  const g = nrm(x.group);
+  pendGroups.add(g);
+  if (!presentGroup.has(g)) pendGroupsNew.add(g);
+}
+const backlogGroups = {
+  distinctGroups: pendGroups.size,          // 정리해야 할 고유 그룹 수(실질 작업량 근사)
+  newGroups: pendGroupsNew.size,            // 미수록 그룹(신규 add 후보 — 단, 변형·오타 포함해 과대)
+  knownGroups: pendGroups.size - pendGroupsNew.size, // 그룹은 존재(신규 멤버 or 로마자 중복)
+  alreadyPresentPersons,                    // 인물까지 이미 존재 → 즉시 inbox-done 정리 가능
+  note: '개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음.',
+};
+
 // ---- i18n progress (checkbox tally in i18n-plan.md) ----
 let i18nDone = 0, i18nTotal = 0;
 try {
@@ -138,6 +159,7 @@ const metrics = {
   backlog: {
     handled: doneSet.size,
     addPending: pendAdd.length,
+    addPendingGroups: backlogGroups,
     errorPending: pendErr.length,
     oldestAddPending: minFirstAt(pendAdd),
     oldestErrorPending: minFirstAt(pendErr),
