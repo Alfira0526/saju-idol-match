@@ -19667,5 +19667,18 @@
     "firstAt": "2026-07-29T22:09:13.929Z",
     "lastAt": "2026-07-29T22:09:13.929Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김원필|데이식스",
+    "name": "김원필",
+    "group": "데이식스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940428",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T00:22:53.004Z",
+    "lastAt": "2026-07-30T00:22:53.004Z",
+    "status": "pending"
   }
 ]
