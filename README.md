@@ -1,12 +1,12 @@
 # 사주 궁합 아이돌 매칭 · Saju Idol Match
 
-생년월일(과 태어난 시각)로 **사주 일주(日柱)**를 계산하고, 오행·십신·지지 궁합에 **신강/신약 개인화**를 더해 아이돌·인물 **555명**을 나와 잘 맞는 "덕질 궁합" 순위로 추천하는 오락용 웹앱입니다.
+생년월일(과 태어난 시각)로 **사주 일주(日柱)**를 계산하고, 오행·십신·지지 궁합에 **신강/신약 개인화**를 더해 아이돌·인물 **약 660명(매일 자동 증가)**을 나와 잘 맞는 "덕질 궁합" 순위로 추천하는 오락용 웹앱입니다.
 
 > Enter your birthday and this single-page app computes your Four-Pillars *day pillar*
-> and ranks ~555 K-pop idols (and a few actors) by traditional saju compatibility —
+> and ranks ~660 K-pop idols (and a few actors) by traditional saju compatibility —
 > just for fun.
 
-**프레임워크·빌드·서버 없음.** `index.html` 하나로 동작하며, 모든 계산은 브라우저 안에서만 실행됩니다(생일은 서버로 전송되지 않음). 유일한 외부 의존성은 Google Fonts입니다.
+**프레임워크·빌드 없음.** 앱은 `index.html` 하나로 동작하고 **사주 계산은 전부 브라우저 안에서만** 실행됩니다(생일은 서버로 전송되지 않음). 유일한 서버 요소는 **제보(추가/오류) 접수용 Cloudflare Worker** 하나로, 생일 계산과 무관하며 제보만 처리합니다. 데이터셋은 매일 자동으로 늘어납니다.
 
 ### 🔗 지금 해보기 → **<https://alfira0526.github.io/saju-idol-match/>**
 
@@ -26,6 +26,8 @@
 | 성별 탭 | 남/여 분리 (범위에 두 성별이 있을 때 자동 노출) |
 | 카테고리 | 한국 아이돌 기본. 일본 아이돌·중국 배우·미국 배우 등으로 확장 가능(30개 이상 쌓이면 자동 노출) |
 | 공유 이미지 | 결과를 1080×1350 카드로 그려 저장·공유(외부 라이브러리 없이 Canvas) |
+| 제보(추가/오류) | 빠진 인물 추가·잘못된 정보 오류를 사용자가 제보 → 워커가 접수, 자동 루틴이 검증 후 반영 |
+| 첫 진입 공지 | 새로 합류한 그룹을 상단 **토스트**로 안내(화면 안 가림, 자동 사라짐) |
 | 디자인 | Y2K/K-pop 무드(핫핑크·퍼플·시안, 홀로그램 타이틀, 카드 애니메이션), 모바일 대응 |
 
 ## 🚀 사용/실행
@@ -55,25 +57,45 @@
 
 ## 🗂️ 데이터
 
-- 현재 **555명 / 91그룹**. 소스 오브 트루스는 [`tools/idols.json`](tools/idols.json).
+- 현재 **약 658명 / 111그룹**(2026-07 기준, 매일 자동 증가). 소스 오브 트루스는 [`tools/idols.json`](tools/idols.json).
 - `node tools/build.js`가 생일에서 일주를 **두 가지 독립 방식(JDN·날짜차)으로 계산·교차검증**하고, 불일치·중복·잘못된 값이 있으면 빌드를 중단합니다.
 - 데이터 구조·카테고리·검증·추가 방법은 **[docs/DATA.md](docs/DATA.md)** 참고.
 
-## 🤖 자동 업데이트
+## 🤖 자동 운영 (루틴 3종)
 
-매일 밤 11시(KST)에 예약 작업이 실행되어 **① 소속사 세분화 / ② 데이터 추가 / ③ 다국어** 중 하나를 로테이션으로 수행하고, 검증을 통과하면 커밋·푸시합니다. 운영 규칙은 **[tools/README.md](tools/README.md)** 의 플레이북을 따릅니다.
+사람 개입 없이 **예약 루틴 3종**이 데이터·품질을 유지합니다. 모두 작업 브랜치에만 커밋하며, 검증(빌드·헤드리스 스모크·QA 체크리스트)을 통과할 때만 push 합니다.
+
+| 루틴 | 주기(KST) | 하는 일 |
+|---|---|---|
+| **일일 데이터 업데이트** | 매일 23:00 | ① 오류 제보 처리 → ② 추가 제보 처리(상한) → ③ **요일 고정 태스크** |
+| **데이터 헬스체크** | 매일 03:00 | 빌드·스모크·정합성·카테고리 라벨·지표 툴 점검(문제는 보고만), 워커 Cron 생존 관찰 |
+| **주간 운영 리뷰** | 매주 월 13:00 | **5인 페르소나**(팀장·QA·개발·기획·디자인) 리뷰 → 주간 리포트·개선 제안 |
+
+**요일 고정 로테이션**: 월·수·금 = 데이터 추가(백로그 소진) · 화·토 = 소속사 세분화 · 목 = 다국어(i18n) · 일 = 비(非)K 카테고리 확장.
+
+- **제보 파이프라인**: 사용자 제보 → Cloudflare Worker가 **KV 큐**에 적재 → Cron(10분)이 배치로 저장소에 미러링 → 일일 루틴이 로컬로 읽어 웹 교차검증 후 반영. (제보 1건마다 커밋하지 않아 리소스 절약.)
+- **운영 문서**: 프로세스 정의 [`docs/OPS_ROUTINES.md`](docs/OPS_ROUTINES.md), 지표 [`tools/ops-metrics.js`](tools/ops-metrics.js), 스냅샷·제안·리포트는 [`docs/ops/`](docs/ops)·[`docs/reports/`](docs/reports). 데이터 규칙은 [`tools/README.md`](tools/README.md) 플레이북.
 
 ## 📁 프로젝트 구조
 
 ```
-index.html          # 앱 전체 (HTML/CSS/JS 인라인, 데이터 포함)
+index.html            # 앱 전체 (HTML/CSS/JS 인라인, 데이터 포함)
+worker/
+  suggest-worker.js   # 제보 접수 워커(KV 큐 + Cron 배치 미러링)
+  README.md           # 워커 배포·설정 가이드
 tools/
-  idols.json        # 데이터 소스 오브 트루스 (name/group/agency/gender/dob/cat)
-  build.js          # idols.json → index.html의 IDOLS 재생성 + 교차검증
-  README.md         # 데이터 파이프라인 & 자동화 플레이북
+  idols.json          # 데이터 소스 오브 트루스 (name/group/agency/gender/dob/cat)
+  build.js            # idols.json → index.html IDOLS 재생성 + 교차검증·무결성 가드
+  ops-metrics.js      # 운영 지표 생성(백로그·커버리지·flushCadence 등)
+  qa-checklist.md     # 회귀 체크리스트 (push 전 게이트)
+  README.md           # 데이터 파이프라인 & 자동화 플레이북
 docs/
-  SCORING.md        # 사주 점수 산정 방법(십신·합충·지장간·신강신약)
-  DATA.md           # 데이터셋·카테고리·검증·추가 가이드
+  SCORING.md          # 사주 점수 산정 방법(십신·합충·지장간·신강신약)
+  DATA.md             # 데이터셋·카테고리·검증·추가 가이드
+  team-personas.md    # 5인 운영 팀 페르소나
+  OPS_ROUTINES.md     # 주간 운영 리뷰 프로세스 정의
+  ops/                # SNAPSHOT·PROPOSALS·metrics-latest·수익화 검토
+  reports/            # 주간 운영 리포트(<YYYY-MM-DD>-review.md)
 ```
 
 ## ⚠️ 면책
@@ -86,4 +108,4 @@ docs/
 
 ## 🛠️ 기술
 
-바닐라 HTML/CSS/JS(프레임워크 없음) · Canvas 2D(공유 이미지) · Node.js(빌드/검증) · Playwright(헤드리스 테스트).
+바닐라 HTML/CSS/JS(프레임워크 없음) · Canvas 2D(공유 이미지) · Node.js(빌드/검증/지표) · Playwright(헤드리스 테스트) · Cloudflare Worker + KV(제보 접수·배치 미러링) · 예약 루틴 3종(일일·헬스체크·주간 리뷰).
