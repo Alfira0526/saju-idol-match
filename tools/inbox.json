@@ -19719,5 +19719,18 @@
     "firstAt": "2026-07-30T02:50:26.348Z",
     "lastAt": "2026-07-30T02:50:26.348Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:周安信|ald1",
+    "name": "周安信",
+    "group": "ALD1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061225",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T03:02:08.316Z",
+    "lastAt": "2026-07-30T03:02:08.316Z",
+    "status": "pending"
   }
 ]
