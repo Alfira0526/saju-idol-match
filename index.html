@@ -465,50 +465,50 @@
       <span>木</span><span>火</span><span>土</span><span>金</span><span>水</span>
     </div>
 
-    <h2 class="section-title">당신에게 추천하는 덕질 아이돌</h2>
-    <p class="tier-note">일간 기준 <b>십신 10신(정/편)</b>·<b>천간합</b>·<b>지장간</b>·<b>일지/년지(띠)/월지 궁합</b>을 합산하고, <b>당신의 신강·신약(身強身弱)</b>에 따라 가중치를 개인화해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 그래서 같은 아이돌도 사람마다 점수가 달라집니다. 태어난 시각을 넣으면 <b>시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
+    <h2 class="section-title" data-i18n="rSectionTitle">당신에게 추천하는 덕질 아이돌</h2>
+    <p class="tier-note" data-i18n-html="rTierNote_html">일간 기준 <b>십신 10신(정/편)</b>·<b>천간합</b>·<b>지장간</b>·<b>일지/년지(띠)/월지 궁합</b>을 합산하고, <b>당신의 신강·신약(身強身弱)</b>에 따라 가중치를 개인화해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 그래서 같은 아이돌도 사람마다 점수가 달라집니다. 태어난 시각을 넣으면 <b>시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.</p>
 
     <div class="filter-row" id="catRow" style="display:none">
-      <label class="filter-label">카테고리</label>
+      <label class="filter-label" data-i18n="fCategory">카테고리</label>
       <div class="agency-btns" id="catBtns"></div>
     </div>
 
     <button type="button" id="filterToggle" class="filter-toggle" onclick="toggleFilters()" aria-expanded="false" aria-controls="filterPanel">
       <span class="ft-ico">🔎</span>
-      <span class="ft-label">특정 그룹·소속사로 좁혀보기</span>
+      <span class="ft-label" data-i18n="fToggle">특정 그룹·소속사로 좁혀보기</span>
       <span class="ft-badge" id="filterBadge"></span>
       <span class="ft-caret">⌄</span>
     </button>
 
     <div class="filter-panel" id="filterPanel">
       <div class="search-row">
-        <label class="filter-label" for="groupSearch">검색</label>
+        <label class="filter-label" for="groupSearch" data-i18n="fSearch">검색</label>
         <div class="search-wrap">
-          <input type="text" id="groupSearch" placeholder="그룹 검색 (한글·영문, 일부만 입력해도 됩니다)" autocomplete="off">
+          <input type="text" id="groupSearch" placeholder="그룹 검색 (한글·영문, 일부만 입력해도 됩니다)" data-i18n-ph="fSearchPh" autocomplete="off">
           <div id="searchResults" class="search-results hidden"></div>
         </div>
       </div>
 
       <div class="filter-row">
-        <label class="filter-label">소속사</label>
+        <label class="filter-label" data-i18n="fAgency">소속사</label>
         <div class="agency-btns" id="agencyBtns"></div>
       </div>
       <div class="subgroup-row" id="subgroupRow" style="display:none">
-        <label class="filter-label" for="groupFilter">그룹</label>
+        <label class="filter-label" for="groupFilter" data-i18n="fGroup">그룹</label>
         <select id="groupFilter" onchange="onGroupChange(this)"></select>
       </div>
 
       <div class="filter-row" id="bandRow" style="display:none">
-        <label class="filter-label">유형</label>
+        <label class="filter-label" data-i18n="fType">유형</label>
         <div class="agency-btns">
-          <button class="agbtn" id="bandToggle" type="button" onclick="toggleBand()">🎸 밴드만</button>
+          <button class="agbtn" id="bandToggle" type="button" onclick="toggleBand()" data-i18n="bandOnly">🎸 밴드만</button>
         </div>
       </div>
     </div>
 
     <div class="gender-tabs" id="genderTabs">
-      <button class="gtab active" data-g="F" onclick="switchGender('F')">여자 아이돌</button>
-      <button class="gtab" data-g="M" onclick="switchGender('M')">남자 아이돌</button>
+      <button class="gtab active" data-g="F" onclick="switchGender('F')" data-i18n="genderF">여자 아이돌</button>
+      <button class="gtab" data-g="M" onclick="switchGender('M')" data-i18n="genderM">남자 아이돌</button>
     </div>
 
     <div id="ranklist"></div>
@@ -516,67 +516,67 @@
     <button class="more-btn" id="moreBtn" onclick="toggleRest()">전체 순위 펼쳐보기</button>
 
     <div class="share-row">
-      <button class="share-btn" id="shareBtn" onclick="shareResult()">결과 이미지 저장 · 공유</button>
+      <button class="share-btn" id="shareBtn" onclick="shareResult()" data-i18n="shareBtn">결과 이미지 저장 · 공유</button>
       <span class="share-hint" id="shareHint"></span>
     </div>
 
     <div class="disclaimer">
-      <h3>읽기 전 확인</h3>
+      <h3 data-i18n="dscTitle">읽기 전 확인</h3>
       <ul>
-        <li>사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.</li>
-        <li>"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
-        <li>일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.</li>
-        <li>순위 점수는 <b>일간 기준 십신 10신(비견·겁재·식신·상관·편재·정재·편관·정관·편인·정인) + 천간합 + 일지 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 0~100으로 정규화하고 소수 둘째 자리까지 표기합니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
-        <li>수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
-        <li>같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.</li>
+        <li data-i18n="dsc1">사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.</li>
+        <li data-i18n="dsc2">"아이돌 궁합" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.</li>
+        <li data-i18n-html="dsc3_html">일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.</li>
+        <li data-i18n-html="dsc4_html">순위 점수는 <b>일간 기준 십신 10신(비견·겁재·식신·상관·편재·정재·편관·정관·편인·정인) + 천간합 + 일지 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 0~100으로 정규화하고 소수 둘째 자리까지 표기합니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.</li>
+        <li data-i18n="dsc5">수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
+        <li data-i18n="dsc6">같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.</li>
       </ul>
     </div>
   </div>
 
-  <footer>모든 계산은 브라우저 내에서만 실행되며 입력한 생년월일은 서버로 전송되지 않습니다.</footer>
+  <footer data-i18n="footer">모든 계산은 브라우저 내에서만 실행되며 입력한 생년월일은 서버로 전송되지 않습니다.</footer>
 </div>
 
 <!-- 제보 모달 -->
 <div class="modal-overlay hidden" id="suggestModal" onclick="if(event.target===this)closeSuggest()">
   <div class="modal">
     <button class="modal-x" onclick="closeSuggest()" aria-label="닫기">✕</button>
-    <h3 class="modal-title">누구를 추가할까요? ✦</h3>
-    <p class="modal-intro">추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. <b>한 명만 알려줘도 그 사람이 속한 그룹 전체</b>를 함께 찾아 추가해드려요. (실존 인물만 가능해요.)</p>
+    <h3 class="modal-title" data-i18n="sgTitle">누구를 추가할까요? ✦</h3>
+    <p class="modal-intro" data-i18n-html="sgIntro_html">추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. <b>한 명만 알려줘도 그 사람이 속한 그룹 전체</b>를 함께 찾아 추가해드려요. (실존 인물만 가능해요.)</p>
     <div id="suggestForm">
-      <label class="m-label">이름 <span class="req">*</span></label>
-      <input type="text" id="sgName" class="m-input" maxlength="40" placeholder="예: 하츠네" autocomplete="off">
-      <label class="m-label">그룹 / 소속 <span class="req">*</span></label>
-      <input type="text" id="sgGroup" class="m-input" maxlength="40" placeholder="예: NewJeans (솔로·배우면 그대로)" autocomplete="off">
+      <label class="m-label" data-i18n-html="sgNameL">이름 <span class="req">*</span></label>
+      <input type="text" id="sgName" class="m-input" maxlength="40" placeholder="예: 하츠네" data-i18n-ph="sgNamePh" autocomplete="off">
+      <label class="m-label" data-i18n-html="sgGroupL">그룹 / 소속 <span class="req">*</span></label>
+      <input type="text" id="sgGroup" class="m-input" maxlength="40" placeholder="예: NewJeans (솔로·배우면 그대로)" data-i18n-ph="sgGroupPh" autocomplete="off">
       <div class="m-row">
         <div style="flex:1">
-          <label class="m-label">카테고리</label>
+          <label class="m-label" data-i18n="sgCatL">카테고리</label>
           <select id="sgCat" class="m-input">
-            <option value="K-idol">한국 아이돌</option>
-            <option value="J-idol">일본 아이돌</option>
-            <option value="C-actor">중국 배우</option>
-            <option value="US-actor">미국 배우</option>
-            <option value="Etc">기타 (위에 없는 경우)</option>
+            <option value="K-idol" data-i18n="catK">한국 아이돌</option>
+            <option value="J-idol" data-i18n="catJ">일본 아이돌</option>
+            <option value="C-actor" data-i18n="catC">중국 배우</option>
+            <option value="US-actor" data-i18n="catUS">미국 배우</option>
+            <option value="Etc" data-i18n="catEtc">기타 (위에 없는 경우)</option>
           </select>
         </div>
         <div style="flex:1">
-          <label class="m-label">성별</label>
+          <label class="m-label" data-i18n="sgGenderL">성별</label>
           <select id="sgGender" class="m-input">
-            <option value="">모름</option><option value="F">여</option><option value="M">남</option>
+            <option value="" data-i18n="gUnknown">모름</option><option value="F" data-i18n="gF">여</option><option value="M" data-i18n="gM">남</option>
           </select>
         </div>
       </div>
-      <label class="m-label">양력 생년월일 (알면 좋아요)</label>
-      <input type="tel" id="sgDob" class="m-input" inputmode="numeric" maxlength="8" placeholder="예: 20040507 · 모르면 비워두세요" autocomplete="off">
-      <label class="m-label">한마디 (선택)</label>
-      <input type="text" id="sgNote" class="m-input" maxlength="80" placeholder="소속사·추천 이유 등" autocomplete="off">
+      <label class="m-label" data-i18n="sgDobL">양력 생년월일 (알면 좋아요)</label>
+      <input type="tel" id="sgDob" class="m-input" inputmode="numeric" maxlength="8" placeholder="예: 20040507 · 모르면 비워두세요" data-i18n-ph="sgDobPh" autocomplete="off">
+      <label class="m-label" data-i18n="sgNoteL">한마디 (선택)</label>
+      <input type="text" id="sgNote" class="m-input" maxlength="80" placeholder="소속사·추천 이유 등" data-i18n-ph="sgNotePh" autocomplete="off">
       <input type="text" id="sgHp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="m-submit" id="sgSubmit" onclick="submitSuggest()">제보 보내기</button>
-      <p class="m-note">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
+      <button class="m-submit" id="sgSubmit" onclick="submitSuggest()" data-i18n="sgSubmit">제보 보내기</button>
+      <p class="m-note" data-i18n="mSpam">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
     </div>
     <div id="suggestDone" class="hidden">
       <div class="m-done">🎉</div>
-      <p class="m-done-msg" id="sgDoneMsg">고마워요! 잘 받았어요.<br>그룹 전체를 함께 찾아 오늘 밤 우선으로 챙길게요.</p>
-      <button class="m-submit" onclick="closeSuggest()">닫기</button>
+      <p class="m-done-msg" id="sgDoneMsg" data-i18n-html="sgDoneMsg_html">고마워요! 잘 받았어요.<br>그룹 전체를 함께 찾아 오늘 밤 우선으로 챙길게요.</p>
+      <button class="m-submit" onclick="closeSuggest()" data-i18n="mClose">닫기</button>
     </div>
   </div>
 </div>
@@ -585,30 +585,30 @@
 <div class="modal-overlay hidden" id="errorModal" onclick="if(event.target===this)closeError()">
   <div class="modal">
     <button class="modal-x" onclick="closeError()" aria-label="닫기">✕</button>
-    <h3 class="modal-title">정보가 틀렸나요? 🛠️</h3>
-    <p class="modal-intro"><b id="erTarget">이름 · 그룹</b>의 정보에 오류가 있으면 알려주세요. 확인해서 바로잡을게요. <b>올바른 값·출처</b>를 함께 적어주시면 훨씬 빨라요.</p>
+    <h3 class="modal-title" data-i18n="erTitle">정보가 틀렸나요? 🛠️</h3>
+    <p class="modal-intro" id="erIntro"><b id="erTarget">이름 · 그룹</b>의 정보에 오류가 있으면 알려주세요. 확인해서 바로잡을게요. <b>올바른 값·출처</b>를 함께 적어주시면 훨씬 빨라요.</p>
     <div id="erForm">
-      <label class="m-label">무엇이 틀렸나요? <span class="req">*</span></label>
+      <label class="m-label" data-i18n-html="erFieldL">무엇이 틀렸나요? <span class="req">*</span></label>
       <select id="erField" class="m-input">
-        <option value="생년월일">생년월일(생일)</option>
-        <option value="활동명">활동명(이름)</option>
-        <option value="소속 그룹">소속 그룹</option>
-        <option value="성별">성별</option>
-        <option value="비실존·중복">비실존 인물 · 중복</option>
-        <option value="기타">기타</option>
+        <option value="생년월일" data-i18n="erfDob">생년월일(생일)</option>
+        <option value="활동명" data-i18n="erfName">활동명(이름)</option>
+        <option value="소속 그룹" data-i18n="erfGroup">소속 그룹</option>
+        <option value="성별" data-i18n="erfGender">성별</option>
+        <option value="비실존·중복" data-i18n="erfDup">비실존 인물 · 중복</option>
+        <option value="기타" data-i18n="erfEtc">기타</option>
       </select>
-      <label class="m-label">올바른 값 (알면 적어주세요)</label>
-      <input type="text" id="erSuggest" class="m-input" maxlength="60" placeholder="예: 19990507 · 올바른 활동명 등" autocomplete="off">
-      <label class="m-label">근거·출처 (권장)</label>
-      <input type="text" id="erNote" class="m-input" maxlength="120" placeholder="예: 공식 프로필·위키 등 확인할 수 있는 곳" autocomplete="off">
+      <label class="m-label" data-i18n="erSuggestL">올바른 값 (알면 적어주세요)</label>
+      <input type="text" id="erSuggest" class="m-input" maxlength="60" placeholder="예: 19990507 · 올바른 활동명 등" data-i18n-ph="erSuggestPh" autocomplete="off">
+      <label class="m-label" data-i18n="erNoteL">근거·출처 (권장)</label>
+      <input type="text" id="erNote" class="m-input" maxlength="120" placeholder="예: 공식 프로필·위키 등 확인할 수 있는 곳" data-i18n-ph="erNotePh" autocomplete="off">
       <input type="text" id="erHp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="m-submit" id="erSubmit" onclick="submitError()">오류 신고 보내기</button>
-      <p class="m-note">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
+      <button class="m-submit" id="erSubmit" onclick="submitError()" data-i18n="erSubmit">오류 신고 보내기</button>
+      <p class="m-note" data-i18n="mSpam">스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.</p>
     </div>
     <div id="erDone" class="hidden">
       <div class="m-done">🛠️</div>
-      <p class="m-done-msg">고마워요! 잘 받았어요.<br>교차 확인해서 맞으면 바로잡을게요.</p>
-      <button class="m-submit" onclick="closeError()">닫기</button>
+      <p class="m-done-msg" data-i18n-html="erDoneMsg_html">고마워요! 잘 받았어요.<br>교차 확인해서 맞으면 바로잡을게요.</p>
+      <button class="m-submit" onclick="closeError()" data-i18n="mClose">닫기</button>
     </div>
   </div>
 </div>
@@ -617,8 +617,8 @@
 <div class="modal-overlay hidden" id="favReport" onclick="if(event.target===this)closeFav()">
   <div class="modal">
     <button class="modal-x" onclick="closeFav()" aria-label="닫기">✕</button>
-    <div class="fav-eyebrow">💌 이번 주 최애 리포트</div>
-    <h3 class="modal-title" id="favTitle">이번 주, 사주가 콕 집은 최애 ✨</h3>
+    <div class="fav-eyebrow" data-i18n="favEyebrow">💌 이번 주 최애 리포트</div>
+    <h3 class="modal-title" id="favTitle" data-i18n="favTitle">이번 주, 사주가 콕 집은 최애 ✨</h3>
     <p class="modal-intro" id="favLead"></p>
     <div class="fav-card">
       <div class="fav-name" id="favName"></div>
@@ -626,7 +626,7 @@
       <div class="fav-reason" id="favReason"></div>
     </div>
     <p class="fav-foot" id="favFoot"></p>
-    <button class="m-submit" onclick="closeFav()">한 번 더 매칭하기</button>
+    <button class="m-submit" onclick="closeFav()" data-i18n="favAgain">한 번 더 매칭하기</button>
   </div>
 </div>
 
@@ -663,6 +663,77 @@ const TR = {
     ko: "시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.",
     en: "Add your birth time and your <b>Hour Branch (時支)</b> is factored into compatibility for a more precise ranking. Choose 'Unknown' to compute stably from your birth date alone (Day Stem/Branch). Selecting a <b>gender</b> lightly factors in the saju 'opposite-sex fate' Ten-God (male = Wealth, female = Officer), shifting ranks and interpretation. Left unset, calculation is gender-neutral."
   },
+  // P1-3 결과·필터·컨트롤
+  rSectionTitle: { ko: "당신에게 추천하는 덕질 아이돌", en: "Idols recommended for you" },
+  rTierNote_html: { ko: "일간 기준 <b>십신 10신(정/편)</b>·<b>천간합</b>·<b>지장간</b>·<b>일지/년지(띠)/월지 궁합</b>을 합산하고, <b>당신의 신강·신약(身強身弱)</b>에 따라 가중치를 개인화해 <b>소수점 둘째 자리</b>까지 점수화한 순위입니다. 그래서 같은 아이돌도 사람마다 점수가 달라집니다. 태어난 시각을 넣으면 <b>시지(時支) 궁합</b>까지 반영됩니다. 아이돌에 대한 사전 정보 없이 <b>오로지 사주 특성만으로</b> 선정했습니다.", en: "Ranked by summing the <b>Ten Gods</b>, <b>Heavenly-Stem combinations</b>, <b>hidden stems</b> and <b>Day/Year(zodiac)/Month-Branch compatibility</b> from your Day Master, personalized by <b>your body-strength (身強/身弱)</b> and scored to <b>two decimals</b> — so the same idol scores differently per person. Adding your birth time factors in <b>Hour-Branch compatibility</b>. Chosen <b>purely from saju</b>, with no prior info about the idols." },
+  fCategory: { ko: "카테고리", en: "Category" },
+  fToggle: { ko: "특정 그룹·소속사로 좁혀보기", en: "Narrow by group / agency" },
+  fSearch: { ko: "검색", en: "Search" },
+  fSearchPh: { ko: "그룹 검색 (한글·영문, 일부만 입력해도 됩니다)", en: "Search groups (Korean/English, partial OK)" },
+  fAgency: { ko: "소속사", en: "Agency" },
+  fGroup: { ko: "그룹", en: "Group" },
+  fType: { ko: "유형", en: "Type" },
+  bandOnly: { ko: "🎸 밴드만", en: "🎸 Bands only" },
+  genderF: { ko: "여자 아이돌", en: "Female idols" },
+  genderM: { ko: "남자 아이돌", en: "Male idols" },
+  agencyAll: { ko: "전체", en: "All" },
+  moreOpen: { ko: "전체 순위 펼쳐보기", en: "Show full ranking" },
+  moreOpenN: { ko: "전체 순위 펼쳐보기 (9~{n}위)", en: "Show full ranking (9–{n})" },
+  moreClose: { ko: "접기", en: "Collapse" },
+  shareBtn: { ko: "결과 이미지 저장 · 공유", en: "Save · share result image" },
+  footer: { ko: "모든 계산은 브라우저 내에서만 실행되며 입력한 생년월일은 서버로 전송되지 않습니다.", en: "All calculation runs in your browser; your birth date is never sent to a server." },
+  // P1-4 면책
+  dscTitle: { ko: "읽기 전 확인", en: "Before you read" },
+  dsc1: { ko: "사주 명리학은 전통 해석 체계이며 과학적으로 검증된 사실이 아닙니다.", en: "Saju (Four Pillars) is a traditional interpretive system, not scientifically verified fact." },
+  dsc2: { ko: "\"아이돌 궁합\" 적용은 정통 명리학의 표준 기법이 아니라 오행 십신론을 유비적으로 확장한 오락적 해석입니다.", en: "The \"idol compatibility\" here is not a standard saju technique but an entertaining, analogical extension of Five-Elements / Ten-Gods theory." },
+  dsc3_html: { ko: "일간(日干)·일지(日支)는 태어난 날짜만으로 정확히 결정됩니다. 시각(24시간 기준)을 '모름'으로 두면 이 둘만으로 계산하고, 시각을 입력하면 <b>당신의 시지(時支)</b>와의 궁합이 가중치 0.6으로 추가되어 순위가 조금 달라집니다. 아이돌 측은 생일만 공개되어 일주(日柱)만 사용합니다.", en: "Your Day Stem (日干) and Day Branch (日支) are fixed by your birth date alone. Leave the time 'Unknown' to compute from just these two; add a time and <b>your Hour Branch (時支)</b> is included at weight 0.6, shifting ranks slightly. For idols only the birth date is public, so only the Day Pillar is used." },
+  dsc4_html: { ko: "순위 점수는 <b>일간 기준 십신 10신(비견·겁재·식신·상관·편재·정재·편관·정관·편인·정인) + 천간합 + 일지 지지 관계(육합·삼합·방합·충·해·비화) (+시각 입력 시 시지 관계)</b>를 합산해 0~100으로 정규화하고 소수 둘째 자리까지 표기합니다. '덕질 = 내가 애정을 쏟는 관계'로 보아 식상·인성을 상위에 둔 해석이며, 개인별 신강·신약(용신)은 반영하지 않은 단순화 기준입니다 — 확인필요.", en: "The score sums the <b>Ten Gods from your Day Master + Heavenly-Stem combinations + Day-Branch relations (six/three/directional harmonies, clash, harm, same-element) (+ Hour-Branch relations when a time is given)</b>, normalized to 0–100 with two decimals. It weights Output/Resource stars higher (reading fandom as 'a relationship you pour affection into'); a simplified basis that does not model personal body-strength (yongsin) — verify." },
+  dsc5: { ko: "수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.", en: "Birth dates are collected from public sources (wikis, etc.) and each Day Pillar is cross-checked two independent ways. Still, announced dates sometimes differ from actual ones, and rookies / overseas members may have errors — individual verification may be needed." },
+  dsc6: { ko: "같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.", en: "Different people share the same stage name (e.g. multiple 'Jisoo'/'Hani'), so each is distinguished by the group shown next to the name." },
+  // P1-5 제보 모달
+  sgTitle: { ko: "누구를 추가할까요? ✦", en: "Who should we add? ✦" },
+  sgIntro_html: { ko: "추가되길 원하는 아이돌·인물을 알려주세요. <b>이름과 그룹만 알아도 돼요</b> — 생년월일은 저희가 확인해서 반영할게요. <b>한 명만 알려줘도 그 사람이 속한 그룹 전체</b>를 함께 찾아 추가해드려요. (실존 인물만 가능해요.)", en: "Tell us the idol or person you'd like added. <b>Just a name and group is enough</b> — we'll verify the birth date. <b>Name one member and we'll add their whole group.</b> (Real people only.)" },
+  sgNameL: { ko: "이름 <span class=\"req\">*</span>", en: "Name <span class=\"req\">*</span>" },
+  sgNamePh: { ko: "예: 하츠네", en: "e.g. Hatsune" },
+  sgGroupL: { ko: "그룹 / 소속 <span class=\"req\">*</span>", en: "Group / affiliation <span class=\"req\">*</span>" },
+  sgGroupPh: { ko: "예: NewJeans (솔로·배우면 그대로)", en: "e.g. NewJeans (or the name itself for soloists/actors)" },
+  sgCatL: { ko: "카테고리", en: "Category" },
+  catK: { ko: "한국 아이돌", en: "K-idol" },
+  catJ: { ko: "일본 아이돌", en: "J-idol" },
+  catC: { ko: "중국 배우", en: "C-actor" },
+  catUS: { ko: "미국 배우", en: "US actor" },
+  catEtc: { ko: "기타 (위에 없는 경우)", en: "Other (none of the above)" },
+  sgGenderL: { ko: "성별", en: "Gender" },
+  gUnknown: { ko: "모름", en: "Unknown" },
+  gF: { ko: "여", en: "F" },
+  gM: { ko: "남", en: "M" },
+  sgDobL: { ko: "양력 생년월일 (알면 좋아요)", en: "Solar birth date (nice to have)" },
+  sgDobPh: { ko: "예: 20040507 · 모르면 비워두세요", en: "e.g. 20040507 · leave blank if unknown" },
+  sgNoteL: { ko: "한마디 (선택)", en: "A note (optional)" },
+  sgNotePh: { ko: "소속사·추천 이유 등", en: "Agency, why you'd recommend, etc." },
+  sgSubmit: { ko: "제보 보내기", en: "Send suggestion" },
+  mSpam: { ko: "스팸 방지를 위해 1시간에 1번 제보할 수 있어요. 제보자 개인정보는 받지 않아요.", en: "To prevent spam, one submission per hour. We don't collect any personal info." },
+  sgDoneMsg_html: { ko: "고마워요! 잘 받았어요.<br>그룹 전체를 함께 찾아 오늘 밤 우선으로 챙길게요.", en: "Thank you! Got it.<br>We'll find the whole group and prioritize it tonight." },
+  mClose: { ko: "닫기", en: "Close" },
+  // P1-6 오류 모달 + 최애 리포트
+  erTitle: { ko: "정보가 틀렸나요? 🛠️", en: "Something wrong? 🛠️" },
+  erIntro_html: { ko: "<b>{target}</b>의 정보에 오류가 있으면 알려주세요. 확인해서 바로잡을게요. <b>올바른 값·출처</b>를 함께 적어주시면 훨씬 빨라요.", en: "If <b>{target}</b>'s info is wrong, let us know and we'll fix it. Adding the <b>correct value & a source</b> makes it much faster." },
+  erFieldL: { ko: "무엇이 틀렸나요? <span class=\"req\">*</span>", en: "What's wrong? <span class=\"req\">*</span>" },
+  erfDob: { ko: "생년월일(생일)", en: "Birth date" },
+  erfName: { ko: "활동명(이름)", en: "Stage name" },
+  erfGroup: { ko: "소속 그룹", en: "Group" },
+  erfGender: { ko: "성별", en: "Gender" },
+  erfDup: { ko: "비실존 인물 · 중복", en: "Not real / duplicate" },
+  erfEtc: { ko: "기타", en: "Other" },
+  erSuggestL: { ko: "올바른 값 (알면 적어주세요)", en: "Correct value (if known)" },
+  erSuggestPh: { ko: "예: 19990507 · 올바른 활동명 등", en: "e.g. 19990507 · correct stage name" },
+  erNoteL: { ko: "근거·출처 (권장)", en: "Evidence / source (recommended)" },
+  erNotePh: { ko: "예: 공식 프로필·위키 등 확인할 수 있는 곳", en: "e.g. official profile, wiki — something checkable" },
+  erSubmit: { ko: "오류 신고 보내기", en: "Report error" },
+  erDoneMsg_html: { ko: "고마워요! 잘 받았어요.<br>교차 확인해서 맞으면 바로잡을게요.", en: "Thank you! Got it.<br>We'll cross-check and fix it if confirmed." },
+  favEyebrow: { ko: "💌 이번 주 최애 리포트", en: "💌 This week's bias report" },
+  favTitle: { ko: "이번 주, 사주가 콕 집은 최애 ✨", en: "Your saju-picked bias this week ✨" },
+  favAgain: { ko: "한 번 더 매칭하기", en: "Match again" },
 };
 function t(key){
   const entry = TR[key];
@@ -704,6 +775,8 @@ function applyLang(){
   });
   renderSub();
   buildHourSelect();
+  // 결과가 이미 있으면 언어별 동적 라벨(카테고리·전체·순위 더보기 등) 재렌더
+  if(window._saju){ try{ applyScopeUI(); renderRanks(); }catch(e){} }
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1726,7 +1799,7 @@ const CAT_NAMES = {
   "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"},
   "Etc":{ko:"기타",en:"Etc"}
 };
-const catLabel = c => (CAT_NAMES[c] ? CAT_NAMES[c].ko : c);
+const catLabel = c => { const e = CAT_NAMES[c]; return e ? (e[getLang()] || e.ko) : c; };
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
 // 밴드(악기 연주) 그룹 — tools/bands.json에서 build.js가 주입. '밴드만' 필터에 사용.
 const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony","N.Flying","ONEWE","LUCY"]);
@@ -1823,7 +1896,7 @@ function cardHTML(r,i){
 
 function moreLabel(){
   const n = currentList().length;
-  return `전체 순위 펼쳐보기 (9~${n}위)`;
+  return (t('moreOpenN') || '전체 순위 펼쳐보기 (9~{n}위)').replace('{n}', n);
 }
 
 function renderRanks(){
@@ -1878,7 +1951,7 @@ function toggleRest(){
       el.dataset.built = "1";
     }
     el.classList.remove('hidden');
-    btn.textContent = "접기";
+    btn.textContent = t('moreClose') || "접기";
   }else{
     el.classList.add('hidden');
     btn.textContent = moreLabel();
@@ -1956,7 +2029,7 @@ function renderAgencyButtons(){
   // K-idol은 5대 소속사 순서, 그 외 카테고리는 인원수 순
   const agencies = (cat==="K-idol") ? AGENCY_ORDER.filter(a=>counts[a]) : order.sort((x,y)=>counts[y]-counts[x]);
   const mk=(a,label,cnt)=>`<button class="agbtn${a===(window._saju.activeAgency||"")?' active':''}" data-a="${a}" onclick="selectAgency('${a.replace(/"/g,'&quot;')}')">${label}<span class="agn">${cnt}</span></button>`;
-  wrap.innerHTML = mk("","전체",inCat.length) + agencies.map(a=>mk(a,a,counts[a])).join("");
+  wrap.innerHTML = mk("",t('agencyAll')||"전체",inCat.length) + agencies.map(a=>mk(a,a,counts[a])).join("");
 }
 
 // 선택된 소속사의 하위 그룹 드롭다운 채우기 (활성 카테고리 내)
@@ -2307,7 +2380,9 @@ function closeUpdate(){ const t=document.getElementById('updateToast'); if(t) t.
 let _erTarget = { name:"", group:"" };
 function openError(nameEnc, groupEnc){
   _erTarget = { name: decodeURIComponent(nameEnc), group: decodeURIComponent(groupEnc) };
-  document.getElementById('erTarget').textContent = `${_erTarget.name} · ${_erTarget.group}`;
+  const _tgt = `${_erTarget.name} · ${_erTarget.group}`;
+  const _erIntro = document.getElementById('erIntro');
+  if(_erIntro) _erIntro.innerHTML = (t('erIntro_html') || '<b>{target}</b>의 정보에 오류가 있으면 알려주세요. 확인해서 바로잡을게요. <b>올바른 값·출처</b>를 함께 적어주시면 훨씬 빨라요.').replace('{target}', _tgt);
   document.getElementById('erForm').classList.remove('hidden');
   document.getElementById('erDone').classList.add('hidden');
   const e=document.getElementById('erErr'); if(e) e.remove();
