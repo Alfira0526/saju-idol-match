@@ -917,7 +917,7 @@
     "gender": "M",
     "dob": "20021130",
     "note": "드래곤포니 멤버들 다 있는데 강훈이만 없음..",
-    "count": 8,
+    "count": 9,
     "firstAt": "2026-07-24T05:13:55.452Z",
     "lastAt": "2026-07-30T14:29:03.805Z",
     "status": "pending"
@@ -6676,7 +6676,7 @@
     "gender": "M",
     "dob": "19890622",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-25T03:58:07.012Z",
     "lastAt": "2026-07-30T15:30:04.336Z",
     "status": "pending"
@@ -7456,7 +7456,7 @@
     "gender": "M",
     "dob": "20040102",
     "note": "FNC",
-    "count": 10,
+    "count": 11,
     "firstAt": "2026-07-25T05:07:11.296Z",
     "lastAt": "2026-07-30T09:58:59.292Z",
     "status": "pending"
@@ -7807,7 +7807,7 @@
     "gender": "M",
     "dob": "20010820",
     "note": "y g",
-    "count": 13,
+    "count": 14,
     "firstAt": "2026-07-25T05:49:55.947Z",
     "lastAt": "2026-07-30T06:36:32.566Z",
     "status": "pending"
@@ -10212,7 +10212,7 @@
     "gender": "M",
     "dob": "20061025",
     "note": "소속사: 모드하우스",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-07-23T00:34:59.775Z",
     "lastAt": "2026-07-30T14:09:12.447Z",
     "status": "pending"
@@ -12318,7 +12318,7 @@
     "gender": "M",
     "dob": "20020423",
     "note": "F&F",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-26T10:44:32.070Z",
     "lastAt": "2026-07-30T05:55:46.598Z",
     "status": "pending"
@@ -12695,7 +12695,7 @@
     "gender": "M",
     "dob": "20060419",
     "note": "스타쉽",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-26T12:52:39.947Z",
     "lastAt": "2026-07-30T08:27:28.204Z",
     "status": "pending"
@@ -13722,7 +13722,7 @@
     "gender": "M",
     "dob": "20091027",
     "note": "",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-07-26T15:20:25.010Z",
     "lastAt": "2026-07-30T08:22:45.523Z",
     "status": "pending"
@@ -14112,7 +14112,7 @@
     "gender": "M",
     "dob": "20050822",
     "note": "",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-26T16:07:45.194Z",
     "lastAt": "2026-07-30T10:55:47.530Z",
     "status": "pending"
@@ -16296,7 +16296,7 @@
     "gender": "M",
     "dob": "19990710",
     "note": "북부대공의 1인자!!",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-27T13:40:58.826Z",
     "lastAt": "2026-07-30T14:34:34.291Z",
     "status": "pending"
@@ -16413,7 +16413,7 @@
     "gender": "M",
     "dob": "19900125",
     "note": "큐티섹시",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-27T14:14:22.999Z",
     "lastAt": "2026-07-30T12:26:27.561Z",
     "status": "pending"
@@ -18168,7 +18168,7 @@
     "gender": "M",
     "dob": "20020911",
     "note": "옆자리 사람이 좋아해요",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-28T08:06:20.592Z",
     "lastAt": "2026-07-30T09:01:00.302Z",
     "status": "pending"
@@ -18259,7 +18259,7 @@
     "gender": "M",
     "dob": "20090214",
     "note": "하이브",
-    "count": 6,
+    "count": 8,
     "firstAt": "2026-07-28T08:57:50.327Z",
     "lastAt": "2026-07-30T15:23:09.325Z",
     "status": "pending"
@@ -19780,7 +19780,7 @@
     "gender": "",
     "dob": "12121985",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T05:55:29.723Z",
     "lastAt": "2026-07-30T05:55:29.723Z",
     "status": "pending"
@@ -19793,7 +19793,7 @@
     "gender": "F",
     "dob": "19980917",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T06:53:29.905Z",
     "lastAt": "2026-07-30T06:53:29.905Z",
     "status": "pending"
@@ -19806,7 +19806,7 @@
     "gender": "M",
     "dob": "20030125",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T09:35:31.230Z",
     "lastAt": "2026-07-30T09:35:31.230Z",
     "status": "pending"
@@ -19819,7 +19819,7 @@
     "gender": "F",
     "dob": "",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T09:40:08.147Z",
     "lastAt": "2026-07-30T09:40:08.147Z",
     "status": "pending"
@@ -19832,7 +19832,7 @@
     "gender": "M",
     "dob": "1992",
     "note": "보고싶음",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T09:43:20.520Z",
     "lastAt": "2026-07-30T09:43:20.520Z",
     "status": "pending"
@@ -19845,7 +19845,7 @@
     "gender": "M",
     "dob": "19911217",
     "note": "FNC",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T10:31:39.230Z",
     "lastAt": "2026-07-30T10:31:39.230Z",
     "status": "pending"
@@ -19858,7 +19858,7 @@
     "gender": "M",
     "dob": "20061204",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T11:06:55.093Z",
     "lastAt": "2026-07-30T11:06:55.093Z",
     "status": "pending"
@@ -19871,7 +19871,7 @@
     "gender": "M",
     "dob": "19920406",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T11:09:58.135Z",
     "lastAt": "2026-07-30T11:09:58.135Z",
     "status": "pending"
@@ -19884,7 +19884,7 @@
     "gender": "F",
     "dob": "20000212",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T12:27:21.888Z",
     "lastAt": "2026-07-30T12:27:21.888Z",
     "status": "pending"
@@ -19897,7 +19897,7 @@
     "gender": "M",
     "dob": "20041221",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T13:55:33.030Z",
     "lastAt": "2026-07-30T13:55:33.030Z",
     "status": "pending"
@@ -19910,7 +19910,7 @@
     "gender": "",
     "dob": "19960615",
     "note": "나의 우상",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T14:35:56.494Z",
     "lastAt": "2026-07-30T14:35:56.494Z",
     "status": "pending"
@@ -19923,7 +19923,7 @@
     "gender": "F",
     "dob": "20000106",
     "note": "",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T14:51:09.633Z",
     "lastAt": "2026-07-30T14:51:09.633Z",
     "status": "pending"
@@ -19936,9 +19936,22 @@
     "gender": "M",
     "dob": "19921111",
     "note": "FNC",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-30T16:03:28.777Z",
     "lastAt": "2026-07-30T16:03:28.777Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:zen|riize​sm",
+    "name": "zen",
+    "group": "Riize​ SM",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T16:26:42.150Z",
+    "lastAt": "2026-07-30T16:26:42.150Z",
     "status": "pending"
   }
 ]
