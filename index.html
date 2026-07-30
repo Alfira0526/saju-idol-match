@@ -418,12 +418,12 @@
 
   <div class="eyebrow" data-i18n="eyebrow">오행 상생상극 · 궁합 매칭</div>
   <h1 data-i18n="title">사주 궁합 아이돌 매칭</h1>
-  <p class="sub"><b>내 사주랑 제일 잘 맞는 아이돌은 누구일까?</b> 🔮<br>
+  <p class="sub" id="subText"><b>내 사주랑 제일 잘 맞는 아이돌은 누구일까?</b> 🔮<br>
   생년월일(·태어난 시각·성별)만 있으면 매일 늘어나는 <b class="nowrap"><span id="groupCount">91</span>개 그룹 · 총 <span id="idolCount">555</span>명</b> 중에서 오행 상생상극·지지(地支) 궁합, 그리고 <b class="nowrap">‘이성 인연’</b>까지 따져 당신의 <span class="nowrap">‘덕질 최애’</span>를 순위로 찾아드려요. 사전 정보 없이 순수 사주로만.</p>
 
   <div class="report-banner" id="reportBanner">
-    <div class="rb-text">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀</div>
-    <button class="rb-btn" onclick="openSuggest()">제보하기</button>
+    <div class="rb-text" data-i18n="reportBannerText">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀</div>
+    <button class="rb-btn" onclick="openSuggest()" data-i18n="reportBannerBtn">제보하기</button>
   </div>
 
   <div class="panel">
@@ -643,6 +643,12 @@
 const TR = {
   eyebrow: { ko: "오행 상생상극 · 궁합 매칭", en: "Five Elements Synergy · Compatibility Match" },
   title:   { ko: "사주 궁합 아이돌 매칭", en: "Saju Idol Compatibility Match" },
+  sub_html: {
+    ko: "<b>내 사주랑 제일 잘 맞는 아이돌은 누구일까?</b> 🔮<br>생년월일(·태어난 시각·성별)만 있으면 매일 늘어나는 <b class=\"nowrap\"><span id=\"groupCount\">{gc}</span>개 그룹 · 총 <span id=\"idolCount\">{ic}</span>명</b> 중에서 오행 상생상극·지지(地支) 궁합, 그리고 <b class=\"nowrap\">'이성 인연'</b>까지 따져 당신의 <span class=\"nowrap\">'덕질 최애'</span>를 순위로 찾아드려요. 사전 정보 없이 순수 사주로만.",
+    en: "<b>Which idol matches your saju best?</b> 🔮<br>Just your birth date (plus birth time & gender, optional) — from <b class=\"nowrap\"><span id=\"groupCount\">{gc}</span> groups · <span id=\"idolCount\">{ic}</span> idols</b> and growing every day, we rank your <span class=\"nowrap\">'ultimate bias'</span> using Five-Elements synergy, Earthly-Branch (地支) compatibility, and even <b class=\"nowrap\">'opposite-sex fated match'</b>. No prior info needed — pure saju only."
+  },
+  reportBannerText: { ko: "매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀", en: "We're adding new idols every day. Got someone in mind? Let us know! 👀" },
+  reportBannerBtn:  { ko: "제보하기", en: "Suggest" },
 };
 function t(key){
   const entry = TR[key];
@@ -655,6 +661,14 @@ function detectLang(){
 }
 function getLang(){
   return localStorage.getItem('lang') || detectLang();
+}
+function renderSub(){
+  const el = document.getElementById('subText');
+  if(!el || typeof IDOLS === 'undefined') return;
+  const gc = new Set(IDOLS.map(r=>r[1])).size;
+  const ic = IDOLS.length;
+  const tpl = (TR.sub_html[getLang()] || TR.sub_html.ko);
+  el.innerHTML = tpl.replace('{gc}', gc).replace('{ic}', ic);
 }
 function applyLang(){
   const lang = getLang();
@@ -670,6 +684,7 @@ function applyLang(){
   document.querySelectorAll('#langSwitch button').forEach(b=>{
     b.classList.toggle('active', b.dataset.lang===lang);
   });
+  renderSub();
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1492,7 +1507,24 @@ const IDOLS = [
   ["신예찬","LUCY","庚申","金","M","기타","19920613","K-idol"],
   ["최상엽","LUCY","甲申","木","M","기타","19940227","K-idol"],
   ["조원상","LUCY","甲申","木","M","기타","19960815","K-idol"],
-  ["신광일","LUCY","丁卯","火","M","기타","19970525","K-idol"]
+  ["신광일","LUCY","丁卯","火","M","기타","19970525","K-idol"],
+  ["원이","RESCENE","甲辰","木","F","기타","20040525","K-idol"],
+  ["리브","RESCENE","癸酉","水","F","기타","20061011","K-idol"],
+  ["미나미","RESCENE","壬戌","水","F","기타","20061129","K-idol"],
+  ["메이","RESCENE","辛卯","金","F","기타","20080819","K-idol"],
+  ["제나","RESCENE","辛未","金","F","기타","20081127","K-idol"],
+  ["캠든","AMPERS&ONE","癸卯","水","M","기타","20010609","K-idol"],
+  ["브라이언","AMPERS&ONE","丁卯","火","M","기타","20020827","K-idol"],
+  ["지호","AMPERS&ONE","庚申","金","M","기타","20040610","K-idol"],
+  ["시윤","AMPERS&ONE","壬辰","水","M","기타","20050108","K-idol"],
+  ["카이렐","AMPERS&ONE","戊子","土","M","기타","20050703","K-idol"],
+  ["마카야","AMPERS&ONE","庚戌","金","M","기타","20060121","K-idol"],
+  ["승모","AMPERS&ONE","癸巳","水","M","기타","20060703","K-idol"],
+  ["이솔","KiiiKiii","乙巳","木","F","기타","20050918","K-idol"],
+  ["수이","KiiiKiii","己巳","土","F","기타","20060410","K-idol"],
+  ["지유","KiiiKiii","癸卯","水","F","기타","20060514","K-idol"],
+  ["하움","KiiiKiii","丁未","火","F","기타","20061114","K-idol"],
+  ["카야","KiiiKiii","壬寅","水","F","기타","20101218","K-idol"]
 ];
 
 function jdn(y,m,d){
@@ -1848,13 +1880,6 @@ function toggleRest(){
     o.textContent = `${h}시 (${hh}:00~${hh}:59)`;
     sel.appendChild(o);
   }
-})();
-
-// 아이돌 총원·그룹 수 표시 (매일 데이터가 늘어남)
-(function(){
-  const ic=document.getElementById('idolCount'); if(ic) ic.textContent=IDOLS.length;
-  const gc=document.getElementById('groupCount');
-  if(gc) gc.textContent=new Set(IDOLS.map(r=>r[1])).size;
 })();
 
 // 생년월일 입력: 숫자만 허용·8자리 제한, Enter로 계산

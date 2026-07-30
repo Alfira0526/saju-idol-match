@@ -1,18 +1,13 @@
 {
-  "total": 677,
+  "total": 694,
   "addedRecent": [
+    { "date": "2026-07-30", "text": "키키 추가", "count": 5 },
+    { "date": "2026-07-30", "text": "앰퍼샌드원 추가", "count": 7 },
+    { "date": "2026-07-30", "text": "리센느 추가", "count": 5 },
     { "date": "2026-07-30", "text": "싸이커스 추가", "count": 10 },
     { "date": "2026-07-30", "text": "ONEWE 추가", "count": 5 },
     { "date": "2026-07-30", "text": "LUCY 추가", "count": 4 },
-    { "date": "2026-07-29", "text": "NEXZ 추가", "count": 7 },
-    { "date": "2026-07-27", "text": "Hearts2Hearts 추가", "count": 8 },
-    { "date": "2026-07-27", "text": "CLOSE YOUR EYES 추가", "count": 7 },
-    { "date": "2026-07-27", "text": "tripleS 멤버 추가", "count": 2 },
-    { "date": "2026-07-26", "text": "IDID 멤버 추가", "count": 3 },
-    { "date": "2026-07-26", "text": "B1A4 추가", "count": 5 },
-    { "date": "2026-07-26", "text": "N.Flying 추가", "count": 5 },
-    { "date": "2026-07-26", "text": "LNGSHOT 추가", "count": 4 },
-    { "date": "2026-07-26", "text": "FLARE U 추가", "count": 2 }
+    { "date": "2026-07-29", "text": "NEXZ 추가", "count": 7 }
   ],
-  "updatedAt": "2026-07-29"
+  "updatedAt": "2026-07-30"
 }

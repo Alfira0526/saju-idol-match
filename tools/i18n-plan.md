@@ -30,7 +30,10 @@
 - [x] **P1-0 뼈대**: `TR` 사전 + `t()`/`applyLang()` + 언어 스위처(KO/EN) + 자동감지. 우선 헤더
   1~2개 문자열만 연결해 전환 동작을 검증(스모크로 en 전환 확인). (2026-07-30: eyebrow·title
   2개 문자열 연결, localStorage.lang 저장, navigator.language 자동감지, KO 폴백 확인 완료)
-- [ ] **P1-1 헤더·소개**: eyebrow, 소개문(`.sub`), 제보 배너 문구.
+- [x] **P1-1 헤더·소개**: eyebrow, 소개문(`.sub`), 제보 배너 문구. (2026-07-30: `.sub`는
+  groupCount/idolCount 동적 스팬이 있어 일반 `data-i18n`(textContent 치환) 대신
+  `TR.sub_html`(언어별 HTML 템플릿 + `{gc}`/`{ic}` 치환)을 쓰는 `renderSub()`로 별도 처리—
+  `applyLang()`에서 호출. 제보 배너 텍스트·버튼은 표준 `data-i18n`. KO 폴백·모바일 오버플로 확인 완료.)
 - [ ] **P1-2 입력영역**: 라벨(생년월일·태어난 시각·내 성별), 시각 드롭다운(모름/N시), 성별 버튼
   (미선택/여성/남성), CTA 버튼(내 최애 찾기), toggle-note.
 - [ ] **P1-3 결과 상단·컨트롤**: 일간/일주 라벨(daymaster), 오행 legend, tier-note, 필터 라벨
