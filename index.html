@@ -414,6 +414,7 @@
   <div class="lang-switch" id="langSwitch">
     <button type="button" data-lang="ko" onclick="setLang('ko')">KO</button>
     <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+    <button type="button" data-lang="ja" onclick="setLang('ja')">JA</button>
   </div>
 
   <div class="eyebrow" data-i18n="eyebrow">오행 상생상극 · 궁합 매칭</div>
@@ -735,6 +736,92 @@ const TR = {
   favTitle: { ko: "이번 주, 사주가 콕 집은 최애 ✨", en: "Your saju-picked bias this week ✨" },
   favAgain: { ko: "한 번 더 매칭하기", en: "Match again" },
 };
+// 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
+const TR_JA = {
+  eyebrow: "五行の相生相剋 · 相性マッチング",
+  title: "四柱推命アイドル相性マッチ",
+  sub_html: "<b>私の四柱に一番合うアイドルは誰？</b> 🔮<br>生年月日（＋出生時刻・性別は任意）だけで、毎日増える <b class=\"nowrap\"><span id=\"groupCount\">{gc}</span>グループ · 計 <span id=\"idolCount\">{ic}</span>名</b> の中から、五行の相生相剋・地支の相性、さらに <b class=\"nowrap\">『異性の縁』</b> まで見て、あなたの <span class=\"nowrap\">『推し』</span> をランキングで見つけます。予備知識なし、純粋に四柱だけで。",
+  reportBannerText: "毎日新しい人物を集めています。気になる人、こっそり教えてくれますか？ 👀",
+  reportBannerBtn: "提案する",
+  bdateLabel: "生年月日（8桁の数字）",
+  bdatePh: "例: 19950719",
+  bhourLabel: "出生時刻（任意 · 24時間表記）",
+  hourUnknown: "不明",
+  sexLabel: "自分の性別（任意）",
+  sexNone: "未選択",
+  sexF: "女性",
+  sexM: "男性",
+  calcBtn: "私の推しを探す",
+  note_html: "時刻を入力すると、あなたの<b>時支（時支）</b>まで相性に反映され、ランキングがより精密になります。『不明』を選ぶと生年月日（日干・日支）だけで安定的に計算します。<b>性別</b>を選ぶと命理の『異性の縁』十神（男性=財星 · 女性=官星）を少し多く反映し、順位・解釈が変わります。未選択なら性別中立で計算します。",
+  rSectionTitle: "あなたへのおすすめ推しアイドル",
+  rTierNote_html: "日干を基準に<b>十神</b>・<b>天干合</b>・<b>蔵干</b>・<b>日支/年支(干支)/月支の相性</b>を合算し、<b>あなたの身強・身弱</b>で重みを個人化して<b>小数第2位</b>まで点数化した順位です。だから同じアイドルでも人によって点数が変わります。出生時刻を入れると<b>時支の相性</b>まで反映されます。アイドルの予備情報なしに<b>純粋に四柱の特性だけで</b>選びました。",
+  fCategory: "カテゴリー",
+  fToggle: "特定のグループ・事務所で絞り込む",
+  fSearch: "検索",
+  fSearchPh: "グループ検索（韓国語・英語、一部入力でもOK）",
+  fAgency: "事務所",
+  fGroup: "グループ",
+  fType: "タイプ",
+  bandOnly: "🎸 バンドのみ",
+  genderF: "女性アイドル",
+  genderM: "男性アイドル",
+  agencyAll: "すべて",
+  moreOpen: "全順位を表示",
+  moreOpenN: "全順位を表示（9〜{n}位）",
+  moreClose: "閉じる",
+  shareBtn: "結果画像を保存 · シェア",
+  footer: "すべての計算はブラウザ内でのみ実行され、入力した生年月日はサーバーに送信されません。",
+  dscTitle: "読む前に",
+  dsc1: "四柱推命は伝統的な解釈体系であり、科学的に検証された事実ではありません。",
+  dsc2: "「アイドル相性」の適用は正統な命理学の標準技法ではなく、五行・十神論を類推的に拡張した娯楽的な解釈です。",
+  dsc3_html: "日干(日干)・日支(日支)は生年月日だけで正確に決まります。時刻(24時間表記)を『不明』にするとこの2つだけで計算し、時刻を入れると<b>あなたの時支(時支)</b>との相性が重み0.6で加わり順位が少し変わります。アイドル側は生年月日のみ公開のため日柱(日柱)のみ使用します。",
+  dsc4_html: "順位点数は<b>日干基準の十神(比肩·劫財·食神·傷官·偏財·正財·偏官·正官·偏印·正印)＋天干合＋日支の地支関係(六合·三合·方合·沖·害·比和)(＋時刻入力時は時支関係)</b>を合算し0〜100に正規化、小数第2位まで表記します。『推し＝愛情を注ぐ関係』とみて食傷·印星を上位に置いた解釈で、個人の身強·身弱(用神)は反映しない簡略化基準です — 要確認。",
+  dsc5: "収録アイドル約540名の生年月日は公開情報(ウィキ等)を基準に収集し、日柱計算は異なる2方式で相互検証しました。ただし生年月日自体が事務所発表と実際で異なる例が報告されており、新人·海外メンバーは誤差の可能性があるため個別確認が必要な場合があります。",
+  dsc6: "同じ活動名の別人がいるため(例: 複数グループの『ジス』『ハニ』)、名前の横の所属グループで区別します。",
+  sgTitle: "誰を追加しますか？ ✦",
+  sgIntro_html: "追加してほしいアイドル・人物を教えてください。<b>名前とグループだけでOK</b> — 生年月日はこちらで確認して反映します。<b>1人教えてくれれば所属グループ全体</b>を一緒に探して追加します。(実在の人物のみ)",
+  sgNameL: "名前 <span class=\"req\">*</span>",
+  sgNamePh: "例: ハツネ",
+  sgGroupL: "グループ / 所属 <span class=\"req\">*</span>",
+  sgGroupPh: "例: NewJeans(ソロ·俳優ならそのまま)",
+  sgCatL: "カテゴリー",
+  catK: "韓国アイドル",
+  catJ: "日本アイドル",
+  catC: "中国俳優",
+  catUS: "米国俳優",
+  catEtc: "その他(上記にない場合)",
+  sgGenderL: "性別",
+  gUnknown: "不明",
+  gF: "女",
+  gM: "男",
+  sgDobL: "新暦の生年月日(分かれば)",
+  sgDobPh: "例: 20040507 · 不明なら空欄で",
+  sgNoteL: "ひとこと(任意)",
+  sgNotePh: "事務所·おすすめ理由など",
+  sgSubmit: "提案を送る",
+  mSpam: "スパム防止のため1時間に1回提案できます。提案者の個人情報は受け取りません。",
+  sgDoneMsg_html: "ありがとう！受け取りました。<br>グループ全体を一緒に探して今夜優先で対応します。",
+  mClose: "閉じる",
+  erTitle: "情報が間違っていますか？ 🛠️",
+  erIntro_html: "<b>{target}</b>の情報に誤りがあれば教えてください。確認して修正します。<b>正しい値·出典</b>も書いてもらえるとずっと早いです。",
+  erFieldL: "何が間違っていますか？ <span class=\"req\">*</span>",
+  erfDob: "生年月日",
+  erfName: "活動名(名前)",
+  erfGroup: "所属グループ",
+  erfGender: "性別",
+  erfDup: "非実在·重複",
+  erfEtc: "その他",
+  erSuggestL: "正しい値(分かれば)",
+  erSuggestPh: "例: 19990507 · 正しい活動名など",
+  erNoteL: "根拠·出典(推奨)",
+  erNotePh: "例: 公式プロフィール·ウィキなど確認できる場所",
+  erSubmit: "誤り報告を送る",
+  erDoneMsg_html: "ありがとう！受け取りました。<br>相互確認して正しければ修正します。",
+  favEyebrow: "💌 今週の推しレポート",
+  favTitle: "今週、四柱がずばり選んだ推し ✨",
+  favAgain: "もう一度マッチング",
+};
+Object.keys(TR_JA).forEach(k=>{ if(TR[k]) TR[k].ja = TR_JA[k]; else TR[k] = { ko: TR_JA[k], ja: TR_JA[k] }; });
 function t(key){
   const entry = TR[key];
   if(!entry) return '';
@@ -742,7 +829,9 @@ function t(key){
 }
 function detectLang(){
   const nl = (navigator.language || 'ko').toLowerCase();
-  return nl.startsWith('en') ? 'en' : 'ko';
+  if(nl.startsWith('ja')) return 'ja';
+  if(nl.startsWith('en')) return 'en';
+  return 'ko';
 }
 function getLang(){
   return localStorage.getItem('lang') || detectLang();
@@ -1795,9 +1884,9 @@ const TOP_N = 8;
 // scope: "" = 전체 / "ag:소속사" = 소속사 전체 / "gr:그룹" = 특정 그룹
 // 카테고리(한국 아이돌 / 일본 아이돌 / 중국 배우 / 미국 배우 …)
 const CAT_NAMES = {
-  "K-idol":{ko:"한국 아이돌",en:"K-pop"}, "J-idol":{ko:"일본 아이돌",en:"J-pop"},
-  "C-actor":{ko:"중국 배우",en:"C-actor"}, "US-actor":{ko:"미국 배우",en:"US actor"},
-  "Etc":{ko:"기타",en:"Etc"}
+  "K-idol":{ko:"한국 아이돌",en:"K-pop",ja:"韓国アイドル"}, "J-idol":{ko:"일본 아이돌",en:"J-pop",ja:"日本アイドル"},
+  "C-actor":{ko:"중국 배우",en:"C-actor",ja:"中国俳優"}, "US-actor":{ko:"미국 배우",en:"US actor",ja:"米国俳優"},
+  "Etc":{ko:"기타",en:"Etc",ja:"その他"}
 };
 const catLabel = c => { const e = CAT_NAMES[c]; return e ? (e[getLang()] || e.ko) : c; };
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
@@ -1972,7 +2061,7 @@ function buildHourSelect(){
     const o = document.createElement('option');
     o.value = String(h);
     const hh = String(h).padStart(2,'0');
-    o.textContent = lang==='en' ? `${hh}:00–${hh}:59` : `${h}시 (${hh}:00~${hh}:59)`;
+    o.textContent = lang==='ko' ? `${h}시 (${hh}:00~${hh}:59)` : (lang==='ja' ? `${h}時 (${hh}:00〜${hh}:59)` : `${hh}:00–${hh}:59`);
     sel.appendChild(o);
   }
   sel.value = prev;
