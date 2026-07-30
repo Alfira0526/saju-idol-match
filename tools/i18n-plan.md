@@ -52,20 +52,19 @@
   본문(favLead/favReason/favFoot)·업데이트 토스트 본문은 JS 동적 생성이라 **P2로** 남김.
 - [ ] **P1-7 공유 캡션**: `lang==='en'`일 때 영어 훅+해시태그(예: #SajuMatch #KpopBias …)로 분기.
 
-## P2 — 동적 결과 텍스트 (P1 후)
-- [ ] **P2-1** 십신 role/reason(`GODS`) 영어.
-- [ ] **P2-2** 지지 관계 reason(`branchRel`)·천간합·지장간·년월지 문구 영어.
-- [ ] **P2-3** 카테고리/소속사/성별 라벨·`currentLabel()` 등 조합 문구, 성별 D-1 리프레이즈 문구.
-- [ ] **P2-4** 명리 용어 표기 통일(예: 十神 Ten Gods, 天干合 Heavenly-Stem Combination, 日干 Day Master).
-
 ## JA — 일본어 (우선순위 상향, 2026-07-30 정적 UI 완료)
 - [x] **JA 정적 UI**: 스위처에 `JA` 추가, `navigator.language` ja 자동감지, `buildHourSelect` ja
   포맷(`N時`), `CAT_NAMES`에 ja. **`TR_JA` 오버레이**로 P1-1~P1-6 정적 문자열 전체 ja 부여
   (기존 en 항목 미수정·병합 방식). KO/EN/JA 3언어 토글·계산·헤드리스 확인 완료.
-- [ ] **JA 동적**: P2(순위 카드 이유·십신·지지 관계 등)를 ja로. EN P2와 함께 진행.
 
-## P2 — 동적 결과 텍스트 (EN·JA 공통, 정적 UI 후)
-아래는 en/ja 둘 다 채운다(`TR`/생성 함수에서 `getLang()` 분기).
+## P2 — 동적 결과 텍스트 (EN·JA 공통) — 2026-07-30 완료
+`disp(r)`/`renderDayMaster(dm)`가 저장된 의미 키(godName·hap·brKey·hourKey·yjKey·sexRole·
+sexReasonKey)로 **현재 언어의 표시 문자열을 생성**한다. 언어 전환 시 `applyLang`이 일간·순위·이유를 재렌더.
+- [x] **P2-1** 십신 role/reason(`GOD_L`에 en/ja).
+- [x] **P2-2** 지지 관계(`BR_L` tag/short/reason en/ja)·천간합·시지·년지(띠) 연결 문구(`DYN`).
+- [x] **P2-3** 카테고리 라벨(`catLabel` lang-aware)·성별 D-1 리프레이즈(`sexReasonKey`→`DYN`).
+- [x] **P2-4** 명리 용어(日干/日柱/身強·身弱 등) `DYN`·`renderDayMaster`로 en/ja. 한자는 공통 유지.
+- [ ] (잔여) 공유 캡션·이미지 텍스트(P1-7), 최애 리포트 본문(favLead/favFoot)·업데이트 토스트 본문.
 
 ## P3 — 중국어(ZH) (P2 후)
 `TR`에 `zh` 키 + 스위처에 ZH 추가. 접속 지역·브라우저 언어로 기본 언어 자동 선택 확장.
