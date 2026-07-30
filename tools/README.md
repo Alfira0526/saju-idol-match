@@ -70,9 +70,12 @@ A scheduled Routine runs once a day and performs **one** task, chosen by a
 | **목** (4) | **Task C** · 다국어 i18n |
 | **일** (7) | **Task D** · 비(非)K 카테고리 확장 |
 
-> 이 표는 **제보(inbox) 처리분이 없을 때/처리 후** 수행하는 요일 작업이다. 제보가
-> 있으면 항상 요일 작업보다 **먼저** 처리한다(아래 *제보 우선 반영*). 과거에는
-> `(day-of-year) mod 3`으로 무작위처럼 골랐으나, 예측 가능하도록 요일 고정으로 바꿨다.
+> **요일 태스크는 제보 유무와 무관하게 매일 반드시 1개 수행한다**(로테이션 보장).
+> 순서: ① 오류 제보(항상 먼저, 소량) → ② 추가 제보는 **1회 상한**(그룹 2팀 또는 멤버
+> ~15명)까지만 소진 → ③ **그날 요일 태스크 수행**. 상한을 두는 이유는 추가 제보 백로그가
+> 커도(=매일 step③에 도달) A/C/D 유지·확장 작업이 굶지 않게 하기 위함이다.
+> 과거에는 요일 태스크를 "제보가 없을 때만" 돌려 백로그가 큰 동안 A/C/D가 영원히 실행되지
+> 않았다 → 이 게이트를 제거했다. (그 이전엔 `(day-of-year) mod 3` 무작위였음.)
 
 - **Task A · 소속사 세분화 (agency refinement).** Research (web) the real
   agency of groups currently in `기타` and add mid-size labels (스타쉽/Starship,
@@ -151,10 +154,12 @@ A scheduled Routine runs once a day and performs **one** task, chosen by a
 > 차단될 수 있으나 `WebSearch`(호스티드)는 동작). 생일·멤버·오류 교차검증은 WebSearch로 한다.
 > egress를 우회하려 하지 말 것(정책 위반).
 
-처리 우선순위: **오류 제보(error-inbox) → 추가 제보(inbox) → 그날의 요일 태스크(A/B/C)**.
-`inbox-done.json`에 이미 있는 key는 처리 완료로 보고 건너뛴다. 처리한 key는 `inbox-done.json`에
-추가하고(루틴 커밋에 포함), 데이터·stats 변경과 함께 push 한다. 두 inbox 파일은 **워커가 쓰므로
-루틴은 읽기만** 한다(경쟁 방지). 파일이 없거나 비었으면(`[]`) 제보 없음으로 보고 요일 태스크 수행.
+처리 우선순위: **① 오류 제보(error-inbox, 항상) → ② 추가 제보(inbox, 1회 상한=그룹 2팀
+또는 멤버 ~15명) → ③ 그날의 요일 태스크(A/B/C/D, 반드시 수행)**. 추가 제보는 상한까지만
+소진하고 나머지는 다음 실행으로 미뤄, **백로그가 커도 요일 태스크가 굶지 않게** 한다(로테이션
+보장). `inbox-done.json`에 이미 있는 key는 처리 완료로 보고 건너뛴다. 처리한 key는
+`inbox-done.json`에 추가하고(루틴 커밋에 포함), 데이터·stats 변경과 함께 push 한다. 두 inbox
+파일은 **워커가 쓰므로 루틴은 읽기만** 한다(경쟁 방지). 파일이 없거나 비었으면(`[]`) 제보 없음.
 
 #### 오류 제보 처리 (error queue) — 가장 먼저
 `tools/error-inbox.json`을 로컬로 읽는다(`inbox-done.json`에 있는 key는 제외).
