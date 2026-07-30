@@ -19693,5 +19693,18 @@
     "firstAt": "2026-07-30T00:31:41.637Z",
     "lastAt": "2026-07-30T00:31:41.637Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강승윤|winner",
+    "name": "강승윤",
+    "group": "WINNER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940121",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T01:42:56.838Z",
+    "lastAt": "2026-07-30T01:42:56.838Z",
+    "status": "pending"
   }
 ]
