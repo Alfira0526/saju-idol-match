@@ -429,25 +429,25 @@
   <div class="panel">
     <div class="row">
       <div>
-        <label for="bdate">생년월일 (8자리 숫자)</label>
-        <input type="tel" id="bdate" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="예: 19950719" autocomplete="off">
+        <label for="bdate" data-i18n="bdateLabel">생년월일 (8자리 숫자)</label>
+        <input type="tel" id="bdate" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="예: 19950719" data-i18n-ph="bdatePh" autocomplete="off">
       </div>
       <div>
-        <label for="bhour">태어난 시각 (선택 · 24시간 기준)</label>
+        <label for="bhour" data-i18n="bhourLabel">태어난 시각 (선택 · 24시간 기준)</label>
         <select id="bhour"></select>
       </div>
       <div>
-        <label>내 성별 (선택)</label>
+        <label data-i18n="sexLabel">내 성별 (선택)</label>
         <input type="hidden" id="bsex" value="">
         <div class="sex-tabs" id="sexTabs">
-          <button type="button" class="sexbtn active" data-s="" onclick="selectSex(this)">미선택</button>
-          <button type="button" class="sexbtn" data-s="F" onclick="selectSex(this)">여성</button>
-          <button type="button" class="sexbtn" data-s="M" onclick="selectSex(this)">남성</button>
+          <button type="button" class="sexbtn active" data-s="" onclick="selectSex(this)" data-i18n="sexNone">미선택</button>
+          <button type="button" class="sexbtn" data-s="F" onclick="selectSex(this)" data-i18n="sexF">여성</button>
+          <button type="button" class="sexbtn" data-s="M" onclick="selectSex(this)" data-i18n="sexM">남성</button>
         </div>
       </div>
     </div>
-    <div class="toggle-note">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.</div>
-    <button class="calc" onclick="runCalc()">내 최애 찾기</button>
+    <div class="toggle-note" data-i18n-html="note_html">시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.</div>
+    <button class="calc" onclick="runCalc()" data-i18n="calcBtn">내 최애 찾기</button>
   </div>
 
   <div id="result" class="hidden">
@@ -649,6 +649,20 @@ const TR = {
   },
   reportBannerText: { ko: "매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀", en: "We're adding new idols every day. Got someone in mind? Let us know! 👀" },
   reportBannerBtn:  { ko: "제보하기", en: "Suggest" },
+  // P1-2 입력영역
+  bdateLabel: { ko: "생년월일 (8자리 숫자)", en: "Birth date (8 digits)" },
+  bdatePh:    { ko: "예: 19950719", en: "e.g. 19950719" },
+  bhourLabel: { ko: "태어난 시각 (선택 · 24시간 기준)", en: "Birth time (optional · 24h)" },
+  hourUnknown:{ ko: "모름 / 미상", en: "Unknown" },
+  sexLabel:   { ko: "내 성별 (선택)", en: "Your gender (optional)" },
+  sexNone:    { ko: "미선택", en: "Not set" },
+  sexF:       { ko: "여성", en: "Female" },
+  sexM:       { ko: "남성", en: "Male" },
+  calcBtn:    { ko: "내 최애 찾기", en: "Find my bias" },
+  note_html:  {
+    ko: "시각을 입력하면 당신의 <b>시지(時支)</b>까지 궁합에 반영돼 순위가 더 정교해집니다. '모름'을 고르면 태어난 날짜(일간·일지)만으로 안정적으로 계산합니다. <b>성별</b>을 고르면 명리의 '이성 인연' 십신(남성=재성 · 여성=관성)을 살짝 더 반영해 순위·해석이 달라집니다. 미선택 시 성별 중립으로 계산합니다.",
+    en: "Add your birth time and your <b>Hour Branch (時支)</b> is factored into compatibility for a more precise ranking. Choose 'Unknown' to compute stably from your birth date alone (Day Stem/Branch). Selecting a <b>gender</b> lightly factors in the saju 'opposite-sex fate' Ten-God (male = Wealth, female = Officer), shifting ranks and interpretation. Left unset, calculation is gender-neutral."
+  },
 };
 function t(key){
   const entry = TR[key];
@@ -681,10 +695,15 @@ function applyLang(){
     const val = t(el.getAttribute('data-i18n-ph'));
     if(val) el.setAttribute('placeholder', val);
   });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+    const val = t(el.getAttribute('data-i18n-html'));
+    if(val) el.innerHTML = val;
+  });
   document.querySelectorAll('#langSwitch button').forEach(b=>{
     b.classList.toggle('active', b.dataset.lang===lang);
   });
   renderSub();
+  buildHourSelect();
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1866,21 +1885,26 @@ function toggleRest(){
   }
 }
 
-// 시각 드롭다운(24시간) 채우기
-(function(){
+// 시각 드롭다운(24시간) 채우기 — 언어별 라벨. applyLang()에서 재호출(선택값 보존).
+function buildHourSelect(){
   const sel = document.getElementById('bhour');
   if(!sel) return;
+  const prev = sel.value;
+  const lang = getLang();
+  sel.innerHTML = '';
   const opt0 = document.createElement('option');
-  opt0.value = ""; opt0.textContent = "모름 / 미상";
+  opt0.value = ""; opt0.textContent = t('hourUnknown') || "모름 / 미상";
   sel.appendChild(opt0);
   for(let h=0; h<24; h++){
     const o = document.createElement('option');
     o.value = String(h);
     const hh = String(h).padStart(2,'0');
-    o.textContent = `${h}시 (${hh}:00~${hh}:59)`;
+    o.textContent = lang==='en' ? `${hh}:00–${hh}:59` : `${h}시 (${hh}:00~${hh}:59)`;
     sel.appendChild(o);
   }
-})();
+  sel.value = prev;
+}
+buildHourSelect();
 
 // 생년월일 입력: 숫자만 허용·8자리 제한, Enter로 계산
 // 모바일 한글 IME 조합 중에는 값을 건드리지 않아야 입력이 씹히지 않는다.

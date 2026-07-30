@@ -34,8 +34,11 @@
   groupCount/idolCount 동적 스팬이 있어 일반 `data-i18n`(textContent 치환) 대신
   `TR.sub_html`(언어별 HTML 템플릿 + `{gc}`/`{ic}` 치환)을 쓰는 `renderSub()`로 별도 처리—
   `applyLang()`에서 호출. 제보 배너 텍스트·버튼은 표준 `data-i18n`. KO 폴백·모바일 오버플로 확인 완료.)
-- [ ] **P1-2 입력영역**: 라벨(생년월일·태어난 시각·내 성별), 시각 드롭다운(모름/N시), 성별 버튼
-  (미선택/여성/남성), CTA 버튼(내 최애 찾기), toggle-note.
+- [x] **P1-2 입력영역**: 라벨(생년월일·태어난 시각·내 성별), 시각 드롭다운(모름/N시), 성별 버튼
+  (미선택/여성/남성), CTA 버튼(내 최애 찾기), toggle-note. (2026-07-30: 폼 전 요소에 data-i18n/
+  data-i18n-ph 부여 + toggle-note는 `<b>` 보존 위해 `data-i18n-html`(innerHTML) 핸들러 신설,
+  #bhour는 `buildHourSelect()`로 언어별 라벨·applyLang에서 선택값 보존 재빌드. EN/KO 전환·계산·
+  KO 복귀 헤드리스 확인.)
 - [ ] **P1-3 결과 상단·컨트롤**: 일간/일주 라벨(daymaster), 오행 legend, tier-note, 필터 라벨
   (카테고리·검색·소속사·그룹·유형), 성별 탭, 밴드 토글(🎸 밴드만), 더보기·공유 버튼/힌트, footer.
 - [ ] **P1-4 면책(disclaimer)** 전체 목록.
