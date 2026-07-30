@@ -1331,5 +1331,53 @@
     "firstAt": "2026-07-28T20:12:50.502Z",
     "lastAt": "2026-07-29T07:36:08.012Z",
     "status": "pending"
+  },
+  {
+    "key": "er:마틴|cortis",
+    "name": "마틴",
+    "group": "CORTIS",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-30T10:28:26.056Z",
+    "lastAt": "2026-07-30T10:28:26.056Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:시은|xikers",
+    "name": "시은",
+    "group": "xikers",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "세은"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-30T13:01:38.830Z",
+    "lastAt": "2026-07-30T13:01:38.830Z",
+    "status": "pending"
+  },
+  {
+    "key": "er:카야|kiiikiii",
+    "name": "카야",
+    "group": "KiiiKiii",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "키야"
+    ],
+    "notes": [
+      "공식 프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-07-30T15:21:10.622Z",
+    "lastAt": "2026-07-30T15:21:10.622Z",
+    "status": "pending"
   }
 ]
