@@ -13940,12 +13940,12 @@
     "name": "상원",
     "group": "ALPHA DRIVE ONE",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "20030508",
-    "note": "",
-    "count": 2,
+    "note": "웨이크원",
+    "count": 3,
     "firstAt": "2026-07-26T15:47:14.655Z",
-    "lastAt": "2026-07-26T15:47:14.655Z",
+    "lastAt": "2026-07-30T03:46:50.865Z",
     "status": "pending"
   },
   {
@@ -19744,6 +19744,19 @@
     "count": 1,
     "firstAt": "2026-07-30T03:25:33.031Z",
     "lastAt": "2026-07-30T03:25:33.031Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:준케이|2pm",
+    "name": "준케이",
+    "group": "2pm",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-30T03:45:59.298Z",
+    "lastAt": "2026-07-30T03:45:59.298Z",
     "status": "pending"
   }
 ]
