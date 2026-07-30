@@ -984,7 +984,25 @@ const DYN = {
   prefZodiac:{ko:"· 띠 ",en:"· Zodiac ",ja:"· 干支 "},
   dmLabel:{ko:"일간",en:"Day Master",ja:"日干"},
   dmDay:{ko:"일주",en:"Day",ja:"日柱"}, dmMonth:{ko:"월주",en:"Month",ja:"月柱"}, dmYear:{ko:"년주",en:"Year",ja:"年柱"}, dmHour:{ko:"시주",en:"Hour",ja:"時柱"},
-  bodyWeak:{ko:"신약(身弱)",en:"Weak (身弱)",ja:"身弱"}, bodyStrong:{ko:"신강(身強)",en:"Strong (身強)",ja:"身強"}, bodyMid:{ko:"중화(中和)",en:"Balanced (中和)",ja:"中和"}
+  bodyWeak:{ko:"신약(身弱)",en:"Weak (身弱)",ja:"身弱"}, bodyStrong:{ko:"신강(身強)",en:"Strong (身強)",ja:"身強"}, bodyMid:{ko:"중화(中和)",en:"Balanced (中和)",ja:"中和"},
+  // currentLabel 성별/접미
+  gMaleW:{ko:"남자",en:"Male",ja:"男性"}, gFemaleW:{ko:"여자",en:"Female",ja:"女性"}, idolSuffix:{ko:" 아이돌",en:" idols",ja:" アイドル"},
+  // 최애 리포트 본문
+  favLeadMulti:{ko:"이번 주 {total}번 매칭했는데요, 사주가 가장 자주 콕 집은 최애를 데려왔어요.",en:"You matched {total} times this week — here's the bias your saju picked most often.",ja:"今週{total}回マッチしました。四柱が最も多く選んだ推しを連れてきました。"},
+  favLeadOne:{ko:"이번 주 매칭에서 사주가 가장 강하게 밀어준 최애예요.",en:"The bias your saju pushed hardest in this week's match.",ja:"今週のマッチで四柱が最も強く推した推しです。"},
+  favFootWins:{ko:"이번 주 {total}번 중 {cnt}번 1위 · ",en:"#1 in {cnt} of {total} matches this week · ",ja:"今週{total}回中{cnt}回1位 · "},
+  favFootPct:{ko:"최고 궁합 {pct}%",en:"Top match {pct}%",ja:"最高相性 {pct}%"},
+  // 업데이트 토스트
+  toastNew:{ko:"요 며칠 <b>{names}</b>{cnt} 새로 합류했어요",en:"Recently <b>{names}</b>{cnt} just joined",ja:"最近 <b>{names}</b>{cnt} が新しく加わりました"},
+  toastCount:{ko:" 등 {n}명",en:" +{n}",ja:" 他{n}名"},
+  toastMore:{ko:" 외 {k}",en:" +{k} more",ja:" 他{k}"},
+  toastNewNone:{ko:"새 얼굴이 도착했어요",en:"New faces have arrived",ja:"新しい顔が届きました"},
+  // 공유 캡션·이미지
+  shareCaption:{ko:"내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝",en:"My saju-picked idol bias ranking 🔮\nalfira0526.github.io/saju-idol-match\n#SajuMatch #KpopBias #idolmatch #kpop #fourpillars",ja:"四柱推命で見つけた推し相性ランキング 🔮\nalfira0526.github.io/saju-idol-match\n#四柱推命 #推し #アイドル相性 #kpop #占い"},
+  shareRankTitle:{ko:"덕질 궁합 추천 순위",en:"Idol compatibility ranking",ja:"推し相性おすすめ順位"},
+  sharePureSaju:{ko:" · 오로지 사주 특성으로 선정",en:" · chosen purely by saju",ja:" · 純粋に四柱で選定"},
+  shareFooter:{ko:"사주 궁합 아이돌 매칭 · 오락용 해석",en:"Saju Idol Match · for entertainment",ja:"四柱推命アイドル相性マッチ · 娯楽用"},
+  shareDmDay:{ko:"일주(日柱)",en:"Day Pillar (日柱)",ja:"日柱"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1989,12 +2007,13 @@ function toggleBand(){
 function currentLabel(){
   const s = window._saju, v = s.scope || "";
   const catPre = (s.activeCat && s.activeCat!=="K-idol") ? catLabel(s.activeCat)+" · " : "";
+  const gW = s.activeGender==="M" ? dt('gMaleW') : dt('gFemaleW');
   if(v.startsWith("ag:")){
     const ag = v.slice(3);
-    return catPre + (genderTabsNeeded() ? `${ag} · ${s.activeGender==="M"?"남자":"여자"}` : ag);
+    return catPre + (genderTabsNeeded() ? `${ag} · ${gW}` : ag);
   }
   if(v.startsWith("gr:")) return catPre + groupLabel(v.slice(3));
-  return catPre + (s.activeGender==="M" ? "남자" : "여자") + (s.activeCat==="K-idol"?" 아이돌":"");
+  return catPre + gW + (s.activeCat==="K-idol" ? dt('idolSuffix') : "");
 }
 // 접이식 필터 열기/닫기 (검색 드롭다운이 잘리지 않게 열린 뒤 overflow 해제)
 function toggleFilters(){
@@ -2332,14 +2351,14 @@ function drawShareCard(){
   ctx.fillRect(M,110,44,3);
   ctx.font = "500 26px 'Noto Sans KR', sans-serif";
   ctx.textBaseline = "alphabetic";
-  ctx.fillText("오행 상생상극 · 궁합 매칭", M+62, 122);
+  ctx.fillText(t('eyebrow'), M+62, 122);
 
   // title (그라디언트)
   const tg = ctx.createLinearGradient(M,0,M+660,0);
   tg.addColorStop(0,"#ff5da2"); tg.addColorStop(0.5,"#c07bff"); tg.addColorStop(1,"#43e0f0");
   ctx.fillStyle = tg;
   ctx.font = "68px 'Jua', 'Noto Sans KR', sans-serif";
-  ctx.fillText("사주 궁합 아이돌 매칭", M, 210);
+  ctx.fillText(t('title'), M, 210);
 
   // day-master badge
   const cx = M+70, cy = 350, rad = 70;
@@ -2355,10 +2374,13 @@ function drawShareCard(){
 
   ctx.fillStyle = ink;
   ctx.font = "700 42px 'Nanum Myeongjo', serif";
-  ctx.fillText(`일간: ${s.stem}(${s.stemKr}) · ${s.elemKr}(${s.elem})`, cx+rad+40, cy-8);
+  { const lg=getLang();
+    const stemPart = lg==='ko'?`${s.stem}(${s.stemKr})`:s.stem;
+    const elemPart = lg==='ko'?`${s.elemKr}(${s.elem})`:(lg==='ja'?s.elem:`${ELEM_EN[s.elem]}(${s.elem})`);
+    ctx.fillText(`${dt('dmLabel')}: ${stemPart} · ${elemPart}`, cx+rad+40, cy-8); }
   ctx.fillStyle = dim;
   ctx.font = "400 30px 'Noto Sans KR', sans-serif";
-  ctx.fillText(`일주(日柱): ${s.dayHanja}`, cx+rad+40, cy+40);
+  ctx.fillText(`${dt('shareDmDay')}: ${s.dayHanja}`, cx+rad+40, cy+40);
 
   // 오행 막대
   const barY = 470, barW = (W-2*M-4*10)/5;
@@ -2373,10 +2395,10 @@ function drawShareCard(){
   // 추천 순위 섹션
   ctx.fillStyle = ink;
   ctx.font = "40px 'Jua', 'Noto Sans KR', sans-serif";
-  ctx.fillText("덕질 궁합 추천 순위", M, 540);
+  ctx.fillText(dt('shareRankTitle'), M, 540);
   ctx.fillStyle = dim;
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
-  ctx.fillText(`${currentLabel()} · 오로지 사주 특성으로 선정`, M, 574);
+  ctx.fillText(`${currentLabel()}${dt('sharePureSaju')}`, M, 574);
 
   const top = currentList().slice(0,6);
   const yStart = 606, rowH = 112, cardH = 96;
@@ -2423,7 +2445,7 @@ function drawShareCard(){
   // footer
   ctx.fillStyle = "#6b5f96";
   ctx.font = "400 24px 'Noto Sans KR', sans-serif";
-  ctx.fillText("사주 궁합 아이돌 매칭 · 오락용 해석", M, H-60);
+  ctx.fillText(dt('shareFooter'), M, H-60);
 
   return canvas;
 }
@@ -2444,7 +2466,7 @@ async function shareResult(){
     const file = new File([blob], fileName, {type:"image/png"});
 
     // Web Share API (파일 공유 지원 시 — 주로 모바일)
-    const shareText = "내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝";
+    const shareText = dt('shareCaption');
     if(navigator.canShare && navigator.canShare({files:[file]})){
       try{
         await navigator.share({files:[file], title:"사주 궁합 아이돌 매칭",
@@ -2591,10 +2613,10 @@ function maybeShowFavReport(){
   document.getElementById('favRole').textContent   = fav.role || "";
   document.getElementById('favReason').textContent = fav.reason || "";
   document.getElementById('favLead').textContent   = total>1
-    ? `이번 주 ${total}번 매칭했는데요, 사주가 가장 자주 콕 집은 최애를 데려왔어요.`
-    : `이번 주 매칭에서 사주가 가장 강하게 밀어준 최애예요.`;
+    ? dt('favLeadMulti').replace('{total}', total)
+    : dt('favLeadOne');
   document.getElementById('favFoot').textContent =
-    (fav.cnt>1 ? `이번 주 ${total}번 중 ${fav.cnt}번 1위 · ` : '') + `최고 궁합 ${(+fav.pct).toFixed(1)}%`;
+    (fav.cnt>1 ? dt('favFootWins').replace('{total}',total).replace('{cnt}',fav.cnt) : '') + dt('favFootPct').replace('{pct}', (+fav.pct).toFixed(1));
   document.getElementById('favReport').classList.remove('hidden');
   localStorage.setItem('fav_cycle_start', String(Date.now())); // 다음 주기 시작
   return true;
@@ -2615,12 +2637,12 @@ function maybeShowFavReport(){
     if(favShown) return;                       // 최애 리포트가 떴으면 겹치지 않게 이번엔 생략
     // 그룹명만 추려 토스트로(화면 안 가림)
     const names = fresh.map(x=>(x.text||'').replace(/\s*추가\s*$/,'').trim()).filter(Boolean);
-    const shown = names.slice(0,2).join(', ') + (names.length>2 ? ` 외 ${names.length-2}` : '');
+    const shown = names.slice(0,2).join(', ') + (names.length>2 ? dt('toastMore').replace('{k}', names.length-2) : '');
     const n = fresh.reduce((s,x)=>s+(x.count||0),0);
     const txt = document.getElementById('upToastText');
     txt.innerHTML = shown
-      ? `요 며칠 <b>${shown}</b>${n?` 등 ${n}명`:''} 새로 합류했어요`
-      : '새 얼굴이 도착했어요';
+      ? dt('toastNew').replace('{names}', shown).replace('{cnt}', n ? dt('toastCount').replace('{n}', n) : '')
+      : dt('toastNewNone');
     const t = document.getElementById('updateToast');
     t.classList.add('show');
     _upToastTimer = setTimeout(closeUpdate, 8000); // 8초 뒤 자동 사라짐

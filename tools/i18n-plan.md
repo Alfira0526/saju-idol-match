@@ -64,7 +64,13 @@ sexReasonKey)로 **현재 언어의 표시 문자열을 생성**한다. 언어 �
 - [x] **P2-2** 지지 관계(`BR_L` tag/short/reason en/ja)·천간합·시지·년지(띠) 연결 문구(`DYN`).
 - [x] **P2-3** 카테고리 라벨(`catLabel` lang-aware)·성별 D-1 리프레이즈(`sexReasonKey`→`DYN`).
 - [x] **P2-4** 명리 용어(日干/日柱/身強·身弱 등) `DYN`·`renderDayMaster`로 en/ja. 한자는 공통 유지.
-- [ ] (잔여) 공유 캡션·이미지 텍스트(P1-7), 최애 리포트 본문(favLead/favFoot)·업데이트 토스트 본문.
+- [x] **P1-7 공유 캡션·이미지** (2026-07-30): 캡션(`shareCaption` 언어별 훅·해시태그) + 공유 이미지
+  canvas 텍스트(eyebrow/title/일간·일주/순위 제목/`currentLabel`/푸터)를 `t()`/`dt()`로 언어화.
+- [x] **최애 리포트 본문·업데이트 토스트** (2026-07-30): favLead/favFoot·토스트 문구를 `DYN`
+  템플릿({total}/{cnt}/{pct}/{names}/{n}) + en/ja로. `currentLabel` 성별/접미도 언어화.
+  (그룹명 자체는 데이터가 한국어라 고유명사로 유지 — 정상.)
+
+> **i18n 상태(2026-07-30): 앱 전 화면 KO/EN/JA 완료.** 남은 확장은 P3(중국어 zh) 뿐.
 
 ## P3 — 중국어(ZH) (P2 후)
 `TR`에 `zh` 키 + 스위처에 ZH 추가. 접속 지역·브라우저 언어로 기본 언어 자동 선택 확장.
