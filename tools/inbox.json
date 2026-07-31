@@ -20200,5 +20200,18 @@
     "firstAt": "2026-07-31T12:55:42.342Z",
     "lastAt": "2026-07-31T12:55:42.342Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:양경호|아이덴티티idntt",
+    "name": "양경호",
+    "group": "아이덴티티 idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "모드하우스 소속 보이그룹",
+    "count": 1,
+    "firstAt": "2026-07-31T13:50:07.597Z",
+    "lastAt": "2026-07-31T13:50:07.597Z",
+    "status": "pending"
   }
 ]
