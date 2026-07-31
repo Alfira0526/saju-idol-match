@@ -20252,5 +20252,18 @@
     "firstAt": "2026-07-31T15:59:16.984Z",
     "lastAt": "2026-07-31T15:59:16.984Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유영서|bae173",
+    "name": "유영서",
+    "group": "BAE173",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020613",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T16:09:55.901Z",
+    "lastAt": "2026-07-31T16:09:55.901Z",
+    "status": "pending"
   }
 ]
