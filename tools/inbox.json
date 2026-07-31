@@ -20330,5 +20330,18 @@
     "firstAt": "2026-07-31T17:45:57.121Z",
     "lastAt": "2026-07-31T17:45:57.121Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최경빈|idntt",
+    "name": "최경빈",
+    "group": "Idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080904",
+    "note": "제 최애입니다",
+    "count": 1,
+    "firstAt": "2026-07-31T18:11:59.640Z",
+    "lastAt": "2026-07-31T18:11:59.640Z",
+    "status": "pending"
   }
 ]
