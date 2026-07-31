@@ -1394,5 +1394,21 @@
     "firstAt": "2026-07-31T11:58:27.438Z",
     "lastAt": "2026-07-31T11:58:27.438Z",
     "status": "pending"
+  },
+  {
+    "key": "er:정한|seventeen",
+    "name": "정한",
+    "group": "SEVENTEEN",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19951004"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-31T13:19:16.177Z",
+    "lastAt": "2026-07-31T13:19:16.177Z",
+    "status": "pending"
   }
 ]
