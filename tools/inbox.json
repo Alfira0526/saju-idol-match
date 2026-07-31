@@ -5349,10 +5349,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090113",
-    "note": "엄성현존잘",
-    "count": 10,
+    "note": "bighit",
+    "count": 11,
     "firstAt": "2026-07-23T06:52:26.706Z",
-    "lastAt": "2026-07-28T09:46:41.298Z",
+    "lastAt": "2026-07-31T16:43:50.373Z",
     "status": "pending"
   },
   {
@@ -20277,6 +20277,19 @@
     "count": 1,
     "firstAt": "2026-07-31T16:18:09.011Z",
     "lastAt": "2026-07-31T16:18:09.011Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:크루|에이엠피(axmxp)",
+    "name": "크루",
+    "group": "에이엠피 (AxMxP)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060627",
+    "note": "제가좋아해요",
+    "count": 1,
+    "firstAt": "2026-07-31T16:44:56.697Z",
+    "lastAt": "2026-07-31T16:44:56.697Z",
     "status": "pending"
   }
 ]
