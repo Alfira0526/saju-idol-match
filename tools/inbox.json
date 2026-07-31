@@ -20096,5 +20096,31 @@
     "firstAt": "2026-07-31T06:32:32.621Z",
     "lastAt": "2026-07-31T06:32:32.621Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:candy|enhypen",
+    "name": "Candy",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T07:24:26.339Z",
+    "lastAt": "2026-07-31T07:24:26.339Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:종업|비에이피",
+    "name": "종업",
+    "group": "비에이피",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950206",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T07:26:10.368Z",
+    "lastAt": "2026-07-31T07:26:10.368Z",
+    "status": "pending"
   }
 ]
