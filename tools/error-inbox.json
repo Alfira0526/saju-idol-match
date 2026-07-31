@@ -1410,5 +1410,19 @@
     "firstAt": "2026-07-31T13:19:16.177Z",
     "lastAt": "2026-07-31T13:19:16.177Z",
     "status": "pending"
+  },
+  {
+    "key": "er:세이타|nexz",
+    "name": "세이타",
+    "group": "NEXZ",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-31T15:28:14.239Z",
+    "lastAt": "2026-07-31T15:28:14.239Z",
+    "status": "pending"
   }
 ]
