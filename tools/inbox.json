@@ -19992,5 +19992,18 @@
     "firstAt": "2026-07-30T18:28:00.278Z",
     "lastAt": "2026-07-30T18:28:00.278Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yui|enhypen",
+    "name": "Yui",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T00:36:00.839Z",
+    "lastAt": "2026-07-31T00:36:00.839Z",
+    "status": "pending"
   }
 ]
