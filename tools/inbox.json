@@ -20239,5 +20239,18 @@
     "firstAt": "2026-07-31T15:08:15.552Z",
     "lastAt": "2026-07-31T15:08:15.552Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:미라쿠|nouera(누에라)",
+    "name": "미라쿠",
+    "group": "NouerA (누에라)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T15:59:16.984Z",
+    "lastAt": "2026-07-31T15:59:16.984Z",
+    "status": "pending"
   }
 ]
