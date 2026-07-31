@@ -20226,5 +20226,18 @@
     "firstAt": "2026-07-31T14:43:19.246Z",
     "lastAt": "2026-07-31T14:43:19.246Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuma|andteam",
+    "name": "yuma",
+    "group": "andteam",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T15:08:15.552Z",
+    "lastAt": "2026-07-31T15:08:15.552Z",
+    "status": "pending"
   }
 ]
