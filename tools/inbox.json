@@ -20018,5 +20018,18 @@
     "firstAt": "2026-07-31T01:50:58.874Z",
     "lastAt": "2026-07-31T01:50:58.874Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:가원|meovv",
+    "name": "가원",
+    "group": "meovv",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050427",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T02:41:39.120Z",
+    "lastAt": "2026-07-31T02:41:39.120Z",
+    "status": "pending"
   }
 ]
