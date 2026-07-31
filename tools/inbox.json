@@ -20031,5 +20031,18 @@
     "firstAt": "2026-07-31T02:41:39.120Z",
     "lastAt": "2026-07-31T02:41:39.120Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유키|코이키즈",
+    "name": "유키",
+    "group": "코이키즈",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20071224",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T03:05:45.402Z",
+    "lastAt": "2026-07-31T03:05:45.402Z",
+    "status": "pending"
   }
 ]
