@@ -20083,5 +20083,18 @@
     "firstAt": "2026-07-31T06:11:59.641Z",
     "lastAt": "2026-07-31T06:11:59.641Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:suki|tws",
+    "name": "Suki",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040916",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T06:32:32.621Z",
+    "lastAt": "2026-07-31T06:32:32.621Z",
+    "status": "pending"
   }
 ]
