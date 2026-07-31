@@ -1380,5 +1380,19 @@
     "firstAt": "2026-07-30T15:21:10.622Z",
     "lastAt": "2026-07-30T15:21:10.622Z",
     "status": "pending"
+  },
+  {
+    "key": "er:벨|kissoflife",
+    "name": "벨",
+    "group": "KISS OF LIFE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-07-31T11:58:27.438Z",
+    "lastAt": "2026-07-31T11:58:27.438Z",
+    "status": "pending"
   }
 ]
