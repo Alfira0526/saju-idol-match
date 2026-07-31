@@ -20304,5 +20304,18 @@
     "firstAt": "2026-07-31T17:03:21.152Z",
     "lastAt": "2026-07-31T17:03:21.152Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서정우|ahof",
+    "name": "서정우",
+    "group": "AHOF",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010906",
+    "note": "잘생김",
+    "count": 1,
+    "firstAt": "2026-07-31T17:23:07.196Z",
+    "lastAt": "2026-07-31T17:23:07.196Z",
+    "status": "pending"
   }
 ]
