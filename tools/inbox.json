@@ -20005,5 +20005,18 @@
     "firstAt": "2026-07-31T00:36:00.839Z",
     "lastAt": "2026-07-31T00:36:00.839Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:earn|nctdream/nct127/nctwish/cortis",
+    "name": "Earn",
+    "group": "Nct Dream / Nct 127 / Nct Wish / Cortis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20000703",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T01:50:58.874Z",
+    "lastAt": "2026-07-31T01:50:58.874Z",
+    "status": "pending"
   }
 ]
