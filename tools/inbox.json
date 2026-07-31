@@ -20343,5 +20343,18 @@
     "firstAt": "2026-07-31T18:11:59.640Z",
     "lastAt": "2026-07-31T18:11:59.640Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:권은비|솔로",
+    "name": "권은비",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19950927",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-07-31T18:27:34.496Z",
+    "lastAt": "2026-07-31T18:27:34.496Z",
+    "status": "pending"
   }
 ]
