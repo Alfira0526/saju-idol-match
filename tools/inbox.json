@@ -20499,5 +20499,31 @@
     "firstAt": "2026-08-01T09:52:06.526Z",
     "lastAt": "2026-08-01T09:52:06.526Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:변의주|&team",
+    "name": "변의주",
+    "group": "&team",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20020907",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T12:02:38.940Z",
+    "lastAt": "2026-08-01T12:02:38.940Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:양경호|아이덴티티",
+    "name": "양경호",
+    "group": "아이덴티티",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T12:09:13.600Z",
+    "lastAt": "2026-08-01T12:09:13.600Z",
+    "status": "pending"
   }
 ]
