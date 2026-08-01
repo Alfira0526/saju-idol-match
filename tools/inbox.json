@@ -20525,5 +20525,18 @@
     "firstAt": "2026-08-01T12:09:13.600Z",
     "lastAt": "2026-08-01T12:09:13.600Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:린|nouera",
+    "name": "린",
+    "group": "NouerA",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061230",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T13:39:11.194Z",
+    "lastAt": "2026-08-01T13:39:11.194Z",
+    "status": "pending"
   }
 ]
