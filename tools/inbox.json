@@ -20369,5 +20369,18 @@
     "firstAt": "2026-08-01T00:08:59.911Z",
     "lastAt": "2026-08-01T00:08:59.911Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김인후|tunexx",
+    "name": "김인후",
+    "group": "tunexx",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T02:21:55.976Z",
+    "lastAt": "2026-08-01T02:21:55.976Z",
+    "status": "pending"
   }
 ]
