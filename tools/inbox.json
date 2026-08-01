@@ -20538,5 +20538,18 @@
     "firstAt": "2026-08-01T13:39:11.194Z",
     "lastAt": "2026-08-01T13:39:11.194Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:헝디니|treasure",
+    "name": "헝디니",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19971007",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T14:11:53.944Z",
+    "lastAt": "2026-08-01T14:11:53.944Z",
+    "status": "pending"
   }
 ]
