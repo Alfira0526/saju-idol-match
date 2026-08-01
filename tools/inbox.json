@@ -20551,5 +20551,31 @@
     "firstAt": "2026-08-01T14:11:53.944Z",
     "lastAt": "2026-08-01T14:11:53.944Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:베이온|인코드",
+    "name": "베이온",
+    "group": "인코드",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "데뷔한지 얼마 안된 신인이에요! 궁금하네요",
+    "count": 1,
+    "firstAt": "2026-08-01T14:54:07.734Z",
+    "lastAt": "2026-08-01T14:54:07.734Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:마노|베이온",
+    "name": "마노",
+    "group": "베이온",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20090227",
+    "note": "인코드 제가 좋아해요",
+    "count": 1,
+    "firstAt": "2026-08-01T14:57:24.940Z",
+    "lastAt": "2026-08-01T14:57:24.940Z",
+    "status": "pending"
   }
 ]
