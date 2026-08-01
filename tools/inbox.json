@@ -20603,5 +20603,18 @@
     "firstAt": "2026-08-01T16:00:18.030Z",
     "lastAt": "2026-08-01T16:00:18.030Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박한|아홉",
+    "name": "박한",
+    "group": "아홉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030925",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T17:02:48.147Z",
+    "lastAt": "2026-08-01T17:02:48.147Z",
+    "status": "pending"
   }
 ]
