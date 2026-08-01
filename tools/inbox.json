@@ -8106,9 +8106,9 @@
     "gender": "M",
     "dob": "20060311",
     "note": "JYP",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-07-23T01:59:56.697Z",
-    "lastAt": "2026-07-25T09:31:29.842Z",
+    "lastAt": "2026-08-01T09:13:06.306Z",
     "status": "pending"
   },
   {
@@ -20459,6 +20459,19 @@
     "count": 1,
     "firstAt": "2026-08-01T07:53:08.516Z",
     "lastAt": "2026-08-01T07:53:08.516Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:시부야센|vayonn",
+    "name": "시부야 센",
+    "group": "vayonn",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051225",
+    "note": "인코드 소속 신인 남자 아이돌입니다!!",
+    "count": 1,
+    "firstAt": "2026-08-01T09:11:23.537Z",
+    "lastAt": "2026-08-01T09:11:23.537Z",
     "status": "pending"
   }
 ]
