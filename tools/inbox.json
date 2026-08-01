@@ -20408,5 +20408,18 @@
     "firstAt": "2026-08-01T05:11:14.201Z",
     "lastAt": "2026-08-01T05:11:14.201Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:세나|keyvitup",
+    "name": "세나",
+    "group": "Keyvitup",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070805",
+    "note": "진짜저희애한번만 해주세요 제발요제발잳발제발",
+    "count": 1,
+    "firstAt": "2026-08-01T05:21:32.501Z",
+    "lastAt": "2026-08-01T05:21:32.501Z",
+    "status": "pending"
   }
 ]
