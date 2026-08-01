@@ -20655,5 +20655,18 @@
     "firstAt": "2026-08-01T19:17:55.980Z",
     "lastAt": "2026-08-01T19:17:55.980Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:seoi|h1key",
+    "name": "SEOI",
+    "group": "H1KEY",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20000212",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T21:02:36.708Z",
+    "lastAt": "2026-08-01T21:02:36.708Z",
+    "status": "pending"
   }
 ]
