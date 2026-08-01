@@ -20356,5 +20356,18 @@
     "firstAt": "2026-07-31T18:27:34.496Z",
     "lastAt": "2026-07-31T18:27:34.496Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김신|axmxp",
+    "name": "김신",
+    "group": "AxMxP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061122",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T00:08:59.911Z",
+    "lastAt": "2026-08-01T00:08:59.911Z",
+    "status": "pending"
   }
 ]
