@@ -20668,5 +20668,18 @@
     "firstAt": "2026-08-01T21:02:36.708Z",
     "lastAt": "2026-08-01T21:02:36.708Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mingi|ateez",
+    "name": "Mingi",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T22:51:43.541Z",
+    "lastAt": "2026-08-01T22:51:43.541Z",
+    "status": "pending"
   }
 ]
