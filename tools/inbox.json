@@ -20486,5 +20486,18 @@
     "firstAt": "2026-08-01T09:27:51.801Z",
     "lastAt": "2026-08-01T09:27:51.801Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박동규|tunexx",
+    "name": "박동규",
+    "group": "TUNEXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050316",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T09:52:06.526Z",
+    "lastAt": "2026-08-01T09:52:06.526Z",
+    "status": "pending"
   }
 ]
