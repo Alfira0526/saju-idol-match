@@ -20642,5 +20642,18 @@
     "firstAt": "2026-08-01T18:53:01.908Z",
     "lastAt": "2026-08-01T18:53:01.908Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박한|ahof(아홉)",
+    "name": "박한",
+    "group": "AHOF(아홉)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030925",
+    "note": "요즘 뜨는 5세대 보이그룹 중 한팀입니다",
+    "count": 1,
+    "firstAt": "2026-08-01T19:17:55.980Z",
+    "lastAt": "2026-08-01T19:17:55.980Z",
+    "status": "pending"
   }
 ]
