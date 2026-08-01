@@ -13994,10 +13994,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20080225",
-    "note": "제가 좋아해요",
-    "count": 3,
+    "note": "아이덴티티 20명 넣어주세요",
+    "count": 4,
     "firstAt": "2026-07-26T15:55:16.207Z",
-    "lastAt": "2026-08-01T06:57:03.937Z",
+    "lastAt": "2026-08-01T07:32:50.325Z",
     "status": "pending"
   },
   {
@@ -20420,6 +20420,32 @@
     "count": 1,
     "firstAt": "2026-08-01T05:21:32.501Z",
     "lastAt": "2026-08-01T05:21:32.501Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:위시|epex",
+    "name": "위시",
+    "group": "EPEX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020611",
+    "note": "이펙스 추가해주세요ㅜㅜㅠ",
+    "count": 1,
+    "firstAt": "2026-08-01T07:34:35.904Z",
+    "lastAt": "2026-08-01T07:34:35.904Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:최경빈|아이덴티티idntt",
+    "name": "최경빈",
+    "group": "아이덴티티 idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080904",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T07:37:36.387Z",
+    "lastAt": "2026-08-01T07:37:36.387Z",
     "status": "pending"
   }
 ]
