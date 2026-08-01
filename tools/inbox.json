@@ -20681,5 +20681,31 @@
     "firstAt": "2026-08-01T22:51:43.541Z",
     "lastAt": "2026-08-01T22:51:43.541Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ni-ki|enhypen",
+    "name": "Ni-Ki",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T23:28:42.511Z",
+    "lastAt": "2026-08-01T23:28:42.511Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:에이든|이펙스",
+    "name": "에이든",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050124",
+    "note": "소속사 C9",
+    "count": 1,
+    "firstAt": "2026-08-01T23:29:22.028Z",
+    "lastAt": "2026-08-01T23:29:22.028Z",
+    "status": "pending"
   }
 ]
