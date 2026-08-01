@@ -20273,10 +20273,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20060313",
-    "note": "잘생겨따욤",
-    "count": 1,
+    "note": "최애랑 궁합 보고싶어요 ㅠㅠ",
+    "count": 2,
     "firstAt": "2026-07-31T16:18:09.011Z",
-    "lastAt": "2026-07-31T16:18:09.011Z",
+    "lastAt": "2026-08-01T05:12:14.919Z",
     "status": "pending"
   },
   {
@@ -20394,6 +20394,19 @@
     "count": 1,
     "firstAt": "2026-08-01T04:41:21.705Z",
     "lastAt": "2026-08-01T04:41:21.705Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:yoohyeon|dreamcatcher",
+    "name": "Yoohyeon",
+    "group": "Dreamcatcher",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T05:11:14.201Z",
+    "lastAt": "2026-08-01T05:11:14.201Z",
     "status": "pending"
   }
 ]
