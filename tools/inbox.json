@@ -20577,5 +20577,18 @@
     "firstAt": "2026-08-01T14:57:24.940Z",
     "lastAt": "2026-08-01T14:57:24.940Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:코스케|ko1keyz",
+    "name": "코스케",
+    "group": "KO1KEYZ",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20071202",
+    "note": "한국인 멤버도 있고 궁금해요",
+    "count": 1,
+    "firstAt": "2026-08-01T15:08:50.040Z",
+    "lastAt": "2026-08-01T15:08:50.040Z",
+    "status": "pending"
   }
 ]
