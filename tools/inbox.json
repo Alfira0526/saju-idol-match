@@ -20590,5 +20590,18 @@
     "firstAt": "2026-08-01T15:08:50.040Z",
     "lastAt": "2026-08-01T15:08:50.040Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예슈화|i-dle",
+    "name": "예슈화",
+    "group": "i-dle",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000106",
+    "note": ".",
+    "count": 1,
+    "firstAt": "2026-08-01T16:00:18.030Z",
+    "lastAt": "2026-08-01T16:00:18.030Z",
+    "status": "pending"
   }
 ]
