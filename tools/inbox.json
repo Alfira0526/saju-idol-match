@@ -20772,5 +20772,18 @@
     "firstAt": "2026-08-02T06:50:26.509Z",
     "lastAt": "2026-08-02T06:50:26.509Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소건|넥스지",
+    "name": "소건",
+    "group": "넥스지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060913",
+    "note": "JYP 넥스지 전부다추가해줘요",
+    "count": 1,
+    "firstAt": "2026-08-02T09:13:55.895Z",
+    "lastAt": "2026-08-02T09:13:55.895Z",
+    "status": "pending"
   }
 ]
