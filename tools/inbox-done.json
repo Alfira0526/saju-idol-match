@@ -9,6 +9,7 @@
  "er:리쿠|nctwish",
  "er:리키|zerobaseone",
  "er:마크|nct",
+ "er:마틴|cortis",
  "er:모카|illit",
  "er:문별|mamamoo",
  "er:민제|kickflip",
@@ -18,6 +19,7 @@
  "er:백현|exo",
  "er:버논|seventeen",
  "er:범규|txt",
+ "er:벨|kissoflife",
  "er:뷔|bts",
  "er:비니|ohmygirl",
  "er:사나|twice",
@@ -31,9 +33,11 @@
  "er:성현|cortis",
  "er:성호|boynextdoor",
  "er:세림|cravity",
+ "er:세이타|nexz",
  "er:소희|riize",
  "er:슬기|redvelvet",
  "er:시온|billlie",
+ "er:시은|xikers",
  "er:아르노|alphadriveone",
  "er:아사히|treasure",
  "er:에반|에반",
@@ -66,6 +70,7 @@
  "er:장하오|zerobaseone",
  "er:재민|nct",
  "er:정우|nct",
+ "er:정한|seventeen",
  "er:제이어스|onf",
  "er:조|&team",
  "er:주왕|kickflip",
@@ -77,70 +82,468 @@
  "er:첸|exo",
  "er:초단|qwer",
  "er:최립우|flareu",
+ "er:카야|kiiikiii",
  "er:쿤|nct",
  "er:태양|bigbang",
+ "er:하움|kiiikiii",
  "er:한빈|tempest",
  "er:한유진|and2ble",
  "er:현진|straykids",
  "er:후마|&team",
  "sg:-|-",
  "sg:-|riize",
+ "sg:11|tws",
+ "sg:13866|nct",
+ "sg:999|nmixx",
+ "sg:aa|alphadriveone",
+ "sg:achiraya|redvelvet",
+ "sg:ainur|cortis",
+ "sg:ais|kickflip",
+ "sg:alisa|i-dle",
+ "sg:aliz|enhypen",
+ "sg:all|closeyoureyes",
  "sg:ammin|sm",
  "sg:anton|riize",
  "sg:anxin|alphadriveone",
+ "sg:an|riize",
+ "sg:apichayajanphen|nct127",
+ "sg:ara|cortis",
+ "sg:aria|nctwish",
  "sg:arno|alphadriveone",
+ "sg:asahi|treasure",
+ "sg:ateez|ateez",
+ "sg:b.i|solo",
+ "sg:babyblue|bts",
+ "sg:baekhyun|exo",
+ "sg:bambam|got7",
+ "sg:bambino|riize",
+ "sg:bandan|seventeen",
+ "sg:bbb|alphadriveone",
+ "sg:beomgyu|tomorrowxtogether",
+ "sg:beomgyu|txt",
+ "sg:biwa|triples",
+ "sg:boeing|nct",
+ "sg:boom|treasure",
+ "sg:boseok|exo",
  "sg:bow|sm",
+ "sg:bright|straykids",
+ "sg:bry|앰퍼샌드원",
+ "sg:bts|bts",
+ "sg:bzrall|txt",
+ "sg:candy|enhypen",
  "sg:chenle|nct",
+ "sg:chensijia|boynextdor",
+ "sg:chenyanxi|hearts2hearts",
+ "sg:cherry|straykids",
+ "sg:choihyunsuk|treasure",
+ "sg:choisan|ateez",
+ "sg:ch|seventeen",
+ "sg:claire|straykids",
+ "sg:coco|nctwish",
  "sg:daranee|sm",
+ "sg:ddddd|nctdream",
+ "sg:dino|seventeen",
+ "sg:dongsine|day6",
+ "sg:dououng|nct",
+ "sg:doyoung|nct127",
+ "sg:duchmilk|monstax",
+ "sg:earn|세븐틴",
+ "sg:eric|theboyz",
+ "sg:eunseok|riize",
  "sg:evan|솔로",
  "sg:exo|sm",
+ "sg:fayeol|exo",
+ "sg:felix|straykids",
+ "sg:flmoonstar|mamamoo",
  "sg:gongyubin|triples",
+ "sg:grammy|라이즈",
+ "sg:g|treasure",
  "sg:haechan|sm",
+ "sg:haha|seventeen",
+ "sg:haneul|kissoflife",
+ "sg:hanjin|tws",
+ "sg:hanyujin|and2ble",
+ "sg:harua|&team",
+ "sg:haruto|treasure",
  "sg:hearts2hearts|sm",
+ "sg:heyingxian|riize",
+ "sg:hh|treasure",
  "sg:high|sm",
+ "sg:hoshi|seventeen",
  "sg:hunter|xikers",
+ "sg:hwasa|mamamoo",
+ "sg:hx|alphadriveone",
+ "sg:hybe|enhypen",
+ "sg:hybe|tws",
+ "sg:hybe|txt",
+ "sg:hye|triples",
  "sg:hyui|nexz",
+ "sg:hyunsuk|treasure",
+ "sg:h|nctwish",
+ "sg:i.m|monstax",
+ "sg:i.n|straykids",
+ "sg:idle|idle",
+ "sg:im|monstax",
  "sg:ink|sm",
+ "sg:iris|day6",
+ "sg:iz*one|iz*one",
+ "sg:i|redvelvet",
+ "sg:jaehee|nctwish",
+ "sg:jaehyun|nct",
  "sg:jaehyun|sm",
+ "sg:jaemin|nct",
+ "sg:jaemin|nctdream",
+ "sg:jake|enhypen",
+ "sg:james|cortis",
+ "sg:jamie|mamamoo",
+ "sg:jane|riize",
+ "sg:jan|nct",
+ "sg:jaofon|nct",
+ "sg:jay|enhypen",
+ "sg:jenny|nctdream",
+ "sg:jeonghan|seventeen",
+ "sg:jiae|아이들",
  "sg:jidapakulmoranon|sm",
  "sg:jinyonghoon|onewe",
+ "sg:jin|bts",
+ "sg:jisung|nct",
+ "sg:jisung|nctdream",
  "sg:jiwoo|hearts2hearts",
  "sg:jiwoo|triples",
+ "sg:jjeu-i|treasure",
+ "sg:jk|bts",
+ "sg:jongseob|p1harmony",
+ "sg:jooyen|xdinaryheroes",
+ "sg:joshua|seventeen",
+ "sg:jo|andteam",
+ "sg:jsung|nctdream",
+ "sg:juhoon|cortis",
+ "sg:jules|seventeentriples",
+ "sg:jungkook|bts",
+ "sg:jungwon|enhypen",
+ "sg:junkyu|treasure",
+ "sg:junseo|alphadriveone",
+ "sg:jun|seventeen",
  "sg:juun|hearts2hearts",
+ "sg:j|j",
+ "sg:j|treasure",
  "sg:kaede|triples",
+ "sg:kamden|앰퍼샌드원",
+ "sg:kangdaniel|solo",
+ "sg:karina|aespa",
+ "sg:keny|코르티스",
+ "sg:keonho|cortis",
+ "sg:kiku|enhypen",
+ "sg:kimjunkyu|treasure",
+ "sg:kimtaeyoung|cravity",
  "sg:kotone|triples",
+ "sg:kqentertainment|ateez",
+ "sg:kq|ateez",
+ "sg:kun|wayv",
+ "sg:kya|kiiikiii",
+ "sg:laissuni|bts",
+ "sg:lamto|triples",
+ "sg:leehan|boynextdoor",
+ "sg:leeknow|straykids",
  "sg:leena|엔시티",
+ "sg:leo|alphadriveone",
+ "sg:lia|zerobaseone",
+ "sg:lillian|bts",
+ "sg:lily|treasure",
+ "sg:liora|treasure",
  "sg:liyu|flareu",
+ "sg:louis|lngshot",
+ "sg:lukkaew|ateez",
+ "sg:lun|boynextdoor",
+ "sg:luoyujia|alphadriveone",
+ "sg:mah|nct127",
+ "sg:mai|riize",
+ "sg:martin|cortis",
+ "sg:may|nctdream",
+ "sg:mew|riize",
+ "sg:miffy|seventeen",
+ "sg:mile|riize",
+ "sg:milk|nct",
+ "sg:minami|rescene",
+ "sg:mingi|ateez",
+ "sg:minje|kickflip",
+ "sg:minji|newjeans",
+ "sg:mink|riize",
+ "sg:minnie|i-dle",
+ "sg:minnie|idle",
+ "sg:miyeon|i-dle",
+ "sg:moka|illit",
+ "sg:momo|twice",
+ "sg:moonbyul|mamamoo",
+ "sg:myj|nct127",
+ "sg:myungjaehyun|boynextdoor",
+ "sg:nathawan|nct",
  "sg:nattada|lngshot",
+ "sg:nawinda|nctdream",
  "sg:nctdream|sm",
+ "sg:nct|nct",
  "sg:nct|sm",
+ "sg:neisj|triples",
+ "sg:new|seventeen",
+ "sg:ni-ki|enhypen",
+ "sg:nichapha|exo",
+ "sg:niki|enhypen",
+ "sg:ningning|aespa",
+ "sg:n|boynextdoor",
  "sg:ohyul|lngshot",
+ "sg:onedoor|boynextdoor",
+ "sg:ozafa|triples",
+ "sg:p1harmony|p1harmony",
+ "sg:palmy|bts",
+ "sg:pang|enhypen",
+ "sg:pani|nct127",
+ "sg:pannapatpattamatin|enhypen",
+ "sg:parkjeaongwoo|treasure",
+ "sg:parkjeongwoo|treasure",
+ "sg:peeradakongthanayanmatee|redvelvet",
+ "sg:pepper|nctwish",
  "sg:phanthanika|zerobaseone",
+ "sg:pika|riize",
  "sg:pingku|hearts2hearts",
+ "sg:pinto|enhypen",
+ "sg:pityawee|enhypen",
+ "sg:pledis|seventeen",
+ "sg:poman|인피니트",
+ "sg:porpor|enhypen",
+ "sg:pp|seventeen",
+ "sg:q|nctwish",
+ "sg:rachel|ald1",
  "sg:rachel|하츠투하츠",
+ "sg:reena|day6",
+ "sg:renjun|nctdream",
+ "sg:rev'yoda|triples",
  "sg:ricky|and2ble",
  "sg:riize|sm",
  "sg:riku|nctwish",
+ "sg:riwoo|boynextdoor",
+ "sg:rora|babymonster",
+ "sg:rosé|blackpink",
+ "sg:ryeowook|superjunior",
  "sg:ryul|lngshot",
+ "sg:s.coups|seventeen",
+ "sg:sakuradakenshin|closeyoureyes",
  "sg:sakuya|nctwish",
+ "sg:sasa|straykids",
  "sg:satang|sm",
+ "sg:seji|nctwish",
+ "sg:seochangbin|straykids",
+ "sg:seonghwa|ateez",
+ "sg:seonghyeon|cortis",
+ "sg:seoyeon|triples",
+ "sg:seungchan|riize",
+ "sg:seventeen,tws|pledis",
+ "sg:seventeen/tws|hybe",
+ "sg:seventeen|seventeen",
+ "sg:shamaine|nct",
+ "sg:shan|xdinaryheroes",
+ "sg:shermaine|triples",
+ "sg:shermingchow|alphadriveone",
+ "sg:shinyu|tws",
+ "sg:shotaro|riize",
+ "sg:shuhua슈화|i-dle",
  "sg:sion|nctwish",
+ "sg:siwon|alphadriveone",
+ "sg:skyy|superjunior",
+ "sg:smentertainment|allgroup",
  "sg:sm|sm",
+ "sg:soeya|nctwish",
  "sg:sogeon|nexz",
+ "sg:solar,moonbyul,wheein,hwasa|mamamoo",
+ "sg:solar|mamamoo",
+ "sg:songeunseok|riize",
+ "sg:song|nct",
+ "sg:soobin|txt",
+ "sg:sooyeon|enhypen",
+ "sg:sphynx|triples",
+ "sg:srlkkxx|nct",
  "sg:stella|hearts2hearts",
+ "sg:suho|exo",
+ "sg:suki|tws",
+ "sg:sum|nctdream",
+ "sg:sungchan|riize",
+ "sg:sunghoon|enhypen",
  "sg:sunny|snsd",
+ "sg:supansa|babymonster",
  "sg:sxnd|enhypen",
+ "sg:s|cortis",
+ "sg:taenyuo|nct127",
+ "sg:taeyeon,chorong,miyeon|i-dle,girlsgeneration,apink",
+ "sg:taki|andteam",
+ "sg:tanwanqian|shinee",
+ "sg:teasan|boynextdoor",
  "sg:teayong|nct127",
+ "sg:the8|seventeen",
+ "sg:thitapha|배우",
+ "sg:tiwapon|treasure",
  "sg:tomoya|nexz",
+ "sg:toon|nctdream",
+ "sg:tor|nctwish",
+ "sg:treasure|treasure",
+ "sg:tritti|nctwish",
+ "sg:tws|pledis",
+ "sg:txt|txt",
+ "sg:uu|tws",
+ "sg:u|seventeen",
+ "sg:wah|nctdream",
+ "sg:wangyichun|ateez",
+ "sg:wan|infinite",
+ "sg:wenny|itzy",
+ "sg:winter|aespa",
+ "sg:wonbin|riize",
+ "sg:wonwoo|seventeen",
+ "sg:woodz|솔로",
+ "sg:woojin|lngshot",
+ "sg:wooyoung|ateez",
+ "sg:woozi|seventeen",
+ "sg:wu|kickflip",
+ "sg:wyn|nctwish",
+ "sg:xc|redvelvet",
+ "sg:xiaojun|wayv",
+ "sg:xinlong|alphadriveone",
  "sg:xinyu|triples",
+ "sg:yan|riize",
+ "sg:yeonji|triples",
+ "sg:yesung|superjunior",
+ "sg:yg|treasure",
+ "sg:yihuen|treasure",
+ "sg:yiyi|and2ble",
+ "sg:yk524|infinite",
+ "sg:ymwkk|cortis",
+ "sg:yoonjaehyuk|treasure",
+ "sg:yoonsanha|astro",
+ "sg:yoonsoyeon|triples",
+ "sg:yoshi|treasure",
+ "sg:youngjae|got7",
+ "sg:youngk|day6",
+ "sg:yth|bts",
+ "sg:yu-n|treasure",
  "sg:yuha|hearts2hearts",
+ "sg:yui|enhypen",
  "sg:yuki|nexz",
+ "sg:yukjji|blackpink",
+ "sg:yuma|&team",
+ "sg:yuma|andteam",
+ "sg:yuqi|i-dle",
+ "sg:yuqi|idle",
  "sg:yushi|nctwish",
+ "sg:yushi|nctwish/sm",
+ "sg:yusho|nctwish",
+ "sg:yuunnii|exo",
+ "sg:yu|i-dle",
+ "sg:yu|seventeen",
+ "sg:yu|txt",
+ "sg:yx|riize",
+ "sg:zen|riize​sm",
  "sg:zhouxinyu|triples",
+ "sg:zhugudanqing|seventeen",
+ "sg:zi|treasure",
+ "sg:zz|bts",
+ "sg:z|katseye",
+ "sg:джухун|cortis",
+ "sg:ริคุ|nctwish",
+ "sg:อาบีหย๊ะ|treasure",
+ "sg:เมเม่|exo",
+ "sg:​​최현석|treasure",
  "sg:なお|wayv",
+ "sg:ㄴㄴ|treasure",
+ "sg:ㅅㅅ|seventeen",
+ "sg:ㅇ|하츠투하츠",
+ "sg:严成玹|cortis",
+ "sg:余|佑文",
+ "sg:储蓥|tws",
+ "sg:前田陆|nct",
+ "sg:卷卷|riize",
+ "sg:卿|nct",
+ "sg:吳怡萱|idle",
+ "sg:吳是溫|nctwish",
+ "sg:吴是温|nctwish",
+ "sg:呂宥潔|flareu",
+ "sg:周姵縜|tomorrowxtogether",
+ "sg:周安信|ald1",
+ "sg:周安信|alphadriveone",
+ "sg:哈哈|enhypen",
+ "sg:壹加一|treasure",
+ "sg:夫胜宽|seventeen",
+ "sg:姜太显|txt",
+ "sg:娴娴|cravity",
+ "sg:宋|idle",
+ "sg:宋奕爽|nctwish",
+ "sg:小嘟|alphadriveone",
+ "sg:尹净汉|seventeen",
+ "sg:尹淨漢|seventeen",
+ "sg:崔秀彬|txt",
+ "sg:崔立于|flareu",
+ "sg:崔英宰|tws",
+ "sg:左依诺|boynextdoor",
+ "sg:廖敏君|treasure",
+ "sg:廖芮婕|tomorrowxtogether",
+ "sg:张瑞尔|nctwish",
+ "sg:张艳阳|alphadriveone",
+ "sg:張文嘉|enhypen",
+ "sg:彭倩|enhypen",
+ "sg:方燦|straykids",
+ "sg:晶晶|exo",
+ "sg:朴元彬|riize",
+ "sg:朴志焄|treasure",
+ "sg:朴晳浚|82major",
+ "sg:李予伶|seventeen",
+ "sg:李柱延|theboyz",
+ "sg:李欣然|cortis",
+ "sg:李泰容|nct",
+ "sg:李浩妤|seventeen",
+ "sg:李灿荣|riize",
+ "sg:李相元|alphadriveone",
+ "sg:李相沅|alphadriveone",
+ "sg:李碩珉|seventeen",
+ "sg:李胜利|bigbang",
+ "sg:林|tws",
+ "sg:林恩佑|tomorrowxtogether",
+ "sg:林琬婷|riize",
  "sg:植村朋哉|nexz",
+ "sg:渡边温斗|treasure",
+ "sg:炫|nctwish",
+ "sg:王钰涓|seventeen",
+ "sg:申惟|tws",
+ "sg:羅婉瑜|seventeen",
+ "sg:莫丽霞|riize",
+ "sg:葉舒華|i-dle",
+ "sg:薇娟、米妮、小娟、雨琦、舒華|idle",
+ "sg:許云蓁|straykids",
+ "sg:豆浆|nct",
+ "sg:边伯贤|exo",
+ "sg:郝梦媛|nctwish",
+ "sg:郭子涵|ive",
+ "sg:郭諼|bts",
+ "sg:鄭亦彤|seventeen",
+ "sg:鄭亦涵|아이들",
+ "sg:金奎彬|zerobaseone",
+ "sg:金泰亨|bts",
+ "sg:金硕珍|bts",
+ "sg:金虔佑|ald1",
+ "sg:银河|nctwish",
+ "sg:闵玧其|bts",
+ "sg:陳詩昀|straykids",
+ "sg:雨琦|i-dle",
+ "sg:零杠|nctdream",
+ "sg:韓維辰|and2ble",
+ "sg:韩知城|straykids",
+ "sg:韩维辰|and2ble",
+ "sg:饭饭|boynextdoor",
+ "sg:馬詩涵|straykids",
+ "sg:马彤昕|theboyz",
+ "sg:高歌|bts",
+ "sg:麥家瑜|riize",
+ "sg:黄|riize",
  "sg:가온|엑스디너리히어로즈",
+ "sg:강다니엘|solo",
+ "sg:강도훈|tws",
  "sg:강동원|배우",
+ "sg:강밈ㄴ|베리베리/젤리피시",
  "sg:강승윤|winner",
  "sg:강우진|flareu",
  "sg:강우진|플레어유",
@@ -153,35 +556,104 @@
  "sg:계현|verivery",
  "sg:계훈|kickflip",
  "sg:계훈|킥플립",
+ "sg:고강훈|dragonpony",
  "sg:공유빈|triples",
  "sg:공찬|b1a4",
+ "sg:과시한|yg",
+ "sg:곽기웅|idntt",
+ "sg:곽기웅|idntt(아이덴티티)",
+ "sg:곽기웅|아이덴티티idntt",
  "sg:구준회|ikon",
+ "sg:권순영|seventeen",
+ "sg:권순영|세븐틴",
  "sg:권오율|lngshot",
+ "sg:권은비|솔로",
+ "sg:금동현|배우",
  "sg:기욱|원위",
  "sg:기욱|원위(onewe)",
+ "sg:기욱|원위/onewe",
+ "sg:기타|(g)i-dle",
+ "sg:기타|exo2pmmonstax",
  "sg:김건우|alphadriveone",
  "sg:김규빈|and2ble",
  "sg:김규빈|앤더블",
  "sg:김나경|트리플에스",
+ "sg:김대영|nctwish",
+ "sg:김도균|82major",
+ "sg:김도영|nct",
+ "sg:김도영|treasure",
+ "sg:김도영|트레저",
+ "sg:김도훈|idntt",
+ "sg:김도훈|tws",
+ "sg:김도훈|아이덴티티",
+ "sg:김도훈|아이덴티티(idntt)",
+ "sg:김도훈|투어스",
+ "sg:김동현|ab6ix",
+ "sg:김동현|ab6ix(에이비식스)",
+ "sg:김동현|에이비식스ab6ix",
  "sg:김률|lngshot",
  "sg:김률|롱샷",
+ "sg:김명수|infinite",
+ "sg:김명수|인피니트",
+ "sg:김민규|seventeen",
  "sg:김민재|idid",
  "sg:김민재|idid(아이딧)",
+ "sg:김민재|idid/starship",
  "sg:김민재|xikers",
  "sg:김민재|싸이커스",
  "sg:김민재|아이딧",
+ "sg:김민정|aespa",
+ "sg:김민지|newjeans",
+ "sg:김석진|bts",
+ "sg:김선우|enhypen",
+ "sg:김선우|theboyz",
+ "sg:김성규|인피니트",
  "sg:김성민|클로즈유어아이즈",
+ "sg:김성준|idntt",
+ "sg:김성준|아이덴티티",
+ "sg:김성준|아이덴티티(idntt)",
+ "sg:김승모|ampers&one",
+ "sg:김승모|앰퍼샌드원",
+ "sg:김승민|straykids",
+ "sg:김영수|infinite",
+ "sg:김운학|보이넥스트도어",
+ "sg:김원필|데이식스",
+ "sg:김유겸|got7",
+ "sg:김재중|인코드",
  "sg:김재현|nflying",
+ "sg:김재희|nctwish",
+ "sg:김재희|엔시티위시",
+ "sg:김정수|xdinaryheroes",
  "sg:김정훈|싸이커스",
+ "sg:김주호|idntt",
+ "sg:김주훈|cortis",
+ "sg:김주훈|코르티스",
+ "sg:김주훈|코르티스(빅히트)",
+ "sg:김준규|treasure",
+ "sg:김준서|alphadriveone",
+ "sg:김준서|알파드라이브원",
  "sg:김지웅|제로베이스원",
  "sg:김태래|zerobaseone",
+ "sg:김한빈|솔로",
+ "sg:김희주|idntt",
+ "sg:김희주|아이덴티티",
+ "sg:깅도영|treasure",
+ "sg:나재민|nctdream",
+ "sg:나캠든|ampers&one",
+ "sg:나캠든|앰퍼샌드원",
+ "sg:나캠듬|앰퍼샌드원",
  "sg:남성모|82메이저/그레이트엠",
+ "sg:남지운|idntt",
+ "sg:남지운|아이덴티티",
+ "sg:네임|seventeen",
  "sg:니콜라스|앤팀",
  "sg:니키|enhypen",
+ "sg:닝|boynextdoor(성호)",
  "sg:닝닝|에스파",
  "sg:도경수|exo",
  "sg:도경수|엑소",
  "sg:도균|82major",
+ "sg:도연|에이티즈",
  "sg:도영|treasure",
  "sg:동현|kickflip",
  "sg:동현|킥플립",
@@ -189,43 +661,119 @@
  "sg:동화|킥플립",
  "sg:동화|킥플립(kickflip)",
  "sg:디노|seventeen",
+ "sg:디디|enhypen",
+ "sg:디오|엑소",
+ "sg:라이|nctwish",
+ "sg:라이즈|riize",
+ "sg:라이프|ateez",
  "sg:레오|빅스",
+ "sg:렌|뉴이스트",
+ "sg:려원|보이넥스트도어",
+ "sg:로재민|nct",
+ "sg:로즈|에이티즈",
  "sg:료|nctwish",
  "sg:루이|롱샷",
  "sg:루이스|lngshot",
  "sg:루카|babymonster",
  "sg:률|lngshot",
  "sg:률|롱샷",
+ "sg:르르|treasure",
+ "sg:리|라이즈",
+ "sg:리구|nctwish",
+ "sg:리리|treasure",
+ "sg:리브|리센느",
+ "sg:리아문|tomorrowxtogether",
  "sg:리오|alphadriveone",
  "sg:리오|알파드라이브원",
+ "sg:리은|ateez",
+ "sg:리즈하오|modyssey",
  "sg:리쿠|nctwish",
  "sg:리쿠|엔시티위시",
  "sg:리키|and2ble",
  "sg:릴리|엔믹스",
  "sg:립우|flareu",
+ "sg:마어줄|nct",
+ "sg:마에다리쿠|nctwish",
  "sg:마징시앙|closeyoureyes",
  "sg:마징시앙|클로즈유어아이즈",
+ "sg:마카야|ampers&one",
+ "sg:마크|nct",
+ "sg:마크|마크",
+ "sg:마크|솔로",
  "sg:마키|앤팀",
  "sg:마틴|cortis",
  "sg:마틴|코르티스",
+ "sg:메이|seventeen",
+ "sg:메이|리센느",
+ "sg:메이플|엔하이픈",
+ "sg:명재현|boynextdoor",
+ "sg:무이|seventeen",
+ "sg:문별이|mamamoo",
+ "sg:문빈|아스트로",
+ "sg:문정현|이븐",
+ "sg:뮤|epex",
+ "sg:뮤|epex이펙스",
+ "sg:뮤|이펙스",
+ "sg:미나미|리센느",
+ "sg:미라|cortis",
+ "sg:미크|nct",
  "sg:민니|ateez",
+ "sg:민서|투어스",
  "sg:민재|xikers",
+ "sg:민재|싸이커스/kq",
  "sg:민제|kickflip",
  "sg:민제|킥플립",
  "sg:민주|아일릿",
+ "sg:바나나|tws",
+ "sg:박누리|idntt",
+ "sg:박보검|배우",
+ "sg:박새님|cravity",
+ "sg:박석준|82major",
+ "sg:박성진|day6",
+ "sg:박성진|데이식스",
  "sg:박성현|idid",
  "sg:박성현|idid(아이딧)",
  "sg:박성현|아이딧",
+ "sg:박성호|boynextdoor",
+ "sg:박성훈|enhypen",
+ "sg:박성훈|엔하이픈",
+ "sg:박세은|xikers/kq엔터테이먼트",
  "sg:박세은|싸이커스",
  "sg:박원빈|idid",
+ "sg:박원빈|riize",
+ "sg:박원빈|라이즈/sm",
  "sg:박정우|treasure",
+ "sg:박종성|enhypen",
  "sg:박준민|싸이커스",
+ "sg:박준일|솔로",
+ "sg:박지민|방탄소년단",
+ "sg:박지성|nctdream",
+ "sg:박지후|evnne",
+ "sg:박지훈|솔로",
  "sg:박지훈|워너원",
  "sg:배진영|워너원",
  "sg:백준혁|idid",
  "sg:백준혁|idid(아이딧)",
  "sg:백준혁|아이딧",
  "sg:범규|tomorrowxtogether",
+ "sg:변백현|exo",
+ "sg:변백현|solo",
+ "sg:변백현|엑소",
+ "sg:변예지|exo",
+ "sg:변우석|배우",
+ "sg:보|seventeen",
+ "sg:보|아이브",
+ "sg:보너스|세븐틴",
+ "sg:봄|atheart",
+ "sg:뷰티|트레저",
+ "sg:브라이언|ampers&one",
+ "sg:브라이언|앰퍼샌드원",
+ "sg:비아이|솔로",
+ "sg:빅나티|솔로",
+ "sg:빈첸|솔로",
+ "sg:빔|세븐틴",
+ "sg:뿌|앤하이밴",
+ "sg:사쿠야|nct",
  "sg:사쿠야|nctwish",
  "sg:사쿠야|엔시티위시",
  "sg:산|ateez",
@@ -235,6 +783,13 @@
  "sg:상현|알파드라이브원(alphadriveone)",
  "sg:서경배|closeyoureyes",
  "sg:서경배|클로즈유어아이즈",
+ "sg:서명려|boynextdoor",
+ "sg:서명호|seventeen",
+ "sg:서모나|seventeen",
+ "sg:서수진|솔로",
+ "sg:서여|nctdream",
+ "sg:서창빈|straykids",
+ "sg:선미|솔로",
  "sg:선우|enhypen",
  "sg:성일|82major",
  "sg:성한빈|zb1",
@@ -242,17 +797,38 @@
  "sg:성현|cortis",
  "sg:성현|코르티스",
  "sg:성호|boynextdoor",
+ "sg:세은|xikers",
  "sg:세이타|nexz",
  "sg:세훈|exo",
  "sg:소건|nexz",
+ "sg:소건|nexz/jyp",
  "sg:소건|넥스지(nexz)",
+ "sg:소빈|nctwish",
  "sg:소정환|treasure",
+ "sg:소타로|라이즈",
+ "sg:손립선|seventeen",
  "sg:솔라|마마무",
+ "sg:솔라、문별、휘인、화사|mamamoo",
+ "sg:솜사|exo",
+ "sg:송민기|ateez",
  "sg:송승호|closeyoureyes",
  "sg:송승호|클로즈유어아이즈",
+ "sg:송우기|i-dle",
+ "sg:송우미|theboyz",
+ "sg:송은석|riize",
+ "sg:송은석|라이즈",
+ "sg:쇠산|에이티즈",
  "sg:수빈|tomorrowxtogether",
+ "sg:수이|kiiikiii",
+ "sg:수이|kiiikiii(키키)/스타쉽",
+ "sg:수이|키키",
+ "sg:수티다|라이즈",
+ "sg:쉬멍한|theboyz",
+ "sg:쉬에수런|모디세이",
+ "sg:슈화|아이들",
  "sg:스텔라|hearts2hearts",
  "sg:스텔라|하츠투하츠",
+ "sg:스텔라|하츠투하츠/sm",
  "sg:승관|seventeen",
  "sg:승한|승한앤소울",
  "sg:승협|nflying",
@@ -264,70 +840,158 @@
  "sg:신예찬|lucy",
  "sg:신예찬|루시",
  "sg:신예찬|루시(lucy)",
+ "sg:신예찬|루시/미스틱스토리",
  "sg:신위|triples",
  "sg:신위|트리플에스",
  "sg:신유|tws",
+ "sg:신유나|있지",
+ "sg:심재륜|enhypen",
+ "sg:심재윤|enhypen",
+ "sg:싱원|alphadriveone",
+ "sg:쑨헝위|modyssey",
+ "sg:쑨헝위|모디세이",
+ "sg:씨씨|infinite",
  "sg:씬롱|알파드라이브원",
+ "sg:씽|소디엑",
+ "sg:아|르노",
  "sg:아르노|alphadriveone",
  "sg:아르노|알파드라이브원",
  "sg:아사히|treasure",
  "sg:아사히|트레저",
  "sg:아이린|레드벨벳",
  "sg:아이엔|스트레이키즈",
+ "sg:아이유|솔로",
+ "sg:안건호|cortis",
+ "sg:안건호|코르티스",
+ "sg:안나|ateez",
+ "sg:안시운|nctwish",
  "sg:안신|알파드라이브원",
+ "sg:안효섭|배우",
+ "sg:애리|nctwish",
  "sg:앤톤|riize",
  "sg:앤톤|라이즈",
+ "sg:야오이쓰|cravity",
+ "sg:양경호|idntt",
  "sg:양요섭|하이라이트",
  "sg:양정원|enhypen",
+ "sg:양정원|엔하이픈",
+ "sg:양흔선|nctdream",
+ "sg:엄성현|cortis",
+ "sg:엄성현|코르티스",
+ "sg:엄성현|코르티스/cortis",
+ "sg:엄성현|코르티스/하이브",
  "sg:에스쿱스|세븐틴",
  "sg:에이나|hearts2hearts",
  "sg:에이나|하츠투하츠",
+ "sg:엔시티위시|엔시티위시",
+ "sg:엔플라잉(n.flying)|fnc",
+ "sg:여린|엔시티드림",
+ "sg:여영|더보이즈",
+ "sg:여전이|nct",
+ "sg:연연|tomorrowxtogether",
  "sg:연준|txt",
  "sg:영훈|theboyz",
+ "sg:예나|솔로",
+ "sg:예미|데이식스",
  "sg:예성|superjunior",
+ "sg:예수화|idle",
+ "sg:예슈화|i-dle",
  "sg:예온|hearts2hearts",
  "sg:예온|하츠투하츠",
+ "sg:오세훈|exo",
+ "sg:오세훈|엑소",
  "sg:오시온|nct",
  "sg:오시온|nctwish",
  "sg:오시온|엔시티위시",
+ "sg:오연서|treasure",
  "sg:오율|lngshot",
  "sg:오율|롱샷",
+ "sg:온|all(h)ours",
+ "sg:옹성우|워너원/배우",
+ "sg:왕군호|솔로",
+ "sg:왕루이|hearts2hearts",
+ "sg:왕여의|하츠투하츠",
  "sg:요시|treasure",
  "sg:요시|트레저",
+ "sg:우시|세븐틴",
+ "sg:우즈|솔로",
  "sg:우진|lngshot",
  "sg:우진|롱샷",
+ "sg:우하준|솔로",
  "sg:운학|boynextdoor",
+ "sg:원영|exo",
+ "sg:원이|리센느",
+ "sg:원이|리센느/더뮤즈엔터테인먼트",
+ "sg:원이미나미리브메이제나|리센느",
+ "sg:원호|솔로",
+ "sg:윙|비트펠라하우스",
+ "sg:유강민|verivery",
+ "sg:유강민|베리베리",
+ "sg:유기현|monstax",
+ "sg:유나|tempest",
  "sg:유노윤호|동방신기",
  "sg:유마|&team",
+ "sg:유승언|and2ble",
+ "sg:유요린|p1harmony",
+ "sg:유우(yu)|nexz(넥스지)",
  "sg:유우|nexz",
  "sg:유우|넥스지",
  "sg:유우|넥스지(nexz)",
+ "sg:유우시/리쿠|nctwish",
  "sg:유우시|nct",
  "sg:유우시|nctwish",
  "sg:유우시|엔시티위시",
+ "sg:유우시….|nctwish",
+ "sg:유유|nctwish",
+ "sg:유의정|nctwish",
+ "sg:유이시|nctwish",
  "sg:유준|xikers",
  "sg:유준|xikers(싸이커스)",
  "sg:유준|싸이커스",
+ "sg:유즈|sf9",
  "sg:유키|nexz",
+ "sg:유타|nct127",
  "sg:유하|hearts2hearts",
  "sg:유하|하츠투하츠",
  "sg:유하란|hearts2hearts",
  "sg:유하람|hearts2hearts",
  "sg:유회승|엔플라잉",
+ "sg:윤|나우즈",
  "sg:윤두준|하이라이트",
  "sg:윤두준|하이라이트(비스트)",
+ "sg:윤산하|astro",
+ "sg:윤시윤|ampers&one",
+ "sg:윤재헉|treasure",
  "sg:윤재혁|treasure",
+ "sg:윤정한|seventeen",
  "sg:윤지성|워너원",
+ "sg:은나|&team",
  "sg:은석|riize",
+ "sg:이경민|투어스",
+ "sg:이계훈|킥플립/jyp",
  "sg:이기욱|onewe",
+ "sg:이동해|superjunior",
  "sg:이동현|kickflip",
+ "sg:이동현|kickflip(킥플립)",
  "sg:이동현|킥플립",
  "sg:이동화|kickflip",
  "sg:이동화|킥플립",
+ "sg:이동화|킥플립/jyp",
+ "sg:이령|alphadriveone",
+ "sg:이름|nctwish",
+ "sg:이리오|alphadriveone",
  "sg:이리오|알파드라이브원",
  "sg:이민혁|비투비",
+ "sg:이사히|treasure",
+ "sg:이상워ㆍ|알파드라이브원",
  "sg:이상원|alphadriveone",
  "sg:이상원|알파드라이브원",
+ "sg:이상원|알파드라이브원(alphadriveone)",
+ "sg:이서호|oneus",
+ "sg:이솔|kiiikiii",
+ "sg:이솔|키키",
+ "sg:이수현|하츠투하츠",
+ "sg:이슬|nct",
  "sg:이승협|n.flying",
  "sg:이승협|엔플라잉",
  "sg:이승훈|winner",
@@ -335,2748 +999,251 @@
  "sg:이안|하츠투하츠",
  "sg:이안|하츠투하츠(hearts2hearts)",
  "sg:이예찬|싸이커스",
+ "sg:이재영|idntt",
+ "sg:이재영|idntt(아이덴티티)",
+ "sg:이재영|idntt아이덴티티",
+ "sg:이재영|아이덴티티",
+ "sg:이재진|ftisland",
+ "sg:이재현|theboyz",
+ "sg:이정신|cnblue",
+ "sg:이정신|씨엔블루",
+ "sg:이정현|evnne",
+ "sg:이정현|이븐",
+ "sg:이제노|nctdream",
+ "sg:이주연|theboyz",
+ "sg:이주헌|몬스타엑스",
+ "sg:이준영|배우",
+ "sg:이준호|2pm",
  "sg:이지우|트리플에스",
+ "sg:이지훈|seventeen",
+ "sg:이찬|세븐틴",
+ "sg:이청명|idntt",
+ "sg:이청명|아이덴티티",
+ "sg:이태민|shinee",
+ "sg:이한|boynextdor",
+ "sg:이해찬|nct",
+ "sg:이현서|알파드라이브원",
+ "sg:이혜연|방탄소년단",
+ "sg:이홍기|ftisland",
+ "sg:이환희|idntt",
+ "sg:이환희|idntt(아이덴티티)",
+ "sg:이희승|enhypen",
+ "sg:임이진|에이티즈",
+ "sg:임창균|monstax",
+ "sg:임치후이|nct",
  "sg:임현식|비투비",
+ "sg:잔한|seventeen",
  "sg:장여준|closeyoureyes",
  "sg:장여준|클로즈유어아이즈",
+ "sg:장연|seventeen",
  "sg:장용훈,김민재,백준혁,추유탄,박성현,정세민|아이딧",
  "sg:장용훈|idid",
  "sg:장용훈|아이딧",
+ "sg:장주왕|킥플립(kickflip)/jyp",
  "sg:장하오|and2ble",
  "sg:장하오|앤더블",
+ "sg:장한음,ㅁ|솔로",
  "sg:장한음|솔로",
+ "sg:장향여|boynextdoor",
+ "sg:재민|엔시티드림",
+ "sg:재이|newjeans",
  "sg:재희|nct",
  "sg:재희|nctwish",
  "sg:재희|엔시티위시",
+ "sg:잭|re:revolution(혁명의심장)",
+ "sg:쟈니|nct",
+ "sg:저우이루|txt",
  "sg:전민욱|closeyoureyes",
  "sg:전민욱|closeyoureyes(클로즈유어아이즈)",
+ "sg:전웅woong|에이비식스ab6ix",
+ "sg:전웅|ab6ix",
+ "sg:전원우|seventeen",
  "sg:정국|bts",
  "sg:정모|cravity",
  "sg:정상현|alphadriveone",
+ "sg:정상현|알파드라이브원",
+ "sg:정성찬|riize",
  "sg:정세민|idid",
  "sg:정세민|아이딧",
+ "sg:정세운|솔로",
+ "sg:정시만|treasure",
+ "sg:정용화|cnblue",
+ "sg:정용화|씨엔블루",
+ "sg:정우영|에이티즈",
+ "sg:정우진|lngshot",
  "sg:정원|엔하이픈",
  "sg:정유준|xikers",
  "sg:정유준|싸이커스",
+ "sg:정윤|enhypen",
+ "sg:정은지|에이핑크",
  "sg:정이안|hearts2hearts",
+ "sg:정재현|nct",
+ "sg:정재현|nct127",
+ "sg:정진영|배우",
+ "sg:정택운(레오)|vixx",
+ "sg:정택운|vixx",
  "sg:정하연|트리플에스",
  "sg:정훈|xikers",
+ "sg:제나|리센느",
+ "sg:제니|blackpink",
  "sg:제이|엔하이픈",
  "sg:제이크|enhypen",
  "sg:제임스|cortis",
  "sg:제임스|코르티스",
  "sg:제임스|코르티스(빅히트)",
+ "sg:조계현|베리베리",
+ "sg:조서인|nctwish",
+ "sg:조우안신|alphadriveone",
  "sg:조우안신|알파드라이브원",
  "sg:조원상|lucy",
+ "sg:조원상|루시/lucy",
+ "sg:조은찬|idntt",
+ "sg:조이|theboyz",
+ "sg:종성|enhypen",
+ "sg:주산니|nctwish",
+ "sg:주안신|alphadriveone",
  "sg:주연|theboyz",
  "sg:주은|hearts2hearts",
+ "sg:주은|riize",
  "sg:주훈|코르티스",
  "sg:준규|treasure",
  "sg:준서|alphadriveone",
  "sg:준케이|2pm",
+ "sg:지성|nctdream",
+ "sg:지성|엔시티드림",
  "sg:지연/jiyeon|triples",
  "sg:지연|triples",
  "sg:지연|트리플에스",
  "sg:지우|hearts2hearts",
  "sg:지우|하츠투하츠",
+ "sg:지우|하츠투하츠/sm",
+ "sg:지유|kiiikiii",
  "sg:지유|드림캐쳐",
+ "sg:지유|키키",
+ "sg:지유|키키(kiiikiii)",
+ "sg:지이여|tomorrowxtogether",
  "sg:지훈|tws",
  "sg:진|bts",
  "sg:진|러블리즈",
+ "sg:진규륜|i-dle",
  "sg:진식|xikers",
  "sg:진식|싸이커스",
+ "sg:진식|싸이커스/kq",
  "sg:진영|b1a4",
  "sg:진용훈|onewe",
  "sg:진용훈|원위",
+ "sg:진우함|방탄소년단",
+ "sg:쯔위|트와이스",
+ "sg:차우민|배우",
  "sg:차훈|엔플라잉",
+ "sg:채현|nct",
+ "sg:청신이|exo",
  "sg:최립우|flareu",
  "sg:최립우|flareu(플레어유)",
  "sg:최립우|플레어유",
+ "sg:최민환|ftisland",
+ "sg:최범규|tomorrowxtogether",
+ "sg:최산|에이티즈",
  "sg:최상엽|lucy",
  "sg:최상엽|루시",
  "sg:최수민|xikers",
  "sg:최수민|싸이커스",
+ "sg:최수빈|tomorrowxtogether",
+ "sg:최수빈|txt",
+ "sg:최승철|seventeen",
+ "sg:최승철|세븐틴",
+ "sg:최연준|txt",
+ "sg:최영재|tws",
+ "sg:최예나|솔로",
  "sg:최지우|하츠투하츠",
+ "sg:최지호|ampers&one",
+ "sg:최태인|idntt",
  "sg:최현석|treasure",
  "sg:최현우|싸이커스",
+ "sg:추이산|ateez",
+ "sg:춘춘이|세븐틴",
+ "sg:츄|straykids",
+ "sg:카로|nct",
  "sg:카르멘|hearts2hearts",
+ "sg:카이렐|ampers&one",
+ "sg:캐트|엑소",
  "sg:케이주|kickflip",
  "sg:케이주|킥플립",
+ "sg:케이크|straykids",
+ "sg:켄|빅스",
  "sg:켄신|closeyoureyes",
+ "sg:퀸니|seventeen",
  "sg:키노|펜타곤",
+ "sg:키야|kiiikiii",
+ "sg:키야|키키",
+ "sg:키이|&team",
+ "sg:킥플립|jyp",
  "sg:킥플립|킥플립",
  "sg:태규|dragopony",
  "sg:태산|boynextdoor",
  "sg:태산|보이넥스트도어",
  "sg:테오|피원하모니",
+ "sg:토모야(tomoya)|넥스지(nexz)",
  "sg:토모야|nexz",
  "sg:토모야|넥스지",
  "sg:토모야|넥스지(nexz)",
+ "sg:토모야|넥스지/jyp",
+ "sg:토와|idntt",
  "sg:토쿠노유우시|nctwish",
+ "sg:튜넥스|ist",
+ "sg:트레저|treasure",
+ "sg:판|누에라",
+ "sg:판저이|modyssey",
+ "sg:팡|txt",
+ "sg:페드로파스칼|배우",
+ "sg:플로이|nct",
+ "sg:피치|redvelvet",
  "sg:하루|nexz",
  "sg:하루|nexz(넥스지)",
+ "sg:하예은|데이식스",
  "sg:하츠투하트|sm",
+ "sg:하투하전원|하츠투하츠",
+ "sg:하현상|솔로",
+ "sg:한승우|솔로",
  "sg:한유진|and2ble",
  "sg:한유진|and2ble(앤더블)",
  "sg:한유진|앤더블",
  "sg:한유진|앤더블(and2ble)",
+ "sg:한지성|straykids",
+ "sg:한지성|스트레이키즈",
+ "sg:한지훈|tws",
+ "sg:한지훈|투어스",
  "sg:한진|tws",
+ "sg:한태산|boynextdoor",
+ "sg:한태산|보이넥스트도어",
+ "sg:함원진|크래비티",
  "sg:함진식|싸이커스",
+ "sg:해솔|riize",
+ "sg:해찬|nctdream",
+ "sg:핸신영|theboyz",
  "sg:허씬롱|alphadriveone",
+ "sg:허씬롱|알파드라이브원",
+ "sg:허중싱|솔로",
  "sg:헌터|싸이커스",
+ "sg:헝디니|treasure",
+ "sg:헝위|modyssey(모디세이)",
+ "sg:헤라|seventeen",
  "sg:현우|싸이커스",
  "sg:현재|더보이즈",
  "sg:현진|straykids",
  "sg:호시|seventeen",
  "sg:호시|세븐틴",
+ "sg:홍정|ateez",
+ "sg:홍지수|seventeen",
  "sg:화사|mamamoo",
  "sg:화사|마마무",
- "sg:후이|펜타곤",
- "sg:휴이|nexz",
- {
-  "key": "sg:เมเม่|exo",
-  "done": true
- },
- {
-  "key": "sg:원영|exo",
-  "done": true
- },
- {
-  "key": "sg:변백현|exo",
-  "done": true
- },
- {
-  "key": "sg:변예지|exo",
-  "done": true
- },
- {
-  "key": "sg:晶晶|exo",
-  "done": true
- },
- {
-  "key": "sg:baekhyun|exo",
-  "done": true
- },
- {
-  "key": "sg:캐트|엑소",
-  "done": true
- },
- {
-  "key": "sg:오세훈|엑소",
-  "done": true
- },
- {
-  "key": "sg:边伯贤|exo",
-  "done": true
- },
- {
-  "key": "sg:boseok|exo",
-  "done": true
- },
- {
-  "key": "sg:청신이|exo",
-  "done": true
- },
- {
-  "key": "sg:솜사|exo",
-  "done": true
- },
- {
-  "key": "sg:suho|exo",
-  "done": true
- },
- {
-  "key": "sg:yuunnii|exo",
-  "done": true
- },
- {
-  "key": "sg:오세훈|exo",
-  "done": true
- },
- {
-  "key": "sg:디오|엑소",
-  "done": true
- },
- {
-  "key": "sg:fayeol|exo",
-  "done": true
- },
- {
-  "key": "sg:변백현|엑소",
-  "done": true
- },
- {
-  "key": "sg:nichapha|exo",
-  "done": true
- },
- {
-  "key": "sg:haruto|treasure",
-  "done": true
- },
- {
-  "key": "sg:j|treasure",
-  "done": true
- },
- {
-  "key": "sg:yg|treasure",
-  "done": true
- },
- {
-  "key": "sg:오연서|treasure",
-  "done": true
- },
- {
-  "key": "sg:yu-n|treasure",
-  "done": true
- },
- {
-  "key": "sg:ㄴㄴ|treasure",
-  "done": true
- },
- {
-  "key": "sg:르르|treasure",
-  "done": true
- },
- {
-  "key": "sg:yoonjaehyuk|treasure",
-  "done": true
- },
- {
-  "key": "sg:yihuen|treasure",
-  "done": true
- },
- {
-  "key": "sg:hh|treasure",
-  "done": true
- },
- {
-  "key": "sg:tiwapon|treasure",
-  "done": true
- },
- {
-  "key": "sg:lily|treasure",
-  "done": true
- },
- {
-  "key": "sg:parkjeongwoo|treasure",
-  "done": true
- },
- {
-  "key": "sg:朴志焄|treasure",
-  "done": true
- },
- {
-  "key": "sg:boom|treasure",
-  "done": true
- },
- {
-  "key": "sg:리리|treasure",
-  "done": true
- },
- {
-  "key": "sg:kimjunkyu|treasure",
-  "done": true
- },
- {
-  "key": "sg:김도영|treasure",
-  "done": true
- },
- {
-  "key": "sg:อาบีหย๊ะ|treasure",
-  "done": true
- },
- {
-  "key": "sg:asahi|treasure",
-  "done": true
- },
- {
-  "key": "sg:zi|treasure",
-  "done": true
- },
- {
-  "key": "sg:junkyu|treasure",
-  "done": true
- },
- {
-  "key": "sg:hyunsuk|treasure",
-  "done": true
- },
- {
-  "key": "sg:choihyunsuk|treasure",
-  "done": true
- },
- {
-  "key": "sg:트레저|treasure",
-  "done": true
- },
- {
-  "key": "sg:jjeu-i|treasure",
-  "done": true
- },
- {
-  "key": "sg:壹加一|treasure",
-  "done": true
- },
- {
-  "key": "sg:parkjeaongwoo|treasure",
-  "done": true
- },
- {
-  "key": "sg:treasure|treasure",
-  "done": true
- },
- {
-  "key": "sg:김준규|treasure",
-  "done": true
- },
- {
-  "key": "sg:깅도영|treasure",
-  "done": true
- },
- {
-  "key": "sg:이사히|treasure",
-  "done": true
- },
- {
-  "key": "sg:​​최현석|treasure",
-  "done": true
- },
- {
-  "key": "sg:渡边温斗|treasure",
-  "done": true
- },
- {
-  "key": "sg:liora|treasure",
-  "done": true
- },
- {
-  "key": "sg:廖敏君|treasure",
-  "done": true
- },
- {
-  "key": "sg:yoshi|treasure",
-  "done": true
- },
- {
-  "key": "sg:g|treasure",
-  "done": true
- },
- {
-  "key": "sg:정시만|treasure",
-  "done": true
- },
- {
-  "key": "sg:윤재헉|treasure",
-  "done": true
- },
- {
-  "key": "sg:jiae|아이들",
-  "done": true
- },
- {
-  "key": "sg:葉舒華|i-dle",
-  "done": true
- },
- {
-  "key": "sg:minnie|idle",
-  "done": true
- },
- {
-  "key": "sg:기타|(g)i-dle",
-  "done": true
- },
- {
-  "key": "sg:雨琦|i-dle",
-  "done": true
- },
- {
-  "key": "sg:송우기|i-dle",
-  "done": true
- },
- {
-  "key": "sg:진규륜|i-dle",
-  "done": true
- },
- {
-  "key": "sg:鄭亦涵|아이들",
-  "done": true
- },
- {
-  "key": "sg:yuqi|idle",
-  "done": true
- },
- {
-  "key": "sg:황안리|idle",
-  "done": true
- },
- {
-  "key": "sg:宋|idle",
-  "done": true
- },
- {
-  "key": "sg:shuhua슈화|i-dle",
-  "done": true
- },
- {
-  "key": "sg:miyeon|i-dle",
-  "done": true
- },
- {
-  "key": "sg:예수화|idle",
-  "done": true
- },
- {
-  "key": "sg:idle|idle",
-  "done": true
- },
- {
-  "key": "sg:薇娟、米妮、小娟、雨琦、舒華|idle",
-  "done": true
- },
- {
-  "key": "sg:吳怡萱|idle",
-  "done": true
- },
- {
-  "key": "sg:yu|i-dle",
-  "done": true
- },
- {
-  "key": "sg:toon|nctdream",
-  "done": true
- },
- {
-  "key": "sg:jaehyun|nct",
-  "done": true
- },
- {
-  "key": "sg:xiaojun|wayv",
-  "done": true
- },
- {
-  "key": "sg:may|nctdream",
-  "done": true
- },
- {
-  "key": "sg:지성|nctdream",
-  "done": true
- },
- {
-  "key": "sg:여린|엔시티드림",
-  "done": true
- },
- {
-  "key": "sg:doyoung|nct127",
-  "done": true
- },
- {
-  "key": "sg:srlkkxx|nct",
-  "done": true
- },
- {
-  "key": "sg:쟈니|nct",
-  "done": true
- },
- {
-  "key": "sg:song|nct",
-  "done": true
- },
- {
-  "key": "sg:nawinda|nctdream",
-  "done": true
- },
- {
-  "key": "sg:myj|nct127",
-  "done": true
- },
- {
-  "key": "sg:이슬|nct",
-  "done": true
- },
- {
-  "key": "sg:nathawan|nct",
-  "done": true
- },
- {
-  "key": "sg:jaofon|nct",
-  "done": true
- },
- {
-  "key": "sg:renjun|nctdream",
-  "done": true
- },
- {
-  "key": "sg:재민|엔시티드림",
-  "done": true
- },
- {
-  "key": "sg:jisung|nct",
-  "done": true
- },
- {
-  "key": "sg:jan|nct",
-  "done": true
- },
- {
-  "key": "sg:김도영|nct",
-  "done": true
- },
- {
-  "key": "sg:이해찬|nct",
-  "done": true
- },
- {
-  "key": "sg:이제노|nctdream",
-  "done": true
- },
- {
-  "key": "sg:wah|nctdream",
-  "done": true
- },
- {
-  "key": "sg:boeing|nct",
-  "done": true
- },
- {
-  "key": "sg:milk|nct",
-  "done": true
- },
- {
-  "key": "sg:前田陆|nct",
-  "done": true
- },
- {
-  "key": "sg:李泰容|nct",
-  "done": true
- },
- {
-  "key": "sg:jaemin|nctdream",
-  "done": true
- },
- {
-  "key": "sg:유타|nct127",
-  "done": true
- },
- {
-  "key": "sg:마크|nct",
-  "done": true
- },
- {
-  "key": "sg:카로|nct",
-  "done": true
- },
- {
-  "key": "sg:pani|nct127",
-  "done": true
- },
- {
-  "key": "sg:shamaine|nct",
-  "done": true
- },
- {
-  "key": "sg:플로이|nct",
-  "done": true
- },
- {
-  "key": "sg:채현|nct",
-  "done": true
- },
- {
-  "key": "sg:dououng|nct",
-  "done": true
- },
- {
-  "key": "sg:豆浆|nct",
-  "done": true
- },
- {
-  "key": "sg:jenny|nctdream",
-  "done": true
- },
- {
-  "key": "sg:나재민|nctdream",
-  "done": true
- },
- {
-  "key": "sg:서여|nctdream",
-  "done": true
- },
- {
-  "key": "sg:jaemin|nct",
-  "done": true
- },
- {
-  "key": "sg:사쿠야|nct",
-  "done": true
- },
- {
-  "key": "sg:卿|nct",
-  "done": true
- },
- {
-  "key": "sg:정재현|nct",
-  "done": true
- },
- {
-  "key": "sg:로재민|nct",
-  "done": true
- },
- {
-  "key": "sg:13866|nct",
-  "done": true
- },
- {
-  "key": "sg:kun|wayv",
-  "done": true
- },
- {
-  "key": "sg:마어줄|nct",
-  "done": true
- },
- {
-  "key": "sg:미크|nct",
-  "done": true
- },
- {
-  "key": "sg:nct|nct",
-  "done": true
- },
- {
-  "key": "sg:sum|nctdream",
-  "done": true
- },
- {
-  "key": "sg:taenyuo|nct127",
-  "done": true
- },
- {
-  "key": "sg:여전이|nct",
-  "done": true
- },
- {
-  "key": "sg:임치후이|nct",
-  "done": true
- },
- {
-  "key": "sg:이한|boynextdor",
-  "done": true
- },
- {
-  "key": "sg:n|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:riwoo|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:左依诺|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:한태산|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:饭饭|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:chensijia|boynextdor",
-  "done": true
- },
- {
-  "key": "sg:김운학|보이넥스트도어",
-  "done": true
- },
- {
-  "key": "sg:lun|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:박성호|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:leehan|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:명재현|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:onedoor|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:한태산|보이넥스트도어",
-  "done": true
- },
- {
-  "key": "sg:서명려|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:teasan|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:려원|보이넥스트도어",
-  "done": true
- },
- {
-  "key": "sg:장향여|boynextdoor",
-  "done": true
- },
- {
-  "key": "sg:우즈|솔로",
-  "done": true
- },
- {
-  "key": "sg:비아이|솔로",
-  "done": true
- },
- {
-  "key": "sg:선미|솔로",
-  "done": true
- },
- {
-  "key": "sg:원호|솔로",
-  "done": true
- },
- {
-  "key": "sg:kangdaniel|solo",
-  "done": true
- },
- {
-  "key": "sg:하현상|솔로",
-  "done": true
- },
- {
-  "key": "sg:서수진|솔로",
-  "done": true
- },
- {
-  "key": "sg:b.i|solo",
-  "done": true
- },
- {
-  "key": "sg:최예나|솔로",
-  "done": true
- },
- {
-  "key": "sg:한승우|솔로",
-  "done": true
- },
- {
-  "key": "sg:예나|솔로",
-  "done": true
- },
- {
-  "key": "sg:정세운|솔로",
-  "done": true
- },
- {
-  "key": "sg:장한음,ㅁ|솔로",
-  "done": true
- },
- {
-  "key": "sg:김한빈|솔로",
-  "done": true
- },
- {
-  "key": "sg:박준일|솔로",
-  "done": true
- },
- {
-  "key": "sg:우하준|솔로",
-  "done": true
- },
- {
-  "key": "sg:허중싱|솔로",
-  "done": true
- },
- {
-  "key": "sg:woodz|솔로",
-  "done": true
- },
- {
-  "key": "sg:황민현|솔로",
-  "done": true
- },
- {
-  "key": "sg:박지훈|솔로",
-  "done": true
- },
- {
-  "key": "sg:아이유|솔로",
-  "done": true
- },
- {
-  "key": "sg:빈첸|솔로",
-  "done": true
- },
- {
-  "key": "sg:왕군호|솔로",
-  "done": true
- },
- {
-  "key": "sg:마크|솔로",
-  "done": true
- },
- {
-  "key": "sg:빅나티|솔로",
-  "done": true
- },
- {
-  "key": "sg:bright|straykids",
-  "done": true
- },
- {
-  "key": "sg:felix|straykids",
-  "done": true
- },
- {
-  "key": "sg:seochangbin|straykids",
-  "done": true
- },
- {
-  "key": "sg:leeknow|straykids",
-  "done": true
- },
- {
-  "key": "sg:서창빈|straykids",
-  "done": true
- },
- {
-  "key": "sg:cherry|straykids",
-  "done": true
- },
- {
-  "key": "sg:claire|straykids",
-  "done": true
- },
- {
-  "key": "sg:方燦|straykids",
-  "done": true
- },
- {
-  "key": "sg:sasa|straykids",
-  "done": true
- },
- {
-  "key": "sg:馬詩涵|straykids",
-  "done": true
- },
- {
-  "key": "sg:陳詩昀|straykids",
-  "done": true
- },
- {
-  "key": "sg:한지성|straykids",
-  "done": true
- },
- {
-  "key": "sg:김승민|straykids",
-  "done": true
- },
- {
-  "key": "sg:케이크|straykids",
-  "done": true
- },
- {
-  "key": "sg:츄|straykids",
-  "done": true
- },
- {
-  "key": "sg:韩知城|straykids",
-  "done": true
- },
- {
-  "key": "sg:i.n|straykids",
-  "done": true
- },
- {
-  "key": "sg:許云蓁|straykids",
-  "done": true
- },
- {
-  "key": "sg:정우영|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:도연|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:kq|ateez",
-  "done": true
- },
- {
-  "key": "sg:안나|ateez",
-  "done": true
- },
- {
-  "key": "sg:쇠산|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:로즈|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:라이프|ateez",
-  "done": true
- },
- {
-  "key": "sg:kqentertainment|ateez",
-  "done": true
- },
- {
-  "key": "sg:seonghwa|ateez",
-  "done": true
- },
- {
-  "key": "sg:ateez|ateez",
-  "done": true
- },
- {
-  "key": "sg:wooyoung|ateez",
-  "done": true
- },
- {
-  "key": "sg:choisan|ateez",
-  "done": true
- },
- {
-  "key": "sg:리은|ateez",
-  "done": true
- },
- {
-  "key": "sg:임이진|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:홍정|ateez",
-  "done": true
- },
- {
-  "key": "sg:송민기|ateez",
-  "done": true
- },
- {
-  "key": "sg:wangyichun|ateez",
-  "done": true
- },
- {
-  "key": "sg:추이산|ateez",
-  "done": true
- },
- {
-  "key": "sg:lukkaew|ateez",
-  "done": true
- },
- {
-  "key": "sg:최산|에이티즈",
-  "done": true
- },
- {
-  "key": "sg:i|redvelvet",
-  "done": true
- },
- {
-  "key": "sg:피치|redvelvet",
-  "done": true
- },
- {
-  "key": "sg:peeradakongthanayanmatee|redvelvet",
-  "done": true
- },
- {
-  "key": "sg:xc|redvelvet",
-  "done": true
- },
- {
-  "key": "sg:achiraya|redvelvet",
-  "done": true
- },
- {
-  "key": "sg:김성규|인피니트",
-  "done": true
- },
- {
-  "key": "sg:yk524|infinite",
-  "done": true
- },
- {
-  "key": "sg:김영수|infinite",
-  "done": true
- },
- {
-  "key": "sg:씨씨|infinite",
-  "done": true
- },
- {
-  "key": "sg:poman|인피니트",
-  "done": true
- },
- {
-  "key": "sg:김명수|인피니트",
-  "done": true
- },
- {
-  "key": "sg:wan|infinite",
-  "done": true
- },
- {
-  "key": "sg:김명수|infinite",
-  "done": true
- },
- {
-  "key": "sg:고강훈|dragonpony",
-  "done": true
- },
- {
-  "key": "sg:정진영|배우",
-  "done": true
- },
- {
-  "key": "sg:thitapha|배우",
-  "done": true
- },
- {
-  "key": "sg:차우민|배우",
-  "done": true
- },
- {
-  "key": "sg:변우석|배우",
-  "done": true
- },
- {
-  "key": "sg:박보검|배우",
-  "done": true
- },
- {
-  "key": "sg:안효섭|배우",
-  "done": true
- },
- {
-  "key": "sg:이준영|배우",
-  "done": true
- },
- {
-  "key": "sg:페드로파스칼|배우",
-  "done": true
- },
- {
-  "key": "sg:금동현|배우",
-  "done": true
- },
- {
-  "key": "sg:pityawee|enhypen",
-  "done": true
- },
- {
-  "key": "sg:kiku|enhypen",
-  "done": true
- },
- {
-  "key": "sg:박종성|enhypen",
-  "done": true
- },
- {
-  "key": "sg:박성훈|엔하이픈",
-  "done": true
- },
- {
-  "key": "sg:jungwon|enhypen",
-  "done": true
- },
- {
-  "key": "sg:pannapatpattamatin|enhypen",
-  "done": true
- },
- {
-  "key": "sg:sunghoon|enhypen",
-  "done": true
- },
- {
-  "key": "sg:張文嘉|enhypen",
-  "done": true
- },
- {
-  "key": "sg:aliz|enhypen",
-  "done": true
- },
- {
-  "key": "sg:디디|enhypen",
-  "done": true
- },
- {
-  "key": "sg:심재윤|enhypen",
-  "done": true
- },
- {
-  "key": "sg:pinto|enhypen",
-  "done": true
- },
- {
-  "key": "sg:메이플|엔하이픈",
-  "done": true
- },
- {
-  "key": "sg:niki|enhypen",
-  "done": true
- },
- {
-  "key": "sg:彭倩|enhypen",
-  "done": true
- },
- {
-  "key": "sg:종성|enhypen",
-  "done": true
- },
- {
-  "key": "sg:pang|enhypen",
-  "done": true
- },
- {
-  "key": "sg:hybe|enhypen",
-  "done": true
- },
- {
-  "key": "sg:哈哈|enhypen",
-  "done": true
- },
- {
-  "key": "sg:김선우|enhypen",
-  "done": true
- },
- {
-  "key": "sg:jay|enhypen",
-  "done": true
- },
- {
-  "key": "sg:정윤|enhypen",
-  "done": true
- },
- {
-  "key": "sg:심재륜|enhypen",
-  "done": true
- },
- {
-  "key": "sg:이희승|enhypen",
-  "done": true
- },
- {
-  "key": "sg:박성훈|enhypen",
-  "done": true
- },
- {
-  "key": "sg:양정원|엔하이픈",
-  "done": true
- },
- {
-  "key": "sg:sooyeon|enhypen",
-  "done": true
- },
- {
-  "key": "sg:grammy|라이즈",
-  "done": true
- },
- {
-  "key": "sg:수티다|라이즈",
-  "done": true
- },
- {
-  "key": "sg:jane|riize",
-  "done": true
- },
- {
-  "key": "sg:songeunseok|riize",
-  "done": true
- },
- {
-  "key": "sg:bambino|riize",
-  "done": true
- },
- {
-  "key": "sg:李灿荣|riize",
-  "done": true
- },
- {
-  "key": "sg:mink|riize",
-  "done": true
- },
- {
-  "key": "sg:mai|riize",
-  "done": true
- },
- {
-  "key": "sg:리|라이즈",
-  "done": true
- },
- {
-  "key": "sg:sungchan|riize",
-  "done": true
- },
- {
-  "key": "sg:라이즈|riize",
-  "done": true
- },
- {
-  "key": "sg:wonbin|riize",
-  "done": true
- },
- {
-  "key": "sg:주은|riize",
-  "done": true
- },
- {
-  "key": "sg:seungchan|riize",
-  "done": true
- },
- {
-  "key": "sg:송은석|riize",
-  "done": true
- },
- {
-  "key": "sg:박원빈|riize",
-  "done": true
- },
- {
-  "key": "sg:소타로|라이즈",
-  "done": true
- },
- {
-  "key": "sg:shotaro|riize",
-  "done": true
- },
- {
-  "key": "sg:朴元彬|riize",
-  "done": true
- },
- {
-  "key": "sg:an|riize",
-  "done": true
- },
- {
-  "key": "sg:麥家瑜|riize",
-  "done": true
- },
- {
-  "key": "sg:해솔|riize",
-  "done": true
- },
- {
-  "key": "sg:卷卷|riize",
-  "done": true
- },
- {
-  "key": "sg:heyingxian|riize",
-  "done": true
- },
- {
-  "key": "sg:yx|riize",
-  "done": true
- },
- {
-  "key": "sg:pika|riize",
-  "done": true
- },
- {
-  "key": "sg:송은석|라이즈",
-  "done": true
- },
- {
-  "key": "sg:yan|riize",
-  "done": true
- },
- {
-  "key": "sg:정성찬|riize",
-  "done": true
- },
- {
-  "key": "sg:黄|riize",
-  "done": true
- },
- {
-  "key": "sg:林琬婷|riize",
-  "done": true
- },
- {
-  "key": "sg:mile|riize",
-  "done": true
- },
- {
-  "key": "sg:mew|riize",
-  "done": true
- },
- {
-  "key": "sg:莫丽霞|riize",
-  "done": true
- },
- {
-  "key": "sg:보|seventeen",
-  "done": true
- },
- {
-  "key": "sg:woozi|seventeen",
-  "done": true
- },
- {
-  "key": "sg:ch|seventeen",
-  "done": true
- },
- {
-  "key": "sg:윤정한|seventeen",
-  "done": true
- },
- {
-  "key": "sg:dino|seventeen",
-  "done": true
- },
- {
-  "key": "sg:jeonghan|seventeen",
-  "done": true
- },
- {
-  "key": "sg:보너스|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:춘춘이|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:李浩妤|seventeen",
-  "done": true
- },
- {
-  "key": "sg:pp|seventeen",
-  "done": true
- },
- {
-  "key": "sg:서모나|seventeen",
-  "done": true
- },
- {
-  "key": "sg:권순영|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:haha|seventeen",
-  "done": true
- },
- {
-  "key": "sg:李予伶|seventeen",
-  "done": true
- },
- {
-  "key": "sg:miffy|seventeen",
-  "done": true
- },
- {
-  "key": "sg:yu|seventeen",
-  "done": true
- },
- {
-  "key": "sg:김민규|seventeen",
-  "done": true
- },
- {
-  "key": "sg:손립선|seventeen",
-  "done": true
- },
- {
-  "key": "sg:ㅅㅅ|seventeen",
-  "done": true
- },
- {
-  "key": "sg:헤라|seventeen",
-  "done": true
- },
- {
-  "key": "sg:퀸니|seventeen",
-  "done": true
- },
- {
-  "key": "sg:jun|seventeen",
-  "done": true
- },
- {
-  "key": "sg:joshua|seventeen",
-  "done": true
- },
- {
-  "key": "sg:seventeen|seventeen",
-  "done": true
- },
- {
-  "key": "sg:장연|seventeen",
-  "done": true
- },
- {
-  "key": "sg:무이|seventeen",
-  "done": true
- },
- {
-  "key": "sg:尹淨漢|seventeen",
-  "done": true
- },
- {
-  "key": "sg:鄭亦彤|seventeen",
-  "done": true
- },
- {
-  "key": "sg:전원우|seventeen",
-  "done": true
- },
- {
-  "key": "sg:羅婉瑜|seventeen",
-  "done": true
- },
- {
-  "key": "sg:잔한|seventeen",
-  "done": true
- },
- {
-  "key": "sg:최승철|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:夫胜宽|seventeen",
-  "done": true
- },
- {
-  "key": "sg:서명호|seventeen",
-  "done": true
- },
- {
-  "key": "sg:hoshi|seventeen",
-  "done": true
- },
- {
-  "key": "sg:earn|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:bandan|seventeen",
-  "done": true
- },
- {
-  "key": "sg:wonwoo|seventeen",
-  "done": true
- },
- {
-  "key": "sg:최승철|seventeen",
-  "done": true
- },
- {
-  "key": "sg:메이|seventeen",
-  "done": true
- },
- {
-  "key": "sg:尹净汉|seventeen",
-  "done": true
- },
- {
-  "key": "sg:zhugudanqing|seventeen",
-  "done": true
- },
- {
-  "key": "sg:홍지수|seventeen",
-  "done": true
- },
- {
-  "key": "sg:네임|seventeen",
-  "done": true
- },
- {
-  "key": "sg:이찬|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:s.coups|seventeen",
-  "done": true
- },
- {
-  "key": "sg:the8|seventeen",
-  "done": true
- },
- {
-  "key": "sg:pledis|seventeen",
-  "done": true
- },
- {
-  "key": "sg:우시|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:new|seventeen",
-  "done": true
- },
- {
-  "key": "sg:u|seventeen",
-  "done": true
- },
- {
-  "key": "sg:王钰涓|seventeen",
-  "done": true
- },
- {
-  "key": "sg:빔|세븐틴",
-  "done": true
- },
- {
-  "key": "sg:이지훈|seventeen",
-  "done": true
- },
- {
-  "key": "sg:李碩珉|seventeen",
-  "done": true
- },
- {
-  "key": "sg:김유겸|got7",
-  "done": true
- },
- {
-  "key": "sg:bambam|got7",
-  "done": true
- },
- {
-  "key": "sg:youngjae|got7",
-  "done": true
- },
- {
-  "key": "sg:바나나|tws",
-  "done": true
- },
- {
-  "key": "sg:김도훈|투어스",
-  "done": true
- },
- {
-  "key": "sg:hybe|tws",
-  "done": true
- },
- {
-  "key": "sg:최영재|tws",
-  "done": true
- },
- {
-  "key": "sg:민서|투어스",
-  "done": true
- },
- {
-  "key": "sg:储蓥|tws",
-  "done": true
- },
- {
-  "key": "sg:한지훈|tws",
-  "done": true
- },
- {
-  "key": "sg:김도훈|tws",
-  "done": true
- },
- {
-  "key": "sg:강도훈|tws",
-  "done": true
- },
- {
-  "key": "sg:申惟|tws",
-  "done": true
- },
- {
-  "key": "sg:한지훈|투어스",
-  "done": true
- },
- {
-  "key": "sg:hanjin|tws",
-  "done": true
- },
- {
-  "key": "sg:이경민|투어스",
-  "done": true
- },
- {
-  "key": "sg:uu|tws",
-  "done": true
- },
- {
-  "key": "sg:崔英宰|tws",
-  "done": true
- },
- {
-  "key": "sg:林|tws",
-  "done": true
- },
- {
-  "key": "sg:shinyu|tws",
-  "done": true
- },
- {
-  "key": "sg:flmoonstar|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:solar,moonbyul,wheein,hwasa|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:솔라、문별、휘인、화사|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:moonbyul|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:문별이|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:solar|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:hwasa|mamamoo",
-  "done": true
- },
- {
-  "key": "sg:babyblue|bts",
-  "done": true
- },
- {
-  "key": "sg:박지민|방탄소년단",
-  "done": true
- },
- {
-  "key": "sg:김석진|bts",
-  "done": true
- },
- {
-  "key": "sg:bts|bts",
-  "done": true
- },
- {
-  "key": "sg:金硕珍|bts",
-  "done": true
- },
- {
-  "key": "sg:郭諼|bts",
-  "done": true
- },
- {
-  "key": "sg:金泰亨|bts",
-  "done": true
- },
- {
-  "key": "sg:이혜연|방탄소년단",
-  "done": true
- },
- {
-  "key": "sg:laissuni|bts",
-  "done": true
- },
- {
-  "key": "sg:lillian|bts",
-  "done": true
- },
- {
-  "key": "sg:yth|bts",
-  "done": true
- },
- {
-  "key": "sg:zz|bts",
-  "done": true
- },
- {
-  "key": "sg:진우함|방탄소년단",
-  "done": true
- },
- {
-  "key": "sg:jin|bts",
-  "done": true
- },
- {
-  "key": "sg:高歌|bts",
-  "done": true
- },
- {
-  "key": "sg:palmy|bts",
-  "done": true
- },
- {
-  "key": "sg:jk|bts",
-  "done": true
- },
- {
-  "key": "sg:jungkook|bts",
-  "done": true
- },
- {
-  "key": "sg:闵玧其|bts",
-  "done": true
- },
- {
-  "key": "sg:하투하전원|하츠투하츠",
-  "done": true
- },
- {
-  "key": "sg:이수현|하츠투하츠",
-  "done": true
- },
- {
-  "key": "sg:ㅇ|하츠투하츠",
-  "done": true
- },
- {
-  "key": "sg:왕루이|hearts2hearts",
-  "done": true
- },
- {
-  "key": "sg:chenyanxi|hearts2hearts",
-  "done": true
- },
- {
-  "key": "sg:왕여의|하츠투하츠",
-  "done": true
- },
- {
-  "key": "sg:harua|&team",
-  "done": true
- },
- {
-  "key": "sg:은나|&team",
-  "done": true
- },
- {
-  "key": "sg:키이|&team",
-  "done": true
- },
- {
-  "key": "sg:yuma|&team",
-  "done": true
- },
- {
-  "key": "sg:박성진|데이식스",
-  "done": true
- },
- {
-  "key": "sg:reena|day6",
-  "done": true
- },
- {
-  "key": "sg:youngk|day6",
-  "done": true
- },
- {
-  "key": "sg:iris|day6",
-  "done": true
- },
- {
-  "key": "sg:dongsine|day6",
-  "done": true
- },
- {
-  "key": "sg:예미|데이식스",
-  "done": true
- },
- {
-  "key": "sg:하예은|데이식스",
-  "done": true
- },
- {
-  "key": "sg:박성진|day6",
-  "done": true
- },
- {
-  "key": "sg:김원필|데이식스",
-  "done": true
- },
- {
-  "key": "sg:황정의|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:张艳阳|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:김준서|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:이현서|알파드라이브원",
-  "done": true
- },
- {
-  "key": "sg:이리오|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:bbb|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:xinlong|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:siwon|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:rachel|ald1",
-  "done": true
- },
- {
-  "key": "sg:leo|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:aa|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:김준서|알파드라이브원",
-  "done": true
- },
- {
-  "key": "sg:허씬롱|알파드라이브원",
-  "done": true
- },
- {
-  "key": "sg:shermingchow|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:小嘟|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:이상워ㆍ|알파드라이브원",
-  "done": true
- },
- {
-  "key": "sg:luoyujia|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:李相沅|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:hx|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:조우안신|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:金虔佑|ald1",
-  "done": true
- },
- {
-  "key": "sg:정상현|알파드라이브원",
-  "done": true
- },
- {
-  "key": "sg:周安信|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:주안신|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:junseo|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:이령|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:싱원|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:李相元|alphadriveone",
-  "done": true
- },
- {
-  "key": "sg:周安信|ald1",
-  "done": true
- },
- {
-  "key": "sg:skyy|superjunior",
-  "done": true
- },
- {
-  "key": "sg:ryeowook|superjunior",
-  "done": true
- },
- {
-  "key": "sg:yesung|superjunior",
-  "done": true
- },
- {
-  "key": "sg:이동해|superjunior",
-  "done": true
- },
- {
-  "key": "sg:tanwanqian|shinee",
-  "done": true
- },
- {
-  "key": "sg:이태민|shinee",
-  "done": true
- },
- {
-  "key": "sg:haneul|kissoflife",
-  "done": true
- },
- {
-  "key": "sg:lia|zerobaseone",
-  "done": true
- },
- {
-  "key": "sg:金奎彬|zerobaseone",
-  "done": true
- },
- {
-  "key": "sg:팡|txt",
-  "done": true
- },
- {
-  "key": "sg:최수빈|tomorrowxtogether",
-  "done": true
- },
- {
-  "key": "sg:yu|txt",
-  "done": true
- },
- {
-  "key": "sg:姜太显|txt",
-  "done": true
- },
- {
-  "key": "sg:연연|tomorrowxtogether",
-  "done": true
- },
- {
-  "key": "sg:林恩佑|tomorrowxtogether",
-  "done": true
- },
- {
-  "key": "sg:soobin|txt",
-  "done": true
- },
- {
-  "key": "sg:txt|txt",
-  "done": true
- },
- {
-  "key": "sg:저우이루|txt",
-  "done": true
- },
- {
-  "key": "sg:최범규|tomorrowxtogether",
-  "done": true
- },
- {
-  "key": "sg:beomgyu|txt",
-  "done": true
- },
- {
-  "key": "sg:최연준|txt",
-  "done": true
- },
- {
-  "key": "sg:최수빈|txt",
-  "done": true
- },
- {
-  "key": "sg:리아문|tomorrowxtogether",
-  "done": true
- },
- {
-  "key": "sg:崔秀彬|txt",
-  "done": true
- },
- {
-  "key": "sg:bzrall|txt",
-  "done": true
- },
- {
-  "key": "sg:hybe|txt",
-  "done": true
- },
- {
-  "key": "sg:karina|aespa",
-  "done": true
- },
- {
-  "key": "sg:ningning|aespa",
-  "done": true
- },
- {
-  "key": "sg:winter|aespa",
-  "done": true
- },
- {
-  "key": "sg:김민정|aespa",
-  "done": true
- },
- {
-  "key": "sg:유나|tempest",
-  "done": true
- },
- {
-  "key": "sg:rora|babymonster",
-  "done": true
- },
- {
-  "key": "sg:supansa|babymonster",
-  "done": true
- },
- {
-  "key": "sg:김선우|theboyz",
-  "done": true
- },
- {
-  "key": "sg:이재현|theboyz",
-  "done": true
- },
- {
-  "key": "sg:조이|theboyz",
-  "done": true
- },
- {
-  "key": "sg:eric|theboyz",
-  "done": true
- },
- {
-  "key": "sg:핸신영|theboyz",
-  "done": true
- },
- {
-  "key": "sg:이주연|theboyz",
-  "done": true
- },
- {
-  "key": "sg:쉬멍한|theboyz",
-  "done": true
- },
- {
-  "key": "sg:马彤昕|theboyz",
-  "done": true
- },
- {
-  "key": "sg:李柱延|theboyz",
-  "done": true
- },
- {
-  "key": "sg:송우미|theboyz",
-  "done": true
- },
- {
-  "key": "sg:朴晳浚|82major",
-  "done": true
- },
- {
-  "key": "sg:박석준|82major",
-  "done": true
- },
- {
-  "key": "sg:김도균|82major",
-  "done": true
- },
- {
-  "key": "sg:i.m|monstax",
-  "done": true
- },
- {
-  "key": "sg:im|monstax",
-  "done": true
- },
- {
-  "key": "sg:임창균|monstax",
-  "done": true
- },
- {
-  "key": "sg:duchmilk|monstax",
-  "done": true
- },
- {
-  "key": "sg:유기현|monstax",
-  "done": true
- },
- {
-  "key": "sg:wyn|nctwish",
-  "done": true
- },
- {
-  "key": "sg:유유|nctwish",
-  "done": true
- },
- {
-  "key": "sg:银河|nctwish",
-  "done": true
- },
- {
-  "key": "sg:안시운|nctwish",
-  "done": true
- },
- {
-  "key": "sg:吳是溫|nctwish",
-  "done": true
- },
- {
-  "key": "sg:유우시/리쿠|nctwish",
-  "done": true
- },
- {
-  "key": "sg:리구|nctwish",
-  "done": true
- },
- {
-  "key": "sg:aria|nctwish",
-  "done": true
- },
- {
-  "key": "sg:유의정|nctwish",
-  "done": true
- },
- {
-  "key": "sg:소빈|nctwish",
-  "done": true
- },
- {
-  "key": "sg:h|nctwish",
-  "done": true
- },
- {
-  "key": "sg:郝梦媛|nctwish",
-  "done": true
- },
- {
-  "key": "sg:tritti|nctwish",
-  "done": true
- },
- {
-  "key": "sg:유이시|nctwish",
-  "done": true
- },
- {
-  "key": "sg:宋奕爽|nctwish",
-  "done": true
- },
- {
-  "key": "sg:soeya|nctwish",
-  "done": true
- },
- {
-  "key": "sg:애리|nctwish",
-  "done": true
- },
- {
-  "key": "sg:jaehee|nctwish",
-  "done": true
- },
- {
-  "key": "sg:q|nctwish",
-  "done": true
- },
- {
-  "key": "sg:김재희|nctwish",
-  "done": true
- },
- {
-  "key": "sg:후지나가사쿠야|nctwish",
-  "done": true
- },
- {
-  "key": "sg:주산니|nctwish",
-  "done": true
- },
- {
-  "key": "sg:김대영|nctwish",
-  "done": true
- },
- {
-  "key": "sg:吴是温|nctwish",
-  "done": true
- },
- {
-  "key": "sg:coco|nctwish",
-  "done": true
- },
- {
-  "key": "sg:유우시….|nctwish",
-  "done": true
- },
- {
-  "key": "sg:炫|nctwish",
-  "done": true
- },
- {
-  "key": "sg:조서인|nctwish",
-  "done": true
- },
- {
-  "key": "sg:라이|nctwish",
-  "done": true
- },
- {
-  "key": "sg:yusho|nctwish",
-  "done": true
- },
- {
-  "key": "sg:pepper|nctwish",
-  "done": true
- },
- {
-  "key": "sg:ริคุ|nctwish",
-  "done": true
- },
- {
-  "key": "sg:마에다리쿠|nctwish",
-  "done": true
- },
- {
-  "key": "sg:seji|nctwish",
-  "done": true
- },
- {
-  "key": "sg:이름|nctwish",
-  "done": true
- },
- {
-  "key": "sg:张瑞尔|nctwish",
-  "done": true
- },
- {
-  "key": "sg:yiyi|and2ble",
-  "done": true
- },
- {
-  "key": "sg:유승언|and2ble",
-  "done": true
- },
- {
-  "key": "sg:hanyujin|and2ble",
-  "done": true
- },
- {
-  "key": "sg:韩维辰|and2ble",
-  "done": true
- },
- {
-  "key": "sg:韓維辰|and2ble",
-  "done": true
- },
- {
-  "key": "sg:郭子涵|ive",
-  "done": true
- },
- {
-  "key": "sg:엄성현|cortis",
-  "done": true
- },
- {
-  "key": "sg:s|cortis",
-  "done": true
- },
- {
-  "key": "sg:seonghyeon|cortis",
-  "done": true
- },
- {
-  "key": "sg:keonho|cortis",
-  "done": true
- },
- {
-  "key": "sg:李欣然|cortis",
-  "done": true
- },
- {
-  "key": "sg:엄성현|코르티스",
-  "done": true
- },
- {
-  "key": "sg:martin|cortis",
-  "done": true
- },
- {
-  "key": "sg:김주훈|cortis",
-  "done": true
- },
- {
-  "key": "sg:严成玹|cortis",
-  "done": true
- },
- {
-  "key": "sg:김주훈|코르티스",
-  "done": true
- },
- {
-  "key": "sg:안건호|cortis",
-  "done": true
- },
- {
-  "key": "sg:james|cortis",
-  "done": true
- },
- {
-  "key": "sg:ara|cortis",
-  "done": true
- },
- {
-  "key": "sg:안건호|코르티스",
-  "done": true
- },
- {
-  "key": "sg:juhoon|cortis",
-  "done": true
- },
- {
-  "key": "sg:ainur|cortis",
-  "done": true
- },
- {
-  "key": "sg:джухун|cortis",
-  "done": true
- },
- {
-  "key": "sg:ymwkk|cortis",
-  "done": true
- },
- {
-  "key": "sg:미라|cortis",
-  "done": true
- },
- {
-  "key": "sg:keny|코르티스",
-  "done": true
- },
- {
-  "key": "sg:yoonsanha|astro",
-  "done": true
- },
- {
-  "key": "sg:윤산하|astro",
-  "done": true
- },
- {
-  "key": "sg:rosé|blackpink",
-  "done": true
- },
- {
-  "key": "sg:yukjji|blackpink",
-  "done": true
- },
- {
-  "key": "sg:제니|blackpink",
-  "done": true
- },
- {
-  "key": "sg:재이|newjeans",
-  "done": true
- },
- {
-  "key": "sg:김민지|newjeans",
-  "done": true
- },
- {
-  "key": "sg:minji|newjeans",
-  "done": true
- },
- {
-  "key": "sg:wenny|itzy",
-  "done": true
- },
- {
-  "key": "sg:나캠든|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:카이렐|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:최지호|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:마카야|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:김승모|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:브라이언|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:윤시윤|ampers&one",
-  "done": true
- },
- {
-  "key": "sg:p1harmony|p1harmony",
-  "done": true
- },
- {
-  "key": "sg:jongseob|p1harmony",
-  "done": true
- },
- {
-  "key": "sg:유요린|p1harmony",
-  "done": true
- },
- {
-  "key": "sg:지유|kiiikiii",
-  "done": true
- },
- {
-  "key": "sg:kya|kiiikiii",
-  "done": true
- },
- {
-  "key": "sg:키야|kiiikiii",
-  "done": true
- },
- {
-  "key": "sg:수이|kiiikiii",
-  "done": true
- },
- {
-  "key": "sg:김정수|xdinaryheroes",
-  "done": true
- },
- {
-  "key": "sg:jooyen|xdinaryheroes",
-  "done": true
- },
- {
-  "key": "sg:shan|xdinaryheroes",
-  "done": true
- },
- {
-  "key": "sg:이서호|oneus",
-  "done": true
- },
- {
-  "key": "sg:娴娴|cravity",
-  "done": true
- },
- {
-  "key": "sg:kimtaeyoung|cravity",
-  "done": true
- },
- {
-  "key": "sg:야오이쓰|cravity",
-  "done": true
- },
- {
-  "key": "sg:박새님|cravity",
-  "done": true
- },
- {
-  "key": "sg:all|closeyoureyes",
-  "done": true
- },
- {
-  "key": "sg:sakuradakenshin|closeyoureyes",
-  "done": true
- },
- {
-  "key": "sg:999|nmixx",
-  "done": true
- },
- {
-  "key": "sg:hye|triples",
-  "done": true
- },
- {
-  "key": "sg:shermaine|triples",
-  "done": true
- },
- {
-  "key": "sg:sphynx|triples",
-  "done": true
- },
- {
-  "key": "sg:biwa|triples",
-  "done": true
- },
- {
-  "key": "sg:seoyeon|triples",
-  "done": true
- },
- {
-  "key": "sg:neisj|triples",
-  "done": true
- },
- {
-  "key": "sg:yoonsoyeon|triples",
-  "done": true
- },
- {
-  "key": "sg:yeonji|triples",
-  "done": true
- },
- {
-  "key": "sg:rev'yoda|triples",
-  "done": true
- },
- {
-  "key": "sg:lamto|triples",
-  "done": true
- },
- {
-  "key": "sg:ozafa|triples",
-  "done": true
- },
- {
-  "key": "sg:momo|twice",
-  "done": true
- },
- {
-  "key": "sg:유즈|sf9",
-  "done": true
- },
- {
-  "key": "sg:wu|kickflip",
-  "done": true
- },
- {
-  "key": "sg:ais|kickflip",
-  "done": true
- },
- {
-  "key": "sg:minje|kickflip",
-  "done": true
- },
- {
-  "key": "sg:minami|rescene",
-  "done": true
- },
- {
-  "key": "sg:유강민|verivery",
-  "done": true
- },
- {
-  "key": "sg:정우진|lngshot",
-  "done": true
- },
- {
-  "key": "sg:woojin|lngshot",
-  "done": true
- },
- {
-  "key": "sg:louis|lngshot",
-  "done": true
- },
- {
-  "key": "sg:李胜利|bigbang",
-  "done": true
- },
- {
-  "key": "sg:정택운(레오)|vixx",
-  "done": true
- },
- {
-  "key": "sg:정택운|vixx",
-  "done": true
- },
- {
-  "key": "sg:呂宥潔|flareu",
-  "done": true
- },
- {
-  "key": "sg:崔立于|flareu",
-  "done": true
- },
- {
-  "key": "sg:이준호|2pm",
-  "done": true
- },
- {
-  "key": "sg:moka|illit",
-  "done": true
- },
- {
-  "key": "sg:tws|pledis",
-  "done": true
- },
- {
-  "key": "sg:seventeen,tws|pledis",
-  "done": true
- },
- {
-  "key": "sg:seventeen/tws|hybe",
-  "done": true
- },
- {
-  "key": "sg:과시한|yg",
-  "done": true
- },
- "er:마틴|cortis",
- "er:시은|xikers",
- "er:카야|kiiikiii",
- "er:벨|kissoflife",
- "er:정한|seventeen",
- "sg:이동현|kickflip(킥플립)",
- "sg:기욱|원위/onewe",
- "sg:지유|키키(kiiikiii)",
- "sg:봄|atheart",
- "sg:김민재|idid/starship",
- "sg:김재중|인코드",
- "sg:이주헌|몬스타엑스",
- "sg:보|아이브",
- "sg:뮤|이펙스",
- "sg:잭|re:revolution(혁명의심장)",
- "sg:신유나|있지",
- "sg:원이|리센느",
- "sg:박지성|nctdream",
- "sg:z|katseye",
- "sg:신예찬|루시/미스틱스토리",
- "sg:킥플립|jyp",
- "sg:미나미|리센느",
- "sg:이동화|킥플립/jyp",
- "sg:판|누에라",
- "sg:닝|boynextdoor(성호)",
- "sg:씽|소디엑",
- "sg:김도영|트레저",
- "sg:뿌|앤하이밴",
- "sg:엔플라잉(n.flying)|fnc",
- "sg:박세은|xikers/kq엔터테이먼트",
- "sg:리브|리센느",
- "sg:키야|키키",
- "sg:엄성현|코르티스/하이브",
- "sg:유우(yu)|nexz(넥스지)",
- "sg:유강민|베리베리",
- "sg:장주왕|킥플립(kickflip)/jyp",
- "sg:taeyeon,chorong,miyeon|i-dle,girlsgeneration,apink",
- "sg:튜넥스|ist",
- "sg:지우|하츠투하츠/sm",
- "sg:이계훈|킥플립/jyp",
- "sg:토모야(tomoya)|넥스지(nexz)",
- "sg:해찬|nctdream",
- "sg:이상원|알파드라이브원(alphadriveone)",
- "sg:옹성우|워너원/배우",
- "sg:조원상|루시/lucy",
- "sg:余|佑文",
- "sg:아|르노",
- "sg:나캠든|앰퍼샌드원",
- "sg:j|j",
- "sg:정재현|nct127",
- "sg:토모야|넥스지/jyp",
- "sg:박원빈|라이즈/sm",
- "sg:김재희|엔시티위시",
- "sg:함원진|크래비티",
- "sg:스텔라|하츠투하츠/sm",
- "sg:뮤|epex이펙스",
- "sg:윤|나우즈",
- "sg:제나|리센느",
- "sg:수이|kiiikiii(키키)/스타쉽",
- "sg:뮤|epex",
- "sg:지유|키키",
- "sg:메이|리센느",
- "sg:조계현|베리베리",
- "sg:원이미나미리브메이제나|리센느",
- "sg:브라이언|앰퍼샌드원",
- "sg:소건|nexz/jyp",
- "sg:엄성현|코르티스/cortis",
- "sg:김주훈|코르티스(빅히트)",
- "sg:이솔|키키",
- "sg:원이|리센느/더뮤즈엔터테인먼트",
- "sg:온|all(h)ours",
- "sg:렌|뉴이스트",
- "sg:쯔위|트와이스",
- "sg:진식|싸이커스/kq",
- "sg:수이|키키",
- "sg:민재|싸이커스/kq",
- "sg:이솔|kiiikiii",
- "sg:켄|빅스",
- "sg:슈화|아이들",
- "sg:세은|xikers",
- "sg:윙|비트펠라하우스",
- "sg:박누리|idntt",
- "sg:김도훈|idntt",
- "sg:이청명|idntt",
- "sg:김성준|아이덴티티(idntt)",
- "sg:최태인|idntt",
- "sg:이재영|idntt아이덴티티",
- "sg:김희주|idntt",
- "sg:이환희|idntt",
- "sg:곽기웅|idntt(아이덴티티)",
- "sg:이재영|idntt(아이덴티티)",
+ "sg:황민현|솔로",
+ "sg:황안리|idle",
  "sg:황은수|idntt",
- "sg:김성준|idntt",
- "sg:이재영|idntt",
- "sg:곽기웅|아이덴티티idntt",
- "sg:이환희|idntt(아이덴티티)",
- "sg:남지운|idntt",
- "sg:토와|idntt",
- "sg:곽기웅|idntt",
  "sg:황은수|idntt(아이덴티티)",
- "sg:김주호|idntt",
- "sg:김도훈|아이덴티티(idntt)",
- "sg:김희주|아이덴티티",
- "sg:이청명|아이덴티티",
- "sg:이재영|아이덴티티",
- "sg:남지운|아이덴티티",
- "sg:김도훈|아이덴티티",
- "sg:김성준|아이덴티티",
- "sg:정용화|cnblue",
- "sg:이정신|cnblue",
- "sg:정용화|씨엔블루",
- "sg:이정신|씨엔블루",
- "sg:이홍기|ftisland",
- "sg:이재진|ftisland",
- "sg:최민환|ftisland",
- "er:세이타|nexz",
- "sg:yushi|nctwish/sm",
- "sg:정은지|에이핑크",
- "sg:한지성|스트레이키즈",
- "sg:강밈ㄴ|베리베리/젤리피시",
- "sg:jo|andteam",
- "sg:taki|andteam",
- "sg:yuma|andteam",
- "sg:기타|exo2pmmonstax",
- "sg:smentertainment|allgroup",
- "sg:jules|seventeentriples",
- "sg:마크|마크",
- "sg:iz*one|iz*one",
- "sg:zen|riize​sm",
- "sg:tor|nctwish",
- "sg:jamie|mamamoo",
- "sg:권순영|seventeen",
- "sg:양경호|idntt",
- "sg:조은찬|idntt",
- "sg:문빈|아스트로",
- "sg:판저이|modyssey",
- "sg:리즈하오|modyssey",
- "sg:헝위|modyssey(모디세이)",
- "sg:쉬에수런|모디세이",
- "sg:쑨헝위|modyssey",
- "sg:쑨헝위|모디세이",
- "sg:이정현|evnne",
- "sg:박지후|evnne",
- "sg:문정현|이븐",
- "sg:이정현|이븐",
- "sg:전웅|ab6ix",
- "sg:전웅woong|에이비식스ab6ix",
- "sg:김동현|ab6ix",
- "sg:김동현|ab6ix(에이비식스)",
- "sg:김동현|에이비식스ab6ix"
+ "sg:황정의|alphadriveone",
+ "sg:황현진|스트레이키즈",
+ "sg:후이|펜타곤",
+ "sg:후지나가사쿠야|nctwish",
+ "sg:휴이|nexz"
 ]

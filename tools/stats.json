@@ -1,6 +1,8 @@
 {
-  "total": 734,
+  "total": 775,
   "addedRecent": [
+    { "date": "2026-08-02", "text": "노기자카46 추가", "count": 28 },
+    { "date": "2026-08-02", "text": "솔로·배우 추가", "count": 13 },
     { "date": "2026-08-01", "text": "MODYSSEY 추가", "count": 7 },
     { "date": "2026-08-01", "text": "EVNNE 추가", "count": 5 },
     { "date": "2026-08-01", "text": "AB6IX 추가", "count": 4 },
@@ -17,5 +19,5 @@
     { "date": "2026-07-30", "text": "LUCY 추가", "count": 4 },
     { "date": "2026-07-29", "text": "NEXZ 추가", "count": 7 }
   ],
-  "updatedAt": "2026-08-01"
+  "updatedAt": "2026-08-02"
 }
