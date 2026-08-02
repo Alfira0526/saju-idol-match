@@ -19858,9 +19858,9 @@
     "gender": "M",
     "dob": "20061204",
     "note": "",
-    "count": 4,
+    "count": 5,
     "firstAt": "2026-07-30T11:06:55.093Z",
-    "lastAt": "2026-07-30T11:06:55.093Z",
+    "lastAt": "2026-08-02T05:56:51.334Z",
     "status": "pending"
   },
   {
@@ -20732,6 +20732,32 @@
     "count": 1,
     "firstAt": "2026-08-02T02:49:50.528Z",
     "lastAt": "2026-08-02T02:49:50.528Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:에이든|epex",
+    "name": "에이든",
+    "group": "EPEX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050124",
+    "note": "이펙스 추가해주세요..ㅠㅠㅠㅠㅠ",
+    "count": 1,
+    "firstAt": "2026-08-02T05:54:36.167Z",
+    "lastAt": "2026-08-02T05:54:36.167Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:윤성|에잇턴",
+    "name": "윤성",
+    "group": "에잇턴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031113",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T05:58:40.778Z",
+    "lastAt": "2026-08-02T05:58:40.778Z",
     "status": "pending"
   }
 ]
