@@ -20759,5 +20759,18 @@
     "firstAt": "2026-08-02T05:58:40.778Z",
     "lastAt": "2026-08-02T05:58:40.778Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:dangman|g-dragon",
+    "name": "DANG MAN",
+    "group": "G-DRAGON",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T06:50:26.509Z",
+    "lastAt": "2026-08-02T06:50:26.509Z",
+    "status": "pending"
   }
 ]
