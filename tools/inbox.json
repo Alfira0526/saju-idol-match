@@ -20811,5 +20811,18 @@
     "firstAt": "2026-08-02T10:54:47.638Z",
     "lastAt": "2026-08-02T10:54:47.638Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:예나|yena",
+    "name": "예나",
+    "group": "YENA",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990929",
+    "note": "예나언니..부탁드려요..",
+    "count": 1,
+    "firstAt": "2026-08-02T11:16:42.012Z",
+    "lastAt": "2026-08-02T11:16:42.012Z",
+    "status": "pending"
   }
 ]
