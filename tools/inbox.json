@@ -11602,10 +11602,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20050427",
-    "note": "JYPE",
-    "count": 9,
+    "note": "JYP",
+    "count": 10,
     "firstAt": "2026-07-22T18:00:02.240Z",
-    "lastAt": "2026-07-29T11:35:39.000Z",
+    "lastAt": "2026-08-02T16:49:43.739Z",
     "status": "pending"
   },
   {
@@ -20875,6 +20875,32 @@
     "count": 1,
     "firstAt": "2026-08-02T16:16:51.154Z",
     "lastAt": "2026-08-02T16:16:51.154Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:판|nouera(누에라)",
+    "name": "판",
+    "group": "NouerA (누에라)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20071110",
+    "note": "누아 엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-08-02T16:47:48.912Z",
+    "lastAt": "2026-08-02T16:47:48.912Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:제프|epex",
+    "name": "제프",
+    "group": "EPEX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050421",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T16:48:16.260Z",
+    "lastAt": "2026-08-02T16:48:16.260Z",
     "status": "pending"
   }
 ]
