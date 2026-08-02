@@ -20707,5 +20707,18 @@
     "firstAt": "2026-08-01T23:29:22.028Z",
     "lastAt": "2026-08-01T23:29:22.028Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:백승|epex（아이돌그룹기타)",
+    "name": "백승",
+    "group": "EPEX（아이돌그룹 기타)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041005",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-01T23:53:19.171Z",
+    "lastAt": "2026-08-01T23:53:19.171Z",
+    "status": "pending"
   }
 ]
