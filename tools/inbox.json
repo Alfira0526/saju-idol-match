@@ -20837,5 +20837,18 @@
     "firstAt": "2026-08-02T11:58:05.857Z",
     "lastAt": "2026-08-02T11:58:05.857Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:myungjaehyun|boynextdoor",
+    "name": "MYUNG JAEHYUN",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031204",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T13:22:58.364Z",
+    "lastAt": "2026-08-02T13:22:58.364Z",
+    "status": "pending"
   }
 ]
