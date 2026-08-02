@@ -20785,5 +20785,18 @@
     "firstAt": "2026-08-02T09:13:55.895Z",
     "lastAt": "2026-08-02T09:13:55.895Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:존서|ald1",
+    "name": "존서",
+    "group": "ALD1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T09:28:38.263Z",
+    "lastAt": "2026-08-02T09:28:38.263Z",
+    "status": "pending"
   }
 ]
