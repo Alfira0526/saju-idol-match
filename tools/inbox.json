@@ -20798,5 +20798,18 @@
     "firstAt": "2026-08-02T09:28:38.263Z",
     "lastAt": "2026-08-02T09:28:38.263Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:eunseok|riize",
+    "name": "Eunseok",
+    "group": "riize",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010319",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T10:54:47.638Z",
+    "lastAt": "2026-08-02T10:54:47.638Z",
+    "status": "pending"
   }
 ]
