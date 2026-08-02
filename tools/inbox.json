@@ -20824,5 +20824,18 @@
     "firstAt": "2026-08-02T11:16:42.012Z",
     "lastAt": "2026-08-02T11:16:42.012Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지성|엔시티드림",
+    "name": "지성",
+    "group": "엔시티드림",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020205",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-02T11:58:05.857Z",
+    "lastAt": "2026-08-02T11:58:05.857Z",
+    "status": "pending"
   }
 ]
