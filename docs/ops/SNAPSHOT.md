@@ -22,6 +22,13 @@
 4. **i18n 정체(13%).** Task C 슬롯(목·일)에서만 진행 — 안정화 우선 방침 유지.
 
 ## 결정 로그 (decisions)
+- 2026-08-03 — **[오탐 수정] 헬스체크 flushCadence [주의] 거짓 경보.** 8/3 새벽 헬스체크가
+  medianGap 30·다수 cron-delay로 [주의] 발령 → 5인 페르소나 검토 결과 **거짓 경보 확정**:
+  실제 flush 배치가 거의 `1`(gap 커도 batch 작음=조용한 시간대), median 10분·10분 틱 규칙적
+  → **워커 Cron 정상**. 원인은 지표 분류기(gap만 보고 cron-delay 판정). 수정: `flushCadence`가
+  **gap>20m AND batch≥10(누적)** 일 때만 cron-delay로 보고, 경보는 **최근 48h 반복시**만
+  (과거 초기-세팅기 이벤트 제외). quiet/inflow-surge/cron-delay 구분 + `assessment` 필드 추가.
+  워커는 무수정. (cronDelay 이벤트는 전부 7/28~7/31, 최근 48h 0건 → 현재 정상.)
 - 2026-07-27 — 일일 태스크 선택을 `(day-of-year) mod 3` 무작위 → **요일 고정**(월·수·금 B /
   화·토 A / 목·일 C)으로 전환. (예측 가능성)
 - 2026-07-27 — 제보 인테이크를 워커 per-commit → **KV 큐 + 10분 Cron 배치**로 전환(리소스 절약).

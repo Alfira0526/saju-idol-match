@@ -97,9 +97,14 @@ try {
   i18nTotal = (plan.match(/\[[ x]\]/gi) || []).length;
 } catch {}
 
-// ---- P3(3A): flush 배치 급증 원인 구분 (git log 분석, 인프라 변경 0) ----
-// Cron은 10분 주기. 간격≫10분(예: >20분) → Cron 지연 누적 의심 / 간격≈10분인데
-// 배치 큼(>15) → 제보 유입 폭주. 재배포 없이 커밋 타임스탬프로 판별.
+// ---- P3(3A): flush 배치 급증/공백 원인 구분 (git log 분석, 인프라 변경 0) ----
+// Cron은 10분 주기. 빈 큐면 커밋 없음 → 커밋 간격은 '제보 유입 밀도'에 좌우된다.
+// 분류(배치 크기로 quiet vs 진짜 지연 구분):
+//   inflow-surge : gap≈10분인데 batch 큼(>15)            → 제보 유입 폭주(무해)
+//   cron-delay   : gap>20분 AND batch 누적(≥10)          → Cron이 틱을 놓쳐 밀림(점검 대상)
+//   quiet        : gap>20분 이나 batch 작음(<10)          → 조용한 시간대(제보 적음, 정상)
+// 즉 '큰 gap + 작은 batch'는 Cron 이상이 아니라 저트래픽. 반복되는 '큰 gap + 큰 batch'만 경보.
+const CRON_DELAY_BATCH = 10; // 이 이상 누적되면 틱 누락 의심
 function flushCadence(days = 7) {
   try {
     const out = execSync(`git log --since="${days} days ago" --pretty=format:%cI%x09%s`,
@@ -112,26 +117,44 @@ function flushCadence(days = 7) {
       if (m) flushes.push({ at: iso, n: +m[1], type: m[2] });
     }
     flushes.reverse(); // git log는 최신순 → 시간순으로
+    const classify = (gapMin, n) => {
+      if (gapMin <= 15 && n > 15) return 'inflow-surge';
+      if (gapMin > 20 && n >= CRON_DELAY_BATCH) return 'cron-delay';
+      if (gapMin > 20) return 'quiet';
+      return 'normal';
+    };
     const gaps = [];
     for (let i = 1; i < flushes.length; i++) {
       const dt = Math.round((new Date(flushes[i].at) - new Date(flushes[i - 1].at)) / 60000);
-      gaps.push({ at: flushes[i].at, gapMin: dt, n: flushes[i].n, type: flushes[i].type });
+      gaps.push({ at: flushes[i].at, gapMin: dt, n: flushes[i].n, likely: classify(dt, flushes[i].n) });
     }
     const batches = flushes.map(f => f.n);
     const sortedGaps = gaps.map(g => g.gapMin).sort((a, b) => a - b);
-    const surges = gaps
-      .filter(g => g.n > 15 || g.gapMin > 20)
-      .map(g => ({ at: g.at, batch: g.n, gapMin: g.gapMin,
-        likely: g.gapMin > 20 ? 'cron-delay' : (g.n > 15 ? 'inflow-surge' : 'watch') }))
-      .slice(-10);
+    const cronDelays = gaps.filter(g => g.likely === 'cron-delay');
+    const lastAt = flushes.length ? flushes[flushes.length - 1].at : null;
+    const nowMs = Date.now();
+    const sinceMin = lastAt ? Math.round((nowMs - new Date(lastAt)) / 60000) : null;
+    // 경보는 '최근 48h' 누적-지연 반복에만. 과거(초기 세팅기) 이벤트는 참고만.
+    const recentCutoff = nowMs - 48 * 3600 * 1000;
+    const recentCronDelays = cronDelays.filter(g => new Date(g.at).getTime() >= recentCutoff);
+    const concern = recentCronDelays.length >= 2;
     return {
       windowDays: days,
       flushCount: flushes.length,
       maxBatch: batches.length ? Math.max(...batches) : 0,
       avgBatch: batches.length ? Math.round((batches.reduce((a, b) => a + b, 0) / batches.length) * 10) / 10 : 0,
       medianGapMin: sortedGaps.length ? sortedGaps[Math.floor(sortedGaps.length / 2)] : null,
-      surges,
-      note: 'gap>20m→cron-delay 의심 / gap≈10m인데 batch>15→inflow-surge',
+      lastFlushAt: lastAt,
+      timeSinceLastFlushMin: sinceMin,
+      cronDelayEvents: cronDelays.length,            // 7일 전체(초기 세팅기 포함)
+      recentCronDelayEvents: recentCronDelays.length, // 최근 48h — 경보 기준
+      quietGaps: gaps.filter(g => g.likely === 'quiet').length,
+      inflowSurges: gaps.filter(g => g.likely === 'inflow-surge').length,
+      surges: cronDelays.concat(gaps.filter(g => g.likely === 'inflow-surge')).slice(-10),
+      assessment: concern
+        ? '[주의] 최근 48h 누적-지연 반복 — 워커 Cron flush 점검 권장'
+        : '정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)',
+      note: 'cron-delay=gap>20m AND batch≥10(누적). 경보는 최근 48h 반복시만. 큰 gap+작은 batch는 quiet(정상).',
     };
   } catch (e) { return { error: String((e && e.message) || e) }; }
 }

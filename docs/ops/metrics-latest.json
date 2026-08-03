@@ -1,13 +1,21 @@
 {
-  "generatedAt": "2026-07-30",
+  "generatedAt": "2026-08-03",
   "dataset": {
-    "totalIdols": 658,
-    "totalGroups": 112,
-    "statsTotal": 658,
+    "totalIdols": 775,
+    "totalGroups": 124,
+    "statsTotal": 775,
     "byCategory": {
       "K-idol": {
-        "count": 648,
+        "count": 733,
         "visible": true
+      },
+      "J-idol": {
+        "count": 30,
+        "visible": true
+      },
+      "Etc": {
+        "count": 5,
+        "visible": false
       },
       "US-actor": {
         "count": 4,
@@ -16,40 +24,56 @@
       "C-actor": {
         "count": 3,
         "visible": false
-      },
-      "J-idol": {
-        "count": 2,
-        "visible": false
-      },
-      "Etc": {
-        "count": 1,
-        "visible": false
       }
     },
     "byAgency": {
       "HYBE": 73,
       "YG": 40,
-      "기타": 381,
+      "기타": 466,
       "SM": 80,
       "JYP": 74,
       "미국 배우": 4,
       "중국 배우": 3,
-      "노기자카46": 2,
-      "배우": 1
+      "노기자카46": 30,
+      "배우": 5
     },
     "subAgency": {
-      "etcTotal": 381,
-      "assigned": 0,
-      "unassigned": 381,
-      "coveragePct": 0,
-      "byLabel": {},
-      "promotable": []
+      "etcTotal": 466,
+      "assigned": 238,
+      "unassigned": 228,
+      "coveragePct": 51,
+      "byLabel": {
+        "MODHAUS": 51,
+        "스타쉽엔터테인먼트": 32,
+        "FNC엔터테인먼트": 21,
+        "KQ엔터테인먼트": 18,
+        "울림엔터테인먼트": 18,
+        "웨이크원": 14,
+        "젤리피시엔터테인먼트": 12,
+        "스윙엔터테인먼트": 11,
+        "ONE HUNDRED": 10,
+        "큐브엔터테인먼트": 9,
+        "미스틱스토리": 7,
+        "드림캐쳐컴퍼니": 7,
+        "UNCORE": 7,
+        "하이업엔터테인먼트": 6,
+        "인피니트컴퍼니": 6,
+        "Fantagio": 5,
+        "브랜뉴뮤직": 4
+      },
+      "promotable": [
+        "KQ엔터테인먼트",
+        "스타쉽엔터테인먼트",
+        "울림엔터테인먼트",
+        "FNC엔터테인먼트",
+        "MODHAUS"
+      ]
     },
     "byGender": {
-      "M": 385,
-      "F": 273
+      "M": 460,
+      "F": 315
     },
-    "recentAddsListed": 43
+    "recentAddsListed": 124
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -57,129 +81,127 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 288,
-    "addPending": 1316,
+    "handled": 1247,
+    "addPending": 452,
     "addPendingGroups": {
-      "distinctGroups": 479,
-      "newGroups": 420,
-      "knownGroups": 59,
-      "alreadyPresentPersons": 18,
+      "distinctGroups": 318,
+      "newGroups": 311,
+      "knownGroups": 7,
+      "alreadyPresentPersons": 3,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
-    "errorPending": 1,
-    "oldestAddPending": "2026-07-22T17:28:06.044Z",
-    "oldestErrorPending": "2026-07-27T17:07:55.633Z",
+    "errorPending": 0,
+    "oldestAddPending": "2026-07-22T17:50:08.867Z",
+    "oldestErrorPending": null,
     "topAddPending": [
       {
-        "name": "최상엽",
-        "group": "루시",
-        "count": 10
-      },
-      {
-        "name": "엄성현",
-        "group": "CORTIS",
-        "count": 10
-      },
-      {
-        "name": "최태인",
-        "group": "idntt",
-        "count": 9
-      },
-      {
-        "name": "엄성현",
-        "group": "코르티스",
-        "count": 9
-      },
-      {
-        "name": "이청명",
-        "group": "idntt",
+        "name": "마노",
+        "group": "Vayonn",
         "count": 8
+      },
+      {
+        "name": "가원",
+        "group": "미야오",
+        "count": 6
+      },
+      {
+        "name": "아토",
+        "group": "네이즈",
+        "count": 6
+      },
+      {
+        "name": "고강훈",
+        "group": "드래곤포니",
+        "count": 5
+      },
+      {
+        "name": "유사랑",
+        "group": "izna",
+        "count": 5
       }
     ],
-    "topErrorPending": [
-      {
-        "name": "소희",
-        "group": "RIIZE",
-        "count": 1,
-        "fields": {
-          "생년월일": 1
-        }
-      }
-    ]
+    "topErrorPending": []
   },
   "i18n": {
-    "chunksDone": 2,
-    "chunksTotal": 15,
-    "percent": 13
+    "chunksDone": 15,
+    "chunksTotal": 17,
+    "percent": 88
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 240,
+    "flushCount": 309,
     "maxBatch": 270,
-    "avgBatch": 5.3,
+    "avgBatch": 3.9,
     "medianGapMin": 10,
+    "lastFlushAt": "2026-08-03T08:01:02+09:00",
+    "timeSinceLastFlushMin": 65,
+    "cronDelayEvents": 8,
+    "recentCronDelayEvents": 0,
+    "quietGaps": 78,
+    "inflowSurges": 6,
     "surges": [
       {
-        "at": "2026-07-30T03:10:44+09:00",
-        "batch": 1,
-        "gapMin": 30,
+        "at": "2026-07-28T19:50:50+09:00",
+        "gapMin": 120,
+        "n": 27,
         "likely": "cron-delay"
       },
       {
-        "at": "2026-07-30T06:00:45+09:00",
-        "batch": 1,
-        "gapMin": 100,
+        "at": "2026-07-29T20:30:50+09:00",
+        "gapMin": 350,
+        "n": 28,
         "likely": "cron-delay"
       },
       {
-        "at": "2026-07-30T07:10:44+09:00",
-        "batch": 1,
-        "gapMin": 60,
-        "likely": "cron-delay"
-      },
-      {
-        "at": "2026-07-30T08:10:45+09:00",
-        "batch": 1,
+        "at": "2026-07-29T21:20:51+09:00",
         "gapMin": 50,
+        "n": 35,
         "likely": "cron-delay"
       },
       {
-        "at": "2026-07-30T09:30:44+09:00",
-        "batch": 1,
-        "gapMin": 80,
+        "at": "2026-07-31T01:20:49+09:00",
+        "gapMin": 630,
+        "n": 27,
         "likely": "cron-delay"
       },
       {
-        "at": "2026-07-30T10:40:44+09:00",
-        "batch": 1,
-        "gapMin": 60,
-        "likely": "cron-delay"
+        "at": "2026-07-27T19:10:50+09:00",
+        "gapMin": 10,
+        "n": 31,
+        "likely": "inflow-surge"
       },
       {
-        "at": "2026-07-30T11:20:43+09:00",
-        "batch": 1,
-        "gapMin": 30,
-        "likely": "cron-delay"
+        "at": "2026-07-28T11:33:23+09:00",
+        "gapMin": 2,
+        "n": 16,
+        "likely": "inflow-surge"
       },
       {
-        "at": "2026-07-30T11:50:44+09:00",
-        "batch": 1,
-        "gapMin": 30,
-        "likely": "cron-delay"
+        "at": "2026-07-28T15:40:48+09:00",
+        "gapMin": 10,
+        "n": 22,
+        "likely": "inflow-surge"
       },
       {
-        "at": "2026-07-30T13:40:44+09:00",
-        "batch": 1,
-        "gapMin": 30,
-        "likely": "cron-delay"
+        "at": "2026-07-28T20:00:50+09:00",
+        "gapMin": 10,
+        "n": 27,
+        "likely": "inflow-surge"
       },
       {
-        "at": "2026-07-30T14:50:44+09:00",
-        "batch": 1,
-        "gapMin": 30,
-        "likely": "cron-delay"
+        "at": "2026-07-31T01:30:50+09:00",
+        "gapMin": 10,
+        "n": 28,
+        "likely": "inflow-surge"
+      },
+      {
+        "at": "2026-07-31T01:40:51+09:00",
+        "gapMin": 10,
+        "n": 30,
+        "likely": "inflow-surge"
       }
     ],
-    "note": "gap>20m→cron-delay 의심 / gap≈10m인데 batch>15→inflow-surge"
+    "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
+    "note": "cron-delay=gap>20m AND batch≥10(누적). 경보는 최근 48h 반복시만. 큰 gap+작은 batch는 quiet(정상)."
   }
 }
