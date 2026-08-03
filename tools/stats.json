@@ -1,23 +1,19 @@
 {
-  "total": 775,
+  "total": 810,
   "addedRecent": [
+    { "date": "2026-08-03", "text": "Block B 추가", "count": 7 },
+    { "date": "2026-08-03", "text": "NU'EST 추가", "count": 5 },
+    { "date": "2026-08-03", "text": "Teen Top 추가", "count": 6 },
+    { "date": "2026-08-03", "text": "Shinhwa 추가", "count": 6 },
+    { "date": "2026-08-03", "text": "EPEX 추가", "count": 8 },
+    { "date": "2026-08-03", "text": "idntt 신규 멤버 추가", "count": 3 },
     { "date": "2026-08-02", "text": "노기자카46 추가", "count": 28 },
     { "date": "2026-08-02", "text": "솔로·배우 추가", "count": 13 },
     { "date": "2026-08-01", "text": "MODYSSEY 추가", "count": 7 },
     { "date": "2026-08-01", "text": "EVNNE 추가", "count": 5 },
     { "date": "2026-08-01", "text": "AB6IX 추가", "count": 4 },
     { "date": "2026-08-01", "text": "idntt 신규 유닛 멤버 추가", "count": 2 },
-    { "date": "2026-08-01", "text": "ASTRO 문빈 추가", "count": 1 },
-    { "date": "2026-07-31", "text": "아이덴티티(idntt) 추가", "count": 15 },
-    { "date": "2026-07-31", "text": "CNBLUE 추가", "count": 3 },
-    { "date": "2026-07-31", "text": "FTISLAND 추가", "count": 3 },
-    { "date": "2026-07-30", "text": "키키 추가", "count": 5 },
-    { "date": "2026-07-30", "text": "앰퍼샌드원 추가", "count": 7 },
-    { "date": "2026-07-30", "text": "리센느 추가", "count": 5 },
-    { "date": "2026-07-30", "text": "싸이커스 추가", "count": 10 },
-    { "date": "2026-07-30", "text": "ONEWE 추가", "count": 5 },
-    { "date": "2026-07-30", "text": "LUCY 추가", "count": 4 },
-    { "date": "2026-07-29", "text": "NEXZ 추가", "count": 7 }
+    { "date": "2026-08-01", "text": "ASTRO 문빈 추가", "count": 1 }
   ],
-  "updatedAt": "2026-08-02"
+  "updatedAt": "2026-08-03"
 }
