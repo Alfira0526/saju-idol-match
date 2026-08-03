@@ -21019,5 +21019,18 @@
     "firstAt": "2026-08-03T10:55:41.636Z",
     "lastAt": "2026-08-03T10:55:41.636Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:shihui|idntt",
+    "name": "shihui",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050831",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T11:45:46.425Z",
+    "lastAt": "2026-08-03T11:45:46.425Z",
+    "status": "pending"
   }
 ]
