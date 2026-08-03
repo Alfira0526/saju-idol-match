@@ -8922,12 +8922,12 @@
     "name": "박한",
     "group": "AHOF",
     "cat": "K-idol",
-    "gender": "",
+    "gender": "M",
     "dob": "20030925",
-    "note": "",
-    "count": 1,
+    "note": "F&F",
+    "count": 2,
     "firstAt": "2026-07-25T08:09:06.661Z",
-    "lastAt": "2026-07-25T08:09:06.661Z",
+    "lastAt": "2026-08-03T08:44:58.177Z",
     "status": "pending"
   },
   {
@@ -20953,6 +20953,19 @@
     "count": 1,
     "firstAt": "2026-08-03T05:24:57.437Z",
     "lastAt": "2026-08-03T05:24:57.437Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김상준|idntt",
+    "name": "김상준",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060926",
+    "note": "active Naughty",
+    "count": 1,
+    "firstAt": "2026-08-03T08:41:08.902Z",
+    "lastAt": "2026-08-03T08:41:08.902Z",
     "status": "pending"
   }
 ]
