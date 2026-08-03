@@ -21032,5 +21032,44 @@
     "firstAt": "2026-08-03T11:45:46.425Z",
     "lastAt": "2026-08-03T11:45:46.425Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:임정빈|pow",
+    "name": "임정빈",
+    "group": "POW",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T11:53:18.424Z",
+    "lastAt": "2026-08-03T11:53:18.424Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:장주왕|킥플립",
+    "name": "장주왕",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060502",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T11:54:48.615Z",
+    "lastAt": "2026-08-03T11:54:48.615Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:kimdohun|idntt",
+    "name": "kimdohun",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20030303",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T11:57:07.214Z",
+    "lastAt": "2026-08-03T11:57:07.214Z",
+    "status": "pending"
   }
 ]
