@@ -7416,10 +7416,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20060121",
-    "note": "MORE VISION",
-    "count": 3,
+    "note": "more vision",
+    "count": 4,
     "firstAt": "2026-07-25T05:05:11.273Z",
-    "lastAt": "2026-07-28T03:05:11.582Z",
+    "lastAt": "2026-08-03T09:19:59.624Z",
     "status": "pending"
   },
   {
@@ -20966,6 +20966,19 @@
     "count": 1,
     "firstAt": "2026-08-03T08:41:08.902Z",
     "lastAt": "2026-08-03T08:41:08.902Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:j|idntt",
+    "name": "J",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T09:11:04.344Z",
+    "lastAt": "2026-08-03T09:11:04.344Z",
     "status": "pending"
   }
 ]
