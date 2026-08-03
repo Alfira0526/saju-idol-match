@@ -47,10 +47,10 @@
   재렌더. daymaster 라벨·오행 legend(한자)·shareHint(동적)은 P2로.)
 - [x] **P1-4 면책(disclaimer)** 전체 목록. (2026-07-30: 6개 항목 en, `<b>` 항목은 data-i18n-html.)
 - [x] **P1-5 제보 모달**: 제목·안내문·라벨·placeholder·카테고리/성별 옵션·버튼·완료 메시지. (2026-07-30 완료)
-- [~] **P1-6 오류 모달 + 최애 리포트/토스트**: 오류 모달(제목·필드 옵션·라벨·버튼·intro는
+- [x] **P1-6 오류 모달 + 최애 리포트/토스트**: 오류 모달(제목·필드 옵션·라벨·버튼·intro는
   openError에서 t()로 target 합성)·최애 리포트 shell(eyebrow/title/버튼) **en 완료**. 최애 리포트
-  본문(favLead/favReason/favFoot)·업데이트 토스트 본문은 JS 동적 생성이라 **P2로** 남김.
-- [ ] **P1-7 공유 캡션**: `lang==='en'`일 때 영어 훅+해시태그(예: #SajuMatch #KpopBias …)로 분기.
+  본문(favLead/favReason/favFoot)·업데이트 토스트 본문은 **P2로 이관해 완료**(하단 "최애 리포트
+  본문·업데이트 토스트" 항목 참고). (2026-08-03: 정리 — 남은 조각이 P2에서 완료된 것을 확인해 체크.)
 
 ## JA — 일본어 (우선순위 상향, 2026-07-30 정적 UI 완료)
 - [x] **JA 정적 UI**: 스위처에 `JA` 추가, `navigator.language` ja 자동감지, `buildHourSelect` ja

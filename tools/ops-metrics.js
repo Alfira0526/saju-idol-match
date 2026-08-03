@@ -90,11 +90,14 @@ const backlogGroups = {
 };
 
 // ---- i18n progress (checkbox tally in i18n-plan.md) ----
+// 줄 시작 "- [ ]/[x]/[~]" 리스트 항목만 집계(본문 설명 중 인용된 `[x]` 오탐 방지).
+// [~](부분완료)는 분모엔 포함하되 완료로는 세지 않는다.
 let i18nDone = 0, i18nTotal = 0;
 try {
   const plan = fs.readFileSync(T('i18n-plan.md'), 'utf8');
-  i18nDone = (plan.match(/\[x\]/gi) || []).length;
-  i18nTotal = (plan.match(/\[[ x]\]/gi) || []).length;
+  const items = plan.match(/^-\s*\[([ x~])\]/gim) || [];
+  i18nTotal = items.length;
+  i18nDone = items.filter(s => /\[x\]/i.test(s)).length;
 } catch {}
 
 // ---- P3(3A): flush 배치 급증/공백 원인 구분 (git log 분석, 인프라 변경 0) ----

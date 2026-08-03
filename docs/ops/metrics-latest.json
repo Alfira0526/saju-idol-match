@@ -82,10 +82,10 @@
   },
   "backlog": {
     "handled": 1247,
-    "addPending": 452,
+    "addPending": 454,
     "addPendingGroups": {
-      "distinctGroups": 318,
-      "newGroups": 311,
+      "distinctGroups": 319,
+      "newGroups": 312,
       "knownGroups": 7,
       "alreadyPresentPersons": 3,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
@@ -123,84 +123,23 @@
     "topErrorPending": []
   },
   "i18n": {
-    "chunksDone": 15,
-    "chunksTotal": 17,
-    "percent": 88
+    "chunksDone": 14,
+    "chunksTotal": 14,
+    "percent": 100
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 309,
-    "maxBatch": 270,
-    "avgBatch": 3.9,
-    "medianGapMin": 10,
-    "lastFlushAt": "2026-08-03T08:01:02+09:00",
-    "timeSinceLastFlushMin": 65,
-    "cronDelayEvents": 8,
+    "flushCount": 47,
+    "maxBatch": 3,
+    "avgBatch": 1.1,
+    "medianGapMin": 40,
+    "lastFlushAt": "2026-08-03T12:41:01+09:00",
+    "timeSinceLastFlushMin": 34,
+    "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 78,
-    "inflowSurges": 6,
-    "surges": [
-      {
-        "at": "2026-07-28T19:50:50+09:00",
-        "gapMin": 120,
-        "n": 27,
-        "likely": "cron-delay"
-      },
-      {
-        "at": "2026-07-29T20:30:50+09:00",
-        "gapMin": 350,
-        "n": 28,
-        "likely": "cron-delay"
-      },
-      {
-        "at": "2026-07-29T21:20:51+09:00",
-        "gapMin": 50,
-        "n": 35,
-        "likely": "cron-delay"
-      },
-      {
-        "at": "2026-07-31T01:20:49+09:00",
-        "gapMin": 630,
-        "n": 27,
-        "likely": "cron-delay"
-      },
-      {
-        "at": "2026-07-27T19:10:50+09:00",
-        "gapMin": 10,
-        "n": 31,
-        "likely": "inflow-surge"
-      },
-      {
-        "at": "2026-07-28T11:33:23+09:00",
-        "gapMin": 2,
-        "n": 16,
-        "likely": "inflow-surge"
-      },
-      {
-        "at": "2026-07-28T15:40:48+09:00",
-        "gapMin": 10,
-        "n": 22,
-        "likely": "inflow-surge"
-      },
-      {
-        "at": "2026-07-28T20:00:50+09:00",
-        "gapMin": 10,
-        "n": 27,
-        "likely": "inflow-surge"
-      },
-      {
-        "at": "2026-07-31T01:30:50+09:00",
-        "gapMin": 10,
-        "n": 28,
-        "likely": "inflow-surge"
-      },
-      {
-        "at": "2026-07-31T01:40:51+09:00",
-        "gapMin": 10,
-        "n": 30,
-        "likely": "inflow-surge"
-      }
-    ],
+    "quietGaps": 32,
+    "inflowSurges": 0,
+    "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
     "note": "cron-delay=gap>20m AND batch≥10(누적). 경보는 최근 48h 반복시만. 큰 gap+작은 batch는 quiet(정상)."
   }
