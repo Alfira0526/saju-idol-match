@@ -21071,5 +21071,18 @@
     "firstAt": "2026-08-03T11:57:07.214Z",
     "lastAt": "2026-08-03T11:57:07.214Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:은지원|젝스키스",
+    "name": "은지원",
+    "group": "젝스키스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19780608",
+    "note": "Yg",
+    "count": 1,
+    "firstAt": "2026-08-03T12:06:59.450Z",
+    "lastAt": "2026-08-03T12:06:59.450Z",
+    "status": "pending"
   }
 ]
