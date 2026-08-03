@@ -21084,5 +21084,18 @@
     "firstAt": "2026-08-03T12:06:59.450Z",
     "lastAt": "2026-08-03T12:06:59.450Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:代云燕|idntt",
+    "name": "代云燕",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20071103",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T13:13:20.684Z",
+    "lastAt": "2026-08-03T13:13:20.684Z",
+    "status": "pending"
   }
 ]
