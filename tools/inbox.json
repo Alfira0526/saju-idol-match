@@ -20915,5 +20915,18 @@
     "firstAt": "2026-08-03T00:34:42.112Z",
     "lastAt": "2026-08-03T00:34:42.112Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:양정원|엔아히픈",
+    "name": "양정원",
+    "group": "엔아히픈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020420",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T01:27:11.161Z",
+    "lastAt": "2026-08-03T01:27:11.161Z",
+    "status": "pending"
   }
 ]
