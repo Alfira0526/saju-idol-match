@@ -21006,5 +21006,18 @@
     "firstAt": "2026-08-03T10:04:27.663Z",
     "lastAt": "2026-08-03T10:04:27.663Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yuan|idntt",
+    "name": "Yuan",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20080101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T10:55:41.636Z",
+    "lastAt": "2026-08-03T10:55:41.636Z",
+    "status": "pending"
   }
 ]
