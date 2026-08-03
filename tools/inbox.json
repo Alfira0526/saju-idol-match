@@ -20980,5 +20980,31 @@
     "firstAt": "2026-08-03T09:11:04.344Z",
     "lastAt": "2026-08-03T09:11:04.344Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:에이든|splayit",
+    "name": "에이든",
+    "group": "Splayit",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090326",
+    "note": "Kakao Entertainment",
+    "count": 1,
+    "firstAt": "2026-08-03T10:01:25.609Z",
+    "lastAt": "2026-08-03T10:01:25.609Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이계훈|kickflip",
+    "name": "이계훈",
+    "group": "kickflip",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040916",
+    "note": "JYP",
+    "count": 1,
+    "firstAt": "2026-08-03T10:04:27.663Z",
+    "lastAt": "2026-08-03T10:04:27.663Z",
+    "status": "pending"
   }
 ]
