@@ -20928,5 +20928,18 @@
     "firstAt": "2026-08-03T01:27:11.161Z",
     "lastAt": "2026-08-03T01:27:11.161Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:규혁|idntt",
+    "name": "규혁",
+    "group": "idntt",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060203",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-03T04:20:33.797Z",
+    "lastAt": "2026-08-03T04:20:33.797Z",
+    "status": "pending"
   }
 ]
