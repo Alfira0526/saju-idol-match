@@ -679,6 +679,7 @@ const TR = {
   genderF: { ko: "여자 아이돌", en: "Female idols" },
   genderM: { ko: "남자 아이돌", en: "Male idols" },
   agencyAll: { ko: "전체", en: "All" },
+  agencyEtc: { ko: "기타", en: "Other" },
   moreOpen: { ko: "전체 순위 펼쳐보기", en: "Show full ranking" },
   moreOpenN: { ko: "전체 순위 펼쳐보기 (9~{n}위)", en: "Show full ranking (9–{n})" },
   moreClose: { ko: "접기", en: "Collapse" },
@@ -767,6 +768,7 @@ const TR_JA = {
   genderF: "女性アイドル",
   genderM: "男性アイドル",
   agencyAll: "すべて",
+  agencyEtc: "その他",
   moreOpen: "全順位を表示",
   moreOpenN: "全順位を表示（9〜{n}位）",
   moreClose: "閉じる",
@@ -853,6 +855,7 @@ const TR_ZH = {
   genderF: "女偶像",
   genderM: "男偶像",
   agencyAll: "全部",
+  agencyEtc: "其他",
   moreOpen: "展开完整排行榜",
   moreOpenN: "展开完整排行榜（第9~{n}名）",
   moreClose: "收起",
@@ -2399,7 +2402,8 @@ function renderAgencyButtons(){
   // K-idol은 5대 소속사 순서, 그 외 카테고리는 인원수 순
   const agencies = (cat==="K-idol") ? AGENCY_ORDER.filter(a=>counts[a]) : order.sort((x,y)=>counts[y]-counts[x]);
   const mk=(a,label,cnt)=>`<button class="agbtn${a===(window._saju.activeAgency||"")?' active':''}" data-a="${a}" onclick="selectAgency('${a.replace(/"/g,'&quot;')}')">${label}<span class="agn">${cnt}</span></button>`;
-  wrap.innerHTML = mk("",t('agencyAll')||"전체",inCat.length) + agencies.map(a=>mk(a,a,counts[a])).join("");
+  const agLabel = a => a==='기타' ? (t('agencyEtc')||'기타') : a;
+  wrap.innerHTML = mk("",t('agencyAll')||"전체",inCat.length) + agencies.map(a=>mk(a,agLabel(a),counts[a])).join("");
 }
 
 // 선택된 소속사의 하위 그룹 드롭다운 채우기 (활성 카테고리 내)
