@@ -21149,5 +21149,18 @@
     "firstAt": "2026-08-03T17:22:51.226Z",
     "lastAt": "2026-08-03T17:22:51.226Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:센|vayonn",
+    "name": "센",
+    "group": "VAYONN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20051225",
+    "note": "인코드",
+    "count": 1,
+    "firstAt": "2026-08-04T00:46:25.588Z",
+    "lastAt": "2026-08-04T00:46:25.588Z",
+    "status": "pending"
   }
 ]
