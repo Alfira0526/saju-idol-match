@@ -21240,5 +21240,18 @@
     "firstAt": "2026-08-04T11:16:24.868Z",
     "lastAt": "2026-08-04T11:16:24.868Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:rex|dxmon",
+    "name": "REX",
+    "group": "DXMON",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070727",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-04T13:21:58.943Z",
+    "lastAt": "2026-08-04T13:21:58.943Z",
+    "status": "pending"
   }
 ]
