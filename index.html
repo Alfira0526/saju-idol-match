@@ -415,6 +415,7 @@
     <button type="button" data-lang="ko" onclick="setLang('ko')">KO</button>
     <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
     <button type="button" data-lang="ja" onclick="setLang('ja')">JA</button>
+    <button type="button" data-lang="zh" onclick="setLang('zh')">ZH</button>
   </div>
 
   <div class="eyebrow" data-i18n="eyebrow">오행 상생상극 · 궁합 매칭</div>
@@ -822,6 +823,92 @@ const TR_JA = {
   favAgain: "もう一度マッチング",
 };
 Object.keys(TR_JA).forEach(k=>{ if(TR[k]) TR[k].ja = TR_JA[k]; else TR[k] = { ko: TR_JA[k], ja: TR_JA[k] }; });
+// 중국어(ZH, 간체) 오버레이 — 2026-08-03 사용자 승인(P5). 미기재 키는 KO 폴백.
+const TR_ZH = {
+  eyebrow: "五行相生相克 · 缘分匹配",
+  title: "生辰八字偶像缘分匹配",
+  sub_html: "<b>和我八字最配的偶像是谁？</b> 🔮<br>只要有出生日期（出生时间·性别可选），就能从每天不断增加的 <b class=\"nowrap\"><span id=\"groupCount\">{gc}</span>个组合 · 共 <span id=\"idolCount\">{ic}</span>人</b> 中，结合五行生克、地支缘分，甚至<b class=\"nowrap\">『异性缘』</b>，为你排出<span class=\"nowrap\">『本命偶像』</span>排行榜。无需任何背景信息，只凭八字。",
+  reportBannerText: "我们每天都在新增偶像。想看到谁，悄悄告诉我们吧 👀",
+  reportBannerBtn: "提交建议",
+  bdateLabel: "出生日期（8位数字）",
+  bdatePh: "例: 19950719",
+  bhourLabel: "出生时间（可选 · 24小时制）",
+  hourUnknown: "不清楚",
+  sexLabel: "我的性别（可选）",
+  sexNone: "未选择",
+  sexF: "女",
+  sexM: "男",
+  calcBtn: "查找我的本命偶像",
+  note_html: "填写出生时间后，你的<b>时支</b>也会纳入缘分计算，排名会更精准。选择『不清楚』则仅凭出生日期（日干·日支）稳定计算。选择<b>性别</b>后会略微加入命理『异性缘』十神（男=财星 · 女=官星），排名与解读会随之变化。不选则按性别中立计算。",
+  rSectionTitle: "为你推荐的本命偶像",
+  rTierNote_html: "以日干为基准，综合<b>十神</b>·<b>天干合</b>·<b>藏干</b>·<b>日支/年支(生肖)/月支缘分</b>，并根据<b>你的身强身弱</b>个性化加权，精确到<b>小数点后两位</b>打分排名。所以同一个偶像对不同人分数也不同。填写出生时间后还会纳入<b>时支缘分</b>。选人完全<b>只凭八字特征</b>，不掺杂偶像的任何背景信息。",
+  fCategory: "分类",
+  fToggle: "按特定组合·经纪公司筛选",
+  fSearch: "搜索",
+  fSearchPh: "搜索组合（中韩英文，输入部分也可以）",
+  fAgency: "经纪公司",
+  fGroup: "组合",
+  fType: "类型",
+  bandOnly: "🎸 仅乐队",
+  genderF: "女偶像",
+  genderM: "男偶像",
+  agencyAll: "全部",
+  moreOpen: "展开完整排行榜",
+  moreOpenN: "展开完整排行榜（第9~{n}名）",
+  moreClose: "收起",
+  shareBtn: "保存 · 分享结果图片",
+  footer: "所有计算均在浏览器本地完成，输入的出生日期不会上传到服务器。",
+  dscTitle: "阅读前须知",
+  dsc1: "生辰八字是一种传统命理体系，并非经过科学验证的事实。",
+  dsc2: "「偶像缘分」并非正统命理学的标准技法，而是对五行十神理论的类比式娱乐化延伸解读。",
+  dsc3_html: "日干、日支仅凭出生日期即可精确确定。若将出生时间（24小时制）设为『不清楚』，则只用这两项计算；填写时间后，<b>你的时支</b>会以0.6的权重加入缘分计算，排名会略有变化。偶像一方只公开出生日期，因此只使用日柱。",
+  dsc4_html: "排名分数综合<b>以日干为基准的十神（比肩·劫财·食神·伤官·偏财·正财·偏官·正官·偏印·正印）+ 天干合 + 日支地支关系（六合·三合·方合·冲·害·比和）（+ 若填写时间则加入时支关系）</b>后归一化为0~100分，精确到小数点后两位。以『追星＝我为之倾注感情的关系』为出发点，将食伤·印星排在较高权重，未考虑个人身强身弱（用神）的简化判定标准 — 仅供参考。",
+  dsc5: "收录的约540位偶像的出生日期均来自公开资料（维基百科等），日柱计算已通过两种独立方式交叉验证。但出生日期本身也有过经纪公司公布信息与实际不符的案例，新人·海外成员也可能存在误差，个别信息可能需要另行核实。",
+  dsc6: "存在艺名相同的不同人物（例如多个组合中都有『智秀』『Hani』），因此以姓名旁标注的所属组合加以区分。",
+  sgTitle: "要添加谁呢？ ✦",
+  sgIntro_html: "请告诉我们你想让我们添加的偶像·人物。<b>只要知道姓名和组合就够了</b> — 出生日期我们会去核实。<b>哪怕只告诉我们一个人，我们也会把整个组合都找出来一起添加。</b>（仅限真实存在的人物。）",
+  sgNameL: "姓名 <span class=\"req\">*</span>",
+  sgNamePh: "例: 花音",
+  sgGroupL: "组合 / 所属 <span class=\"req\">*</span>",
+  sgGroupPh: "例: NewJeans（若是solo·演员则直接填本人）",
+  sgCatL: "分类",
+  catK: "韩国偶像",
+  catJ: "日本偶像",
+  catC: "中国演员",
+  catUS: "美国演员",
+  catEtc: "其他（以上都不是）",
+  sgGenderL: "性别",
+  gUnknown: "不清楚",
+  gF: "女",
+  gM: "男",
+  sgDobL: "阳历出生日期（知道的话最好）",
+  sgDobPh: "例: 20040507 · 不知道可留空",
+  sgNoteL: "留言（可选）",
+  sgNotePh: "所属经纪公司·推荐理由等",
+  sgSubmit: "提交建议",
+  mSpam: "为防止垃圾信息，每小时限提交1次。我们不会收集任何个人信息。",
+  sgDoneMsg_html: "谢谢！我们已收到。<br>会把整个组合一起找出来，今晚优先处理。",
+  mClose: "关闭",
+  erTitle: "信息有误吗？ 🛠️",
+  erIntro_html: "如果<b>{target}</b>的信息有误，请告诉我们，我们会尽快核实修正。附上<b>正确的值和来源</b>会让处理速度快很多。",
+  erFieldL: "哪里错了？ <span class=\"req\">*</span>",
+  erfDob: "出生日期",
+  erfName: "艺名",
+  erfGroup: "所属组合",
+  erfGender: "性别",
+  erfDup: "非真实人物 · 重复",
+  erfEtc: "其他",
+  erSuggestL: "正确的值（知道的话请填写）",
+  erSuggestPh: "例: 19990507 · 正确的艺名等",
+  erNoteL: "依据·来源（建议填写）",
+  erNotePh: "例: 官方资料·维基百科等可核实的来源",
+  erSubmit: "提交错误反馈",
+  erDoneMsg_html: "谢谢！我们已收到。<br>核实无误后会尽快修正。",
+  favEyebrow: "💌 本周本命偶像报告",
+  favTitle: "本周，八字为你选中的本命偶像 ✨",
+  favAgain: "再匹配一次",
+};
+Object.keys(TR_ZH).forEach(k=>{ if(TR[k]) TR[k].zh = TR_ZH[k]; else TR[k] = { ko: TR_ZH[k], zh: TR_ZH[k] }; });
 function t(key){
   const entry = TR[key];
   if(!entry) return '';
@@ -830,6 +917,7 @@ function t(key){
 function detectLang(){
   const nl = (navigator.language || 'ko').toLowerCase();
   if(nl.startsWith('ja')) return 'ja';
+  if(nl.startsWith('zh')) return 'zh';
   if(nl.startsWith('en')) return 'en';
   return 'ko';
 }
@@ -953,56 +1041,56 @@ const GODS = {
 };
 // ── P2 다국어(동적 결과 텍스트): 십신 role/reason(en/ja) + 지지 관계 + 연결 문구 ──
 const GOD_L = {
-  "상관":{en:"Hurting Officer", role:{en:"The bias you dote on",ja:"愛を注ぐ推しタイプ"}, reason:{en:"Your energy flows out freely — perfect for cheering on talent and enjoying their expression.",ja:"自分の気が自由に伸びていく関係で、才能を応援し表現を楽しむ推し活に最適です。"}},
-  "식신":{en:"Eating God", role:{en:"The bias you dote on",ja:"愛を注ぐ推しタイプ"}, reason:{en:"Your energy flows out gently — great for a warm, caring kind of fandom.",ja:"自分の気が穏やかに流れる関係で、気楽に世話を焼き大切にする推し活に合います。"}},
-  "정인":{en:"Direct Resource", role:{en:"Healing & recharge",ja:"癒し・充電タイプ"}, reason:{en:"They nurture you kindly — just watching them comforts and recharges you.",ja:"自分を慈しみ守ってくれる関係で、見ているだけで癒され充電されます。"}},
-  "편인":{en:"Indirect Resource", role:{en:"Healing & recharge",ja:"癒し・充電タイプ"}, reason:{en:"They fill you up in an unusual way — an oddly magnetic, healing pull.",ja:"自分を特別な形で満たしてくれる関係で、妙に惹かれ癒されます。"}},
-  "정재":{en:"Direct Wealth", role:{en:"Fluttering charm",ja:"ときめく魅力タイプ"}, reason:{en:"You draw them in steadily — a dependable charm you'll want close.",ja:"自分が安定して引き寄せる関係で、そばに置きたい頼もしい魅力です。"}},
-  "편재":{en:"Indirect Wealth", role:{en:"Fluttering charm",ja:"ときめく魅力タイプ"}, reason:{en:"You draw them in dazzlingly — a fluttering charm you can't look away from.",ja:"自分が華やかに引き寄せる関係で、ときめいて目が離せない魅力です。"}},
-  "겁재":{en:"Rob Wealth", role:{en:"Easygoing friend",ja:"気楽な友達タイプ"}, reason:{en:"Same energy, different grain — an easy, playful, friend-like comfort.",ja:"気は同じでも質が違い、軽快な友達のような気楽さがあります。"}},
-  "비견":{en:"Companion", role:{en:"Easygoing friend",ja:"気楽な友達タイプ"}, reason:{en:"The same energy as you — a comfortable match with strong kinship.",ja:"自分と同じ気で、同質感の大きい気楽な相手です。"}},
-  "정관":{en:"Direct Officer", role:{en:"Awe & tension",ja:"緊張・畏敬タイプ"}, reason:{en:"They lead you with restraint — cool, though it may feel a bit daunting.",ja:"自分を節度をもって導く関係で、格好いいけれど少し難しく感じることも。"}},
-  "편관":{en:"Seven Killings", role:{en:"Awe & tension",ja:"緊張・畏敬タイプ"}, reason:{en:"They press on you strongly — big charisma, but it can feel like pressure.",ja:"自分を強く圧する関係で、カリスマは大きいものの負担になることも。"}}
+  "상관":{en:"Hurting Officer", hz:"伤官", role:{en:"The bias you dote on",ja:"愛を注ぐ推しタイプ",zh:"倾注真心型"}, reason:{en:"Your energy flows out freely — perfect for cheering on talent and enjoying their expression.",ja:"自分の気が自由に伸びていく関係で、才能を応援し表現を楽しむ推し活に最適です。",zh:"你的气自由外泄的关系，最适合为才华应援、享受表达的追星方式。"}},
+  "식신":{en:"Eating God", hz:"食神", role:{en:"The bias you dote on",ja:"愛を注ぐ推しタイプ",zh:"倾注真心型"}, reason:{en:"Your energy flows out gently — great for a warm, caring kind of fandom.",ja:"自分の気が穏やかに流れる関係で、気楽に世話を焼き大切にする推し活に合います。",zh:"你的气温和外流的关系，适合悉心照顾、细心呵护的追星方式。"}},
+  "정인":{en:"Direct Resource", hz:"正印", role:{en:"Healing & recharge",ja:"癒し・充電タイプ",zh:"治愈充电型"}, reason:{en:"They nurture you kindly — just watching them comforts and recharges you.",ja:"自分を慈しみ守ってくれる関係で、見ているだけで癒され充電されます。",zh:"对方慈爱地守护着你，光是看着就能得到安慰和充电。"}},
+  "편인":{en:"Indirect Resource", hz:"偏印", role:{en:"Healing & recharge",ja:"癒し・充電タイプ",zh:"治愈充电型"}, reason:{en:"They fill you up in an unusual way — an oddly magnetic, healing pull.",ja:"自分を特別な形で満たしてくれる関係で、妙に惹かれ癒されます。",zh:"对方以特别的方式填满你，莫名被吸引又治愈。"}},
+  "정재":{en:"Direct Wealth", hz:"正财", role:{en:"Fluttering charm",ja:"ときめく魅力タイプ",zh:"心动魅力型"}, reason:{en:"You draw them in steadily — a dependable charm you'll want close.",ja:"自分が安定して引き寄せる関係で、そばに置きたい頼もしい魅力です。",zh:"你稳稳地被对方吸引，是想留在身边的可靠魅力。"}},
+  "편재":{en:"Indirect Wealth", hz:"偏财", role:{en:"Fluttering charm",ja:"ときめく魅力タイプ",zh:"心动魅力型"}, reason:{en:"You draw them in dazzlingly — a fluttering charm you can't look away from.",ja:"自分が華やかに引き寄せる関係で、ときめいて目が離せない魅力です。",zh:"你被对方华丽地吸引，是让人心动到移不开眼的魅力。"}},
+  "겁재":{en:"Rob Wealth", hz:"劫财", role:{en:"Easygoing friend",ja:"気楽な友達タイプ",zh:"轻松朋友型"}, reason:{en:"Same energy, different grain — an easy, playful, friend-like comfort.",ja:"気は同じでも質が違い、軽快な友達のような気楽さがあります。",zh:"气相同但质地不同，像轻快的朋友一样自在。"}},
+  "비견":{en:"Companion", hz:"比肩", role:{en:"Easygoing friend",ja:"気楽な友達タイプ",zh:"轻松朋友型"}, reason:{en:"The same energy as you — a comfortable match with strong kinship.",ja:"自分と同じ気で、同質感の大きい気楽な相手です。",zh:"和你气场相同，是同质感很强、相处自在的对象。"}},
+  "정관":{en:"Direct Officer", hz:"正官", role:{en:"Awe & tension",ja:"緊張・畏敬タイプ",zh:"敬畏紧张型"}, reason:{en:"They lead you with restraint — cool, though it may feel a bit daunting.",ja:"自分を節度をもって導く関係で、格好いいけれど少し難しく感じることも。",zh:"对方有节制地引导你，很帅气但也可能觉得有点难以接近。"}},
+  "편관":{en:"Seven Killings", hz:"偏官", role:{en:"Awe & tension",ja:"緊張・畏敬タイプ",zh:"敬畏紧张型"}, reason:{en:"They press on you strongly — big charisma, but it can feel like pressure.",ja:"自分を強く圧する関係で、カリスマは大きいものの負担になることも。",zh:"对方强势地压制你，魅力十足但也可能带来压力。"}}
 };
 const BR_L = {
-  "비화":{tag:{ko:"일지 비화(比和)",en:"Day-Branch match (比和)",ja:"日支 比和"}, short:{ko:"비화(比和)",en:"match (比和)",ja:"比和"}, reason:{ko:"일지가 같아 결이 비슷해요.",en:"Same day branch, so you share a similar grain.",ja:"日支が同じで、質が似ています。"}},
-  "충":{tag:{ko:"일지 충(沖)",en:"Day-Branch clash (沖)",ja:"日支 沖"}, short:{ko:"충(沖)",en:"clash (沖)",ja:"沖"}, reason:{ko:"일지가 정반대라 애증이 오갈 수 있어요.",en:"Opposite day branches — love and friction may swing.",ja:"日支が正反対で、愛憎が行き来することも。"}},
-  "육합":{tag:{ko:"일지 육합(六合)",en:"Day-Branch six-harmony (六合)",ja:"日支 六合"}, short:{ko:"육합(六合)",en:"six-harmony (六合)",ja:"六合"}, reason:{ko:"일지가 서로 딱 맞물리는 찰떡 인연이에요.",en:"Your day branches lock together — a perfect-fit bond.",ja:"日支がぴったり噛み合う相性抜群の縁です。"}},
-  "삼합":{tag:{ko:"일지 삼합(三合)",en:"Day-Branch three-harmony (三合)",ja:"日支 三合"}, short:{ko:"삼합(三合)",en:"three-harmony (三合)",ja:"三合"}, reason:{ko:"같은 기운으로 뭉치는 삼합이라 함께할수록 시너지가 나요.",en:"A three-harmony of shared energy — more synergy the more you're together.",ja:"同じ気で結ぶ三合で、一緒にいるほど相乗効果が出ます。"}},
-  "해":{tag:{ko:"일지 해(害)",en:"Day-Branch harm (害)",ja:"日支 害"}, short:{ko:"해(害)",en:"harm (害)",ja:"害"}, reason:{ko:"사소하게 엇갈리는 지점이 생길 수 있어요.",en:"Small points of friction may crop up.",ja:"些細なすれ違いが生じることがあります。"}},
-  "방합":{tag:{ko:"일지 방합(方合)",en:"Day-Branch directional (方合)",ja:"日支 方合"}, short:{ko:"방합(方合)",en:"directional (方合)",ja:"方合"}, reason:{ko:"같은 계절 기운끼리 모여 무난하게 어울려요.",en:"Same-season energies gather — an easy, agreeable match.",ja:"同じ季節の気が集まり、無難に調和します。"}},
-  "평":{tag:{ko:"일지 평(平)",en:"Day-Branch neutral (平)",ja:"日支 平"}, short:{ko:"평(平)",en:"neutral (平)",ja:"平"}, reason:{ko:"",en:"",ja:""}}
+  "비화":{tag:{ko:"일지 비화(比和)",en:"Day-Branch match (比和)",ja:"日支 比和",zh:"日支 比和"}, short:{ko:"비화(比和)",en:"match (比和)",ja:"比和",zh:"比和"}, reason:{ko:"일지가 같아 결이 비슷해요.",en:"Same day branch, so you share a similar grain.",ja:"日支が同じで、質が似ています。",zh:"日支相同，气质相近。"}},
+  "충":{tag:{ko:"일지 충(沖)",en:"Day-Branch clash (沖)",ja:"日支 沖",zh:"日支 冲"}, short:{ko:"충(沖)",en:"clash (沖)",ja:"沖",zh:"冲"}, reason:{ko:"일지가 정반대라 애증이 오갈 수 있어요.",en:"Opposite day branches — love and friction may swing.",ja:"日支が正反対で、愛憎が行き来することも。",zh:"日支正相反，爱恨可能会来回摇摆。"}},
+  "육합":{tag:{ko:"일지 육합(六合)",en:"Day-Branch six-harmony (六合)",ja:"日支 六合",zh:"日支 六合"}, short:{ko:"육합(六合)",en:"six-harmony (六合)",ja:"六合",zh:"六合"}, reason:{ko:"일지가 서로 딱 맞물리는 찰떡 인연이에요.",en:"Your day branches lock together — a perfect-fit bond.",ja:"日支がぴったり噛み合う相性抜群の縁です。",zh:"日支彼此紧密契合，是天作之合的缘分。"}},
+  "삼합":{tag:{ko:"일지 삼합(三合)",en:"Day-Branch three-harmony (三合)",ja:"日支 三合",zh:"日支 三合"}, short:{ko:"삼합(三合)",en:"three-harmony (三合)",ja:"三合",zh:"三合"}, reason:{ko:"같은 기운으로 뭉치는 삼합이라 함께할수록 시너지가 나요.",en:"A three-harmony of shared energy — more synergy the more you're together.",ja:"同じ気で結ぶ三合で、一緒にいるほど相乗効果が出ます。",zh:"同气凝聚的三合，相处越久越有加乘效果。"}},
+  "해":{tag:{ko:"일지 해(害)",en:"Day-Branch harm (害)",ja:"日支 害",zh:"日支 害"}, short:{ko:"해(害)",en:"harm (害)",ja:"害",zh:"害"}, reason:{ko:"사소하게 엇갈리는 지점이 생길 수 있어요.",en:"Small points of friction may crop up.",ja:"些細なすれ違いが生じることがあります。",zh:"可能会出现一些小小的分歧。"}},
+  "방합":{tag:{ko:"일지 방합(方合)",en:"Day-Branch directional (方合)",ja:"日支 方合",zh:"日支 方合"}, short:{ko:"방합(方合)",en:"directional (方合)",ja:"方合",zh:"方合"}, reason:{ko:"같은 계절 기운끼리 모여 무난하게 어울려요.",en:"Same-season energies gather — an easy, agreeable match.",ja:"同じ季節の気が集まり、無難に調和します。",zh:"同季节的气聚在一起，相处平顺融洽。"}},
+  "평":{tag:{ko:"일지 평(平)",en:"Day-Branch neutral (平)",ja:"日支 平",zh:"日支 平"}, short:{ko:"평(平)",en:"neutral (平)",ja:"平",zh:"平"}, reason:{ko:"",en:"",ja:"",zh:""}}
 };
 const DYN = {
-  roleRomantic:{ko:"이성적 매력형",en:"Romantic appeal",ja:"異性的な魅力タイプ"},
-  sexGwanJeong:{ko:"나를 듬직하게 이끄는 관계라, 기대고 싶은 이성적 매력이 커요.",en:"They lead you dependably — a romantic appeal you'll want to lean on.",ja:"自分を頼もしく導く関係で、寄りかかりたい異性的な魅力が大きいです。"},
-  sexGwanOther:{ko:"나를 강하게 리드하는 관계라, 카리스마에 이성적으로 끌려요.",en:"They lead you powerfully — you're romantically drawn to the charisma.",ja:"自分を強くリードする関係で、カリスマに異性的に惹かれます。"},
-  hapPhrase:{ko:" 게다가 일간끼리 천간합(天干合)을 이루는 특별한 인연이에요.",en:" On top of that, your Day Stems form a Heavenly-Stem combination — a special bond.",ja:" さらに日干どうしが天干合を成す特別な縁です。"},
-  hourPhrase:{ko:" 태어난 시각의 지지와도 {t} 관계예요.",en:" Your birth-time branch is also in a {t} relation.",ja:" 出生時刻の地支とも{t}の関係です。"},
-  relStemCombo:{ko:" · 천간합",en:" · Stem combo",ja:" · 天干合"},
-  prefHour:{ko:"· 시지 ",en:"· Hour-branch ",ja:"· 時支 "},
-  prefZodiac:{ko:"· 띠 ",en:"· Zodiac ",ja:"· 干支 "},
-  dmLabel:{ko:"일간",en:"Day Master",ja:"日干"},
-  dmDay:{ko:"일주",en:"Day",ja:"日柱"}, dmMonth:{ko:"월주",en:"Month",ja:"月柱"}, dmYear:{ko:"년주",en:"Year",ja:"年柱"}, dmHour:{ko:"시주",en:"Hour",ja:"時柱"},
-  bodyWeak:{ko:"신약(身弱)",en:"Weak (身弱)",ja:"身弱"}, bodyStrong:{ko:"신강(身強)",en:"Strong (身強)",ja:"身強"}, bodyMid:{ko:"중화(中和)",en:"Balanced (中和)",ja:"中和"},
+  roleRomantic:{ko:"이성적 매력형",en:"Romantic appeal",ja:"異性的な魅力タイプ",zh:"异性魅力型"},
+  sexGwanJeong:{ko:"나를 듬직하게 이끄는 관계라, 기대고 싶은 이성적 매력이 커요.",en:"They lead you dependably — a romantic appeal you'll want to lean on.",ja:"自分を頼もしく導く関係で、寄りかかりたい異性的な魅力が大きいです。",zh:"对方稳重地引导你，是想要依靠的异性魅力。"},
+  sexGwanOther:{ko:"나를 강하게 리드하는 관계라, 카리스마에 이성적으로 끌려요.",en:"They lead you powerfully — you're romantically drawn to the charisma.",ja:"自分を強くリードする関係で、カリスマに異性的に惹かれます。",zh:"对方强势地主导你，被这份魅力深深吸引。"},
+  hapPhrase:{ko:" 게다가 일간끼리 천간합(天干合)을 이루는 특별한 인연이에요.",en:" On top of that, your Day Stems form a Heavenly-Stem combination — a special bond.",ja:" さらに日干どうしが天干合を成す特別な縁です。",zh:" 而且日干之间形成天干合，是特别的缘分。"},
+  hourPhrase:{ko:" 태어난 시각의 지지와도 {t} 관계예요.",en:" Your birth-time branch is also in a {t} relation.",ja:" 出生時刻の地支とも{t}の関係です。",zh:" 与出生时辰的地支也是{t}关系。"},
+  relStemCombo:{ko:" · 천간합",en:" · Stem combo",ja:" · 天干合",zh:" · 天干合"},
+  prefHour:{ko:"· 시지 ",en:"· Hour-branch ",ja:"· 時支 ",zh:"· 时支 "},
+  prefZodiac:{ko:"· 띠 ",en:"· Zodiac ",ja:"· 干支 ",zh:"· 生肖 "},
+  dmLabel:{ko:"일간",en:"Day Master",ja:"日干",zh:"日干"},
+  dmDay:{ko:"일주",en:"Day",ja:"日柱",zh:"日柱"}, dmMonth:{ko:"월주",en:"Month",ja:"月柱",zh:"月柱"}, dmYear:{ko:"년주",en:"Year",ja:"年柱",zh:"年柱"}, dmHour:{ko:"시주",en:"Hour",ja:"時柱",zh:"时柱"},
+  bodyWeak:{ko:"신약(身弱)",en:"Weak (身弱)",ja:"身弱",zh:"身弱"}, bodyStrong:{ko:"신강(身強)",en:"Strong (身強)",ja:"身強",zh:"身强"}, bodyMid:{ko:"중화(中和)",en:"Balanced (中和)",ja:"中和",zh:"中和"},
   // currentLabel 성별/접미
-  gMaleW:{ko:"남자",en:"Male",ja:"男性"}, gFemaleW:{ko:"여자",en:"Female",ja:"女性"}, idolSuffix:{ko:" 아이돌",en:" idols",ja:" アイドル"},
+  gMaleW:{ko:"남자",en:"Male",ja:"男性",zh:"男"}, gFemaleW:{ko:"여자",en:"Female",ja:"女性",zh:"女"}, idolSuffix:{ko:" 아이돌",en:" idols",ja:" アイドル",zh:" 偶像"},
   // 최애 리포트 본문
-  favLeadMulti:{ko:"이번 주 {total}번 매칭했는데요, 사주가 가장 자주 콕 집은 최애를 데려왔어요.",en:"You matched {total} times this week — here's the bias your saju picked most often.",ja:"今週{total}回マッチしました。四柱が最も多く選んだ推しを連れてきました。"},
-  favLeadOne:{ko:"이번 주 매칭에서 사주가 가장 강하게 밀어준 최애예요.",en:"The bias your saju pushed hardest in this week's match.",ja:"今週のマッチで四柱が最も強く推した推しです。"},
-  favFootWins:{ko:"이번 주 {total}번 중 {cnt}번 1위 · ",en:"#1 in {cnt} of {total} matches this week · ",ja:"今週{total}回中{cnt}回1位 · "},
-  favFootPct:{ko:"최고 궁합 {pct}%",en:"Top match {pct}%",ja:"最高相性 {pct}%"},
+  favLeadMulti:{ko:"이번 주 {total}번 매칭했는데요, 사주가 가장 자주 콕 집은 최애를 데려왔어요.",en:"You matched {total} times this week — here's the bias your saju picked most often.",ja:"今週{total}回マッチしました。四柱が最も多く選んだ推しを連れてきました。",zh:"本周你匹配了{total}次，我们带来了八字为你选中次数最多的本命偶像。"},
+  favLeadOne:{ko:"이번 주 매칭에서 사주가 가장 강하게 밀어준 최애예요.",en:"The bias your saju pushed hardest in this week's match.",ja:"今週のマッチで四柱が最も強く推した推しです。",zh:"这是本周匹配中八字最强力推荐的本命偶像。"},
+  favFootWins:{ko:"이번 주 {total}번 중 {cnt}번 1위 · ",en:"#1 in {cnt} of {total} matches this week · ",ja:"今週{total}回中{cnt}回1位 · ",zh:"本周{total}次中{cnt}次排名第1 · "},
+  favFootPct:{ko:"최고 궁합 {pct}%",en:"Top match {pct}%",ja:"最高相性 {pct}%",zh:"最高缘分 {pct}%"},
   // 업데이트 토스트
-  toastNew:{ko:"요 며칠 <b>{names}</b>{cnt} 새로 합류했어요",en:"Recently <b>{names}</b>{cnt} just joined",ja:"最近 <b>{names}</b>{cnt} が新しく加わりました"},
-  toastCount:{ko:" 등 {n}명",en:" +{n}",ja:" 他{n}名"},
-  toastMore:{ko:" 외 {k}",en:" +{k} more",ja:" 他{k}"},
-  toastNewNone:{ko:"새 얼굴이 도착했어요",en:"New faces have arrived",ja:"新しい顔が届きました"},
+  toastNew:{ko:"요 며칠 <b>{names}</b>{cnt} 새로 합류했어요",en:"Recently <b>{names}</b>{cnt} just joined",ja:"最近 <b>{names}</b>{cnt} が新しく加わりました",zh:"最近 <b>{names}</b>{cnt} 新加入了"},
+  toastCount:{ko:" 등 {n}명",en:" +{n}",ja:" 他{n}名",zh:" 等{n}人"},
+  toastMore:{ko:" 외 {k}",en:" +{k} more",ja:" 他{k}",zh:" 及{k}"},
+  toastNewNone:{ko:"새 얼굴이 도착했어요",en:"New faces have arrived",ja:"新しい顔が届きました",zh:"新面孔到啦"},
   // 공유 캡션·이미지
-  shareCaption:{ko:"내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝",en:"My saju-picked idol bias ranking 🔮\nalfira0526.github.io/saju-idol-match\n#SajuMatch #KpopBias #idolmatch #kpop #fourpillars",ja:"四柱推命で見つけた推し相性ランキング 🔮\nalfira0526.github.io/saju-idol-match\n#四柱推命 #推し #アイドル相性 #kpop #占い"},
-  shareRankTitle:{ko:"덕질 궁합 추천 순위",en:"Idol compatibility ranking",ja:"推し相性おすすめ順位"},
-  sharePureSaju:{ko:" · 오로지 사주 특성으로 선정",en:" · chosen purely by saju",ja:" · 純粋に四柱で選定"},
-  shareFooter:{ko:"사주 궁합 아이돌 매칭 · 오락용 해석",en:"Saju Idol Match · for entertainment",ja:"四柱推命アイドル相性マッチ · 娯楽用"},
-  shareDmDay:{ko:"일주(日柱)",en:"Day Pillar (日柱)",ja:"日柱"}
+  shareCaption:{ko:"내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝",en:"My saju-picked idol bias ranking 🔮\nalfira0526.github.io/saju-idol-match\n#SajuMatch #KpopBias #idolmatch #kpop #fourpillars",ja:"四柱推命で見つけた推し相性ランキング 🔮\nalfira0526.github.io/saju-idol-match\n#四柱推命 #推し #アイドル相性 #kpop #占い",zh:"用我的八字找到的本命偶像缘分排行榜 🔮\nalfira0526.github.io/saju-idol-match\n#生辰八字 #偶像缘分 #本命偶像 #kpop #追星"},
+  shareRankTitle:{ko:"덕질 궁합 추천 순위",en:"Idol compatibility ranking",ja:"推し相性おすすめ順位",zh:"缘分推荐排行榜"},
+  sharePureSaju:{ko:" · 오로지 사주 특성으로 선정",en:" · chosen purely by saju",ja:" · 純粋に四柱で選定",zh:" · 完全依据八字特征选出"},
+  shareFooter:{ko:"사주 궁합 아이돌 매칭 · 오락용 해석",en:"Saju Idol Match · for entertainment",ja:"四柱推命アイドル相性マッチ · 娯楽用",zh:"生辰八字偶像缘分匹配 · 娱乐解读"},
+  shareDmDay:{ko:"일주(日柱)",en:"Day Pillar (日柱)",ja:"日柱",zh:"日柱"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1010,7 +1098,7 @@ function dt(k){ return dl(DYN[k]); }
 // 저장된 의미 키(godName·hap·brKey·hourKey·yjKey·sexRole·sexReasonKey)로 현재 언어의 표시 문자열 생성
 function disp(r){
   const lang=getLang(), gd=GODS[r.godName], gl=GOD_L[r.godName];
-  let relLabel = lang==='ko' ? `${r.godName}(${gd.h})` : (lang==='ja' ? gd.h : `${gl.en} (${gd.h})`);
+  let relLabel = lang==='ko' ? `${r.godName}(${gd.h})` : (lang==='ja' ? gd.h : (lang==='zh' ? gl.hz : `${gl.en} (${gd.h})`));
   if(r.hap) relLabel += dt('relStemCombo');
   const role = r.sexRole ? dt('roleRomantic') : (lang==='ko' ? gd.role : (dl(gl.role) || gd.role));
   let branchTag = dl(BR_L[r.brKey].tag);
@@ -1031,7 +1119,7 @@ function renderDayMaster(dm){
   badge.style.background = ELEM_COLOR[dm.elem];
   badge.style.boxShadow = "0 0 26px -2px " + ELEM_HEX[dm.elem] + "aa";
   const stemPart = lang==='ko' ? `${STEMS[dm.stemIdx]}(${STEMS_KR[dm.stemIdx]})` : STEMS[dm.stemIdx];
-  const elemPart = lang==='ko' ? `${ELEM_KR[STEM_ELEM_IDX[dm.stemIdx]]}(${dm.elem})` : (lang==='ja' ? dm.elem : `${ELEM_EN[dm.elem]}(${dm.elem})`);
+  const elemPart = lang==='ko' ? `${ELEM_KR[STEM_ELEM_IDX[dm.stemIdx]]}(${dm.elem})` : ((lang==='ja'||lang==='zh') ? dm.elem : `${ELEM_EN[dm.elem]}(${dm.elem})`);
   document.getElementById('dmTitle').textContent = `${dt('dmLabel')}: ${stemPart} · ${elemPart} · ${dt(dm.bodyKey)}`;
   const hour = dm.hourHanja ? ` · ${dt('dmHour')} ${dm.hourHanja}` : "";
   document.getElementById('dmDesc').textContent = `${dt('dmDay')} ${dm.dayHanja} · ${dt('dmMonth')} ${dm.mHanja} · ${dt('dmYear')} ${dm.yHanja}${hour}`;
@@ -2075,9 +2163,9 @@ const TOP_N = 8;
 // scope: "" = 전체 / "ag:소속사" = 소속사 전체 / "gr:그룹" = 특정 그룹
 // 카테고리(한국 아이돌 / 일본 아이돌 / 중국 배우 / 미국 배우 …)
 const CAT_NAMES = {
-  "K-idol":{ko:"한국 아이돌",en:"K-pop",ja:"韓国アイドル"}, "J-idol":{ko:"일본 아이돌",en:"J-pop",ja:"日本アイドル"},
-  "C-actor":{ko:"중국 배우",en:"C-actor",ja:"中国俳優"}, "US-actor":{ko:"미국 배우",en:"US actor",ja:"米国俳優"},
-  "Etc":{ko:"기타",en:"Etc",ja:"その他"}
+  "K-idol":{ko:"한국 아이돌",en:"K-pop",ja:"韓国アイドル",zh:"韩国偶像"}, "J-idol":{ko:"일본 아이돌",en:"J-pop",ja:"日本アイドル",zh:"日本偶像"},
+  "C-actor":{ko:"중국 배우",en:"C-actor",ja:"中国俳優",zh:"中国演员"}, "US-actor":{ko:"미국 배우",en:"US actor",ja:"米国俳優",zh:"美国演员"},
+  "Etc":{ko:"기타",en:"Etc",ja:"その他",zh:"其他"}
 };
 const catLabel = c => { const e = CAT_NAMES[c]; return e ? (e[getLang()] || e.ko) : c; };
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
@@ -2254,7 +2342,7 @@ function buildHourSelect(){
     const o = document.createElement('option');
     o.value = String(h);
     const hh = String(h).padStart(2,'0');
-    o.textContent = lang==='ko' ? `${h}시 (${hh}:00~${hh}:59)` : (lang==='ja' ? `${h}時 (${hh}:00〜${hh}:59)` : `${hh}:00–${hh}:59`);
+    o.textContent = lang==='ko' ? `${h}시 (${hh}:00~${hh}:59)` : (lang==='ja' ? `${h}時 (${hh}:00〜${hh}:59)` : (lang==='zh' ? `${h}点 (${hh}:00–${hh}:59)` : `${hh}:00–${hh}:59`));
     sel.appendChild(o);
   }
   sel.value = prev;
@@ -2492,7 +2580,7 @@ function drawShareCard(){
   ctx.font = "700 42px 'Nanum Myeongjo', serif";
   { const lg=getLang();
     const stemPart = lg==='ko'?`${s.stem}(${s.stemKr})`:s.stem;
-    const elemPart = lg==='ko'?`${s.elemKr}(${s.elem})`:(lg==='ja'?s.elem:`${ELEM_EN[s.elem]}(${s.elem})`);
+    const elemPart = lg==='ko'?`${s.elemKr}(${s.elem})`:((lg==='ja'||lg==='zh')?s.elem:`${ELEM_EN[s.elem]}(${s.elem})`);
     ctx.fillText(`${dt('dmLabel')}: ${stemPart} · ${elemPart}`, cx+rad+40, cy-8); }
   ctx.fillStyle = dim;
   ctx.font = "400 30px 'Noto Sans KR', sans-serif";

@@ -12,7 +12,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
-const AGENCY_MIN = 15; // 기타 하위 소속사가 이 이상이면 P2 Phase 2에서 상단 버튼 승격 후보
+const AGENCY_MIN = 30; // 기타 하위 소속사가 이 이상이면 P2 Phase 2에서 상단 버튼 승격 후보(2026-08-03 사용자 결정: 30)
 const T = (p) => path.join(ROOT, 'tools', p);
 const readJSON = (p, fallback) => {
   try { return JSON.parse(fs.readFileSync(p, 'utf8')); }

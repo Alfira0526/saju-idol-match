@@ -62,10 +62,7 @@
         "브랜뉴뮤직": 4
       },
       "promotable": [
-        "KQ엔터테인먼트",
         "스타쉽엔터테인먼트",
-        "울림엔터테인먼트",
-        "FNC엔터테인먼트",
         "MODHAUS"
       ]
     },
@@ -123,8 +120,8 @@
     "topErrorPending": []
   },
   "i18n": {
-    "chunksDone": 14,
-    "chunksTotal": 14,
+    "chunksDone": 15,
+    "chunksTotal": 15,
     "percent": 100
   },
   "flushCadence": {
@@ -134,7 +131,7 @@
     "avgBatch": 1.1,
     "medianGapMin": 40,
     "lastFlushAt": "2026-08-03T12:41:01+09:00",
-    "timeSinceLastFlushMin": 34,
+    "timeSinceLastFlushMin": 1219,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
     "quietGaps": 32,
