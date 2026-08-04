@@ -21305,5 +21305,18 @@
     "firstAt": "2026-08-04T16:44:52.182Z",
     "lastAt": "2026-08-04T16:44:52.182Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리안|하츠웨이브",
+    "name": "리안",
+    "group": "하츠웨이브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-04T17:02:31.411Z",
+    "lastAt": "2026-08-04T17:02:31.411Z",
+    "status": "pending"
   }
 ]
