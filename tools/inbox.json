@@ -21162,5 +21162,18 @@
     "firstAt": "2026-08-04T00:46:25.588Z",
     "lastAt": "2026-08-04T00:46:25.588Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:라이즈|은석",
+    "name": "라이즈",
+    "group": "은석",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010319",
+    "note": "Sm",
+    "count": 1,
+    "firstAt": "2026-08-04T05:53:09.034Z",
+    "lastAt": "2026-08-04T05:53:09.034Z",
+    "status": "pending"
   }
 ]
