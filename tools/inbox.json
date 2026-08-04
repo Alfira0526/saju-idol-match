@@ -21318,5 +21318,18 @@
     "firstAt": "2026-08-04T17:02:31.411Z",
     "lastAt": "2026-08-04T17:02:31.411Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ad1|alphadriveone",
+    "name": "ad1",
+    "group": "ALPHADRIVEONE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-04T18:42:51.756Z",
+    "lastAt": "2026-08-04T18:42:51.756Z",
+    "status": "pending"
   }
 ]
