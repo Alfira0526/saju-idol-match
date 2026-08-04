@@ -21227,5 +21227,18 @@
     "firstAt": "2026-08-04T10:00:12.771Z",
     "lastAt": "2026-08-04T10:00:12.771Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:全李正|whib",
+    "name": "全李正",
+    "group": "WHIB",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030908",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-04T11:16:24.868Z",
+    "lastAt": "2026-08-04T11:16:24.868Z",
+    "status": "pending"
   }
 ]
