@@ -1,6 +1,11 @@
 {
-  "total": 828,
+  "total": 858,
   "addedRecent": [
+    { "date": "2026-08-05", "text": "ALL(H)OURS 추가", "count": 7 },
+    { "date": "2026-08-05", "text": "TNX 추가", "count": 5 },
+    { "date": "2026-08-05", "text": "TUNEXX 추가", "count": 7 },
+    { "date": "2026-08-05", "text": "VAYONN 추가", "count": 6 },
+    { "date": "2026-08-05", "text": "MEOVV 추가", "count": 5 },
     { "date": "2026-08-04", "text": "WHIB 추가", "count": 7 },
     { "date": "2026-08-04", "text": "IZNA 추가", "count": 6 },
     { "date": "2026-08-04", "text": "PLAVE 추가", "count": 4 },
@@ -14,5 +19,5 @@
     { "date": "2026-08-02", "text": "노기자카46 추가", "count": 28 },
     { "date": "2026-08-02", "text": "솔로·배우 추가", "count": 13 }
   ],
-  "updatedAt": "2026-08-04"
+  "updatedAt": "2026-08-05"
 }
