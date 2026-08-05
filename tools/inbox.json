@@ -21344,5 +21344,18 @@
     "firstAt": "2026-08-05T00:11:56.671Z",
     "lastAt": "2026-08-05T00:11:56.671Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:moxxd|treasure",
+    "name": "moxxd",
+    "group": "treasure",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19831224",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T05:02:19.969Z",
+    "lastAt": "2026-08-05T05:02:19.969Z",
+    "status": "pending"
   }
 ]
