@@ -21682,5 +21682,18 @@
     "firstAt": "2026-08-05T16:31:14.715Z",
     "lastAt": "2026-08-05T16:31:14.715Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李承协|n.flying",
+    "name": "李承协",
+    "group": "N.Flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921031",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-08-05T17:04:40.240Z",
+    "lastAt": "2026-08-05T17:04:40.240Z",
+    "status": "pending"
   }
 ]
