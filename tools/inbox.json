@@ -2113,9 +2113,9 @@
     "gender": "M",
     "dob": "19921031",
     "note": "FNC",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T06:08:47.329Z",
-    "lastAt": "2026-07-24T06:08:47.329Z",
+    "lastAt": "2026-08-05T12:39:50.300Z",
     "status": "pending"
   },
   {
@@ -21564,6 +21564,19 @@
     "count": 1,
     "firstAt": "2026-08-05T11:54:09.741Z",
     "lastAt": "2026-08-05T11:54:09.741Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:하현상|호피폴라",
+    "name": "하현상",
+    "group": "호피폴라",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980914",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T12:37:57.168Z",
+    "lastAt": "2026-08-05T12:37:57.168Z",
     "status": "pending"
   }
 ]
