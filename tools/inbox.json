@@ -21591,5 +21591,18 @@
     "firstAt": "2026-08-05T12:50:40.581Z",
     "lastAt": "2026-08-05T12:50:40.581Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yoohweseung|nflying",
+    "name": "Yoo Hwe Seung",
+    "group": "NFlying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950228",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T13:45:55.104Z",
+    "lastAt": "2026-08-05T13:45:55.104Z",
+    "status": "pending"
   }
 ]
