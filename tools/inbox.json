@@ -21357,5 +21357,18 @@
     "firstAt": "2026-08-05T05:02:19.969Z",
     "lastAt": "2026-08-05T05:02:19.969Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:chahun|n.flying",
+    "name": "CHA HUN",
+    "group": "N.Flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T05:29:42.191Z",
+    "lastAt": "2026-08-05T05:29:42.191Z",
+    "status": "pending"
   }
 ]
