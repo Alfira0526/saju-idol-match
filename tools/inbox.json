@@ -21656,5 +21656,18 @@
     "firstAt": "2026-08-05T14:54:55.018Z",
     "lastAt": "2026-08-05T14:54:55.018Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:solbin|laboum",
+    "name": "Solbin",
+    "group": "Laboum",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19970819",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T15:18:24.754Z",
+    "lastAt": "2026-08-05T15:18:24.754Z",
+    "status": "pending"
   }
 ]
