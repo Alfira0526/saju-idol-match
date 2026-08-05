@@ -21461,5 +21461,18 @@
     "firstAt": "2026-08-05T06:58:45.707Z",
     "lastAt": "2026-08-05T06:58:45.707Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jigu|onewe",
+    "name": "jigu",
+    "group": "onewe",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T07:17:05.232Z",
+    "lastAt": "2026-08-05T07:17:05.232Z",
+    "status": "pending"
   }
 ]
