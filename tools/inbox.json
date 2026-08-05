@@ -12318,9 +12318,9 @@
     "gender": "M",
     "dob": "20020423",
     "note": "F&F소속, 오전 10시6분 출생",
-    "count": 6,
+    "count": 7,
     "firstAt": "2026-07-26T10:44:32.070Z",
-    "lastAt": "2026-08-03T10:24:18.250Z",
+    "lastAt": "2026-08-05T19:14:59.313Z",
     "status": "pending"
   },
   {
@@ -21707,6 +21707,19 @@
     "count": 1,
     "firstAt": "2026-08-05T17:27:18.931Z",
     "lastAt": "2026-08-05T17:27:18.931Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:鄭大賢|b.a.p",
+    "name": "鄭大賢",
+    "group": "B.A.P",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930628",
+    "note": "以前TS現在MA",
+    "count": 1,
+    "firstAt": "2026-08-05T19:17:15.445Z",
+    "lastAt": "2026-08-05T19:17:15.445Z",
     "status": "pending"
   }
 ]
