@@ -21383,5 +21383,18 @@
     "firstAt": "2026-08-05T05:43:28.367Z",
     "lastAt": "2026-08-05T05:43:28.367Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정대현|비에이피",
+    "name": "정대현",
+    "group": "비에이피",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930628",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T05:57:27.173Z",
+    "lastAt": "2026-08-05T05:57:27.173Z",
+    "status": "pending"
   }
 ]
