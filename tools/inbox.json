@@ -21630,5 +21630,31 @@
     "firstAt": "2026-08-05T14:45:45.156Z",
     "lastAt": "2026-08-05T14:45:45.156Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李承協|nflying",
+    "name": "李承協",
+    "group": "nflying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921031",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T14:53:53.749Z",
+    "lastAt": "2026-08-05T14:53:53.749Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:대현|wei위아이",
+    "name": "대현",
+    "group": "WEi위아이",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T14:54:55.018Z",
+    "lastAt": "2026-08-05T14:54:55.018Z",
+    "status": "pending"
   }
 ]
