@@ -21474,5 +21474,18 @@
     "firstAt": "2026-08-05T07:17:05.232Z",
     "lastAt": "2026-08-05T07:17:05.232Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimhyunyul|hi-fiun!corn",
+    "name": "Kim Hyunyul",
+    "group": "Hi-Fi Un!corn",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000115",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T07:51:18.212Z",
+    "lastAt": "2026-08-05T07:51:18.212Z",
+    "status": "pending"
   }
 ]
