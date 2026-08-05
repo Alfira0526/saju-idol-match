@@ -21578,5 +21578,18 @@
     "firstAt": "2026-08-05T12:37:57.168Z",
     "lastAt": "2026-08-05T12:37:57.168Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:朴成国|vanner",
+    "name": "朴成国",
+    "group": "VANNER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960327",
+    "note": "KLAP",
+    "count": 1,
+    "firstAt": "2026-08-05T12:50:40.581Z",
+    "lastAt": "2026-08-05T12:50:40.581Z",
+    "status": "pending"
   }
 ]
