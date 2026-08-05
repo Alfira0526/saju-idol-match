@@ -21370,5 +21370,18 @@
     "firstAt": "2026-08-05T05:29:42.191Z",
     "lastAt": "2026-08-05T05:29:42.191Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:우메다미유|cutiestreet",
+    "name": "우메다미유",
+    "group": "CUTIE STREET",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "20040913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T05:43:28.367Z",
+    "lastAt": "2026-08-05T05:43:28.367Z",
+    "status": "pending"
   }
 ]
