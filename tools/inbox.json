@@ -21539,5 +21539,18 @@
     "firstAt": "2026-08-05T08:55:31.321Z",
     "lastAt": "2026-08-05T08:55:31.321Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:leehonggi|ftisland",
+    "name": "Lee Honggi",
+    "group": "FTISLAND",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T10:37:48.285Z",
+    "lastAt": "2026-08-05T10:37:48.285Z",
+    "status": "pending"
   }
 ]
