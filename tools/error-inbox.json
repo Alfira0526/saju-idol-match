@@ -1440,5 +1440,23 @@
     "firstAt": "2026-08-02T12:28:02.265Z",
     "lastAt": "2026-08-02T12:28:02.265Z",
     "status": "pending"
+  },
+  {
+    "key": "er:정새비|izna",
+    "name": "정새비",
+    "group": "IZNA",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "정세비"
+    ],
+    "notes": [
+      "공식 프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-08-05T04:20:04.905Z",
+    "lastAt": "2026-08-05T04:20:04.905Z",
+    "status": "pending"
   }
 ]
