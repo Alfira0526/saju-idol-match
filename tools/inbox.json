@@ -21422,5 +21422,44 @@
     "firstAt": "2026-08-05T06:32:31.930Z",
     "lastAt": "2026-08-05T06:32:31.930Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ftisland|樂隊",
+    "name": "FTISLAND",
+    "group": "樂隊",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T06:52:41.218Z",
+    "lastAt": "2026-08-05T06:52:41.218Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:aoa|aoa",
+    "name": "AOA",
+    "group": "AOA",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-08-05T06:54:05.373Z",
+    "lastAt": "2026-08-05T06:54:05.373Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:유회승|n.flying",
+    "name": "유회승",
+    "group": "N.FLYING",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T06:58:45.707Z",
+    "lastAt": "2026-08-05T06:58:45.707Z",
+    "status": "pending"
   }
 ]
