@@ -21487,5 +21487,31 @@
     "firstAt": "2026-08-05T07:51:18.212Z",
     "lastAt": "2026-08-05T07:51:18.212Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:영빈|sf9",
+    "name": "영빈",
+    "group": "SF9",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19931123",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-08-05T08:06:34.746Z",
+    "lastAt": "2026-08-05T08:06:34.746Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:金信|axmxp",
+    "name": "金信",
+    "group": "AxMxP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061122",
+    "note": "fnc",
+    "count": 1,
+    "firstAt": "2026-08-05T08:08:37.627Z",
+    "lastAt": "2026-08-05T08:08:37.627Z",
+    "status": "pending"
   }
 ]
