@@ -21513,5 +21513,18 @@
     "firstAt": "2026-08-05T08:08:37.627Z",
     "lastAt": "2026-08-05T08:08:37.627Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimwoosung|therose",
+    "name": "Kim Woo Sung",
+    "group": "The Rose",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T08:35:19.882Z",
+    "lastAt": "2026-08-05T08:35:19.882Z",
+    "status": "pending"
   }
 ]
