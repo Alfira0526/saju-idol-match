@@ -21604,5 +21604,31 @@
     "firstAt": "2026-08-05T13:45:55.104Z",
     "lastAt": "2026-08-05T13:45:55.104Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:鄭容和|cnblue",
+    "name": "鄭容和",
+    "group": "CNBLUE",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19890622",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T14:44:06.442Z",
+    "lastAt": "2026-08-05T14:44:06.442Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:徐東成|n.flying",
+    "name": "徐東成",
+    "group": "N.flying",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19960409",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T14:45:45.156Z",
+    "lastAt": "2026-08-05T14:45:45.156Z",
+    "status": "pending"
   }
 ]
