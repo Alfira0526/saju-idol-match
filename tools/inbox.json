@@ -1619,9 +1619,9 @@
     "gender": "M",
     "dob": "20041005",
     "note": "C9소속이고 키크고 개잘생겻어요 중소에만 있기 아까워",
-    "count": 3,
+    "count": 4,
     "firstAt": "2026-07-24T05:55:03.606Z",
-    "lastAt": "2026-07-25T04:36:46.685Z",
+    "lastAt": "2026-08-05T16:32:12.526Z",
     "status": "pending"
   },
   {
@@ -21668,6 +21668,19 @@
     "count": 1,
     "firstAt": "2026-08-05T15:18:24.754Z",
     "lastAt": "2026-08-05T15:18:24.754Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김초은|nctwish",
+    "name": "김초은",
+    "group": "nct wish",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050716",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-05T16:31:14.715Z",
+    "lastAt": "2026-08-05T16:31:14.715Z",
     "status": "pending"
   }
 ]
