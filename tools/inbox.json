@@ -21799,5 +21799,18 @@
     "firstAt": "2026-08-06T05:05:20.151Z",
     "lastAt": "2026-08-06T05:05:20.151Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:주창욱|drippin",
+    "name": "주창욱",
+    "group": "Drippin",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010725",
+    "note": "울림엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-08-06T05:25:43.361Z",
+    "lastAt": "2026-08-06T05:25:43.361Z",
+    "status": "pending"
   }
 ]
