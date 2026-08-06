@@ -21786,5 +21786,18 @@
     "firstAt": "2026-08-06T04:52:40.748Z",
     "lastAt": "2026-08-06T04:52:40.748Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정대현|b.a.p",
+    "name": "정대현",
+    "group": "B.A.P",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930628",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T05:05:20.151Z",
+    "lastAt": "2026-08-06T05:05:20.151Z",
+    "status": "pending"
   }
 ]
