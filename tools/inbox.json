@@ -21812,5 +21812,31 @@
     "firstAt": "2026-08-06T05:25:43.361Z",
     "lastAt": "2026-08-06T05:25:43.361Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:朴晙喜|a.c.e",
+    "name": "朴晙喜",
+    "group": "A.C.E",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940602",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T05:54:10.293Z",
+    "lastAt": "2026-08-06T05:54:10.293Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:임도혁|naze",
+    "name": "임도혁",
+    "group": "NAZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080122",
+    "note": "네이즈 다 추가해주세여 저랑 잘맞는지 보고깊어요",
+    "count": 1,
+    "firstAt": "2026-08-06T05:54:22.758Z",
+    "lastAt": "2026-08-06T05:54:22.758Z",
+    "status": "pending"
   }
 ]
