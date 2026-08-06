@@ -425,6 +425,17 @@
   .da-good h4{color:#5be0a0; border-color:#5be0a0;} .da-warn h4{color:#ffcf6a; border-color:#ffcf6a;}
   .da-love{background:#ff4d9712; border:1px solid #ff4d9722; border-radius:12px; padding:11px 13px;}
   .da-love h4{color:#ff7ab8; border-color:#ff7ab8;}
+  .da-sit{margin-top:10px; padding:9px 11px; background:#ffffff0a; border-radius:10px; border-left:2px solid #ff7ab8;}
+  .da-sit-t{display:block; font-size:11.5px; font-weight:700; color:#ff9ecb; margin-bottom:3px;}
+  .da-sit p{margin:0; font-size:13px; color:var(--ink); line-height:1.55;}
+  .persp-row{display:flex; gap:9px; overflow-x:auto; padding:4px 2px 6px; margin-top:8px; -webkit-overflow-scrolling:touch;}
+  .persp-card{flex:0 0 150px; background:#ffffff0a; border:1px solid #ffffff14; border-radius:12px; padding:10px 11px;}
+  .persp-h{display:flex; align-items:center; gap:6px; margin-bottom:6px;}
+  .persp-emo{font-size:15px;} .persp-lab{font-size:12px; color:var(--ink); font-weight:700; flex:1;}
+  .persp-val{font-size:12px; color:var(--gold); font-weight:700;}
+  .persp-bar{height:5px; background:#ffffff14; border-radius:999px; overflow:hidden; margin-bottom:7px;}
+  .persp-bar span{display:block; height:100%; border-radius:999px;}
+  .persp-txt{margin:0; font-size:11.8px; color:var(--ink-dim); line-height:1.5;}
   .da-meter-row{display:flex; align-items:center; gap:10px; margin:7px 0;}
   .da-mlab{flex:none; width:84px; font-size:12.5px; color:var(--ink-dim);}
   .da-mbar{flex:1; height:9px; background:#ffffff14; border-radius:999px; overflow:hidden;}
@@ -1286,6 +1297,23 @@ const DYN = {
   "loveFam_관성":{ko:"긴장감·존경·밀당이 있는 어른 연애 스타일.",en:"A grown-up love with tension, respect and push-pull.",ja:"緊張感・尊敬・駆け引きのある大人の恋。",zh:"带紧张感、尊重与拉扯的成熟恋爱。"},
   lvIseong:{ko:"게다가 명리의 '이성 인연'이 실제로 걸린 궁합이라, 만나면 진짜로 끌릴 수 있어요.",en:"On top of that, the saju 'opposite-sex fate' is actually active — you could genuinely fall for each other.",ja:"さらに命理の『異性の縁』が実際に働く相性 — 出会えば本当に惹かれ合うかも。",zh:"而且命理的『异性缘』真的成立——见面可能会真心动。"},
   lvHap:{ko:"일간끼리 천간합(天干合) — 운명처럼 끌리는 특별한 인연이에요.",en:"Your Day Stems form a Heavenly-Stem combination — a fated, magnetic bond.",ja:"日干どうしが天干合 — 運命のように惹かれる特別な縁。",zh:"日干相合(天干合)——如命中注定般相吸的特别缘分。"},
+  lvSitTitle:{ko:"상황 예시",en:"If this were a scene…",ja:"シチュエーション例",zh:"情景示例"},
+  "loveSit_육합":{ko:"첫 데이트부터 대화가 안 끊겨요. 카페에서 '잠깐만' 하다가 어느새 문 닫을 시간 — 말 안 해도 척척 통하는 사이.",en:"First date and the talk never stops — a quick café stop turns into closing time. You just get each other.",ja:"初デートから会話が止まらない。カフェで「ちょっとだけ」が閉店時間に — 言わずとも通じ合う二人。",zh:"第一次约会就聊不停，本想咖啡厅坐一会儿却到打烊——不用说也心有灵犀。"},
+  "loveSit_삼합":{ko:"여행 계획을 같이 짜면 역할이 착착 나뉘어요. 한 명은 코스, 한 명은 맛집 — 오래 볼수록 합이 좋아지는 팀플 케미.",en:"Plan a trip together and roles just click — one maps the route, one finds the food. The longer you're together, the better you sync.",ja:"旅行の計画を立てると役割が自然に分かれる。一人はルート、一人はグルメ — 長く一緒にいるほど噛み合うチーム。",zh:"一起做旅行计划时分工自然——一个定路线，一个找美食，越久越合拍的团队默契。"},
+  "loveSit_충":{ko:"메뉴 고르기부터 티격태격하지만, 돌아서면 먼저 연락하는 쪽. 다투고 화해하는 재미로 굴러가는 롤러코스터 커플.",en:"You bicker over what to eat, but you're the one who texts first after. A rollercoaster that runs on fight-and-make-up.",ja:"メニュー選びから言い合うけど、背を向けても先に連絡するタイプ。ケンカと仲直りで回るジェットコースター。",zh:"连点菜都拌嘴，可转身又是先联系的那个。靠吵架又和好维系的过山车情侣。"},
+  "loveSit_해":{ko:"여행지에서 취향이 갈려 잠깐 삐걱하지만, '그럼 반반씩 하자'며 결국 맞춰가는 은근한 정.",en:"Tastes clash on a trip and it gets a little bumpy, but 'let's do half and half' — you always meet in the middle.",ja:"旅行先で好みが分かれて少しぎくしゃくするけど、「じゃあ半分ずつ」と結局歩み寄る情の深さ。",zh:"旅行时口味不合有点小磕绊，一句『那就一人一半』最终还是互相迁就的默默情分。"},
+  "loveSit_방합":{ko:"같은 취미 모임에서 자연스럽게 가까워지는 그림. 굳이 약속 안 잡아도 흐르듯 같이 있게 되는 편한 사이.",en:"You drift close through a shared hobby — no need to make plans, you just end up together, easy as water.",ja:"同じ趣味の集まりで自然に近づく感じ。約束しなくても流れるように一緒にいる気楽な仲。",zh:"在共同爱好的圈子里自然靠近，不必特意约也会如水般待在一起的自在关系。"},
+  "loveSit_비화":{ko:"옷 취향까지 닮아서 커플템이 자연스러워요. '나도 그거 좋아하는데?'가 입버릇인 판박이 커플.",en:"Even your fashion matches, so couple items feel natural. 'Wait, I love that too!' is basically your catchphrase.",ja:"服の趣味まで似ていてペアアイテムが自然。「私もそれ好き!」が口癖のそっくりカップル。",zh:"连穿衣品味都像，情侣款毫不违和。『我也喜欢那个诶』是口头禅的同款情侣。"},
+  persp_immersionHi:{ko:"빠지면 헤어나오기 힘든 관계 — 한번 덕질하면 올인하게 돼요.",en:"Once you're in, it's hard to climb out — you go all-in.",ja:"一度ハマると抜け出せない — 推し始めたら全力沼。",zh:"一入坑就难自拔——一旦追就全情投入。"},
+  persp_immersionLo:{ko:"적당한 거리에서 즐기는 관계 — 과몰입 없이 담백하게.",en:"You enjoy it from a comfy distance — no over-immersion.",ja:"ほどよい距離で楽しむ関係 — 過度な沼にはならず淡白に。",zh:"保持适度距离享受——不过度沉迷、清爽自在。"},
+  persp_healingHi:{ko:"곁에 있으면 마음이 놓이는 힐링형 — 지친 날 위로가 돼요.",en:"A healing presence — a comfort on your tired days.",ja:"そばにいると安心する癒し型 — 疲れた日の慰めに。",zh:"在身边就安心的治愈型——累的时候是慰藉。"},
+  persp_healingLo:{ko:"위로보다 자극이 되는 관계 — 편안함보단 텐션이 커요.",en:"More of a spark than a balm — high energy over calm.",ja:"癒しより刺激になる関係 — 安らぎよりテンション高め。",zh:"比起慰藉更像刺激——张力大于平静。"},
+  persp_flutterHi:{ko:"볼 때마다 심장이 뛰는 설렘형 — 매일이 두근두근.",en:"Heart-racing every time — daily butterflies.",ja:"見るたび胸が高鳴るときめき型 — 毎日どきどき。",zh:"每次见到都心跳加速的心动型——每天怦然。"},
+  persp_flutterLo:{ko:"설렘보단 안정감 — 두근거림은 덜해도 든든해요.",en:"Steady over fluttery — fewer butterflies, more security.",ja:"ときめきより安定感 — どきどきは控えめでも心強い。",zh:"安定感多过心动——悸动虽少却踏实。"},
+  persp_comfortHi:{ko:"오래 봐도 편한 내 편 같은 관계 — 부담이 없어요.",en:"An always-comfy, on-your-side vibe — zero pressure.",ja:"長く見ても気楽な味方のような関係 — 負担ゼロ。",zh:"久处也自在、像自己人一样——毫无负担。"},
+  persp_comfortLo:{ko:"편함보단 긴장이 있는 관계 — 늘 신경 쓰이는 존재.",en:"More tension than ease — always on your radar.",ja:"気楽さより緊張がある関係 — いつも気になる存在。",zh:"紧张多于自在——总让你在意的存在。"},
+  persp_tensionHi:{ko:"밀당과 긴장이 큰 관계 — 짜릿하지만 에너지 소모도 커요.",en:"Big on push-pull and tension — thrilling but draining.",ja:"駆け引きと緊張が大きい関係 — スリルはあるが消耗も。",zh:"拉扯与张力很强——刺激但也耗能。"},
+  persp_tensionLo:{ko:"긴장이 적어 마음이 놓이는 관계 — 평온하게 흘러가요.",en:"Low tension, easy on the heart — it flows peacefully.",ja:"緊張が少なく安心できる関係 — 穏やかに流れる。",zh:"张力低、令人安心——平和地流动。"},
   pairPickHint:{ko:"목록에서 두 최애를 정확히 골라주세요.",en:"Pick two biases from the list.",ja:"リストから2人を正しく選んでください。",zh:"请从列表中准确选择两位。"},
   pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"},
   profPickHint:{ko:"목록에서 최애를 정확히 골라주세요.",en:"Pick a bias from the list.",ja:"リストから推しを選んでください。",zh:"请从列表中选择本命。"},
@@ -1365,6 +1393,24 @@ const METER = {
   '관성':{immersion:52,healing:35,flutter:62,comfort:35,tension:85}
 };
 const ST_FAM = {'식상':'stImmersion','인성':'stHealing','재성':'stFlutter','비겁':'stComfort','관성':'stTension'};
+// 관점별 서술 카드 (레이더 5축을 값별 서술로 풀어줌)
+const PERSP = [
+  {key:'immersion', emoji:'🌊', lab:'axImmersion'},
+  {key:'healing',   emoji:'🌿', lab:'axHealing'},
+  {key:'flutter',   emoji:'💗', lab:'axFlutter'},
+  {key:'comfort',   emoji:'🛋️', lab:'axComfort'},
+  {key:'tension',   emoji:'⚡', lab:'axTension'}
+];
+function perspCards(m){
+  return `<div class="persp-row">` + PERSP.map(p=>{
+    const v = m[p.key], tier = v>=50?'Hi':'Lo';
+    const txt = dt('persp_'+p.key+tier);
+    const barCol = v>=66?'#34e0a1':(v>=40?'#ffc94d':'#8b7fb5');
+    return `<div class="persp-card"><div class="persp-h"><span class="persp-emo">${p.emoji}</span><span class="persp-lab">${dt(p.lab)}</span><span class="persp-val">${v}</span></div>`
+      + `<div class="persp-bar"><span style="width:${v}%;background:${barCol}"></span></div>`
+      + `<p class="persp-txt">${esc(txt)}</p></div>`;
+  }).join('') + `</div>`;
+}
 function elemRelKey(U,T){ if(U===T)return'elSame'; if(generates(U,T))return'elIgen'; if(generates(T,U))return'elGenme'; if(controls(U,T))return'elIctrl'; return'elCtrlme'; }
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 // 궁합% 원형 게이지 (인라인 SVG)
@@ -1416,11 +1462,14 @@ function buildDetail(r, dmArg, selfName){
   Object.keys(m).forEach(k=> m[k]=Math.max(6,Math.min(100,Math.round(m[k]))));
   const axes = [['axImmersion','immersion'],['axHealing','healing'],['axFlutter','flutter'],['axComfort','comfort'],['axTension','tension']];
   const meterHtml = radarSVG(axes.map(([,key])=>m[key]), axes.map(([lab])=>dt(lab)));
-  // 💘 러브 스토리 (일지=배우자궁 관계 + 십신 연애스타일 + 이성인연/천간합)
+  const perspHtml = perspCards(m);
+  // 💘 러브 스토리 (일지=배우자궁 관계 + 십신 연애스타일 + 이성인연/천간합 + 상황 예시)
   const loveLines = [dt('loveBr_'+r.brKey), dt('loveFam_'+r.fam)];
   if(r.sexRole) loveLines.push(dt('lvIseong'));
   if(r.hap) loveLines.push(dt('lvHap'));
-  const loveHtml = `<div class="da-section da-love"><h4>💘 ${dt('loveTitle')}</h4>${loveLines.filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join("")}</div>`;
+  const sitLine = dt('loveSit_'+r.brKey);
+  const sitHtml = sitLine ? `<div class="da-sit"><span class="da-sit-t">📖 ${dt('lvSitTitle')}</span><p>${esc(sitLine)}</p></div>` : "";
+  const loveHtml = `<div class="da-section da-love"><h4>💘 ${dt('loveTitle')}</h4>${loveLines.filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join("")}${sitHtml}</div>`;
   // 강점/주의
   const strengths = [dt(ST_FAM[r.fam] || 'stComfort')]; if(harmony) strengths.push(dt('stHarmony'));
   let caution = bks.includes('충') ? dt('caChung') : (bks.includes('해') ? dt('caHae') : (r.fam==='관성' ? dt('caGwan') : dt('caNone')));
@@ -1455,7 +1504,7 @@ function buildDetail(r, dmArg, selfName){
       <div class="da-section da-warn"><h4>⚠️ ${dt('daCaution')}</h4><p>${esc(caution)}</p></div>
     </div>
 
-    <div class="da-section"><h4>${dt('daMeter')}</h4>${meterHtml}</div>
+    <div class="da-section"><h4>${dt('daMeter')}</h4>${meterHtml}${perspHtml}</div>
 
     <p class="da-disc">${dt('daDisc')}</p>`;
 }
