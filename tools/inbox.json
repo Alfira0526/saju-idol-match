@@ -21955,5 +21955,18 @@
     "firstAt": "2026-08-06T11:10:25.784Z",
     "lastAt": "2026-08-06T11:10:25.784Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ramilia|ahof",
+    "name": "Ramilia",
+    "group": "Ahof",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T11:44:06.543Z",
+    "lastAt": "2026-08-06T11:44:06.543Z",
+    "status": "pending"
   }
 ]
