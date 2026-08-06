@@ -400,6 +400,11 @@
   .pf-badge{flex:none; width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center;
     font-family:'Noto Serif KR',serif; font-size:28px; color:#fff; font-weight:700;}
   .pf-born{opacity:.85;}
+  .tri-svg{display:block; margin:6px auto 4px; max-width:300px;}
+  .tri-arrow{color:#ff8ac2;}
+  .tri-rows{display:flex; flex-direction:column; gap:7px;}
+  .tri-row{display:flex; justify-content:space-between; align-items:center; gap:10px; font-size:13.5px;}
+  .tri-edge{color:var(--ink);} .tri-pct{color:var(--ink-dim); white-space:nowrap;}
   .da-h-pct{font-family:'Jua',sans-serif; font-size:30px; color:var(--gold);}
   .da-h-pct span{font-size:15px;}
   .da-h-lab{font-size:11px; color:var(--ink-dim);}
@@ -576,6 +581,7 @@
     </div>
     <button class="pair-entry" type="button" onclick="openPair()" data-i18n="pairEntry">💞 최애끼리 궁합 보기</button>
     <button class="pair-entry" type="button" onclick="openProfile()" data-i18n="profEntry">🔮 최애 프로필 · 한 명 사주 풀이</button>
+    <button class="pair-entry" type="button" onclick="openTri()" data-i18n="triEntry">🔥 지옥의 삼각관계 · 나 + 최애 2명</button>
 
     <div class="disclaimer">
       <h3 data-i18n="dscTitle">읽기 전 확인</h3>
@@ -718,6 +724,21 @@
   </div>
 </div>
 
+<div class="modal-overlay hidden" id="triModal" onclick="if(event.target===this)closeTri()">
+  <div class="modal da-modal">
+    <button class="modal-x" onclick="closeTri()" aria-label="닫기">✕</button>
+    <h3 class="modal-title" data-i18n="triTitle">지옥의 삼각관계</h3>
+    <p class="modal-intro" data-i18n="triIntro">나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.</p>
+    <div class="pair-pick">
+      <input type="text" id="triA" list="idolList" placeholder="최애 A" data-i18n-ph="triAph" autocomplete="off">
+      <span class="pair-heart">🔺</span>
+      <input type="text" id="triB" list="idolList" placeholder="최애 B" data-i18n-ph="triBph" autocomplete="off">
+    </div>
+    <button class="m-submit" onclick="runTri()" data-i18n="triGo">삼각 진단</button>
+    <div id="triResult"></div>
+  </div>
+</div>
+
 <div class="modal-overlay hidden" id="detailModal" onclick="if(event.target===this)closeDetail()">
   <div class="modal da-modal">
     <button class="modal-x" onclick="closeDetail()" aria-label="닫기">✕</button>
@@ -842,6 +863,12 @@ const TR = {
   profIntro: { ko: "아이돌 한 명을 골라 그 사람의 사주 성향을 풀어봐요.", en: "Pick one idol and read their saju personality.", ja: "アイドルを1人選んで、その人の四柱の傾向を読み解きます。", zh: "选择一位偶像，解读其八字性格。" },
   profPh: { ko: "최애 (이름 검색)", en: "Bias (search name)", ja: "推し(名前検索)", zh: "本命(搜索名字)" },
   profGo: { ko: "프로필 보기", en: "See profile", ja: "プロフィールを見る", zh: "查看档案" },
+  triEntry: { ko: "🔥 지옥의 삼각관계 · 나 + 최애 2명", en: "🔥 Love-triangle test · you + 2 biases", ja: "🔥 地獄の三角関係 · 私+推し2人", zh: "🔥 地狱三角 · 我+两位本命" },
+  triTitle: { ko: "지옥의 삼각관계", en: "Love-triangle test", ja: "地獄の三角関係", zh: "地狱三角关系" },
+  triIntro: { ko: "나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.", en: "You and two biases — all three edges at once. See who clicks with whom.", ja: "私と推し2人、三人の相性を一度に!誰が誰と合うか三角で診断。", zh: "我和两位本命，三人缘分一次看！谁和谁更合，三角诊断。" },
+  triAph: { ko: "최애 A (이름 검색)", en: "Bias A (search name)", ja: "推しA(名前検索)", zh: "本命A(搜索名字)" },
+  triBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
+  triGo: { ko: "삼각 진단", en: "Diagnose triangle", ja: "三角診断", zh: "三角诊断" },
 };
 // 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
 const TR_JA = {
@@ -1066,6 +1093,7 @@ function applyLang(){
     if(window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair();
   }catch(e){} }
   try{ const pm=document.getElementById('profileModal'); if(pm && !pm.classList.contains('hidden') && _profileRendered) runProfile(); }catch(e){}
+  try{ const tm=document.getElementById('triModal'); if(tm && !tm.classList.contains('hidden') && _triRendered) runTri(); }catch(e){}
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1272,7 +1300,22 @@ const DYN = {
   pfAxDrive:{ko:"추진",en:"Drive",ja:"推進",zh:"推进"},
   pfAxEmotion:{ko:"감성",en:"Emotion",ja:"感性",zh:"感性"},
   pfAxStability:{ko:"안정",en:"Stability",ja:"安定",zh:"稳定"},
-  pfAxWarmth:{ko:"친화",en:"Warmth",ja:"親和",zh:"亲和"}
+  pfAxWarmth:{ko:"친화",en:"Warmth",ja:"親和",zh:"亲和"},
+  triMe:{ko:"나",en:"Me",ja:"私",zh:"我"},
+  triNeedCalc:{ko:"먼저 내 생년월일로 매칭을 돌려주세요. 나와의 궁합이 필요해요.",en:"Run your own match first — we need your compatibility.",ja:"先に自分の生年月日でマッチングしてください。私との相性が必要です。",zh:"请先用你的生日进行匹配，需要你的缘分数据。"},
+  triV1:{ko:"🌈 삼위일체 케미",en:"🌈 Trinity chemistry",ja:"🌈 三位一体のケミ",zh:"🌈 三位一体的默契"},
+  triD1:{ko:"셋 다 잘 맞는 이상적인 삼각! 지옥은커녕 천국 라인업이에요.",en:"All three click — this is heaven, not hell.",ja:"三人ともよく合う理想の三角!地獄どころか天国ラインです。",zh:"三人都合拍的理想三角！哪是地狱，简直天堂。"},
+  triV2:{ko:"🔥 진짜 지옥의 삼각관계",en:"🔥 A true love triangle",ja:"🔥 本物の地獄の三角関係",zh:"🔥 真正的地狱三角"},
+  triD2:{ko:"나는 둘 다 좋은데 둘이 서로 안 맞아요. 중간에서 조율하느라 바쁠 운명.",en:"You love them both, but they clash — you'll be stuck mediating.",ja:"私はどちらも好きなのに二人が合わない。間で調整に追われる運命。",zh:"你两个都喜欢，但他俩不合——注定夹在中间当和事佬。"},
+  triV3:{ko:"🪑 나만 낄끼빠빠",en:"🪑 Third-wheel alert",ja:"🪑 まさかの third wheel",zh:"🪑 我成了电灯泡"},
+  triD3:{ko:"둘이 너무 잘 맞아서 내가 제3자 느낌… 응원하는 포지션이 편할지도.",en:"Those two match so well you feel like the third wheel — maybe cheer them on.",ja:"二人が合いすぎて自分が第三者気分…応援ポジションが楽かも。",zh:"他俩太合拍，我倒像个外人……当个应援位也许更自在。"},
+  triV4:{ko:"💘 마음은 이미 한쪽",en:"💘 Your heart already leans",ja:"💘 心はもう片方に",zh:"💘 心已偏向一边"},
+  triD4:{ko:"{name} 쪽으로 확 기우는 삼각관계. 나머지 한 명은 좋은 친구 라인.",en:"This triangle leans hard toward {name}; the other stays a good-friend line.",ja:"{name}の方へぐっと傾く三角関係。もう一人は良き友ライン。",zh:"这段三角明显偏向{name}，另一位则是好友线。"},
+  triV5:{ko:"🌫️ 미지근한 삼각",en:"🌫️ A lukewarm triangle",ja:"🌫️ ぬるい三角",zh:"🌫️ 温吞的三角"},
+  triD5:{ko:"뚜렷한 케미 없이 셋 다 은은해요. 부담 없이 두루두루 좋은 사이.",en:"No sparks stand out — all three stay mild and easygoing.",ja:"際立ったケミもなく三人とも穏やか。気楽で広く良い関係。",zh:"没有突出的火花，三人都淡淡的。轻松而普遍融洽。"},
+  triQHi:{ko:"찰떡",en:"great",ja:"ばっちり",zh:"很合"},
+  triQMid:{ko:"무난",en:"okay",ja:"まあまあ",zh:"一般"},
+  triQLo:{ko:"삐걱",en:"rocky",ja:"ぎくしゃく",zh:"磕绊"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1555,6 +1598,70 @@ function runProfile(){
   if(!A){ out.innerHTML=`<p class="pair-hint">${dt('profPickHint')}</p>`; _profileRendered=false; return; }
   out.innerHTML = buildProfile(A);
   _profileRendered=true;
+}
+
+// ── 🔥 지옥의 삼각관계 (나 + 최애 2명, 세 변 궁합) ──
+function triQual(v){ return v>=55?dt('triQHi'):(v>=42?dt('triQMid'):dt('triQLo')); }
+function triangleSVG(labels, edges){
+  const P=[[130,32],[42,168],[218,168]]; // 나, A, B
+  const col=v=> v>=55?'#34e0a1':(v>=42?'#ffc94d':'#ff6b7d');
+  const E=[[0,1,edges[0]],[0,2,edges[1]],[1,2,edges[2]]];
+  const lines=E.map(([a,b,v])=>`<line x1="${P[a][0]}" y1="${P[a][1]}" x2="${P[b][0]}" y2="${P[b][1]}" stroke="${col(v)}" stroke-width="3" stroke-linecap="round" opacity=".85"/>`).join('');
+  const elabs=E.map(([a,b,v])=>{const mx=(P[a][0]+P[b][0])/2, my=(P[a][1]+P[b][1])/2; return `<rect x="${(mx-17).toFixed(1)}" y="${(my-10).toFixed(1)}" width="34" height="18" rx="9" fill="#1b1030" stroke="${col(v)}"/><text x="${mx.toFixed(1)}" y="${(my+3).toFixed(1)}" text-anchor="middle" fill="#f3edff" font-size="11" font-weight="700">${Math.round(v)}</text>`;}).join('');
+  const nodes=P.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="20" fill="#2a1650" stroke="#ff5da2" stroke-width="2"/><text x="${p[0]}" y="${p[1]+4}" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="700">${esc(labels[i])}</text>`).join('');
+  return `<svg class="tri-svg" viewBox="0 0 260 205" width="100%" aria-hidden="true">${lines}${elabs}${nodes}</svg>`;
+}
+function triVerdict(meA, meB, ab, nameA, nameB){
+  const meAvg=(meA+meB)/2;
+  // 삼위일체: 세 변 모두 잘 맞음
+  if(meA>=52 && meB>=52 && ab>=52) return {band:dt('triV1'), diag:dt('triD1')};
+  // 진짜 지옥: 나는 둘 다 좋은데 둘이 (상대적으로) 안 맞음
+  if(meA>=52 && meB>=52 && ab<=meAvg-10) return {band:dt('triV2'), diag:dt('triD2')};
+  // 낄끼빠빠: 둘이 나보다 더 잘 맞음
+  if(ab>=55 && ab>=meAvg+8) return {band:dt('triV3'), diag:dt('triD3')};
+  // 한쪽으로 기움: 두 최애와의 궁합 차이가 큼
+  if(Math.abs(meA-meB)>=12){ const lean = meA>meB?nameA:nameB; return {band:dt('triV4'), diag:dt('triD4').replace('{name}', lean)}; }
+  return {band:dt('triV5'), diag:dt('triD5')};
+}
+function shortName(n){ n=String(n); return n.length>5 ? n.slice(0,5)+'…' : n; }
+function buildTri(A, B){
+  const s=window._saju;
+  const rA=s.scored.find(x=>x.name===A.name && x.group===A.group);
+  const rB=s.scored.find(x=>x.name===B.name && x.group===B.group);
+  const meA = rA?rA.pct:0, meB = rB?rB.pct:0;
+  const abRow = pairScored(A).scored.find(x=>x.name===B.name && x.group===B.group);
+  const ab = abRow?abRow.pct:0;
+  const v = triVerdict(meA, meB, ab, A.name, B.name);
+  const me = dt('triMe');
+  const svg = triangleSVG([me, shortName(A.name), shortName(B.name)], [meA, meB, ab]);
+  const row = (l, r, pct)=>`<div class="tri-row"><span class="tri-edge">${esc(l)} <span class="tri-arrow">↔</span> ${esc(r)}</span><span class="tri-pct">${pct.toFixed(1)}% · ${esc(triQual(pct))}</span></div>`;
+  return `
+    <div class="da-head"><div class="da-h-main">
+      <div class="da-h-name">${esc(me)} <span class="tri-arrow">△</span> ${esc(A.name)} <span class="tri-arrow">△</span> ${esc(B.name)}</div>
+    </div></div>
+    ${svg}
+    <div class="da-band">${esc(v.band)}</div>
+    <div class="da-section"><p>${esc(v.diag)}</p></div>
+    <div class="da-section tri-rows">
+      ${row(me, A.name, meA)}
+      ${row(me, B.name, meB)}
+      ${row(A.name, B.name, ab)}
+    </div>
+    <p class="da-disc">${dt('daDisc')}</p>`;
+}
+let _triRendered=false;
+function openTri(){ buildPairList(); _triRendered=false; document.getElementById('triResult').innerHTML=''; document.getElementById('triModal').classList.remove('hidden'); }
+function closeTri(){ _triRendered=false; document.getElementById('triModal').classList.add('hidden'); }
+function runTri(){
+  const out=document.getElementById('triResult');
+  const s=window._saju;
+  if(!s || !s.scored){ out.innerHTML=`<p class="pair-hint">${dt('triNeedCalc')}</p>`; _triRendered=false; return; }
+  const A=findIdol(document.getElementById('triA').value.trim());
+  const B=findIdol(document.getElementById('triB').value.trim());
+  if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; _triRendered=false; return; }
+  if(A.name===B.name && A.group===B.group){ out.innerHTML=`<p class="pair-hint">${dt('pairSame')}</p>`; _triRendered=false; return; }
+  out.innerHTML = buildTri(A, B);
+  _triRendered=true;
 }
 
 function godName(uSI, tSI){
