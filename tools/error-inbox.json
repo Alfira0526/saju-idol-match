@@ -1472,5 +1472,21 @@
     "firstAt": "2026-08-06T10:34:56.298Z",
     "lastAt": "2026-08-06T10:34:56.298Z",
     "status": "pending"
+  },
+  {
+    "key": "er:김쿤|naze",
+    "name": "김쿤",
+    "group": "NAZE",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "김건"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-08-06T16:58:34.553Z",
+    "lastAt": "2026-08-06T16:58:34.553Z",
+    "status": "pending"
   }
 ]
