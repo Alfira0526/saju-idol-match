@@ -21903,5 +21903,18 @@
     "firstAt": "2026-08-06T09:49:42.757Z",
     "lastAt": "2026-08-06T09:49:42.757Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아민|이펙스",
+    "name": "아민",
+    "group": "이펙스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T09:52:48.913Z",
+    "lastAt": "2026-08-06T09:52:48.913Z",
+    "status": "pending"
   }
 ]
