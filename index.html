@@ -870,6 +870,7 @@ const TR = {
   triBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
   triGo: { ko: "삼각 진단", en: "Diagnose triangle", ja: "三角診断", zh: "三角诊断" },
   shareCardBtn: { ko: "📸 이 카드 저장 · 공유", en: "📸 Save · share this card", ja: "📸 このカードを保存・共有", zh: "📸 保存 · 分享此卡" },
+  detailCardSub: { ko: "내 최애 궁합", en: "My bias match", ja: "私の推し相性", zh: "我的本命缘分" },
 };
 // 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
 const TR_JA = {
@@ -1464,7 +1465,7 @@ function openDetail(nameEnc, groupEnc){
   const r = s.scored.find(x=>x.name===name && x.group===group);
   if(!r) return;
   s.detail = { name, group };
-  document.getElementById('detailBody').innerHTML = buildDetail(r);
+  document.getElementById('detailBody').innerHTML = buildDetail(r) + shareRowHTML('shareDetail','detailShareHint');
   document.getElementById('detailModal').classList.remove('hidden');
 }
 function closeDetail(){ const m=document.getElementById('detailModal'); if(m) m.classList.add('hidden'); if(window._saju) window._saju.detail=null; }
@@ -1528,7 +1529,7 @@ function runPair(){
   const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
   window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
   out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>` + buildDetail(rB, dmA, A.name)
-    + `<div class="share-row" style="margin-top:14px"><button class="share-btn" onclick="sharePair()">${t('shareCardBtn')}</button><span class="share-hint" id="pairShareHint"></span></div>`;
+    + shareRowHTML('sharePair','pairShareHint');
 }
 
 // ── 🔮 최애 프로필 (아이돌 1명 단독 사주 풀이) ──
@@ -1602,7 +1603,7 @@ function runProfile(){
   const A=findIdol(document.getElementById('profileInput').value.trim());
   const out=document.getElementById('profileResult');
   if(!A){ out.innerHTML=`<p class="pair-hint">${dt('profPickHint')}</p>`; _profileRendered=false; return; }
-  out.innerHTML = buildProfile(A);
+  out.innerHTML = buildProfile(A) + shareRowHTML('shareProfile','profileShareHint');
   _profileRendered=true;
 }
 
@@ -1666,8 +1667,7 @@ function runTri(){
   const B=findIdol(document.getElementById('triB').value.trim());
   if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; _triRendered=false; return; }
   if(A.name===B.name && A.group===B.group){ out.innerHTML=`<p class="pair-hint">${dt('pairSame')}</p>`; _triRendered=false; return; }
-  out.innerHTML = buildTri(A, B)
-    + `<div class="share-row" style="margin-top:14px"><button class="share-btn" onclick="shareTri()">${t('shareCardBtn')}</button><span class="share-hint" id="triShareHint"></span></div>`;
+  out.innerHTML = buildTri(A, B) + shareRowHTML('shareTri','triShareHint');
   _triRendered=true;
 }
 
@@ -3416,6 +3416,68 @@ function shareTri(){
   const abRow=pairScored(A).scored.find(x=>x.name===B.name&&x.group===B.group); const ab=abRow?abRow.pct:0;
   const verdict=triVerdict(meA,meB,ab,A.name,B.name);
   shareCanvasFile(drawTriCard(A,B,meA,meB,ab,verdict), `삼각관계_${A.name}_${B.name}.png`, document.getElementById('triShareHint'));
+}
+// 공통 공유 버튼 행 (개별 해석·궁합·삼각 등 모든 결과에서 재사용)
+function shareRowHTML(fn, hintId){
+  return `<div class="share-row" style="margin-top:14px"><button class="share-btn" onclick="${fn}()">${t('shareCardBtn')}</button><span class="share-hint" id="${hintId}"></span></div>`;
+}
+// 개별 해석(심층분석, 나×최애) 공유 카드
+function drawDetailCard(r){
+  const s=window._saju, dm=s.dm; const W=1080,H=1350,M=90;
+  const canvas=document.createElement('canvas'); canvas.width=W; canvas.height=H;
+  const ctx=canvas.getContext('2d'); cardBg(ctx,W,H); cardHead(ctx,W,M,dt('detailCardSub'));
+  const ink="#f3edff", gold="#ff4d97", dim="#ab9fce";
+  ctx.textAlign="center";
+  ctx.fillStyle=ink; ctx.font="700 50px 'Noto Sans KR',sans-serif";
+  ctx.fillText(`${dt('triMe')}   💞   ${r.name}`, W/2, 392);
+  ctx.fillStyle=dim; ctx.font="400 28px 'Noto Sans KR',sans-serif";
+  ctx.fillText(r.group, W/2, 442);
+  bigGauge(ctx, W/2, 640, 148, r.pct);
+  ctx.fillStyle=gold; ctx.font="44px 'Jua','Noto Sans KR',sans-serif"; ctx.textAlign="center";
+  ctx.fillText(dt(bandKey(r.pct)), W/2, 880);
+  const erk=elemRelKey(dm.elem, r.elem);
+  const relWord = erk==='elSame'?dt('elSameWord'):((erk==='elIgen'||erk==='elGenme')?dt('elGenWord'):dt('elCtrlWord'));
+  ctx.fillStyle=ink; ctx.font="500 34px 'Noto Sans KR',sans-serif";
+  ctx.fillText(`${STEMS[dm.stemIdx]}·${dm.elem}  ${relWord}  ${r.pillar[0]}·${r.elem}`, W/2, 952);
+  ctx.fillStyle=dim; ctx.font="400 30px 'Noto Sans KR',sans-serif";
+  wrapText(ctx, dt('loveBr_'+r.brKey)||'', W/2, 1030, W-2*M-40, 44);
+  ctx.textAlign="left"; cardFoot(ctx,W,M,H); return canvas;
+}
+function shareDetail(){
+  const s=window._saju; if(!s||!s.detail) return;
+  const r=s.scored.find(x=>x.name===s.detail.name && x.group===s.detail.group); if(!r) return;
+  shareCanvasFile(drawDetailCard(r), `사주궁합_${r.name}.png`, document.getElementById('detailShareHint'));
+}
+// 최애 프로필(아이돌 개별 사주) 공유 카드
+function drawProfileCard(A){
+  const si=STEMS.indexOf(A.pillar[0]), bi=BRANCHES.indexOf(A.pillar[1]), elem=A.elem, yang=STEM_YY(si)===1;
+  let need=0;
+  if(A.dob&&A.dob.length===8){ const y=+A.dob.slice(0,4),mo=+A.dob.slice(4,6),da=+A.dob.slice(6,8);
+    const yp=yearPillar(y,mo,da), mp=monthPillar(y,mo,da,yp.stemIdx);
+    need=bodyStrength([{stem:yp.stemIdx,branch:yp.branchIdx,weight:1},{stem:mp.stemIdx,branch:mp.branchIdx,weight:2},{stem:si,branch:bi,weight:1,isDay:true}],elem); }
+  const energyKey = need<-0.08?'pfStrong':(need>0.08?'pfWeak':'pfMid');
+  const W=1080,H=1350,M=90; const canvas=document.createElement('canvas'); canvas.width=W; canvas.height=H;
+  const ctx=canvas.getContext('2d'); cardBg(ctx,W,H); cardHead(ctx,W,M,dt('profTitle'));
+  const ink="#f3edff", gold="#ff4d97", dim="#ab9fce";
+  // 배지 + 이름
+  const cx=M+72, cy=380, rad=72;
+  ctx.beginPath(); ctx.arc(cx,cy,rad,0,Math.PI*2); ctx.fillStyle=ELEM_HEX[elem]; ctx.fill();
+  ctx.fillStyle="#170e2e"; ctx.font="800 64px 'Nanum Myeongjo',serif"; ctx.textAlign="center"; ctx.textBaseline="middle";
+  ctx.fillText(A.pillar[0], cx, cy+4); ctx.textAlign="left"; ctx.textBaseline="alphabetic";
+  ctx.fillStyle=ink; ctx.font="700 48px 'Noto Sans KR',sans-serif"; ctx.fillText(A.name, cx+rad+40, cy-6);
+  ctx.fillStyle=dim; ctx.font="400 30px 'Noto Sans KR',sans-serif"; ctx.fillText(`${A.group}  ·  ${A.pillar} · ${elem}`, cx+rad+40, cy+42);
+  // 페르소나 헤드라인
+  ctx.textAlign="center"; ctx.fillStyle=gold; ctx.font="52px 'Jua','Noto Sans KR',sans-serif";
+  ctx.fillText(dl(STEM_PROF[si].tag), W/2, 560);
+  ctx.fillStyle=ink; ctx.font="400 32px 'Noto Sans KR',sans-serif";
+  let y=wrapText(ctx, dl(STEM_PROF[si].desc), W/2, 640, W-2*M-40, 48)+70;
+  ctx.fillStyle="#d9cffb"; y=wrapText(ctx, dl(ELEM_TRAIT[elem])||'', W/2, y, W-2*M-40, 48)+70;
+  ctx.fillStyle=dim; wrapText(ctx, dt(energyKey), W/2, y, W-2*M-40, 48);
+  ctx.textAlign="left"; cardFoot(ctx,W,M,H); return canvas;
+}
+function shareProfile(){
+  const A=findIdol(document.getElementById('profileInput').value.trim()); if(!A) return;
+  shareCanvasFile(drawProfileCard(A), `최애프로필_${A.name}.png`, document.getElementById('profileShareHint'));
 }
 
 // ================= 제보 & 업데이트 공지 =================
