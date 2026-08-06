@@ -21613,9 +21613,9 @@
     "gender": "M",
     "dob": "19890622",
     "note": "FNC",
-    "count": 5,
+    "count": 6,
     "firstAt": "2026-08-05T14:44:06.442Z",
-    "lastAt": "2026-08-06T13:11:47.777Z",
+    "lastAt": "2026-08-06T13:40:29.470Z",
     "status": "pending"
   },
   {
@@ -22019,6 +22019,19 @@
     "count": 1,
     "firstAt": "2026-08-06T13:24:46.893Z",
     "lastAt": "2026-08-06T13:24:46.893Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:王思雯|&team",
+    "name": "王思雯",
+    "group": "&team",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980807",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T13:31:33.294Z",
+    "lastAt": "2026-08-06T13:31:33.294Z",
     "status": "pending"
   }
 ]
