@@ -21864,5 +21864,18 @@
     "firstAt": "2026-08-06T07:50:58.720Z",
     "lastAt": "2026-08-06T07:50:58.720Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현빈|pow",
+    "name": "현빈",
+    "group": "POW",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030529",
+    "note": "그리드엔터",
+    "count": 1,
+    "firstAt": "2026-08-06T08:29:50.126Z",
+    "lastAt": "2026-08-06T08:29:50.126Z",
+    "status": "pending"
   }
 ]
