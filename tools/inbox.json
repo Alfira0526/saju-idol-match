@@ -22072,5 +22072,18 @@
     "firstAt": "2026-08-06T15:26:08.537Z",
     "lastAt": "2026-08-06T15:26:08.537Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:krystal|f(x)",
+    "name": "Krystal",
+    "group": "F(x)",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19941024",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-08-06T16:12:56.195Z",
+    "lastAt": "2026-08-06T16:12:56.195Z",
+    "status": "pending"
   }
 ]
