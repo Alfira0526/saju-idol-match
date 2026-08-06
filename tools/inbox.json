@@ -21721,5 +21721,18 @@
     "firstAt": "2026-08-05T19:17:15.445Z",
     "lastAt": "2026-08-05T19:17:15.445Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:용훈|onewe",
+    "name": "용훈",
+    "group": "Onewe",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940817",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T00:21:32.298Z",
+    "lastAt": "2026-08-06T00:21:32.298Z",
+    "status": "pending"
   }
 ]
