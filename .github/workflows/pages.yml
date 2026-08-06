@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+# 사이트에 실제로 반영되는 파일이 바뀔 때만 배포한다.
+# 워커가 10분마다 커밋하는 tools/inbox.json(제보 큐, 사이트가 로드하지 않음)에는
+# 배포가 트리거되지 않도록 하여 Pages 배포 충돌·타임아웃(과다 배포)을 방지한다.
+on:
+  push:
+    branches: ["claude/idol-saju-matching-app-752fy3"]
+    paths:
+      - "index.html"          # 앱 본체(데이터는 build.js가 여기에 주입됨)
+      - "tools/stats.json"    # 런타임에 fetch 하는 유일한 데이터 파일
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:          # 필요 시 수동 배포
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 동시 배포 방지: 진행 중 배포는 끊지 않고 대기(중복만 정리)
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

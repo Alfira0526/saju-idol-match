@@ -37,11 +37,15 @@
 배포는 GitHub Pages를 권장합니다(최초 1회만 수동 설정):
 
 1. Repository **Settings → Pages**
-2. **Source** → `Deploy from a branch`
-3. **Branch** → `claude/idol-saju-matching-app-752fy3` / `/(root)` → **Save**
+2. **Build and deployment → Source** → **`GitHub Actions`** 선택
+3. 저장 후 브랜치에 push하면 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)가 배포
 4. 1~2분 뒤 <https://alfira0526.github.io/saju-idol-match/> 에서 공개
 
-이후에는 브랜치에 push할 때마다 자동으로 갱신됩니다.
+> **왜 `GitHub Actions` 소스인가:** 제보 접수 워커가 10분마다 `tools/inbox.json`(제보 큐,
+> 사이트가 로드하지 않는 데이터 파일)을 커밋합니다. 기본 `Deploy from a branch`는 이런
+> 커밋마다 Pages를 재배포해 배포가 서로 충돌·타임아웃(배포 실패 메일)을 유발했습니다.
+> 커스텀 워크플로는 **실제 사이트 파일(`index.html`·`tools/stats.json`)이 바뀔 때만** 배포해
+> 이 문제를 없앱니다.
 
 ## 🧮 점수는 어떻게 계산되나
 
