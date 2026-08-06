@@ -22111,5 +22111,18 @@
     "firstAt": "2026-08-06T17:27:05.866Z",
     "lastAt": "2026-08-06T17:27:05.866Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이창섭|비투비",
+    "name": "이창섭",
+    "group": "비투비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910226",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T20:27:14.620Z",
+    "lastAt": "2026-08-06T20:27:14.620Z",
+    "status": "pending"
   }
 ]
