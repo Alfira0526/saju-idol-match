@@ -21734,5 +21734,18 @@
     "firstAt": "2026-08-06T00:21:32.298Z",
     "lastAt": "2026-08-06T00:21:32.298Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:손호영|god",
+    "name": "손호영",
+    "group": "god",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19800326",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T00:57:12.672Z",
+    "lastAt": "2026-08-06T00:57:12.672Z",
+    "status": "pending"
   }
 ]
