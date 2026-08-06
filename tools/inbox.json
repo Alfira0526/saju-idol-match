@@ -21916,5 +21916,31 @@
     "firstAt": "2026-08-06T09:52:48.913Z",
     "lastAt": "2026-08-06T09:52:48.913Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤기|naze",
+    "name": "윤기",
+    "group": "NAZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050505",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T10:58:29.480Z",
+    "lastAt": "2026-08-06T10:58:29.480Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:金宰铉|n.flying",
+    "name": "金宰铉",
+    "group": "N. Flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-08-06T11:00:27.976Z",
+    "lastAt": "2026-08-06T11:00:27.976Z",
+    "status": "pending"
   }
 ]
