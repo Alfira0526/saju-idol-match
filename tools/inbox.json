@@ -21773,5 +21773,18 @@
     "firstAt": "2026-08-06T03:29:44.254Z",
     "lastAt": "2026-08-06T03:29:44.254Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:육성재|비투비",
+    "name": "육성재",
+    "group": "비투비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950502",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T04:52:40.748Z",
+    "lastAt": "2026-08-06T04:52:40.748Z",
+    "status": "pending"
   }
 ]
