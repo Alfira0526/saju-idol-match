@@ -22150,5 +22150,18 @@
     "firstAt": "2026-08-06T22:01:21.816Z",
     "lastAt": "2026-08-06T22:01:21.816Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:aim|nctwish",
+    "name": "aim",
+    "group": "Nct wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040405",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T23:14:03.366Z",
+    "lastAt": "2026-08-06T23:14:03.366Z",
+    "status": "pending"
   }
 ]
