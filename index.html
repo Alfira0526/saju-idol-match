@@ -308,7 +308,8 @@
   }
   .more-btn:hover{border-color:var(--gold); color:var(--gold);}
   .rank-rest{margin-top:6px;}
-  .rest-row{display:flex; align-items:center; gap:12px; padding:10px 6px; border-top:1px solid #ffffff10; font-size:13.5px;}
+  .rest-row{display:flex; align-items:center; gap:12px; padding:10px 6px; border-top:1px solid #ffffff10; font-size:13.5px; cursor:pointer;}
+  .rest-row:hover{background:#ffffff08;}
   .rest-row .r-n{width:30px; text-align:right; color:var(--ink-dim); flex:none;}
   .rest-row .r-name{flex:1; min-width:0;}
   .rest-row .r-grp{color:var(--ink-dim); font-size:11.5px;}
@@ -385,6 +386,41 @@
   .up-toast-x{flex:none; background:none; border:none; color:var(--ink-dim); cursor:pointer;
     font-size:13px; padding:2px 6px; border-radius:50%;}
   .up-toast-x:hover{color:var(--ink);}
+
+  /* 심층 분석 모달 */
+  .rank-card{cursor:pointer;}
+  .da-modal{max-width:560px; text-align:left;}
+  #detailBody{text-align:left;}
+  .da-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin:2px 0 10px;}
+  .da-h-name{font-family:'Jua','Noto Sans KR',sans-serif; font-size:22px; color:var(--ink); display:flex; align-items:baseline; gap:9px; flex-wrap:wrap;}
+  .da-h-grp{font-size:13px; color:var(--ink-dim);}
+  .da-h-pill{margin-top:6px; font-size:12.5px; color:var(--ink-dim); display:inline-flex; align-items:center; gap:6px;}
+  .da-h-pill .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .da-h-score{flex:none; text-align:right;}
+  .da-h-pct{font-family:'Jua',sans-serif; font-size:30px; color:var(--gold);}
+  .da-h-pct span{font-size:15px;}
+  .da-h-lab{font-size:11px; color:var(--ink-dim);}
+  .da-band{display:inline-block; background:var(--grad,var(--gold)); color:#fff; font-size:13px; font-weight:700;
+    padding:5px 14px; border-radius:999px; margin:0 0 16px;}
+  .da-section{margin:0 0 15px;}
+  .da-section h4{font-size:12.5px; color:var(--gold); margin:0 0 6px; letter-spacing:.02em; font-weight:700;
+    border-left:3px solid var(--gold); padding-left:8px;}
+  .da-section p{font-size:13.5px; color:var(--ink); line-height:1.6; margin:0 0 4px;}
+  .da-elemline{font-size:14px;} .da-elemline b{color:var(--ink);}
+  .da-rel{color:var(--gold-3,var(--gold)); font-size:12px; padding:0 6px;}
+  .da-brow{display:flex; align-items:baseline; gap:9px; padding:6px 0; border-bottom:1px solid #ffffff10; font-size:13px;}
+  .da-brow:last-child{border-bottom:none;}
+  .da-bpos{flex:none; width:78px; color:var(--ink-dim); font-size:12px;}
+  .da-btag{flex:none; color:var(--gold); font-size:12.5px; min-width:64px;}
+  .da-brz{color:var(--ink); line-height:1.5;}
+  .da-two{display:flex; gap:12px;} .da-two .da-section{flex:1; min-width:0;}
+  .da-good h4{color:#5be0a0; border-color:#5be0a0;} .da-warn h4{color:#ffcf6a; border-color:#ffcf6a;}
+  .da-meter-row{display:flex; align-items:center; gap:10px; margin:7px 0;}
+  .da-mlab{flex:none; width:84px; font-size:12.5px; color:var(--ink-dim);}
+  .da-mbar{flex:1; height:9px; background:#ffffff14; border-radius:999px; overflow:hidden;}
+  .da-mfill{display:block; height:100%; background:var(--grad,var(--gold)); border-radius:999px; transition:width .5s ease;}
+  .da-disc{font-size:11.5px; color:var(--ink-dim); margin:14px 0 0; text-align:center;}
+  @media (max-width:480px){ .da-two{flex-direction:column; gap:0;} .da-bpos{width:66px;} .da-mlab{width:72px;} }
 
   .fav-eyebrow{font-size:12px; letter-spacing:.08em; color:var(--gold); margin-bottom:6px;}
   .fav-card{margin:6px 0 14px; padding:18px 18px 20px; border-radius:14px;
@@ -629,6 +665,15 @@
     </div>
     <p class="fav-foot" id="favFoot"></p>
     <button class="m-submit" onclick="closeFav()" data-i18n="favAgain">한 번 더 매칭하기</button>
+  </div>
+</div>
+
+<!-- 심층 분석 모달 -->
+<div class="modal-overlay hidden" id="detailModal" onclick="if(event.target===this)closeDetail()">
+  <div class="modal da-modal">
+    <button class="modal-x" onclick="closeDetail()" aria-label="닫기">✕</button>
+    <div id="detailBody"></div>
+    <button class="m-submit" onclick="closeDetail()" data-i18n="mClose">닫기</button>
   </div>
 </div>
 
@@ -956,7 +1001,9 @@ function applyLang(){
   renderSub();
   buildHourSelect();
   // 결과가 이미 있으면 언어별 동적 라벨(일간·카테고리·전체·순위·이유 등) 재렌더
-  if(window._saju){ try{ renderDayMaster(window._saju.dm); applyScopeUI(); renderRanks(); }catch(e){} }
+  if(window._saju){ try{ renderDayMaster(window._saju.dm); applyScopeUI(); renderRanks();
+    if(window._saju.detail){ const dd=window._saju.detail; openDetail(encodeURIComponent(dd.name), encodeURIComponent(dd.group)); }
+  }catch(e){} }
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1093,7 +1140,44 @@ const DYN = {
   shareRankTitle:{ko:"덕질 궁합 추천 순위",en:"Idol compatibility ranking",ja:"推し相性おすすめ順位",zh:"缘分推荐排行榜"},
   sharePureSaju:{ko:" · 오로지 사주 특성으로 선정",en:" · chosen purely by saju",ja:" · 純粋に四柱で選定",zh:" · 完全依据八字特征选出"},
   shareFooter:{ko:"사주 궁합 아이돌 매칭 · 오락용 해석",en:"Saju Idol Match · for entertainment",ja:"四柱推命アイドル相性マッチ · 娯楽用",zh:"生辰八字偶像缘分匹配 · 娱乐解读"},
-  shareDmDay:{ko:"일주(日柱)",en:"Day Pillar (日柱)",ja:"日柱",zh:"日柱"}
+  shareDmDay:{ko:"일주(日柱)",en:"Day Pillar (日柱)",ja:"日柱",zh:"日柱"},
+  // ── 심층 분석 모달 ──
+  daClose:{ko:"닫기",en:"Close",ja:"閉じる",zh:"关闭"},
+  daShare:{ko:"이 궁합 공유",en:"Share this match",ja:"この相性をシェア",zh:"分享这个缘分"},
+  daScore:{ko:"궁합",en:"Match",ja:"相性",zh:"缘分"},
+  daOverall:{ko:"한 줄 총평",en:"In a nutshell",ja:"ひとことで",zh:"一句话总评"},
+  daElem:{ko:"오행 궁합",en:"Five-Elements match",ja:"五行の相性",zh:"五行相性"},
+  daGod:{ko:"십신(十神) 관계",en:"Ten-God relationship",ja:"十神の関係",zh:"十神关系"},
+  daBranch:{ko:"지지(地支) 궁합 상세",en:"Earthly-Branch details",ja:"地支の相性 詳細",zh:"地支相性详情"},
+  daHapT:{ko:"천간합(天干合)",en:"Heavenly-Stem combination",ja:"天干合",zh:"天干合"},
+  daStrength:{ko:"이 조합의 강점",en:"Strengths of this pairing",ja:"この組み合わせの強み",zh:"这个组合的优点"},
+  daCaution:{ko:"살짝 주의",en:"A little caution",ja:"少し注意",zh:"稍加注意"},
+  daMeter:{ko:"관점별 궁합",en:"Compatibility by angle",ja:"観点別の相性",zh:"各角度的缘分"},
+  daDisc:{ko:"사주 특성만으로 재미있게 본 오락용 해석이에요.",en:"An entertaining read from saju traits only.",ja:"四柱の特性だけで楽しく見た娯楽用の解釈です。",zh:"仅凭八字特征的趣味解读。"},
+  posDay:{ko:"일지",en:"Day",ja:"日支",zh:"日支"}, posYear:{ko:"년지(띠)",en:"Year (zodiac)",ja:"年支(干支)",zh:"年支(生肖)"}, posMonth:{ko:"월지",en:"Month",ja:"月支",zh:"月支"}, posHour:{ko:"시지",en:"Hour",ja:"時支",zh:"时支"},
+  axImmersion:{ko:"덕질 몰입",en:"Immersion",ja:"沼の深さ",zh:"入坑深度"}, axHealing:{ko:"힐링",en:"Healing",ja:"癒し",zh:"治愈"}, axFlutter:{ko:"설렘",en:"Flutter",ja:"ときめき",zh:"心动"}, axComfort:{ko:"편안함",en:"Comfort",ja:"心地よさ",zh:"自在"}, axTension:{ko:"긴장·경외",en:"Awe",ja:"緊張感",zh:"敬畏感"},
+  elGenWord:{ko:"상생(相生)",en:"generating",ja:"相生",zh:"相生"}, elCtrlWord:{ko:"상극(相剋)",en:"controlling",ja:"相剋",zh:"相克"}, elSameWord:{ko:"비화(比和)",en:"same element",ja:"比和",zh:"同五行"},
+  elSame:{ko:"나와 같은 오행이라 결이 비슷하고 편안한 케미예요.",en:"The same element as you — a similar grain, easy chemistry.",ja:"あなたと同じ五行で、質が似た心地よい相性です。",zh:"与你同一五行，气质相近、相处自在。"},
+  elIgen:{ko:"내 오행이 상대를 살려주는(생) 관계 — 챙겨주고 응원하게 돼요.",en:"Your element nourishes theirs — you cheer for and take care of them.",ja:"あなたの五行が相手を生む関係 — 応援し世話を焼きたくなります。",zh:"你的五行滋养对方(生)——会想照顾、应援TA。"},
+  elGenme:{ko:"상대 오행이 나를 살려주는(생) 관계 — 보고 있으면 충전돼요.",en:"Their element nourishes yours — watching them recharges you.",ja:"相手の五行があなたを生む関係 — 見ていると充電されます。",zh:"对方五行滋养你(生)——看着TA就被治愈充电。"},
+  elIctrl:{ko:"내 오행이 상대를 다스리는(극) 관계 — 끌어당기는 매력이 있어요.",en:"Your element governs theirs — a magnetic, drawing-in charm.",ja:"あなたの五行が相手を剋する関係 — 引き寄せる魅力があります。",zh:"你的五行制约对方(克)——有吸引力、让人靠近。"},
+  elCtrlme:{ko:"상대 오행이 나를 누르는(극) 관계 — 멋있지만 살짝 긴장돼요.",en:"Their element presses on yours — cool, but a touch of tension.",ja:"相手の五行があなたを剋する関係 — 格好いいけれど少し緊張します。",zh:"对方五行压制你(克)——很帅但略有紧张感。"},
+  band5:{ko:"천생연분급 최애 ✨",en:"A destined bias ✨",ja:"運命級の推し ✨",zh:"命中注定级本命 ✨"},
+  band4:{ko:"아주 잘 맞는 궁합",en:"A great match",ja:"とても良い相性",zh:"非常契合的缘分"},
+  band3:{ko:"잘 맞는 편",en:"A good fit",ja:"よく合う相性",zh:"挺合得来"},
+  band2:{ko:"무난한 궁합",en:"An easy, steady match",ja:"無難な相性",zh:"平稳的缘分"},
+  band1:{ko:"개성 있는 조합",en:"An unusual pairing",ja:"個性的な組み合わせ",zh:"个性十足的组合"},
+  stHarmony:{ko:"지지가 잘 맞물려(합) 함께할수록 시너지가 나요.",en:"Your branches mesh (harmony) — synergy grows the more you're together.",ja:"地支が噛み合い(合)、一緒にいるほど相乗効果が出ます。",zh:"地支相合，越相处越有默契。"},
+  stImmersion:{ko:"재능을 응원하고 표현을 즐기는 덕질에 최적이에요.",en:"Perfect for cheering on their talent and enjoying their expression.",ja:"才能を応援し表現を楽しむ推し活に最適です。",zh:"最适合应援才华、享受表达的追星。"},
+  stHealing:{ko:"보고만 있어도 위로·충전되는 힐링형이에요.",en:"A healing type — just watching comforts and recharges you.",ja:"見ているだけで癒される充電タイプです。",zh:"看着就被治愈充电的治愈型。"},
+  stFlutter:{ko:"곁에 두고 싶은 설레는 매력이 있어요.",en:"A fluttering charm you'll want to keep close.",ja:"そばに置きたいときめく魅力があります。",zh:"想留在身边、令人心动的魅力。"},
+  stComfort:{ko:"동질감이 큰 편안한 케미예요.",en:"Comfortable chemistry with strong kinship.",ja:"同質感の大きい心地よい相性です。",zh:"同质感强、相处自在的默契。"},
+  stTension:{ko:"카리스마에 끌리는, 긴장감 있는 매력이에요.",en:"A charismatic pull with a hint of tension.",ja:"カリスマに惹かれる、緊張感のある魅力です。",zh:"被魅力吸引、带点紧张感的魅力。"},
+  caChung:{ko:"일지 충(沖) — 애증이 오갈 수 있으니 적당한 거리도 좋아요.",en:"Day-branch clash (沖) — feelings can swing; some distance helps.",ja:"日支の沖 — 愛憎が揺れることも。適度な距離も◎。",zh:"日支冲——爱恨可能起伏，保持适度距离也好。"},
+  caHae:{ko:"지지 해(害) — 사소하게 엇갈리는 지점이 생길 수 있어요.",en:"Branch harm (害) — small points of friction may crop up.",ja:"地支の害 — 些細なすれ違いが生じることも。",zh:"地支害——可能出现细小的错位。"},
+  caGwan:{ko:"관성 기운 — 멋있지만 긴장·부담이 커질 수 있어요.",en:"Officer energy — cool, but tension/pressure can build.",ja:"官星の気 — 格好いいけれど緊張・負担が増すことも。",zh:"官星之气——很帅但紧张、压力可能变大。"},
+  caNone:{ko:"특별히 주의할 충·해는 없어요. 무난해요.",en:"No notable clash or harm — smooth sailing.",ja:"特に注意すべき沖・害はありません。無難です。",zh:"没有需要特别注意的冲害，很平稳。"},
+  daMyElem:{ko:"내 오행",en:"Your element",ja:"あなたの五行",zh:"你的五行"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1127,6 +1211,92 @@ function renderDayMaster(dm){
   const hour = dm.hourHanja ? ` · ${dt('dmHour')} ${dm.hourHanja}` : "";
   document.getElementById('dmDesc').textContent = `${dt('dmDay')} ${dm.dayHanja} · ${dt('dmMonth')} ${dm.mHanja} · ${dt('dmYear')} ${dm.yHanja}${hour}`;
 }
+
+// ── 심층 분석 모달 (카드 클릭 → 상세). 전부 저장된 사주 데이터로 구성, 3언어 ──
+const METER = {
+  '식상':{immersion:90,healing:55,flutter:55,comfort:52,tension:22},
+  '인성':{immersion:55,healing:90,flutter:45,comfort:72,tension:15},
+  '재성':{immersion:62,healing:45,flutter:90,comfort:55,tension:32},
+  '비겁':{immersion:56,healing:55,flutter:45,comfort:88,tension:20},
+  '관성':{immersion:52,healing:35,flutter:62,comfort:35,tension:85}
+};
+const ST_FAM = {'식상':'stImmersion','인성':'stHealing','재성':'stFlutter','비겁':'stComfort','관성':'stTension'};
+function elemRelKey(U,T){ if(U===T)return'elSame'; if(generates(U,T))return'elIgen'; if(generates(T,U))return'elGenme'; if(controls(U,T))return'elIctrl'; return'elCtrlme'; }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function buildDetail(r){
+  const dm = window._saju && window._saju.dm; if(!dm) return "";
+  const d = disp(r);
+  const U = dm.elem, T = r.elem;
+  const erk = elemRelKey(U,T);
+  const relWord = erk==='elSame' ? dt('elSameWord') : ((erk==='elIgen'||erk==='elGenme') ? dt('elGenWord') : dt('elCtrlWord'));
+  const band = r.pct>=55?'band5':r.pct>=45?'band4':r.pct>=35?'band3':r.pct>=25?'band2':'band1';
+  // 지지 상세 행
+  const bks = [r.brKey, r.yearKey, r.monthKey, r.hourKey].filter(Boolean);
+  const rows = [['posDay', r.brKey]];
+  if(r.dob){ rows.push(['posYear', r.yearKey], ['posMonth', r.monthKey]); }
+  if(r.hourKey) rows.push(['posHour', r.hourKey]);
+  const branchRows = rows.map(([pos,k])=>{
+    if(!k) return "";
+    const reason = dl(BR_L[k].reason);
+    return `<div class="da-brow"><span class="da-bpos">${dt(pos)}</span><span class="da-btag">${dl(BR_L[k].short)}</span><span class="da-brz">${reason?esc(reason):'—'}</span></div>`;
+  }).join("");
+  // 관점 미터
+  const harmony = bks.some(k=>['육합','삼합','방합'].includes(k));
+  const clash = bks.some(k=>['충','해'].includes(k));
+  const m = Object.assign({}, METER[r.fam] || METER['비겁']);
+  if(harmony){ m.comfort+=8; m.immersion+=6; }
+  if(clash){ m.tension+=14; m.comfort-=8; }
+  if(r.hap){ m.immersion+=6; m.flutter+=6; }
+  Object.keys(m).forEach(k=> m[k]=Math.max(6,Math.min(100,Math.round(m[k]))));
+  const axes = [['axImmersion','immersion'],['axHealing','healing'],['axFlutter','flutter'],['axComfort','comfort'],['axTension','tension']];
+  const meterHtml = axes.map(([lab,key])=>`<div class="da-meter-row"><span class="da-mlab">${dt(lab)}</span><span class="da-mbar"><span class="da-mfill" style="width:${m[key]}%"></span></span></div>`).join("");
+  // 강점/주의
+  const strengths = [dt(ST_FAM[r.fam] || 'stComfort')]; if(harmony) strengths.push(dt('stHarmony'));
+  let caution = bks.includes('충') ? dt('caChung') : (bks.includes('해') ? dt('caHae') : (r.fam==='관성' ? dt('caGwan') : dt('caNone')));
+  const hapBlock = r.hap ? `<div class="da-section"><h4>${dt('daHapT')}</h4><p>${esc(dt('hapPhrase').trim())}</p></div>` : "";
+
+  return `
+    <div class="da-head">
+      <div class="da-h-main">
+        <div class="da-h-name">${esc(r.name)}<span class="da-h-grp">${esc(r.group)}</span></div>
+        <div class="da-h-pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</div>
+      </div>
+      <div class="da-h-score"><div class="da-h-pct">${r.pct.toFixed(2)}<span>%</span></div><div class="da-h-lab">${dt('daScore')}</div></div>
+    </div>
+    <div class="da-band">${dt(band)}</div>
+
+    <div class="da-section"><h4>${dt('daOverall')}</h4><p>${esc(d.reason)}</p></div>
+
+    <div class="da-section"><h4>${dt('daElem')}</h4>
+      <p class="da-elemline"><b>${dt('daMyElem')} ${U}</b> <span class="da-rel">${relWord}</span> <b>${T}</b></p>
+      <p>${esc(dt(erk))}</p></div>
+
+    <div class="da-section"><h4>${dt('daGod')}</h4>
+      <p><b>${esc(d.relLabel)}</b> · ${esc(d.role)}</p></div>
+
+    <div class="da-section"><h4>${dt('daBranch')}</h4>${branchRows}</div>
+    ${hapBlock}
+
+    <div class="da-two">
+      <div class="da-section da-good"><h4>👍 ${dt('daStrength')}</h4>${strengths.map(s=>`<p>${esc(s)}</p>`).join("")}</div>
+      <div class="da-section da-warn"><h4>⚠️ ${dt('daCaution')}</h4><p>${esc(caution)}</p></div>
+    </div>
+
+    <div class="da-section"><h4>${dt('daMeter')}</h4>${meterHtml}</div>
+
+    <p class="da-disc">${dt('daDisc')}</p>`;
+}
+function openDetail(nameEnc, groupEnc){
+  const s = window._saju; if(!s) return;
+  const name = decodeURIComponent(nameEnc), group = decodeURIComponent(groupEnc);
+  const r = s.scored.find(x=>x.name===name && x.group===group);
+  if(!r) return;
+  s.detail = { name, group };
+  document.getElementById('detailBody').innerHTML = buildDetail(r);
+  document.getElementById('detailModal').classList.remove('hidden');
+}
+function closeDetail(){ const m=document.getElementById('detailModal'); if(m) m.classList.add('hidden'); if(window._saju) window._saju.detail=null; }
+
 function godName(uSI, tSI){
   const ue=ELEM_NAMES[STEM_ELEM_IDX[uSI]], te=ELEM_NAMES[STEM_ELEM_IDX[tSI]];
   const same = STEM_YY(uSI)===STEM_YY(tSI);
@@ -2159,13 +2329,14 @@ function runCalc(){
     raw += (GODS[godName(uSI, JIJANG[tBI])].w - 20) * 0.15;
 
     // ② 년지(띠)·월지 궁합 (아이돌 생년월일에서 년·월주 계산)
-    let yjKey = null;
+    let yjKey = null, yearKey = null, monthKey = null;
     if(dob && dob.length === 8){
       const dy=+dob.slice(0,4), dm=+dob.slice(4,6), dd=+dob.slice(6,8);
       const iyp=yearPillar(dy,dm,dd), imp=monthPillar(dy,dm,dd, iyp.stemIdx);
       const yb=branchRel(yp.branchIdx, iyp.branchIdx); raw += yb.score * 0.4;
-      raw += branchRel(mp.branchIdx, imp.branchIdx).score * 0.3;
-      if(yb.score >= 11) yjKey = yb.key;
+      const mb=branchRel(mp.branchIdx, imp.branchIdx); raw += mb.score * 0.3;
+      yearKey = yb.key; monthKey = mb.key;      // 상세 분석용(전체)
+      if(yb.score >= 11) yjKey = yb.key;         // 카드 라벨용(강한 것만)
     }
 
     // 시각 입력 시 시지(時支) 관계 (가중 0.6)
@@ -2177,8 +2348,8 @@ function runCalc(){
     }
 
     // 의미 키만 저장 → 표시 문자열(relLabel/role/branchTag/hourNote/reason)은 disp(r)가 언어별 생성
-    return {name, group, pillar, elem, gender, agency, cat:cat||"K-idol",
-            godName:g.name, hap, brKey:br.key, yjKey, hourKey, sexRole, sexReasonKey, raw};
+    return {name, group, pillar, elem, gender, agency, cat:cat||"K-idol", dob,
+            godName:g.name, fam:g.fam, hap, brKey:br.key, yjKey, yearKey, monthKey, hourKey, sexRole, sexReasonKey, raw};
   });
 
   // 전체 풀(546명) 기준 최소~최대로 정규화 → 0~100(%), 소수 둘째 자리 (필터와 무관하게 고정)
@@ -2302,14 +2473,14 @@ function syncControls(){
 function cardHTML(r,i){
   const d = disp(r);
   return `
-    <div class="rank-card${i<3?' rank-top':''}" style="animation-delay:${i*70}ms">
+    <div class="rank-card${i<3?' rank-top':''}" style="animation-delay:${i*70}ms" onclick="openDetail('${encodeURIComponent(r.name)}','${encodeURIComponent(r.group)}')" role="button" tabindex="0">
       <div class="rank-num">${i+1}</div>
       <div class="rank-body">
         <div class="rank-name">${r.name}<span class="grp">${r.group}</span>
           <span class="pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</span></div>
         <div class="rank-meta">${d.relLabel} · ${d.role} · ${d.branchTag}${d.hourNote}</div>
         <div class="rank-reason">${d.reason}</div>
-        <div class="rank-report"><button type="button" class="rep-link" onclick="openError('${encodeURIComponent(r.name)}','${encodeURIComponent(r.group)}')">ⓘ 정보 오류 신고</button></div>
+        <div class="rank-report"><button type="button" class="rep-link" onclick="event.stopPropagation();openError('${encodeURIComponent(r.name)}','${encodeURIComponent(r.group)}')">ⓘ 정보 오류 신고</button></div>
       </div>
       <div class="rank-score"><div class="pct">${r.pct.toFixed(2)}<span style="font-size:13px">%</span></div><div class="pct-label">궁합</div></div>
     </div>`;
@@ -2362,7 +2533,7 @@ function toggleRest(){
     if(!el.dataset.built){
       const list = currentList();
       el.innerHTML = list.slice(TOP_N).map((x,i)=>`
-        <div class="rest-row">
+        <div class="rest-row" onclick="openDetail('${encodeURIComponent(x.name)}','${encodeURIComponent(x.group)}')" role="button" tabindex="0">
           <span class="r-n">${i+1+TOP_N}</span>
           <span class="dot" style="background:${ELEM_COLOR[x.elem]}"></span>
           <span class="r-name">${x.name} <span class="r-grp">${x.group}</span></span>
