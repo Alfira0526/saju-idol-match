@@ -415,6 +415,8 @@
   .da-brz{color:var(--ink); line-height:1.5;}
   .da-two{display:flex; gap:12px;} .da-two .da-section{flex:1; min-width:0;}
   .da-good h4{color:#5be0a0; border-color:#5be0a0;} .da-warn h4{color:#ffcf6a; border-color:#ffcf6a;}
+  .da-love{background:#ff4d9712; border:1px solid #ff4d9722; border-radius:12px; padding:11px 13px;}
+  .da-love h4{color:#ff7ab8; border-color:#ff7ab8;}
   .da-meter-row{display:flex; align-items:center; gap:10px; margin:7px 0;}
   .da-mlab{flex:none; width:84px; font-size:12.5px; color:var(--ink-dim);}
   .da-mbar{flex:1; height:9px; background:#ffffff14; border-radius:999px; overflow:hidden;}
@@ -1179,7 +1181,23 @@ const DYN = {
   caHae:{ko:"지지 해(害) — 사소하게 엇갈리는 지점이 생길 수 있어요.",en:"Branch harm (害) — small points of friction may crop up.",ja:"地支の害 — 些細なすれ違いが生じることも。",zh:"地支害——可能出现细小的错位。"},
   caGwan:{ko:"관성 기운 — 멋있지만 긴장·부담이 커질 수 있어요.",en:"Officer energy — cool, but tension/pressure can build.",ja:"官星の気 — 格好いいけれど緊張・負担が増すことも。",zh:"官星之气——很帅但紧张、压力可能变大。"},
   caNone:{ko:"특별히 주의할 충·해는 없어요. 무난해요.",en:"No notable clash or harm — smooth sailing.",ja:"特に注意すべき沖・害はありません。無難です。",zh:"没有需要特别注意的冲害，很平稳。"},
-  daMyElem:{ko:"내 오행",en:"Your element",ja:"あなたの五行",zh:"你的五行"}
+  daMyElem:{ko:"내 오행",en:"Your element",ja:"あなたの五行",zh:"你的五行"},
+  // ── 💘 러브 스토리 (나×최애 연애 프레임: 일지=배우자궁 + 십신 연애스타일) ──
+  loveTitle:{ko:"러브 스토리 · 만약 사귄다면?",en:"Love story · what if you dated?",ja:"ラブストーリー · もし付き合ったら?",zh:"恋爱故事 · 如果在一起?"},
+  "loveBr_육합":{ko:"일지(배우자궁)가 딱 맞물려요 — 만나면 눈부터 맞을 천생연분 커플.",en:"Your day branches (the spouse palace) lock together — a destined couple who'd click at first sight.",ja:"日支(配偶者の宮)がぴったり — 出会えば一目で惹かれる運命のカップル。",zh:"日支(配偶宫)完美契合——一见倾心的天生一对。"},
+  "loveBr_삼합":{ko:"함께할수록 깊어지는 인연 — 오래 갈수록 잘 맞는 커플.",en:"A bond that deepens over time — better the longer you're together.",ja:"共にいるほど深まる縁 — 長続きするほど合うカップル。",zh:"越相处越深的缘分——越久越合拍。"},
+  "loveBr_충":{ko:"강렬하게 끌리지만 애증도 큰 불꽃 커플 — 롤러코스터 연애.",en:"Intense attraction but big love-hate too — a rollercoaster romance.",ja:"強く惹かれるが愛憎も大きい — ジェットコースター恋愛。",zh:"强烈吸引但爱恨交织——过山车式恋爱。"},
+  "loveBr_해":{ko:"티격태격하다 정드는, 은근히 오래가는 커플.",en:"Bicker-then-bond — quietly long-lasting.",ja:"ぶつかりながら情が湧く、意外と長続きするカップル。",zh:"拌嘴中生情，意外地长久。"},
+  "loveBr_방합":{ko:"편안하게 어울리는, 물 흐르듯 자연스러운 연애.",en:"An easy fit — natural, flowing romance.",ja:"気楽に馴染む、水が流れるような自然な恋。",zh:"自在相处，如流水般自然的恋爱。"},
+  "loveBr_비화":{ko:"닮은꼴 커플 — 취향도 결도 비슷해 편해요.",en:"Two of a kind — similar tastes and vibe make it easy.",ja:"似た者同士 — 好みも雰囲気も似て気楽。",zh:"同类型情侣——品味气质相近很自在。"},
+  "loveBr_평":{ko:"천천히 스며드는, 잔잔하게 깊어지는 연애.",en:"A slow burn — calm and steadily deepening.",ja:"ゆっくり染み入る、静かに深まる恋。",zh:"细水长流，慢慢加深的恋爱。"},
+  "loveFam_식상":{ko:"표현 많고 애정을 퍼주는 다정다감 연애 스타일.",en:"Expressive, affection-lavishing love style.",ja:"表現豊かで愛情を注ぐ甘い恋愛スタイル。",zh:"表达丰富、倾注爱意的甜蜜风格。"},
+  "loveFam_인성":{ko:"보듬고 챙겨주는, 안정감 있는 연애 스타일.",en:"Nurturing, reassuring love style.",ja:"包み込み世話を焼く、安定した恋愛スタイル。",zh:"呵护体贴、有安全感的风格。"},
+  "loveFam_재성":{ko:"설레고 밀당 있는, 두근두근 연애 스타일.",en:"Fluttering, push-and-pull love style.",ja:"ときめきと駆け引きのある恋愛スタイル。",zh:"心动又有小拉扯的恋爱风格。"},
+  "loveFam_비겁":{ko:"친구처럼 편한, 베프 같은 연애 스타일.",en:"Friend-easy, best-friend-like love style.",ja:"友達のように気楽な恋愛スタイル。",zh:"像朋友一样自在的恋爱风格。"},
+  "loveFam_관성":{ko:"긴장감·존경·밀당이 있는 어른 연애 스타일.",en:"A grown-up love with tension, respect and push-pull.",ja:"緊張感・尊敬・駆け引きのある大人の恋。",zh:"带紧张感、尊重与拉扯的成熟恋爱。"},
+  lvIseong:{ko:"게다가 명리의 '이성 인연'이 실제로 걸린 궁합이라, 만나면 진짜로 끌릴 수 있어요.",en:"On top of that, the saju 'opposite-sex fate' is actually active — you could genuinely fall for each other.",ja:"さらに命理の『異性の縁』が実際に働く相性 — 出会えば本当に惹かれ合うかも。",zh:"而且命理的『异性缘』真的成立——见面可能会真心动。"},
+  lvHap:{ko:"일간끼리 천간합(天干合) — 운명처럼 끌리는 특별한 인연이에요.",en:"Your Day Stems form a Heavenly-Stem combination — a fated, magnetic bond.",ja:"日干どうしが天干合 — 運命のように惹かれる特別な縁。",zh:"日干相合(天干合)——如命中注定般相吸的特别缘分。"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1274,6 +1292,11 @@ function buildDetail(r){
   Object.keys(m).forEach(k=> m[k]=Math.max(6,Math.min(100,Math.round(m[k]))));
   const axes = [['axImmersion','immersion'],['axHealing','healing'],['axFlutter','flutter'],['axComfort','comfort'],['axTension','tension']];
   const meterHtml = radarSVG(axes.map(([,key])=>m[key]), axes.map(([lab])=>dt(lab)));
+  // 💘 러브 스토리 (일지=배우자궁 관계 + 십신 연애스타일 + 이성인연/천간합)
+  const loveLines = [dt('loveBr_'+r.brKey), dt('loveFam_'+r.fam)];
+  if(r.sexRole) loveLines.push(dt('lvIseong'));
+  if(r.hap) loveLines.push(dt('lvHap'));
+  const loveHtml = `<div class="da-section da-love"><h4>💘 ${dt('loveTitle')}</h4>${loveLines.filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join("")}</div>`;
   // 강점/주의
   const strengths = [dt(ST_FAM[r.fam] || 'stComfort')]; if(harmony) strengths.push(dt('stHarmony'));
   let caution = bks.includes('충') ? dt('caChung') : (bks.includes('해') ? dt('caHae') : (r.fam==='관성' ? dt('caGwan') : dt('caNone')));
@@ -1297,6 +1320,8 @@ function buildDetail(r){
 
     <div class="da-section"><h4>${dt('daGod')}</h4>
       <p><b>${esc(d.relLabel)}</b> · ${esc(d.role)}</p></div>
+
+    ${loveHtml}
 
     <div class="da-section"><h4>${dt('daBranch')}</h4>${branchRows}</div>
     ${hapBlock}
