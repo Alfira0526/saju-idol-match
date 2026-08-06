@@ -424,6 +424,16 @@
   .da-disc{font-size:11.5px; color:var(--ink-dim); margin:14px 0 0; text-align:center;}
   .da-gauge{width:78px; height:78px; display:block; margin-left:auto;}
   .da-radar{display:block; margin:2px auto 0; max-width:300px;}
+  .pair-entry{width:100%; margin:12px 0 0; padding:12px; border-radius:12px; cursor:pointer;
+    background:#ff4d9714; border:1px solid #ff4d9733; color:var(--ink); font-family:'Jua','Noto Sans KR',sans-serif; font-size:14.5px;}
+  .pair-entry:hover{background:#ff4d9722; border-color:#ff4d9755;}
+  .pair-pick{display:flex; align-items:center; gap:8px; margin:4px 0 12px;}
+  .pair-pick input{flex:1; min-width:0; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
+    border-radius:9px; padding:11px 12px; font-size:14px;}
+  .pair-pick input:focus{outline:none; border-color:var(--gold);}
+  .pair-heart{flex:none; font-size:16px;}
+  .pair-head{text-align:center; font-family:'Jua','Noto Sans KR',sans-serif; font-size:18px; color:var(--ink); margin:14px 0 4px;}
+  .pair-hint{color:var(--ink-dim); font-size:13px; text-align:center; padding:12px 0;}
   @media (max-width:480px){ .da-two{flex-direction:column; gap:0;} .da-bpos{width:66px;} .da-mlab{width:72px;} }
 
   .fav-eyebrow{font-size:12px; letter-spacing:.08em; color:var(--gold); margin-bottom:6px;}
@@ -561,6 +571,7 @@
       <button class="share-btn" id="shareBtn" onclick="shareResult()" data-i18n="shareBtn">결과 이미지 저장 · 공유</button>
       <span class="share-hint" id="shareHint"></span>
     </div>
+    <button class="pair-entry" type="button" onclick="openPair()" data-i18n="pairEntry">💞 최애끼리 궁합 보기</button>
 
     <div class="disclaimer">
       <h3 data-i18n="dscTitle">읽기 전 확인</h3>
@@ -673,6 +684,23 @@
 </div>
 
 <!-- 심층 분석 모달 -->
+<!-- 최애 × 최애 궁합 모달 -->
+<div class="modal-overlay hidden" id="pairModal" onclick="if(event.target===this)closePair()">
+  <div class="modal da-modal">
+    <button class="modal-x" onclick="closePair()" aria-label="닫기">✕</button>
+    <h3 class="modal-title" data-i18n="pairTitle">최애 × 최애 궁합</h3>
+    <p class="modal-intro" data-i18n="pairIntro">두 아이돌을 골라 사주 궁합을 보세요. 사용자 정보 없이 둘 사이만 봅니다.</p>
+    <div class="pair-pick">
+      <input type="text" id="pairA" list="idolList" placeholder="최애 A" data-i18n-ph="pairAph" autocomplete="off">
+      <span class="pair-heart">💞</span>
+      <input type="text" id="pairB" list="idolList" placeholder="최애 B" data-i18n-ph="pairBph" autocomplete="off">
+    </div>
+    <datalist id="idolList"></datalist>
+    <button class="m-submit" onclick="runPair()" data-i18n="pairGo">궁합 보기</button>
+    <div id="pairResult"></div>
+  </div>
+</div>
+
 <div class="modal-overlay hidden" id="detailModal" onclick="if(event.target===this)closeDetail()">
   <div class="modal da-modal">
     <button class="modal-x" onclick="closeDetail()" aria-label="닫기">✕</button>
@@ -786,6 +814,12 @@ const TR = {
   favEyebrow: { ko: "💌 이번 주 최애 리포트", en: "💌 This week's bias report" },
   favTitle: { ko: "이번 주, 사주가 콕 집은 최애 ✨", en: "Your saju-picked bias this week ✨" },
   favAgain: { ko: "한 번 더 매칭하기", en: "Match again" },
+  pairEntry: { ko: "💞 최애끼리 궁합 보기", en: "💞 See two biases' compatibility", ja: "💞 推し同士の相性を見る", zh: "💞 查看两位本命的缘分" },
+  pairTitle: { ko: "최애 × 최애 궁합", en: "Bias × Bias compatibility", ja: "推し × 推し 相性", zh: "本命 × 本命 缘分" },
+  pairIntro: { ko: "두 아이돌을 골라 사주 궁합을 보세요. 사용자 정보 없이 둘 사이만 봅니다.", en: "Pick two idols to see their saju compatibility — just between them, no user info.", ja: "2人のアイドルを選んで四柱の相性を。ユーザー情報なしで2人だけ。", zh: "选择两位偶像查看八字缘分——不用用户信息，只看两人之间。" },
+  pairAph: { ko: "최애 A (이름 검색)", en: "Bias A (search name)", ja: "推しA(名前検索)", zh: "本命A(搜索名字)" },
+  pairBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
+  pairGo: { ko: "궁합 보기", en: "See compatibility", ja: "相性を見る", zh: "查看缘分" },
 };
 // 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
 const TR_JA = {
@@ -1007,6 +1041,7 @@ function applyLang(){
   // 결과가 이미 있으면 언어별 동적 라벨(일간·카테고리·전체·순위·이유 등) 재렌더
   if(window._saju){ try{ renderDayMaster(window._saju.dm); applyScopeUI(); renderRanks();
     if(window._saju.detail){ const dd=window._saju.detail; openDetail(encodeURIComponent(dd.name), encodeURIComponent(dd.group)); }
+    if(window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair();
   }catch(e){} }
 }
 function setLang(lang){
@@ -1197,7 +1232,9 @@ const DYN = {
   "loveFam_비겁":{ko:"친구처럼 편한, 베프 같은 연애 스타일.",en:"Friend-easy, best-friend-like love style.",ja:"友達のように気楽な恋愛スタイル。",zh:"像朋友一样自在的恋爱风格。"},
   "loveFam_관성":{ko:"긴장감·존경·밀당이 있는 어른 연애 스타일.",en:"A grown-up love with tension, respect and push-pull.",ja:"緊張感・尊敬・駆け引きのある大人の恋。",zh:"带紧张感、尊重与拉扯的成熟恋爱。"},
   lvIseong:{ko:"게다가 명리의 '이성 인연'이 실제로 걸린 궁합이라, 만나면 진짜로 끌릴 수 있어요.",en:"On top of that, the saju 'opposite-sex fate' is actually active — you could genuinely fall for each other.",ja:"さらに命理の『異性の縁』が実際に働く相性 — 出会えば本当に惹かれ合うかも。",zh:"而且命理的『异性缘』真的成立——见面可能会真心动。"},
-  lvHap:{ko:"일간끼리 천간합(天干合) — 운명처럼 끌리는 특별한 인연이에요.",en:"Your Day Stems form a Heavenly-Stem combination — a fated, magnetic bond.",ja:"日干どうしが天干合 — 運命のように惹かれる特別な縁。",zh:"日干相合(天干合)——如命中注定般相吸的特别缘分。"}
+  lvHap:{ko:"일간끼리 천간합(天干合) — 운명처럼 끌리는 특별한 인연이에요.",en:"Your Day Stems form a Heavenly-Stem combination — a fated, magnetic bond.",ja:"日干どうしが天干合 — 運命のように惹かれる特別な縁。",zh:"日干相合(天干合)——如命中注定般相吸的特别缘分。"},
+  pairPickHint:{ko:"목록에서 두 최애를 정확히 골라주세요.",en:"Pick two biases from the list.",ja:"リストから2人を正しく選んでください。",zh:"请从列表中准确选择两位。"},
+  pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1265,8 +1302,8 @@ function radarSVG(vals, labels){
   const labs=labels.map((L,i)=>{const[x,y]=pt(i,R+15);const a=Math.abs(x-cx)<8?'middle':(x<cx?'end':'start');return `<text x="${x.toFixed(1)}" y="${(y+3).toFixed(1)}" text-anchor="${a}" fill="#ab9fce" font-size="11">${esc(L)}</text>`;}).join('');
   return `<svg class="da-radar" viewBox="0 0 260 205" width="100%" aria-hidden="true">${grid}${spokes}<polygon points="${poly}" fill="url(#daR)" fill-opacity=".55" stroke="#ff5da2" stroke-width="1.5"/>${dots}${labs}<defs><radialGradient id="daR"><stop offset="0" stop-color="#c07bff"/><stop offset="1" stop-color="#ff5da2"/></radialGradient></defs></svg>`;
 }
-function buildDetail(r){
-  const dm = window._saju && window._saju.dm; if(!dm) return "";
+function buildDetail(r, dmArg, selfName){
+  const dm = dmArg || (window._saju && window._saju.dm); if(!dm) return "";
   const d = disp(r);
   const U = dm.elem, T = r.elem;
   const erk = elemRelKey(U,T);
@@ -1315,7 +1352,7 @@ function buildDetail(r){
     <div class="da-section"><h4>${dt('daOverall')}</h4><p>${esc(d.reason)}</p></div>
 
     <div class="da-section"><h4>${dt('daElem')}</h4>
-      <p class="da-elemline"><b>${dt('daMyElem')} ${U}</b> <span class="da-rel">${relWord}</span> <b>${T}</b></p>
+      <p class="da-elemline"><b>${selfName?esc(selfName):dt('daMyElem')} ${U}</b> <span class="da-rel">${relWord}</span> <b>${T}</b></p>
       <p>${esc(dt(erk))}</p></div>
 
     <div class="da-section"><h4>${dt('daGod')}</h4>
@@ -1345,6 +1382,67 @@ function openDetail(nameEnc, groupEnc){
   document.getElementById('detailModal').classList.remove('hidden');
 }
 function closeDetail(){ const m=document.getElementById('detailModal'); if(m) m.classList.add('hidden'); if(window._saju) window._saju.detail=null; }
+
+// ── 💞 최애 × 최애 궁합 (사용자 없이 아이돌 A 관점으로 전체 스코어→B의 pct) ──
+function pairScored(A){
+  const uSI = STEMS.indexOf(A.pillar[0]), uBI = BRANCHES.indexOf(A.pillar[1]);
+  const Ay=+A.dob.slice(0,4), Am=+A.dob.slice(4,6), Ad=+A.dob.slice(6,8);
+  const yp = yearPillar(Ay,Am,Ad), mp = monthPillar(Ay,Am,Ad, yp.stemIdx);
+  const selfElem = A.elem;
+  const need = bodyStrength([
+    {stem:yp.stemIdx,branch:yp.branchIdx,weight:1},
+    {stem:mp.stemIdx,branch:mp.branchIdx,weight:2},
+    {stem:uSI,branch:uBI,weight:1,isDay:true}
+  ], selfElem);
+  const iseongFam = A.gender==='M' ? '재성' : (A.gender==='F' ? '관성' : null);
+  const scored = IDOLS.map(([name,group,pillar,elem,gender,agency,dob,cat])=>{
+    const tSI=STEMS.indexOf(pillar[0]), tBI=BRANCHES.indexOf(pillar[1]);
+    const g=tenGod(uSI,tSI), hap=ganHap(uSI,tSI);
+    let raw = g.w + (FAM_DIR[g.fam]||0)*need*10 + (hap?6:0);
+    const br=branchRel(uBI,tBI); raw+=br.score;
+    let sexRole=false, sexReasonKey=null;
+    if(iseongFam && g.fam===iseongFam){ raw+=8; sexRole=true; if(iseongFam==='관성') sexReasonKey=(g.name==='정관')?'sexGwanJeong':'sexGwanOther'; }
+    raw += (GODS[godName(uSI, JIJANG[tBI])].w-20)*0.15;
+    let yearKey=null, monthKey=null, yjKey=null;
+    if(dob && dob.length===8){ const dy=+dob.slice(0,4), dm2=+dob.slice(4,6), dd=+dob.slice(6,8);
+      const iyp=yearPillar(dy,dm2,dd), imp=monthPillar(dy,dm2,dd, iyp.stemIdx);
+      const yb=branchRel(yp.branchIdx, iyp.branchIdx); raw+=yb.score*0.4;
+      const mb=branchRel(mp.branchIdx, imp.branchIdx); raw+=mb.score*0.3;
+      yearKey=yb.key; monthKey=mb.key; if(yb.score>=11) yjKey=yb.key;
+    }
+    return {name,group,pillar,elem,gender,agency,cat:cat||'K-idol',dob,godName:g.name,fam:g.fam,hap,brKey:br.key,yjKey,yearKey,monthKey,hourKey:null,sexRole,sexReasonKey,raw};
+  });
+  let lo=Infinity, hi=-Infinity; scored.forEach(s=>{ if(s.raw<lo)lo=s.raw; if(s.raw>hi)hi=s.raw; });
+  const span=(hi-lo)||1; scored.forEach(s=>{ s.score=s.raw; s.pct=Math.round((s.raw-lo)/span*10000)/100; });
+  return { scored, dmA:{ stemIdx:uSI, elem:selfElem, dayHanja:A.pillar } };
+}
+// 아이돌 datalist(이름·그룹) — pair 피커용
+let _pairListBuilt=false;
+function buildPairList(){
+  if(_pairListBuilt) return; _pairListBuilt=true;
+  const dl=document.getElementById('idolList'); if(!dl) return;
+  dl.innerHTML = IDOLS.map(([n,g])=>`<option value="${(n+' · '+g).replace(/"/g,'&quot;')}"></option>`).join("");
+}
+function findIdol(val){
+  if(!val) return null; const i=val.lastIndexOf(' · ');
+  const n = i>=0 ? val.slice(0,i) : val, g = i>=0 ? val.slice(i+3) : '';
+  let row = IDOLS.find(r=>r[0]===n && r[1]===g) || IDOLS.find(r=>r[0]===n);
+  return row ? {name:row[0],group:row[1],pillar:row[2],elem:row[3],gender:row[4],agency:row[5],dob:row[6],cat:row[7]} : null;
+}
+function openPair(){ buildPairList(); document.getElementById('pairResult').innerHTML=''; document.getElementById('pairModal').classList.remove('hidden'); }
+function closePair(){ document.getElementById('pairModal').classList.add('hidden'); }
+function runPair(){
+  const A=findIdol(document.getElementById('pairA').value.trim());
+  const B=findIdol(document.getElementById('pairB').value.trim());
+  const out=document.getElementById('pairResult');
+  if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; return; }
+  if(A.name===B.name && A.group===B.group){ out.innerHTML=`<p class="pair-hint">${dt('pairSame')}</p>`; return; }
+  window._saju = window._saju || {};
+  const {scored, dmA} = pairScored(A);
+  const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
+  window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
+  out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>` + buildDetail(rB, dmA, A.name);
+}
 
 function godName(uSI, tSI){
   const ue=ELEM_NAMES[STEM_ELEM_IDX[uSI]], te=ELEM_NAMES[STEM_ELEM_IDX[tSI]];
