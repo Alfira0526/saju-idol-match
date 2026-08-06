@@ -21942,5 +21942,18 @@
     "firstAt": "2026-08-06T11:00:27.976Z",
     "lastAt": "2026-08-06T11:00:27.976Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:해리준|다크비",
+    "name": "해리준",
+    "group": "다크비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040101",
+    "note": "brave entertainment / 보이즈 2 플래닛에 출연했다",
+    "count": 1,
+    "firstAt": "2026-08-06T11:10:25.784Z",
+    "lastAt": "2026-08-06T11:10:25.784Z",
+    "status": "pending"
   }
 ]
