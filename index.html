@@ -420,6 +420,8 @@
   .da-mbar{flex:1; height:9px; background:#ffffff14; border-radius:999px; overflow:hidden;}
   .da-mfill{display:block; height:100%; background:var(--grad,var(--gold)); border-radius:999px; transition:width .5s ease;}
   .da-disc{font-size:11.5px; color:var(--ink-dim); margin:14px 0 0; text-align:center;}
+  .da-gauge{width:78px; height:78px; display:block; margin-left:auto;}
+  .da-radar{display:block; margin:2px auto 0; max-width:300px;}
   @media (max-width:480px){ .da-two{flex-direction:column; gap:0;} .da-bpos{width:66px;} .da-mlab{width:72px;} }
 
   .fav-eyebrow{font-size:12px; letter-spacing:.08em; color:var(--gold); margin-bottom:6px;}
@@ -1223,6 +1225,28 @@ const METER = {
 const ST_FAM = {'식상':'stImmersion','인성':'stHealing','재성':'stFlutter','비겁':'stComfort','관성':'stTension'};
 function elemRelKey(U,T){ if(U===T)return'elSame'; if(generates(U,T))return'elIgen'; if(generates(T,U))return'elGenme'; if(controls(U,T))return'elIctrl'; return'elCtrlme'; }
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+// 궁합% 원형 게이지 (인라인 SVG)
+function gaugeSVG(pct){
+  const R=34, C=2*Math.PI*R, off=C*(1-Math.max(0,Math.min(100,pct))/100);
+  return `<svg class="da-gauge" viewBox="0 0 84 84" aria-hidden="true">
+    <circle cx="42" cy="42" r="${R}" fill="none" stroke="#ffffff18" stroke-width="8"/>
+    <circle cx="42" cy="42" r="${R}" fill="none" stroke="url(#daG)" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" transform="rotate(-90 42 42)"/>
+    <defs><linearGradient id="daG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5da2"/><stop offset=".5" stop-color="#c07bff"/><stop offset="1" stop-color="#43e0f0"/></linearGradient></defs>
+    <text x="42" y="40" text-anchor="middle" fill="#f3edff" font-size="19" font-weight="700">${pct.toFixed(0)}</text>
+    <text x="42" y="56" text-anchor="middle" fill="#ab9fce" font-size="10">%</text></svg>`;
+}
+// 관점 5지표 오각형 레이더 (인라인 SVG)
+function radarSVG(vals, labels){
+  const cx=130, cy=115, R=74, N=5, ang=i=>-Math.PI/2 + i*2*Math.PI/N;
+  const pt=(i,rad)=>[cx+rad*Math.cos(ang(i)), cy+rad*Math.sin(ang(i))];
+  let grid=''; [0.25,0.5,0.75,1].forEach(f=>{ grid+=`<polygon points="${Array.from({length:N},(_,i)=>pt(i,R*f).map(n=>n.toFixed(1)).join(',')).join(' ')}" fill="none" stroke="#ffffff14"/>`; });
+  let spokes=''; for(let i=0;i<N;i++){ const [x,y]=pt(i,R); spokes+=`<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#ffffff12"/>`; }
+  const poly=vals.map((v,i)=>pt(i,R*Math.max(0.06,v/100)).map(n=>n.toFixed(1)).join(',')).join(' ');
+  const dots=vals.map((v,i)=>{const[x,y]=pt(i,R*Math.max(0.06,v/100));return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="#ff5da2"/>`;}).join('');
+  const labs=labels.map((L,i)=>{const[x,y]=pt(i,R+15);const a=Math.abs(x-cx)<8?'middle':(x<cx?'end':'start');return `<text x="${x.toFixed(1)}" y="${(y+3).toFixed(1)}" text-anchor="${a}" fill="#ab9fce" font-size="11">${esc(L)}</text>`;}).join('');
+  return `<svg class="da-radar" viewBox="0 0 260 205" width="100%" aria-hidden="true">${grid}${spokes}<polygon points="${poly}" fill="url(#daR)" fill-opacity=".55" stroke="#ff5da2" stroke-width="1.5"/>${dots}${labs}<defs><radialGradient id="daR"><stop offset="0" stop-color="#c07bff"/><stop offset="1" stop-color="#ff5da2"/></radialGradient></defs></svg>`;
+}
 function buildDetail(r){
   const dm = window._saju && window._saju.dm; if(!dm) return "";
   const d = disp(r);
@@ -1249,7 +1273,7 @@ function buildDetail(r){
   if(r.hap){ m.immersion+=6; m.flutter+=6; }
   Object.keys(m).forEach(k=> m[k]=Math.max(6,Math.min(100,Math.round(m[k]))));
   const axes = [['axImmersion','immersion'],['axHealing','healing'],['axFlutter','flutter'],['axComfort','comfort'],['axTension','tension']];
-  const meterHtml = axes.map(([lab,key])=>`<div class="da-meter-row"><span class="da-mlab">${dt(lab)}</span><span class="da-mbar"><span class="da-mfill" style="width:${m[key]}%"></span></span></div>`).join("");
+  const meterHtml = radarSVG(axes.map(([,key])=>m[key]), axes.map(([lab])=>dt(lab)));
   // 강점/주의
   const strengths = [dt(ST_FAM[r.fam] || 'stComfort')]; if(harmony) strengths.push(dt('stHarmony'));
   let caution = bks.includes('충') ? dt('caChung') : (bks.includes('해') ? dt('caHae') : (r.fam==='관성' ? dt('caGwan') : dt('caNone')));
@@ -1261,7 +1285,7 @@ function buildDetail(r){
         <div class="da-h-name">${esc(r.name)}<span class="da-h-grp">${esc(r.group)}</span></div>
         <div class="da-h-pill"><span class="dot" style="background:${ELEM_COLOR[r.elem]}"></span>${r.pillar} · ${r.elem}</div>
       </div>
-      <div class="da-h-score"><div class="da-h-pct">${r.pct.toFixed(2)}<span>%</span></div><div class="da-h-lab">${dt('daScore')}</div></div>
+      <div class="da-h-score">${gaugeSVG(r.pct)}<div class="da-h-lab">${dt('daScore')} · ${r.pct.toFixed(2)}%</div></div>
     </div>
     <div class="da-band">${dt(band)}</div>
 
