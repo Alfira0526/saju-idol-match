@@ -22033,5 +22033,18 @@
     "firstAt": "2026-08-06T13:31:33.294Z",
     "lastAt": "2026-08-06T13:31:33.294Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조승연|본인",
+    "name": "조승연",
+    "group": "본인",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960805",
+    "note": "EDAM",
+    "count": 1,
+    "firstAt": "2026-08-06T13:43:35.964Z",
+    "lastAt": "2026-08-06T13:43:35.964Z",
+    "status": "pending"
   }
 ]
