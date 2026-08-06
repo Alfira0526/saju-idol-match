@@ -21838,5 +21838,18 @@
     "firstAt": "2026-08-06T05:54:22.758Z",
     "lastAt": "2026-08-06T05:54:22.758Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:eaj|eaj",
+    "name": "eaJ",
+    "group": "eaJ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920915",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T06:16:57.009Z",
+    "lastAt": "2026-08-06T06:16:57.009Z",
+    "status": "pending"
   }
 ]
