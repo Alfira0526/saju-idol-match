@@ -1458,5 +1458,19 @@
     "firstAt": "2026-08-05T04:20:04.905Z",
     "lastAt": "2026-08-05T04:20:04.905Z",
     "status": "pending"
+  },
+  {
+    "key": "er:정용화|cnblue",
+    "name": "정용화",
+    "group": "CNBLUE",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-08-06T10:34:56.298Z",
+    "lastAt": "2026-08-06T10:34:56.298Z",
+    "status": "pending"
   }
 ]
