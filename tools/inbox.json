@@ -21760,5 +21760,18 @@
     "firstAt": "2026-08-06T03:04:46.471Z",
     "lastAt": "2026-08-06T03:04:46.471Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:한결|x1",
+    "name": "한결",
+    "group": "X1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T03:29:44.254Z",
+    "lastAt": "2026-08-06T03:29:44.254Z",
+    "status": "pending"
   }
 ]
