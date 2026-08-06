@@ -21890,5 +21890,18 @@
     "firstAt": "2026-08-06T09:18:20.338Z",
     "lastAt": "2026-08-06T09:18:20.338Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:차훈|n.flying",
+    "name": "차훈",
+    "group": "N.flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940712",
+    "note": "fnc",
+    "count": 1,
+    "firstAt": "2026-08-06T09:49:42.757Z",
+    "lastAt": "2026-08-06T09:49:42.757Z",
+    "status": "pending"
   }
 ]
