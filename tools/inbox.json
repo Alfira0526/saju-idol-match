@@ -22098,5 +22098,18 @@
     "firstAt": "2026-08-06T16:43:11.160Z",
     "lastAt": "2026-08-06T16:43:11.160Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:車勳|n.flying",
+    "name": "車勳",
+    "group": "N.Flying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19981218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T17:27:05.866Z",
+    "lastAt": "2026-08-06T17:27:05.866Z",
+    "status": "pending"
   }
 ]
