@@ -22046,5 +22046,18 @@
     "firstAt": "2026-08-06T13:43:35.964Z",
     "lastAt": "2026-08-06T13:43:35.964Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:steven|ahof",
+    "name": "Steven",
+    "group": "AHOF",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000117",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T14:09:07.577Z",
+    "lastAt": "2026-08-06T14:09:07.577Z",
+    "status": "pending"
   }
 ]
