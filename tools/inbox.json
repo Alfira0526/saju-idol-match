@@ -22137,5 +22137,18 @@
     "firstAt": "2026-08-06T21:59:40.481Z",
     "lastAt": "2026-08-06T21:59:40.481Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bain|justb",
+    "name": "Bain",
+    "group": "Justb",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T22:01:21.816Z",
+    "lastAt": "2026-08-06T22:01:21.816Z",
+    "status": "pending"
   }
 ]
