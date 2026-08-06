@@ -21994,5 +21994,18 @@
     "firstAt": "2026-08-06T12:14:17.794Z",
     "lastAt": "2026-08-06T12:14:17.794Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:카엘|루네이트/판타지오",
+    "name": "카엘",
+    "group": "루네이트/판타지오",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T13:04:13.424Z",
+    "lastAt": "2026-08-06T13:04:13.424Z",
+    "status": "pending"
   }
 ]
