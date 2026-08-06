@@ -11772,9 +11772,9 @@
     "gender": "M",
     "dob": "20050421",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-26T07:33:51.507Z",
-    "lastAt": "2026-07-29T16:11:51.252Z",
+    "lastAt": "2026-08-06T03:01:37.555Z",
     "status": "pending"
   },
   {
@@ -21746,6 +21746,19 @@
     "count": 1,
     "firstAt": "2026-08-06T00:57:12.672Z",
     "lastAt": "2026-08-06T00:57:12.672Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:hyub|nflying",
+    "name": "hyub",
+    "group": "nflying",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19921031",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T03:04:46.471Z",
+    "lastAt": "2026-08-06T03:04:46.471Z",
     "status": "pending"
   }
 ]
