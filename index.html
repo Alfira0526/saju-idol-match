@@ -397,6 +397,9 @@
   .da-h-pill{margin-top:6px; font-size:12.5px; color:var(--ink-dim); display:inline-flex; align-items:center; gap:6px;}
   .da-h-pill .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
   .da-h-score{flex:none; text-align:right;}
+  .pf-badge{flex:none; width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+    font-family:'Noto Serif KR',serif; font-size:28px; color:#fff; font-weight:700;}
+  .pf-born{opacity:.85;}
   .da-h-pct{font-family:'Jua',sans-serif; font-size:30px; color:var(--gold);}
   .da-h-pct span{font-size:15px;}
   .da-h-lab{font-size:11px; color:var(--ink-dim);}
@@ -572,6 +575,7 @@
       <span class="share-hint" id="shareHint"></span>
     </div>
     <button class="pair-entry" type="button" onclick="openPair()" data-i18n="pairEntry">💞 최애끼리 궁합 보기</button>
+    <button class="pair-entry" type="button" onclick="openProfile()" data-i18n="profEntry">🔮 최애 프로필 · 한 명 사주 풀이</button>
 
     <div class="disclaimer">
       <h3 data-i18n="dscTitle">읽기 전 확인</h3>
@@ -701,6 +705,19 @@
   </div>
 </div>
 
+<div class="modal-overlay hidden" id="profileModal" onclick="if(event.target===this)closeProfile()">
+  <div class="modal da-modal">
+    <button class="modal-x" onclick="closeProfile()" aria-label="닫기">✕</button>
+    <h3 class="modal-title" data-i18n="profTitle">최애 프로필</h3>
+    <p class="modal-intro" data-i18n="profIntro">아이돌 한 명을 골라 그 사람의 사주 성향을 풀어봐요.</p>
+    <div class="pair-pick">
+      <input type="text" id="profileInput" list="idolList" placeholder="최애 (이름 검색)" data-i18n-ph="profPh" autocomplete="off">
+    </div>
+    <button class="m-submit" onclick="runProfile()" data-i18n="profGo">프로필 보기</button>
+    <div id="profileResult"></div>
+  </div>
+</div>
+
 <div class="modal-overlay hidden" id="detailModal" onclick="if(event.target===this)closeDetail()">
   <div class="modal da-modal">
     <button class="modal-x" onclick="closeDetail()" aria-label="닫기">✕</button>
@@ -820,6 +837,11 @@ const TR = {
   pairAph: { ko: "최애 A (이름 검색)", en: "Bias A (search name)", ja: "推しA(名前検索)", zh: "本命A(搜索名字)" },
   pairBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
   pairGo: { ko: "궁합 보기", en: "See compatibility", ja: "相性を見る", zh: "查看缘分" },
+  profEntry: { ko: "🔮 최애 프로필 · 한 명 사주 풀이", en: "🔮 Bias profile · one idol's saju", ja: "🔮 推しプロフィール · 一人の四柱", zh: "🔮 本命档案 · 单人八字解读" },
+  profTitle: { ko: "최애 프로필", en: "Bias profile", ja: "推しプロフィール", zh: "本命档案" },
+  profIntro: { ko: "아이돌 한 명을 골라 그 사람의 사주 성향을 풀어봐요.", en: "Pick one idol and read their saju personality.", ja: "アイドルを1人選んで、その人の四柱の傾向を読み解きます。", zh: "选择一位偶像，解读其八字性格。" },
+  profPh: { ko: "최애 (이름 검색)", en: "Bias (search name)", ja: "推し(名前検索)", zh: "本命(搜索名字)" },
+  profGo: { ko: "프로필 보기", en: "See profile", ja: "プロフィールを見る", zh: "查看档案" },
 };
 // 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
 const TR_JA = {
@@ -1043,6 +1065,7 @@ function applyLang(){
     if(window._saju.detail){ const dd=window._saju.detail; openDetail(encodeURIComponent(dd.name), encodeURIComponent(dd.group)); }
     if(window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair();
   }catch(e){} }
+  try{ const pm=document.getElementById('profileModal'); if(pm && !pm.classList.contains('hidden') && _profileRendered) runProfile(); }catch(e){}
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1234,7 +1257,22 @@ const DYN = {
   lvIseong:{ko:"게다가 명리의 '이성 인연'이 실제로 걸린 궁합이라, 만나면 진짜로 끌릴 수 있어요.",en:"On top of that, the saju 'opposite-sex fate' is actually active — you could genuinely fall for each other.",ja:"さらに命理の『異性の縁』が実際に働く相性 — 出会えば本当に惹かれ合うかも。",zh:"而且命理的『异性缘』真的成立——见面可能会真心动。"},
   lvHap:{ko:"일간끼리 천간합(天干合) — 운명처럼 끌리는 특별한 인연이에요.",en:"Your Day Stems form a Heavenly-Stem combination — a fated, magnetic bond.",ja:"日干どうしが天干合 — 運命のように惹かれる特別な縁。",zh:"日干相合(天干合)——如命中注定般相吸的特别缘分。"},
   pairPickHint:{ko:"목록에서 두 최애를 정확히 골라주세요.",en:"Pick two biases from the list.",ja:"リストから2人を正しく選んでください。",zh:"请从列表中准确选择两位。"},
-  pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"}
+  pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"},
+  profPickHint:{ko:"목록에서 최애를 정확히 골라주세요.",en:"Pick a bias from the list.",ja:"リストから推しを選んでください。",zh:"请从列表中选择本命。"},
+  pfPersona:{ko:"타입",en:"Type",ja:"タイプ",zh:"类型"},
+  pfStem:{ko:"일간 성격(日干)",en:"Day Master",ja:"日干の性格",zh:"日干性格"},
+  pfElem:{ko:"오행 기질",en:"Element temperament",ja:"五行の気質",zh:"五行气质"},
+  pfEnergy:{ko:"에너지 성향",en:"Energy style",ja:"エネルギー傾向",zh:"能量倾向"},
+  pfCharm:{ko:"매력 레이더",en:"Charm radar",ja:"魅力レーダー",zh:"魅力雷达"},
+  pfBorn:{ko:"생일",en:"Born",ja:"誕生日",zh:"生日"},
+  pfStrong:{ko:"주도형 — 자기 색이 뚜렷하고 에너지를 스스로 끌어올리는 타입.",en:"Self-driven — a distinct identity that powers itself up.",ja:"主導型 — 自分の色がはっきりし、自らエネルギーを高めるタイプ。",zh:"主导型——自我风格鲜明、能自我充能的类型。"},
+  pfWeak:{ko:"조화형 — 함께할 때 시너지가 폭발하는 케미 부자 타입.",en:"Harmony-driven — chemistry explodes with the right people around.",ja:"調和型 — 一緒にいるとシナジーが爆発するケミ豊かなタイプ。",zh:"调和型——与人相处时化学反应爆棚的默契型。"},
+  pfMid:{ko:"균형형 — 리드와 서포트를 자유롭게 오가는 타입.",en:"Balanced — moves freely between leading and supporting.",ja:"バランス型 — リードとサポートを自在に行き来するタイプ。",zh:"均衡型——在主导与辅助间自由切换的类型。"},
+  pfAxPassion:{ko:"열정",en:"Passion",ja:"情熱",zh:"热情"},
+  pfAxDrive:{ko:"추진",en:"Drive",ja:"推進",zh:"推进"},
+  pfAxEmotion:{ko:"감성",en:"Emotion",ja:"感性",zh:"感性"},
+  pfAxStability:{ko:"안정",en:"Stability",ja:"安定",zh:"稳定"},
+  pfAxWarmth:{ko:"친화",en:"Warmth",ja:"親和",zh:"亲和"}
 };
 const ELEM_EN = {"木":"Wood","火":"Fire","土":"Earth","金":"Metal","水":"Water"};
 function dl(o){ if(!o) return ''; const l=getLang(); return o[l]!==undefined ? o[l] : (o.en||o.ko||''); }
@@ -1442,6 +1480,81 @@ function runPair(){
   const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
   window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
   out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>` + buildDetail(rB, dmA, A.name);
+}
+
+// ── 🔮 최애 프로필 (아이돌 1명 단독 사주 풀이) ──
+// 천간(일간) 10종 성격 — dl()로 4언어 조회
+const STEM_PROF = [
+  {tag:{ko:"🌳 곧게 뻗는 거목",en:"🌳 A towering tree",ja:"🌳 まっすぐ伸びる大樹",zh:"🌳 挺拔的大树"},desc:{ko:"소신이 뚜렷하고 정면돌파형. 리더 자리가 어울리는 든든한 기둥 같은 사람이에요.",en:"Principled and head-on — a dependable pillar and a natural leader.",ja:"信念がはっきりした正面突破型。リーダーが似合う頼れる大黒柱。",zh:"主见分明、正面突破型。像顶梁柱般可靠，天生的领导者。"}},
+  {tag:{ko:"🌿 유연한 덩굴",en:"🌿 A supple vine",ja:"🌿 しなやかな蔓",zh:"🌿 柔韧的藤蔓"},desc:{ko:"부드럽지만 끈질기고 적응력 최고. 어디서든 살아남아 끝내 꽃피우는 타입.",en:"Gentle yet tenacious, endlessly adaptable — survives anywhere and blooms in the end.",ja:"柔らかいのに粘り強く適応力抜群。どこでも生き抜いて花を咲かせるタイプ。",zh:"柔和却坚韧、适应力超强。在哪都能生存，终将开花。"}},
+  {tag:{ko:"☀️ 한낮의 태양",en:"☀️ The midday sun",ja:"☀️ 真昼の太陽",zh:"☀️ 正午的太阳"},desc:{ko:"밝고 화려하며 존재감이 압도적. 무대에 서면 시선을 독차지하는 스포트라이트 체질.",en:"Bright, dazzling, impossible to miss — born to command the spotlight.",ja:"明るく華やかで存在感が圧倒的。ステージで視線を独り占めするスポットライト体質。",zh:"明亮华丽、存在感压倒性。一上台就吸引全场目光的聚光灯体质。"}},
+  {tag:{ko:"🕯️ 은은한 촛불",en:"🕯️ A soft candle flame",ja:"🕯️ ほのかな灯火",zh:"🕯️ 温柔的烛火"},desc:{ko:"섬세하고 따뜻하며 몰입이 깊음. 가까이서 볼수록 마음을 데워주는 은근한 매력파.",en:"Delicate, warm, deeply devoted — the closer you look, the more they warm your heart.",ja:"繊細で温かく没入が深い。近くで見るほど心を温めてくれるじんわり魅力派。",zh:"细腻温暖、投入很深。越靠近越温暖人心的含蓄魅力派。"}},
+  {tag:{ko:"⛰️ 듬직한 큰 산",en:"⛰️ A steady mountain",ja:"⛰️ どっしりした大地",zh:"⛰️ 稳重的高山"},desc:{ko:"듬직하고 포용력 있는 중심축. 흔들리지 않고 사람들을 품는 믿음직한 존재.",en:"Steady and embracing — an unshakable center that holds everyone together.",ja:"どっしりして包容力のある中心軸。揺るがず人を受け止める頼もしい存在。",zh:"稳重而有包容力的中心。不动摇、能容纳众人的可靠存在。"}},
+  {tag:{ko:"🌱 기름진 텃밭",en:"🌱 Fertile soil",ja:"🌱 肥沃な畑",zh:"🌱 肥沃的田园"},desc:{ko:"세심하고 실속 있으며 잘 보살핌. 조용히 챙기고 키워내는 살림꾼 같은 다정함.",en:"Attentive, grounded, nurturing — quietly tends and grows everyone around them.",ja:"細やかで実があり世話上手。静かに育て支える優しさ。",zh:"细心务实、善于照顾。默默耕耘、培育他人的温柔型。"}},
+  {tag:{ko:"⚔️ 벼려지는 강철",en:"⚔️ Tempered steel",ja:"⚔️ 鍛えられる鋼",zh:"⚔️ 锤炼的钢铁"},desc:{ko:"결단력과 의리로 뭉친 승부사. 한번 정하면 밀어붙이는 카리스마가 있어요.",en:"A decisive fighter forged from loyalty — once set, pushes through with sheer charisma.",ja:"決断力と義理で固まった勝負師。一度決めたら押し通すカリスマ。",zh:"果断与义气凝聚的斗士。一旦决定就贯彻到底的领袖气场。"}},
+  {tag:{ko:"💎 세공된 보석",en:"💎 A cut jewel",ja:"💎 磨かれた宝石",zh:"💎 精雕的宝石"},desc:{ko:"예리하고 세련되며 자존심이 높음. 디테일에 강하고 반짝임을 아는 완벽주의 미학파.",en:"Sharp, refined, proud — strong on detail and knows exactly how to shine.",ja:"鋭く洗練されプライドが高い。ディテールに強く輝き方を知る完璧主義。",zh:"敏锐精致、自尊心强。注重细节、深谙闪耀之道的完美主义者。"}},
+  {tag:{ko:"🌊 드넓은 바다",en:"🌊 The open sea",ja:"🌊 広い海",zh:"🌊 辽阔的大海"},desc:{ko:"스케일이 크고 자유로우며 지략가. 흐름을 크게 읽고 어디로든 뻗어가는 개척형.",en:"Vast, free, and strategic — reads the big picture and flows wherever it wants.",ja:"スケールが大きく自由で知略家。流れを大きく読みどこへでも伸びる開拓型。",zh:"格局大、自由且有谋略。看大势、能奔向任何方向的开拓型。"}},
+  {tag:{ko:"💧 맑은 시냇물",en:"💧 A clear stream",ja:"💧 澄んだ小川",zh:"💧 清澈的溪流"},desc:{ko:"감수성이 풍부하고 촉이 예리함. 조용히 스며들어 상대의 마음을 읽는 감각파.",en:"Rich in sensitivity with sharp intuition — quietly seeps in and reads your heart.",ja:"感受性が豊かで勘が鋭い。静かに染み込み相手の心を読む感覚派。",zh:"感受力丰富、直觉敏锐。悄然渗透、读懂他人内心的感觉派。"}}
+];
+// 오행 5종 기질
+const ELEM_TRAIT = {
+  "木":{ko:"성장과 추진의 나무 기운 — 새로운 걸 시작해 위로 뻗어요.",en:"Wood energy of growth and drive — starts new things and reaches upward.",ja:"成長と推進の木の気 — 新しいことを始め上へ伸びる。",zh:"成长与推进的木之气——开创新事、向上生长。"},
+  "火":{ko:"열정과 표현의 불 기운 — 무대 위에서 가장 빛나요.",en:"Fire energy of passion and expression — shines brightest on stage.",ja:"情熱と表現の火の気 — ステージで最も輝く。",zh:"热情与表现的火之气——在舞台上最耀眼。"},
+  "土":{ko:"안정과 신뢰의 흙 기운 — 팀의 중심을 잡아줘요.",en:"Earth energy of stability and trust — anchors the whole team.",ja:"安定と信頼の土の気 — チームの中心を支える。",zh:"稳定与信赖的土之气——稳住团队的中心。"},
+  "金":{ko:"결단과 완성의 금 기운 — 프로답게 딱 마무리해요.",en:"Metal energy of resolve and finish — wraps things up like a pro.",ja:"決断と完成の金の気 — プロらしくきっちり仕上げる。",zh:"决断与完成的金之气——专业地收尾。"},
+  "水":{ko:"지혜와 유연의 물 기운 — 흐름을 읽고 어디든 스며들어요.",en:"Water energy of wisdom and flexibility — reads the flow and adapts anywhere.",ja:"知恵と柔軟の水の気 — 流れを読みどこへでも染み込む。",zh:"智慧与柔韧的水之气——读懂流势、随处融入。"}
+};
+// 오행별 매력 레이더 기본값 [열정,추진,감성,안정,친화]
+const ELEM_RADAR = {"木":[68,82,55,58,62],"火":[92,70,80,38,78],"土":[50,55,52,90,82],"金":[62,88,42,70,48],"水":[55,60,90,60,66]};
+function buildProfile(A){
+  const si = STEMS.indexOf(A.pillar[0]), bi = BRANCHES.indexOf(A.pillar[1]);
+  const elem = A.elem, yang = STEM_YY(si)===1;
+  // 신강/신약 판정 (본인 사주만으로)
+  let need=0;
+  if(A.dob && A.dob.length===8){ const y=+A.dob.slice(0,4), mo=+A.dob.slice(4,6), da=+A.dob.slice(6,8);
+    const yp=yearPillar(y,mo,da), mp=monthPillar(y,mo,da,yp.stemIdx);
+    need = bodyStrength([
+      {stem:yp.stemIdx,branch:yp.branchIdx,weight:1},
+      {stem:mp.stemIdx,branch:mp.branchIdx,weight:2},
+      {stem:si,branch:bi,weight:1,isDay:true}
+    ], elem);
+  }
+  const energyKey = need < -0.08 ? 'pfStrong' : (need > 0.08 ? 'pfWeak' : 'pfMid');
+  // 레이더 값 (오행 기본 + 음양/신강신약 보정)
+  const base = (ELEM_RADAR[elem] || [60,60,60,60,60]).slice();
+  if(yang){ base[0]+=8; base[1]+=8; } else { base[2]+=8; base[3]+=8; }
+  if(need < -0.08){ base[1]+=6; base[0]+=4; } else if(need > 0.08){ base[4]+=8; base[2]+=4; }
+  const vals = base.map(v=>Math.max(6,Math.min(100,v)));
+  const axes = ['pfAxPassion','pfAxDrive','pfAxEmotion','pfAxStability','pfAxWarmth'];
+  const radar = radarSVG(vals, axes.map(k=>dt(k)));
+  const bornLine = (A.dob && A.dob.length===8) ? `${A.dob.slice(0,4)}.${A.dob.slice(4,6)}.${A.dob.slice(6,8)}` : '';
+  const persona = dl(STEM_PROF[si].tag);
+  const stemDesc = dl(STEM_PROF[si].desc);
+  const elemTrait = dl(ELEM_TRAIT[elem]) || '';
+  return `
+    <div class="da-head">
+      <div class="da-h-main">
+        <div class="da-h-name">${esc(A.name)}<span class="da-h-grp">${esc(A.group)}</span></div>
+        <div class="da-h-pill"><span class="dot" style="background:${ELEM_COLOR[elem]}"></span>${A.pillar} · ${elem}${bornLine?` · <span class="pf-born">${dt('pfBorn')} ${bornLine}</span>`:''}</div>
+      </div>
+      <div class="pf-badge" style="background:${ELEM_COLOR[elem]};box-shadow:0 0 24px -2px ${ELEM_HEX[elem]}aa">${A.pillar[0]}</div>
+    </div>
+    <div class="da-band">${esc(persona)}</div>
+    <div class="da-section"><h4>${dt('pfStem')}</h4><p>${esc(stemDesc)}</p></div>
+    <div class="da-section"><h4>${dt('pfElem')}</h4><p>${esc(elemTrait)}</p></div>
+    <div class="da-section"><h4>${dt('pfEnergy')}</h4><p>${esc(dt(energyKey))}</p></div>
+    <div class="da-section"><h4>${dt('pfCharm')}</h4>${radar}</div>
+    <p class="da-disc">${dt('daDisc')}</p>`;
+}
+let _profileRendered=false;
+function openProfile(){ buildPairList(); _profileRendered=false; document.getElementById('profileResult').innerHTML=''; document.getElementById('profileModal').classList.remove('hidden'); }
+function closeProfile(){ _profileRendered=false; document.getElementById('profileModal').classList.add('hidden'); }
+function runProfile(){
+  const A=findIdol(document.getElementById('profileInput').value.trim());
+  const out=document.getElementById('profileResult');
+  if(!A){ out.innerHTML=`<p class="pair-hint">${dt('profPickHint')}</p>`; _profileRendered=false; return; }
+  out.innerHTML = buildProfile(A);
+  _profileRendered=true;
 }
 
 function godName(uSI, tSI){
