@@ -22124,5 +22124,18 @@
     "firstAt": "2026-08-06T20:27:14.620Z",
     "lastAt": "2026-08-06T20:27:14.620Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:나인|onlyoneof",
+    "name": "나인",
+    "group": "OnlyOneOf",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-06T21:59:40.481Z",
+    "lastAt": "2026-08-06T21:59:40.481Z",
+    "status": "pending"
   }
 ]
