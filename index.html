@@ -3569,7 +3569,7 @@ const SUGGEST_COOLDOWN_MS = 60*60*1000; // 소프트 제한: 1시간
 // AD_CLIENT: 게시자 ID(공개 값). 비우면 개인정보 고지도 숨기고 수동 배너도 미노출.
 // AD_SLOT: 하단 '고정' 배너를 추가로 원하면 광고 단위(디스플레이) 슬롯 ID 입력(비우면 자동광고만).
 const AD_CLIENT = "ca-pub-6294147440984199";
-const AD_SLOT   = "";
+const AD_SLOT   = "8314531876";  // 하단 디스플레이 배너(saju-bottom). 자동광고는 대시보드에서 OFF 유지.
 function initAds(){
   if(!AD_CLIENT) return;                            // 광고 미사용
   const p=document.getElementById('adPrivacy'); if(p) p.classList.remove('hidden'); // 광고 쿠키 고지
