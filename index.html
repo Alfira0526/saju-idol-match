@@ -476,6 +476,12 @@
   .pair-entry{width:100%; margin:12px 0 0; padding:12px; border-radius:12px; cursor:pointer;
     background:#ff4d9714; border:1px solid #ff4d9733; color:var(--ink); font-family:'Jua','Noto Sans KR',sans-serif; font-size:14.5px;}
   .pair-entry:hover{background:#ff4d9722; border-color:#ff4d9755;}
+  .tri-me{margin:2px 0 10px; padding:11px 12px; background:#ffffff08; border:1px solid #ffffff18; border-radius:12px;}
+  .tri-me label{display:block; font-size:12px; color:var(--ink-dim); margin-bottom:7px; font-weight:600;}
+  .tri-me-row{display:flex; gap:8px;}
+  .tri-me-row input{flex:1; min-width:0; background:#170e2e; border:1px solid #ffffff22; color:var(--ink); border-radius:9px; padding:11px 12px; font-size:14px;}
+  .tri-me-row select{flex:none; background:#170e2e; border:1px solid #ffffff22; color:var(--ink); border-radius:9px; padding:11px 10px; font-size:13.5px; max-width:44%;}
+  .tri-me-row input:focus, .tri-me-row select:focus{outline:none; border-color:var(--gold);}
   .pair-pick{display:flex; align-items:center; gap:8px; margin:4px 0 12px;}
   .pair-pick input{flex:1; min-width:0; background:#170e2e; border:1px solid #ffffff22; color:var(--ink);
     border-radius:9px; padding:11px 12px; font-size:14px;}
@@ -786,6 +792,13 @@
     <button class="modal-x" onclick="closeTri()" aria-label="닫기">✕</button>
     <h3 class="modal-title" data-i18n="triTitle">지옥의 삼각관계</h3>
     <p class="modal-intro" data-i18n="triIntro">나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.</p>
+    <div class="tri-me">
+      <label for="triMeDate" data-i18n="triMeLabel">내 생년월일 (8자리) · 태어난 시각(선택)</label>
+      <div class="tri-me-row">
+        <input type="tel" id="triMeDate" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="예: 19950719" data-i18n-ph="bdatePh" autocomplete="off">
+        <select id="triMeHour"></select>
+      </div>
+    </div>
     <div class="pair-pick">
       <input type="text" id="triA" list="idolList" placeholder="최애 A" data-i18n-ph="triAph" autocomplete="off">
       <span class="pair-heart">🔺</span>
@@ -923,6 +936,7 @@ const TR = {
   triEntry: { ko: "🔥 지옥의 삼각관계 · 나 + 최애 2명", en: "🔥 Love-triangle test · you + 2 biases", ja: "🔥 地獄の三角関係 · 私+推し2人", zh: "🔥 地狱三角 · 我+两位本命" },
   triTitle: { ko: "지옥의 삼각관계", en: "Love-triangle test", ja: "地獄の三角関係", zh: "地狱三角关系" },
   triIntro: { ko: "나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.", en: "You and two biases — all three edges at once. See who clicks with whom.", ja: "私と推し2人、三人の相性を一度に!誰が誰と合うか三角で診断。", zh: "我和两位本命，三人缘分一次看！谁和谁更合，三角诊断。" },
+  triMeLabel: { ko: "내 생년월일 (8자리) · 태어난 시각(선택)", en: "My birth date (8 digits) · time (optional)", ja: "自分の生年月日(8桁) · 時刻(任意)", zh: "我的生日(8位) · 出生时刻(可选)" },
   triAph: { ko: "최애 A (이름 검색)", en: "Bias A (search name)", ja: "推しA(名前検索)", zh: "本命A(搜索名字)" },
   triBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
   triGo: { ko: "삼각 진단", en: "Diagnose triangle", ja: "三角診断", zh: "三角诊断" },
@@ -1327,6 +1341,11 @@ const DYN = {
   band3:{ko:"잘 맞는 편",en:"A good fit",ja:"よく合う相性",zh:"挺合得来"},
   band2:{ko:"무난한 궁합",en:"An easy, steady match",ja:"無難な相性",zh:"平稳的缘分"},
   band1:{ko:"개성 있는 조합",en:"An unusual pairing",ja:"個性的な組み合わせ",zh:"个性十足的组合"},
+  pband5:{ko:"환상의 케미 ✨",en:"Legendary chemistry ✨",ja:"最高のケミ ✨",zh:"梦幻化学 ✨"},
+  pband4:{ko:"찰떡 케미",en:"Perfect chemistry",ja:"ばっちりケミ",zh:"绝配化学"},
+  pband3:{ko:"잘 통하는 사이",en:"Click well together",ja:"よく通じる仲",zh:"很合拍"},
+  pband2:{ko:"무난한 케미",en:"An easy combo",ja:"無難なケミ",zh:"平稳的化学"},
+  pband1:{ko:"개성 있는 조합",en:"An unusual combo",ja:"個性的な組み合わせ",zh:"个性十足的组合"},
   stHarmony:{ko:"지지가 잘 맞물려(합) 함께할수록 시너지가 나요.",en:"Your branches mesh (harmony) — synergy grows the more you're together.",ja:"地支が噛み合い(合)、一緒にいるほど相乗効果が出ます。",zh:"地支相合，越相处越有默契。"},
   stImmersion:{ko:"재능을 응원하고 표현을 즐기는 덕질에 최적이에요.",en:"Perfect for cheering on their talent and enjoying their expression.",ja:"才能を応援し表現を楽しむ推し活に最適です。",zh:"最适合应援才华、享受表达的追星。"},
   stHealing:{ko:"보고만 있어도 위로·충전되는 힐링형이에요.",en:"A healing type — just watching comforts and recharges you.",ja:"見ているだけで癒される充電タイプです。",zh:"看着就被治愈充电的治愈型。"},
@@ -1373,7 +1392,7 @@ const DYN = {
   persp_tensionLo:{ko:"긴장이 적어 마음이 놓이는 관계 — 평온하게 흘러가요.",en:"Low tension, easy on the heart — it flows peacefully.",ja:"緊張が少なく安心できる関係 — 穏やかに流れる。",zh:"张力低、令人安心——平和地流动。"},
   pairPickHint:{ko:"목록에서 두 최애를 정확히 골라주세요.",en:"Pick two biases from the list.",ja:"リストから2人を正しく選んでください。",zh:"请从列表中准确选择两位。"},
   pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"},
-  posTitle:{ko:"💞 둘의 성격 케미",en:"💞 Their personality chemistry",ja:"💞 二人の性格ケミ",zh:"💞 二人性格化学"},
+  posTitle:{ko:"✨ 둘의 성격 케미",en:"✨ Their personality chemistry",ja:"✨ 二人の性格ケミ",zh:"✨ 二人性格化学"},
   posFrame:{ko:"먼저 고른 <b>{A}</b> 쪽에서 본 케미예요.",en:"Seen from your first pick, <b>{A}</b>.",ja:"先に選んだ <b>{A}</b> 側から見たケミ。",zh:"以先选的 <b>{A}</b> 一方来看的化学。"},
   posSubLabel:{ko:"반대로,",en:"In turn,",ja:"逆に、",zh:"反过来，"},
   posSwapNote:{ko:"🔁 순서를 바꾸면 <b>{B}</b> 쪽 시점으로 먼저 보여드려요.",en:"🔁 Swap the order to read <b>{B}</b>'s side first.",ja:"🔁 順番を変えると <b>{B}</b> 側の視点から。",zh:"🔁 调换顺序会先看 <b>{B}</b> 一方的视角。"},
@@ -1395,6 +1414,7 @@ const DYN = {
   pfAxWarmth:{ko:"친화",en:"Warmth",ja:"親和",zh:"亲和"},
   triMe:{ko:"나",en:"Me",ja:"私",zh:"我"},
   triNeedCalc:{ko:"먼저 내 생년월일로 매칭을 돌려주세요. 나와의 궁합이 필요해요.",en:"Run your own match first — we need your compatibility.",ja:"先に自分の生年月日でマッチングしてください。私との相性が必要です。",zh:"请先用你的生日进行匹配，需要你的缘分数据。"},
+  triNeedBirth:{ko:"내 생년월일을 8자리 숫자로 입력해 주세요. (예: 19950719)",en:"Enter your birth date as 8 digits (e.g. 19950719).",ja:"生年月日を8桁の数字で入力してください(例: 19950719)。",zh:"请输入8位数字生日（例：19950719）。"},
   triV1:{ko:"🌈 삼위일체 케미",en:"🌈 Trinity chemistry",ja:"🌈 三位一体のケミ",zh:"🌈 三位一体的默契"},
   triD1:{ko:"셋 다 잘 맞는 이상적인 삼각! 지옥은커녕 천국 라인업이에요.",en:"All three click — this is heaven, not hell.",ja:"三人ともよく合う理想の三角!地獄どころか天国ラインです。",zh:"三人都合拍的理想三角！哪是地狱，简直天堂。"},
   triV2:{ko:"🔥 진짜 지옥의 삼각관계",en:"🔥 A true love triangle",ja:"🔥 本物の地獄の三角関係",zh:"🔥 真正的地狱三角"},
@@ -1497,13 +1517,14 @@ function radarSVG(vals, labels){
   const labs=labels.map((L,i)=>{const[x,y]=pt(i,R+15);const a=Math.abs(x-cx)<8?'middle':(x<cx?'end':'start');return `<text x="${x.toFixed(1)}" y="${(y+3).toFixed(1)}" text-anchor="${a}" fill="#ab9fce" font-size="11">${esc(L)}</text>`;}).join('');
   return `<svg class="da-radar" viewBox="0 0 260 205" width="100%" aria-hidden="true">${grid}${spokes}<polygon points="${poly}" fill="url(#daR)" fill-opacity=".55" stroke="#ff5da2" stroke-width="1.5"/>${dots}${labs}<defs><radialGradient id="daR"><stop offset="0" stop-color="#c07bff"/><stop offset="1" stop-color="#ff5da2"/></radialGradient></defs></svg>`;
 }
-function buildDetail(r, dmArg, selfName){
+function buildDetail(r, dmArg, selfName, isPair){
   const dm = dmArg || (window._saju && window._saju.dm); if(!dm) return "";
   const d = disp(r);
   const U = dm.elem, T = r.elem;
   const erk = elemRelKey(U,T);
   const relWord = erk==='elSame' ? dt('elSameWord') : ((erk==='elIgen'||erk==='elGenme') ? dt('elGenWord') : dt('elCtrlWord'));
-  const band = r.pct>=55?'band5':r.pct>=45?'band4':r.pct>=35?'band3':r.pct>=25?'band2':'band1';
+  const bandN = r.pct>=55?5:r.pct>=45?4:r.pct>=35?3:r.pct>=25?2:1;
+  const band = (isPair?'pband':'band')+bandN;
   // 지지 상세 행
   const bks = [r.brKey, r.yearKey, r.monthKey, r.hourKey].filter(Boolean);
   const rows = [['posDay', r.brKey]];
@@ -1531,7 +1552,8 @@ function buildDetail(r, dmArg, selfName){
   if(r.hap) loveLines.push(dt('lvHap'));
   const sitLine = dt('loveSit_'+r.brKey);
   const sitHtml = sitLine ? `<div class="da-sit"><span class="da-sit-t">📖 ${dt('lvSitTitle')}</span><p>${esc(sitLine)}</p></div>` : "";
-  const loveHtml = `<div class="da-section da-love"><h4>💘 ${dt('loveTitle')}</h4>${loveLines.filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join("")}${sitHtml}</div>`;
+  // 최애×최애(isPair)는 '연애/사귄다면' 프레이밍 제거 — 러브스토리 섹션 미노출
+  const loveHtml = isPair ? "" : `<div class="da-section da-love"><h4>💘 ${dt('loveTitle')}</h4>${loveLines.filter(Boolean).map(l=>`<p>${esc(l)}</p>`).join("")}${sitHtml}</div>`;
   // 강점/주의
   const strengths = [dt(ST_FAM[r.fam] || 'stComfort')]; if(harmony) strengths.push(dt('stHarmony'));
   let caution = bks.includes('충') ? dt('caChung') : (bks.includes('해') ? dt('caHae') : (r.fam==='관성' ? dt('caGwan') : dt('caNone')));
@@ -1633,11 +1655,11 @@ function openPair(){ buildPairList(); document.getElementById('pairResult').inne
 function closePair(){ document.getElementById('pairModal').classList.add('hidden'); }
 // 관계 케미(리드 무드) — 십신 방향으로 이끄는 결 판정. 먼저 고른 쪽 기준으로 해석이 달라짐.
 const POSFAM = {
-  '식상':{line:{ko:"{A}는 {B} 앞에서 표현이 많아지고 애정을 팍팍 주고 싶어지는 다정 케미예요.",en:"{A} gets expressive and affectionate around {B} — wants to shower them with care.",ja:"{A}は{B}の前で表現が増え、愛情を注ぎたくなる甘めのケミ。",zh:"{A}在{B}面前表达变多、想倾注爱意的温柔化学。"}},
-  '재성':{line:{ko:"{A}는 {B}에게 자꾸 눈이 가고 관심이 쏠려서, 먼저 챙겨주고 싶어지는 사이예요.",en:"{A}'s eyes keep drifting to {B} — drawn in, wanting to look out for them.",ja:"{A}は{B}につい目が行き、関心が向いて先に気にかけたくなる仲。",zh:"{A}的目光总落在{B}身上、被吸引、想先照顾对方的关系。"}},
-  '비겁':{line:{ko:"{A}와 {B}는 결이 닮아 말 안 해도 통하는, 취향까지 비슷한 편한 사이예요.",en:"{A} and {B} share a vibe — click without words, tastes even overlap.",ja:"{A}と{B}は雰囲気が似て、言わずとも通じ好みも近い気楽な仲。",zh:"{A}和{B}气质相近，不用说也懂、连喜好都像的自在关系。"}},
-  '관성':{line:{ko:"{A}는 {B}가 묘하게 신경 쓰이고 설레는, 은근히 의식하게 되는 두근 케미예요.",en:"{A} finds {B} oddly captivating — quietly aware, a little heart-fluttery.",ja:"{A}は{B}が妙に気になって胸が高鳴る、さりげなく意識するケミ。",zh:"{A}对{B}莫名在意、心动，不自觉留意的怦然化学。"}},
-  '인성':{line:{ko:"{A}는 {B} 곁에서 마음이 놓이고 기대게 되는, 위로받는 느낌의 사이예요.",en:"{A} feels at ease around {B}, leaning in — a comforting kind of bond.",ja:"{A}は{B}のそばで心が安らぎ頼りたくなる、癒される間柄。",zh:"{A}在{B}身边会安心、想依靠——被治愈的关系。"}}
+  '식상':{line:{ko:"{A}는 {B} 옆에서 말이 많아지고 리액션도 커지는, 텐션 올려주는 케미예요.",en:"{A} livens up next to {B} — more talkative, bigger reactions, an energy-boosting combo.",ja:"{A}は{B}の隣で口数が増えリアクションも大きくなる、テンションが上がるケミ。",zh:"{A}在{B}身边话变多、反应也更大，能带动气氛的化学。"}},
+  '재성':{line:{ko:"{A}는 {B}를 자꾸 챙기고 이끌게 되는, 든든하게 리드하는 케미예요.",en:"{A} keeps looking out for {B} and taking the lead — a dependable, guiding combo.",ja:"{A}は{B}をつい世話して引っ張る、頼れるリードのケミ。",zh:"{A}总想照顾并带动{B}，可靠地主导的化学。"}},
+  '비겁':{line:{ko:"{A}와 {B}는 결이 닮아 말 안 해도 통하는, 취향까지 비슷한 찐친 케미예요.",en:"{A} and {B} share a vibe — click without words, tastes overlap, total besties.",ja:"{A}と{B}は雰囲気が似て言わずとも通じ、好みも近い親友ケミ。",zh:"{A}和{B}气质相近、不用说也懂、连喜好都像的挚友化学。"}},
+  '관성':{line:{ko:"{A}는 {B}가 은근 신경 쓰이고 자극이 되는, 자꾸 의식하며 배우게 되는 케미예요.",en:"{A} is quietly conscious of {B}, spurred on and picking things up — a stimulating combo.",ja:"{A}は{B}がさりげなく気になり刺激になる、意識して学ぶケミ。",zh:"{A}会不自觉在意{B}、受到激励，边留意边学习的化学。"}},
+  '인성':{line:{ko:"{A}는 {B} 곁에서 마음이 놓이고 기대게 되는, 편안하고 안정되는 케미예요.",en:"{A} feels at ease around {B} and can lean on them — a calm, steadying combo.",ja:"{A}は{B}のそばで安心して頼れる、落ち着くケミ。",zh:"{A}在{B}身边安心、可依靠，平和又稳定的化学。"}}
 };
 // 한글 조사 보정: 이름 끝 받침 유무에 따라 는/은·가/이·와/과 자동 선택 (KO 전용, 다른 언어는 무변)
 function fixJosa(s, name){
@@ -1680,7 +1702,7 @@ function runPair(){
   const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
   window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
   out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>`
-    + buildPairRoles(A, B) + buildDetail(rB, dmA, A.name)
+    + buildPairRoles(A, B) + buildDetail(rB, dmA, A.name, true)
     + shareRowHTML('sharePair','pairShareHint') + adUnitHTML();
   pushAdsIn(out);
 }
@@ -1812,8 +1834,12 @@ function buildTri(A, B){
 }
 let _triRendered=false;
 function openTri(){ buildPairList(); _triRendered=false;
-  const out=document.getElementById('triResult');
-  out.innerHTML = (window._saju && window._saju.scored) ? '' : `<p class="pair-hint">${dt('triNeedCalc')}</p>`;
+  // 내 생년월일·시각 입력칸 준비(메인에서 이미 넣었으면 프리필)
+  const md=document.getElementById('triMeDate'), mh=document.getElementById('triMeHour');
+  const bh=document.getElementById('bhour');
+  if(md && !md.value){ const bd=document.getElementById('bdate'); if(bd && bd.value) md.value=bd.value; }
+  if(mh && bh){ mh.innerHTML=bh.innerHTML; mh.value=bh.value; }
+  document.getElementById('triResult').innerHTML='';
   document.getElementById('triModal').classList.remove('hidden'); }
 // 상단 모드 '사주궁합' 선택 → 생년월일 입력으로 이동·포커스
 function pickSaju(){
@@ -1824,8 +1850,17 @@ function pickSaju(){
 function closeTri(){ _triRendered=false; document.getElementById('triModal').classList.add('hidden'); }
 function runTri(){
   const out=document.getElementById('triResult');
-  const s=window._saju;
-  if(!s || !s.scored){ out.innerHTML=`<p class="pair-hint">${dt('triNeedCalc')}</p>`; _triRendered=false; return; }
+  // 내 생년월일이 입력돼 있으면 그걸로 계산(매칭 안 돌려도 됨). 없으면 기존 매칭 사용.
+  const meRaw=(document.getElementById('triMeDate').value||'').replace(/\D/g,'');
+  let s=window._saju;
+  if(meRaw.length===8){
+    document.getElementById('bdate').value=meRaw;
+    const mh=document.getElementById('triMeHour'); if(mh) document.getElementById('bhour').value=mh.value;
+    runCalc(); s=window._saju;
+    if(!s || !s.scored){ _triRendered=false; return; }   // runCalc이 날짜 오류 알림 처리
+  } else if(!s || !s.scored){
+    out.innerHTML=`<p class="pair-hint">${dt('triNeedBirth')}</p>`; _triRendered=false; return;
+  }
   const A=findIdol(document.getElementById('triA').value.trim());
   const B=findIdol(document.getElementById('triB').value.trim());
   if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; _triRendered=false; return; }
@@ -3560,15 +3595,15 @@ function drawPairCard(A,B,rB,dmA){
   ctx.fillText(`${A.group}  ×  ${B.group}`, W/2, 442);
   bigGauge(ctx, W/2, 640, 148, rB.pct);
   ctx.fillStyle=gold; ctx.font="44px 'Jua','Noto Sans KR',sans-serif"; ctx.textAlign="center";
-  ctx.fillText(dt(bandKey(rB.pct)), W/2, 880);
+  ctx.fillText(dt('p'+bandKey(rB.pct)), W/2, 880);   // 최애끼리는 케미 등급(연애 표현 없음)
   // 오행 관계
   const erk=elemRelKey(dmA.elem, rB.elem);
   const relWord = erk==='elSame'?dt('elSameWord'):((erk==='elIgen'||erk==='elGenme')?dt('elGenWord'):dt('elCtrlWord'));
   ctx.fillStyle=ink; ctx.font="500 34px 'Noto Sans KR',sans-serif";
   ctx.fillText(`${A.pillar[0]}·${dmA.elem}  ${relWord}  ${B.pillar[0]}·${rB.elem}`, W/2, 952);
-  // 러브 한 줄
+  // 케미 한 줄(연애 아님 — 지지 관계 서술)
   ctx.fillStyle=dim; ctx.font="400 30px 'Noto Sans KR',sans-serif";
-  wrapText(ctx, dt('loveBr_'+rB.brKey)||'', W/2, 1030, W-2*M-40, 44);
+  wrapText(ctx, (BR_L[rB.brKey]?dl(BR_L[rB.brKey].reason):'')||'', W/2, 1030, W-2*M-40, 44);
   ctx.textAlign="left"; cardFoot(ctx,W,M,H); return canvas;
 }
 function triCanvasNode(ctx,x,y,label){
