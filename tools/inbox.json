@@ -22202,5 +22202,18 @@
     "firstAt": "2026-08-07T03:27:39.623Z",
     "lastAt": "2026-08-07T03:27:39.623Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:marklee|solo",
+    "name": "Mark Lee",
+    "group": "Solo",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990802",
+    "note": "Upper Room",
+    "count": 1,
+    "firstAt": "2026-08-07T03:31:36.780Z",
+    "lastAt": "2026-08-07T03:31:36.780Z",
+    "status": "pending"
   }
 ]
