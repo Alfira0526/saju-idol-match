@@ -22423,5 +22423,18 @@
     "firstAt": "2026-08-07T09:40:14.002Z",
     "lastAt": "2026-08-07T09:40:14.002Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李知恩|iu",
+    "name": "李知恩",
+    "group": "IU",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T11:06:56.427Z",
+    "lastAt": "2026-08-07T11:06:56.427Z",
+    "status": "pending"
   }
 ]
