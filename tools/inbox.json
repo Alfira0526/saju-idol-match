@@ -22176,5 +22176,18 @@
     "firstAt": "2026-08-07T00:26:19.596Z",
     "lastAt": "2026-08-07T00:26:19.596Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오성민|onepact",
+    "name": "오성민",
+    "group": "Onepact",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010825",
+    "note": "제가 좋아해여",
+    "count": 1,
+    "firstAt": "2026-08-07T02:55:37.500Z",
+    "lastAt": "2026-08-07T02:55:37.500Z",
+    "status": "pending"
   }
 ]
