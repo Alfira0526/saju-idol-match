@@ -22540,5 +22540,18 @@
     "firstAt": "2026-08-07T16:55:03.848Z",
     "lastAt": "2026-08-07T16:55:03.848Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유마|luvless",
+    "name": "유마",
+    "group": "Luvless",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20010912",
+    "note": "RINDO 소속 아이돌",
+    "count": 1,
+    "firstAt": "2026-08-07T17:44:18.689Z",
+    "lastAt": "2026-08-07T17:44:18.689Z",
+    "status": "pending"
   }
 ]
