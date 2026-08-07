@@ -22280,5 +22280,31 @@
     "firstAt": "2026-08-07T04:45:09.166Z",
     "lastAt": "2026-08-07T04:45:09.166Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오율|longshot",
+    "name": "오율",
+    "group": "longshot",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T04:57:31.555Z",
+    "lastAt": "2026-08-07T04:57:31.555Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김민제|all(h)ours",
+    "name": "김민제",
+    "group": "ALL(H)OURS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050301",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T04:58:37.759Z",
+    "lastAt": "2026-08-07T04:58:37.759Z",
+    "status": "pending"
   }
 ]
