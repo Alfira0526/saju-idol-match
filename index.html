@@ -427,6 +427,16 @@
   .da-good h4{color:#5be0a0; border-color:#5be0a0;} .da-warn h4{color:#ffcf6a; border-color:#ffcf6a;}
   .da-love{background:#ff4d9712; border:1px solid #ff4d9722; border-radius:12px; padding:11px 13px;}
   .da-love h4{color:#ff7ab8; border-color:#ff7ab8;}
+  .da-pos{background:linear-gradient(135deg,#7b5cff14,#ff4d9714); border:1px solid #ffffff1f; border-radius:14px; padding:13px 15px;}
+  .da-pos h4{color:#c79bff; border-color:#c79bff;}
+  .da-pos .pos-order{font-size:12.5px; color:var(--ink-dim); margin:0 0 8px;}
+  .da-pos .pos-read{font-size:15px; color:var(--ink); line-height:1.55; margin:0 0 8px;}
+  .da-pos .pos-read b, .da-pos .pos-order b{color:#ff9ecb;}
+  .da-pos .pos-mutual{font-size:12.5px; color:var(--ink-dim); margin:0 0 6px;}
+  .da-pos .pos-swap{font-size:12px; color:#9a8fc4; margin:0 0 10px;}
+  .da-pos .pos-swapbtn{width:100%; padding:10px; border-radius:10px; cursor:pointer; font-weight:700; font-size:13.5px;
+    background:#ffffff12; border:1px solid #c79bff55; color:#e7ddff;}
+  .da-pos .pos-swapbtn:hover{background:#c79bff22;}
   .da-sit{margin-top:10px; padding:9px 11px; background:#ffffff0a; border-radius:10px; border-left:2px solid #ff7ab8;}
   .da-sit-t{display:block; font-size:11.5px; font-weight:700; color:#ff9ecb; margin-bottom:3px;}
   .da-sit p{margin:0; font-size:13px; color:var(--ink); line-height:1.55;}
@@ -1147,10 +1157,10 @@ function applyLang(){
   renderSub();
   buildHourSelect();
   // 결과가 이미 있으면 언어별 동적 라벨(일간·카테고리·전체·순위·이유 등) 재렌더
-  if(window._saju){ try{ renderDayMaster(window._saju.dm); applyScopeUI(); renderRanks();
+  if(window._saju && window._saju.dm){ try{ renderDayMaster(window._saju.dm); applyScopeUI(); renderRanks();
     if(window._saju.detail){ const dd=window._saju.detail; openDetail(encodeURIComponent(dd.name), encodeURIComponent(dd.group)); }
-    if(window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair();
   }catch(e){} }
+  try{ if(window._saju && window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair(); }catch(e){}
   try{ const pm=document.getElementById('profileModal'); if(pm && !pm.classList.contains('hidden') && _profileRendered) runProfile(); }catch(e){}
   try{ const tm=document.getElementById('triModal'); if(tm && !tm.classList.contains('hidden') && _triRendered) runTri(); }catch(e){}
 }
@@ -1362,6 +1372,14 @@ const DYN = {
   persp_tensionLo:{ko:"긴장이 적어 마음이 놓이는 관계 — 평온하게 흘러가요.",en:"Low tension, easy on the heart — it flows peacefully.",ja:"緊張が少なく安心できる関係 — 穏やかに流れる。",zh:"张力低、令人安心——平和地流动。"},
   pairPickHint:{ko:"목록에서 두 최애를 정확히 골라주세요.",en:"Pick two biases from the list.",ja:"リストから2人を正しく選んでください。",zh:"请从列表中准确选择两位。"},
   pairSame:{ko:"서로 다른 두 명을 골라주세요 :)",en:"Pick two different idols :)",ja:"別々の2人を選んでください :)",zh:"请选择不同的两位 :)"},
+  posTitle:{ko:"💞 관계 포지션 · 공수 케미",en:"💞 Relationship dynamic (who leads)",ja:"💞 関係ポジション(攻め受け)",zh:"💞 关系定位（攻受）"},
+  posOrder:{ko:"넣은 순서 기준: <b>{A}</b>(먼저=공/리드) × <b>{B}</b>(수/받쳐줌)",en:"By input order: <b>{A}</b> (first = lead) × <b>{B}</b> (receive)",ja:"入力順基準: <b>{A}</b>(先=攻め) × <b>{B}</b>(受け)",zh:"按输入顺序：<b>{A}</b>（先=攻） × <b>{B}</b>（受）"},
+  posLead:{ko:"정공법! <b>{A}</b>가 사주로도 리드형이라 <b>{A} 공(리드) · {B} 수(받쳐줌)</b>가 딱이에요 👑",en:"Textbook! <b>{A}</b>'s chart leans lead — <b>{A} leads · {B} receives</b> fits perfectly 👑",ja:"王道!<b>{A}</b>は四柱でもリード型 — <b>{A}攻め・{B}受け</b>がぴったり 👑",zh:"正统！<b>{A}</b>的八字偏主导——<b>{A}攻·{B}受</b>刚刚好 👑"},
+  posRecv:{ko:"반전 케미! <b>{A}</b>가 은근 받는 기질이라 <b>{A} 수 · 리버스</b> 각 🔄 오히려 {B}가 치고 들어와요",en:"Plot twist! <b>{A}</b> is secretly receptive — <b>{A} reverse</b> vibes 🔄 {B} takes the lead",ja:"逆転!<b>{A}</b>は実は受け気質 — <b>{A}受け・リバ</b>の予感 🔄 {B}が攻めてくる",zh:"反转！<b>{A}</b>其实偏受——<b>{A}受·反转</b>既视感 🔄 反而{B}主动出击"},
+  posEqual:{ko:"대등 티키타카! 공수 나누기 무의미한 <b>맞불·찐친 케미</b> ⚡",en:"Equal banter! Roles don't matter — <b>sparks &amp; besties</b> ⚡",ja:"対等!攻め受け無用の <b>タメ張り・親友ケミ</b> ⚡",zh:"对等打闹！分攻受无意义的 <b>火花·挚友化学</b> ⚡"},
+  posMutual:{ko:"{A} → {B}: {ka}  ·  {B} → {A}: {kb}",en:"{A} → {B}: {ka}  ·  {B} → {A}: {kb}",ja:"{A} → {B}: {ka}  ·  {B} → {A}: {kb}",zh:"{A} → {B}: {ka}  ·  {B} → {A}: {kb}"},
+  posSwapNote:{ko:"🔁 순서를 바꾸면(= {B} × {A}) 공수가 뒤집혀 해석이 달라져요.",en:"🔁 Swap the order ({B} × {A}) and the roles flip.",ja:"🔁 順番を変える({B} × {A})と攻め受けが逆転します。",zh:"🔁 调换顺序（{B} × {A}）攻受会反转，解读也不同。"},
+  posSwapBtn:{ko:"🔁 순서 바꿔보기",en:"🔁 Swap order",ja:"🔁 順番を入れ替え",zh:"🔁 调换顺序"},
   profPickHint:{ko:"목록에서 최애를 정확히 골라주세요.",en:"Pick a bias from the list.",ja:"リストから推しを選んでください。",zh:"请从列表中选择本命。"},
   pfPersona:{ko:"타입",en:"Type",ja:"タイプ",zh:"类型"},
   pfStem:{ko:"일간 성격(日干)",en:"Day Master",ja:"日干の性格",zh:"日干性格"},
@@ -1615,6 +1633,34 @@ function findIdol(val){
 }
 function openPair(){ buildPairList(); document.getElementById('pairResult').innerHTML=''; document.getElementById('pairModal').classList.remove('hidden'); }
 function closePair(){ document.getElementById('pairModal').classList.add('hidden'); }
+// 관계 포지션(공수/역할) — 십신 방향으로 리드/받쳐줌 판정. 넣는 순서(먼저=공 희망)에 따라 해석이 달라짐.
+const POSFAM = {
+  '식상':{pos:'lead', k:{ko:"표현·애정 퍼주는 직진형",en:"expressive, affection-first",ja:"表現豊かな直進型",zh:"表达丰富的直球型"}},
+  '재성':{pos:'lead', k:{ko:"쟁취·주도하는 리드형",en:"pursuing, take-charge",ja:"追いかけ主導型",zh:"主动争取的主导型"}},
+  '비겁':{pos:'equal',k:{ko:"대등한 티키타카형",en:"equal, banter buddies",ja:"対等なタメ口型",zh:"对等打闹型"}},
+  '관성':{pos:'recv', k:{ko:"끌리고 맞춰주는형",en:"drawn-in, accommodating",ja:"惹かれ合わせる型",zh:"被吸引迁就型"}},
+  '인성':{pos:'recv', k:{ko:"기대고 챙김받는형",en:"leaning, cared-for",ja:"甘えて守られる型",zh:"依赖被照顾型"}}
+};
+function buildPairRoles(A, B){
+  const aSI=STEMS.indexOf(A.pillar[0]), bSI=STEMS.indexOf(B.pillar[0]);
+  const famAB=tenGod(aSI,bSI).fam, famBA=tenGod(bSI,aSI).fam;
+  const posA=(POSFAM[famAB]||POSFAM['비겁']).pos;
+  const nA=esc(A.name), nB=esc(B.name);
+  const rep=s=>s.replace(/{A}/g,nA).replace(/{B}/g,nB);
+  const reading = rep(posA==='lead'?dt('posLead'):(posA==='recv'?dt('posRecv'):dt('posEqual')));
+  const ka=esc(dl((POSFAM[famAB]||POSFAM['비겁']).k)), kb=esc(dl((POSFAM[famBA]||POSFAM['비겁']).k));
+  const mutual = dt('posMutual').replace(/{A}/g,nA).replace(/{B}/g,nB).replace('{ka}',ka).replace('{kb}',kb);
+  return `<div class="da-section da-pos"><h4>${dt('posTitle')}</h4>
+    <p class="pos-order">${rep(dt('posOrder'))}</p>
+    <p class="pos-read">${reading}</p>
+    <p class="pos-mutual">${mutual}</p>
+    <p class="pos-swap">${rep(dt('posSwapNote'))}</p>
+    <button class="pos-swapbtn" type="button" onclick="swapPair()">${dt('posSwapBtn')}</button></div>`;
+}
+function swapPair(){
+  const a=document.getElementById('pairA'), b=document.getElementById('pairB');
+  const t=a.value; a.value=b.value; b.value=t; runPair();
+}
 function runPair(){
   const A=findIdol(document.getElementById('pairA').value.trim());
   const B=findIdol(document.getElementById('pairB').value.trim());
@@ -1625,7 +1671,8 @@ function runPair(){
   const {scored, dmA} = pairScored(A);
   const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
   window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
-  out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>` + buildDetail(rB, dmA, A.name)
+  out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>`
+    + buildPairRoles(A, B) + buildDetail(rB, dmA, A.name)
     + shareRowHTML('sharePair','pairShareHint') + adUnitHTML();
   pushAdsIn(out);
 }
