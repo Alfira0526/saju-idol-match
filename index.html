@@ -451,6 +451,17 @@
   .da-disc{font-size:11.5px; color:var(--ink-dim); margin:14px 0 0; text-align:center;}
   .da-gauge{width:78px; height:78px; display:block; margin-left:auto;}
   .da-radar{display:block; margin:2px auto 0; max-width:300px;}
+  .mode-head{font-size:14px; font-weight:800; color:var(--ink); margin:20px 2px 10px; letter-spacing:.01em;}
+  .mode-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:20px;}
+  .mode-card{display:flex; align-items:center; gap:11px; text-align:left; padding:14px 14px; border-radius:16px; cursor:pointer;
+    background:#ffffff0a; border:1.5px solid #ffffff1a; color:var(--ink); transition:transform .1s, border-color .2s, background .2s;}
+  .mode-card:hover{background:#ff4d9712; border-color:#ff4d9744; transform:translateY(-1px);}
+  .mode-card.active{background:linear-gradient(135deg,#ff4d9722,#8b5cf622); border-color:#ff5da2aa; box-shadow:0 0 22px -6px #ff5da266;}
+  .mode-card .mc-emo{font-size:26px; flex:none; line-height:1;}
+  .mode-card .mc-txt{display:flex; flex-direction:column; gap:2px; min-width:0;}
+  .mode-card .mc-txt b{font-size:15px; font-weight:800; white-space:nowrap;}
+  .mode-card .mc-txt i{font-size:11.5px; font-style:normal; color:var(--ink-dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  @media(min-width:560px){ .mode-grid{grid-template-columns:repeat(4,1fr);} .mode-card{flex-direction:column; text-align:center; align-items:center; gap:7px; padding:16px 10px;} .mode-card .mc-txt{align-items:center;} }
   .pair-entry{width:100%; margin:12px 0 0; padding:12px; border-radius:12px; cursor:pointer;
     background:#ff4d9714; border:1px solid #ff4d9733; color:var(--ink); font-family:'Jua','Noto Sans KR',sans-serif; font-size:14.5px;}
   .pair-entry:hover{background:#ff4d9722; border-color:#ff4d9755;}
@@ -503,6 +514,22 @@
   <div class="report-banner" id="reportBanner">
     <div class="rb-text" data-i18n="reportBannerText">매일 새로운 인물을 모으고 있어요. 보고 싶은 사람, 살짝 알려줄래요? 👀</div>
     <button class="rb-btn" onclick="openSuggest()" data-i18n="reportBannerBtn">제보하기</button>
+  </div>
+
+  <div class="mode-head" data-i18n="modeHead">무엇을 볼까요?</div>
+  <div class="mode-grid">
+    <button class="mode-card active" type="button" onclick="pickSaju()">
+      <span class="mc-emo">🔮</span><span class="mc-txt"><b data-i18n="modeSaju">사주궁합</b><i data-i18n="modeSajuSub">내 사주로 최애 찾기</i></span>
+    </button>
+    <button class="mode-card" type="button" onclick="openPair()">
+      <span class="mc-emo">💞</span><span class="mc-txt"><b data-i18n="modePair">최애끼리 궁합</b><i data-i18n="modePairSub">아이돌 둘의 궁합</i></span>
+    </button>
+    <button class="mode-card" type="button" onclick="openProfile()">
+      <span class="mc-emo">⭐</span><span class="mc-txt"><b data-i18n="modeProfile">최애 프로필</b><i data-i18n="modeProfileSub">아이돌 1명 사주</i></span>
+    </button>
+    <button class="mode-card" type="button" onclick="openTri()">
+      <span class="mc-emo">🔥</span><span class="mc-txt"><b data-i18n="modeTri">지옥의 삼각관계</b><i data-i18n="modeTriSub">나 + 최애 2명</i></span>
+    </button>
   </div>
 
   <div class="panel">
@@ -598,10 +625,6 @@
       <button class="share-btn" id="shareBtn" onclick="shareResult()" data-i18n="shareBtn">결과 이미지 저장 · 공유</button>
       <span class="share-hint" id="shareHint"></span>
     </div>
-    <button class="pair-entry" type="button" onclick="openPair()" data-i18n="pairEntry">💞 최애끼리 궁합 보기</button>
-    <button class="pair-entry" type="button" onclick="openProfile()" data-i18n="profEntry">🔮 최애 프로필 · 한 명 사주 풀이</button>
-    <button class="pair-entry" type="button" onclick="openTri()" data-i18n="triEntry">🔥 지옥의 삼각관계 · 나 + 최애 2명</button>
-
     <div class="disclaimer">
       <h3 data-i18n="dscTitle">읽기 전 확인</h3>
       <ul>
@@ -894,6 +917,15 @@ const TR = {
   triGo: { ko: "삼각 진단", en: "Diagnose triangle", ja: "三角診断", zh: "三角诊断" },
   shareCardBtn: { ko: "📸 이 카드 저장 · 공유", en: "📸 Save · share this card", ja: "📸 このカードを保存・共有", zh: "📸 保存 · 分享此卡" },
   detailCardSub: { ko: "내 최애 궁합", en: "My bias match", ja: "私の推し相性", zh: "我的本命缘分" },
+  modeHead: { ko: "무엇을 볼까요?", en: "What would you like?", ja: "何を見る?", zh: "想看什么?" },
+  modeSaju: { ko: "사주궁합", en: "My Saju Match", ja: "四柱の相性", zh: "八字缘分" },
+  modeSajuSub: { ko: "내 사주로 최애 찾기", en: "Find your bias", ja: "推しを探す", zh: "查找本命" },
+  modePair: { ko: "최애끼리 궁합", en: "Bias × Bias", ja: "推し同士", zh: "本命之间" },
+  modePairSub: { ko: "아이돌 둘의 궁합", en: "Two idols", ja: "2人の相性", zh: "两位偶像" },
+  modeProfile: { ko: "최애 프로필", en: "Bias Profile", ja: "推しプロフ", zh: "本命档案" },
+  modeProfileSub: { ko: "아이돌 1명 사주", en: "One idol's saju", ja: "1人の四柱", zh: "单人八字" },
+  modeTri: { ko: "지옥의 삼각관계", en: "Love Triangle", ja: "三角関係", zh: "三角关系" },
+  modeTriSub: { ko: "나 + 최애 2명", en: "You + 2 biases", ja: "私 + 推し2人", zh: "我 + 两位本命" },
   adLabel: { ko: "광고", en: "Advertisement", ja: "広告", zh: "广告" },
   dscAd: { ko: "이 페이지는 광고를 포함할 수 있으며, 광고 제공사가 쿠키 등으로 맞춤 광고를 표시할 수 있습니다.", en: "This page may show ads; ad providers may use cookies to personalize them.", ja: "本ページには広告が表示される場合があり、広告提供者がCookieなどでパーソナライズすることがあります。", zh: "本页面可能包含广告，广告服务商可能使用Cookie进行个性化投放。" },
 };
@@ -1724,7 +1756,16 @@ function buildTri(A, B){
     <p class="da-disc">${dt('daDisc')}</p>`;
 }
 let _triRendered=false;
-function openTri(){ buildPairList(); _triRendered=false; document.getElementById('triResult').innerHTML=''; document.getElementById('triModal').classList.remove('hidden'); }
+function openTri(){ buildPairList(); _triRendered=false;
+  const out=document.getElementById('triResult');
+  out.innerHTML = (window._saju && window._saju.scored) ? '' : `<p class="pair-hint">${dt('triNeedCalc')}</p>`;
+  document.getElementById('triModal').classList.remove('hidden'); }
+// 상단 모드 '사주궁합' 선택 → 생년월일 입력으로 이동·포커스
+function pickSaju(){
+  document.querySelectorAll('.mode-card').forEach(b=>b.classList.remove('active'));
+  const c=document.querySelector('.mode-card'); if(c) c.classList.add('active');
+  const bd=document.getElementById('bdate'); if(bd){ bd.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(()=>bd.focus(),300); }
+}
 function closeTri(){ _triRendered=false; document.getElementById('triModal').classList.add('hidden'); }
 function runTri(){
   const out=document.getElementById('triResult');
