@@ -22345,5 +22345,18 @@
     "firstAt": "2026-08-07T06:42:53.768Z",
     "lastAt": "2026-08-07T06:42:53.768Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현민|keyvitup",
+    "name": "현민",
+    "group": "keyvitup",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060516",
+    "note": "inkode",
+    "count": 1,
+    "firstAt": "2026-08-07T07:31:11.586Z",
+    "lastAt": "2026-08-07T07:31:11.586Z",
+    "status": "pending"
   }
 ]
