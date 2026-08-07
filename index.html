@@ -6,6 +6,8 @@
 <title>사주 궁합 아이돌 매칭</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- Google AdSense (자동 광고) — 게시자 ID. 광고 중단 시 이 줄 삭제. 게시자 ID는 공개 값. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6294147440984199" crossorigin="anonymous"></script>
 <style>
   :root{
     /* K-pop 아이돌 팔레트: 핫핑크 × 일렉트릭 퍼플 × 시안 */
@@ -3562,27 +3564,21 @@ function shareProfile(){
 const SUGGEST_ENDPOINT = "https://saju-suggest.thsjsl1234.workers.dev/submit";
 const SUGGEST_COOLDOWN_MS = 60*60*1000; // 소프트 제한: 1시간
 
-// ── 하단 배너 광고 (Google AdSense) ──
-// 활성화: 광고 승인 후 아래 두 값을 채우면 하단 배너가 자동 노출됩니다.
-//   AD_CLIENT = "ca-pub-XXXXXXXXXXXXXXXX"  (AdSense 게시자 ID)
-//   AD_SLOT   = "0000000000"               (광고 단위 슬롯 ID)
-// 비워두면(현재) 광고 스크립트를 로드하지 않고 배너 영역도 숨깁니다 — 서버/개인정보 영향 0.
-const AD_CLIENT = "";
+// ── Google AdSense ──
+// 자동 광고: <head>의 adsbygoogle.js 스크립트가 처리(대시보드에서 자동 광고 ON).
+// AD_CLIENT: 게시자 ID(공개 값). 비우면 개인정보 고지도 숨기고 수동 배너도 미노출.
+// AD_SLOT: 하단 '고정' 배너를 추가로 원하면 광고 단위(디스플레이) 슬롯 ID 입력(비우면 자동광고만).
+const AD_CLIENT = "ca-pub-6294147440984199";
 const AD_SLOT   = "";
 function initAds(){
-  if(!AD_CLIENT || !AD_SLOT) return;               // 미설정 → 광고 없음(기본)
+  if(!AD_CLIENT) return;                            // 광고 미사용
+  const p=document.getElementById('adPrivacy'); if(p) p.classList.remove('hidden'); // 광고 쿠키 고지
+  if(!AD_SLOT) return;                              // 자동 광고만 — 수동 하단 배너 없음
   const slot = document.getElementById('adSlot'); if(!slot) return;
-  if(!document.getElementById('adsbygoogle-js')){  // AdSense 스크립트 1회 로드
-    const s=document.createElement('script'); s.id='adsbygoogle-js'; s.async=true;
-    s.crossOrigin='anonymous';
-    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(AD_CLIENT);
-    document.head.appendChild(s);
-  }
   slot.innerHTML = `<span class="ad-label">${t('adLabel')}</span>`
     + `<ins class="adsbygoogle" style="display:block" data-ad-client="${AD_CLIENT}" data-ad-slot="${AD_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
   try{ (window.adsbygoogle=window.adsbygoogle||[]).push({}); }catch(e){}
   slot.classList.remove('hidden'); slot.setAttribute('aria-hidden','false');
-  const p=document.getElementById('adPrivacy'); if(p) p.classList.remove('hidden'); // 광고 쿠키 고지 노출
 }
 
 function openSuggest(){
