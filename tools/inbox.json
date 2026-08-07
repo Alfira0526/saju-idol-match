@@ -15502,10 +15502,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20030923",
-    "note": "",
-    "count": 4,
+    "note": "cube",
+    "count": 5,
     "firstAt": "2026-07-27T08:59:01.509Z",
-    "lastAt": "2026-07-27T08:59:01.509Z",
+    "lastAt": "2026-08-07T05:03:39.878Z",
     "status": "pending"
   },
   {
@@ -22305,6 +22305,19 @@
     "count": 1,
     "firstAt": "2026-08-07T04:58:37.759Z",
     "lastAt": "2026-08-07T04:58:37.759Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:李承宪|8turn",
+    "name": "李承宪",
+    "group": "8turn",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070515",
+    "note": "mnh，8turn小众轻奢！加上！",
+    "count": 1,
+    "firstAt": "2026-08-07T05:03:03.941Z",
+    "lastAt": "2026-08-07T05:03:03.941Z",
     "status": "pending"
   }
 ]
