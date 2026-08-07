@@ -22319,5 +22319,18 @@
     "firstAt": "2026-08-07T05:03:03.941Z",
     "lastAt": "2026-08-07T05:03:03.941Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유우마|lun8",
+    "name": "유우마",
+    "group": "Lun8",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991121",
+    "note": "제가 좋아해요",
+    "count": 1,
+    "firstAt": "2026-08-07T06:20:27.565Z",
+    "lastAt": "2026-08-07T06:20:27.565Z",
+    "status": "pending"
   }
 ]
