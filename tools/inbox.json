@@ -22566,5 +22566,18 @@
     "firstAt": "2026-08-07T17:51:25.374Z",
     "lastAt": "2026-08-07T17:51:25.374Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김동한|wei",
+    "name": "김동한",
+    "group": "WEi",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980703",
+    "note": "위엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-08-07T20:05:12.187Z",
+    "lastAt": "2026-08-07T20:05:12.187Z",
+    "status": "pending"
   }
 ]
