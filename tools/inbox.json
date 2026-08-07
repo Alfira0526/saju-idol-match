@@ -22215,5 +22215,18 @@
     "firstAt": "2026-08-07T03:31:36.780Z",
     "lastAt": "2026-08-07T03:31:36.780Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ej|&team",
+    "name": "EJ",
+    "group": "&TEAM",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20020907",
+    "note": "YXL",
+    "count": 1,
+    "firstAt": "2026-08-07T03:50:01.912Z",
+    "lastAt": "2026-08-07T03:50:01.912Z",
+    "status": "pending"
   }
 ]
