@@ -21613,9 +21613,9 @@
     "gender": "M",
     "dob": "19890622",
     "note": "FNC",
-    "count": 7,
+    "count": 8,
     "firstAt": "2026-08-05T14:44:06.442Z",
-    "lastAt": "2026-08-07T10:21:03.034Z",
+    "lastAt": "2026-08-07T15:22:39.529Z",
     "status": "pending"
   },
   {
@@ -22487,6 +22487,19 @@
     "count": 1,
     "firstAt": "2026-08-07T13:10:13.325Z",
     "lastAt": "2026-08-07T13:10:13.325Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:차웅기|아홉",
+    "name": "차웅기",
+    "group": "아홉",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020423",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T15:21:31.867Z",
+    "lastAt": "2026-08-07T15:21:31.867Z",
     "status": "pending"
   }
 ]
