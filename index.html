@@ -774,12 +774,13 @@
   <div class="modal da-modal">
     <button class="modal-x" onclick="closeTri()" aria-label="닫기">✕</button>
     <h3 class="modal-title" data-i18n="triTitle">지옥의 삼각관계</h3>
-    <p class="modal-intro" data-i18n="triIntro">나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.</p>
+    <p class="modal-intro" data-i18n="triIntro">나 + 같은 그룹 멤버 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.</p>
     <div class="pair-pick">
-      <input type="text" id="triA" list="idolList" placeholder="최애 A" data-i18n-ph="triAph" autocomplete="off">
+      <input type="text" id="triA" list="idolList" placeholder="멤버 A" data-i18n-ph="triAph" autocomplete="off" onchange="syncTriGroup()" oninput="syncTriGroup()">
       <span class="pair-heart">🔺</span>
-      <input type="text" id="triB" list="idolList" placeholder="최애 B" data-i18n-ph="triBph" autocomplete="off">
+      <input type="text" id="triB" list="triGroupList" placeholder="같은 그룹 멤버 B" data-i18n-ph="triBph" autocomplete="off">
     </div>
+    <datalist id="triGroupList"></datalist>
     <button class="m-submit" onclick="runTri()" data-i18n="triGo">삼각 진단</button>
     <div id="triResult"></div>
   </div>
@@ -911,9 +912,9 @@ const TR = {
   profGo: { ko: "프로필 보기", en: "See profile", ja: "プロフィールを見る", zh: "查看档案" },
   triEntry: { ko: "🔥 지옥의 삼각관계 · 나 + 최애 2명", en: "🔥 Love-triangle test · you + 2 biases", ja: "🔥 地獄の三角関係 · 私+推し2人", zh: "🔥 地狱三角 · 我+两位本命" },
   triTitle: { ko: "지옥의 삼각관계", en: "Love-triangle test", ja: "地獄の三角関係", zh: "地狱三角关系" },
-  triIntro: { ko: "나와 최애 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.", en: "You and two biases — all three edges at once. See who clicks with whom.", ja: "私と推し2人、三人の相性を一度に!誰が誰と合うか三角で診断。", zh: "我和两位本命，三人缘分一次看！谁和谁更合，三角诊断。" },
-  triAph: { ko: "최애 A (이름 검색)", en: "Bias A (search name)", ja: "推しA(名前検索)", zh: "本命A(搜索名字)" },
-  triBph: { ko: "최애 B (이름 검색)", en: "Bias B (search name)", ja: "推しB(名前検索)", zh: "本命B(搜索名字)" },
+  triIntro: { ko: "나 + 같은 그룹 멤버 두 명, 세 사람의 궁합을 한꺼번에! 누가 누구와 더 잘 맞는지 삼각으로 진단해요.", en: "You + two members of the same group — all three edges at once. See who clicks with whom.", ja: "私 + 同じグループの2人、三人の相性を一度に!誰が誰と合うか三角で診断。", zh: "我 + 同一组合的两位成员，三人缘分一次看！谁和谁更合，三角诊断。" },
+  triAph: { ko: "멤버 A (이름 검색)", en: "Member A (search name)", ja: "メンバーA(名前検索)", zh: "成员A(搜索名字)" },
+  triBph: { ko: "같은 그룹 멤버 B", en: "Member B (same group)", ja: "同じグループのメンバーB", zh: "同组合成员B" },
   triGo: { ko: "삼각 진단", en: "Diagnose triangle", ja: "三角診断", zh: "三角诊断" },
   shareCardBtn: { ko: "📸 이 카드 저장 · 공유", en: "📸 Save · share this card", ja: "📸 このカードを保存・共有", zh: "📸 保存 · 分享此卡" },
   detailCardSub: { ko: "내 최애 궁합", en: "My bias match", ja: "私の推し相性", zh: "我的本命缘分" },
@@ -925,7 +926,7 @@ const TR = {
   modeProfile: { ko: "최애 프로필", en: "Bias Profile", ja: "推しプロフ", zh: "本命档案" },
   modeProfileSub: { ko: "아이돌 1명 사주", en: "One idol's saju", ja: "1人の四柱", zh: "单人八字" },
   modeTri: { ko: "지옥의 삼각관계", en: "Love Triangle", ja: "三角関係", zh: "三角关系" },
-  modeTriSub: { ko: "나 + 최애 2명", en: "You + 2 biases", ja: "私 + 推し2人", zh: "我 + 两位本命" },
+  modeTriSub: { ko: "나 + 같은 그룹 2명", en: "You + 2 groupmates", ja: "私 + 同グループ2人", zh: "我 + 同组两位" },
   adLabel: { ko: "광고", en: "Advertisement", ja: "広告", zh: "广告" },
   dscAd: { ko: "이 페이지는 광고를 포함할 수 있으며, 광고 제공사가 쿠키 등으로 맞춤 광고를 표시할 수 있습니다.", en: "This page may show ads; ad providers may use cookies to personalize them.", ja: "本ページには広告が表示される場合があり、広告提供者がCookieなどでパーソナライズすることがあります。", zh: "本页面可能包含广告，广告服务商可能使用Cookie进行个性化投放。" },
 };
@@ -1392,6 +1393,7 @@ const DYN = {
   triQHi:{ko:"찰떡",en:"great",ja:"ばっちり",zh:"很合"},
   triQMid:{ko:"무난",en:"okay",ja:"まあまあ",zh:"一般"},
   triQLo:{ko:"삐걱",en:"rocky",ja:"ぎくしゃく",zh:"磕绊"},
+  triSameGroup:{ko:"같은 그룹의 두 멤버를 골라주세요. (B는 A와 같은 그룹만)",en:"Pick two members of the same group. (B must match A's group)",ja:"同じグループの2人を選んでください。(BはAと同じグループのみ)",zh:"请选择同一组合的两位成员。(B需与A同组)"},
   shcGen:{ko:"이미지 생성 중…",en:"Creating image…",ja:"画像を生成中…",zh:"正在生成图片…"},
   shcDone:{ko:"공유 완료",en:"Shared",ja:"共有完了",zh:"已分享"},
   shcSaved:{ko:"이미지를 저장했습니다",en:"Image saved",ja:"画像を保存しました",zh:"已保存图片"},
@@ -1767,6 +1769,16 @@ function pickSaju(){
   const bd=document.getElementById('bdate'); if(bd){ bd.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(()=>bd.focus(),300); }
 }
 function closeTri(){ _triRendered=false; document.getElementById('triModal').classList.add('hidden'); }
+// A 선택 시 B 후보를 'A와 같은 그룹 멤버'로 제한
+function syncTriGroup(){
+  const A=findIdol(document.getElementById('triA').value.trim());
+  const dl=document.getElementById('triGroupList'); if(!dl) return;
+  if(!A){ dl.innerHTML=''; return; }
+  const mates=IDOLS.filter(r=>r[1]===A.group && r[0]!==A.name);
+  dl.innerHTML = mates.map(([n,g])=>`<option value="${(n+' · '+g).replace(/"/g,'&quot;')}"></option>`).join('');
+  const bEl=document.getElementById('triB'); const B=findIdol(bEl.value.trim());
+  if(B && B.group!==A.group) bEl.value=''; // 다른 그룹이면 초기화
+}
 function runTri(){
   const out=document.getElementById('triResult');
   const s=window._saju;
@@ -1775,6 +1787,7 @@ function runTri(){
   const B=findIdol(document.getElementById('triB').value.trim());
   if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; _triRendered=false; return; }
   if(A.name===B.name && A.group===B.group){ out.innerHTML=`<p class="pair-hint">${dt('pairSame')}</p>`; _triRendered=false; return; }
+  if(A.group!==B.group){ out.innerHTML=`<p class="pair-hint">${dt('triSameGroup')}</p>`; _triRendered=false; return; }
   out.innerHTML = buildTri(A, B) + shareRowHTML('shareTri','triShareHint') + adUnitHTML();
   _triRendered=true;
   pushAdsIn(out);
