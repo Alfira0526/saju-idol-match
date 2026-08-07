@@ -22449,5 +22449,18 @@
     "firstAt": "2026-08-07T11:28:01.799Z",
     "lastAt": "2026-08-07T11:28:01.799Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金鐘鉉|shinee",
+    "name": "金鐘鉉",
+    "group": "SHINee",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19900408",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-08-07T11:52:59.403Z",
+    "lastAt": "2026-08-07T11:52:59.403Z",
+    "status": "pending"
   }
 ]
