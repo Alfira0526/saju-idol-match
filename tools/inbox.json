@@ -22163,5 +22163,18 @@
     "firstAt": "2026-08-06T23:14:03.366Z",
     "lastAt": "2026-08-06T23:14:03.366Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:준표|nouera(누에라)",
+    "name": "준표",
+    "group": "NouerA (누에라)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030525",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T00:26:19.596Z",
+    "lastAt": "2026-08-07T00:26:19.596Z",
+    "status": "pending"
   }
 ]
