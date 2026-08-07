@@ -22332,5 +22332,18 @@
     "firstAt": "2026-08-07T06:20:27.565Z",
     "lastAt": "2026-08-07T06:20:27.565Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:루키아|keyvitup",
+    "name": "루키아",
+    "group": "KEYVITUP",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20090531",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T06:42:53.768Z",
+    "lastAt": "2026-08-07T06:42:53.768Z",
+    "status": "pending"
   }
 ]
