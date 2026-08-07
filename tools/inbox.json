@@ -22462,5 +22462,31 @@
     "firstAt": "2026-08-07T11:52:59.403Z",
     "lastAt": "2026-08-07T11:52:59.403Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:엄태민|hi-fiun!corn",
+    "name": "엄태민",
+    "group": "Hi-Fi Un!corn",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010714",
+    "note": "FNC",
+    "count": 1,
+    "firstAt": "2026-08-07T13:04:40.695Z",
+    "lastAt": "2026-08-07T13:04:40.695Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:jr|nu'est",
+    "name": "JR",
+    "group": "NU'EST",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950608",
+    "note": "NU'EST🙏🏻🙏🏻🙏🏻",
+    "count": 1,
+    "firstAt": "2026-08-07T13:10:13.325Z",
+    "lastAt": "2026-08-07T13:10:13.325Z",
+    "status": "pending"
   }
 ]
