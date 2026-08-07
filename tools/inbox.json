@@ -22371,5 +22371,18 @@
     "firstAt": "2026-08-07T07:43:24.560Z",
     "lastAt": "2026-08-07T07:43:24.560Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이안|루네이트",
+    "name": "이안",
+    "group": "루네이트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031211",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-07T08:03:52.994Z",
+    "lastAt": "2026-08-07T08:03:52.994Z",
+    "status": "pending"
   }
 ]
