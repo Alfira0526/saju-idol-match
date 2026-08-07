@@ -1488,5 +1488,23 @@
     "firstAt": "2026-08-06T16:58:34.553Z",
     "lastAt": "2026-08-06T16:58:34.553Z",
     "status": "pending"
+  },
+  {
+    "key": "er:민주|illit",
+    "name": "민주",
+    "group": "ILLIT",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20040511"
+    ],
+    "notes": [
+      "공식 프로필"
+    ],
+    "count": 1,
+    "firstAt": "2026-08-07T23:37:21.602Z",
+    "lastAt": "2026-08-07T23:37:21.602Z",
+    "status": "pending"
   }
 ]
