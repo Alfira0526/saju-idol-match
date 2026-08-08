@@ -22470,10 +22470,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20010714",
-    "note": "FNC",
-    "count": 1,
+    "note": "FNC BAND",
+    "count": 2,
     "firstAt": "2026-08-07T13:04:40.695Z",
-    "lastAt": "2026-08-07T13:04:40.695Z",
+    "lastAt": "2026-08-08T11:21:45.846Z",
     "status": "pending"
   },
   {
@@ -22682,6 +22682,19 @@
     "count": 1,
     "firstAt": "2026-08-08T09:34:57.620Z",
     "lastAt": "2026-08-08T09:34:57.620Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:성민|원팩트",
+    "name": "성민",
+    "group": "원팩트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010825",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-08T11:27:42.751Z",
+    "lastAt": "2026-08-08T11:27:42.751Z",
     "status": "pending"
   }
 ]
