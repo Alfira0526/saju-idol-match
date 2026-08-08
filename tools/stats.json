@@ -1,6 +1,9 @@
 {
-  "total": 910,
+  "total": 927,
   "addedRecent": [
+    { "date": "2026-08-08", "text": "SAY MY NAME 추가", "count": 7 },
+    { "date": "2026-08-08", "text": "god 추가", "count": 5 },
+    { "date": "2026-08-08", "text": "NOWZ 추가", "count": 5 },
     { "date": "2026-08-07", "text": "DKB 추가", "count": 8 },
     { "date": "2026-08-07", "text": "8TURN 추가", "count": 8 },
     { "date": "2026-08-07", "text": "NouerA 추가", "count": 7 },
@@ -11,5 +14,5 @@
     { "date": "2026-08-06", "text": "B.A.P 추가", "count": 6 },
     { "date": "2026-08-06", "text": "DXTEEN 추가", "count": 6 }
   ],
-  "updatedAt": "2026-08-07"
+  "updatedAt": "2026-08-08"
 }
