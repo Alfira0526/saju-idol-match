@@ -22748,5 +22748,18 @@
     "firstAt": "2026-08-08T17:05:03.080Z",
     "lastAt": "2026-08-08T17:05:03.080Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하루|엑스러브(xlov)",
+    "name": "하루",
+    "group": "엑스러브 (xlov)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "257엔터였는데 rbw가 인수해서 wm엔터임 오마이걸이랑 한식구!!",
+    "count": 1,
+    "firstAt": "2026-08-08T20:20:26.448Z",
+    "lastAt": "2026-08-08T20:20:26.448Z",
+    "status": "pending"
   }
 ]
