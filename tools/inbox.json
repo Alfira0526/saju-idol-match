@@ -22709,5 +22709,18 @@
     "firstAt": "2026-08-08T13:27:09.834Z",
     "lastAt": "2026-08-08T13:27:09.834Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:타카츠카히로무|lapone",
+    "name": "타카츠카 히로무",
+    "group": "LAPONE",
+    "cat": "J-idol",
+    "gender": "",
+    "dob": "19990404",
+    "note": "有DXTEEN的话能不能也做一下INI",
+    "count": 1,
+    "firstAt": "2026-08-08T14:51:13.394Z",
+    "lastAt": "2026-08-08T14:51:13.394Z",
+    "status": "pending"
   }
 ]
