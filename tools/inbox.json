@@ -22605,5 +22605,31 @@
     "firstAt": "2026-08-08T02:02:36.378Z",
     "lastAt": "2026-08-08T02:02:36.378Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이봄|앳하트",
+    "name": "이봄",
+    "group": "앳하트",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20071126",
+    "note": "팬많다!!",
+    "count": 1,
+    "firstAt": "2026-08-08T02:21:32.350Z",
+    "lastAt": "2026-08-08T02:21:32.350Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:진혁|나우즈",
+    "name": "진혁",
+    "group": "나우즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040521",
+    "note": "큐브",
+    "count": 1,
+    "firstAt": "2026-08-08T02:28:54.846Z",
+    "lastAt": "2026-08-08T02:28:54.846Z",
+    "status": "pending"
   }
 ]
