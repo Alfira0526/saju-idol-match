@@ -22761,5 +22761,18 @@
     "firstAt": "2026-08-08T20:20:26.448Z",
     "lastAt": "2026-08-08T20:20:26.448Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박성국|배너",
+    "name": "박성국",
+    "group": "배너",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960327",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-08T22:10:01.310Z",
+    "lastAt": "2026-08-08T22:10:01.310Z",
+    "status": "pending"
   }
 ]
