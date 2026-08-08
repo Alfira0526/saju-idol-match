@@ -22592,5 +22592,18 @@
     "firstAt": "2026-08-08T01:40:37.303Z",
     "lastAt": "2026-08-08T01:40:37.303Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:藝聲|superjunior",
+    "name": "藝聲",
+    "group": "super junior",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-08T02:02:36.378Z",
+    "lastAt": "2026-08-08T02:02:36.378Z",
+    "status": "pending"
   }
 ]
