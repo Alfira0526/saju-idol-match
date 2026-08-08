@@ -22644,5 +22644,18 @@
     "firstAt": "2026-08-08T03:23:11.305Z",
     "lastAt": "2026-08-08T03:23:11.305Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金韩彬|bi",
+    "name": "金韩彬",
+    "group": "BI",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961022",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-08T04:48:53.361Z",
+    "lastAt": "2026-08-08T04:48:53.361Z",
+    "status": "pending"
   }
 ]
