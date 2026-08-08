@@ -22696,5 +22696,18 @@
     "firstAt": "2026-08-08T11:27:42.751Z",
     "lastAt": "2026-08-08T11:27:42.751Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:all|straykids",
+    "name": "all",
+    "group": "straykids",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-08T13:27:09.834Z",
+    "lastAt": "2026-08-08T13:27:09.834Z",
+    "status": "pending"
   }
 ]
