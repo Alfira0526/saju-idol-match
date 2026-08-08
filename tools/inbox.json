@@ -22657,5 +22657,18 @@
     "firstAt": "2026-08-08T04:48:53.361Z",
     "lastAt": "2026-08-08T04:48:53.361Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:홍건희|tiot",
+    "name": "홍건희",
+    "group": "TIOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041115",
+    "note": "보이즈플래닛 출신 그룹인 TIOT 를 안 넣어주신 게 억울합니다.",
+    "count": 1,
+    "firstAt": "2026-08-08T08:28:33.038Z",
+    "lastAt": "2026-08-08T08:28:33.038Z",
+    "status": "pending"
   }
 ]
