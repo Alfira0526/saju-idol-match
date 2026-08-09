@@ -22774,5 +22774,18 @@
     "firstAt": "2026-08-08T22:10:01.310Z",
     "lastAt": "2026-08-08T22:10:01.310Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李正信|cnblue",
+    "name": "李正信",
+    "group": "CNBLUE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910915",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-09T00:33:36.205Z",
+    "lastAt": "2026-08-09T00:33:36.205Z",
+    "status": "pending"
   }
 ]
