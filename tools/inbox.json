@@ -22787,5 +22787,18 @@
     "firstAt": "2026-08-09T00:33:36.205Z",
     "lastAt": "2026-08-09T00:33:36.205Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이채연|솔로",
+    "name": "이채연",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20000111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-09T00:57:04.248Z",
+    "lastAt": "2026-08-09T00:57:04.248Z",
+    "status": "pending"
   }
 ]
