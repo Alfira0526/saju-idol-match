@@ -22826,5 +22826,18 @@
     "firstAt": "2026-08-09T09:18:03.257Z",
     "lastAt": "2026-08-09T09:18:03.257Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:장규현|스타쉽",
+    "name": "장규현",
+    "group": "스타쉽",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050107",
+    "note": "잘생김",
+    "count": 1,
+    "firstAt": "2026-08-09T11:52:33.494Z",
+    "lastAt": "2026-08-09T11:52:33.494Z",
+    "status": "pending"
   }
 ]
