@@ -22839,5 +22839,18 @@
     "firstAt": "2026-08-09T11:52:33.494Z",
     "lastAt": "2026-08-09T11:52:33.494Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:타쿠마|lun8",
+    "name": "타쿠마",
+    "group": "LUN8",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030805",
+    "note": "판타지오 , 제가 많이 좋아해요.. ㅎㅎ",
+    "count": 1,
+    "firstAt": "2026-08-09T14:07:39.645Z",
+    "lastAt": "2026-08-09T14:07:39.645Z",
+    "status": "pending"
   }
 ]
