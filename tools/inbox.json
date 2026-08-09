@@ -3621,9 +3621,9 @@
     "gender": "M",
     "dob": "20020511",
     "note": "",
-    "count": 2,
+    "count": 3,
     "firstAt": "2026-07-24T07:31:18.730Z",
-    "lastAt": "2026-07-27T14:04:45.191Z",
+    "lastAt": "2026-08-09T06:30:15.433Z",
     "status": "pending"
   },
   {
@@ -22799,6 +22799,19 @@
     "count": 1,
     "firstAt": "2026-08-09T00:57:04.248Z",
     "lastAt": "2026-08-09T00:57:04.248Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이태겸|더로즈",
+    "name": "이태겸",
+    "group": "더로즈",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-09T06:27:33.281Z",
+    "lastAt": "2026-08-09T06:27:33.281Z",
     "status": "pending"
   }
 ]
