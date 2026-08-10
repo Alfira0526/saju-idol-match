@@ -22878,5 +22878,18 @@
     "firstAt": "2026-08-10T04:54:17.093Z",
     "lastAt": "2026-08-10T04:54:17.093Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김홍|파우(pow)",
+    "name": "김홍",
+    "group": "파우 (pow)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050623",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-10T05:02:27.242Z",
+    "lastAt": "2026-08-10T05:02:27.242Z",
+    "status": "pending"
   }
 ]
