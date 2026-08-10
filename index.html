@@ -1309,6 +1309,7 @@ const DYN = {
   toastCount:{ko:" 등 {n}명",en:" +{n}",ja:" 他{n}名",zh:" 等{n}人"},
   toastMore:{ko:" 외 {k}",en:" +{k} more",ja:" 他{k}",zh:" 及{k}"},
   toastNewNone:{ko:"새 얼굴이 도착했어요",en:"New faces have arrived",ja:"新しい顔が届きました",zh:"新面孔到啦"},
+  catToast:{ko:"🎉 새 카테고리 열림: <b>{cat}</b>! 카테고리 필터에서 골라보세요",en:"🎉 New category opened: <b>{cat}</b>! Try it in the category filter",ja:"🎉 新カテゴリ開放: <b>{cat}</b>!カテゴリから選んでみて",zh:"🎉 新分类开放：<b>{cat}</b>！在分类筛选里试试"},
   // 공유 캡션·이미지
   shareCaption:{ko:"내 사주로 찾은 덕질 최애 궁합 순위 🔮\nalfira0526.github.io/saju-idol-match\n#사주궁합 #아이돌궁합 #덕질최애 #내최애찾기 #사주아이돌매칭 #오늘의궁합 #kpop #케이팝",en:"My saju-picked idol bias ranking 🔮\nalfira0526.github.io/saju-idol-match\n#SajuMatch #KpopBias #idolmatch #kpop #fourpillars",ja:"四柱推命で見つけた推し相性ランキング 🔮\nalfira0526.github.io/saju-idol-match\n#四柱推命 #推し #アイドル相性 #kpop #占い",zh:"用我的八字找到的本命偶像缘分排行榜 🔮\nalfira0526.github.io/saju-idol-match\n#生辰八字 #偶像缘分 #本命偶像 #kpop #追星"},
   shareRankTitle:{ko:"덕질 궁합 추천 순위",en:"Idol compatibility ranking",ja:"推し相性おすすめ順位",zh:"缘分推荐排行榜"},
@@ -3061,6 +3062,7 @@ function runCalc(){
 
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+  try{ maybeShowNewCategoryToast(); }catch(e){}
 }
 
 const TOP_N = 8;
@@ -3076,6 +3078,8 @@ const catLabel = c => { const e = CAT_NAMES[c]; return e ? (e[getLang()] || e.ko
 const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 노출
 // 밴드(악기 연주) 그룹 — tools/bands.json에서 build.js가 주입. '밴드만' 필터에 사용.
 const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony","N.Flying","ONEWE","LUCY","CNBLUE","FTISLAND","AxMxP","하츠웨이브"]);
+// 기타(중소·중견) 그룹의 하위 소속사 라벨 — build.js가 idols.json subAgency에서 주입. 그룹 검색에 사용.
+const GROUP_SUBAGENCY = {"8TURN":"MNH엔터테인먼트","AB6IX":"브랜뉴뮤직","AEN":"스타쉽엔터테인먼트","ALL(H)OURS":"이든엔터테인먼트","ALPHA DRIVE ONE":"웨이크원","AMPERS&ONE":"FNC엔터테인먼트","ASTRO":"Fantagio","ATEEZ":"KQ엔터테인먼트","AxMxP":"FNC엔터테인먼트","B.A.P":"TS엔터테인먼트","BTOB":"큐브엔터테인먼트","Billlie":"미스틱스토리","Block B":"세븐시즌스","CLOSE YOUR EYES":"UNCORE","CRAVITY":"스타쉽엔터테인먼트","DKB":"브레이브엔터테인먼트","Dragon Pony":"안테나","EPEX":"C9엔터테인먼트","EVNNE":"젤리피시엔터테인먼트","Golden Child":"울림엔터테인먼트","IDID":"스타쉽엔터테인먼트","INFINITE":"인피니트컴퍼니","IVE":"스타쉽엔터테인먼트","IZNA":"웨이크원","KEYVITUP":"인코드엔터테인먼트","Kep1er":"웨이크원","LOONA":"MODHAUS","Lovelyz":"울림엔터테인먼트","MEOVV":"더블랙레이블","MODYSSEY":"ONECEAD","MONSTA X":"스타쉽엔터테인먼트","NAZE":"C9엔터테인먼트","NOWZ":"큐브엔터테인먼트","NouerA":"누아엔터테인먼트","OH MY GIRL":"WM엔터테인먼트","ONF":"WM엔터테인먼트","P1Harmony":"FNC엔터테인먼트","PENTAGON":"큐브엔터테인먼트","PLAVE":"VLAST","Rocket Punch":"울림엔터테인먼트","SAY MY NAME":"인코드엔터테인먼트","SF9":"FNC엔터테인먼트","STAYC":"하이업엔터테인먼트","Shinhwa":"신화컴퍼니","THE BOYZ":"ONE HUNDRED","TNX":"피네이션","TUNEXX":"아이에스티엔터테인먼트","Teen Top":"TOP미디어","VAYONN":"인코드엔터테인먼트","VERIVERY":"젤리피시엔터테인먼트","VICTON":"아이에스티엔터테인먼트","WHIB":"C-JeS엔터테인먼트","WJSN":"스타쉽엔터테인먼트","Weeekly":"아이에스티엔터테인먼트","idntt":"MODHAUS","tripleS":"MODHAUS","xikers":"KQ엔터테인먼트","드림캐쳐":"드림캐쳐컴퍼니","워너원":"스윙엔터테인먼트","하츠웨이브":"카카오엔터테인먼트"};
 function scopeMatch(x){
   const s = window._saju;
   if(x.cat !== (s.activeCat || "K-idol")) return false; // 카테고리 우선 필터
@@ -3402,13 +3406,17 @@ function runGroupSearch(){
   const matches = Object.keys(GROUP_INFO).filter(g=>{
     if(!sc.has(GROUP_INFO[g].cat)) return false;
     const nm = GROUP_NAMES[g] || {ko:g,en:g};
-    return g.toLowerCase().includes(q) || nm.ko.toLowerCase().includes(q) || nm.en.toLowerCase().includes(q);
+    const sub = GROUP_SUBAGENCY[g] || "";
+    return g.toLowerCase().includes(q) || nm.ko.toLowerCase().includes(q) || nm.en.toLowerCase().includes(q) || sub.toLowerCase().includes(q);
   }).sort((x,y)=>GROUP_INFO[y].count-GROUP_INFO[x].count).slice(0,30);
   if(matches.length===0){ box.innerHTML = `<div class="sr-empty">일치하는 그룹이 없어요</div>`; box.classList.remove('hidden'); return; }
   box.innerHTML = matches.map(g=>{
     const nm = GROUP_NAMES[g] || {ko:g,en:g};
     const enPart = (nm.ko===nm.en) ? "" : `<span class="sr-en">${nm.en}</span>`;
-    return `<div class="sr-item" data-g="${g.replace(/"/g,'&quot;')}">${nm.ko} ${enPart}<span class="sr-meta">${GROUP_INFO[g].agency} · ${GROUP_INFO[g].count}명</span></div>`;
+    const sub = GROUP_SUBAGENCY[g] || "";
+    // 소속사 라벨(예: '스타쉽')로 검색해 걸린 경우, 어느 소속사인지 메타에 함께 노출
+    const agencyLabel = (sub && GROUP_INFO[g].agency==="기타") ? sub : GROUP_INFO[g].agency;
+    return `<div class="sr-item" data-g="${g.replace(/"/g,'&quot;')}">${nm.ko} ${enPart}<span class="sr-meta">${esc(agencyLabel)} · ${GROUP_INFO[g].count}명</span></div>`;
   }).join("");
   box.classList.remove('hidden');
   box.querySelectorAll('.sr-item').forEach(el=>el.addEventListener('mousedown', e=>{ e.preventDefault(); selectGroupDirect(el.dataset.g); }));
@@ -3877,6 +3885,24 @@ function submitSuggest(){
 
 let _upToastTimer=null;
 function closeUpdate(){ const t=document.getElementById('updateToast'); if(t) t.classList.remove('show'); if(_upToastTimer){clearTimeout(_upToastTimer);_upToastTimer=null;} }
+// 카테고리가 CAT_MIN(30)을 새로 넘겨 노출될 때 1회성 토스트(신규 그룹 토스트 패턴 재사용)
+function maybeShowNewCategoryToast(){
+  try{
+    const shown=shownCats();
+    let seen; try{ seen=JSON.parse(localStorage.getItem('cats_seen')||'null'); }catch(e){ seen=null; }
+    if(!Array.isArray(seen)){ localStorage.setItem('cats_seen', JSON.stringify(shown)); return false; } // 첫 방문: 기록만
+    const fresh=shown.filter(c=> !seen.includes(c) && c!=='K-idol');
+    if(!fresh.length){ if(shown.length!==seen.length) localStorage.setItem('cats_seen', JSON.stringify(shown)); return false; }
+    const label=catLabel(fresh[0])+(fresh.length>1?dt('toastMore').replace('{k}',fresh.length-1):'');
+    const txt=document.getElementById('upToastText'); if(!txt) return false;
+    txt.innerHTML=dt('catToast').replace('{cat}', esc(label));
+    const t=document.getElementById('updateToast'); t.classList.add('show');
+    if(_upToastTimer) clearTimeout(_upToastTimer);
+    _upToastTimer=setTimeout(closeUpdate, 8000);
+    localStorage.setItem('cats_seen', JSON.stringify(shown));
+    return true;
+  }catch(e){ return false; }
+}
 
 // ================= 오류 제보 (기존 제보와 같은 Worker, type:"error") =================
 let _erTarget = { name:"", group:"" };

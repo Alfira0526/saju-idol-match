@@ -35,6 +35,7 @@ const rows=[], seen=new Set();
 const errors=[], mismatch=[], dupes=[];
 // P2 Phase 1: 기타(K-idol) 하위 소속사 세분화 커버리지 집계(선택 필드 subAgency, UI 무영향)
 const subAgencyTally={}; let etcTotal=0, etcAssigned=0;
+const groupSub={}; // 그룹 → subAgency 라벨(그룹 검색용, index.html GROUP_SUBAGENCY로 주입)
 for(const it of idols){
   const {name,group,agency,gender,dob}=it||{};
   const cat = (it&&it.cat) || "K-idol"; // 카테고리(기본 한국 아이돌)
@@ -54,7 +55,7 @@ for(const it of idols){
   rows.push([name,group,a.p,a.e,gender,agency,dob.replace(/-/g,''),cat]);
   // 기타 소속사 세분화 진척(subAgency는 선택 필드 · IDOLS 배열엔 주입하지 않음)
   if(it.subAgency && !(cat==="K-idol" && agency==="기타")){ errors.push(`${name}/${group}: subAgency는 K-idol '기타'에만 허용(cat=${cat}, agency=${agency})`); }
-  if(cat==="K-idol" && agency==="기타"){ etcTotal++; const sub=(it.subAgency||'').trim(); if(sub){ subAgencyTally[sub]=(subAgencyTally[sub]||0)+1; etcAssigned++; } }
+  if(cat==="K-idol" && agency==="기타"){ etcTotal++; const sub=(it.subAgency||'').trim(); if(sub){ subAgencyTally[sub]=(subAgencyTally[sub]||0)+1; etcAssigned++; groupSub[group]=sub; } }
 }
 
 // anchor re-check
@@ -101,6 +102,17 @@ const bi=html.indexOf(bopen);
 if(bi>=0){
   const bj=html.indexOf(bclose, bi);
   if(bj>=0){ html=html.slice(0,bi+bopen.length)+bands.map(g=>JSON.stringify(g)).join(',')+html.slice(bj); }
+}
+
+// 그룹→소속사 하위 라벨 주입: `const GROUP_SUBAGENCY = {...};` 한 줄을 교체(그룹 검색용)
+const gsOpen='const GROUP_SUBAGENCY = {', gsClose='};';
+const gsi=html.indexOf(gsOpen);
+if(gsi>=0){
+  const gsj=html.indexOf(gsClose, gsi);
+  if(gsj>=0){
+    const entries=Object.keys(groupSub).sort().map(g=>`${JSON.stringify(g)}:${JSON.stringify(groupSub[g])}`).join(',');
+    html=html.slice(0,gsi+gsOpen.length)+entries+html.slice(gsj);
+  }
 }
 fs.writeFileSync(idxPath,html);
 console.log(`\nWrote ${rows.length} idols and ${bands.length} band groups into index.html`);
