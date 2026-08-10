@@ -22930,5 +22930,18 @@
     "firstAt": "2026-08-10T17:42:03.698Z",
     "lastAt": "2026-08-10T17:42:03.698Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:쥴리|킥플립",
+    "name": "쥴리",
+    "group": "킥플립",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040916",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-10T20:00:31.788Z",
+    "lastAt": "2026-08-10T20:00:31.788Z",
+    "status": "pending"
   }
 ]
