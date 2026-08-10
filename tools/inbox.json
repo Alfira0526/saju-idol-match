@@ -22904,5 +22904,18 @@
     "firstAt": "2026-08-10T11:39:21.271Z",
     "lastAt": "2026-08-10T11:39:21.271Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:카엘|lun8",
+    "name": "카엘",
+    "group": "LUN8",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-10T16:13:34.868Z",
+    "lastAt": "2026-08-10T16:13:34.868Z",
+    "status": "pending"
   }
 ]
