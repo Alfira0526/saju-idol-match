@@ -22891,5 +22891,18 @@
     "firstAt": "2026-08-10T05:02:27.242Z",
     "lastAt": "2026-08-10T05:02:27.242Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:차웅기|아홉(ahof)",
+    "name": "차웅기",
+    "group": "아홉(ahof)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020423",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-10T11:39:21.271Z",
+    "lastAt": "2026-08-10T11:39:21.271Z",
+    "status": "pending"
   }
 ]
