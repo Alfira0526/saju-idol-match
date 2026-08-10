@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-08-03",
+  "generatedAt": "2026-08-10",
   "dataset": {
-    "totalIdols": 810,
-    "totalGroups": 129,
-    "statsTotal": 810,
+    "totalIdols": 968,
+    "totalGroups": 177,
+    "statsTotal": 968,
     "byCategory": {
       "K-idol": {
-        "count": 768,
+        "count": 894,
         "visible": true
       },
       "J-idol": {
+        "count": 36,
+        "visible": true
+      },
+      "US-actor": {
         "count": 30,
         "visible": true
       },
       "Etc": {
         "count": 5,
-        "visible": false
-      },
-      "US-actor": {
-        "count": 4,
         "visible": false
       },
       "C-actor": {
@@ -29,41 +29,57 @@
     "byAgency": {
       "HYBE": 78,
       "YG": 40,
-      "기타": 496,
+      "기타": 622,
       "SM": 80,
       "JYP": 74,
-      "미국 배우": 4,
+      "미국 배우": 30,
       "중국 배우": 3,
       "노기자카46": 30,
-      "배우": 5
+      "배우": 5,
+      "LAPONE": 6
     },
     "subAgency": {
-      "etcTotal": 496,
-      "assigned": 268,
-      "unassigned": 228,
-      "coveragePct": 54,
+      "etcTotal": 622,
+      "assigned": 436,
+      "unassigned": 186,
+      "coveragePct": 70,
       "byLabel": {
         "MODHAUS": 54,
-        "스타쉽엔터테인먼트": 32,
-        "FNC엔터테인먼트": 21,
+        "스타쉽엔터테인먼트": 45,
+        "FNC엔터테인먼트": 25,
+        "울림엔터테인먼트": 24,
+        "웨이크원": 20,
+        "큐브엔터테인먼트": 20,
+        "아이에스티엔터테인먼트": 19,
         "KQ엔터테인먼트": 18,
-        "울림엔터테인먼트": 18,
-        "웨이크원": 14,
+        "인코드엔터테인먼트": 18,
+        "C9엔터테인먼트": 15,
+        "WM엔터테인먼트": 12,
         "젤리피시엔터테인먼트": 12,
         "스윙엔터테인먼트": 11,
         "ONE HUNDRED": 10,
-        "큐브엔터테인먼트": 9,
-        "C9엔터테인먼트": 8,
+        "브레이브엔터테인먼트": 8,
+        "MNH엔터테인먼트": 8,
         "미스틱스토리": 7,
         "드림캐쳐컴퍼니": 7,
         "UNCORE": 7,
+        "ONECEAD": 7,
         "세븐시즌스": 7,
+        "C-JeS엔터테인먼트": 7,
+        "이든엔터테인먼트": 7,
+        "누아엔터테인먼트": 7,
         "하이업엔터테인먼트": 6,
         "인피니트컴퍼니": 6,
         "TOP미디어": 6,
         "신화컴퍼니": 6,
+        "TS엔터테인먼트": 6,
         "Fantagio": 5,
-        "브랜뉴뮤직": 4
+        "피네이션": 5,
+        "더블랙레이블": 5,
+        "안테나": 4,
+        "브랜뉴뮤직": 4,
+        "VLAST": 4,
+        "카카오엔터테인먼트": 4
       },
       "promotable": [
         "스타쉽엔터테인먼트",
@@ -71,10 +87,10 @@
       ]
     },
     "byGender": {
-      "M": 495,
-      "F": 315
+      "M": 618,
+      "F": 350
     },
-    "recentAddsListed": 95
+    "recentAddsListed": 110
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -82,43 +98,43 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 1297,
-    "addPending": 421,
+    "handled": 1603,
+    "addPending": 251,
     "addPendingGroups": {
-      "distinctGroups": 310,
-      "newGroups": 309,
-      "knownGroups": 1,
+      "distinctGroups": 209,
+      "newGroups": 204,
+      "knownGroups": 5,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
     "errorPending": 0,
-    "oldestAddPending": "2026-07-22T17:50:08.867Z",
+    "oldestAddPending": "2026-07-22T18:40:58.510Z",
     "oldestErrorPending": null,
     "topAddPending": [
       {
-        "name": "마노",
-        "group": "Vayonn",
-        "count": 8
+        "name": "마야",
+        "group": "오드유스",
+        "count": 4
       },
       {
-        "name": "가원",
-        "group": "미야오",
-        "count": 6
+        "name": "장한음",
+        "group": "장한음",
+        "count": 4
       },
       {
-        "name": "차웅기",
-        "group": "Ahof",
-        "count": 6
+        "name": "현성",
+        "group": "보이프렌드",
+        "count": 4
       },
       {
-        "name": "아토",
-        "group": "네이즈",
-        "count": 6
+        "name": "최정훈",
+        "group": "잔나비",
+        "count": 4
       },
       {
-        "name": "고강훈",
-        "group": "드래곤포니",
-        "count": 5
+        "name": "장한음",
+        "group": "ES NATION",
+        "count": 4
       }
     ],
     "topErrorPending": []
@@ -130,15 +146,15 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 67,
-    "maxBatch": 3,
-    "avgBatch": 1.2,
-    "medianGapMin": 40,
-    "lastFlushAt": "2026-08-04T05:01:06+09:00",
-    "timeSinceLastFlushMin": 244,
+    "flushCount": 47,
+    "maxBatch": 2,
+    "avgBatch": 1.1,
+    "medianGapMin": 50,
+    "lastFlushAt": "2026-08-10T11:30:21+09:00",
+    "timeSinceLastFlushMin": 104,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 47,
+    "quietGaps": 33,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
