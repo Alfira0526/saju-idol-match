@@ -2921,7 +2921,24 @@ const IDOLS = [
   ["하비","XG","庚申","金","F","XG","20021218","J-idol"],
   ["주리아","XG","辛亥","金","F","XG","20041128","J-idol"],
   ["코코나","XG","甲子","木","F","XG","20051206","J-idol"],
-  ["마야","XG","丙寅","火","F","XG","20050810","J-idol"]
+  ["마야","XG","丙寅","火","F","XG","20050810","J-idol"],
+  ["종우","One Pact","辛丑","金","M","기타","20000612","K-idol"],
+  ["제이창","One Pact","庚午","金","M","기타","20010308","K-idol"],
+  ["성민","One Pact","庚申","金","M","기타","20010825","K-idol"],
+  ["태그","One Pact","辛丑","金","M","기타","20020930","K-idol"],
+  ["예담","One Pact","壬辰","水","M","기타","20030119","K-idol"],
+  ["김민성","TIOT","庚辰","金","M","기타","20031103","K-idol"],
+  ["금준현","TIOT","癸巳","水","M","기타","20040115","K-idol"],
+  ["홍건희","TIOT","戊戌","土","M","기타","20041115","K-idol"],
+  ["최우진","TIOT","戊申","土","M","기타","20050124","K-idol"],
+  ["신예찬","TIOT","癸酉","水","M","기타","20070409","K-idol"],
+  ["진수","LUN8","己酉","土","M","기타","20030205","K-idol"],
+  ["유우마","LUN8","丁丑","火","M","기타","19991121","K-idol"],
+  ["카엘","LUN8","甲辰","木","M","기타","20011207","K-idol"],
+  ["타쿠마","LUN8","庚戌","金","M","기타","20030805","K-idol"],
+  ["준우","LUN8","丁酉","火","M","기타","20030921","K-idol"],
+  ["도현","LUN8","己巳","土","M","기타","20031023","K-idol"],
+  ["이안","LUN8","戊午","土","M","기타","20031211","K-idol"]
 ];
 
 function jdn(y,m,d){
@@ -3101,7 +3118,7 @@ const CAT_MIN = 30; // 카테고리는 데이터가 이 개수 이상 쌓여야 
 // 밴드(악기 연주) 그룹 — tools/bands.json에서 build.js가 주입. '밴드만' 필터에 사용.
 const BAND_GROUPS = new Set(["DAY6","Xdinary Heroes","QWER","Dragon Pony","N.Flying","ONEWE","LUCY","CNBLUE","FTISLAND","AxMxP","하츠웨이브"]);
 // 기타(중소·중견) 그룹의 하위 소속사 라벨 — build.js가 idols.json subAgency에서 주입. 그룹 검색에 사용.
-const GROUP_SUBAGENCY = {"8TURN":"MNH엔터테인먼트","AB6IX":"브랜뉴뮤직","AEN":"스타쉽엔터테인먼트","ALL(H)OURS":"이든엔터테인먼트","ALPHA DRIVE ONE":"웨이크원","AMPERS&ONE":"FNC엔터테인먼트","ASTRO":"Fantagio","ATEEZ":"KQ엔터테인먼트","AxMxP":"FNC엔터테인먼트","B.A.P":"TS엔터테인먼트","BTOB":"큐브엔터테인먼트","Billlie":"미스틱스토리","Block B":"세븐시즌스","CLOSE YOUR EYES":"UNCORE","CRAVITY":"스타쉽엔터테인먼트","DKB":"브레이브엔터테인먼트","DRIPPIN":"울림엔터테인먼트","Dragon Pony":"안테나","EPEX":"C9엔터테인먼트","EVNNE":"젤리피시엔터테인먼트","Golden Child":"울림엔터테인먼트","IDID":"스타쉽엔터테인먼트","INFINITE":"인피니트컴퍼니","IVE":"스타쉽엔터테인먼트","IZNA":"웨이크원","KEYVITUP":"인코드엔터테인먼트","Kep1er":"웨이크원","LOONA":"MODHAUS","Lovelyz":"울림엔터테인먼트","MEOVV":"더블랙레이블","MODYSSEY":"ONECEAD","MONSTA X":"스타쉽엔터테인먼트","NAZE":"C9엔터테인먼트","NOWZ":"큐브엔터테인먼트","NouerA":"누아엔터테인먼트","OH MY GIRL":"WM엔터테인먼트","ONF":"WM엔터테인먼트","P1Harmony":"FNC엔터테인먼트","PENTAGON":"큐브엔터테인먼트","PLAVE":"VLAST","Rocket Punch":"울림엔터테인먼트","SAY MY NAME":"인코드엔터테인먼트","SF9":"FNC엔터테인먼트","STAYC":"하이업엔터테인먼트","Shinhwa":"신화컴퍼니","THE BOYZ":"ONE HUNDRED","TNX":"피네이션","TUNEXX":"아이에스티엔터테인먼트","Teen Top":"TOP미디어","VAYONN":"인코드엔터테인먼트","VERIVERY":"젤리피시엔터테인먼트","VICTON":"아이에스티엔터테인먼트","WEi":"위엔터테인먼트","WHIB":"C-JeS엔터테인먼트","WJSN":"스타쉽엔터테인먼트","Weeekly":"아이에스티엔터테인먼트","idntt":"MODHAUS","tripleS":"MODHAUS","xikers":"KQ엔터테인먼트","드림캐쳐":"드림캐쳐컴퍼니","워너원":"스윙엔터테인먼트","하츠웨이브":"카카오엔터테인먼트"};
+const GROUP_SUBAGENCY = {"(G)I-DLE":"큐브엔터테인먼트","8TURN":"MNH엔터테인먼트","AB6IX":"브랜뉴뮤직","AEN":"스타쉽엔터테인먼트","ALL(H)OURS":"이든엔터테인먼트","ALPHA DRIVE ONE":"웨이크원","AMPERS&ONE":"FNC엔터테인먼트","ASTRO":"Fantagio","ATEEZ":"KQ엔터테인먼트","Apink":"아이에스티엔터테인먼트","AxMxP":"FNC엔터테인먼트","B.A.P":"TS엔터테인먼트","B1A4":"WM엔터테인먼트","BTOB":"큐브엔터테인먼트","Billlie":"미스틱스토리","Block B":"세븐시즌스","CIX":"C9엔터테인먼트","CLOSE YOUR EYES":"UNCORE","CRAVITY":"스타쉽엔터테인먼트","DKB":"브레이브엔터테인먼트","DRIPPIN":"울림엔터테인먼트","Dragon Pony":"안테나","EPEX":"C9엔터테인먼트","EVNNE":"젤리피시엔터테인먼트","Golden Child":"울림엔터테인먼트","IDID":"스타쉽엔터테인먼트","INFINITE":"인피니트컴퍼니","IVE":"스타쉽엔터테인먼트","IZNA":"웨이크원","KARA":"RBW","KEYVITUP":"인코드엔터테인먼트","Kep1er":"웨이크원","LIGHTSUM":"큐브엔터테인먼트","LOONA":"MODHAUS","LUN8":"Fantagio","Lovelyz":"울림엔터테인먼트","MEOVV":"더블랙레이블","MODYSSEY":"ONECEAD","MONSTA X":"스타쉽엔터테인먼트","N.Flying":"FNC엔터테인먼트","NAZE":"C9엔터테인먼트","NOWZ":"큐브엔터테인먼트","NouerA":"누아엔터테인먼트","OH MY GIRL":"WM엔터테인먼트","ONF":"WM엔터테인먼트","One Pact":"아르마다엔터테인먼트","P1Harmony":"FNC엔터테인먼트","PENTAGON":"큐브엔터테인먼트","PLAVE":"VLAST","Rocket Punch":"울림엔터테인먼트","SAY MY NAME":"인코드엔터테인먼트","SF9":"FNC엔터테인먼트","STAYC":"하이업엔터테인먼트","Shinhwa":"신화컴퍼니","THE BOYZ":"ONE HUNDRED","TIOT":"레드스타트ENM","TNX":"피네이션","TUNEXX":"아이에스티엔터테인먼트","Teen Top":"TOP미디어","VAYONN":"인코드엔터테인먼트","VERIVERY":"젤리피시엔터테인먼트","VICTON":"아이에스티엔터테인먼트","WEi":"위엔터테인먼트","WHIB":"C-JeS엔터테인먼트","WJSN":"스타쉽엔터테인먼트","Weeekly":"아이에스티엔터테인먼트","ZEROBASEONE":"웨이크원","fromis_9":"플레디스엔터테인먼트","idntt":"MODHAUS","tripleS":"MODHAUS","xikers":"KQ엔터테인먼트","드림캐쳐":"드림캐쳐컴퍼니","워너원":"스윙엔터테인먼트","하츠웨이브":"카카오엔터테인먼트"};
 function scopeMatch(x){
   const s = window._saju;
   if(x.cat !== (s.activeCat || "K-idol")) return false; // 카테고리 우선 필터
