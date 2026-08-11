@@ -22956,5 +22956,18 @@
     "firstAt": "2026-08-11T10:18:49.464Z",
     "lastAt": "2026-08-11T10:18:49.464Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이다은|cortis",
+    "name": "이다은",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20041011",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-11T11:50:02.549Z",
+    "lastAt": "2026-08-11T11:50:02.549Z",
+    "status": "pending"
   }
 ]
