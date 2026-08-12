@@ -23008,5 +23008,18 @@
     "firstAt": "2026-08-12T06:48:48.284Z",
     "lastAt": "2026-08-12T06:48:48.284Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이영지|솔로",
+    "name": "이영지",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-12T06:58:18.878Z",
+    "lastAt": "2026-08-12T06:58:18.878Z",
+    "status": "pending"
   }
 ]
