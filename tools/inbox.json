@@ -23073,5 +23073,18 @@
     "firstAt": "2026-08-12T15:24:54.007Z",
     "lastAt": "2026-08-12T15:24:54.007Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:제이유|to1",
+    "name": "제이유",
+    "group": "TO1",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001102",
+    "note": "잘생김~♡",
+    "count": 1,
+    "firstAt": "2026-08-12T15:49:35.087Z",
+    "lastAt": "2026-08-12T15:49:35.087Z",
+    "status": "pending"
   }
 ]
