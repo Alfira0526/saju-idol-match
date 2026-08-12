@@ -23021,5 +23021,18 @@
     "firstAt": "2026-08-12T06:58:18.878Z",
     "lastAt": "2026-08-12T06:58:18.878Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이준|mblaq",
+    "name": "이준",
+    "group": "MBLAQ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19880207",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-12T08:32:16.885Z",
+    "lastAt": "2026-08-12T08:32:16.885Z",
+    "status": "pending"
   }
 ]
