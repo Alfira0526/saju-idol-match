@@ -655,6 +655,7 @@
         <li data-i18n="dsc5">수록된 아이돌 약 540명의 생년월일은 공개 출처(위키 등)를 기준으로 수집했고, 일주(日柱) 계산은 서로 다른 2가지 방식으로 교차검증했습니다. 다만 생년월일 자체는 소속사 발표와 실제가 다른 사례가 보고된 바 있고 신인·해외 멤버는 오차 가능성이 있어, 개별 확인이 필요할 수 있습니다.</li>
         <li data-i18n="dsc6">같은 활동명을 쓰는 서로 다른 인물이 있어(예: 여러 그룹의 '지수'·'하니'), 이름 옆 소속 그룹으로 구분됩니다.</li>
         <li id="adPrivacy" class="hidden" data-i18n="dscAd">이 페이지는 광고를 포함할 수 있으며, 광고 제공사가 쿠키 등으로 맞춤 광고를 표시할 수 있습니다.</li>
+        <li data-i18n="dscUsage">어떤 메뉴가 인기 있는지 파악하기 위해 익명 사용 통계(기능 이름만)를 수집할 수 있습니다. 생년월일 등 개인정보는 전송하지 않습니다.</li>
       </ul>
     </div>
   </div>
@@ -956,6 +957,7 @@ const TR = {
   modeTriSub: { ko: "나 + 최애 2명", en: "You + 2 biases", ja: "私 + 推し2人", zh: "我 + 两位本命" },
   adLabel: { ko: "광고", en: "Advertisement", ja: "広告", zh: "广告" },
   dscAd: { ko: "이 페이지는 광고를 포함할 수 있으며, 광고 제공사가 쿠키 등으로 맞춤 광고를 표시할 수 있습니다.", en: "This page may show ads; ad providers may use cookies to personalize them.", ja: "本ページには広告が表示される場合があり、広告提供者がCookieなどでパーソナライズすることがあります。", zh: "本页面可能包含广告，广告服务商可能使用Cookie进行个性化投放。" },
+  dscUsage: { ko: "어떤 메뉴가 인기 있는지 파악하기 위해 익명 사용 통계(기능 이름만)를 수집할 수 있습니다. 생년월일 등 개인정보는 전송하지 않습니다.", en: "We may collect anonymous usage stats (only which menu was opened) to see what's popular. No personal data such as your birthday is ever sent.", ja: "どのメニューが人気かを把握するため、匿名の利用統計（開いた機能名のみ）を収集する場合があります。生年月日などの個人情報は送信しません。", zh: "为了解哪些功能受欢迎，我们可能收集匿名使用统计（仅记录打开了哪个菜单）。绝不发送生日等个人信息。" },
 };
 // 일본어(JA) 오버레이 — 우선순위 상향(2026-07-30). 미기재 키는 KO 폴백.
 const TR_JA = {
@@ -1705,6 +1707,7 @@ function runPair(){
   const {scored, dmA} = pairScored(A);
   const rB = scored.find(x=>x.name===B.name && x.group===B.group) || pairScored(A).scored[0];
   window._saju.pair = {a:{name:A.name,group:A.group}, b:{name:B.name,group:B.group}};
+  track('pair');
   out.innerHTML = `<div class="pair-head">${esc(A.name)} <span class="pair-heart">💞</span> ${esc(B.name)}</div>`
     + buildPairRoles(A, B) + buildDetail(rB, dmA, A.name, true)
     + shareRowHTML('sharePair','pairShareHint') + adUnitHTML();
@@ -1782,6 +1785,7 @@ function runProfile(){
   const A=findIdol(document.getElementById('profileInput').value.trim());
   const out=document.getElementById('profileResult');
   if(!A){ out.innerHTML=`<p class="pair-hint">${dt('profPickHint')}</p>`; _profileRendered=false; return; }
+  track('profile');
   out.innerHTML = buildProfile(A) + shareRowHTML('shareProfile','profileShareHint') + adUnitHTML();
   _profileRendered=true;
   pushAdsIn(out);
@@ -1869,6 +1873,7 @@ function runTri(){
   const B=findIdol(document.getElementById('triB').value.trim());
   if(!A||!B){ out.innerHTML=`<p class="pair-hint">${dt('pairPickHint')}</p>`; _triRendered=false; return; }
   if(A.name===B.name && A.group===B.group){ out.innerHTML=`<p class="pair-hint">${dt('pairSame')}</p>`; _triRendered=false; return; }
+  track('tri');
   out.innerHTML = buildTri(A, B) + shareRowHTML('shareTri','triShareHint') + adUnitHTML();
   _triRendered=true;
   pushAdsIn(out);
@@ -3104,6 +3109,7 @@ function runCalc(){
 
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+  track('match');
   try{ maybeShowNewCategoryToast(); }catch(e){}
 }
 
@@ -3612,6 +3618,7 @@ function drawShareCard(){
 
 async function shareResult(){
   if(!window._saju){ return; }
+  track('share');
   const hint = document.getElementById('shareHint');
   hint.textContent = "이미지 생성 중…";
   try{
@@ -3859,6 +3866,32 @@ function shareProfile(){
 const SUGGEST_ENDPOINT = "https://saju-suggest.thsjsl1234.workers.dev/submit";
 const SUGGEST_COOLDOWN_MS = 60*60*1000; // 소프트 제한: 1시간
 
+// ── 익명 콘텐츠 사용 비콘 ──
+// 어떤 메뉴(사주궁합·최애끼리 궁합·최애 프로필·삼각관계·공유·제보)가 많이 쓰이는지
+// 파악하기 위한 '기능 이름만' 익명 집계. 생년월일·개인정보는 절대 전송하지 않는다.
+// 워커가 KV에서 하루 1인 1이벤트로 집계 → tools/usage.json으로 미러링 → 주간 리포트가 읽음.
+// 하루 이벤트 1회만 전송(서버도 하루 1인 1이벤트 집계 → 재전송은 낭비·쓰기 비용).
+// Do Not Track 존중, 실패는 조용히 무시.
+const BEACON_ENDPOINT = SUGGEST_ENDPOINT ? SUGGEST_ENDPOINT.replace(/\/submit$/, "/beacon") : "";
+function track(ev){
+  try{
+    if(!BEACON_ENDPOINT || !ev) return;
+    if(navigator.doNotTrack==="1" || window.doNotTrack==="1") return; // DNT 존중
+    const day = new Date().toISOString().slice(0,10);
+    const k = "trk:"+ev+":"+day;
+    if(localStorage.getItem(k)) return;           // 하루 이벤트 1회(중복·쓰기비용 최소화)
+    // 지난 날짜 마커 정리(누적 방지)
+    try{ for(let i=localStorage.length-1;i>=0;i--){ const kk=localStorage.key(i); if(kk&&kk.startsWith("trk:")&&!kk.endsWith(day)) localStorage.removeItem(kk); } }catch(e){}
+    localStorage.setItem(k, "1");
+    const payload = JSON.stringify({e: ev});
+    if(navigator.sendBeacon){
+      navigator.sendBeacon(BEACON_ENDPOINT, new Blob([payload], {type:"application/json"}));
+    }else{
+      fetch(BEACON_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json"}, body:payload, keepalive:true}).catch(()=>{});
+    }
+  }catch(e){}
+}
+
 // ── Google AdSense ──
 // 자동 광고: <head>의 adsbygoogle.js 스크립트가 처리(대시보드에서 자동 광고 ON).
 // AD_CLIENT: 게시자 ID(공개 값). 비우면 개인정보 고지도 숨기고 수동 배너도 미노출.
@@ -3877,6 +3910,7 @@ function initAds(){
 }
 
 function openSuggest(){
+  track('suggest');
   document.getElementById('suggestForm').classList.remove('hidden');
   document.getElementById('suggestDone').classList.add('hidden');
   const e=document.getElementById('sgErr'); if(e) e.remove();

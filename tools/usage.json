@@ -1,0 +1,7 @@
+{
+  "updatedAt": null,
+  "metric": "unique-users-per-day (UTC)",
+  "events": ["match", "pair", "profile", "tri", "share", "suggest"],
+  "daily": {},
+  "totals": {}
+}

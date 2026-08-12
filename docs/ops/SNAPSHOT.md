@@ -35,6 +35,18 @@
    페이지·상업이용 약관 확인 선행 권장. 상세: [`monetization-review.md`](monetization-review.md).
 
 ## 결정 로그 (decisions)
+- 2026-08-12 — **[사용자 승인] 콘텐츠 항목별 접속(사용) 정도 계측 도입(워커 익명 비콘).**
+  기존엔 사용 분석이 전무(ops-metrics도 "static app — no usage backend")해 어떤 콘텐츠가
+  쓰이는지 리포트에서 볼 수 없었음. egress 차단 환경에서 유일하게 되는 방식(제보 파이프라인과
+  동일)으로 구현: 앱이 각 메뉴(match/pair/profile/tri/share/suggest) 진입 시 **기능 이름만**
+  익명 비콘 → 워커 `POST /beacon`이 KV에 **하루 1인 1이벤트**(`u:{date}:{event}:{ipHash}`, TTL 40h)
+  로 기록 → cron이 `tools/usage.json`(날짜별 순사용자수)으로 미러링 → `ops-metrics.js`가
+  `contentUsage`(항목별 최근 7일·점유율·순위) 산출 → 주간 리포트 §1에 반영. 개인정보·생년월일
+  미전송, 클라이언트 하루 1회 제한 + DNT 존중, 개인정보 고지 문구 추가. **활성화 조건: 사용자가
+  워커 재배포**(신규 `/beacon`·`flushUsage` 반영). 미배포/무데이터 시 `contentUsage.available=false`.
+  KV 쓰기 예산: 순사용자 1명=최대 6쓰기/일 → 무료 한도(1,000/일)로 ~160 DAU까지. build/ops-metrics
+  `--check` 클린, 워커 `node --check` OK, 헤드리스 스모크(비콘 이벤트·하루중복제거·DNT·페이로드
+  `{"e":...}`·JS 에러 0) 통과 후 커밋.
 - 2026-08-10 — **[주간 리뷰] 안정적 확장 주 — 액션 아이템 없음.** 정합성 100%(build.js/
   ops-metrics.js `--check` 클린), 오류 백로그 0(95건 전량 처리 확인, ILLIT 민주 생일 재검증
   1건 WebSearch 교차검증 통과), `idols.json` 데이터 오류 자동 수정 0건. 총원 775→968

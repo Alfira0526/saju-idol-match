@@ -26,6 +26,7 @@ const stats = readJSON(T('stats.json'), { total: 0, addedRecent: [] });
 const inbox = readJSON(T('inbox.json'), []);
 const errInbox = readJSON(T('error-inbox.json'), []);
 const done = readJSON(T('inbox-done.json'), []);
+const usage = readJSON(T('usage.json'), null); // 익명 콘텐츠 사용 비콘(워커 미러링). 없으면 미측정.
 const doneSet = new Set((Array.isArray(done) ? done : []).map(x => (typeof x === 'string' ? x : x && x.key)));
 
 // ---- dataset coverage ----
@@ -162,6 +163,54 @@ function flushCadence(days = 7) {
   } catch (e) { return { error: String((e && e.message) || e) }; }
 }
 
+// ---- 콘텐츠 항목별 접속(사용) 정도 ----
+// usage.json(워커 미러링, 하루 1인 1이벤트 순사용자수)에서 항목별 전체/최근7일 집계·점유율·순위.
+// 파일이 없거나 데이터가 없으면 available:false (측정 수단 미도입/무데이터).
+const USAGE_LABELS = {
+  match: '사주궁합', pair: '최애끼리 궁합', profile: '최애 프로필',
+  tri: '지옥의 삼각관계', share: '결과 공유', suggest: '제보 열기',
+};
+function contentUsage(genDate) {
+  if (!usage || typeof usage !== 'object') {
+    return { available: false, reason: 'usage.json 없음 — 워커 배포 후 수집 시작' };
+  }
+  const daily = usage.daily || {};
+  const totals = usage.totals || {};
+  const dates = Object.keys(daily).sort();
+  const hasData = dates.length > 0 && Object.keys(totals).length > 0;
+  if (!hasData) {
+    return { available: false, reason: '집계 데이터 아직 없음(수집 대기)', updatedAt: usage.updatedAt || null };
+  }
+  // 최근 7일(genDate 기준) 순사용자수 합
+  const end = new Date((genDate || dates[dates.length - 1]) + 'T00:00:00Z');
+  const start = new Date(end.getTime() - 6 * 86400000);
+  const inWin = (d) => { const t = new Date(d + 'T00:00:00Z'); return t >= start && t <= end; };
+  const recent = {};
+  for (const d of dates) { if (!inWin(d)) continue; for (const [ev, n] of Object.entries(daily[d])) recent[ev] = (recent[ev] || 0) + n; }
+  const recentTotal = Object.values(recent).reduce((s, n) => s + n, 0);
+  const allTotal = Object.values(totals).reduce((s, n) => s + n, 0);
+  const rank = Object.keys(USAGE_LABELS)
+    .map(ev => ({
+      event: ev,
+      label: USAGE_LABELS[ev],
+      recent7d: recent[ev] || 0,
+      total: totals[ev] || 0,
+      recentSharePct: recentTotal ? Math.round((recent[ev] || 0) / recentTotal * 1000) / 10 : 0,
+    }))
+    .sort((a, b) => b.recent7d - a.recent7d || b.total - a.total);
+  return {
+    available: true,
+    metric: usage.metric || 'unique-users-per-day (UTC)',
+    updatedAt: usage.updatedAt || null,
+    daysCovered: dates.length,
+    windowDays: 7,
+    recentTotal,
+    allTotal,
+    ranking: rank,
+    topContent: rank[0] ? rank[0].label : null,
+  };
+}
+
 const argDate = (process.argv.find(a => a.startsWith('--date=')) || '').slice(7);
 const generatedAt = argDate || new Date().toISOString().slice(0, 10);
 
@@ -200,6 +249,7 @@ const metrics = {
     percent: i18nTotal ? Math.round((i18nDone / i18nTotal) * 100) : 0,
   },
   flushCadence: flushCadence(7),
+  contentUsage: contentUsage(generatedAt),
 };
 
 if (process.argv.includes('--check')) {
@@ -208,5 +258,7 @@ if (process.argv.includes('--check')) {
   const outDir = path.join(ROOT, 'docs', 'ops');
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'metrics-latest.json'), JSON.stringify(metrics, null, 2) + '\n');
-  console.log(`metrics-latest.json written · idols=${metrics.dataset.totalIdols} · addPending=${metrics.backlog.addPending} · errPending=${metrics.backlog.errorPending} · i18n=${metrics.i18n.percent}%`);
+  const cu = metrics.contentUsage;
+  const cuStr = cu.available ? `top=${cu.topContent}(${cu.recentTotal}/7d)` : 'usage=n/a';
+  console.log(`metrics-latest.json written · idols=${metrics.dataset.totalIdols} · addPending=${metrics.backlog.addPending} · errPending=${metrics.backlog.errorPending} · i18n=${metrics.i18n.percent}% · ${cuStr}`);
 }

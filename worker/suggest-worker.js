@@ -23,6 +23,10 @@
 const COOLDOWN_SECONDS = 60 * 60; // 1시간
 const ALLOW_ORIGIN = "*";
 const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
+// 익명 사용 비콘 허용 이벤트(콘텐츠 항목). 이 목록 밖은 무시.
+const USAGE_EVENTS = ["match", "pair", "profile", "tri", "share", "suggest"];
+const USAGE_TTL_SECONDS = 60 * 60 * 40; // 40h: cron이 오늘/어제 버킷을 확정 집계할 때까지 생존
+const dayStr = (d) => d.toISOString().slice(0, 10); // YYYY-MM-DD (UTC)
 
 function cors(extra = {}) {
   return {
@@ -94,11 +98,74 @@ async function ghPut(env, filePath, arr, sha, message) {
   return r.status;
 }
 
+// ---- GitHub Contents API (object 파일용 — usage.json) ----
+async function ghGetObj(env, filePath) {
+  const url = `https://api.github.com/repos/${ghRepo(env)}/contents/${filePath}?ref=${encodeURIComponent(ghBranch(env))}`;
+  const r = await fetch(url, { headers: ghHeaders(env) });
+  if (r.status === 200) {
+    const j = await r.json();
+    let obj = {};
+    try { obj = JSON.parse(b64decodeUtf8(j.content)) || {}; } catch { obj = {}; }
+    return { sha: j.sha, obj };
+  }
+  if (r.status === 404) return { sha: null, obj: {} };
+  throw new Error("gh get " + r.status);
+}
+async function ghPutObj(env, filePath, obj, sha, message) {
+  const url = `https://api.github.com/repos/${ghRepo(env)}/contents/${filePath}`;
+  const body = { message, content: b64encodeUtf8(JSON.stringify(obj, null, 2) + "\n"), branch: ghBranch(env) };
+  if (sha) body.sha = sha;
+  const r = await fetch(url, { method: "PUT", headers: { ...ghHeaders(env), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  if (!r.ok && r.status !== 409) throw new Error("gh put " + r.status);
+  return r.status;
+}
+
 // ---- Cron flush: KV 큐 → GitHub 파일 배치 병합 ----
 async function flush(env) {
   if (!env.GH_TOKEN) return; // 토큰 없으면 미러링 스킵(큐는 KV에 남음)
   await flushType(env, "add", "tools/inbox.json");
   await flushType(env, "err", "tools/error-inbox.json");
+  await flushUsage(env);
+}
+
+// ---- 사용 비콘 집계: KV(u:{date}:{event}:{ipHash}) → tools/usage.json ----
+// 각 키는 '하루 1인 1이벤트'(멱등 put). 오늘/어제 버킷만 다시 세어 병합하므로 저비용.
+async function flushUsage(env) {
+  if (!env.GH_TOKEN) return;
+  // 유휴 cron 비용 절감: 사용 키가 하나도 없으면 GitHub 호출 없이 종료
+  const probe = await env.SUGGEST_KV.list({ prefix: "u:", limit: 1 });
+  if (!probe.keys.length) return;
+
+  const today = new Date();
+  const dates = [dayStr(today), dayStr(new Date(today.getTime() - 86400000))];
+  const counted = {};
+  for (const d of dates) {
+    const c = {};
+    let cursor;
+    do {
+      const res = await env.SUGGEST_KV.list({ prefix: `u:${d}:`, cursor });
+      for (const k of res.keys) {
+        const ev = k.name.split(":")[2]; // u:{date}:{event}:{ipHash}
+        if (USAGE_EVENTS.includes(ev)) c[ev] = (c[ev] || 0) + 1;
+      }
+      cursor = res.list_complete ? null : res.cursor;
+    } while (cursor);
+    counted[d] = c;
+  }
+
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { sha, obj } = await ghGetObj(env, "tools/usage.json");
+    const daily = (obj && obj.daily) || {};
+    // 실제로 센 날만 갱신(0으로 덮어써 과거 확정값을 지우지 않도록)
+    for (const d of dates) { if (Object.keys(counted[d]).length) daily[d] = counted[d]; }
+    const totals = {};
+    for (const d of Object.keys(daily)) {
+      for (const [ev, n] of Object.entries(daily[d])) totals[ev] = (totals[ev] || 0) + n;
+    }
+    const out = { updatedAt: new Date().toISOString(), metric: "unique-users-per-day (UTC)", events: USAGE_EVENTS, daily, totals };
+    const st = await ghPutObj(env, "tools/usage.json", out, sha, `chore(usage): update ${Object.keys(totals).length} events`);
+    if (st !== 409) break;
+  }
 }
 async function flushType(env, type, filePath) {
   const list = await env.SUGGEST_KV.list({ prefix: `q:${type}:` });
@@ -183,6 +250,18 @@ export default {
       await env.SUGGEST_KV.put(`q:${type}:${id}`, JSON.stringify(sub));
       await env.SUGGEST_KV.put(rlKey, "1", { expirationTtl: COOLDOWN_SECONDS });
       return json({ ok: true });
+    }
+
+    // ---- POST /beacon : 익명 사용 집계(개인정보 없음, '기능 이름'만) ----
+    // 하루 1인 1이벤트로 KV에 멱등 기록. cron이 usage.json으로 미러링.
+    if (url.pathname === "/beacon" && request.method === "POST") {
+      let ev = "";
+      try { const b = await request.json(); ev = (b && b.e || "").toString(); } catch { ev = ""; }
+      if (!USAGE_EVENTS.includes(ev)) return new Response(null, { status: 204, headers: cors() });
+      const ip = request.headers.get("CF-Connecting-IP") || "0.0.0.0";
+      const ipHash = (await sha256Hex(ip + "|" + (env.IP_SALT || "salt"))).slice(0, 24);
+      await env.SUGGEST_KV.put(`u:${dayStr(new Date())}:${ev}:${ipHash}`, "1", { expirationTtl: USAGE_TTL_SECONDS });
+      return new Response(null, { status: 204, headers: cors() });
     }
 
     // ---- (선택) 관리자용 수동 flush: GET /flush?token=ADMIN_TOKEN ----

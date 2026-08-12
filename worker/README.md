@@ -6,7 +6,8 @@
 
 ```
 POST /submit          제보 접수 (IP 해시로 1시간 1회 제한 + KV 큐 적재만, GitHub 호출 없음)
-(cron) scheduled()    KV 큐 → GitHub 배치 flush (tools/inbox.json·error-inbox.json, type별 1커밋)
+POST /beacon          익명 콘텐츠 사용 집계 ('기능 이름'만, 하루 1인 1이벤트로 KV 기록)
+(cron) scheduled()    KV → GitHub 배치 flush (inbox.json·error-inbox.json·usage.json)
 GET  /                헬스체크
 GET  /flush?token=…   (선택) 관리자 수동 flush
 ```
@@ -19,6 +20,10 @@ GET  /flush?token=…   (선택) 관리자 수동 flush
 - 원본 IP는 **저장하지 않습니다.** `IP + 솔트`의 SHA-256 해시만 레이트리밋 키에 쓰고,
   그 키는 **1시간 뒤 자동 소멸**합니다.
 - 제보 레코드에는 제보자 정보를 담지 않습니다(대상 인물의 이름·그룹·생일만).
+- **사용 비콘(`/beacon`)**: 앱이 보내는 건 **기능 이름 하나**(`match`/`pair`/`profile`/`tri`/
+  `share`/`suggest`)뿐입니다. 생년월일·매칭 결과 등 개인정보는 전송하지 않습니다. 중복 제거용
+  IP 해시 키도 **40시간 뒤 자동 소멸**하며, `usage.json`에는 **날짜별 순사용자수(집계)**만
+  남습니다(개인 식별 불가). 앱은 클라이언트에서 하루 1회로 제한하고 Do Not Track을 존중합니다.
 
 ---
 
@@ -116,6 +121,12 @@ const SUGGEST_ENDPOINT = "https://saju-suggest.○○○.workers.dev/submit";
 워커는 제보 접수 시 다음 파일을 GitHub Contents API로 갱신합니다:
 - `tools/inbox.json` — 추가 제보(add)
 - `tools/error-inbox.json` — 오류 제보(error)
+- `tools/usage.json` — 콘텐츠 항목별 사용 집계(날짜별 순사용자수). 주간 리뷰의
+  `ops-metrics.js`가 읽어 `contentUsage`(항목별 최근 7일·점유율·순위)를 산출.
+
+> **참고**: 사용 집계도 같은 미러링 파이프라인을 씁니다. 사용 비콘이 하나도 없으면
+> cron은 `usage.json`을 건드리지 않습니다(유휴 비용 0). GH_TOKEN 미설정 시엔 집계도
+> KV에만 쌓이고 미러링은 건너뜁니다.
 
 **설정(한 번만):**
 1. **GitHub Fine-grained PAT 발급** — <https://github.com/settings/personal-access-tokens>
@@ -167,11 +178,17 @@ curl "https://<worker-url>/flush?token=<ADMIN_TOKEN>"           # 즉시 flush �
 |---|---|---|
 | `rl:{ipHash}:{YYYYMMDDHH}` | `"1"` | 레이트리밋 마커, TTL 1h |
 | `q:add:{id}` / `q:err:{id}` | 큐 항목(JSON) | 접수 시 적재 → Cron flush가 소비 후 삭제 |
+| `u:{YYYY-MM-DD}:{event}:{ipHash}` | `"1"` | 사용 비콘 순사용자 마커(멱등), TTL 40h. Cron이 오늘/어제 버킷을 세어 `usage.json`에 반영 |
 
 flush가 `tools/inbox.json`(추가)·`tools/error-inbox.json`(오류)에 `key`(=`sg:이름|그룹`/`er:이름|그룹`)
 기준으로 병합하며, `count`(제보 횟수) 누적. 반영/오신고 처리 여부는 루틴이 `tools/inbox-done.json`으로
 관리합니다(워커는 관여하지 않음).
 
 ## 비용
-Cloudflare 무료 플랜: 워커 하루 100,000 요청, KV 하루 읽기 100,000 / 쓰기 1,000.
+Cloudflare 무료 플랜: 워커 하루 100,000 요청, KV 하루 읽기 100,000 / **쓰기 1,000**.
 개인 오락용 제보 트래픽은 이 한도에 한참 못 미칩니다.
+
+> **사용 비콘 쓰기 예산(주의):** `/beacon` 1건 = KV 쓰기 1회. 앱이 **하루 1인 1이벤트**로
+> 제한하므로 순사용자 1명당 최대 6쓰기/일입니다. 즉 **하루 순사용자 ~160명까지 무료 한도(1,000
+> 쓰기)** 안입니다. 그 이상으로 성장하면 KV 유료(Workers Paid $5/월, 쓰기 대폭 증가)로 올리거나,
+> 이벤트 수를 줄이면 됩니다. cron의 `usage.json` 커밋은 GitHub API라 KV 쓰기와 무관합니다.
