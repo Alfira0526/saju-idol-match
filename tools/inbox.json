@@ -23060,5 +23060,18 @@
     "firstAt": "2026-08-12T13:28:52.225Z",
     "lastAt": "2026-08-12T13:28:52.225Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:鄭友榮|ateez",
+    "name": "鄭友榮",
+    "group": "ATEEZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991126",
+    "note": "KQ",
+    "count": 1,
+    "firstAt": "2026-08-12T15:24:54.007Z",
+    "lastAt": "2026-08-12T15:24:54.007Z",
+    "status": "pending"
   }
 ]
