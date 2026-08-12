@@ -23099,5 +23099,18 @@
     "firstAt": "2026-08-12T16:42:52.761Z",
     "lastAt": "2026-08-12T16:42:52.761Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:원화연|이프아이",
+    "name": "원화연",
+    "group": "이프아이",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060624",
+    "note": "经纪公司：hihat",
+    "count": 1,
+    "firstAt": "2026-08-12T19:01:46.964Z",
+    "lastAt": "2026-08-12T19:01:46.964Z",
+    "status": "pending"
   }
 ]
