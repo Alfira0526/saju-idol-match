@@ -23086,5 +23086,18 @@
     "firstAt": "2026-08-12T15:49:35.087Z",
     "lastAt": "2026-08-12T15:49:35.087Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서현|앳하트(atheart)",
+    "name": "서현",
+    "group": "앳하트 (AtHeart)",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080912",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-12T16:42:52.761Z",
+    "lastAt": "2026-08-12T16:42:52.761Z",
+    "status": "pending"
   }
 ]
