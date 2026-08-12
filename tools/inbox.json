@@ -23034,5 +23034,18 @@
     "firstAt": "2026-08-12T08:32:16.885Z",
     "lastAt": "2026-08-12T08:32:16.885Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:권소은|크래비티",
+    "name": "권소은",
+    "group": "크래비티",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060802",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-12T10:11:15.216Z",
+    "lastAt": "2026-08-12T10:11:15.216Z",
+    "status": "pending"
   }
 ]
