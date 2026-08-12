@@ -22969,5 +22969,18 @@
     "firstAt": "2026-08-11T11:50:02.549Z",
     "lastAt": "2026-08-11T11:50:02.549Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤영준|hrtz.wav",
+    "name": "윤영준",
+    "group": "hrtz.wav",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000321",
+    "note": "카카오엔터",
+    "count": 1,
+    "firstAt": "2026-08-12T03:41:41.254Z",
+    "lastAt": "2026-08-12T03:41:41.254Z",
+    "status": "pending"
   }
 ]
