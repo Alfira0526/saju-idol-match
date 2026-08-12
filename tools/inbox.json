@@ -23112,5 +23112,18 @@
     "firstAt": "2026-08-12T19:01:46.964Z",
     "lastAt": "2026-08-12T19:01:46.964Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정민|보이프렌드",
+    "name": "정민",
+    "group": "보이프렌드",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-12T22:46:23.883Z",
+    "lastAt": "2026-08-12T22:46:23.883Z",
+    "status": "pending"
   }
 ]
