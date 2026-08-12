@@ -22982,5 +22982,18 @@
     "firstAt": "2026-08-12T03:41:41.254Z",
     "lastAt": "2026-08-12T03:41:41.254Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:임지환|데일리디렉션/oddwave",
+    "name": "임지환",
+    "group": "데일리디렉션 / oddwave",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030524",
+    "note": "제 최애라서요..",
+    "count": 1,
+    "firstAt": "2026-08-12T06:27:01.374Z",
+    "lastAt": "2026-08-12T06:27:01.374Z",
+    "status": "pending"
   }
 ]
