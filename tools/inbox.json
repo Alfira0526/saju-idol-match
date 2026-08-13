@@ -23125,5 +23125,18 @@
     "firstAt": "2026-08-12T22:46:23.883Z",
     "lastAt": "2026-08-12T22:46:23.883Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:타잔|올데이프로젝트",
+    "name": "타잔",
+    "group": "올데이프로젝트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T03:03:28.913Z",
+    "lastAt": "2026-08-13T03:03:28.913Z",
+    "status": "pending"
   }
 ]
