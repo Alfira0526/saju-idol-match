@@ -23164,5 +23164,31 @@
     "firstAt": "2026-08-13T05:50:13.675Z",
     "lastAt": "2026-08-13T05:50:13.675Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김태양|뉴비트(newbeat)",
+    "name": "김태양",
+    "group": "뉴비트 (NEWBEAT)",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20061202",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T05:50:58.316Z",
+    "lastAt": "2026-08-13T05:50:58.316Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:이현|베이비돈크라이",
+    "name": "이현",
+    "group": "베이비돈크라이",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T05:54:56.143Z",
+    "lastAt": "2026-08-13T05:54:56.143Z",
+    "status": "pending"
   }
 ]
