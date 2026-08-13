@@ -1507,5 +1507,21 @@
     "firstAt": "2026-08-07T23:37:21.602Z",
     "lastAt": "2026-08-07T23:37:21.602Z",
     "status": "pending"
+  },
+  {
+    "key": "er:바로|b1a4",
+    "name": "바로",
+    "group": "B1A4",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "비원에이포가 아님"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-08-13T10:05:23.361Z",
+    "lastAt": "2026-08-13T10:05:23.361Z",
+    "status": "pending"
   }
 ]
