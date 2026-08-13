@@ -23294,5 +23294,18 @@
     "firstAt": "2026-08-13T12:48:45.707Z",
     "lastAt": "2026-08-13T12:48:45.707Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지후|ascender",
+    "name": "지후",
+    "group": "ASCENDER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070401",
+    "note": "꼭 해주세요",
+    "count": 1,
+    "firstAt": "2026-08-13T14:32:03.216Z",
+    "lastAt": "2026-08-13T14:32:03.216Z",
+    "status": "pending"
   }
 ]
