@@ -1028,5 +1028,19 @@
 {"name":"임지환","group":"DAILY:DIRECTION","agency":"기타","gender":"M","dob":"2003-05-24","cat":"K-idol","subAgency":"ODDWAVE"},
 {"name":"이반","group":"DAILY:DIRECTION","agency":"기타","gender":"M","dob":"2004-06-10","cat":"K-idol","subAgency":"ODDWAVE"},
 {"name":"이원우","group":"DAILY:DIRECTION","agency":"기타","gender":"M","dob":"2005-10-16","cat":"K-idol","subAgency":"ODDWAVE"},
-{"name":"장윤석","group":"DAILY:DIRECTION","agency":"기타","gender":"M","dob":"2007-04-02","cat":"K-idol","subAgency":"ODDWAVE"}
+{"name":"장윤석","group":"DAILY:DIRECTION","agency":"기타","gender":"M","dob":"2007-04-02","cat":"K-idol","subAgency":"ODDWAVE"},
+{"name":"우무티","group":"XLOV","agency":"기타","gender":"M","dob":"1999-07-07","cat":"K-idol","subAgency":"257엔터테인먼트"},
+{"name":"루이","group":"XLOV","agency":"기타","gender":"M","dob":"2000-12-28","cat":"K-idol","subAgency":"257엔터테인먼트"},
+{"name":"현","group":"XLOV","agency":"기타","gender":"M","dob":"2002-07-26","cat":"K-idol","subAgency":"257엔터테인먼트"},
+{"name":"하루","group":"XLOV","agency":"기타","gender":"M","dob":"2006-02-18","cat":"K-idol","subAgency":"257엔터테인먼트"},
+{"name":"요치","group":"POW","agency":"기타","gender":"M","dob":"2002-04-11","cat":"K-idol","subAgency":"그리드엔터테인먼트"},
+{"name":"현빈","group":"POW","agency":"기타","gender":"M","dob":"2003-05-29","cat":"K-idol","subAgency":"그리드엔터테인먼트"},
+{"name":"정빈","group":"POW","agency":"기타","gender":"M","dob":"2003-07-22","cat":"K-idol","subAgency":"그리드엔터테인먼트"},
+{"name":"동연","group":"POW","agency":"기타","gender":"M","dob":"2003-09-26","cat":"K-idol","subAgency":"그리드엔터테인먼트"},
+{"name":"홍","group":"POW","agency":"기타","gender":"M","dob":"2005-06-23","cat":"K-idol","subAgency":"그리드엔터테인먼트"},
+{"name":"현율","group":"Hi-Fi Un!corn","agency":"기타","gender":"M","dob":"2000-01-15","cat":"K-idol","subAgency":"FNC엔터테인먼트"},
+{"name":"기윤","group":"Hi-Fi Un!corn","agency":"기타","gender":"M","dob":"2000-03-24","cat":"K-idol","subAgency":"FNC엔터테인먼트"},
+{"name":"태민","group":"Hi-Fi Un!corn","agency":"기타","gender":"M","dob":"2001-07-14","cat":"K-idol","subAgency":"FNC엔터테인먼트"},
+{"name":"슈토","group":"Hi-Fi Un!corn","agency":"기타","gender":"M","dob":"2003-08-14","cat":"K-idol","subAgency":"FNC엔터테인먼트"},
+{"name":"민","group":"Hi-Fi Un!corn","agency":"기타","gender":"M","dob":"2005-09-08","cat":"K-idol","subAgency":"FNC엔터테인먼트"}
 ]
