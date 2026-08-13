@@ -23255,5 +23255,18 @@
     "firstAt": "2026-08-13T08:48:48.746Z",
     "lastAt": "2026-08-13T08:48:48.746Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:reo|aoen",
+    "name": "REO",
+    "group": "AOEN",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20070709",
+    "note": "HYBE",
+    "count": 1,
+    "firstAt": "2026-08-13T11:40:14.370Z",
+    "lastAt": "2026-08-13T11:40:14.370Z",
+    "status": "pending"
   }
 ]
