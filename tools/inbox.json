@@ -23138,5 +23138,18 @@
     "firstAt": "2026-08-13T03:03:28.913Z",
     "lastAt": "2026-08-13T03:03:28.913Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오준석|atbo",
+    "name": "오준석",
+    "group": "ATBO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030303",
+    "note": "IST",
+    "count": 1,
+    "firstAt": "2026-08-13T03:48:34.240Z",
+    "lastAt": "2026-08-13T03:48:34.240Z",
+    "status": "pending"
   }
 ]
