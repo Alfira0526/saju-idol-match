@@ -23229,5 +23229,31 @@
     "firstAt": "2026-08-13T07:41:39.594Z",
     "lastAt": "2026-08-13T07:41:39.594Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:케빈|ze;a",
+    "name": "케빈",
+    "group": "ZE;A",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980223",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T08:43:33.081Z",
+    "lastAt": "2026-08-13T08:43:33.081Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:승호|mblaq",
+    "name": "승호",
+    "group": "MBLAQ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19871016",
+    "note": "未解散",
+    "count": 1,
+    "firstAt": "2026-08-13T08:48:48.746Z",
+    "lastAt": "2026-08-13T08:48:48.746Z",
+    "status": "pending"
   }
 ]
