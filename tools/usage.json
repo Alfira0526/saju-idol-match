@@ -1,7 +1,30 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-08-13T03:50:48.742Z",
   "metric": "unique-users-per-day (UTC)",
-  "events": ["match", "pair", "profile", "tri", "share", "suggest"],
-  "daily": {},
-  "totals": {}
+  "events": [
+    "match",
+    "pair",
+    "profile",
+    "tri",
+    "share",
+    "suggest"
+  ],
+  "daily": {
+    "2026-08-13": {
+      "match": 1,
+      "pair": 1,
+      "profile": 1,
+      "share": 1,
+      "suggest": 1,
+      "tri": 1
+    }
+  },
+  "totals": {
+    "match": 1,
+    "pair": 1,
+    "profile": 1,
+    "share": 1,
+    "suggest": 1,
+    "tri": 1
+  }
 }
