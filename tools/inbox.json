@@ -23190,5 +23190,31 @@
     "firstAt": "2026-08-13T05:54:56.143Z",
     "lastAt": "2026-08-13T05:54:56.143Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:나라찬|mont",
+    "name": "나라찬",
+    "group": "MONT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960923",
+    "note": "FM entertainment",
+    "count": 1,
+    "firstAt": "2026-08-13T06:44:45.512Z",
+    "lastAt": "2026-08-13T06:44:45.512Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:조유리|솔로",
+    "name": "조유리",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20011022",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T06:47:39.827Z",
+    "lastAt": "2026-08-13T06:47:39.827Z",
+    "status": "pending"
   }
 ]
