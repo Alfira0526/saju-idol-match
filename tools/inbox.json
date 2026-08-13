@@ -23151,5 +23151,18 @@
     "firstAt": "2026-08-13T03:48:34.240Z",
     "lastAt": "2026-08-13T03:48:34.240Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:규민|xodiac",
+    "name": "규민",
+    "group": "Xodiac",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "001212",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T05:50:13.675Z",
+    "lastAt": "2026-08-13T05:50:13.675Z",
+    "status": "pending"
   }
 ]
