@@ -23216,5 +23216,18 @@
     "firstAt": "2026-08-13T06:47:39.827Z",
     "lastAt": "2026-08-13T06:47:39.827Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:rio|enhypen",
+    "name": "Rio",
+    "group": "Enhypen",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020829",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-13T07:41:39.594Z",
+    "lastAt": "2026-08-13T07:41:39.594Z",
+    "status": "pending"
   }
 ]
