@@ -23411,5 +23411,18 @@
     "firstAt": "2026-08-14T17:00:29.042Z",
     "lastAt": "2026-08-14T17:00:29.042Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아서|더킹덤",
+    "name": "아서",
+    "group": "더킹덤",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000415",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-14T20:27:33.517Z",
+    "lastAt": "2026-08-14T20:27:33.517Z",
+    "status": "pending"
   }
 ]
