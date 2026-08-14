@@ -17894,10 +17894,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20090214",
-    "note": "이상형",
-    "count": 3,
+    "note": "하이브",
+    "count": 4,
     "firstAt": "2026-07-28T05:44:11.046Z",
-    "lastAt": "2026-07-28T11:35:24.331Z",
+    "lastAt": "2026-08-14T10:57:22.162Z",
     "status": "pending"
   },
   {
@@ -23332,6 +23332,58 @@
     "count": 1,
     "firstAt": "2026-08-13T19:04:16.346Z",
     "lastAt": "2026-08-13T19:04:16.346Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:세이디싱크|배우",
+    "name": "세이디 싱크",
+    "group": "배우",
+    "cat": "US-actor",
+    "gender": "F",
+    "dob": "20020416",
+    "note": "요즘 인기많은 배우이다보니 하고싶어서요",
+    "count": 1,
+    "firstAt": "2026-08-14T14:27:19.014Z",
+    "lastAt": "2026-08-14T14:27:19.014Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:yangyang|wayv",
+    "name": "yangyang",
+    "group": "WayV",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001010",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-08-14T14:44:29.664Z",
+    "lastAt": "2026-08-14T14:44:29.664Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김재중|가수솔로",
+    "name": "김재중",
+    "group": "가수 솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "860126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-14T15:10:34.388Z",
+    "lastAt": "2026-08-14T15:10:34.388Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:장윤하|nctwish",
+    "name": "장윤하",
+    "group": "NCT WISH",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20120106",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-14T16:49:48.976Z",
+    "lastAt": "2026-08-14T16:49:48.976Z",
     "status": "pending"
   }
 ]
