@@ -760,10 +760,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20040405",
-    "note": "SM",
-    "count": 25,
+    "note": "Sm",
+    "count": 26,
     "firstAt": "2026-07-22T17:41:35.381Z",
-    "lastAt": "2026-07-28T11:07:30.295Z",
+    "lastAt": "2026-08-14T16:53:15.278Z",
     "status": "pending"
   },
   {
@@ -23384,6 +23384,32 @@
     "count": 1,
     "firstAt": "2026-08-14T16:49:48.976Z",
     "lastAt": "2026-08-14T16:49:48.976Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:주익연|배우",
+    "name": "주익연",
+    "group": "배우",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "20001122",
+    "note": "내남자라서요",
+    "count": 1,
+    "firstAt": "2026-08-14T16:56:39.208Z",
+    "lastAt": "2026-08-14T16:56:39.208Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:성찬|riize",
+    "name": "성찬",
+    "group": "RIIZE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010913",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-14T17:00:29.042Z",
+    "lastAt": "2026-08-14T17:00:29.042Z",
     "status": "pending"
   }
 ]
