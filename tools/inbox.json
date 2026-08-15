@@ -23463,5 +23463,18 @@
     "firstAt": "2026-08-15T13:45:53.220Z",
     "lastAt": "2026-08-15T13:45:53.220Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:歡喜|up10tion",
+    "name": "歡喜",
+    "group": "up10tion",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-15T18:23:58.639Z",
+    "lastAt": "2026-08-15T18:23:58.639Z",
+    "status": "pending"
   }
 ]
