@@ -1,6 +1,9 @@
 {
-  "total": 1073,
+  "total": 1084,
   "addedRecent": [
+    { "date": "2026-08-15", "text": "DXMON 추가", "count": 5 },
+    { "date": "2026-08-15", "text": "ODD YOUTH 추가", "count": 5 },
+    { "date": "2026-08-15", "text": "장한음 추가", "count": 1 },
     { "date": "2026-08-14", "text": "보이프렌드 추가", "count": 6 },
     { "date": "2026-08-14", "text": "아이즈원 추가", "count": 10 },
     { "date": "2026-08-14", "text": "OMEGA X 추가", "count": 3 },
@@ -22,5 +25,5 @@
     { "date": "2026-08-10", "text": "DRIPPIN 추가", "count": 3 },
     { "date": "2026-08-10", "text": "SHINee 종현 추가", "count": 1 }
   ],
-  "updatedAt": "2026-08-14"
+  "updatedAt": "2026-08-15"
 }
