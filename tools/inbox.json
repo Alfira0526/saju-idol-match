@@ -23567,5 +23567,18 @@
     "firstAt": "2026-08-16T07:40:35.773Z",
     "lastAt": "2026-08-16T07:40:35.773Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김이한|boynextdoor",
+    "name": "김이한",
+    "group": "BOYNEXTDOOR",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20041020",
+    "note": "코즈",
+    "count": 1,
+    "firstAt": "2026-08-16T10:33:30.167Z",
+    "lastAt": "2026-08-16T10:33:30.167Z",
+    "status": "pending"
   }
 ]
