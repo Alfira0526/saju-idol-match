@@ -23580,5 +23580,18 @@
     "firstAt": "2026-08-16T10:33:30.167Z",
     "lastAt": "2026-08-16T10:33:30.167Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박지은|cortis",
+    "name": "박지은",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "030609",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T12:13:39.291Z",
+    "lastAt": "2026-08-16T12:13:39.291Z",
+    "status": "pending"
   }
 ]
