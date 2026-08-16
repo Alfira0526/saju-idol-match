@@ -23489,5 +23489,18 @@
     "firstAt": "2026-08-16T00:47:00.792Z",
     "lastAt": "2026-08-16T00:47:00.792Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ken(켄)|vixx",
+    "name": "KEN(켄)",
+    "group": "VIXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19920406",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T01:50:20.496Z",
+    "lastAt": "2026-08-16T01:50:20.496Z",
+    "status": "pending"
   }
 ]
