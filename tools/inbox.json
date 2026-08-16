@@ -23619,5 +23619,18 @@
     "firstAt": "2026-08-16T13:29:55.484Z",
     "lastAt": "2026-08-16T13:29:55.484Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현빈|올아워즈",
+    "name": "현빈",
+    "group": "올아워즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060712",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T15:44:31.084Z",
+    "lastAt": "2026-08-16T15:44:31.084Z",
+    "status": "pending"
   }
 ]
