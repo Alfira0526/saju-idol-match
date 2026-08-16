@@ -23502,5 +23502,18 @@
     "firstAt": "2026-08-16T01:50:20.496Z",
     "lastAt": "2026-08-16T01:50:20.496Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박진범|휘브",
+    "name": "박진범",
+    "group": "휘브",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020416",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T02:27:40.406Z",
+    "lastAt": "2026-08-16T02:27:40.406Z",
+    "status": "pending"
   }
 ]
