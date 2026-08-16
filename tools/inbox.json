@@ -23606,5 +23606,18 @@
     "firstAt": "2026-08-16T12:52:51.690Z",
     "lastAt": "2026-08-16T12:52:51.690Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:leejooyeon|xdinaryheroes",
+    "name": "Lee Jooyeon",
+    "group": "Xdinary heroes",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20020912",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T13:29:55.484Z",
+    "lastAt": "2026-08-16T13:29:55.484Z",
+    "status": "pending"
   }
 ]
