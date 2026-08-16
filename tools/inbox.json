@@ -4179,10 +4179,10 @@
     "cat": "K-idol",
     "gender": "F",
     "dob": "20050525",
-    "note": "",
-    "count": 6,
+    "note": "더뮤즈",
+    "count": 7,
     "firstAt": "2026-07-22T21:44:38.916Z",
-    "lastAt": "2026-07-28T07:15:45.861Z",
+    "lastAt": "2026-08-16T07:47:13.594Z",
     "status": "pending"
   },
   {
@@ -23553,6 +23553,19 @@
     "count": 1,
     "firstAt": "2026-08-16T06:19:42.294Z",
     "lastAt": "2026-08-16T06:19:42.294Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:현디|cortis",
+    "name": "현디",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070823",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T07:40:35.773Z",
+    "lastAt": "2026-08-16T07:40:35.773Z",
     "status": "pending"
   }
 ]
