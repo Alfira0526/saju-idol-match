@@ -23528,5 +23528,18 @@
     "firstAt": "2026-08-16T03:52:23.635Z",
     "lastAt": "2026-08-16T03:52:23.635Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:필릭스|straykids",
+    "name": "필릭스",
+    "group": "Stray kids",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000915",
+    "note": "Jyp",
+    "count": 1,
+    "firstAt": "2026-08-16T04:30:13.900Z",
+    "lastAt": "2026-08-16T04:30:13.900Z",
+    "status": "pending"
   }
 ]
