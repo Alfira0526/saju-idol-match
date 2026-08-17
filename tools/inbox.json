@@ -23710,5 +23710,18 @@
     "firstAt": "2026-08-17T07:14:17.233Z",
     "lastAt": "2026-08-17T07:14:17.233Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:견효빈|cortis",
+    "name": "견효빈",
+    "group": "Cortis",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20150713",
+    "note": "내가사랑해♡♡♡",
+    "count": 1,
+    "firstAt": "2026-08-17T11:06:00.002Z",
+    "lastAt": "2026-08-17T11:06:00.002Z",
+    "status": "pending"
   }
 ]
