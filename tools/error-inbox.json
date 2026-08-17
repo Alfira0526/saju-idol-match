@@ -1537,5 +1537,23 @@
     "firstAt": "2026-08-17T11:17:31.244Z",
     "lastAt": "2026-08-17T11:17:31.244Z",
     "status": "pending"
+  },
+  {
+    "key": "er:류사랑|izna",
+    "name": "류사랑",
+    "group": "IZNA",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "유사랑"
+    ],
+    "notes": [
+      "공식 활동명이 유사랑입니다ㅠ"
+    ],
+    "count": 1,
+    "firstAt": "2026-08-17T18:19:12.781Z",
+    "lastAt": "2026-08-17T18:19:12.781Z",
+    "status": "pending"
   }
 ]
