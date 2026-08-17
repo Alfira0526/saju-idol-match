@@ -59,8 +59,8 @@
 ---
 
 ## P2 · `기타` 소속사 381명(58.5%) 2단계 세분화
-**상태: ✅ Phase 1 계속 진행(coverage 51%) · Phase 2 스펙 확정(AGENCY_MIN=30 · 상단 버튼
-승격) · 코드 착수는 보류 · 우선순위: 중**
+**상태: ⚠️ Phase 1 진행(coverage 79%) · Phase 2 스펙 확정(AGENCY_MIN=30 · 상단 버튼 승격) ·
+promotable 4개 도달로 **Phase 2 착수 여부 사용자 재문의 대기** · 우선순위: 중**
 
 > **결정:** Phase 1(데이터만) 승인. 기반 구축 완료 — `build.js`가 `subAgency`(선택 필드)
 > 수용·집계(`report.subAgency`), `ops-metrics.js`가 `dataset.subAgency`(assigned/unassigned/
@@ -92,6 +92,15 @@
 > 아직 미충족(promotable 수 정체) — Phase 2 착수는 계속 보류, 데이터만 축적. **다음
 > 트리거:** promotable이 4개 이상으로 늘어나면 그 시점에 다시 사용자에게 Phase 2 착수
 > 여부 문의 권고.
+>
+> **트리거 도달(2026-08-17 주간 리뷰).** 커버리지 70%→**79%**(436→584/741명).
+> `promotable`이 전주 2개 → **4개**로 확대: 스타쉽엔터테인먼트 51 · **큐브엔터테인먼트
+> 30(신규)** · **FNC엔터테인먼트 35(신규)** · MODHAUS 54. 지난 리뷰에서 예고한 "promotable
+> 4개 이상 도달 시 재문의" 조건을 충족 — **팀장 판단:** Phase 2(`index.html`
+> `renderAgencyButtons`에 승격 로직 추가, 공수 0.5~1일) 착수 여부를 지금 사용자에게
+> 다시 묻는다. 착수 결정 시에도 데이터는 계속 Task A가 채우고(변경 없음), 착수 안 함
+> 결정 시엔 Phase 1만 계속 축적. 15~29명 구간에도 추가 후보가 남아있어(웨이크원 25 등)
+> 보류하더라도 promotable은 계속 늘어날 전망.
 
 - **배경.** K-idol 소속사 분포: 기타 **381(58.5%)** · SM 80 · HYBE 73 · JYP 67 · YG 40.
   `기타`는 60개 그룹의 잡탕(tripleS 24, LOONA 12, 워너원 11, THE BOYZ 10, WJSN 10,

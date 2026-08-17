@@ -1,63 +1,68 @@
 {
-  "generatedAt": "2026-08-10",
+  "generatedAt": "2026-08-17",
   "dataset": {
-    "totalIdols": 968,
-    "totalGroups": 177,
-    "statsTotal": 968,
+    "totalIdols": 1137,
+    "totalGroups": 237,
+    "statsTotal": 1137,
     "byCategory": {
       "K-idol": {
-        "count": 894,
+        "count": 1019,
         "visible": true
       },
       "J-idol": {
-        "count": 36,
+        "count": 43,
+        "visible": true
+      },
+      "C-actor": {
+        "count": 37,
         "visible": true
       },
       "US-actor": {
-        "count": 30,
+        "count": 31,
         "visible": true
       },
       "Etc": {
-        "count": 5,
-        "visible": false
-      },
-      "C-actor": {
-        "count": 3,
+        "count": 7,
         "visible": false
       }
     },
     "byAgency": {
       "HYBE": 78,
       "YG": 40,
-      "기타": 622,
-      "SM": 80,
+      "기타": 741,
+      "SM": 86,
       "JYP": 74,
-      "미국 배우": 30,
-      "중국 배우": 3,
+      "미국 배우": 31,
+      "중국 배우": 37,
       "노기자카46": 30,
-      "배우": 5,
-      "LAPONE": 6
+      "배우": 6,
+      "LAPONE": 6,
+      "XG": 7,
+      "페포니뮤직": 1
     },
     "subAgency": {
-      "etcTotal": 622,
-      "assigned": 436,
-      "unassigned": 186,
-      "coveragePct": 70,
+      "etcTotal": 741,
+      "assigned": 584,
+      "unassigned": 157,
+      "coveragePct": 79,
       "byLabel": {
         "MODHAUS": 54,
-        "스타쉽엔터테인먼트": 45,
-        "FNC엔터테인먼트": 25,
-        "울림엔터테인먼트": 24,
-        "웨이크원": 20,
-        "큐브엔터테인먼트": 20,
-        "아이에스티엔터테인먼트": 19,
+        "스타쉽엔터테인먼트": 51,
+        "FNC엔터테인먼트": 35,
+        "큐브엔터테인먼트": 30,
+        "울림엔터테인먼트": 27,
+        "웨이크원": 25,
+        "아이에스티엔터테인먼트": 24,
+        "C9엔터테인먼트": 20,
+        "스윙엔터테인먼트": 20,
         "KQ엔터테인먼트": 18,
         "인코드엔터테인먼트": 18,
-        "C9엔터테인먼트": 15,
-        "WM엔터테인먼트": 12,
+        "WM엔터테인먼트": 17,
+        "Fantagio": 12,
         "젤리피시엔터테인먼트": 12,
-        "스윙엔터테인먼트": 11,
+        "TOP미디어": 11,
         "ONE HUNDRED": 10,
+        "F&F엔터테인먼트": 9,
         "브레이브엔터테인먼트": 8,
         "MNH엔터테인먼트": 8,
         "미스틱스토리": 7,
@@ -67,30 +72,44 @@
         "세븐시즌스": 7,
         "C-JeS엔터테인먼트": 7,
         "이든엔터테인먼트": 7,
+        "더블랙레이블": 7,
         "누아엔터테인먼트": 7,
         "하이업엔터테인먼트": 6,
         "인피니트컴퍼니": 6,
-        "TOP미디어": 6,
+        "YH엔터테인먼트": 6,
+        "그레이트엠엔터테인먼트": 6,
         "신화컴퍼니": 6,
         "TS엔터테인먼트": 6,
-        "Fantagio": 5,
+        "위엔터테인먼트": 6,
+        "ODDWAVE": 6,
+        "플레디스엔터테인먼트": 5,
+        "RBW": 5,
+        "동요엔터테인먼트": 5,
         "피네이션": 5,
-        "더블랙레이블": 5,
+        "아르마다엔터테인먼트": 5,
+        "레드스타트ENM": 5,
+        "그리드엔터테인먼트": 5,
+        "에이치뮤직엔터테인먼트": 5,
         "안테나": 4,
         "브랜뉴뮤직": 4,
         "VLAST": 4,
-        "카카오엔터테인먼트": 4
+        "카카오엔터테인먼트": 4,
+        "257엔터테인먼트": 4,
+        "FM엔터테인먼트": 3,
+        "이에스네이션": 1
       },
       "promotable": [
         "스타쉽엔터테인먼트",
+        "큐브엔터테인먼트",
+        "FNC엔터테인먼트",
         "MODHAUS"
       ]
     },
     "byGender": {
-      "M": 618,
-      "F": 350
+      "M": 739,
+      "F": 398
     },
-    "recentAddsListed": 110
+    "recentAddsListed": 107
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -98,43 +117,43 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 1603,
-    "addPending": 251,
+    "handled": 1791,
+    "addPending": 126,
     "addPendingGroups": {
-      "distinctGroups": 209,
-      "newGroups": 204,
-      "knownGroups": 5,
+      "distinctGroups": 112,
+      "newGroups": 106,
+      "knownGroups": 6,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
     "errorPending": 0,
-    "oldestAddPending": "2026-07-22T18:40:58.510Z",
+    "oldestAddPending": "2026-07-24T04:52:32.386Z",
     "oldestErrorPending": null,
     "topAddPending": [
       {
-        "name": "마야",
-        "group": "오드유스",
-        "count": 4
+        "name": "김세정",
+        "group": "IOI 아이오아이",
+        "count": 2
       },
       {
-        "name": "장한음",
-        "group": "장한음",
-        "count": 4
+        "name": "우연",
+        "group": "WOOAH",
+        "count": 2
       },
       {
-        "name": "현성",
-        "group": "보이프렌드",
-        "count": 4
+        "name": "김재호",
+        "group": "히스토리",
+        "count": 2
       },
       {
-        "name": "최정훈",
-        "group": "잔나비",
-        "count": 4
+        "name": "타나톤",
+        "group": "더윈드",
+        "count": 2
       },
       {
-        "name": "장한음",
-        "group": "ES NATION",
-        "count": 4
+        "name": "김태양",
+        "group": "뉴비트 (NEWBEAT)",
+        "count": 2
       }
     ],
     "topErrorPending": []
@@ -146,18 +165,72 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 47,
+    "flushCount": 32,
     "maxBatch": 2,
     "avgBatch": 1.1,
     "medianGapMin": 50,
-    "lastFlushAt": "2026-08-10T11:30:21+09:00",
-    "timeSinceLastFlushMin": 104,
+    "lastFlushAt": "2026-08-17T12:50:29+09:00",
+    "timeSinceLastFlushMin": 26,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 33,
+    "quietGaps": 26,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
     "note": "cron-delay=gap>20m AND batch≥10(누적). 경보는 최근 48h 반복시만. 큰 gap+작은 batch는 quiet(정상)."
+  },
+  "contentUsage": {
+    "available": true,
+    "metric": "unique-users-per-day (UTC)",
+    "updatedAt": "2026-08-14T19:40:38.190Z",
+    "daysCovered": 1,
+    "windowDays": 7,
+    "recentTotal": 6,
+    "allTotal": 6,
+    "ranking": [
+      {
+        "event": "match",
+        "label": "사주궁합",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      },
+      {
+        "event": "pair",
+        "label": "최애끼리 궁합",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      },
+      {
+        "event": "profile",
+        "label": "최애 프로필",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      },
+      {
+        "event": "tri",
+        "label": "지옥의 삼각관계",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      },
+      {
+        "event": "share",
+        "label": "결과 공유",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      },
+      {
+        "event": "suggest",
+        "label": "제보 열기",
+        "recent7d": 1,
+        "total": 1,
+        "recentSharePct": 16.7
+      }
+    ],
+    "topContent": "사주궁합"
   }
 }
