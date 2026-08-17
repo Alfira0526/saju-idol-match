@@ -23671,5 +23671,18 @@
     "firstAt": "2026-08-17T03:41:01.636Z",
     "lastAt": "2026-08-17T03:41:01.636Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:차민성|cortis",
+    "name": "차민성",
+    "group": "cortis",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20100929",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-17T04:48:46.186Z",
+    "lastAt": "2026-08-17T04:48:46.186Z",
+    "status": "pending"
   }
 ]
