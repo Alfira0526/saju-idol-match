@@ -23632,5 +23632,18 @@
     "firstAt": "2026-08-16T15:44:31.084Z",
     "lastAt": "2026-08-16T15:44:31.084Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:082._.ning|babymonster",
+    "name": "082._.ning",
+    "group": "Babymonster",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20140822",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-16T23:54:50.874Z",
+    "lastAt": "2026-08-16T23:54:50.874Z",
+    "status": "pending"
   }
 ]
