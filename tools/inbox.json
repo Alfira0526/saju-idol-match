@@ -23658,5 +23658,18 @@
     "firstAt": "2026-08-17T00:12:32.725Z",
     "lastAt": "2026-08-17T00:12:32.725Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:東海|superjunior",
+    "name": "東海",
+    "group": "superjunior",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19861015",
+    "note": "ode",
+    "count": 1,
+    "firstAt": "2026-08-17T03:41:01.636Z",
+    "lastAt": "2026-08-17T03:41:01.636Z",
+    "status": "pending"
   }
 ]
