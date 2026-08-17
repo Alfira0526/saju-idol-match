@@ -9678,5 +9678,73 @@
   "gender": "M",
   "dob": "1990-10-05",
   "cat": "C-actor"
+ },
+ {
+  "name": "베일리",
+  "group": "ALLDAY PROJECT",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2004-02-24",
+  "cat": "K-idol",
+  "subAgency": "더블랙레이블"
+ },
+ {
+  "name": "타잔",
+  "group": "ALLDAY PROJECT",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-09-27",
+  "cat": "K-idol",
+  "subAgency": "더블랙레이블"
+ },
+ {
+  "name": "우찬",
+  "group": "ALLDAY PROJECT",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2005-01-20",
+  "cat": "K-idol",
+  "subAgency": "더블랙레이블"
+ },
+ {
+  "name": "호야",
+  "group": "INFINITE",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1991-03-28",
+  "cat": "K-idol",
+  "subAgency": "인피니트컴퍼니"
+ },
+ {
+  "name": "정해인",
+  "group": "배우",
+  "agency": "배우",
+  "gender": "M",
+  "dob": "1988-04-01",
+  "cat": "Etc"
+ },
+ {
+  "name": "하현상",
+  "group": "가수",
+  "agency": "가수",
+  "gender": "M",
+  "dob": "1998-09-14",
+  "cat": "Etc"
+ },
+ {
+  "name": "이무진",
+  "group": "가수",
+  "agency": "가수",
+  "gender": "M",
+  "dob": "2000-12-28",
+  "cat": "Etc"
+ },
+ {
+  "name": "정승환",
+  "group": "가수",
+  "agency": "가수",
+  "gender": "M",
+  "dob": "1996-08-21",
+  "cat": "Etc"
  }
 ]
