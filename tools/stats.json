@@ -1,6 +1,9 @@
 {
-  "total": 1145,
+  "total": 1167,
   "addedRecent": [
+    { "date": "2026-08-18", "text": "아이오아이 추가", "count": 11 },
+    { "date": "2026-08-18", "text": "WOOAH 추가", "count": 5 },
+    { "date": "2026-08-18", "text": "김재중·이서연·김수현 등 추가", "count": 6 },
     { "date": "2026-08-17", "text": "정해인·하현상·이무진·정승환 추가", "count": 4 },
     { "date": "2026-08-17", "text": "인피니트 호야 추가", "count": 1 },
     { "date": "2026-08-17", "text": "ALLDAY PROJECT 멤버 추가", "count": 3 },
@@ -23,5 +26,5 @@
     { "date": "2026-08-13", "text": "POW 추가", "count": 5 },
     { "date": "2026-08-13", "text": "XLOV 추가", "count": 4 }
   ],
-  "updatedAt": "2026-08-17"
+  "updatedAt": "2026-08-18"
 }
