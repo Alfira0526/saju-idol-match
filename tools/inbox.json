@@ -23736,5 +23736,18 @@
     "firstAt": "2026-08-18T01:21:53.518Z",
     "lastAt": "2026-08-18T01:21:53.518Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:narachan|mont",
+    "name": "NARACHAN",
+    "group": "MONT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960923",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-18T05:22:11.903Z",
+    "lastAt": "2026-08-18T05:22:11.903Z",
+    "status": "pending"
   }
 ]
