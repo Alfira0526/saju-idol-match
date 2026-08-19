@@ -23840,5 +23840,18 @@
     "firstAt": "2026-08-19T08:46:59.721Z",
     "lastAt": "2026-08-19T08:46:59.721Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:西山裕貴|nexz",
+    "name": "西山裕貴",
+    "group": "NEXZ",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20070920",
+    "note": "Jype",
+    "count": 1,
+    "firstAt": "2026-08-19T11:11:25.690Z",
+    "lastAt": "2026-08-19T11:11:25.690Z",
+    "status": "pending"
   }
 ]
