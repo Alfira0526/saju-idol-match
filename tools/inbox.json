@@ -23931,5 +23931,18 @@
     "firstAt": "2026-08-19T18:38:11.803Z",
     "lastAt": "2026-08-19T18:38:11.803Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이이즈카소우마|oneoreight",
+    "name": "이이즈카 소우마",
+    "group": "ONE OR EIGHT",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20051110",
+    "note": "팀에서 가장 어린데 실력이 제일 좋아요.",
+    "count": 2,
+    "firstAt": "2026-08-19T19:10:27.172Z",
+    "lastAt": "2026-08-19T19:10:27.694Z",
+    "status": "pending"
   }
 ]
