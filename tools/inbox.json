@@ -23801,5 +23801,18 @@
     "firstAt": "2026-08-18T17:12:42.281Z",
     "lastAt": "2026-08-18T17:12:42.281Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:李|theboyz",
+    "name": "李",
+    "group": "theboyz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-19T03:43:59.935Z",
+    "lastAt": "2026-08-19T03:43:59.935Z",
+    "status": "pending"
   }
 ]
