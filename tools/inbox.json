@@ -23814,5 +23814,18 @@
     "firstAt": "2026-08-19T03:43:59.935Z",
     "lastAt": "2026-08-19T03:43:59.935Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:齊藤なぎさ|本人",
+    "name": "齊藤なぎさ",
+    "group": "本人",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "20030706",
+    "note": "元=LOVE",
+    "count": 1,
+    "firstAt": "2026-08-19T04:46:17.505Z",
+    "lastAt": "2026-08-19T04:46:17.505Z",
+    "status": "pending"
   }
 ]
