@@ -475,7 +475,11 @@
   .mode-card .mc-txt{display:flex; flex-direction:column; gap:2px; min-width:0;}
   .mode-card .mc-txt b{font-size:15px; font-weight:800; white-space:nowrap;}
   .mode-card .mc-txt i{font-size:11.5px; font-style:normal; color:var(--ink-dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-  @media(min-width:560px){ .mode-grid{grid-template-columns:repeat(4,1fr);} .mode-card{flex-direction:column; text-align:center; align-items:center; gap:7px; padding:16px 10px;} .mode-card .mc-txt{align-items:center;} }
+  /* 케이팝 오타쿠 사주 — 신규 하이라이트 카드 */
+  .mode-otaku{grid-column:1/-1; background:linear-gradient(135deg,#8b5cf61f,#43e0f01a); border-color:#8b5cf655;}
+  .mode-otaku:hover{background:linear-gradient(135deg,#8b5cf62e,#43e0f026); border-color:#8b5cf699;}
+  .mode-otaku.active{background:linear-gradient(135deg,#8b5cf633,#43e0f02a); border-color:#a98bffcc; box-shadow:0 0 22px -6px #8b5cf680;}
+  @media(min-width:560px){ .mode-grid{grid-template-columns:repeat(5,1fr);} .mode-card{flex-direction:column; text-align:center; align-items:center; gap:7px; padding:16px 10px;} .mode-card .mc-txt{align-items:center;} .mode-otaku{grid-column:auto;} }
   .pair-entry{width:100%; margin:12px 0 0; padding:12px; border-radius:12px; cursor:pointer;
     background:#ff4d9714; border:1px solid #ff4d9733; color:var(--ink); font-family:'Jua','Noto Sans KR',sans-serif; font-size:14.5px;}
   .pair-entry:hover{background:#ff4d9722; border-color:#ff4d9755;}
@@ -549,6 +553,9 @@
     </button>
     <button class="mode-card" type="button" onclick="openTri()">
       <span class="mc-emo">🔥</span><span class="mc-txt"><b data-i18n="modeTri">지옥의 삼각관계</b><i data-i18n="modeTriSub">나 + 최애 2명</i></span>
+    </button>
+    <button class="mode-card mode-otaku" type="button" onclick="openOtaku()">
+      <span class="mc-emo">🎧</span><span class="mc-txt"><b data-i18n="modeOtaku">케이팝 오타쿠 사주</b><i data-i18n="modeOtakuSub">나는 어떤 덕후?</i></span>
     </button>
   </div>
 
@@ -813,6 +820,23 @@
   </div>
 </div>
 
+<div class="modal-overlay hidden" id="otakuModal" onclick="if(event.target===this)closeOtaku()">
+  <div class="modal da-modal">
+    <button class="modal-x" onclick="closeOtaku()" aria-label="닫기">✕</button>
+    <h3 class="modal-title" data-i18n="otaTitle">케이팝 오타쿠 사주</h3>
+    <p class="modal-intro" data-i18n="otaIntro">내 생년월일로 '나는 어떤 덕후인가'를 사주로 풀어봐요. 체질·취향·방식·관계성·탈덕까지.</p>
+    <div class="tri-me">
+      <label for="otaMeDate" data-i18n="otaMeLabel">내 생년월일 (8자리) · 태어난 시각(선택)</label>
+      <div class="tri-me-row">
+        <input type="tel" id="otaMeDate" inputmode="numeric" pattern="[0-9]*" maxlength="8" placeholder="예: 19950719" data-i18n-ph="bdatePh" autocomplete="off">
+        <select id="otaMeHour"></select>
+      </div>
+    </div>
+    <button class="m-submit" onclick="runOtaku()" data-i18n="otaGo">내 덕질 성향 분석</button>
+    <div id="otakuResult"></div>
+  </div>
+</div>
+
 <div class="modal-overlay hidden" id="detailModal" onclick="if(event.target===this)closeDetail()">
   <div class="modal da-modal">
     <button class="modal-x" onclick="closeDetail()" aria-label="닫기">✕</button>
@@ -955,6 +979,12 @@ const TR = {
   modeProfileSub: { ko: "아이돌 1명 사주", en: "One idol's saju", ja: "1人の四柱", zh: "单人八字" },
   modeTri: { ko: "지옥의 삼각관계", en: "Love Triangle", ja: "三角関係", zh: "三角关系" },
   modeTriSub: { ko: "나 + 최애 2명", en: "You + 2 biases", ja: "私 + 推し2人", zh: "我 + 两位本命" },
+  modeOtaku: { ko: "케이팝 오타쿠 사주", en: "K-pop Otaku Saju", ja: "K-POPオタク四柱", zh: "K-pop宅八字" },
+  modeOtakuSub: { ko: "나는 어떤 덕후?", en: "What kind of stan?", ja: "どんなオタク?", zh: "你是哪种饭?" },
+  otaTitle: { ko: "케이팝 오타쿠 사주", en: "K-pop Otaku Saju", ja: "K-POPオタク四柱", zh: "K-pop宅八字" },
+  otaIntro: { ko: "내 생년월일로 '나는 어떤 덕후인가'를 사주로 풀어봐요. 체질·취향·방식·관계성·탈덕까지.", en: "Read what kind of stan you are from your saju — constitution, taste, style, relationship, and how you leave.", ja: "自分の生年月日で『どんなオタクか』を四柱で読み解きます。体質・好み・スタイル・関係性・降り方まで。", zh: "用你的生日以八字解读『你是哪种饭』——体质、口味、方式、关系性到脱饭。" },
+  otaMeLabel: { ko: "내 생년월일 (8자리) · 태어난 시각(선택)", en: "My birth date (8 digits) · time (optional)", ja: "自分の生年月日(8桁) · 時刻(任意)", zh: "我的生日(8位) · 出生时刻(可选)" },
+  otaGo: { ko: "내 덕질 성향 분석", en: "Analyze my stan style", ja: "私のオタク傾向を分析", zh: "分析我的追星风格" },
   adLabel: { ko: "광고", en: "Advertisement", ja: "広告", zh: "广告" },
   dscAd: { ko: "이 페이지는 광고를 포함할 수 있으며, 광고 제공사가 쿠키 등으로 맞춤 광고를 표시할 수 있습니다.", en: "This page may show ads; ad providers may use cookies to personalize them.", ja: "本ページには広告が表示される場合があり、広告提供者がCookieなどでパーソナライズすることがあります。", zh: "本页面可能包含广告，广告服务商可能使用Cookie进行个性化投放。" },
   dscUsage: { ko: "어떤 메뉴가 인기 있는지 파악하기 위해 익명 사용 통계(기능 이름만)를 수집할 수 있습니다. 생년월일 등 개인정보는 전송하지 않습니다.", en: "We may collect anonymous usage stats (only which menu was opened) to see what's popular. No personal data such as your birthday is ever sent.", ja: "どのメニューが人気かを把握するため、匿名の利用統計（開いた機能名のみ）を収集する場合があります。生年月日などの個人情報は送信しません。", zh: "为了解哪些功能受欢迎，我们可能收集匿名使用统计（仅记录打开了哪个菜单）。绝不发送生日等个人信息。" },
@@ -1183,6 +1213,7 @@ function applyLang(){
   try{ if(window._saju && window._saju.pair && !document.getElementById('pairModal').classList.contains('hidden')) runPair(); }catch(e){}
   try{ const pm=document.getElementById('profileModal'); if(pm && !pm.classList.contains('hidden') && _profileRendered) runProfile(); }catch(e){}
   try{ const tm=document.getElementById('triModal'); if(tm && !tm.classList.contains('hidden') && _triRendered) runTri(); }catch(e){}
+  try{ const om=document.getElementById('otakuModal'); if(om && !om.classList.contains('hidden') && _otaRendered) runOtaku(); }catch(e){}
 }
 function setLang(lang){
   localStorage.setItem('lang', lang);
@@ -1419,6 +1450,16 @@ const DYN = {
   pfAxStability:{ko:"안정",en:"Stability",ja:"安定",zh:"稳定"},
   pfAxWarmth:{ko:"친화",en:"Warmth",ja:"親和",zh:"亲和"},
   triMe:{ko:"나",en:"Me",ja:"私",zh:"我"},
+  // 케이팝 오타쿠 사주
+  otaMe:{ko:"내 덕질 사주",en:"My Stan Saju",ja:"私のオタク四柱",zh:"我的追星八字"},
+  otaMyStan:{ko:"케이팝 오타쿠",en:"K-pop otaku",ja:"K-POPオタク",zh:"K-pop宅"},
+  otaBodyH:{ko:"🧬 덕질 체질",en:"🧬 Stan constitution",ja:"🧬 オタク体質",zh:"🧬 追星体质"},
+  otaTasteH:{ko:"💘 최애 취향",en:"💘 Bias taste",ja:"💘 推しの好み",zh:"💘 本命口味"},
+  otaWayH:{ko:"🎯 덕질 방식",en:"🎯 Stan style",ja:"🎯 オタクのやり方",zh:"🎯 追星方式"},
+  otaRelH:{ko:"🔗 최애와의 관계성",en:"🔗 Bond with your bias",ja:"🔗 推しとの関係性",zh:"🔗 与本命的关系"},
+  otaQuitH:{ko:"🚪 탈덕 포인트",en:"🚪 How you leave",ja:"🚪 降りるポイント",zh:"🚪 脱饭触发点"},
+  otaNeedBirth:{ko:"내 생년월일을 8자리 숫자로 먼저 입력해 주세요. (예: 19950719)",en:"Enter your birth date as 8 digits first (e.g. 19950719).",ja:"まず生年月日を8桁の数字で入力してください(例: 19950719)。",zh:"请先输入8位数字生日（例：19950719）。"},
+  otaCardSub:{ko:"케이팝 오타쿠 사주",en:"K-pop Otaku Saju",ja:"K-POPオタク四柱",zh:"K-pop宅八字"},
   triNeedCalc:{ko:"먼저 내 생년월일로 매칭을 돌려주세요. 나와의 궁합이 필요해요.",en:"Run your own match first — we need your compatibility.",ja:"先に自分の生年月日でマッチングしてください。私との相性が必要です。",zh:"请先用你的生日进行匹配，需要你的缘分数据。"},
   triNeedBirth:{ko:"내 생년월일을 8자리 숫자로 입력해 주세요. (예: 19950719)",en:"Enter your birth date as 8 digits (e.g. 19950719).",ja:"生年月日を8桁の数字で入力してください(例: 19950719)。",zh:"请输入8位数字生日（例：19950719）。"},
   triV1:{ko:"🌈 삼위일체 케미",en:"🌈 Trinity chemistry",ja:"🌈 三位一体のケミ",zh:"🌈 三位一体的默契"},
@@ -1876,6 +1917,103 @@ function runTri(){
   track('tri');
   out.innerHTML = buildTri(A, B) + shareRowHTML('shareTri','triShareHint') + adUnitHTML();
   _triRendered=true;
+  pushAdsIn(out);
+}
+
+// ── 🎧 케이팝 오타쿠 사주 (내 사주로 보는 덕질 성향) ──
+// 전부 이미 계산 중인 값으로 구성: 일간 오행 + 신강/신약 + 식상(내가 애정 쏟는) 오행.
+const OTA_BODY = {
+  "木":{name:{ko:"🌱 새싹 열정 덕후",en:"🌱 Sprouting Passion Stan",ja:"🌱 新芽の情熱オタク",zh:"🌱 新芽热情饭"},line:{ko:"관심이 확 뻗어나가는 성장형. 새 그룹·신인에 마음이 금방 열리고, 최애가 커가는 서사에 제일 크게 반응해요.",en:"A growth type whose interest shoots outward. You open up fast to new groups and rookies, and react hardest to your bias's growth arc.",ja:"関心がぐんと伸びる成長型。新グループ・新人にすぐ心が開き、推しの成長物語に一番大きく反応します。",zh:"兴趣不断向外延展的成长型。你对新团、新人很快敞开心扉，对本命的成长故事反应最强烈。"}},
+  "火":{name:{ko:"🔥 화력 만렙 덕후",en:"🔥 Max-Firepower Stan",ja:"🔥 火力マックスオタク",zh:"🔥 火力满级饭"},line:{ko:"감정이 즉시 타오르는 불꽃형. 좋으면 바로 표현하고, 스밍·투표·총공 최전선에서 화력을 뿜어요.",en:"A flame type whose feelings ignite instantly. You express love right away and blaze at the front line of streaming, voting, and mass campaigns.",ja:"感情が即座に燃え上がる炎型。好きならすぐ表現し、ストリーミング・投票・総攻の最前線で火力を放ちます。",zh:"情感瞬间燃起的火焰型。喜欢就立刻表达，在打榜、投票、总攻最前线释放火力。"}},
+  "土":{name:{ko:"⛰️ 든든한 존버 덕후",en:"⛰️ Steadfast Long-Hauler",ja:"⛰️ 頼れる存バオタク",zh:"⛰️ 稳如泰山守护饭"},line:{ko:"한번 정착하면 진득하게 가는 기둥형. 팬덤의 중심을 잡고, 오래오래 곁을 지켜요.",en:"A pillar type who settles in and stays. You anchor the fandom's center and stick around for the long haul.",ja:"一度定着すると粘り強く続く柱型。ファンダムの中心を支え、長く傍を守ります。",zh:"一旦入坑就长情的顶梁柱型。稳住粉圈的中心，长长久久地守护。"}},
+  "金":{name:{ko:"💎 냉철한 분석 덕후",en:"💎 Sharp Analyst Stan",ja:"💎 冷静な分析オタク",zh:"💎 冷静分析饭"},line:{ko:"완성도와 팩트로 파는 프로형. 자컨·직캠을 정독하고, 최애의 성장·기록을 예리하게 짚어요.",en:"A pro type who stans by quality and facts. You pore over self-content and fancams, and pinpoint your bias's growth and records.",ja:"完成度とファクトで推すプロ型。自コン・直カメを精読し、推しの成長・記録を鋭く突きます。",zh:"以完成度与事实入坑的专业型。精读自制内容与直拍，敏锐点出本命的成长与记录。"}},
+  "水":{name:{ko:"🌊 잔잔한 롱런 덕후",en:"🌊 Quiet Long-Run Stan",ja:"🌊 静かなロングランオタク",zh:"🌊 细水长流饭"},line:{ko:"조용히 스며들어 오래가는 물밑형. 티는 안 나도 촉이 좋고, 흐름을 읽으며 은근하게 화력을 보태요.",en:"An under-the-surface type who quietly seeps in and lasts. Low-key but sharp-instinct, you read the flow and add firepower subtly.",ja:"静かに染み込み長く続く水面下型。目立たなくても勘が良く、流れを読んでさりげなく火力を足します。",zh:"悄然渗透、细水长流的水下型。不张扬却直觉敏锐，读懂风向、含蓄地添火力。"}}
+};
+const OTA_BODYMOD = {
+  strong:{ko:" 게다가 기운이 강해 앞장서서 판을 이끄는 주도형이에요.",en:" On top of that, your energy runs strong — a take-charge type who leads from the front.",ja:" しかも気が強く、先頭に立って場を率いる主導型です。",zh:" 而且你气势强，是带头引领局面的主导型。"},
+  mid:{ko:" 기운이 균형 잡혀 화력과 여유를 오가는 밸런스형이에요.",en:" Your energy is balanced — a well-rounded type who toggles between firepower and ease.",ja:" 気がバランス良く、火力と余裕を行き来するバランス型です。",zh:" 你气势均衡，是在火力与从容间切换的平衡型。"},
+  weak:{ko:" 기운이 여려 요란하지 않게, 뒤에서 꾸준히 오래 가는 편이에요.",en:" Your energy is gentle — not flashy, you keep going steadily from behind.",ja:" 気が穏やかで派手さはなく、後ろで着実に長く続くタイプです。",zh:" 你气势柔和，不张扬，在幕后稳稳地长久坚持。"}
+};
+// 취향: 식상(내가 생하는) 오행 = 내가 애정을 쏟는 대상의 기질
+const OTA_TASTE = {
+  "火":{ko:"밝고 화려한 무대 장악형에 약해요. 끼가 폭발하는 센터·비주얼에 눈이 돌아가요.",en:"You're weak for bright, dazzling stage-commanders. Charisma-bursting centers and visuals turn your head.",ja:"明るく華やかな舞台掌握型に弱いです。끼が爆発するセンター・ビジュアルに目を奪われます。",zh:"你对明亮华丽、掌控舞台的类型没有抵抗力。魅力四射的中心和门面最抓你眼球。"},
+  "土":{ko:"듬직하고 다정한 곰 같은 최애에 끌려요. 안정감 주는 든든한 사람에게 마음이 가요.",en:"You're drawn to steady, warm, bear-like biases. Your heart goes to dependable people who feel safe.",ja:"どっしり優しいクマのような推しに惹かれます。安定感のある頼れる人に心が向きます。",zh:"你会被稳重温柔、像熊一样的本命吸引。心动于给人安全感、靠得住的人。"},
+  "金":{ko:"시크하고 완벽한 프로페셔널에 반해요. 칼군무·자기관리 철저한 갓벽美가 취향.",en:"You fall for chic, flawless professionals. Razor-sharp choreo and airtight self-management are your type.",ja:"シックで完璧なプロに惚れます。キレキレの群舞・徹底した自己管理の完璧美が好み。",zh:"你会为高冷完美的专业型倾心。刀群舞、自律到极致的神级完美是你的菜。"},
+  "水":{ko:"감성과 분위기, 신비로운 아우라에 빠져요. 눈빛·목소리로 서사를 주는 사람이 취향.",en:"You sink into emotion, mood, and a mysterious aura. People who tell a story with their eyes and voice are your type.",ja:"感性と雰囲気、神秘的なオーラにハマります。眼差し・声で物語を紡ぐ人が好み。",zh:"你沉迷于感性、氛围与神秘气场。用眼神和声音讲故事的人是你的菜。"},
+  "木":{ko:"순수하고 성장하는 새싹형을 응원하게 돼요. 서툴어도 반짝이는 원석에 마음이 가요.",en:"You end up rooting for pure, growing sprout types. Even if raw, a shining diamond-in-the-rough wins your heart.",ja:"純粋で成長する新芽型を応援したくなります。不器用でも輝く原石に心が向きます。",zh:"你会忍不住为纯粹、成长中的新芽型应援。哪怕青涩，闪光的璞玉也能打动你。"}
+};
+const OTA_WAY = {
+  "木":{ko:"🌱 영업·확장형 — 짤·트윗·영업글로 최애를 퍼뜨리고 새 팬을 데려와요.",en:"🌱 Recruiter type — you spread your bias with memes, tweets, and pitch posts, pulling in new fans.",ja:"🌱 布教・拡張型 — 画像・ツイート・布教文で推しを広め、新規を連れてきます。",zh:"🌱 安利扩张型 — 用表情包、推文、安利贴传播本命，拉来新粉。"},
+  "火":{ko:"🔥 화력 몰빵형 — 스밍·투표·총공에 실시간으로 참전, 성적을 끌어올려요.",en:"🔥 All-in firepower — you jump into streaming, voting, and campaigns in real time to push the numbers.",ja:"🔥 火力全ツッパ型 — ストリーミング・投票・総攻にリアルタイム参戦、成績を押し上げます。",zh:"🔥 火力全开型 — 实时参与打榜、投票、总攻，把成绩往上拉。"},
+  "土":{ko:"⛰️ 컬렉션·존버형 — 앨범·포카·굿즈를 차곡차곡, 소장과 서포트로 오래 함께해요.",en:"⛰️ Collector long-hauler — albums, photocards, goods stacked up; you stay through owning and supporting.",ja:"⛰️ コレクション・存バ型 — アルバム・トレカ・グッズをコツコツ、所蔵と支援で長く共にします。",zh:"⛰️ 收藏守护型 — 专辑、小卡、周边一点点囤，用收藏与支持长久相伴。"},
+  "金":{ko:"💎 아카이빙·분석형 — 직캠 편집·기록·타임라인 정리, 데이터로 덕질해요.",en:"💎 Archivist-analyst — fancam edits, records, timeline curation; you stan with data.",ja:"💎 アーカイブ・分析型 — 直カメ編集・記録・タイムライン整理、データで推します。",zh:"💎 归档分析型 — 直拍剪辑、记录、时间线整理，用数据追星。"},
+  "水":{ko:"🌊 정보·눈팅형 — 조용히 정보 모으고 큐레이션, 물밑에서 촘촘히 서포트해요.",en:"🌊 Info-lurker — quietly gathering and curating info, supporting densely under the surface.",ja:"🌊 情報・ROM型 — 静かに情報を集めキュレーション、水面下で細かく支えます。",zh:"🌊 情报潜水型 — 安静收集与整理情报，在水面下细密地支持。"}
+};
+const OTA_REL = {
+  strong:{ko:"밀착·직진형 — '내 최애는 내가 지킨다'. 능동적으로 개입하고 챙기는 보호자 포지션.",en:"Close & direct — 'I protect my bias.' You actively step in and look after them, a guardian position.",ja:"密着・直進型 — 「私の推しは私が守る」。能動的に関わり世話する保護者ポジション。",zh:"贴近直球型 — “我的本命我来守护”。主动介入、悉心照料的守护者定位。"},
+  mid:{ko:"균형·존중형 — 적당한 거리에서 건강하게. 최애의 삶도 내 삶도 지키는 밸런스.",en:"Balanced & respectful — healthy at a right distance. You protect your bias's life and your own.",ja:"バランス・尊重型 — 適度な距離で健全に。推しの人生も自分の人生も守るバランス。",zh:"平衡尊重型 — 在适当距离健康追星。既守护本命的生活，也守护自己的。"},
+  weak:{ko:"관망·힐링형 — 멀리서 지켜보는 것만으로 충분. 조용한 애정에서 위안을 얻어요.",en:"Watch-from-afar healer — just watching from a distance is enough. You draw comfort from quiet affection.",ja:"見守り・癒し型 — 遠くから見守るだけで十分。静かな愛情から慰めを得ます。",zh:"远观疗愈型 — 远远守望便已足够。从安静的爱意中获得慰藉。"}
+};
+const OTA_QUIT = {
+  "木":{ko:"환승형 — 새 최애가 생기면 자연스레 마음이 옮겨가요. 미련은 길지 않아요.",en:"Transfer type — when a new bias appears, your heart naturally moves. You don't linger long.",ja:"乗り換え型 — 新しい推しができると自然に心が移ります。未練は長くありません。",zh:"转移型 — 出现新本命时心思会自然转移。不会留恋太久。"},
+  "火":{ko:"번아웃형 — 화르륵 타오른 만큼 확 식을 수 있어요. 과몰입 뒤 급소진 주의.",en:"Burnout type — as fiercely as you burned, you can cool off fast. Watch for crash after over-immersion.",ja:"バーンアウト型 — 激しく燃えた分、一気に冷めることも。過集中後の急消耗に注意。",zh:"倦怠型 — 烧得多猛，也可能凉得多快。过度投入后小心骤然耗尽。"},
+  "土":{ko:"존버형 — 여간해선 안 변해요. 탈덕이 세상에서 제일 어려운 타입, 의리파.",en:"Never-leaves type — you rarely change. Quitting is the hardest thing in the world for you; the loyal one.",ja:"存バ型 — 滅多に変わりません。降りるのが世界一難しいタイプ、義理堅い派。",zh:"死守型 — 极难改变。脱饭对你是世上最难的事，重情义派。"},
+  "金":{ko:"손절형 — 신뢰·팩트가 어긋나면 냉정하게 정리. 실망하면 뒤도 안 돌아봐요.",en:"Cut-loss type — if trust or facts break, you cut cleanly. Once disappointed, you don't look back.",ja:"損切り型 — 信頼・ファクトが崩れれば冷静に整理。失望したら振り返りません。",zh:"止损型 — 信任或事实崩塌就冷静清算。一旦失望，绝不回头。"},
+  "水":{ko:"자연소멸형 — 티 안 나게 스르륵. 어느새 관심이 다른 데로 흘러가 있어요.",en:"Fade-away type — quietly, without a trace. Before you know it, your interest has drifted elsewhere.",ja:"自然消滅型 — 目立たずスルッと。いつの間にか関心が別へ流れています。",zh:"自然消散型 — 无声无息地淡出。不知不觉间兴趣已流向别处。"}
+};
+function _otaChart(y,m,d,hourVal){
+  const dp=dayPillar(y,m,d);
+  const uSI=dp.stemIdx, elem=ELEM_NAMES[STEM_ELEM_IDX[uSI]];
+  const yp=yearPillar(y,m,d), mp=monthPillar(y,m,d,yp.stemIdx);
+  const pillars=[
+    {stem:yp.stemIdx,branch:yp.branchIdx,weight:1},
+    {stem:mp.stemIdx,branch:mp.branchIdx,weight:2},
+    {stem:uSI,branch:dp.branchIdx,weight:1,isDay:true}
+  ];
+  if(hourVal!==""){ const hp=hourPillar(uSI,Number(hourVal)); pillars.push({stem:hp.stemIdx,branch:hp.branchIdx,weight:1}); }
+  const need=bodyStrength(pillars, elem);
+  const body = need>0.06?'weak':(need<-0.06?'strong':'mid');
+  const sikElem = GEN_ORDER[(GEN_ORDER.indexOf(elem)+1)%5]; // 식상(내가 생하는 오행)
+  return {uSI, elem, dayHanja:STEMS[uSI]+BRANCHES[dp.branchIdx], body, sikElem};
+}
+function buildOtaku(c){
+  const sec=(h,body)=>`<div class="da-section ota-sec"><h4>${h}</h4><p>${esc(body)}</p></div>`;
+  const bodyLine = dl(OTA_BODY[c.elem].line) + dl(OTA_BODYMOD[c.body]);
+  return `
+    <div class="da-head">
+      <div class="da-h-main">
+        <div class="da-h-name">${dt('otaMe')}<span class="da-h-grp">${dt('otaMyStan')}</span></div>
+        <div class="da-h-pill"><span class="dot" style="background:${ELEM_COLOR[c.elem]}"></span>${dt('dmLabel')} ${STEMS[c.uSI]} · ${c.elem} · ${dt('body'+(c.body==='strong'?'Strong':c.body==='weak'?'Weak':'Mid'))}</div>
+      </div>
+      <div class="pf-badge" style="background:${ELEM_COLOR[c.elem]};box-shadow:0 0 24px -2px ${ELEM_HEX[c.elem]}aa">${STEMS[c.uSI]}</div>
+    </div>
+    <div class="da-band">${esc(dl(OTA_BODY[c.elem].name))}</div>
+    ${sec(dt('otaBodyH'), bodyLine)}
+    ${sec(dt('otaTasteH'), dl(OTA_TASTE[c.sikElem]))}
+    ${sec(dt('otaWayH'), dl(OTA_WAY[c.elem]))}
+    ${sec(dt('otaRelH'), dl(OTA_REL[c.body]))}
+    ${sec(dt('otaQuitH'), dl(OTA_QUIT[c.elem]))}
+    <p class="da-disc">${dt('daDisc')}</p>`;
+}
+let _otaRendered=false, _otaChartCache=null;
+function openOtaku(){ _otaRendered=false;
+  const md=document.getElementById('otaMeDate'), mh=document.getElementById('otaMeHour'), bh=document.getElementById('bhour');
+  if(md && !md.value){ const bd=document.getElementById('bdate'); if(bd && bd.value) md.value=bd.value; }
+  if(mh && bh){ mh.innerHTML=bh.innerHTML; mh.value=bh.value; }
+  document.getElementById('otakuResult').innerHTML='';
+  document.getElementById('otakuModal').classList.remove('hidden'); }
+function closeOtaku(){ _otaRendered=false; document.getElementById('otakuModal').classList.add('hidden'); }
+function runOtaku(){
+  const out=document.getElementById('otakuResult');
+  const raw=(document.getElementById('otaMeDate').value||'').replace(/\D/g,'');
+  if(raw.length!==8){ out.innerHTML=`<p class="pair-hint">${dt('otaNeedBirth')}</p>`; _otaRendered=false; return; }
+  const y=+raw.slice(0,4), m=+raw.slice(4,6), d=+raw.slice(6,8);
+  if(y<1920||y>2026||m<1||m>12||d<1||d>31){ out.innerHTML=`<p class="pair-hint">${dt('otaNeedBirth')}</p>`; _otaRendered=false; return; }
+  const hv=(document.getElementById('otaMeHour')||{}).value || "";
+  _otaChartCache=_otaChart(y,m,d,hv);
+  track('otaku');
+  out.innerHTML = buildOtaku(_otaChartCache) + shareRowHTML('shareOtaku','otaShareHint') + adUnitHTML();
+  _otaRendered=true;
   pushAdsIn(out);
 }
 
@@ -4019,6 +4157,42 @@ function drawProfileCard(A){
 function shareProfile(){
   const A=findIdol(document.getElementById('profileInput').value.trim()); if(!A) return;
   shareCanvasFile(drawProfileCard(A), `최애프로필_${A.name}.png`, document.getElementById('profileShareHint'));
+}
+// 케이팝 오타쿠 사주 공유 카드
+function drawOtakuCard(c){
+  const W=1080,H=1350,M=90; const canvas=document.createElement('canvas'); canvas.width=W; canvas.height=H;
+  const ctx=canvas.getContext('2d'); cardBg(ctx,W,H); cardHead(ctx,W,M,dt('otaCardSub'));
+  const ink="#f3edff", dim="#ab9fce", eh=ELEM_HEX[c.elem];
+  const cut=s=>{ s=String(s); return s.length>54 ? s.slice(0,53)+'…' : s; };
+  // 오행 배지
+  const cx=W/2, cy=372, rad=62;
+  ctx.beginPath(); ctx.arc(cx,cy,rad,0,Math.PI*2); ctx.fillStyle=eh; ctx.fill();
+  ctx.fillStyle="#170e2e"; ctx.font="800 60px 'Nanum Myeongjo',serif"; ctx.textAlign="center"; ctx.textBaseline="middle";
+  ctx.fillText(STEMS[c.uSI], cx, cy+4); ctx.textBaseline="alphabetic";
+  // 체질 이름(헤드라인)
+  ctx.fillStyle=eh; ctx.font="52px 'Jua','Noto Sans KR',sans-serif";
+  ctx.fillText(dl(OTA_BODY[c.elem].name), W/2, 500);
+  ctx.fillStyle=dim; ctx.font="400 28px 'Noto Sans KR',sans-serif";
+  ctx.fillText(`${dt('dmLabel')} ${STEMS[c.uSI]} · ${c.elem} · ${dt('body'+(c.body==='strong'?'Strong':c.body==='weak'?'Weak':'Mid'))}`, W/2, 546);
+  const rows=[
+    [dt('otaBodyH'), dl(OTA_BODY[c.elem].line)],
+    [dt('otaTasteH'), dl(OTA_TASTE[c.sikElem])],
+    [dt('otaWayH'), dl(OTA_WAY[c.elem])],
+    [dt('otaRelH'), dl(OTA_REL[c.body])],
+    [dt('otaQuitH'), dl(OTA_QUIT[c.elem])]
+  ];
+  let y=616;
+  rows.forEach(([label,body])=>{
+    ctx.textAlign="center"; ctx.fillStyle=eh; ctx.font="700 29px 'Jua','Noto Sans KR',sans-serif";
+    ctx.fillText(label, W/2, y);
+    ctx.fillStyle=ink; ctx.font="400 26px 'Noto Sans KR',sans-serif";
+    y = wrapText(ctx, cut(body), W/2, y+40, W-2*M-20, 35) + 50;
+  });
+  ctx.textAlign="left"; cardFoot(ctx,W,M,H); return canvas;
+}
+function shareOtaku(){
+  if(!_otaChartCache) return;
+  shareCanvasFile(drawOtakuCard(_otaChartCache), `케이팝오타쿠사주.png`, document.getElementById('otaShareHint'));
 }
 
 // ================= 제보 & 업데이트 공지 =================

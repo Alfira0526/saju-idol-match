@@ -24,7 +24,7 @@ const COOLDOWN_SECONDS = 60 * 60; // 1시간
 const ALLOW_ORIGIN = "*";
 const CATS = ["K-idol", "J-idol", "C-actor", "US-actor", "Etc"];
 // 익명 사용 비콘 허용 이벤트(콘텐츠 항목). 이 목록 밖은 무시.
-const USAGE_EVENTS = ["match", "pair", "profile", "tri", "share", "suggest"];
+const USAGE_EVENTS = ["match", "pair", "profile", "tri", "otaku", "share", "suggest"];
 const USAGE_TTL_SECONDS = 60 * 60 * 40; // 40h: cron이 오늘/어제 버킷을 확정 집계할 때까지 생존
 const dayStr = (d) => d.toISOString().slice(0, 10); // YYYY-MM-DD (UTC)
 

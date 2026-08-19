@@ -168,7 +168,7 @@ function flushCadence(days = 7) {
 // 파일이 없거나 데이터가 없으면 available:false (측정 수단 미도입/무데이터).
 const USAGE_LABELS = {
   match: '사주궁합', pair: '최애끼리 궁합', profile: '최애 프로필',
-  tri: '지옥의 삼각관계', share: '결과 공유', suggest: '제보 열기',
+  tri: '지옥의 삼각관계', otaku: '케이팝 오타쿠 사주', share: '결과 공유', suggest: '제보 열기',
 };
 function contentUsage(genDate) {
   if (!usage || typeof usage !== 'object') {
