@@ -23905,5 +23905,18 @@
     "firstAt": "2026-08-19T16:23:57.007Z",
     "lastAt": "2026-08-19T16:23:57.007Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:봄|앳하트",
+    "name": "봄",
+    "group": "앳하트",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20071126",
+    "note": "타이탄",
+    "count": 1,
+    "firstAt": "2026-08-19T16:53:30.983Z",
+    "lastAt": "2026-08-19T16:53:30.983Z",
+    "status": "pending"
   }
 ]
