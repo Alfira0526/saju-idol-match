@@ -23879,5 +23879,18 @@
     "firstAt": "2026-08-19T15:04:45.932Z",
     "lastAt": "2026-08-19T15:04:45.932Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:사키|tuide",
+    "name": "사키",
+    "group": "TUIDE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20101009",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-19T16:17:33.547Z",
+    "lastAt": "2026-08-19T16:17:33.547Z",
+    "status": "pending"
   }
 ]
