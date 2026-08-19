@@ -23827,5 +23827,18 @@
     "firstAt": "2026-08-19T04:46:17.505Z",
     "lastAt": "2026-08-19T04:46:17.505Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:요시키|ko1keyz",
+    "name": "요시키",
+    "group": "Ko1keyz",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20040618",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-19T08:46:59.721Z",
+    "lastAt": "2026-08-19T08:46:59.721Z",
+    "status": "pending"
   }
 ]
