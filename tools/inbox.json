@@ -23853,5 +23853,18 @@
     "firstAt": "2026-08-19T11:11:25.690Z",
     "lastAt": "2026-08-19T11:11:25.690Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:agnes|jo1",
+    "name": "AGNES",
+    "group": "JO1",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20200304",
+    "note": "LAPONE",
+    "count": 1,
+    "firstAt": "2026-08-19T13:41:17.981Z",
+    "lastAt": "2026-08-19T13:41:17.981Z",
+    "status": "pending"
   }
 ]
