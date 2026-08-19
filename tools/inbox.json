@@ -23892,5 +23892,18 @@
     "firstAt": "2026-08-19T16:17:33.547Z",
     "lastAt": "2026-08-19T16:17:33.547Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:허남준|배우",
+    "name": "허남준",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19930609",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-19T16:23:57.007Z",
+    "lastAt": "2026-08-19T16:23:57.007Z",
+    "status": "pending"
   }
 ]
