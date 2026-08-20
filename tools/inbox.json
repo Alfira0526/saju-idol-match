@@ -23944,5 +23944,18 @@
     "firstAt": "2026-08-19T19:10:27.172Z",
     "lastAt": "2026-08-19T19:10:27.694Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:과자|seventeen",
+    "name": "과자",
+    "group": "SEVENTEEN",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19980214",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-20T00:48:43.037Z",
+    "lastAt": "2026-08-20T00:48:43.037Z",
+    "status": "pending"
   }
 ]
