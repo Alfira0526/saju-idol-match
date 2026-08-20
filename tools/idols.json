@@ -10267,5 +10267,146 @@
   "gender": "F",
   "dob": "1996-07-10",
   "cat": "Etc"
+ },
+ {
+  "name": "유준",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2000-12-22",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "무진",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-03-29",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "준서",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-12-28",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "영서",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-06-13",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "도하",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2004-03-07",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "빛",
+  "group": "BAE173",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2004-07-21",
+  "cat": "K-idol",
+  "subAgency": "포켓돌스튜디오"
+ },
+ {
+  "name": "최인",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1996-02-11",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "라노",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1998-12-10",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "백결",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1999-12-01",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "로민",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-04-24",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "원혁",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-02-22",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "원준",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-03-08",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "예준",
+  "group": "E'LAST",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-08-23",
+  "cat": "K-idol",
+  "subAgency": "이엔터테인먼트"
+ },
+ {
+  "name": "eaJ",
+  "group": "솔로",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-09-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "허남준",
+  "group": "배우",
+  "agency": "배우",
+  "gender": "M",
+  "dob": "1993-06-09",
+  "cat": "Etc"
+ },
+ {
+  "name": "사이토 나기사",
+  "group": "사이토 나기사",
+  "agency": "배우",
+  "gender": "F",
+  "dob": "2003-07-06",
+  "cat": "J-idol"
  }
 ]
