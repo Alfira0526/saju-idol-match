@@ -19441,10 +19441,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20051005",
-    "note": "최애에요 제발 보고싶습니다 ㅠ",
-    "count": 5,
+    "note": "제발최애에요3번째싸이커스제보중입니다제발추가해주세오ㅠㅠ",
+    "count": 6,
     "firstAt": "2026-07-29T09:45:34.090Z",
-    "lastAt": "2026-08-02T02:08:52.939Z",
+    "lastAt": "2026-08-20T19:35:02.059Z",
     "status": "pending"
   },
   {
@@ -23995,6 +23995,19 @@
     "count": 1,
     "firstAt": "2026-08-20T11:52:19.717Z",
     "lastAt": "2026-08-20T11:52:19.717Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:김유나|keyveatz",
+    "name": "김유나",
+    "group": "KEYVEATZ",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20080813",
+    "note": "AOMG",
+    "count": 1,
+    "firstAt": "2026-08-20T19:37:26.089Z",
+    "lastAt": "2026-08-20T19:37:26.089Z",
     "status": "pending"
   }
 ]
