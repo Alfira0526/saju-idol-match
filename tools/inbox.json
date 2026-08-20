@@ -23970,5 +23970,18 @@
     "firstAt": "2026-08-20T04:38:25.084Z",
     "lastAt": "2026-08-20T04:38:25.084Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:金在中|solo",
+    "name": "金在中",
+    "group": "solo",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19860126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-20T09:22:50.031Z",
+    "lastAt": "2026-08-20T09:22:50.031Z",
+    "status": "pending"
   }
 ]
