@@ -23983,5 +23983,18 @@
     "firstAt": "2026-08-20T09:22:50.031Z",
     "lastAt": "2026-08-20T09:22:50.031Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:雪娥|宇宙少女",
+    "name": "雪娥",
+    "group": "宇宙少女",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "199412",
+    "note": "starship",
+    "count": 1,
+    "firstAt": "2026-08-20T11:52:19.717Z",
+    "lastAt": "2026-08-20T11:52:19.717Z",
+    "status": "pending"
   }
 ]
