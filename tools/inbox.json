@@ -24035,5 +24035,18 @@
     "firstAt": "2026-08-21T02:32:28.510Z",
     "lastAt": "2026-08-21T02:32:28.510Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조주연|v01d",
+    "name": "조주연",
+    "group": "V01D",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000508",
+    "note": "IX",
+    "count": 1,
+    "firstAt": "2026-08-21T03:09:50.155Z",
+    "lastAt": "2026-08-21T03:09:50.155Z",
+    "status": "pending"
   }
 ]
