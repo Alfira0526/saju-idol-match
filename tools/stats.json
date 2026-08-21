@@ -1,6 +1,7 @@
 {
-  "total": 1217,
+  "total": 1249,
   "addedRecent": [
+    { "date": "2026-08-21", "text": "NEWBEAT·AtHeart·KEYVEATZ·더윈드·ONE OR EIGHT 추가", "count": 32 },
     { "date": "2026-08-20", "text": "BAE173·E'LAST 추가", "count": 16 },
     { "date": "2026-08-19", "text": "JO1 추가", "count": 9 },
     { "date": "2026-08-19", "text": "구구단 추가", "count": 8 },
@@ -15,5 +16,5 @@
     { "date": "2026-08-17", "text": "인피니트 호야 추가", "count": 1 },
     { "date": "2026-08-17", "text": "ALLDAY PROJECT 멤버 추가", "count": 3 }
   ],
-  "updatedAt": "2026-08-20"
+  "updatedAt": "2026-08-21"
 }
