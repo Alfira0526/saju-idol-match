@@ -24009,5 +24009,18 @@
     "firstAt": "2026-08-20T19:37:26.089Z",
     "lastAt": "2026-08-20T19:37:26.089Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:현식|xodiac",
+    "name": "현식",
+    "group": "XODIAC",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19970912",
+    "note": "추가해주세요🥹🥹",
+    "count": 1,
+    "firstAt": "2026-08-21T02:04:12.437Z",
+    "lastAt": "2026-08-21T02:04:12.437Z",
+    "status": "pending"
   }
 ]
