@@ -24087,5 +24087,18 @@
     "firstAt": "2026-08-21T09:36:10.274Z",
     "lastAt": "2026-08-21T09:36:10.274Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:송유찬|v01d",
+    "name": "송유찬",
+    "group": "V01D",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19950109",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-21T13:24:37.299Z",
+    "lastAt": "2026-08-21T13:24:37.299Z",
+    "status": "pending"
   }
 ]
