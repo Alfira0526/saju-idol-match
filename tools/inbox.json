@@ -24074,5 +24074,18 @@
     "firstAt": "2026-08-21T05:48:31.617Z",
     "lastAt": "2026-08-21T05:48:31.617Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ko1keyz|lapone",
+    "name": "KO1KEYZ",
+    "group": "LAPONE",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-21T09:36:10.274Z",
+    "lastAt": "2026-08-21T09:36:10.274Z",
+    "status": "pending"
   }
 ]
