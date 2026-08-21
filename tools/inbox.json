@@ -24048,5 +24048,18 @@
     "firstAt": "2026-08-21T03:09:50.155Z",
     "lastAt": "2026-08-21T03:09:50.155Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:bonbon.|soloist",
+    "name": "BONBON.",
+    "group": "SOLOIST",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20001211",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-21T04:46:32.214Z",
+    "lastAt": "2026-08-21T04:46:32.214Z",
+    "status": "pending"
   }
 ]
