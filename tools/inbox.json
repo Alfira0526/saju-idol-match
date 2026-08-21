@@ -24100,5 +24100,18 @@
     "firstAt": "2026-08-21T13:24:37.299Z",
     "lastAt": "2026-08-21T13:24:37.299Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:다이키|ko1keyz",
+    "name": "다이키",
+    "group": "KO1KEYZ",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "200410",
+    "note": "취업성공햇습니다",
+    "count": 1,
+    "firstAt": "2026-08-21T17:28:51.887Z",
+    "lastAt": "2026-08-21T17:28:51.887Z",
+    "status": "pending"
   }
 ]
