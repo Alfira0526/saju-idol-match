@@ -5229,7 +5229,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2000-07-25",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "YH엔터테인먼트"
  },
  {
   "name": "리키",
@@ -5237,7 +5238,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2004-05-20",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "YH엔터테인먼트"
  },
  {
   "name": "김규빈",
@@ -5245,7 +5247,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2004-08-30",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "YH엔터테인먼트"
  },
  {
   "name": "한유진",
@@ -5253,7 +5256,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2007-03-20",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "YH엔터테인먼트"
  },
  {
   "name": "안태규",
@@ -6004,7 +6008,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1994-08-17",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "RBW"
  },
  {
   "name": "강현",
@@ -6012,7 +6017,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1998-11-24",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "RBW"
  },
  {
   "name": "하린",
@@ -6020,7 +6026,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1998-03-29",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "RBW"
  },
  {
   "name": "동명",
@@ -6028,7 +6035,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2000-01-10",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "RBW"
  },
  {
   "name": "기욱",
@@ -6036,7 +6044,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2000-01-24",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "RBW"
  },
  {
   "name": "신예찬",
@@ -6076,7 +6085,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2004-05-25",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "더뮤즈엔터테인먼트"
  },
  {
   "name": "리브",
@@ -6084,7 +6094,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2006-10-11",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "더뮤즈엔터테인먼트"
  },
  {
   "name": "미나미",
@@ -6092,7 +6103,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2006-11-29",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "더뮤즈엔터테인먼트"
  },
  {
   "name": "메이",
@@ -6100,7 +6112,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2008-08-19",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "더뮤즈엔터테인먼트"
  },
  {
   "name": "제나",
@@ -6108,7 +6121,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2008-11-27",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "더뮤즈엔터테인먼트"
  },
  {
   "name": "캠든",
@@ -6179,7 +6193,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2005-09-18",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "스타쉽엔터테인먼트"
  },
  {
   "name": "수이",
@@ -6187,7 +6202,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2006-04-10",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "스타쉽엔터테인먼트"
  },
  {
   "name": "지유",
@@ -6195,7 +6211,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2006-05-14",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "스타쉽엔터테인먼트"
  },
  {
   "name": "하음",
@@ -6203,7 +6220,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2006-11-14",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "스타쉽엔터테인먼트"
  },
  {
   "name": "키야",
@@ -6211,7 +6229,8 @@
   "agency": "기타",
   "gender": "F",
   "dob": "2010-12-18",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "스타쉽엔터테인먼트"
  },
  {
   "name": "남지운",
@@ -7478,7 +7497,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "2004-01-02",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "YH엔터테인먼트"
  },
  {
   "name": "기현",
@@ -9985,7 +10005,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1995-11-11",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "고결",
@@ -9993,7 +10014,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1996-05-19",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "비토",
@@ -10001,7 +10023,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1996-08-24",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "선율",
@@ -10009,7 +10032,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1996-11-06",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "규진",
@@ -10017,7 +10041,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1997-11-21",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "환희",
@@ -10025,7 +10050,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1998-05-06",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "샤오",
@@ -10033,7 +10059,8 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1998-12-13",
-  "cat": "K-idol"
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
  },
  {
   "name": "동훈",
@@ -10688,5 +10715,140 @@
   "gender": "M",
   "dob": "2005-11-10",
   "cat": "J-idol"
+ },
+ {
+  "name": "이현",
+  "group": "Baby DONT Cry",
+  "agency": "기타",
+  "subAgency": "피네이션",
+  "gender": "F",
+  "dob": "2006-04-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "쿠미",
+  "group": "Baby DONT Cry",
+  "agency": "기타",
+  "subAgency": "피네이션",
+  "gender": "F",
+  "dob": "2007-08-30",
+  "cat": "K-idol"
+ },
+ {
+  "name": "미아",
+  "group": "Baby DONT Cry",
+  "agency": "기타",
+  "subAgency": "피네이션",
+  "gender": "F",
+  "dob": "2007-09-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "베니",
+  "group": "Baby DONT Cry",
+  "agency": "기타",
+  "subAgency": "피네이션",
+  "gender": "F",
+  "dob": "2008-12-23",
+  "cat": "K-idol"
+ },
+ {
+  "name": "태환",
+  "group": "VANNER",
+  "agency": "기타",
+  "subAgency": "VT엔터테인먼트",
+  "gender": "M",
+  "dob": "1994-01-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "곤",
+  "group": "VANNER",
+  "agency": "기타",
+  "subAgency": "VT엔터테인먼트",
+  "gender": "M",
+  "dob": "1995-08-07",
+  "cat": "K-idol"
+ },
+ {
+  "name": "성국",
+  "group": "VANNER",
+  "agency": "기타",
+  "subAgency": "VT엔터테인먼트",
+  "gender": "M",
+  "dob": "1996-03-27",
+  "cat": "K-idol"
+ },
+ {
+  "name": "영광",
+  "group": "VANNER",
+  "agency": "기타",
+  "subAgency": "VT엔터테인먼트",
+  "gender": "M",
+  "dob": "1997-09-22",
+  "cat": "K-idol"
+ },
+ {
+  "name": "혜성",
+  "group": "VANNER",
+  "agency": "기타",
+  "subAgency": "VT엔터테인먼트",
+  "gender": "M",
+  "dob": "1996-01-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "렉스",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2000-03-16",
+  "cat": "K-idol"
+ },
+ {
+  "name": "범수",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2000-09-29",
+  "cat": "K-idol"
+ },
+ {
+  "name": "규민",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2000-12-12",
+  "cat": "K-idol"
+ },
+ {
+  "name": "다빈",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2002-05-30",
+  "cat": "K-idol"
+ },
+ {
+  "name": "리오",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2002-06-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "씽",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2002-01-11",
+  "cat": "K-idol"
  }
 ]
