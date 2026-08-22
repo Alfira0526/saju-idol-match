@@ -24243,5 +24243,18 @@
     "firstAt": "2026-08-22T16:38:20.429Z",
     "lastAt": "2026-08-22T16:38:20.429Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:조한국|트렌드지",
+    "name": "조한국",
+    "group": "트렌드지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020403",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T17:33:36.350Z",
+    "lastAt": "2026-08-22T17:33:36.350Z",
+    "status": "pending"
   }
 ]
