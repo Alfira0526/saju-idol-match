@@ -24204,5 +24204,18 @@
     "firstAt": "2026-08-22T14:42:50.971Z",
     "lastAt": "2026-08-22T14:42:50.971Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:왕성월|배우",
+    "name": "왕성월",
+    "group": "배우",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "20020305",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T15:27:33.821Z",
+    "lastAt": "2026-08-22T15:27:33.821Z",
+    "status": "pending"
   }
 ]
