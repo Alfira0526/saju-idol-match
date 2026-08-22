@@ -24217,5 +24217,31 @@
     "firstAt": "2026-08-22T15:27:33.821Z",
     "lastAt": "2026-08-22T15:27:33.821Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:박시영|ko1keyz",
+    "name": "박시영",
+    "group": "KO1KEYZ",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20030506",
+    "note": "이번에 데뷔했습니다!!",
+    "count": 1,
+    "firstAt": "2026-08-22T16:37:00.551Z",
+    "lastAt": "2026-08-22T16:37:00.551Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:하석희|celest1a",
+    "name": "하석희",
+    "group": "Celest1a",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20000816",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T16:38:20.429Z",
+    "lastAt": "2026-08-22T16:38:20.429Z",
+    "status": "pending"
   }
 ]
