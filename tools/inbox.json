@@ -24191,5 +24191,18 @@
     "firstAt": "2026-08-22T14:33:54.026Z",
     "lastAt": "2026-08-22T14:33:54.026Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이하늬|튜이드",
+    "name": "이하늬",
+    "group": "튜이드",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20110107",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T14:42:50.971Z",
+    "lastAt": "2026-08-22T14:42:50.971Z",
+    "status": "pending"
   }
 ]
