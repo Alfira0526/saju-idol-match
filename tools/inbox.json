@@ -24269,5 +24269,18 @@
     "firstAt": "2026-08-22T19:27:50.447Z",
     "lastAt": "2026-08-22T19:27:50.447Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:방예담|솔로",
+    "name": "방예담",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020507",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T22:48:05.853Z",
+    "lastAt": "2026-08-22T22:48:05.853Z",
+    "status": "pending"
   }
 ]
