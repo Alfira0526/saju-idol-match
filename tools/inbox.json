@@ -24256,5 +24256,18 @@
     "firstAt": "2026-08-22T17:33:36.350Z",
     "lastAt": "2026-08-22T17:33:36.350Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:전도염|저스트비",
+    "name": "전도염",
+    "group": "저스트비",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020221",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-22T19:27:50.447Z",
+    "lastAt": "2026-08-22T19:27:50.447Z",
+    "status": "pending"
   }
 ]
