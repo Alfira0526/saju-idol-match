@@ -2424,10 +2424,10 @@
     "cat": "US-actor",
     "gender": "M",
     "dob": "19960201",
-    "note": "",
-    "count": 1,
+    "note": "SM",
+    "count": 2,
     "firstAt": "2026-07-24T06:24:53.285Z",
-    "lastAt": "2026-07-24T06:24:53.285Z",
+    "lastAt": "2026-08-22T00:17:54.687Z",
     "status": "pending"
   },
   {
@@ -24112,6 +24112,19 @@
     "count": 1,
     "firstAt": "2026-08-21T17:28:51.887Z",
     "lastAt": "2026-08-21T17:28:51.887Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:씽|xodiac",
+    "name": "씽",
+    "group": "XODIAC",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020111",
+    "note": "소디엑 진짜 제발 추가해주세요😭😭😭😭😭😭",
+    "count": 1,
+    "firstAt": "2026-08-22T00:16:20.930Z",
+    "lastAt": "2026-08-22T00:16:20.930Z",
     "status": "pending"
   }
 ]
