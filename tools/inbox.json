@@ -24334,5 +24334,18 @@
     "firstAt": "2026-08-23T15:01:26.046Z",
     "lastAt": "2026-08-23T15:01:26.046Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이홍빈|vixx",
+    "name": "이홍빈",
+    "group": "VIXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930929",
+    "note": "Jellyfish",
+    "count": 1,
+    "firstAt": "2026-08-23T21:04:48.546Z",
+    "lastAt": "2026-08-23T21:04:48.546Z",
+    "status": "pending"
   }
 ]
