@@ -24308,5 +24308,18 @@
     "firstAt": "2026-08-23T06:58:00.917Z",
     "lastAt": "2026-08-23T06:58:00.917Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:희재|sevenus",
+    "name": "희재",
+    "group": "sevenus",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940222",
+    "note": "피씨에스엔터테인먼트 / PEAK TIME 출연",
+    "count": 1,
+    "firstAt": "2026-08-23T07:09:25.877Z",
+    "lastAt": "2026-08-23T07:09:25.877Z",
+    "status": "pending"
   }
 ]
