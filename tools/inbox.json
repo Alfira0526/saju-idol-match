@@ -24295,5 +24295,18 @@
     "firstAt": "2026-08-23T03:21:59.353Z",
     "lastAt": "2026-08-23T03:21:59.353Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ilhoon|솔로",
+    "name": "ILHOON",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19941004",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-23T06:58:00.917Z",
+    "lastAt": "2026-08-23T06:58:00.917Z",
+    "status": "pending"
   }
 ]
