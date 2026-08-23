@@ -24347,5 +24347,18 @@
     "firstAt": "2026-08-23T21:04:48.546Z",
     "lastAt": "2026-08-23T21:04:48.546Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:라비|vixx",
+    "name": "라비",
+    "group": "VIXX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19930215",
+    "note": "GROOVL1N",
+    "count": 1,
+    "firstAt": "2026-08-23T21:31:40.622Z",
+    "lastAt": "2026-08-23T21:31:40.622Z",
+    "status": "pending"
   }
 ]
