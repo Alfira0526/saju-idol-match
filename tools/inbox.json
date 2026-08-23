@@ -24282,5 +24282,18 @@
     "firstAt": "2026-08-22T22:48:05.853Z",
     "lastAt": "2026-08-22T22:48:05.853Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:문상민|배우",
+    "name": "문상민",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20000414",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-23T03:21:59.353Z",
+    "lastAt": "2026-08-23T03:21:59.353Z",
+    "status": "pending"
   }
 ]
