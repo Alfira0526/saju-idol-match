@@ -24360,5 +24360,18 @@
     "firstAt": "2026-08-23T21:31:40.622Z",
     "lastAt": "2026-08-23T21:31:40.622Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:蔡徐坤|ninepercent",
+    "name": "蔡徐坤",
+    "group": "ninepercent",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "19980802",
+    "note": "蔡徐坤是中国很有名的歌手 拥有海内外庞大的粉丝群体",
+    "count": 1,
+    "firstAt": "2026-08-23T22:46:10.757Z",
+    "lastAt": "2026-08-23T22:46:10.757Z",
+    "status": "pending"
   }
 ]
