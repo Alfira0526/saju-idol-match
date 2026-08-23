@@ -24321,5 +24321,18 @@
     "firstAt": "2026-08-23T07:09:25.877Z",
     "lastAt": "2026-08-23T07:09:25.877Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:후루사와리사|cutiestreet",
+    "name": "후루사와 리사",
+    "group": "cutiestreet",
+    "cat": "J-idol",
+    "gender": "F",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-23T15:01:26.046Z",
+    "lastAt": "2026-08-23T15:01:26.046Z",
+    "status": "pending"
   }
 ]
