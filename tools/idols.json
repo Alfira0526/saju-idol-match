@@ -11037,5 +11037,209 @@
   "gender": "M",
   "dob": "2002-03-05",
   "cat": "C-actor"
+ },
+ {
+  "name": "라비",
+  "group": "VIXX",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1993-02-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "홍빈",
+  "group": "VIXX",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1993-09-29",
+  "cat": "K-idol"
+ },
+ {
+  "name": "다이키",
+  "group": "KO1KEYZ",
+  "agency": "LAPONE",
+  "gender": "M",
+  "dob": "2004-10-08",
+  "cat": "J-idol"
+ },
+ {
+  "name": "요시키",
+  "group": "KO1KEYZ",
+  "agency": "LAPONE",
+  "gender": "M",
+  "dob": "2004-06-18",
+  "cat": "J-idol"
+ },
+ {
+  "name": "테루이 코스케",
+  "group": "KO1KEYZ",
+  "agency": "LAPONE",
+  "gender": "M",
+  "dob": "2007-12-02",
+  "cat": "J-idol"
+ },
+ {
+  "name": "강민서",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2001-07-22",
+  "cat": "K-idol"
+ },
+ {
+  "name": "이한빈",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2001-11-20",
+  "cat": "K-idol"
+ },
+ {
+  "name": "링치",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2002-06-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "히카루",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2003-07-14",
+  "cat": "K-idol"
+ },
+ {
+  "name": "김우석",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2004-03-12",
+  "cat": "K-idol"
+ },
+ {
+  "name": "홍성민",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2004-09-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "오현태",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2008-08-13",
+  "cat": "K-idol"
+ },
+ {
+  "name": "김규래",
+  "group": "FANTASY BOYS",
+  "agency": "기타",
+  "subAgency": "포켓돌스튜디오",
+  "gender": "M",
+  "dob": "2009-02-28",
+  "cat": "K-idol"
+ },
+ {
+  "name": "경일",
+  "group": "HISTORY",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1987-11-28",
+  "cat": "K-idol"
+ },
+ {
+  "name": "도균",
+  "group": "HISTORY",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1991-02-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "시형",
+  "group": "HISTORY",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-05-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "재호",
+  "group": "HISTORY",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-09-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "조주연",
+  "group": "V01D",
+  "agency": "기타",
+  "subAgency": "IX엔터테인먼트",
+  "gender": "M",
+  "dob": "2000-05-08",
+  "cat": "K-idol"
+ },
+ {
+  "name": "송유찬",
+  "group": "V01D",
+  "agency": "기타",
+  "subAgency": "IX엔터테인먼트",
+  "gender": "M",
+  "dob": "1995-01-09",
+  "cat": "K-idol"
+ },
+ {
+  "name": "희재",
+  "group": "SEVENUS",
+  "agency": "기타",
+  "subAgency": "PCS엔터테인먼트",
+  "gender": "M",
+  "dob": "1994-02-22",
+  "cat": "K-idol"
+ },
+ {
+  "name": "이레",
+  "group": "SEVENUS",
+  "agency": "기타",
+  "subAgency": "PCS엔터테인먼트",
+  "gender": "M",
+  "dob": "1994-03-25",
+  "cat": "K-idol"
+ },
+ {
+  "name": "송건희",
+  "group": "배우",
+  "agency": "배우",
+  "gender": "F",
+  "dob": "1997-08-16",
+  "cat": "K-actor"
+ },
+ {
+  "name": "방예담",
+  "group": "방예담",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-05-07",
+  "cat": "K-idol"
+ },
+ {
+  "name": "일훈",
+  "group": "일훈",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1994-10-04",
+  "cat": "K-idol"
  }
 ]
