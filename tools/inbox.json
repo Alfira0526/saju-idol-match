@@ -24373,5 +24373,18 @@
     "firstAt": "2026-08-23T22:46:10.757Z",
     "lastAt": "2026-08-23T22:46:10.757Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:웨인|xodiac",
+    "name": "웨인",
+    "group": "xodiac",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20001025",
+    "note": "멤버 누락 ㅠㅠ",
+    "count": 1,
+    "firstAt": "2026-08-24T11:07:26.055Z",
+    "lastAt": "2026-08-24T11:07:26.055Z",
+    "status": "pending"
   }
 ]
