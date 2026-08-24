@@ -24412,5 +24412,18 @@
     "firstAt": "2026-08-24T15:23:07.591Z",
     "lastAt": "2026-08-24T15:23:07.591Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:oneoreight|avex",
+    "name": "ONE OR EIGHT",
+    "group": "avex",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-24T17:04:19.233Z",
+    "lastAt": "2026-08-24T17:04:19.233Z",
+    "status": "pending"
   }
 ]
