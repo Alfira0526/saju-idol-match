@@ -24386,5 +24386,18 @@
     "firstAt": "2026-08-24T11:07:26.055Z",
     "lastAt": "2026-08-24T11:07:26.055Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:全部|thewind",
+    "name": "全部",
+    "group": "THE WIND",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-24T11:38:56.184Z",
+    "lastAt": "2026-08-24T11:38:56.184Z",
+    "status": "pending"
   }
 ]
