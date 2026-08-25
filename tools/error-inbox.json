@@ -1571,5 +1571,21 @@
     "firstAt": "2026-08-21T00:14:54.429Z",
     "lastAt": "2026-08-21T00:14:54.429Z",
     "status": "pending"
+  },
+  {
+    "key": "er:카와지리렌|jo1",
+    "name": "카와지리 렌",
+    "group": "JO1",
+    "fields": {
+      "활동명": 1
+    },
+    "suggests": [
+      "카와시리 렌"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-08-25T04:59:32.757Z",
+    "lastAt": "2026-08-25T04:59:32.757Z",
+    "status": "pending"
   }
 ]
