@@ -24464,5 +24464,18 @@
     "firstAt": "2026-08-25T15:00:38.782Z",
     "lastAt": "2026-08-25T15:00:38.782Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이하빛|트렌드지",
+    "name": "이하빛",
+    "group": "트렌드지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990607",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-25T17:28:04.295Z",
+    "lastAt": "2026-08-25T17:28:04.295Z",
+    "status": "pending"
   }
 ]
