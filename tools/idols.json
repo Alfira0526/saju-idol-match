@@ -2114,6 +2114,7 @@
   "name": "서호",
   "group": "ONEUS",
   "agency": "기타",
+  "subAgency": "RBW",
   "gender": "M",
   "dob": "1996-06-07",
   "cat": "K-idol"
@@ -2122,6 +2123,7 @@
   "name": "이도",
   "group": "ONEUS",
   "agency": "기타",
+  "subAgency": "RBW",
   "gender": "M",
   "dob": "1997-07-26",
   "cat": "K-idol"
@@ -2130,6 +2132,7 @@
   "name": "건희",
   "group": "ONEUS",
   "agency": "기타",
+  "subAgency": "RBW",
   "gender": "M",
   "dob": "1998-06-27",
   "cat": "K-idol"
@@ -2138,6 +2141,7 @@
   "name": "환웅",
   "group": "ONEUS",
   "agency": "기타",
+  "subAgency": "RBW",
   "gender": "M",
   "dob": "1998-08-26",
   "cat": "K-idol"
@@ -2146,6 +2150,7 @@
   "name": "시온",
   "group": "ONEUS",
   "agency": "기타",
+  "subAgency": "RBW",
   "gender": "M",
   "dob": "2000-01-10",
   "cat": "K-idol"
@@ -5038,6 +5043,7 @@
   "name": "엔",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1990-06-30",
   "cat": "K-idol"
@@ -5046,6 +5052,7 @@
   "name": "레오",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1990-11-10",
   "cat": "K-idol"
@@ -5054,6 +5061,7 @@
   "name": "켄",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1992-04-06",
   "cat": "K-idol"
@@ -5062,6 +5070,7 @@
   "name": "혁",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1995-07-05",
   "cat": "K-idol"
@@ -10224,7 +10233,7 @@
   "cat": "J-idol"
  },
  {
-  "name": "카와지리 렌",
+  "name": "카와시리 렌",
   "group": "JO1",
   "agency": "LAPONE",
   "gender": "M",
@@ -11042,6 +11051,7 @@
   "name": "라비",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1993-02-15",
   "cat": "K-idol"
@@ -11050,6 +11060,7 @@
   "name": "홍빈",
   "group": "VIXX",
   "agency": "기타",
+  "subAgency": "젤리피시엔터테인먼트",
   "gender": "M",
   "dob": "1993-09-29",
   "cat": "K-idol"
@@ -11201,6 +11212,33 @@
   "cat": "K-idol"
  },
  {
+  "name": "정지섭",
+  "group": "V01D",
+  "agency": "기타",
+  "subAgency": "IX엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-11-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "케빈박",
+  "group": "V01D",
+  "agency": "기타",
+  "subAgency": "IX엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-06-21",
+  "cat": "K-idol"
+ },
+ {
+  "name": "신노스케",
+  "group": "V01D",
+  "agency": "기타",
+  "subAgency": "IX엔터테인먼트",
+  "gender": "M",
+  "dob": "2005-10-24",
+  "cat": "K-idol"
+ },
+ {
   "name": "희재",
   "group": "SEVENUS",
   "agency": "기타",
@@ -11240,6 +11278,108 @@
   "agency": "기타",
   "gender": "M",
   "dob": "1994-10-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "우성",
+  "group": "The Rose",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1993-02-25",
+  "cat": "K-idol"
+ },
+ {
+  "name": "도준",
+  "group": "The Rose",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1993-04-20",
+  "cat": "K-idol"
+ },
+ {
+  "name": "하준",
+  "group": "The Rose",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1994-07-29",
+  "cat": "K-idol"
+ },
+ {
+  "name": "태겸",
+  "group": "The Rose",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1994-11-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "건우",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-02-02",
+  "cat": "K-idol"
+ },
+ {
+  "name": "배인",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-05-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "임지민",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-05-22",
+  "cat": "K-idol"
+ },
+ {
+  "name": "시우",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2001-10-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "전도염",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2002-02-21",
+  "cat": "K-idol"
+ },
+ {
+  "name": "김상우",
+  "group": "JUSTB",
+  "agency": "기타",
+  "subAgency": "블루닷엔터테인먼트",
+  "gender": "M",
+  "dob": "2002-09-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "서희",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2006-10-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "지아",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2008-08-22",
   "cat": "K-idol"
  }
 ]
