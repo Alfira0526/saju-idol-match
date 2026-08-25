@@ -24438,5 +24438,18 @@
     "firstAt": "2026-08-25T11:34:56.305Z",
     "lastAt": "2026-08-25T11:34:56.305Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정지섭|v01d",
+    "name": "정지섭",
+    "group": "V01D",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20011111",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-25T14:15:15.745Z",
+    "lastAt": "2026-08-25T14:15:15.745Z",
+    "status": "pending"
   }
 ]
