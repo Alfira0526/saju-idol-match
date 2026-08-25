@@ -24425,5 +24425,18 @@
     "firstAt": "2026-08-24T17:04:19.233Z",
     "lastAt": "2026-08-24T17:04:19.233Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:앤더블|앤더블",
+    "name": "앤더블",
+    "group": "앤더블",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-25T11:34:56.305Z",
+    "lastAt": "2026-08-25T11:34:56.305Z",
+    "status": "pending"
   }
 ]
