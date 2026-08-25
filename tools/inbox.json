@@ -24451,5 +24451,18 @@
     "firstAt": "2026-08-25T14:15:15.745Z",
     "lastAt": "2026-08-25T14:15:15.745Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하빛|trendz",
+    "name": "하빛",
+    "group": "Trendz",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-25T15:00:38.782Z",
+    "lastAt": "2026-08-25T15:00:38.782Z",
+    "status": "pending"
   }
 ]
