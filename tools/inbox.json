@@ -24477,5 +24477,18 @@
     "firstAt": "2026-08-25T17:28:04.295Z",
     "lastAt": "2026-08-25T17:28:04.295Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jan|nct,bts",
+    "name": "Jan",
+    "group": "NCT, BTS",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "1988",
+    "note": "SM, Hybe",
+    "count": 1,
+    "firstAt": "2026-08-26T11:01:11.114Z",
+    "lastAt": "2026-08-26T11:01:11.114Z",
+    "status": "pending"
   }
 ]
