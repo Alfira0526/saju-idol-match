@@ -11381,5 +11381,224 @@
   "gender": "F",
   "dob": "2008-08-22",
   "cat": "K-idol"
+ },
+ {
+  "name": "비엠",
+  "group": "KARD",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-10-20",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "제이셉",
+  "group": "KARD",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-06-21",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "소민",
+  "group": "KARD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1996-08-22",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "지우",
+  "group": "KARD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1996-10-04",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "김현중",
+  "group": "SS501",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1986-06-06",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "허영생",
+  "group": "SS501",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1986-11-03",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "김규종",
+  "group": "SS501",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1987-02-24",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "박정민",
+  "group": "SS501",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1987-04-03",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "김형준",
+  "group": "SS501",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1987-08-03",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "동한",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1998-07-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "켄타",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1995-01-10",
+  "cat": "K-idol"
+ },
+ {
+  "name": "용국",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1996-03-02",
+  "cat": "K-idol"
+ },
+ {
+  "name": "상균",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1995-05-23",
+  "cat": "K-idol"
+ },
+ {
+  "name": "태현",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1993-10-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "현빈",
+  "group": "JBJ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1997-03-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "캐슬제이",
+  "group": "MCND",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1999-05-31",
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
+ },
+ {
+  "name": "빅",
+  "group": "MCND",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-04-25",
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
+ },
+ {
+  "name": "민재",
+  "group": "MCND",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-08-23",
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
+ },
+ {
+  "name": "휘준",
+  "group": "MCND",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-10-07",
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
+ },
+ {
+  "name": "윈",
+  "group": "MCND",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2004-12-19",
+  "cat": "K-idol",
+  "subAgency": "TOP미디어"
+ },
+ {
+  "name": "소연",
+  "group": "Laboum",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1994-05-04",
+  "cat": "K-idol",
+  "subAgency": "인터파크뮤직플러스"
+ },
+ {
+  "name": "해인",
+  "group": "Laboum",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1995-05-19",
+  "cat": "K-idol",
+  "subAgency": "인터파크뮤직플러스"
+ },
+ {
+  "name": "솔빈",
+  "group": "Laboum",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1997-08-19",
+  "cat": "K-idol",
+  "subAgency": "인터파크뮤직플러스"
+ },
+ {
+  "name": "진예",
+  "group": "Laboum",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1994-06-09",
+  "cat": "K-idol",
+  "subAgency": "인터파크뮤직플러스"
+ },
+ {
+  "name": "웨인",
+  "group": "XODIAC",
+  "agency": "기타",
+  "subAgency": "잭소엔터테인먼트",
+  "gender": "M",
+  "dob": "2000-10-25",
+  "cat": "K-idol"
  }
 ]

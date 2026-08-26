@@ -1,9 +1,10 @@
 {
-  "total": 1326,
+  "total": 1351,
   "addedRecent": [
+    { "date": "2026-08-26", "text": "KARD·SS501·JBJ·MCND·Laboum 추가", "count": 25 },
     { "date": "2026-08-25", "text": "The Rose·JUSTB·TUIDE·V01D 추가", "count": 15 },
     { "date": "2026-08-24", "text": "FANTASY BOYS·KO1KEYZ·HISTORY·V01D·SEVENUS 추가", "count": 24 },
     { "date": "2026-08-23", "text": "한국 배우·XODIAC·SAY MY NAME 추가", "count": 23 }
   ],
-  "updatedAt": "2026-08-25"
+  "updatedAt": "2026-08-26"
 }
