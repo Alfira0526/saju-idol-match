@@ -24516,5 +24516,18 @@
     "firstAt": "2026-08-27T07:06:36.039Z",
     "lastAt": "2026-08-27T07:06:36.039Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:리에|onlyoneof",
+    "name": "리에",
+    "group": "OnlyOneOf",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961106",
+    "note": "그룹 추가해주셔서 감사합니다^^ 이름 잘못 나온 거랑 (라이->리에), 멤버 규빈이 빠져있어서 알려드리는 거예요 헤헷",
+    "count": 1,
+    "firstAt": "2026-08-27T14:57:37.662Z",
+    "lastAt": "2026-08-27T14:57:37.662Z",
+    "status": "pending"
   }
 ]
