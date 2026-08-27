@@ -24503,5 +24503,18 @@
     "firstAt": "2026-08-26T19:06:53.991Z",
     "lastAt": "2026-08-26T19:06:53.991Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:崔傘|ateez",
+    "name": "崔傘",
+    "group": "Ateez",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "1999",
+    "note": "KQ",
+    "count": 1,
+    "firstAt": "2026-08-27T07:06:36.039Z",
+    "lastAt": "2026-08-27T07:06:36.039Z",
+    "status": "pending"
   }
 ]
