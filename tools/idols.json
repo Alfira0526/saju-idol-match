@@ -11600,5 +11600,142 @@
   "gender": "M",
   "dob": "2000-10-25",
   "cat": "K-idol"
+ },
+ {
+  "name": "오준석",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2003-03-03"
+ },
+ {
+  "name": "류준민",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2003-04-05"
+ },
+ {
+  "name": "배현준",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2003-06-06"
+ },
+ {
+  "name": "정승환",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2004-01-27"
+ },
+ {
+  "name": "김연규",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2004-05-03"
+ },
+ {
+  "name": "원빈",
+  "group": "ATBO",
+  "agency": "기타",
+  "subAgency": "아이에스티엔터테인먼트",
+  "gender": "M",
+  "dob": "2004-07-01"
+ },
+ {
+  "name": "케빈",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1988-02-23"
+ },
+ {
+  "name": "광희",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1988-08-25"
+ },
+ {
+  "name": "시완",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1988-12-01"
+ },
+ {
+  "name": "준영",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1989-02-09"
+ },
+ {
+  "name": "태헌",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1989-06-18"
+ },
+ {
+  "name": "동준",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1992-02-11"
+ },
+ {
+  "name": "형식",
+  "group": "ZE:A",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1991-11-16"
+ },
+ {
+  "name": "라이",
+  "group": "OnlyOneOf",
+  "agency": "기타",
+  "subAgency": "RBW",
+  "gender": "M",
+  "dob": "1996-11-06"
+ },
+ {
+  "name": "유정",
+  "group": "OnlyOneOf",
+  "agency": "기타",
+  "subAgency": "RBW",
+  "gender": "M",
+  "dob": "1997-05-29"
+ },
+ {
+  "name": "준지",
+  "group": "OnlyOneOf",
+  "agency": "기타",
+  "subAgency": "RBW",
+  "gender": "M",
+  "dob": "1998-04-06"
+ },
+ {
+  "name": "밀",
+  "group": "OnlyOneOf",
+  "agency": "기타",
+  "subAgency": "RBW",
+  "gender": "M",
+  "dob": "1999-03-30"
+ },
+ {
+  "name": "나인",
+  "group": "OnlyOneOf",
+  "agency": "기타",
+  "subAgency": "RBW",
+  "gender": "M",
+  "dob": "1999-12-13"
  }
 ]
