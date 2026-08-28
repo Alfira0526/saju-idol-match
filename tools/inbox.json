@@ -24581,5 +24581,18 @@
     "firstAt": "2026-08-28T14:51:54.861Z",
     "lastAt": "2026-08-28T14:51:54.861Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김은일|트렌드지",
+    "name": "김은일",
+    "group": "트렌드지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20031121",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-28T17:55:10.566Z",
+    "lastAt": "2026-08-28T17:55:10.566Z",
+    "status": "pending"
   }
 ]
