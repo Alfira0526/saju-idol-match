@@ -11737,5 +11737,301 @@
   "subAgency": "RBW",
   "gender": "M",
   "dob": "1999-12-13"
+ },
+ {
+  "name": "지윤",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2000-09-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "이지",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2000-11-08",
+  "cat": "K-idol"
+ },
+ {
+  "name": "재키",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2001-11-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "주니",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2002-05-24",
+  "cat": "K-idol"
+ },
+ {
+  "name": "채린",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2003-03-31",
+  "cat": "K-idol"
+ },
+ {
+  "name": "예주",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2004-09-01",
+  "cat": "K-idol"
+ },
+ {
+  "name": "초원",
+  "group": "ICHILLIN'",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2005-08-18",
+  "cat": "K-idol"
+ },
+ {
+  "name": "카즈타",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1997-12-31",
+  "cat": "K-idol"
+ },
+ {
+  "name": "도하",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-09-27",
+  "cat": "K-idol"
+ },
+ {
+  "name": "성윤",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-08-05",
+  "cat": "K-idol"
+ },
+ {
+  "name": "로빈",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-04-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "한준",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-08-28",
+  "cat": "K-idol"
+ },
+ {
+  "name": "희원",
+  "group": "n.SSign",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-11-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "Yuju",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-12-20",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Ruka",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-11-01",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Gaku",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2004-04-25",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Hikaru",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2005-03-28",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Sota",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2005-08-15",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Kyosuke",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2005-09-25",
+  "cat": "J-idol"
+ },
+ {
+  "name": "Reo",
+  "group": "aoen",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2007-07-09",
+  "cat": "J-idol"
+ },
+ {
+  "name": "카시아",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2008-02-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "라희",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-12-06",
+  "cat": "K-idol"
+ },
+ {
+  "name": "원화연",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2006-06-24",
+  "cat": "K-idol"
+ },
+ {
+  "name": "사샤",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2009-05-20",
+  "cat": "K-idol"
+ },
+ {
+  "name": "태린",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2006-07-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "미유",
+  "group": "ifeye",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2008-06-09",
+  "cat": "K-idol"
+ },
+ {
+  "name": "하빛",
+  "group": "TRENDZ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1999-06-07",
+  "cat": "K-idol"
+ },
+ {
+  "name": "리온",
+  "group": "TRENDZ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2000-07-25",
+  "cat": "K-idol"
+ },
+ {
+  "name": "윤우",
+  "group": "TRENDZ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2000-08-28",
+  "cat": "K-idol"
+ },
+ {
+  "name": "한국",
+  "group": "TRENDZ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-04-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "서연",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2008-03-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "엘레나",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2008-04-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "사키",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2010-10-09",
+  "cat": "K-idol"
+ },
+ {
+  "name": "세아",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2011-01-04",
+  "cat": "K-idol"
+ },
+ {
+  "name": "이하늬",
+  "group": "TUIDE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2011-01-07",
+  "cat": "K-idol"
+ },
+ {
+  "name": "안보현",
+  "group": "배우",
+  "agency": "배우",
+  "gender": "M",
+  "dob": "1988-05-16",
+  "cat": "K-actor"
+ },
+ {
+  "name": "안준원",
+  "group": "배우",
+  "agency": "배우",
+  "gender": "M",
+  "dob": "1999-02-03",
+  "cat": "K-actor"
  }
 ]
