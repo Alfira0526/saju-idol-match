@@ -24529,5 +24529,18 @@
     "firstAt": "2026-08-27T14:57:37.662Z",
     "lastAt": "2026-08-27T14:57:37.662Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:志焄|treasure",
+    "name": "志焄",
+    "group": "Treasure",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030314",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-28T03:44:09.583Z",
+    "lastAt": "2026-08-28T03:44:09.583Z",
+    "status": "pending"
   }
 ]
