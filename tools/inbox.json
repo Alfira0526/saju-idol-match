@@ -24568,5 +24568,18 @@
     "firstAt": "2026-08-28T13:56:12.885Z",
     "lastAt": "2026-08-28T13:56:12.885Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정윤채|katseye",
+    "name": "정윤채",
+    "group": "Katseye",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20071206",
+    "note": "HYBE",
+    "count": 1,
+    "firstAt": "2026-08-28T14:51:54.861Z",
+    "lastAt": "2026-08-28T14:51:54.861Z",
+    "status": "pending"
   }
 ]
