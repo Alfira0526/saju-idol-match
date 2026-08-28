@@ -24542,5 +24542,18 @@
     "firstAt": "2026-08-28T03:44:09.583Z",
     "lastAt": "2026-08-28T03:44:09.583Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유하|하츠투하츠hearts2hearts",
+    "name": "유하",
+    "group": "하츠투하츠 hearts2hearts",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20070412",
+    "note": "sm/ 예뻐연",
+    "count": 1,
+    "firstAt": "2026-08-28T08:46:04.778Z",
+    "lastAt": "2026-08-28T08:46:04.778Z",
+    "status": "pending"
   }
 ]
