@@ -8794,10 +8794,10 @@
     "cat": "K-idol",
     "gender": "M",
     "dob": "20041204",
-    "note": "",
-    "count": 1,
+    "note": "싸이커스 제발 추가해주세요 ㅠ",
+    "count": 2,
     "firstAt": "2026-07-25T07:46:41.893Z",
-    "lastAt": "2026-07-25T07:46:41.893Z",
+    "lastAt": "2026-08-29T16:06:26.835Z",
     "status": "pending"
   },
   {
@@ -24593,6 +24593,19 @@
     "count": 1,
     "firstAt": "2026-08-28T17:55:10.566Z",
     "lastAt": "2026-08-28T17:55:10.566Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:라엘|트렌드지",
+    "name": "라엘",
+    "group": "트렌드지",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030929",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-29T16:01:25.416Z",
+    "lastAt": "2026-08-29T16:01:25.416Z",
     "status": "pending"
   }
 ]
