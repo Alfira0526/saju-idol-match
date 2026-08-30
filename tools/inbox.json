@@ -24620,5 +24620,18 @@
     "firstAt": "2026-08-30T03:38:33.661Z",
     "lastAt": "2026-08-30T03:38:33.661Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이민재|배우",
+    "name": "이민재",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20000121",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-30T05:55:35.883Z",
+    "lastAt": "2026-08-30T05:55:35.883Z",
+    "status": "pending"
   }
 ]
