@@ -12147,5 +12147,173 @@
   "gender": "M",
   "dob": "1992-01-11",
   "cat": "Etc"
+ },
+ {
+  "name": "라엘",
+  "group": "TRENDZ",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-09-29",
+  "cat": "K-idol"
+ },
+ {
+  "name": "승현",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1998-07-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "은준",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1999-08-06",
+  "cat": "K-idol"
+ },
+ {
+  "name": "도륜",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2000-05-01",
+  "cat": "K-idol"
+ },
+ {
+  "name": "요엘",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2001-01-25",
+  "cat": "K-idol"
+ },
+ {
+  "name": "승환",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2002-04-06",
+  "cat": "K-idol"
+ },
+ {
+  "name": "우영",
+  "group": "AIMERS",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2003-06-29",
+  "cat": "K-idol"
+ },
+ {
+  "name": "박예은",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2006-12-21",
+  "cat": "K-idol"
+ },
+ {
+  "name": "히키",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-03-17",
+  "cat": "K-idol"
+ },
+ {
+  "name": "티나",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2008-03-09",
+  "cat": "K-idol"
+ },
+ {
+  "name": "아코",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2008-07-08",
+  "cat": "K-idol"
+ },
+ {
+  "name": "이본",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2008-07-11",
+  "cat": "K-idol"
+ },
+ {
+  "name": "나하은",
+  "group": "UNCHILD",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2009-01-16",
+  "cat": "K-idol"
+ },
+ {
+  "name": "후루사와 리사",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2000-11-08",
+  "cat": "J-idol"
+ },
+ {
+  "name": "사노 아이카",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2000-11-26",
+  "cat": "J-idol"
+ },
+ {
+  "name": "이타쿠라 카나",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2001-11-11",
+  "cat": "J-idol"
+ },
+ {
+  "name": "카와모토 에미루",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2002-04-22",
+  "cat": "J-idol"
+ },
+ {
+  "name": "마스다 아야노",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2003-05-26",
+  "cat": "J-idol"
+ },
+ {
+  "name": "우메다 미유",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2004-09-13",
+  "cat": "J-idol"
+ },
+ {
+  "name": "마나베 나기사",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2004-06-28",
+  "cat": "J-idol"
+ },
+ {
+  "name": "사쿠라바 하루카",
+  "group": "CUTIE STREET",
+  "agency": "ASOBISYSTEM",
+  "gender": "F",
+  "dob": "2006-01-29",
+  "cat": "J-idol"
  }
 ]
