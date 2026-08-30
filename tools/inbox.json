@@ -24607,5 +24607,18 @@
     "firstAt": "2026-08-29T16:01:25.416Z",
     "lastAt": "2026-08-29T16:01:25.416Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:코르티스|코르티스",
+    "name": "코르티스",
+    "group": "코르티스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-08-30T03:38:33.661Z",
+    "lastAt": "2026-08-30T03:38:33.661Z",
+    "status": "pending"
   }
 ]
