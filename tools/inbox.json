@@ -24633,5 +24633,18 @@
     "firstAt": "2026-08-30T05:55:35.883Z",
     "lastAt": "2026-08-30T05:55:35.883Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김은찬|splayit",
+    "name": "김은찬",
+    "group": "splayit",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080714",
+    "note": "splayit有五位成員 但好像只有新增兩位而已",
+    "count": 1,
+    "firstAt": "2026-08-30T17:51:12.314Z",
+    "lastAt": "2026-08-30T17:51:12.314Z",
+    "status": "pending"
   }
 ]
