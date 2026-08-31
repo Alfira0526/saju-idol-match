@@ -1,86 +1,89 @@
 {
-  "generatedAt": "2026-08-24",
+  "generatedAt": "2026-08-31",
   "dataset": {
-    "totalIdols": 1287,
-    "totalGroups": 257,
-    "statsTotal": 1287,
+    "totalIdols": 1438,
+    "totalGroups": 286,
+    "statsTotal": 1438,
     "byCategory": {
       "K-idol": {
-        "count": 1121,
+        "count": 1249,
         "visible": true
       },
       "J-idol": {
-        "count": 61,
+        "count": 79,
         "visible": true
       },
       "C-actor": {
         "count": 38,
         "visible": true
       },
+      "K-actor": {
+        "count": 34,
+        "visible": true
+      },
       "US-actor": {
         "count": 31,
         "visible": true
       },
-      "K-actor": {
-        "count": 31,
-        "visible": true
-      },
       "Etc": {
-        "count": 5,
+        "count": 7,
         "visible": false
       }
     },
     "byAgency": {
-      "HYBE": 78,
+      "HYBE": 85,
       "YG": 40,
-      "기타": 843,
+      "기타": 971,
       "SM": 86,
       "JYP": 74,
       "미국 배우": 31,
       "중국 배우": 38,
       "노기자카46": 30,
-      "배우": 32,
-      "LAPONE": 15,
+      "배우": 35,
+      "LAPONE": 18,
       "XG": 7,
       "페포니뮤직": 1,
-      "가수": 4,
-      "avex": 8
+      "가수": 6,
+      "avex": 8,
+      "ASOBISYSTEM": 8
     },
     "subAgency": {
-      "etcTotal": 843,
-      "assigned": 743,
-      "unassigned": 100,
-      "coveragePct": 88,
+      "etcTotal": 964,
+      "assigned": 831,
+      "unassigned": 133,
+      "coveragePct": 86,
       "byLabel": {
         "스타쉽엔터테인먼트": 60,
         "MODHAUS": 54,
         "FNC엔터테인먼트": 35,
         "스윙엔터테인먼트": 31,
         "큐브엔터테인먼트": 30,
+        "아이에스티엔터테인먼트": 30,
         "울림엔터테인먼트": 27,
+        "젤리피시엔터테인먼트": 26,
         "웨이크원": 25,
-        "아이에스티엔터테인먼트": 24,
+        "TOP미디어": 23,
+        "RBW": 20,
         "C9엔터테인먼트": 20,
-        "젤리피시엔터테인먼트": 20,
         "인코드엔터테인먼트": 19,
         "KQ엔터테인먼트": 18,
-        "TOP미디어": 18,
         "WM엔터테인먼트": 17,
+        "DSP미디어": 15,
+        "포켓돌스튜디오": 14,
         "Fantagio": 12,
         "비트인터랙티브": 12,
         "YH엔터테인먼트": 11,
         "ONE HUNDRED": 10,
-        "RBW": 10,
         "더블랙레이블": 10,
         "오프더레코드엔터테인먼트": 10,
         "IPQ": 10,
         "에이치뮤직엔터테인먼트": 10,
         "피네이션": 9,
         "F&F엔터테인먼트": 9,
+        "잭소엔터테인먼트": 9,
         "MBK엔터테인먼트": 8,
         "브레이브엔터테인먼트": 8,
         "MNH엔터테인먼트": 8,
-        "잭소엔터테인먼트": 8,
         "인피니트컴퍼니": 7,
         "미스틱스토리": 7,
         "드림캐쳐컴퍼니": 7,
@@ -91,17 +94,20 @@
         "이든엔터테인먼트": 7,
         "누아엔터테인먼트": 7,
         "이엔터테인먼트": 7,
+        "KM엔터테인먼트": 7,
         "하이업엔터테인먼트": 6,
         "쏘스뮤직": 6,
         "그레이트엠엔터테인먼트": 6,
         "신화컴퍼니": 6,
         "TS엔터테인먼트": 6,
+        "카카오엔터테인먼트": 6,
         "위엔터테인먼트": 6,
-        "DSP미디어": 6,
         "ODDWAVE": 6,
-        "포켓돌스튜디오": 6,
         "타이탄 콘텐츠": 6,
         "위드어스엔터테인먼트": 6,
+        "블루닷엔터테인먼트": 6,
+        "n.CH엔터테인먼트": 6,
+        "하이햇엔터테인먼트": 6,
         "플레디스엔터테인먼트": 5,
         "동요엔터테인먼트": 5,
         "더뮤즈엔터테인먼트": 5,
@@ -110,27 +116,31 @@
         "그리드엔터테인먼트": 5,
         "AOMG": 5,
         "VT엔터테인먼트": 5,
+        "IX엔터테인먼트": 5,
+        "하울링엔터테인먼트": 5,
         "안테나": 4,
         "브랜뉴뮤직": 4,
         "VLAST": 4,
-        "카카오엔터테인먼트": 4,
         "257엔터테인먼트": 4,
+        "인터파크뮤직플러스": 4,
         "FM엔터테인먼트": 3,
+        "PCS엔터테인먼트": 2,
         "이에스네이션": 1
       },
       "promotable": [
         "스타쉽엔터테인먼트",
         "큐브엔터테인먼트",
+        "아이에스티엔터테인먼트",
         "FNC엔터테인먼트",
         "MODHAUS",
         "스윙엔터테인먼트"
       ]
     },
     "byGender": {
-      "M": 830,
-      "F": 457
+      "M": 940,
+      "F": 498
     },
-    "recentAddsListed": 70
+    "recentAddsListed": 87
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -138,42 +148,42 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 1895,
-    "addPending": 79,
+    "handled": 1970,
+    "addPending": 26,
     "addPendingGroups": {
-      "distinctGroups": 67,
-      "newGroups": 65,
+      "distinctGroups": 25,
+      "newGroups": 23,
       "knownGroups": 2,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
     "errorPending": 0,
-    "oldestAddPending": "2026-07-24T05:17:23.375Z",
+    "oldestAddPending": "2026-07-24T08:17:34.839Z",
     "oldestErrorPending": null,
     "topAddPending": [
       {
-        "name": "김재호",
-        "group": "히스토리",
-        "count": 2
-      },
-      {
-        "name": "예주",
-        "group": "ICHILLIN",
+        "name": "하시모토 에리코",
+        "group": "AKB48",
         "count": 1
       },
       {
-        "name": "전지우",
-        "group": "KARD",
+        "name": "Jennis",
+        "group": "Hype",
         "count": 1
       },
       {
-        "name": "Nine",
-        "group": "OnlyOneOf",
+        "name": "권정열",
+        "group": "십센치",
         "count": 1
       },
       {
-        "name": "이승현",
-        "group": "AIMERS",
+        "name": "키나",
+        "group": "피프티피프티",
+        "count": 1
+      },
+      {
+        "name": "Hiroto (沓野 広翔)",
+        "group": "WOLF HOWL HARMONY from EXILE TRIBE",
         "count": 1
       }
     ],
@@ -186,15 +196,15 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 83,
+    "flushCount": 30,
     "maxBatch": 2,
-    "avgBatch": 1.1,
-    "medianGapMin": 70,
-    "lastFlushAt": "2026-08-24T07:50:50+09:00",
-    "timeSinceLastFlushMin": 325,
+    "avgBatch": 1,
+    "medianGapMin": 190,
+    "lastFlushAt": "2026-08-31T03:00:49+09:00",
+    "timeSinceLastFlushMin": 611,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 71,
+    "quietGaps": 28,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
@@ -203,39 +213,39 @@
   "contentUsage": {
     "available": true,
     "metric": "unique-users-per-day (UTC)",
-    "updatedAt": "2026-08-24T04:10:48.754Z",
+    "updatedAt": "2026-08-24T08:40:48.804Z",
     "daysCovered": 6,
     "windowDays": 7,
-    "recentTotal": 9,
+    "recentTotal": 0,
     "allTotal": 15,
     "ranking": [
       {
         "event": "match",
         "label": "사주궁합",
-        "recent7d": 5,
+        "recent7d": 0,
         "total": 6,
-        "recentSharePct": 55.6
+        "recentSharePct": 0
       },
       {
         "event": "pair",
         "label": "최애끼리 궁합",
-        "recent7d": 2,
+        "recent7d": 0,
         "total": 3,
-        "recentSharePct": 22.2
+        "recentSharePct": 0
       },
       {
         "event": "profile",
         "label": "최애 프로필",
-        "recent7d": 1,
+        "recent7d": 0,
         "total": 2,
-        "recentSharePct": 11.1
+        "recentSharePct": 0
       },
       {
         "event": "share",
         "label": "결과 공유",
-        "recent7d": 1,
+        "recent7d": 0,
         "total": 2,
-        "recentSharePct": 11.1
+        "recentSharePct": 0
       },
       {
         "event": "tri",
