@@ -12315,5 +12315,250 @@
   "gender": "F",
   "dob": "2006-01-29",
   "cat": "J-idol"
+ },
+ {
+  "name": "희승",
+  "group": "ENHYPEN",
+  "agency": "HYBE",
+  "gender": "M",
+  "dob": "2001-10-15",
+  "cat": "K-idol"
+ },
+ {
+  "name": "에이든",
+  "group": "Splayit",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2009-03-26",
+  "cat": "K-idol",
+  "subAgency": "카카오엔터테인먼트"
+ },
+ {
+  "name": "은빈",
+  "group": "Splayit",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "2008-07-14",
+  "cat": "K-idol",
+  "subAgency": "카카오엔터테인먼트"
+ },
+ {
+  "name": "현주",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2001-11-03",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "나나",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-06-06",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "젤리당카",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-08-19",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "코토코",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-10-28",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "방윤하",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2009-02-28",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "엘리시아",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2009-04-18",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "오윤아",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2009-10-07",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "서원",
+  "group": "UNIS",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2011-01-27",
+  "cat": "K-idol",
+  "subAgency": "F&F엔터테인먼트"
+ },
+ {
+  "name": "나은",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1999-05-05",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "채경",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1996-07-07",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "채원",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1997-11-08",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "진솔",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2001-12-04",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "예나",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2000-05-22",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "현주",
+  "group": "April",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "1998-02-05",
+  "cat": "K-idol",
+  "subAgency": "DSP미디어"
+ },
+ {
+  "name": "하나",
+  "group": "FIFTY FIFTY",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2006-09-05",
+  "cat": "K-idol",
+  "subAgency": "어트랙트"
+ },
+ {
+  "name": "예원",
+  "group": "FIFTY FIFTY",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2005-03-18",
+  "cat": "K-idol",
+  "subAgency": "어트랙트"
+ },
+ {
+  "name": "아테나",
+  "group": "FIFTY FIFTY",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2007-03-15",
+  "cat": "K-idol",
+  "subAgency": "어트랙트"
+ },
+ {
+  "name": "샤넬",
+  "group": "FIFTY FIFTY",
+  "agency": "기타",
+  "gender": "F",
+  "dob": "2003-06-14",
+  "cat": "K-idol",
+  "subAgency": "어트랙트"
+ },
+ {
+  "name": "소피아",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2002-12-31",
+  "cat": "K-idol"
+ },
+ {
+  "name": "마농",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2002-06-26",
+  "cat": "K-idol"
+ },
+ {
+  "name": "라라",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2005-11-03",
+  "cat": "K-idol"
+ },
+ {
+  "name": "다니엘라",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2004-07-01",
+  "cat": "K-idol"
+ },
+ {
+  "name": "메건",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2006-02-10",
+  "cat": "K-idol"
+ },
+ {
+  "name": "윤채",
+  "group": "KATSEYE",
+  "agency": "HYBE",
+  "gender": "F",
+  "dob": "2007-12-06",
+  "cat": "K-idol"
+ },
+ {
+  "name": "권정열",
+  "group": "10cm",
+  "agency": "기타",
+  "gender": "M",
+  "dob": "1983-03-01",
+  "cat": "K-idol",
+  "subAgency": "매직스트로베리사운드"
  }
 ]
