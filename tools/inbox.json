@@ -24711,5 +24711,18 @@
     "firstAt": "2026-09-01T09:05:18.959Z",
     "lastAt": "2026-09-01T09:05:18.959Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kiwon|ambio",
+    "name": "Kiwon",
+    "group": "AMBIO",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20060730",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-01T11:30:19.496Z",
+    "lastAt": "2026-09-01T11:30:19.496Z",
+    "status": "pending"
   }
 ]
