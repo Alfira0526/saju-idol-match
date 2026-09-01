@@ -24685,5 +24685,18 @@
     "firstAt": "2026-08-31T15:02:10.734Z",
     "lastAt": "2026-08-31T15:02:10.734Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:yunseo|beboys",
+    "name": "Yunseo",
+    "group": "BE BOYS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040811",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-01T05:48:24.588Z",
+    "lastAt": "2026-09-01T05:48:24.588Z",
+    "status": "pending"
   }
 ]
