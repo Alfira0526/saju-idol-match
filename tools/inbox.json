@@ -24698,5 +24698,18 @@
     "firstAt": "2026-09-01T05:48:24.588Z",
     "lastAt": "2026-09-01T05:48:24.588Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:hojun|ntx",
+    "name": "Hojun",
+    "group": "NTX",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20020522",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-01T09:05:18.959Z",
+    "lastAt": "2026-09-01T09:05:18.959Z",
+    "status": "pending"
   }
 ]
