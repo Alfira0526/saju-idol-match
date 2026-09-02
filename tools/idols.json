@@ -12725,5 +12725,233 @@
     "gender": "M",
     "dob": "2003-04-03",
     "cat": "K-actor"
+  },
+  {
+    "name": "키무라 마사야",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1997-10-10",
+    "cat": "J-idol"
+  },
+  {
+    "name": "타카츠카 히로무",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1999-04-04",
+    "cat": "J-idol"
+  },
+  {
+    "name": "타지마 쇼고",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1998-10-13",
+    "cat": "J-idol"
+  },
+  {
+    "name": "후지마키 쿄스케",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1999-08-10",
+    "cat": "J-idol"
+  },
+  {
+    "name": "오자키 타쿠미",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1999-06-14",
+    "cat": "J-idol"
+  },
+  {
+    "name": "니시 히로토",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1997-06-01",
+    "cat": "J-idol"
+  },
+  {
+    "name": "마츠다 진",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "2002-10-30",
+    "cat": "J-idol"
+  },
+  {
+    "name": "쉬펑판",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1998-06-12",
+    "cat": "J-idol"
+  },
+  {
+    "name": "이케자키 리히토",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "2001-08-30",
+    "cat": "J-idol"
+  },
+  {
+    "name": "사노 유다이",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "2000-10-10",
+    "cat": "J-idol"
+  },
+  {
+    "name": "고토 타케루",
+    "group": "INI",
+    "agency": "LAPONE",
+    "gender": "M",
+    "dob": "1999-06-03",
+    "cat": "J-idol"
+  },
+  {
+    "name": "RYOJI",
+    "group": "WOLF HOWL HARMONY from EXILE TRIBE",
+    "agency": "LDH",
+    "gender": "M",
+    "dob": "1996-05-15",
+    "cat": "J-idol"
+  },
+  {
+    "name": "SUZUKI",
+    "group": "WOLF HOWL HARMONY from EXILE TRIBE",
+    "agency": "LDH",
+    "gender": "M",
+    "dob": "1995-08-14",
+    "cat": "J-idol"
+  },
+  {
+    "name": "GHEE",
+    "group": "WOLF HOWL HARMONY from EXILE TRIBE",
+    "agency": "LDH",
+    "gender": "M",
+    "dob": "1997-12-31",
+    "cat": "J-idol"
+  },
+  {
+    "name": "HIROTO",
+    "group": "WOLF HOWL HARMONY from EXILE TRIBE",
+    "agency": "LDH",
+    "gender": "M",
+    "dob": "2002-01-30",
+    "cat": "J-idol"
+  },
+  {
+    "name": "수민",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2001-09-07"
+  },
+  {
+    "name": "은조",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-03-07"
+  },
+  {
+    "name": "라라",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-08-09"
+  },
+  {
+    "name": "미소",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-10-25"
+  },
+  {
+    "name": "유이",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-04-24"
+  },
+  {
+    "name": "보니",
+    "group": "DREAMNOTE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-10-30"
+  },
+  {
+    "name": "웨웨",
+    "group": "ONER",
+    "agency": "중국 그룹",
+    "gender": "M",
+    "dob": "1992-07-11",
+    "cat": "Etc"
+  },
+  {
+    "name": "무쯔양",
+    "group": "ONER",
+    "agency": "중국 그룹",
+    "gender": "M",
+    "dob": "1994-04-21",
+    "cat": "Etc"
+  },
+  {
+    "name": "링차오",
+    "group": "ONER",
+    "agency": "중국 그룹",
+    "gender": "M",
+    "dob": "2001-01-09",
+    "cat": "Etc"
+  },
+  {
+    "name": "단",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1997-11-01"
+  },
+  {
+    "name": "아서",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-04-15"
+  },
+  {
+    "name": "무진",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-11-20"
+  },
+  {
+    "name": "루이",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2001-04-08"
+  },
+  {
+    "name": "아이반",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2001-10-12"
+  },
+  {
+    "name": "자한",
+    "group": "더킹덤",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-08-01"
   }
 ]
