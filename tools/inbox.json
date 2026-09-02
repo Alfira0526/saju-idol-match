@@ -24737,5 +24737,18 @@
     "firstAt": "2026-09-02T02:22:13.812Z",
     "lastAt": "2026-09-02T02:22:13.812Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:youi|dreamnote",
+    "name": "Youi",
+    "group": "DREAMNOTE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20002404",
+    "note": "Formerly iMe KOREA agency",
+    "count": 1,
+    "firstAt": "2026-09-02T07:38:15.030Z",
+    "lastAt": "2026-09-02T07:38:15.030Z",
+    "status": "pending"
   }
 ]
