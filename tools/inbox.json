@@ -24750,5 +24750,18 @@
     "firstAt": "2026-09-02T07:38:15.030Z",
     "lastAt": "2026-09-02T07:38:15.030Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:laun|onf",
+    "name": "laun",
+    "group": "onf",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990812",
+    "note": "wm",
+    "count": 1,
+    "firstAt": "2026-09-02T20:50:08.076Z",
+    "lastAt": "2026-09-02T20:50:08.076Z",
+    "status": "pending"
   }
 ]
