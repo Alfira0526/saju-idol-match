@@ -24724,5 +24724,18 @@
     "firstAt": "2026-09-01T11:30:19.496Z",
     "lastAt": "2026-09-01T11:30:19.496Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이동원|knk",
+    "name": "이동원",
+    "group": "KNK",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19940101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-02T02:22:13.812Z",
+    "lastAt": "2026-09-02T02:22:13.812Z",
+    "status": "pending"
   }
 ]
