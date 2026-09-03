@@ -24763,5 +24763,18 @@
     "firstAt": "2026-09-02T20:50:08.076Z",
     "lastAt": "2026-09-02T20:50:08.076Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:taeri|iii",
+    "name": "Taeri",
+    "group": "iii",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20022109",
+    "note": "kpop girl group with former Universe Ticket contestants",
+    "count": 1,
+    "firstAt": "2026-09-03T03:51:57.533Z",
+    "lastAt": "2026-09-03T03:51:57.533Z",
+    "status": "pending"
   }
 ]
