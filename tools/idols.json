@@ -12953,5 +12953,113 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2002-08-01"
+  },
+  {
+    "name": "효",
+    "group": "YUHZ",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-02-09",
+    "cat": "K-idol",
+    "subAgency": "피나클엔터테인먼트"
+  },
+  {
+    "name": "재일",
+    "group": "YUHZ",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2007-01-10",
+    "cat": "K-idol",
+    "subAgency": "피나클엔터테인먼트"
+  },
+  {
+    "name": "하루토",
+    "group": "YUHZ",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-10-10",
+    "cat": "K-idol",
+    "subAgency": "피나클엔터테인먼트"
+  },
+  {
+    "name": "라운",
+    "group": "ONF",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1999-08-12",
+    "cat": "K-idol",
+    "subAgency": "WM엔터테인먼트"
+  },
+  {
+    "name": "차이쉬쿤",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1998-08-02",
+    "cat": "Etc"
+  },
+  {
+    "name": "천리눙",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-10-03",
+    "cat": "Etc"
+  },
+  {
+    "name": "판청청",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-06-16",
+    "cat": "Etc"
+  },
+  {
+    "name": "황밍하오",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2002-02-19",
+    "cat": "Etc"
+  },
+  {
+    "name": "왕쯔이",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1996-07-13",
+    "cat": "Etc"
+  },
+  {
+    "name": "린옌쥔",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1995-08-24",
+    "cat": "Etc"
+  },
+  {
+    "name": "주정팅",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1996-03-18",
+    "cat": "Etc"
+  },
+  {
+    "name": "왕린카이",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1999-05-20",
+    "cat": "Etc"
+  },
+  {
+    "name": "유창징",
+    "group": "NINE PERCENT",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1994-09-19",
+    "cat": "Etc"
   }
 ]
