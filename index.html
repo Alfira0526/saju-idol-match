@@ -412,6 +412,12 @@
   .da-h-lab{font-size:11px; color:var(--ink-dim);}
   .da-band{display:inline-block; background:var(--grad,var(--gold)); color:#fff; font-size:13px; font-weight:700;
     padding:5px 14px; border-radius:999px; margin:0 0 16px;}
+  /* 🐦 트친 한 줄 (트위터 감성 인용) */
+  .ota-tweet{display:flex; gap:9px; align-items:flex-start; margin:0 0 18px; padding:11px 14px;
+    background:#1d9bf012; border:1px solid #1d9bf033; border-radius:14px;}
+  .ota-tweet .ota-tw-bird{font-size:17px; line-height:1.35; flex:none;}
+  .ota-tweet .ota-tw-txt{font-size:14px; line-height:1.45; color:var(--ink); font-weight:600; font-style:italic;
+    word-break:keep-all;}
   .da-section{margin:0 0 15px;}
   .da-section h4{font-size:12.5px; color:var(--gold); margin:0 0 6px; letter-spacing:.02em; font-weight:700;
     border-left:3px solid var(--gold); padding-left:8px;}
@@ -1923,43 +1929,51 @@ function runTri(){
 // ── 🎧 케이팝 오타쿠 사주 (내 사주로 보는 덕질 성향) ──
 // 전부 이미 계산 중인 값으로 구성: 일간 오행 + 신강/신약 + 식상(내가 애정 쏟는) 오행.
 const OTA_BODY = {
-  "木":{name:{ko:"🌱 새싹 열정 덕후",en:"🌱 Sprouting Passion Stan",ja:"🌱 新芽の情熱オタク",zh:"🌱 新芽热情饭"},line:{ko:"관심이 확 뻗어나가는 성장형. 새 그룹·신인에 마음이 금방 열리고, 최애가 커가는 서사에 제일 크게 반응해요.",en:"A growth type whose interest shoots outward. You open up fast to new groups and rookies, and react hardest to your bias's growth arc.",ja:"関心がぐんと伸びる成長型。新グループ・新人にすぐ心が開き、推しの成長物語に一番大きく反応します。",zh:"兴趣不断向外延展的成长型。你对新团、新人很快敞开心扉，对本命的成长故事反应最强烈。"}},
-  "火":{name:{ko:"🔥 화력 만렙 덕후",en:"🔥 Max-Firepower Stan",ja:"🔥 火力マックスオタク",zh:"🔥 火力满级饭"},line:{ko:"감정이 즉시 타오르는 불꽃형. 좋으면 바로 표현하고, 스밍·투표·총공 최전선에서 화력을 뿜어요.",en:"A flame type whose feelings ignite instantly. You express love right away and blaze at the front line of streaming, voting, and mass campaigns.",ja:"感情が即座に燃え上がる炎型。好きならすぐ表現し、ストリーミング・投票・総攻の最前線で火力を放ちます。",zh:"情感瞬间燃起的火焰型。喜欢就立刻表达，在打榜、投票、总攻最前线释放火力。"}},
-  "土":{name:{ko:"⛰️ 든든한 존버 덕후",en:"⛰️ Steadfast Long-Hauler",ja:"⛰️ 頼れる存バオタク",zh:"⛰️ 稳如泰山守护饭"},line:{ko:"한번 정착하면 진득하게 가는 기둥형. 팬덤의 중심을 잡고, 오래오래 곁을 지켜요.",en:"A pillar type who settles in and stays. You anchor the fandom's center and stick around for the long haul.",ja:"一度定着すると粘り強く続く柱型。ファンダムの中心を支え、長く傍を守ります。",zh:"一旦入坑就长情的顶梁柱型。稳住粉圈的中心，长长久久地守护。"}},
-  "金":{name:{ko:"💎 냉철한 분석 덕후",en:"💎 Sharp Analyst Stan",ja:"💎 冷静な分析オタク",zh:"💎 冷静分析饭"},line:{ko:"완성도와 팩트로 파는 프로형. 자컨·직캠을 정독하고, 최애의 성장·기록을 예리하게 짚어요.",en:"A pro type who stans by quality and facts. You pore over self-content and fancams, and pinpoint your bias's growth and records.",ja:"完成度とファクトで推すプロ型。自コン・直カメを精読し、推しの成長・記録を鋭く突きます。",zh:"以完成度与事实入坑的专业型。精读自制内容与直拍，敏锐点出本命的成长与记录。"}},
-  "水":{name:{ko:"🌊 잔잔한 롱런 덕후",en:"🌊 Quiet Long-Run Stan",ja:"🌊 静かなロングランオタク",zh:"🌊 细水长流饭"},line:{ko:"조용히 스며들어 오래가는 물밑형. 티는 안 나도 촉이 좋고, 흐름을 읽으며 은근하게 화력을 보태요.",en:"An under-the-surface type who quietly seeps in and lasts. Low-key but sharp-instinct, you read the flow and add firepower subtly.",ja:"静かに染み込み長く続く水面下型。目立たなくても勘が良く、流れを読んでさりげなく火力を足します。",zh:"悄然渗透、细水长流的水下型。不张扬却直觉敏锐，读懂风向、含蓄地添火力。"}}
+  "木":{name:{ko:"🌱 입덕부정기 3초컷 덕후",en:"🌱 Zero-Denial Instant Stan",ja:"🌱 沼落ち3秒オタク",zh:"🌱 三秒入坑饭"},line:{ko:"새 그룹 티저 하나에 심장 나감 ㅋㅋㅋ 입덕부정기? 그런 거 없음. 컴백만 하면 새 최애 생기는 무한 확장형. 성장서사에 약해서 데뷔조부터 우는 사람 나야 나.",en:"One teaser and your heart's gone lol. Denial phase? Never heard of it. Every comeback = a new bias — infinite expansion mode. Weak to growth arcs, crying since the debut lineup, that's you.",ja:"新グループのティーザー1本で心臓持ってかれる系ｗ 沼落ち否定期?ないない。カムバのたびに新しい推しができる無限拡張型。成長物語に弱くてデビュー組から泣くタイプ、それ私。",zh:"一支预告就把心交出去了哈哈。入坑否认期？不存在的。每次回归都能多一个本命，无限扩张型。对成长故事没抵抗力，从出道阵容就开始哭，说的就是你。"}},
+  "火":{name:{ko:"🔥 화력 만렙 총공대장",en:"🔥 Max-Firepower Raid Captain",ja:"🔥 火力マックス総攻隊長",zh:"🔥 火力满级总攻队长"},line:{ko:"좋으면 3초 안에 트윗 박음, 감정 못 참음 진짜 ㅋㅋ 스밍·투표·총공 알림 뜨면 손이 먼저 나감. 실시간 트렌드 올리는 데 목숨 검. 화력=사랑이라 믿는 사람.",en:"Love it? Tweet's up in 3 seconds — can't hold it in fr lol. Streaming, voting, raid alerts and your hands move first. You'd die to get a trend going. Firepower = love, that's your religion.",ja:"好きなら3秒でツイート、感情抑えられない系ｗ ストリーミング・投票・総攻の通知が来たら手が先に動く。トレンド入りに命かける。火力=愛だと信じてる人。",zh:"喜欢就三秒内发推，情绪真的憋不住哈哈。打榜、投票、总攻提醒一响手比脑子快。为了冲实时热搜可以拼命。坚信火力=爱的人。"}},
+  "土":{name:{ko:"⛰️ 한 우물 존버 의리덕",en:"⛰️ One-Well Loyal Long-Hauler",ja:"⛰️ 一途な存バ義理オタク",zh:"⛰️ 从一而终的守护饭"},line:{ko:"한번 파면 안 나옴. 그룹 해체해도 남아있을 사람. N년째 같은 최애 파는 게 자랑임. 신곡 좀 별로여도 '그래도 내 새끼'. 팬덤 짬바 무시 못 함.",en:"Once you dig in, you don't leave. You'd stay even after a disbandment. N years on the same bias and proud of it. New song kinda mid? 'Still my baby.' Don't underestimate the veteran hours.",ja:"一度ハマったら出てこない。解散しても残るタイプ。N年同じ推し一筋が自慢。新曲がちょっと微妙でも「それでもうちの子」。ファン歴の年季は侮れない。",zh:"一入坑就不出来。就算团解散也会留下来的人。同一个本命追了N年还引以为豪。新歌一般般也是'那也是我崽'。粉龄的老资历不容小觑。"}},
+  "金":{name:{ko:"💎 팩트폭격 분석왕",en:"💎 Fact-Bomb Analyst King",ja:"💎 ファクト爆撃の分析王",zh:"💎 事实轰炸分析王"},line:{ko:"직캠 프레임 단위로 뜯어봄. 자컨 3회독 기본. 앨범 크레딧까지 외우는 사람. '그냥 좋아'는 안 통함, 근거 있는 사랑만 함. 팩트로 영업하는 타입.",en:"You break down fancams frame by frame. Self-content, 3 rewatches minimum. Memorized the album credits. 'Just because' doesn't fly — you only love with receipts. The type who recruits with facts.",ja:"直カメをフレーム単位で解剖。自コンは3周が基本。アルバムのクレジットまで暗記。「なんとなく好き」は通用しない、根拠のある愛だけ。ファクトで布教するタイプ。",zh:"直拍逐帧拆解。自制内容三刷起步。连专辑credit都背下来。'就是喜欢'行不通，只谈有据可查的爱。用事实安利的类型。"}},
+  "水":{name:{ko:"🌊 조용한 물밑 롱런덕",en:"🌊 Quiet Under-Current Stan",ja:"🌊 静かな水面下ロングランオタク",zh:"🌊 安静的水下长跑饭"},line:{ko:"말은 없는데 다 보고 있음. RT는 안 해도 마음속 좋아요 만 개. 티 안 내고 오래 가는데 촉 좋아서 떡밥 냄새는 제일 먼저 맡음.",en:"Quiet, but seeing everything. No RTs, but ten thousand likes in your heart. Low-key and long-lasting, yet your instincts catch the crumbs first.",ja:"喋らないけど全部見てる。RTはしないけど心の中でいいね一万回。目立たず長く続くのに、勘が良くて떡밥の匂いは誰より先に嗅ぐ。",zh:"话不多但全都看在眼里。不转发，心里却点了一万个赞。不动声色却长情，直觉好到爆料的味道你最先闻到。"}}
+};
+// 🐦 트친 한 줄(트위터 감성) — 각 체질이 칠 법한 트윗
+const OTA_TWEET = {
+  "木":{ko:"아 몰라 얘도 최애야 최애 정원 무한대임",en:"idk man this one's my bias too, my bias garden has no fence",ja:"もう無理これも推し 推しの定員は無限です",zh:"不管了这个也是本命 我的本命名额无上限"},
+  "火":{ko:"떴다 총공 시간 다들 폰 들어 ✊",en:"it's up. raid time. everyone grab your phones ✊",ja:"来た 総攻の時間 みんなスマホ持って ✊",zh:"来了 总攻时间 大家手机拿好 ✊"},
+  "土":{ko:"입덕 N년차… 우린 이제 가족임 ㅠㅠ",en:"N years in the fandom… we're basically family now ㅠㅠ",ja:"推し歴N年目…もう家族です ㅠㅠ",zh:"入坑第N年…我们已经是家人了 ㅠㅠ"},
+  "金":{ko:"이 안무 디테일 아무도 안 짚어서 내가 함 (스레드 1/17)",en:"nobody was breaking down this choreo detail so I did (thread 1/17)",ja:"この振り付けのディテール誰も触れてないから私がやる(スレ 1/17)",zh:"这段编舞细节没人分析所以我来 (串 1/17)"},
+  "水":{ko:"말 안 하고 지켜본 지 3년… 나 사실 찐임",en:"been quietly watching for 3 years… I'm actually the realest",ja:"何も言わずに見守って3年…実は私が本物です",zh:"默默看了三年…其实我才是真爱粉"}
 };
 const OTA_BODYMOD = {
-  strong:{ko:" 게다가 기운이 강해 앞장서서 판을 이끄는 주도형이에요.",en:" On top of that, your energy runs strong — a take-charge type who leads from the front.",ja:" しかも気が強く、先頭に立って場を率いる主導型です。",zh:" 而且你气势强，是带头引领局面的主导型。"},
-  mid:{ko:" 기운이 균형 잡혀 화력과 여유를 오가는 밸런스형이에요.",en:" Your energy is balanced — a well-rounded type who toggles between firepower and ease.",ja:" 気がバランス良く、火力と余裕を行き来するバランス型です。",zh:" 你气势均衡，是在火力与从容间切换的平衡型。"},
-  weak:{ko:" 기운이 여려 요란하지 않게, 뒤에서 꾸준히 오래 가는 편이에요.",en:" Your energy is gentle — not flashy, you keep going steadily from behind.",ja:" 気が穏やかで派手さはなく、後ろで着実に長く続くタイプです。",zh:" 你气势柔和，不张扬，在幕后稳稳地长久坚持。"}
+  strong:{ko:" 기운도 세서 뭐든 앞장서는 스타일. 총대 메는 거 익숙함 ㅋㅋ",en:" Strong energy too — the type who leads everything. Used to carrying the flag lol.",ja:" 気も強くて何でも先頭に立つスタイル。旗振り役に慣れてるｗ",zh:" 气势也强，做什么都冲在前面。扛大旗扛习惯了哈哈。"},
+  mid:{ko:" 기운도 딱 균형이라 화력 낼 땐 내고 뺄 땐 빼는 완급조절러.",en:" Balanced energy too — full firepower when it counts, easing off when it doesn't. A pacing pro.",ja:" 気もちょうど均衡で、火力出す時は出して抜く時は抜く緩急調整型。",zh:" 气势也刚好均衡，该出火力时出、该收时收的节奏掌控者。"},
+  weak:{ko:" 기운은 여린 편이라 요란하진 않아도 뒤에서 조용히 오래 감.",en:" Gentler energy — not flashy, but you keep going quietly from the back for the long haul.",ja:" 気は穏やかな方で、派手じゃなくても後ろで静かに長く続く。",zh:" 气势偏柔，不张扬却在幕后安静地长久坚持。"}
 };
 // 취향: 식상(내가 생하는) 오행 = 내가 애정을 쏟는 대상의 기질
 const OTA_TASTE = {
-  "火":{ko:"밝고 화려한 무대 장악형에 약해요. 끼가 폭발하는 센터·비주얼에 눈이 돌아가요.",en:"You're weak for bright, dazzling stage-commanders. Charisma-bursting centers and visuals turn your head.",ja:"明るく華やかな舞台掌握型に弱いです。끼が爆発するセンター・ビジュアルに目を奪われます。",zh:"你对明亮华丽、掌控舞台的类型没有抵抗力。魅力四射的中心和门面最抓你眼球。"},
-  "土":{ko:"듬직하고 다정한 곰 같은 최애에 끌려요. 안정감 주는 든든한 사람에게 마음이 가요.",en:"You're drawn to steady, warm, bear-like biases. Your heart goes to dependable people who feel safe.",ja:"どっしり優しいクマのような推しに惹かれます。安定感のある頼れる人に心が向きます。",zh:"你会被稳重温柔、像熊一样的本命吸引。心动于给人安全感、靠得住的人。"},
-  "金":{ko:"시크하고 완벽한 프로페셔널에 반해요. 칼군무·자기관리 철저한 갓벽美가 취향.",en:"You fall for chic, flawless professionals. Razor-sharp choreo and airtight self-management are your type.",ja:"シックで完璧なプロに惚れます。キレキレの群舞・徹底した自己管理の完璧美が好み。",zh:"你会为高冷完美的专业型倾心。刀群舞、自律到极致的神级完美是你的菜。"},
-  "水":{ko:"감성과 분위기, 신비로운 아우라에 빠져요. 눈빛·목소리로 서사를 주는 사람이 취향.",en:"You sink into emotion, mood, and a mysterious aura. People who tell a story with their eyes and voice are your type.",ja:"感性と雰囲気、神秘的なオーラにハマります。眼差し・声で物語を紡ぐ人が好み。",zh:"你沉迷于感性、氛围与神秘气场。用眼神和声音讲故事的人是你的菜。"},
-  "木":{ko:"순수하고 성장하는 새싹형을 응원하게 돼요. 서툴어도 반짝이는 원석에 마음이 가요.",en:"You end up rooting for pure, growing sprout types. Even if raw, a shining diamond-in-the-rough wins your heart.",ja:"純粋で成長する新芽型を応援したくなります。不器用でも輝く原石に心が向きます。",zh:"你会忍不住为纯粹、成长中的新芽型应援。哪怕青涩，闪光的璞玉也能打动你。"}
+  "火":{ko:"무대 위 미친 존재감한테 머리채 잡힘. 센터·비주얼에 눈 돌아가는 편 ㅋㅋ",en:"Dragged by insane stage presence. Centers and visuals? Instant whiplash lol.",ja:"ステージ上の狂った存在感に髪掴まれる。センター・ビジュアルに目が行く方ｗ",zh:"被舞台上疯狂的存在感一把抓住。对中心和门面眼睛就是拔不开哈哈。"},
+  "土":{ko:"듬직·다정 곰상한테 약함. 안정감 주는 든든한 애한테 마음 스르륵 녹음.",en:"Weak for the steady, warm, bear-type. Your heart just melts for someone dependable and safe.",ja:"どっしり優しいクマ系に弱い。安定感くれる頼れる子に心がとろける。",zh:"对稳重温柔的熊系没辙。给人安全感、靠得住的孩子让你的心慢慢融化。"},
+  "金":{ko:"칼군무·자기관리 갓벽 프로한테 반함. '이걸 사람이?' 완벽美에 소리 지름.",en:"Falling for razor-choreo, self-managed pros. 'A human did THAT?' — you scream at the perfection.",ja:"キレキレ群舞・自己管理完璧なプロに惚れる。「これ人間?」完璧美に叫ぶ。",zh:"为刀群舞、自律爆表的专业型倾心。'这是人能做到的?'对完美美学尖叫。"},
+  "水":{ko:"눈빛·목소리로 서사 쓰는 분위기파한테 익사함 ㅠㅠ 신비 아우라에 약함.",en:"Drowning in mood-makers who write a story with their eyes and voice ㅠㅠ weak to a mysterious aura.",ja:"眼差し・声で物語を紡ぐ雰囲気派に溺れる ㅠㅠ 神秘的なオーラに弱い。",zh:"沉溺于用眼神和声音写故事的氛围派 ㅠㅠ 对神秘气场毫无抵抗。"},
+  "木":{ko:"서툴어도 반짝이는 원석 응원하게 됨. 성장하는 새싹 보면 엄마미소 나옴.",en:"You end up rooting for the raw-but-shining rough diamond. Watching a sprout grow gives you full mom-smile.",ja:"不器用でも輝く原石を応援しちゃう。成長する新芽を見ると母のような笑みが出る。",zh:"哪怕青涩也会为闪光的璞玉应援。看着新芽成长就露出老母亲般的微笑。"}
 };
 const OTA_WAY = {
-  "木":{ko:"🌱 영업·확장형 — 짤·트윗·영업글로 최애를 퍼뜨리고 새 팬을 데려와요.",en:"🌱 Recruiter type — you spread your bias with memes, tweets, and pitch posts, pulling in new fans.",ja:"🌱 布教・拡張型 — 画像・ツイート・布教文で推しを広め、新規を連れてきます。",zh:"🌱 安利扩张型 — 用表情包、推文、安利贴传播本命，拉来新粉。"},
-  "火":{ko:"🔥 화력 몰빵형 — 스밍·투표·총공에 실시간으로 참전, 성적을 끌어올려요.",en:"🔥 All-in firepower — you jump into streaming, voting, and campaigns in real time to push the numbers.",ja:"🔥 火力全ツッパ型 — ストリーミング・投票・総攻にリアルタイム参戦、成績を押し上げます。",zh:"🔥 火力全开型 — 实时参与打榜、投票、总攻，把成绩往上拉。"},
-  "土":{ko:"⛰️ 컬렉션·존버형 — 앨범·포카·굿즈를 차곡차곡, 소장과 서포트로 오래 함께해요.",en:"⛰️ Collector long-hauler — albums, photocards, goods stacked up; you stay through owning and supporting.",ja:"⛰️ コレクション・存バ型 — アルバム・トレカ・グッズをコツコツ、所蔵と支援で長く共にします。",zh:"⛰️ 收藏守护型 — 专辑、小卡、周边一点点囤，用收藏与支持长久相伴。"},
-  "金":{ko:"💎 아카이빙·분석형 — 직캠 편집·기록·타임라인 정리, 데이터로 덕질해요.",en:"💎 Archivist-analyst — fancam edits, records, timeline curation; you stan with data.",ja:"💎 アーカイブ・分析型 — 直カメ編集・記録・タイムライン整理、データで推します。",zh:"💎 归档分析型 — 直拍剪辑、记录、时间线整理，用数据追星。"},
-  "水":{ko:"🌊 정보·눈팅형 — 조용히 정보 모으고 큐레이션, 물밑에서 촘촘히 서포트해요.",en:"🌊 Info-lurker — quietly gathering and curating info, supporting densely under the surface.",ja:"🌊 情報・ROM型 — 静かに情報を集めキュレーション、水面下で細かく支えます。",zh:"🌊 情报潜水型 — 安静收集与整理情报，在水面下细密地支持。"}
+  "木":{ko:"🌱 영업의 신 — 짤·영업글로 신규 영입함. '얘 한번 봐봐'가 입버릇.",en:"🌱 Recruiter god — memes and pitch posts pulling in new fans. 'just look at them once' is your catchphrase.",ja:"🌱 布教の神 — 画像・布教文で新規勧誘。「一回見て」が口癖。",zh:"🌱 安利之神 — 用表情包、安利贴拉新粉。'你就看一眼'是口头禅。"},
+  "火":{ko:"🔥 총공 최전선 — 스밍·투표 실시간 참전. 성적표에 진심인 화력 담당.",en:"🔥 Raid front line — live on streaming and voting. Dead serious about the charts, the firepower dept.",ja:"🔥 総攻最前線 — ストリーミング・投票にリアタイ参戦。成績に本気の火力担当。",zh:"🔥 总攻最前线 — 打榜投票实时参战。对成绩单认真到底的火力担当。"},
+  "土":{ko:"⛰️ 앨범깡·굿즈수집 — 포카 다 모을 때까지 안 멈춤. 소장이 사랑의 증거.",en:"⛰️ Album-hauls & goods — won't stop till every photocard's collected. Owning = proof of love.",ja:"⛰️ アルバム開封・グッズ収集 — トレカ全部揃うまで止まらない。所蔵が愛の証。",zh:"⛰️ 拆专·囤周边 — 不集齐所有小卡不罢休。收藏就是爱的证明。"},
+  "金":{ko:"💎 직캠 편집·기록 — 타임라인 정리하고 데이터로 덕질. 아카이브가 취미.",en:"💎 Fancam edits & records — curating timelines, stanning by data. Archiving is the hobby.",ja:"💎 直カメ編集・記録 — タイムライン整理してデータで推す。アーカイブが趣味。",zh:"💎 直拍剪辑·记录 — 整理时间线、用数据追星。归档就是兴趣。"},
+  "水":{ko:"🌊 눈팅 정보통 — 조용히 떡밥 수집·큐레이션. 물밑에서 다 챙김.",en:"🌊 Lurker info-hub — quietly collecting and curating crumbs. Handling everything under the surface.",ja:"🌊 ROM専の情報通 — 静かに떡밥収集・キュレーション。水面下で全部拾う。",zh:"🌊 潜水情报通 — 安静收集、整理爆料。在水面下全都照应到。"}
 };
 const OTA_REL = {
-  strong:{ko:"밀착·직진형 — '내 최애는 내가 지킨다'. 능동적으로 개입하고 챙기는 보호자 포지션.",en:"Close & direct — 'I protect my bias.' You actively step in and look after them, a guardian position.",ja:"密着・直進型 — 「私の推しは私が守る」。能動的に関わり世話する保護者ポジション。",zh:"贴近直球型 — “我的本命我来守护”。主动介入、悉心照料的守护者定位。"},
-  mid:{ko:"균형·존중형 — 적당한 거리에서 건강하게. 최애의 삶도 내 삶도 지키는 밸런스.",en:"Balanced & respectful — healthy at a right distance. You protect your bias's life and your own.",ja:"バランス・尊重型 — 適度な距離で健全に。推しの人生も自分の人生も守るバランス。",zh:"平衡尊重型 — 在适当距离健康追星。既守护本命的生活，也守护自己的。"},
-  weak:{ko:"관망·힐링형 — 멀리서 지켜보는 것만으로 충분. 조용한 애정에서 위안을 얻어요.",en:"Watch-from-afar healer — just watching from a distance is enough. You draw comfort from quiet affection.",ja:"見守り・癒し型 — 遠くから見守るだけで十分。静かな愛情から慰めを得ます。",zh:"远观疗愈型 — 远远守望便已足够。从安静的爱意中获得慰藉。"}
+  strong:{ko:"🛡️ 보호자 모드 — '내 최애는 내가 지킨다'. 악플러랑 싸우러 나가는 사람.",en:"🛡️ Guardian mode — 'I protect my bias.' The one who goes out to fight the haters.",ja:"🛡️ 保護者モード — 「私の推しは私が守る」。アンチと戦いに行く人。",zh:"🛡️ 守护者模式 — '我的本命我来守护'。会冲出去和黑子对线的人。"},
+  mid:{ko:"⚖️ 건강한 덕질 — 적당한 거리에서 오래오래. 최애도 나도 지키는 밸런스형.",en:"⚖️ Healthy stanning — right distance, long run. A balance type who protects both your bias and you.",ja:"⚖️ 健全な推し活 — 適度な距離で長く。推しも自分も守るバランス型。",zh:"⚖️ 健康追星 — 适当距离、细水长流。既护本命也护自己的平衡型。"},
+  weak:{ko:"🍵 힐링 관망러 — 멀리서 보는 것만으로 충분. 존재 자체가 위안인 사람.",en:"🍵 Healing watcher — just seeing them from afar is enough. Their existence alone is your comfort.",ja:"🍵 癒しの見守り — 遠くから見るだけで十分。存在そのものが癒しな人。",zh:"🍵 疗愈远观党 — 远远看着就够了。光是存在本身就是慰藉。"}
 };
 const OTA_QUIT = {
-  "木":{ko:"환승형 — 새 최애가 생기면 자연스레 마음이 옮겨가요. 미련은 길지 않아요.",en:"Transfer type — when a new bias appears, your heart naturally moves. You don't linger long.",ja:"乗り換え型 — 新しい推しができると自然に心が移ります。未練は長くありません。",zh:"转移型 — 出现新本命时心思会自然转移。不会留恋太久。"},
-  "火":{ko:"번아웃형 — 화르륵 타오른 만큼 확 식을 수 있어요. 과몰입 뒤 급소진 주의.",en:"Burnout type — as fiercely as you burned, you can cool off fast. Watch for crash after over-immersion.",ja:"バーンアウト型 — 激しく燃えた分、一気に冷めることも。過集中後の急消耗に注意。",zh:"倦怠型 — 烧得多猛，也可能凉得多快。过度投入后小心骤然耗尽。"},
-  "土":{ko:"존버형 — 여간해선 안 변해요. 탈덕이 세상에서 제일 어려운 타입, 의리파.",en:"Never-leaves type — you rarely change. Quitting is the hardest thing in the world for you; the loyal one.",ja:"存バ型 — 滅多に変わりません。降りるのが世界一難しいタイプ、義理堅い派。",zh:"死守型 — 极难改变。脱饭对你是世上最难的事，重情义派。"},
-  "金":{ko:"손절형 — 신뢰·팩트가 어긋나면 냉정하게 정리. 실망하면 뒤도 안 돌아봐요.",en:"Cut-loss type — if trust or facts break, you cut cleanly. Once disappointed, you don't look back.",ja:"損切り型 — 信頼・ファクトが崩れれば冷静に整理。失望したら振り返りません。",zh:"止损型 — 信任或事实崩塌就冷静清算。一旦失望，绝不回头。"},
-  "水":{ko:"자연소멸형 — 티 안 나게 스르륵. 어느새 관심이 다른 데로 흘러가 있어요.",en:"Fade-away type — quietly, without a trace. Before you know it, your interest has drifted elsewhere.",ja:"自然消滅型 — 目立たずスルッと。いつの間にか関心が別へ流れています。",zh:"自然消散型 — 无声无息地淡出。不知不觉间兴趣已流向别处。"}
+  "木":{ko:"환승 이별형 — 새 최애 생기면 스르륵 갈아탐. 미련 없는 편 ㅋㅋ",en:"Clean-transfer type — new bias shows up, you smoothly switch. Not big on lingering lol.",ja:"乗り換え型 — 新しい推しができるとスルッと移行。未練ない方ｗ",zh:"无缝转移型 — 出现新本命就顺滑切换。不太留恋哈哈。"},
+  "火":{ko:"번아웃형 — 화르륵 탄 만큼 훅 식을 수 있음. 과몰입 뒤 현타 주의 ㅠ",en:"Burnout type — burned hot, can drop cold just as fast. Watch the reality-check crash after over-immersion ㅠ",ja:"バーンアウト型 — 激しく燃えた分ふっと冷めることも。過集中後の現実チェックに注意 ㅠ",zh:"倦怠型 — 烧得多猛也可能骤然凉。过度投入后小心'现实一击'哈 ㅠ"},
+  "土":{ko:"탈덕 불가형 — 여간해선 안 나감. 세상에서 제일 탈덕 어려운 의리파.",en:"Can't-quit type — you basically never leave. The hardest stan in the world to un-stan, the loyal one.",ja:"降りられない型 — 滅多に抜けない。世界一降りるのが難しい義理堅い派。",zh:"脱不了饭型 — 基本走不掉。世上最难脱饭的重情义派。"},
+  "金":{ko:"손절형 — 신뢰 깨지면 뒤도 안 봄. 실망하는 순간 정 뚝 떨어짐.",en:"Cut-loss type — trust breaks and you don't look back. The moment you're let down, the feeling just drops.",ja:"損切り型 — 信頼が崩れたら振り返らない。失望した瞬間に情がスッと落ちる。",zh:"止损型 — 信任一崩就头也不回。失望的瞬间感情说断就断。"},
+  "水":{ko:"자연소멸형 — 티 안 나게 스르륵. 어느새 관심이 딴 데 가 있음.",en:"Fade-away type — quietly, no trace. Before you know it your interest is already somewhere else.",ja:"自然消滅型 — 目立たずスルッと。いつの間にか関心が別のところに。",zh:"自然消散型 — 无声无息地淡出。不知不觉兴趣已经在别处了。"}
 };
 function _otaChart(y,m,d,hourVal){
   const dp=dayPillar(y,m,d);
@@ -1988,6 +2002,7 @@ function buildOtaku(c){
       <div class="pf-badge" style="background:${ELEM_COLOR[c.elem]};box-shadow:0 0 24px -2px ${ELEM_HEX[c.elem]}aa">${STEMS[c.uSI]}</div>
     </div>
     <div class="da-band">${esc(dl(OTA_BODY[c.elem].name))}</div>
+    <div class="ota-tweet"><span class="ota-tw-bird">🐦</span><span class="ota-tw-txt">${esc(dl(OTA_TWEET[c.elem]))}</span></div>
     ${sec(dt('otaBodyH'), bodyLine)}
     ${sec(dt('otaTasteH'), dl(OTA_TASTE[c.sikElem]))}
     ${sec(dt('otaWayH'), dl(OTA_WAY[c.elem]))}
@@ -4521,18 +4536,21 @@ function shareProfile(){
 function drawOtakuCard(c){
   const W=1080,H=1350,M=90; const canvas=document.createElement('canvas'); canvas.width=W; canvas.height=H;
   const ctx=canvas.getContext('2d'); cardBg(ctx,W,H); cardHead(ctx,W,M,dt('otaCardSub'));
-  const ink="#f3edff", dim="#ab9fce", eh=ELEM_HEX[c.elem];
-  const cut=s=>{ s=String(s); return s.length>54 ? s.slice(0,53)+'…' : s; };
+  const ink="#f3edff", dim="#ab9fce", eh=ELEM_HEX[c.elem], tw="#7fc8ff";
+  const cut=(s,n)=>{ s=String(s); return s.length>n ? s.slice(0,n-1)+'…' : s; };
   // 오행 배지
-  const cx=W/2, cy=372, rad=62;
+  const cx=W/2, cy=356, rad=58;
   ctx.beginPath(); ctx.arc(cx,cy,rad,0,Math.PI*2); ctx.fillStyle=eh; ctx.fill();
-  ctx.fillStyle="#170e2e"; ctx.font="800 60px 'Nanum Myeongjo',serif"; ctx.textAlign="center"; ctx.textBaseline="middle";
+  ctx.fillStyle="#170e2e"; ctx.font="800 56px 'Nanum Myeongjo',serif"; ctx.textAlign="center"; ctx.textBaseline="middle";
   ctx.fillText(STEMS[c.uSI], cx, cy+4); ctx.textBaseline="alphabetic";
   // 체질 이름(헤드라인)
-  ctx.fillStyle=eh; ctx.font="52px 'Jua','Noto Sans KR',sans-serif";
-  ctx.fillText(dl(OTA_BODY[c.elem].name), W/2, 500);
-  ctx.fillStyle=dim; ctx.font="400 28px 'Noto Sans KR',sans-serif";
-  ctx.fillText(`${dt('dmLabel')} ${STEMS[c.uSI]} · ${c.elem} · ${dt('body'+(c.body==='strong'?'Strong':c.body==='weak'?'Weak':'Mid'))}`, W/2, 546);
+  ctx.fillStyle=eh; ctx.font="48px 'Jua','Noto Sans KR',sans-serif";
+  ctx.fillText(dl(OTA_BODY[c.elem].name), W/2, 474);
+  ctx.fillStyle=dim; ctx.font="400 26px 'Noto Sans KR',sans-serif";
+  ctx.fillText(`${dt('dmLabel')} ${STEMS[c.uSI]} · ${c.elem} · ${dt('body'+(c.body==='strong'?'Strong':c.body==='weak'?'Weak':'Mid'))}`, W/2, 516);
+  // 🐦 트친 한 줄 (트위터 감성)
+  ctx.fillStyle=tw; ctx.font="italic 500 27px 'Noto Sans KR',sans-serif"; ctx.textAlign="center";
+  ctx.fillText(`🐦 "${cut(dl(OTA_TWEET[c.elem]),34)}"`, W/2, 572);
   const rows=[
     [dt('otaBodyH'), dl(OTA_BODY[c.elem].line)],
     [dt('otaTasteH'), dl(OTA_TASTE[c.sikElem])],
@@ -4540,12 +4558,12 @@ function drawOtakuCard(c){
     [dt('otaRelH'), dl(OTA_REL[c.body])],
     [dt('otaQuitH'), dl(OTA_QUIT[c.elem])]
   ];
-  let y=616;
+  let y=630;
   rows.forEach(([label,body])=>{
-    ctx.textAlign="center"; ctx.fillStyle=eh; ctx.font="700 29px 'Jua','Noto Sans KR',sans-serif";
+    ctx.textAlign="center"; ctx.fillStyle=eh; ctx.font="700 28px 'Jua','Noto Sans KR',sans-serif";
     ctx.fillText(label, W/2, y);
-    ctx.fillStyle=ink; ctx.font="400 26px 'Noto Sans KR',sans-serif";
-    y = wrapText(ctx, cut(body), W/2, y+40, W-2*M-20, 35) + 50;
+    ctx.fillStyle=ink; ctx.font="400 25px 'Noto Sans KR',sans-serif";
+    y = wrapText(ctx, cut(body,44), W/2, y+38, W-2*M-20, 32) + 38;
   });
   ctx.textAlign="left"; cardFoot(ctx,W,M,H); return canvas;
 }
