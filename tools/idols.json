@@ -13061,5 +13061,125 @@
     "gender": "M",
     "dob": "1994-09-19",
     "cat": "Etc"
+  },
+  {
+    "name": "이도훈",
+    "group": "Can't be blue",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2005-05-30",
+    "cat": "K-idol"
+  },
+  {
+    "name": "권다현",
+    "group": "Can't be blue",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-07-28",
+    "cat": "K-idol"
+  },
+  {
+    "name": "이휘원",
+    "group": "Can't be blue",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-08-05",
+    "cat": "K-idol"
+  },
+  {
+    "name": "김채현",
+    "group": "Can't be blue",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2004-05-16",
+    "cat": "K-idol"
+  },
+  {
+    "name": "김대훈",
+    "group": "Can't be blue",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2004-06-17",
+    "cat": "K-idol"
+  },
+  {
+    "name": "석희",
+    "group": "Celest1a",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-08-16",
+    "cat": "K-idol",
+    "subAgency": "버드맨"
+  },
+  {
+    "name": "은호",
+    "group": "YOUNITE",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2001-03-25",
+    "cat": "K-idol",
+    "subAgency": "브랜뉴뮤직"
+  },
+  {
+    "name": "형석",
+    "group": "YOUNITE",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-11-06",
+    "cat": "K-idol",
+    "subAgency": "브랜뉴뮤직"
+  },
+  {
+    "name": "우노",
+    "group": "YOUNITE",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-04-05",
+    "cat": "K-idol",
+    "subAgency": "브랜뉴뮤직"
+  },
+  {
+    "name": "데이",
+    "group": "YOUNITE",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-06-11",
+    "cat": "K-idol",
+    "subAgency": "브랜뉴뮤직"
+  },
+  {
+    "name": "시온",
+    "group": "YOUNITE",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2004-10-19",
+    "cat": "K-idol",
+    "subAgency": "브랜뉴뮤직"
+  },
+  {
+    "name": "형진",
+    "group": "NTX",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2001-02-25",
+    "cat": "K-idol",
+    "subAgency": "빅토리컴퍼니"
+  },
+  {
+    "name": "호준",
+    "group": "NTX",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-05-22",
+    "cat": "K-idol",
+    "subAgency": "빅토리컴퍼니"
+  },
+  {
+    "name": "류지호",
+    "group": "오월오일",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1997-10-01",
+    "cat": "K-idol"
   }
 ]
