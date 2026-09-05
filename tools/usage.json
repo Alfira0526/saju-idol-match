@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T08:40:48.804Z",
+  "updatedAt": "2026-09-05T17:50:45.720Z",
   "metric": "unique-users-per-day (UTC)",
   "events": [
     "match",
@@ -36,13 +36,17 @@
       "match": 1,
       "pair": 1,
       "profile": 1
+    },
+    "2026-09-05": {
+      "match": 1,
+      "share": 1
     }
   },
   "totals": {
-    "match": 6,
+    "match": 7,
     "pair": 3,
     "profile": 2,
-    "share": 2,
+    "share": 3,
     "suggest": 1,
     "tri": 1
   }
