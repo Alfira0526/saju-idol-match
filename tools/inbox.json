@@ -24802,5 +24802,18 @@
     "firstAt": "2026-09-04T01:21:28.013Z",
     "lastAt": "2026-09-04T01:21:28.013Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:로운|배우",
+    "name": "로운",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19960807",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-05T19:37:26.742Z",
+    "lastAt": "2026-09-05T19:37:26.742Z",
+    "status": "pending"
   }
 ]
