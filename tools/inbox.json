@@ -24815,5 +24815,31 @@
     "firstAt": "2026-09-05T19:37:26.742Z",
     "lastAt": "2026-09-05T19:37:26.742Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:재석|goldenchild",
+    "name": "재석",
+    "group": "Golden Child",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19951120",
+    "note": "woollim",
+    "count": 1,
+    "firstAt": "2026-09-06T14:33:52.717Z",
+    "lastAt": "2026-09-06T14:33:52.717Z",
+    "status": "pending"
+  },
+  {
+    "key": "sg:홍경|배우",
+    "name": "홍경",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19960214",
+    "note": "제가조아함ㅎ",
+    "count": 1,
+    "firstAt": "2026-09-06T14:36:13.717Z",
+    "lastAt": "2026-09-06T14:36:13.717Z",
+    "status": "pending"
   }
 ]
