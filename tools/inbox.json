@@ -24841,5 +24841,18 @@
     "firstAt": "2026-09-06T14:36:13.717Z",
     "lastAt": "2026-09-06T14:36:13.717Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:深澤辰哉|snowman",
+    "name": "深澤辰哉",
+    "group": "Snow man",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "19920505",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-06T16:14:34.730Z",
+    "lastAt": "2026-09-06T16:14:34.730Z",
+    "status": "pending"
   }
 ]
