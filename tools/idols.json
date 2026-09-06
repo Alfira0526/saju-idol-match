@@ -13322,5 +13322,180 @@
     "dob": "2007-05-30",
     "cat": "K-idol",
     "subAgency": "이엔터테인먼트"
+  },
+  {
+    "name": "하시모토 에리코",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2006-04-16",
+    "cat": "J-idol"
+  },
+  {
+    "name": "이와타테 사호",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "1994-10-04",
+    "cat": "J-idol"
+  },
+  {
+    "name": "후쿠오카 세이나",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2000-08-01",
+    "cat": "J-idol"
+  },
+  {
+    "name": "오구리 유이",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2001-12-26",
+    "cat": "J-idol"
+  },
+  {
+    "name": "교텐 유리나",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "1999-03-14",
+    "cat": "J-idol"
+  },
+  {
+    "name": "쿠라노오 나루미",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2000-11-08",
+    "cat": "J-idol"
+  },
+  {
+    "name": "시타오 미우",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2001-04-03",
+    "cat": "J-idol"
+  },
+  {
+    "name": "다카하시 아야네",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "1997-12-30",
+    "cat": "J-idol"
+  },
+  {
+    "name": "치바 에리이",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2003-10-27",
+    "cat": "J-idol"
+  },
+  {
+    "name": "나가노 세리카",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2001-03-27",
+    "cat": "J-idol"
+  },
+  {
+    "name": "하시모토 하루나",
+    "group": "AKB48",
+    "agency": "AKB48",
+    "gender": "F",
+    "dob": "2000-05-25",
+    "cat": "J-idol"
+  },
+  {
+    "name": "유타카",
+    "group": "Luvless",
+    "agency": "Luvless",
+    "gender": "M",
+    "dob": "1999-03-13",
+    "cat": "J-idol"
+  },
+  {
+    "name": "후유미",
+    "group": "Luvless",
+    "agency": "Luvless",
+    "gender": "M",
+    "dob": "2002-12-19",
+    "cat": "J-idol"
+  },
+  {
+    "name": "지훈",
+    "group": "KNK",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1995-02-20",
+    "cat": "K-idol",
+    "subAgency": "220Entertainment"
+  },
+  {
+    "name": "인성",
+    "group": "KNK",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1994-07-01",
+    "cat": "K-idol",
+    "subAgency": "220Entertainment"
+  },
+  {
+    "name": "현종",
+    "group": "KNK",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1998-09-05",
+    "cat": "K-idol",
+    "subAgency": "220Entertainment"
+  },
+  {
+    "name": "태리",
+    "group": "iii",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-09-21",
+    "cat": "K-idol",
+    "subAgency": "빅오션이엔엠"
+  },
+  {
+    "name": "하나",
+    "group": "iii",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-05-22",
+    "cat": "K-idol",
+    "subAgency": "빅오션이엔엠"
+  },
+  {
+    "name": "은기",
+    "group": "iii",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-08-16",
+    "cat": "K-idol",
+    "subAgency": "빅오션이엔엠"
+  },
+  {
+    "name": "수빈",
+    "group": "iii",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2006-06-23",
+    "cat": "K-idol",
+    "subAgency": "빅오션이엔엠"
+  },
+  {
+    "name": "로운",
+    "group": "배우",
+    "agency": "배우",
+    "gender": "M",
+    "dob": "1996-08-07",
+    "cat": "Etc"
   }
 ]

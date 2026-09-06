@@ -1,9 +1,9 @@
 {
-  "total": 1552,
+  "total": 1573,
   "addedRecent": [
+    { "date": "2026-09-06", "text": "AKB48·iii 추가·Luvless·KNK 보강", "count": 21 },
     { "date": "2026-09-05", "text": "BE BOYS·AmbiO 추가·YOUNITE 보강", "count": 13 },
-    { "date": "2026-09-04", "text": "Can't be blue·YOUNITE·NTX·Celest1a·오월오일 추가", "count": 14 },
-    { "date": "2026-09-03", "text": "YUHZ·NINE PERCENT 추가·ONF 라운 보강", "count": 13 }
+    { "date": "2026-09-04", "text": "Can't be blue·YOUNITE·NTX·Celest1a·오월오일 추가", "count": 14 }
   ],
-  "updatedAt": "2026-09-05"
+  "updatedAt": "2026-09-06"
 }
