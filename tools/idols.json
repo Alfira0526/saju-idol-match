@@ -13497,5 +13497,102 @@
     "gender": "M",
     "dob": "1996-08-07",
     "cat": "Etc"
+  },
+  {
+    "name": "이와모토 히카루",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1993-05-17",
+    "cat": "J-idol"
+  },
+  {
+    "name": "후카자와 타츠야",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1992-05-05",
+    "cat": "J-idol"
+  },
+  {
+    "name": "라울",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "2003-06-27",
+    "cat": "J-idol"
+  },
+  {
+    "name": "와타나베 쇼타",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1992-11-05",
+    "cat": "J-idol"
+  },
+  {
+    "name": "무카이 코지",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1994-06-21",
+    "cat": "J-idol"
+  },
+  {
+    "name": "아베 료헤이",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1993-11-27",
+    "cat": "J-idol"
+  },
+  {
+    "name": "메구로 렌",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1997-02-16",
+    "cat": "J-idol"
+  },
+  {
+    "name": "미야다테 료타",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1993-03-25",
+    "cat": "J-idol"
+  },
+  {
+    "name": "사쿠마 다이스케",
+    "group": "Snow Man",
+    "agency": "STARTO ENTERTAINMENT",
+    "gender": "M",
+    "dob": "1992-07-05",
+    "cat": "J-idol"
+  },
+  {
+    "name": "유마",
+    "group": "Luvless",
+    "agency": "Luvless",
+    "gender": "M",
+    "dob": "2001-09-12",
+    "cat": "J-idol"
+  },
+  {
+    "name": "이동원",
+    "group": "KNK",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1994-01-01",
+    "cat": "K-idol",
+    "subAgency": "220Entertainment"
+  },
+  {
+    "name": "홍경",
+    "group": "배우",
+    "agency": "배우",
+    "gender": "M",
+    "dob": "1996-02-14",
+    "cat": "Etc"
   }
 ]
