@@ -24854,5 +24854,18 @@
     "firstAt": "2026-09-06T16:14:34.730Z",
     "lastAt": "2026-09-06T16:14:34.730Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:해민|에잇턴",
+    "name": "해민",
+    "group": "에잇턴",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040316",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-07T03:23:56.405Z",
+    "lastAt": "2026-09-07T03:23:56.405Z",
+    "status": "pending"
   }
 ]
