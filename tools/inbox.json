@@ -24867,5 +24867,18 @@
     "firstAt": "2026-09-07T03:23:56.405Z",
     "lastAt": "2026-09-07T03:23:56.405Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:leo|waker",
+    "name": "Leo",
+    "group": "WAKER",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000906",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-08T14:08:01.446Z",
+    "lastAt": "2026-09-08T14:08:01.446Z",
+    "status": "pending"
   }
 ]
