@@ -1,9 +1,9 @@
 {
-  "total": 1585,
+  "total": 1590,
   "addedRecent": [
+    { "date": "2026-09-08", "text": "WAKER 추가", "count": 6 },
     { "date": "2026-09-07", "text": "Snow Man 추가·Luvless·KNK·홍경 보강", "count": 12 },
-    { "date": "2026-09-06", "text": "AKB48·iii 추가·Luvless·KNK 보강", "count": 21 },
-    { "date": "2026-09-05", "text": "BE BOYS·AmbiO 추가·YOUNITE 보강", "count": 13 }
+    { "date": "2026-09-06", "text": "AKB48·iii 추가·Luvless·KNK 보강", "count": 21 }
   ],
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-08"
 }

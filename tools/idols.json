@@ -4157,14 +4157,6 @@
     "subAgency": "스윙엔터테인먼트"
   },
   {
-    "name": "건일",
-    "group": "Xdinary Heroes",
-    "agency": "JYP",
-    "gender": "M",
-    "dob": "1998-07-24",
-    "cat": "K-idol"
-  },
-  {
     "name": "정수",
     "group": "Xdinary Heroes",
     "agency": "JYP",
@@ -11688,49 +11680,56 @@
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1988-02-23"
+    "dob": "1988-02-23",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "광희",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1988-08-25"
+    "dob": "1988-08-25",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "시완",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1988-12-01"
+    "dob": "1988-12-01",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "준영",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1989-02-09"
+    "dob": "1989-02-09",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "태헌",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1989-06-18"
+    "dob": "1989-06-18",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "동준",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1992-02-11"
+    "dob": "1992-02-11",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "형식",
     "group": "ZE:A",
     "agency": "기타",
     "gender": "M",
-    "dob": "1991-11-16"
+    "dob": "1991-11-16",
+    "subAgency": "스타제국엔터테인먼트"
   },
   {
     "name": "리에",
@@ -12875,42 +12874,48 @@
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "2001-09-07"
+    "dob": "2001-09-07",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "은조",
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "2002-03-07"
+    "dob": "2002-03-07",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "라라",
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "2000-08-09"
+    "dob": "2000-08-09",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "미소",
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "2000-10-25"
+    "dob": "2000-10-25",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "유이",
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "2000-04-24"
+    "dob": "2000-04-24",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "보니",
     "group": "DREAMNOTE",
     "agency": "기타",
     "gender": "F",
-    "dob": "1999-10-30"
+    "dob": "1999-10-30",
+    "subAgency": "iMe KOREA"
   },
   {
     "name": "웨웨",
@@ -12941,42 +12946,48 @@
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "1997-11-01"
+    "dob": "1997-11-01",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "아서",
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "2000-04-15"
+    "dob": "2000-04-15",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "무진",
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "2000-11-20"
+    "dob": "2000-11-20",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "루이",
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "2001-04-08"
+    "dob": "2001-04-08",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "아이반",
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "2001-10-12"
+    "dob": "2001-10-12",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "자한",
     "group": "더킹덤",
     "agency": "기타",
     "gender": "M",
-    "dob": "2002-08-01"
+    "dob": "2002-08-01",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "효",
@@ -13594,5 +13605,59 @@
     "gender": "M",
     "dob": "1996-02-14",
     "cat": "Etc"
+  },
+  {
+    "name": "고현",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "1994-10-01",
+    "cat": "K-idol"
+  },
+  {
+    "name": "권협",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "1998-02-10",
+    "cat": "K-idol"
+  },
+  {
+    "name": "이준",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "1998-07-13",
+    "cat": "K-idol"
+  },
+  {
+    "name": "리오",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "2000-09-06",
+    "cat": "K-idol"
+  },
+  {
+    "name": "새별",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "2001-02-20",
+    "cat": "K-idol"
+  },
+  {
+    "name": "세범",
+    "group": "WAKER",
+    "agency": "기타",
+    "subAgency": "하울링엔터테인먼트",
+    "gender": "M",
+    "dob": "2002-12-27",
+    "cat": "K-idol"
   }
 ]
