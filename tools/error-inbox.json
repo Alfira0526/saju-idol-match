@@ -1589,5 +1589,21 @@
     "firstAt": "2026-08-25T04:59:32.757Z",
     "lastAt": "2026-08-25T04:59:32.757Z",
     "status": "pending"
+  },
+  {
+    "key": "er:건일|xdinaryheroes",
+    "name": "건일",
+    "group": "Xdinary Heroes",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "탈퇴했어요"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-09-08T14:06:59.704Z",
+    "lastAt": "2026-09-08T14:06:59.704Z",
+    "status": "pending"
   }
 ]
