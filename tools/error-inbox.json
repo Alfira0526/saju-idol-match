@@ -1605,5 +1605,21 @@
     "firstAt": "2026-09-08T14:06:59.704Z",
     "lastAt": "2026-09-08T14:06:59.704Z",
     "status": "pending"
+  },
+  {
+    "key": "er:송건희|배우",
+    "name": "송건희",
+    "group": "배우",
+    "fields": {
+      "성별": 1
+    },
+    "suggests": [
+      "남성"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-09-09T12:39:40.453Z",
+    "lastAt": "2026-09-09T12:39:40.453Z",
+    "status": "pending"
   }
 ]
