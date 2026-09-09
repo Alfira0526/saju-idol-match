@@ -24893,5 +24893,18 @@
     "firstAt": "2026-09-09T03:07:36.114Z",
     "lastAt": "2026-09-09T03:07:36.114Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:staciachoo|plave",
+    "name": "Stacia choo",
+    "group": "Plave",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "1996",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-09T03:26:36.456Z",
+    "lastAt": "2026-09-09T03:26:36.456Z",
+    "status": "pending"
   }
 ]
