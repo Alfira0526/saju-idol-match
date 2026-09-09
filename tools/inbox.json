@@ -24880,5 +24880,18 @@
     "firstAt": "2026-09-08T14:08:01.446Z",
     "lastAt": "2026-09-08T14:08:01.446Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:dovin|skinz",
+    "name": "Dovin",
+    "group": "SKINZ",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-09T03:07:36.114Z",
+    "lastAt": "2026-09-09T03:07:36.114Z",
+    "status": "pending"
   }
 ]
