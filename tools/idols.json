@@ -13659,5 +13659,21 @@
     "gender": "M",
     "dob": "2002-12-27",
     "cat": "K-idol"
+  },
+  {
+    "name": "박보영",
+    "group": "배우",
+    "agency": "배우",
+    "gender": "F",
+    "dob": "1990-02-12",
+    "cat": "K-actor"
+  },
+  {
+    "name": "Tabber",
+    "group": "가수",
+    "agency": "가수",
+    "gender": "M",
+    "dob": "1994-12-10",
+    "cat": "Etc"
   }
 ]
