@@ -24932,5 +24932,18 @@
     "firstAt": "2026-09-10T03:34:13.225Z",
     "lastAt": "2026-09-10T03:34:13.225Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:러브|onlyoneof",
+    "name": "러브",
+    "group": "onlyoneof",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940117",
+    "note": "8D",
+    "count": 1,
+    "firstAt": "2026-09-10T12:53:22.282Z",
+    "lastAt": "2026-09-10T12:53:22.282Z",
+    "status": "pending"
   }
 ]
