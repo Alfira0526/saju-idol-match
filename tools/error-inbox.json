@@ -1621,5 +1621,21 @@
     "firstAt": "2026-09-09T12:39:40.453Z",
     "lastAt": "2026-09-09T12:39:40.453Z",
     "status": "pending"
+  },
+  {
+    "key": "er:민우|shinhwa",
+    "name": "민우",
+    "group": "Shinhwa",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "19790728 (음력)"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-09-11T20:39:30.525Z",
+    "lastAt": "2026-09-11T20:39:30.525Z",
+    "status": "pending"
   }
 ]
