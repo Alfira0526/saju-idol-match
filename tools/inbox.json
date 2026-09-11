@@ -24945,5 +24945,18 @@
     "firstAt": "2026-09-10T12:53:22.282Z",
     "lastAt": "2026-09-10T12:53:22.282Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:aoi|w3way",
+    "name": "Aoi",
+    "group": "W3WAY",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20021217",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-11T08:15:02.547Z",
+    "lastAt": "2026-09-11T08:15:02.547Z",
+    "status": "pending"
   }
 ]
