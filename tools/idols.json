@@ -13675,5 +13675,104 @@
     "gender": "M",
     "dob": "1994-12-10",
     "cat": "Etc"
+  },
+  {
+    "name": "Donghyun",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2001-01-31",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Xiho",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2001-05-19",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Hyecheon",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2001-09-08",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Ryo",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2002-01-03",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Aoi",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2002-12-17",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Wooseok",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2003-04-23",
+    "cat": "K-idol"
+  },
+  {
+    "name": "Rintaro",
+    "group": "W3WAY",
+    "agency": "기타",
+    "subAgency": "나인투엔터테인먼트",
+    "gender": "M",
+    "dob": "2004-12-15",
+    "cat": "K-idol"
+  },
+  {
+    "name": "희진",
+    "group": "ARTMS",
+    "agency": "기타",
+    "subAgency": "MODHAUS",
+    "gender": "F",
+    "dob": "2000-10-19",
+    "cat": "K-idol"
+  },
+  {
+    "name": "김립",
+    "group": "ARTMS",
+    "agency": "기타",
+    "subAgency": "MODHAUS",
+    "gender": "F",
+    "dob": "1999-02-10",
+    "cat": "K-idol"
+  },
+  {
+    "name": "진솔",
+    "group": "ARTMS",
+    "agency": "기타",
+    "subAgency": "MODHAUS",
+    "gender": "F",
+    "dob": "1997-06-13",
+    "cat": "K-idol"
+  },
+  {
+    "name": "최리",
+    "group": "ARTMS",
+    "agency": "기타",
+    "subAgency": "MODHAUS",
+    "gender": "F",
+    "dob": "2001-06-04",
+    "cat": "K-idol"
   }
 ]
