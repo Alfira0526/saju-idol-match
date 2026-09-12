@@ -24958,5 +24958,18 @@
     "firstAt": "2026-09-11T08:15:02.547Z",
     "lastAt": "2026-09-11T08:15:02.547Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:루|루",
+    "name": "루",
+    "group": "루",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20030604",
+    "note": "Strange Lab/그냥 궁금해요",
+    "count": 1,
+    "firstAt": "2026-09-12T19:15:06.054Z",
+    "lastAt": "2026-09-12T19:15:06.054Z",
+    "status": "pending"
   }
 ]
