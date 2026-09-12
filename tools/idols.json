@@ -2942,7 +2942,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2000-03-29",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
   },
   {
     "name": "나띠",
@@ -2950,7 +2951,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2002-05-30",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
   },
   {
     "name": "벨",
@@ -2958,7 +2960,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2004-03-20",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
   },
   {
     "name": "하늘",
@@ -2966,7 +2969,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2005-05-25",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
   },
   {
     "name": "은하",
@@ -5026,7 +5030,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1998-05-19",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Yuehua Entertainment"
   },
   {
     "name": "시현",
@@ -5034,7 +5039,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1999-08-05",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Yuehua Entertainment"
   },
   {
     "name": "온다",
@@ -5042,7 +5048,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2000-05-18",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Yuehua Entertainment"
   },
   {
     "name": "아샤",
@@ -5050,7 +5057,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2000-07-21",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Yuehua Entertainment"
   },
   {
     "name": "엔",
@@ -7932,7 +7940,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1969-07-20",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GEMSTONE E&M"
   },
   {
     "name": "윤계상",
@@ -7940,7 +7949,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1978-12-20",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GEMSTONE E&M"
   },
   {
     "name": "데니안",
@@ -7948,7 +7958,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1978-12-22",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GEMSTONE E&M"
   },
   {
     "name": "손호영",
@@ -7956,7 +7967,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1980-03-26",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GEMSTONE E&M"
   },
   {
     "name": "김태우",
@@ -7964,7 +7976,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1981-05-12",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GEMSTONE E&M"
   },
   {
     "name": "윤영준",
@@ -8071,7 +8084,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2000-02-12",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GLG"
   },
   {
     "name": "리이나",
@@ -8079,7 +8093,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2001-02-21",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GLG"
   },
   {
     "name": "휘서",
@@ -8087,7 +8102,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2002-07-31",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GLG"
   },
   {
     "name": "옐",
@@ -8095,7 +8111,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2004-12-25",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GLG"
   },
   {
     "name": "로버트 다우니 주니어",
@@ -11312,7 +11329,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1993-02-25",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Windfall"
   },
   {
     "name": "도준",
@@ -11320,7 +11338,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1993-04-20",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Windfall"
   },
   {
     "name": "하준",
@@ -11328,7 +11347,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1994-07-29",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Windfall"
   },
   {
     "name": "태겸",
@@ -11336,7 +11356,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1994-11-03",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Windfall"
   },
   {
     "name": "건우",
@@ -11495,7 +11516,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1998-07-03",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "켄타",
@@ -11503,7 +11525,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1995-01-10",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "용국",
@@ -11511,7 +11534,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1996-03-02",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "상균",
@@ -11519,7 +11543,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1995-05-23",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "태현",
@@ -11527,7 +11552,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1993-10-15",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "현빈",
@@ -11535,7 +11561,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1997-03-04",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "캐슬제이",
@@ -13103,7 +13130,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2005-05-30",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "UNBLUE LABELS"
   },
   {
     "name": "권다현",
@@ -13111,7 +13139,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2003-07-28",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "UNBLUE LABELS"
   },
   {
     "name": "이휘원",
@@ -13119,7 +13148,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2003-08-05",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "UNBLUE LABELS"
   },
   {
     "name": "김채현",
@@ -13127,7 +13157,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2004-05-16",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "UNBLUE LABELS"
   },
   {
     "name": "김대훈",
@@ -13135,7 +13166,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2004-06-17",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "UNBLUE LABELS"
   },
   {
     "name": "석희",
