@@ -12950,7 +12950,7 @@
     "agency": "중국 그룹",
     "gender": "M",
     "dob": "1992-07-11",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "무쯔양",
@@ -12958,7 +12958,7 @@
     "agency": "중국 그룹",
     "gender": "M",
     "dob": "1994-04-21",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "링차오",
@@ -12966,7 +12966,7 @@
     "agency": "중국 그룹",
     "gender": "M",
     "dob": "2001-01-09",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "단",
@@ -13058,7 +13058,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1998-08-02",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "천리눙",
@@ -13066,7 +13066,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "2000-10-03",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "판청청",
@@ -13074,7 +13074,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "2000-06-16",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "황밍하오",
@@ -13082,7 +13082,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "2002-02-19",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "왕쯔이",
@@ -13090,7 +13090,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1996-07-13",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "린옌쥔",
@@ -13098,7 +13098,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1995-08-24",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "주정팅",
@@ -13106,7 +13106,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1996-03-18",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "왕린카이",
@@ -13114,7 +13114,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1999-05-20",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "유창징",
@@ -13122,7 +13122,7 @@
     "agency": "중국 아이돌",
     "gender": "M",
     "dob": "1994-09-19",
-    "cat": "Etc"
+    "cat": "C-idol"
   },
   {
     "name": "이도훈",
@@ -13806,5 +13806,165 @@
     "gender": "F",
     "dob": "2001-06-04",
     "cat": "K-idol"
+  },
+  {
+    "name": "저우전난",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-06-21",
+    "cat": "C-idol"
+  },
+  {
+    "name": "런하오",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1995-07-17",
+    "cat": "C-idol"
+  },
+  {
+    "name": "허뤄뤄",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2001-05-04",
+    "cat": "C-idol"
+  },
+  {
+    "name": "샤즈광",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-01-04",
+    "cat": "C-idol"
+  },
+  {
+    "name": "옌쉬자",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2001-09-23",
+    "cat": "C-idol"
+  },
+  {
+    "name": "야오천",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1998-03-23",
+    "cat": "C-idol"
+  },
+  {
+    "name": "자이샤오원",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1999-05-28",
+    "cat": "C-idol"
+  },
+  {
+    "name": "자오레이",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1999-01-01",
+    "cat": "C-idol"
+  },
+  {
+    "name": "장옌치",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1998-07-02",
+    "cat": "C-idol"
+  },
+  {
+    "name": "자오랑",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2001-04-24",
+    "cat": "C-idol"
+  },
+  {
+    "name": "류예",
+    "group": "R1SE",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1993-11-15",
+    "cat": "C-idol"
+  },
+  {
+    "name": "류위신",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1997-04-20",
+    "cat": "C-idol"
+  },
+  {
+    "name": "위수신",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1995-12-18",
+    "cat": "C-idol"
+  },
+  {
+    "name": "쉬자치",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1995-08-27",
+    "cat": "C-idol"
+  },
+  {
+    "name": "위옌",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1997-05-26",
+    "cat": "C-idol"
+  },
+  {
+    "name": "셰커인",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1997-01-04",
+    "cat": "C-idol"
+  },
+  {
+    "name": "안치",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1996-05-13",
+    "cat": "C-idol"
+  },
+  {
+    "name": "자오샤오탕",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1997-04-02",
+    "cat": "C-idol"
+  },
+  {
+    "name": "쿵쉐얼",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1996-04-30",
+    "cat": "C-idol"
+  },
+  {
+    "name": "루커란",
+    "group": "THE9",
+    "agency": "중국 아이돌",
+    "gender": "F",
+    "dob": "1995-11-07",
+    "cat": "C-idol"
   }
 ]
