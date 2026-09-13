@@ -24984,5 +24984,18 @@
     "firstAt": "2026-09-13T02:57:59.916Z",
     "lastAt": "2026-09-13T02:57:59.916Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kimryul|lngshot",
+    "name": "Kim Ryul",
+    "group": "Lngshot",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-13T12:44:22.456Z",
+    "lastAt": "2026-09-13T12:44:22.456Z",
+    "status": "pending"
   }
 ]
