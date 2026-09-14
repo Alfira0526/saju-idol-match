@@ -14006,5 +14006,140 @@
     "gender": "F",
     "dob": "1997-01-07",
     "cat": "K-idol"
+  },
+  {
+    "name": "오승희",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1995-10-10",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "최유진",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1996-08-12",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "장승연",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1996-11-06",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "Sorn",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1996-11-18",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "장예은",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1998-08-10",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "엘키",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1998-11-02",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "권은빈",
+    "group": "CLC",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-01-06",
+    "cat": "K-idol",
+    "subAgency": "큐브엔터테인먼트"
+  },
+  {
+    "name": "지수연",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1997-04-20",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "정해림",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1998-07-20",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "최유정",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-11-12",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "김도연",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-12-04",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "이서정",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-01-07",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "김수경",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-10-06",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "강소은",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2001-09-27",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
+  },
+  {
+    "name": "노효정",
+    "group": "Weki Meki",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-08-31",
+    "cat": "K-idol",
+    "subAgency": "Fantagio"
   }
 ]
