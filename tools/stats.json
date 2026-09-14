@@ -1,9 +1,9 @@
 {
-  "total": 1623,
+  "total": 1628,
   "addedRecent": [
+    { "date": "2026-09-14", "text": "솔루션스·이새롬 추가", "count": 5 },
     { "date": "2026-09-13", "text": "R1SE·THE9 추가", "count": 20 },
-    { "date": "2026-09-11", "text": "W3WAY·ARTMS 추가", "count": 11 },
-    { "date": "2026-09-10", "text": "박보영·Tabber 추가", "count": 2 }
+    { "date": "2026-09-11", "text": "W3WAY·ARTMS 추가", "count": 11 }
   ],
-  "updatedAt": "2026-09-13"
+  "updatedAt": "2026-09-14"
 }

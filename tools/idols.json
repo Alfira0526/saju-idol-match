@@ -13966,5 +13966,45 @@
     "gender": "F",
     "dob": "1995-11-07",
     "cat": "C-idol"
+  },
+  {
+    "name": "권오경",
+    "group": "솔루션스",
+    "agency": "MPMG뮤직",
+    "gender": "M",
+    "dob": "1982-05-19",
+    "cat": "Etc"
+  },
+  {
+    "name": "나루",
+    "group": "솔루션스",
+    "agency": "MPMG뮤직",
+    "gender": "M",
+    "dob": "1984-06-21",
+    "cat": "Etc"
+  },
+  {
+    "name": "박솔",
+    "group": "솔루션스",
+    "agency": "MPMG뮤직",
+    "gender": "M",
+    "dob": "1986-03-05",
+    "cat": "Etc"
+  },
+  {
+    "name": "박한솔",
+    "group": "솔루션스",
+    "agency": "MPMG뮤직",
+    "gender": "M",
+    "dob": "1988-08-01",
+    "cat": "Etc"
+  },
+  {
+    "name": "이새롬",
+    "group": "솔로",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1997-01-07",
+    "cat": "K-idol"
   }
 ]
