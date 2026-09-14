@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-07",
+  "generatedAt": "2026-09-14",
   "dataset": {
-    "totalIdols": 1573,
-    "totalGroups": 310,
-    "statsTotal": 1573,
+    "totalIdols": 1623,
+    "totalGroups": 316,
+    "statsTotal": 1623,
     "byCategory": {
       "K-idol": {
-        "count": 1335,
+        "count": 1352,
         "visible": true
       },
       "J-idol": {
-        "count": 112,
+        "count": 122,
         "visible": true
       },
       "C-actor": {
@@ -18,7 +18,11 @@
         "visible": true
       },
       "K-actor": {
-        "count": 35,
+        "count": 36,
+        "visible": true
+      },
+      "C-idol": {
+        "count": 32,
         "visible": true
       },
       "US-actor": {
@@ -26,40 +30,41 @@
         "visible": true
       },
       "Etc": {
-        "count": 22,
+        "count": 12,
         "visible": false
       }
     },
     "byAgency": {
       "HYBE": 92,
       "YG": 40,
-      "기타": 1044,
+      "기타": 1062,
       "SM": 86,
-      "JYP": 80,
+      "JYP": 79,
       "미국 배우": 31,
       "중국 배우": 38,
       "노기자카46": 30,
-      "배우": 37,
+      "배우": 39,
       "LAPONE": 34,
       "XG": 7,
       "페포니뮤직": 1,
-      "가수": 8,
+      "가수": 9,
       "avex": 8,
       "ASOBISYSTEM": 8,
       "LDH": 4,
       "중국 그룹": 3,
-      "중국 아이돌": 9,
+      "중국 아이돌": 29,
       "AKB48": 11,
-      "Luvless": 2
+      "Luvless": 3,
+      "STARTO ENTERTAINMENT": 9
     },
     "subAgency": {
-      "etcTotal": 1037,
-      "assigned": 945,
-      "unassigned": 92,
-      "coveragePct": 91,
+      "etcTotal": 1055,
+      "assigned": 1014,
+      "unassigned": 41,
+      "coveragePct": 96,
       "byLabel": {
         "스타쉽엔터테인먼트": 60,
-        "MODHAUS": 56,
+        "MODHAUS": 60,
         "FNC엔터테인먼트": 41,
         "웨이크원": 33,
         "스윙엔터테인먼트": 31,
@@ -82,6 +87,7 @@
         "이엔터테인먼트": 12,
         "YH엔터테인먼트": 11,
         "브랜뉴뮤직": 11,
+        "하울링엔터테인먼트": 11,
         "ONE HUNDRED": 10,
         "더블랙레이블": 10,
         "오프더레코드엔터테인먼트": 10,
@@ -102,8 +108,10 @@
         "C-JeS엔터테인먼트": 7,
         "이든엔터테인먼트": 7,
         "누아엔터테인먼트": 7,
+        "스타제국엔터테인먼트": 7,
         "KM엔터테인먼트": 7,
         "글로벌에이치미디어": 7,
+        "나인투엔터테인먼트": 7,
         "쏘스뮤직": 6,
         "그레이트엠엔터테인먼트": 6,
         "신화컴퍼니": 6,
@@ -113,14 +121,18 @@
         "타이탄 콘텐츠": 6,
         "위드어스엔터테인먼트": 6,
         "블루닷엔터테인먼트": 6,
+        "FAVE엔터테인먼트": 6,
         "n.CH엔터테인먼트": 6,
         "하이햇엔터테인먼트": 6,
         "하이퍼리듬": 6,
+        "iMe KOREA": 6,
+        "GF엔터테인먼트": 6,
         "오크컴퍼니": 6,
         "플레디스엔터테인먼트": 5,
         "바나나컬쳐엔터테인먼트": 5,
         "동요엔터테인먼트": 5,
         "더뮤즈엔터테인먼트": 5,
+        "GEMSTONE E&M": 5,
         "아르마다엔터테인먼트": 5,
         "레드스타트ENM": 5,
         "그리드엔터테인먼트": 5,
@@ -128,19 +140,23 @@
         "AOMG": 5,
         "VT엔터테인먼트": 5,
         "IX엔터테인먼트": 5,
-        "하울링엔터테인먼트": 5,
+        "UNBLUE LABELS": 5,
         "어라운드어스엔터테인먼트": 4,
         "드림티엔터테인먼트": 4,
+        "S2엔터테인먼트": 4,
         "타마고프로덕션": 4,
+        "Yuehua Entertainment": 4,
         "안테나": 4,
         "VLAST": 4,
+        "GLG": 4,
         "257엔터테인먼트": 4,
+        "Windfall": 4,
         "인터파크뮤직플러스": 4,
         "어트랙트": 4,
+        "220Entertainment": 4,
         "빅오션이엔엠": 4,
         "FM엔터테인먼트": 3,
         "피나클엔터테인먼트": 3,
-        "220Entertainment": 3,
         "PCS엔터테인먼트": 2,
         "빅토리컴퍼니": 2,
         "이에스네이션": 1,
@@ -158,10 +174,10 @@
       ]
     },
     "byGender": {
-      "M": 1029,
-      "F": 544
+      "M": 1065,
+      "F": 558
     },
-    "recentAddsListed": 48
+    "recentAddsListed": 33
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -169,12 +185,12 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 2006,
-    "addPending": 7,
+    "handled": 2023,
+    "addPending": 3,
     "addPendingGroups": {
-      "distinctGroups": 7,
+      "distinctGroups": 3,
       "newGroups": 3,
-      "knownGroups": 4,
+      "knownGroups": 0,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
@@ -188,23 +204,13 @@
         "count": 1
       },
       {
-        "name": "유마",
-        "group": "Luvless",
+        "name": "루",
+        "group": "루",
         "count": 1
       },
       {
-        "name": "이동원",
-        "group": "KNK",
-        "count": 1
-      },
-      {
-        "name": "재석",
-        "group": "Golden Child",
-        "count": 1
-      },
-      {
-        "name": "홍경",
-        "group": "배우",
+        "name": "박솔",
+        "group": "솔루션스",
         "count": 1
       }
     ],
@@ -217,15 +223,15 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 19,
-    "maxBatch": 2,
-    "avgBatch": 1.1,
-    "medianGapMin": 310,
-    "lastFlushAt": "2026-09-07T12:30:46+09:00",
-    "timeSinceLastFlushMin": 44,
+    "flushCount": 17,
+    "maxBatch": 1,
+    "avgBatch": 1,
+    "medianGapMin": 590,
+    "lastFlushAt": "2026-09-13T22:40:37+09:00",
+    "timeSinceLastFlushMin": 869,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 18,
+    "quietGaps": 14,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
@@ -234,29 +240,29 @@
   "contentUsage": {
     "available": true,
     "metric": "unique-users-per-day (UTC)",
-    "updatedAt": "2026-09-07T04:10:46.377Z",
+    "updatedAt": "2026-09-07T09:40:47.827Z",
     "daysCovered": 7,
     "windowDays": 7,
-    "recentTotal": 2,
+    "recentTotal": 0,
     "allTotal": 17,
     "ranking": [
       {
         "event": "match",
         "label": "사주궁합",
-        "recent7d": 1,
+        "recent7d": 0,
         "total": 7,
-        "recentSharePct": 50
-      },
-      {
-        "event": "share",
-        "label": "결과 공유",
-        "recent7d": 1,
-        "total": 3,
-        "recentSharePct": 50
+        "recentSharePct": 0
       },
       {
         "event": "pair",
         "label": "최애끼리 궁합",
+        "recent7d": 0,
+        "total": 3,
+        "recentSharePct": 0
+      },
+      {
+        "event": "share",
+        "label": "결과 공유",
         "recent7d": 0,
         "total": 3,
         "recentSharePct": 0

@@ -18,7 +18,7 @@ const groups = new Set(idols.map(x => x.group));
 const byCat = {};
 idols.forEach(x => { const c = x.cat || 'K-idol'; byCat[c] = (byCat[c] || 0) + 1; });
 // index.html의 CAT_NAMES[*].ko와 같은 라벨을 쓴다(카테고리 신설 시 양쪽 모두 추가).
-const CAT_KO = { 'K-idol':'한국 아이돌', 'K-actor':'한국 배우', 'J-idol':'일본 아이돌', 'C-actor':'중국 배우', 'US-actor':'미국 배우', 'Etc':'기타' };
+const CAT_KO = { 'K-idol':'한국 아이돌', 'K-actor':'한국 배우', 'J-idol':'일본 아이돌', 'C-actor':'중국 배우', 'C-idol':'중국 아이돌', 'US-actor':'미국 배우', 'Etc':'기타' };
 const visible = Object.entries(byCat).filter(([, n]) => n >= CAT_MIN).sort((a, b) => b[1] - a[1])
   .map(([c, n]) => `${CAT_KO[c] || c}(${n})`).join(' · ') || '한국 아이돌';
 
