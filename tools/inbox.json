@@ -25036,5 +25036,18 @@
     "firstAt": "2026-09-15T05:07:55.667Z",
     "lastAt": "2026-09-15T05:07:55.667Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:하민|plave",
+    "name": "하민",
+    "group": "PLAVE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "1101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-15T10:03:02.497Z",
+    "lastAt": "2026-09-15T10:03:02.497Z",
+    "status": "pending"
   }
 ]
