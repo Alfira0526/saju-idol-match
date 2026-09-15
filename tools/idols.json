@@ -5609,7 +5609,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2004-01-02",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FNC엔터테인먼트"
   },
   {
     "name": "강우진",
@@ -5617,7 +5618,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2007-06-07",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FNC엔터테인먼트"
   },
   {
     "name": "이승협",
@@ -5715,7 +5717,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2006-01-21",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "MORE VISION"
   },
   {
     "name": "률",
@@ -5723,7 +5726,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2006-09-18",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "MORE VISION"
   },
   {
     "name": "우진",
@@ -5731,7 +5735,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2008-03-08",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "MORE VISION"
   },
   {
     "name": "루이",
@@ -5739,7 +5744,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2010-05-01",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "MORE VISION"
   },
   {
     "name": "지연",
@@ -6083,7 +6089,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1992-06-13",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "미스틱스토리"
   },
   {
     "name": "최상엽",
@@ -6091,7 +6098,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1994-02-27",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "미스틱스토리"
   },
   {
     "name": "조원상",
@@ -6099,7 +6107,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1996-08-15",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "미스틱스토리"
   },
   {
     "name": "신광일",
@@ -6107,7 +6116,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1997-05-25",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "미스틱스토리"
   },
   {
     "name": "원이",
@@ -8720,7 +8730,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1985-02-14",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "CAM WITH US"
   },
   {
     "name": "강민경",
@@ -8728,7 +8739,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1990-08-03",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "CAM WITH US"
   },
   {
     "name": "Steven",
@@ -11210,7 +11222,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1987-11-28",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "도균",
@@ -11218,7 +11231,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1991-02-11",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "시형",
@@ -11226,7 +11240,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1992-05-15",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "재호",
@@ -11234,7 +11249,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1992-09-17",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "FAVE엔터테인먼트"
   },
   {
     "name": "조주연",
@@ -11313,7 +11329,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2002-05-07",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "GF엔터테인먼트"
   },
   {
     "name": "일훈",
@@ -11321,7 +11338,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1994-10-04",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "Carpenters Art Republic"
   },
   {
     "name": "우성",
@@ -13247,7 +13265,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1997-10-01",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "미드나잇먼치스"
   },
   {
     "name": "스티브",
