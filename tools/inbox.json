@@ -25010,5 +25010,18 @@
     "firstAt": "2026-09-14T13:09:51.485Z",
     "lastAt": "2026-09-14T13:09:51.485Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:earth|nct",
+    "name": "Earth",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-15T04:42:37.650Z",
+    "lastAt": "2026-09-15T04:42:37.650Z",
+    "status": "pending"
   }
 ]
