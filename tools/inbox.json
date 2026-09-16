@@ -25049,5 +25049,18 @@
     "firstAt": "2026-09-15T10:03:02.497Z",
     "lastAt": "2026-09-15T10:03:02.497Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이영지|이영지",
+    "name": "이영지",
+    "group": "이영지",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20020910",
+    "note": "MAINSTREAM",
+    "count": 1,
+    "firstAt": "2026-09-16T17:42:39.434Z",
+    "lastAt": "2026-09-16T17:42:39.434Z",
+    "status": "pending"
   }
 ]
