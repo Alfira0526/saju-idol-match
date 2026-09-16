@@ -14160,5 +14160,122 @@
     "dob": "2002-08-31",
     "cat": "K-idol",
     "subAgency": "Fantagio"
+  },
+  {
+    "name": "혜빈",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1996-01-12",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "제인",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1997-12-20",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "나윤",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1998-07-31",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "주이",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-08-18",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "아인",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-09-27",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "낸시",
+    "group": "MOMOLAND",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-04-13",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "신",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-03-18",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "준형",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-10-21",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "강성",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-08-08",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "준성",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-09-29",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "프린스",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-01-10",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "우진",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-04-07",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
+  },
+  {
+    "name": "진우",
+    "group": "GHOST9",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2004-09-13",
+    "cat": "K-idol",
+    "subAgency": "마루기획"
   }
 ]
