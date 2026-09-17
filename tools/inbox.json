@@ -25062,5 +25062,18 @@
     "firstAt": "2026-09-16T17:42:39.434Z",
     "lastAt": "2026-09-16T17:42:39.434Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:영케이|데이식스",
+    "name": "영케이",
+    "group": "데이식스",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19931219",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-17T06:27:32.993Z",
+    "lastAt": "2026-09-17T06:27:32.993Z",
+    "status": "pending"
   }
 ]
