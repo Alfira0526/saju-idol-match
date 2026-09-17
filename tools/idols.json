@@ -14277,5 +14277,50 @@
     "dob": "2004-09-13",
     "cat": "K-idol",
     "subAgency": "마루기획"
+  },
+  {
+    "name": "서진",
+    "group": "HITGS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2008-04-16",
+    "cat": "K-idol",
+    "subAgency": "에이치뮤직엔터테인먼트"
+  },
+  {
+    "name": "비비",
+    "group": "HITGS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2006-06-03",
+    "cat": "K-idol",
+    "subAgency": "에이치뮤직엔터테인먼트"
+  },
+  {
+    "name": "서희",
+    "group": "HITGS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2009-05-11",
+    "cat": "K-idol",
+    "subAgency": "에이치뮤직엔터테인먼트"
+  },
+  {
+    "name": "혜린",
+    "group": "HITGS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2009-12-10",
+    "cat": "K-idol",
+    "subAgency": "에이치뮤직엔터테인먼트"
+  },
+  {
+    "name": "이유",
+    "group": "HITGS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2010-03-26",
+    "cat": "K-idol",
+    "subAgency": "에이치뮤직엔터테인먼트"
   }
 ]
