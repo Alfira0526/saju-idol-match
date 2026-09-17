@@ -1637,5 +1637,23 @@
     "firstAt": "2026-09-11T20:39:30.525Z",
     "lastAt": "2026-09-11T20:39:30.525Z",
     "status": "pending"
+  },
+  {
+    "key": "er:즈언|ahof",
+    "name": "즈언",
+    "group": "AHOF",
+    "fields": {
+      "생년월일": 1
+    },
+    "suggests": [
+      "20061028"
+    ],
+    "notes": [
+      "나무위키"
+    ],
+    "count": 1,
+    "firstAt": "2026-09-17T16:01:00.390Z",
+    "lastAt": "2026-09-17T16:01:00.390Z",
+    "status": "pending"
   }
 ]
