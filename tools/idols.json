@@ -8801,7 +8801,7 @@
     "group": "AHOF",
     "agency": "기타",
     "gender": "M",
-    "dob": "2005-05-19",
+    "dob": "2006-10-28",
     "cat": "K-idol",
     "subAgency": "F&F엔터테인먼트"
   },
@@ -14277,5 +14277,37 @@
     "dob": "2004-09-13",
     "cat": "K-idol",
     "subAgency": "마루기획"
+  },
+  {
+    "name": "보아",
+    "group": "솔로",
+    "agency": "SM",
+    "gender": "F",
+    "dob": "1986-11-05",
+    "cat": "K-idol"
+  },
+  {
+    "name": "비",
+    "group": "솔로",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1982-06-25",
+    "cat": "K-idol"
+  },
+  {
+    "name": "세븐",
+    "group": "솔로",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1984-11-09",
+    "cat": "K-idol"
+  },
+  {
+    "name": "현아",
+    "group": "솔로",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1992-06-06",
+    "cat": "K-idol"
   }
 ]
