@@ -3460,7 +3460,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2001-03-09",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "더블랙레이블"
   },
   {
     "name": "헤이즈",
@@ -3468,7 +3469,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1991-08-09",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "P NATION"
   },
   {
     "name": "이하이",
@@ -3476,7 +3478,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1996-09-23",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "808 HI RECORDINGS"
   },
   {
     "name": "백예린",
@@ -3492,7 +3495,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1995-09-14",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "쇼파르엔터테인먼트"
   },
   {
     "name": "비아이",
@@ -3500,7 +3504,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1996-10-22",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "131레이블"
   },
   {
     "name": "원호",
@@ -3508,7 +3513,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1993-03-01",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "하이라인엔터테인먼트"
   },
   {
     "name": "정세운",
@@ -3516,7 +3522,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1997-05-31",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "CAM"
   },
   {
     "name": "최예나",
@@ -3524,7 +3531,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1999-09-29",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "YH엔터테인먼트"
   },
   {
     "name": "아이유",
@@ -3532,7 +3540,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1993-05-16",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "EDAM엔터테인먼트"
   },
   {
     "name": "권은비",
@@ -3548,7 +3557,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2000-04-20",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "로맨틱팩토리"
   },
   {
     "name": "서수진",
@@ -3556,7 +3566,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1998-03-09",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "BRD엔터테인먼트"
   },
   {
     "name": "우즈",
@@ -3564,7 +3575,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1996-08-05",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "EDAM엔터테인먼트"
   },
   {
     "name": "베이비소울",
@@ -4514,8 +4526,8 @@
   },
   {
     "name": "마크",
-    "group": "솔로",
-    "agency": "기타",
+    "group": "NCT",
+    "agency": "SM",
     "gender": "M",
     "dob": "1999-08-02",
     "cat": "K-idol"
@@ -8801,7 +8813,7 @@
     "group": "AHOF",
     "agency": "기타",
     "gender": "M",
-    "dob": "2005-05-19",
+    "dob": "2006-10-28",
     "cat": "K-idol",
     "subAgency": "F&F엔터테인먼트"
   },
@@ -10029,12 +10041,13 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1986-01-26",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "iNKODE"
   },
   {
     "name": "이서연",
     "group": "솔로",
-    "agency": "기타",
+    "agency": "HYBE",
     "gender": "F",
     "dob": "2000-01-22",
     "cat": "K-idol"
