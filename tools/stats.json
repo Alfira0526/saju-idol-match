@@ -1,9 +1,9 @@
 {
-  "total": 1656,
+  "total": 1663,
   "addedRecent": [
+    { "date": "2026-09-20", "text": "4EVE 추가", "count": 7 },
     { "date": "2026-09-16", "text": "모모랜드·GHOST9 추가", "count": 13 },
-    { "date": "2026-09-14", "text": "CLC·위키미키·솔루션스·이새롬 추가", "count": 20 },
-    { "date": "2026-09-13", "text": "R1SE·THE9 추가", "count": 20 }
+    { "date": "2026-09-14", "text": "CLC·위키미키·솔루션스·이새롬 추가", "count": 20 }
   ],
-  "updatedAt": "2026-09-19"
+  "updatedAt": "2026-09-20"
 }

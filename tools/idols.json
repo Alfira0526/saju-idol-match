@@ -14290,5 +14290,61 @@
     "dob": "2004-09-13",
     "cat": "K-idol",
     "subAgency": "마루기획"
+  },
+  {
+    "name": "Mind",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "1999-06-09",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Jorin",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "1999-10-28",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Taaom",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "2000-02-22",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Hannah",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "2001-07-05",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Fai",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "2002-12-02",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Punch",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "2004-01-24",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Aheye",
+    "group": "4EVE",
+    "agency": "XOXO Entertainment",
+    "gender": "F",
+    "dob": "2005-06-09",
+    "cat": "TH-idol"
   }
 ]

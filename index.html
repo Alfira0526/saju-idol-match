@@ -3748,7 +3748,14 @@ const IDOLS = [
   ["준성","GHOST9","庚子","金","M","기타","20020929","K-idol"],
   ["프린스","GHOST9","癸未","水","M","기타","20030110","K-idol"],
   ["우진","GHOST9","庚戌","金","M","기타","20030407","K-idol"],
-  ["진우","GHOST9","乙未","木","M","기타","20040913","K-idol"]
+  ["진우","GHOST9","乙未","木","M","기타","20040913","K-idol"],
+  ["Mind","4EVE","壬辰","水","F","XOXO Entertainment","19990609","TH-idol"],
+  ["Jorin","4EVE","癸丑","水","F","XOXO Entertainment","19991028","TH-idol"],
+  ["Taaom","4EVE","庚戌","金","F","XOXO Entertainment","20000222","TH-idol"],
+  ["Hannah","4EVE","己巳","土","F","XOXO Entertainment","20010705","TH-idol"],
+  ["Fai","4EVE","甲辰","木","F","XOXO Entertainment","20021202","TH-idol"],
+  ["Punch","4EVE","壬寅","水","F","XOXO Entertainment","20040124","TH-idol"],
+  ["Aheye","4EVE","甲子","木","F","XOXO Entertainment","20050609","TH-idol"]
 ];
 
 function jdn(y,m,d){
@@ -3924,6 +3931,7 @@ const CAT_NAMES = {
   "J-idol":{ko:"일본 아이돌",en:"J-pop",ja:"日本アイドル",zh:"日本偶像"},
   "C-actor":{ko:"중국 배우",en:"C-actor",ja:"中国俳優",zh:"中国演员"}, "US-actor":{ko:"미국 배우",en:"US actor",ja:"米国俳優",zh:"美国演员"},
   "C-idol":{ko:"중국 아이돌",en:"C-pop",ja:"中国アイドル",zh:"中国偶像"},
+  "TH-idol":{ko:"태국 아이돌",en:"T-pop",ja:"タイアイドル",zh:"泰国偶像"},
   "Etc":{ko:"기타",en:"Etc",ja:"その他",zh:"其他"}
 };
 const catLabel = c => { const e = CAT_NAMES[c]; return e ? (e[getLang()] || e.ko) : c; };
@@ -4126,7 +4134,7 @@ buildHourSelect();
 })();
 
 // 카테고리 목록 (데이터에 존재하는 것만, K-idol 우선)
-const CAT_ORDER = ["K-idol","K-actor","J-idol","C-actor","C-idol","US-actor","Etc"];
+const CAT_ORDER = ["K-idol","K-actor","J-idol","C-actor","C-idol","TH-idol","US-actor","Etc"];
 function catsPresent(){
   const set={}; IDOLS.forEach(r=>{ set[r[7]||"K-idol"]=(set[r[7]||"K-idol"]||0)+1; });
   const order = CAT_ORDER.filter(c=>set[c]).concat(Object.keys(set).filter(c=>!CAT_ORDER.includes(c)));
