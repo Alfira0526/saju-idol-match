@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-21",
   "dataset": {
-    "totalIdols": 1623,
-    "totalGroups": 316,
-    "statsTotal": 1623,
+    "totalIdols": 1663,
+    "totalGroups": 322,
+    "statsTotal": 1663,
     "byCategory": {
       "K-idol": {
-        "count": 1352,
+        "count": 1381,
         "visible": true
       },
       "J-idol": {
@@ -30,15 +30,19 @@
         "visible": true
       },
       "Etc": {
-        "count": 12,
+        "count": 16,
+        "visible": false
+      },
+      "TH-idol": {
+        "count": 7,
         "visible": false
       }
     },
     "byAgency": {
-      "HYBE": 92,
+      "HYBE": 93,
       "YG": 40,
-      "기타": 1062,
-      "SM": 86,
+      "기타": 1089,
+      "SM": 87,
       "JYP": 79,
       "미국 배우": 31,
       "중국 배우": 38,
@@ -55,26 +59,29 @@
       "중국 아이돌": 29,
       "AKB48": 11,
       "Luvless": 3,
-      "STARTO ENTERTAINMENT": 9
+      "STARTO ENTERTAINMENT": 9,
+      "MPMG뮤직": 4,
+      "XOXO Entertainment": 7
     },
     "subAgency": {
-      "etcTotal": 1055,
-      "assigned": 1014,
-      "unassigned": 41,
-      "coveragePct": 96,
+      "etcTotal": 1082,
+      "assigned": 1074,
+      "unassigned": 8,
+      "coveragePct": 99,
       "byLabel": {
         "스타쉽엔터테인먼트": 60,
         "MODHAUS": 60,
-        "FNC엔터테인먼트": 41,
+        "FNC엔터테인먼트": 43,
+        "큐브엔터테인먼트": 37,
         "웨이크원": 33,
         "스윙엔터테인먼트": 31,
-        "큐브엔터테인먼트": 30,
         "아이에스티엔터테인먼트": 30,
         "울림엔터테인먼트": 27,
         "젤리피시엔터테인먼트": 26,
         "RBW": 24,
         "TOP미디어": 23,
         "DSP미디어": 21,
+        "Fantagio": 20,
         "C9엔터테인먼트": 20,
         "인코드엔터테인먼트": 19,
         "KQ엔터테인먼트": 18,
@@ -82,17 +89,18 @@
         "F&F엔터테인먼트": 17,
         "포켓돌스튜디오": 14,
         "하이업엔터테인먼트": 12,
-        "Fantagio": 12,
+        "YH엔터테인먼트": 12,
         "비트인터랙티브": 12,
         "이엔터테인먼트": 12,
-        "YH엔터테인먼트": 11,
+        "미스틱스토리": 11,
+        "더블랙레이블": 11,
         "브랜뉴뮤직": 11,
         "하울링엔터테인먼트": 11,
         "ONE HUNDRED": 10,
-        "더블랙레이블": 10,
         "오프더레코드엔터테인먼트": 10,
         "IPQ": 10,
         "에이치뮤직엔터테인먼트": 10,
+        "FAVE엔터테인먼트": 10,
         "피네이션": 9,
         "잭소엔터테인먼트": 9,
         "MBK엔터테인먼트": 8,
@@ -100,7 +108,6 @@
         "MNH엔터테인먼트": 8,
         "카카오엔터테인먼트": 8,
         "인피니트컴퍼니": 7,
-        "미스틱스토리": 7,
         "드림캐쳐컴퍼니": 7,
         "UNCORE": 7,
         "ONECEAD": 7,
@@ -108,10 +115,12 @@
         "C-JeS엔터테인먼트": 7,
         "이든엔터테인먼트": 7,
         "누아엔터테인먼트": 7,
+        "GF엔터테인먼트": 7,
         "스타제국엔터테인먼트": 7,
         "KM엔터테인먼트": 7,
         "글로벌에이치미디어": 7,
         "나인투엔터테인먼트": 7,
+        "마루기획": 7,
         "쏘스뮤직": 6,
         "그레이트엠엔터테인먼트": 6,
         "신화컴퍼니": 6,
@@ -121,13 +130,12 @@
         "타이탄 콘텐츠": 6,
         "위드어스엔터테인먼트": 6,
         "블루닷엔터테인먼트": 6,
-        "FAVE엔터테인먼트": 6,
         "n.CH엔터테인먼트": 6,
         "하이햇엔터테인먼트": 6,
         "하이퍼리듬": 6,
         "iMe KOREA": 6,
-        "GF엔터테인먼트": 6,
         "오크컴퍼니": 6,
+        "MLD엔터테인먼트": 6,
         "플레디스엔터테인먼트": 5,
         "바나나컬쳐엔터테인먼트": 5,
         "동요엔터테인먼트": 5,
@@ -147,6 +155,7 @@
         "타마고프로덕션": 4,
         "Yuehua Entertainment": 4,
         "안테나": 4,
+        "MORE VISION": 4,
         "VLAST": 4,
         "GLG": 4,
         "257엔터테인먼트": 4,
@@ -157,11 +166,24 @@
         "빅오션이엔엠": 4,
         "FM엔터테인먼트": 3,
         "피나클엔터테인먼트": 3,
+        "EDAM엔터테인먼트": 2,
+        "CAM WITH US": 2,
         "PCS엔터테인먼트": 2,
         "빅토리컴퍼니": 2,
+        "P NATION": 1,
+        "808 HI RECORDINGS": 1,
+        "쇼파르엔터테인먼트": 1,
+        "131레이블": 1,
+        "하이라인엔터테인먼트": 1,
+        "CAM": 1,
+        "로맨틱팩토리": 1,
+        "BRD엔터테인먼트": 1,
         "이에스네이션": 1,
+        "iNKODE": 1,
+        "Carpenters Art Republic": 1,
         "매직스트로베리사운드": 1,
-        "버드맨": 1
+        "버드맨": 1,
+        "미드나잇먼치스": 1
       },
       "promotable": [
         "스타쉽엔터테인먼트",
@@ -174,10 +196,10 @@
       ]
     },
     "byGender": {
-      "M": 1065,
-      "F": 558
+      "M": 1076,
+      "F": 587
     },
-    "recentAddsListed": 33
+    "recentAddsListed": 40
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -185,32 +207,27 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 2023,
-    "addPending": 3,
+    "handled": 2032,
+    "addPending": 2,
     "addPendingGroups": {
-      "distinctGroups": 3,
-      "newGroups": 3,
-      "knownGroups": 0,
+      "distinctGroups": 2,
+      "newGroups": 0,
+      "knownGroups": 2,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
     "errorPending": 0,
-    "oldestAddPending": "2026-07-25T04:28:47.188Z",
+    "oldestAddPending": "2026-09-15T10:03:02.497Z",
     "oldestErrorPending": null,
     "topAddPending": [
       {
-        "name": "강향기",
-        "group": "noa coast",
+        "name": "하민",
+        "group": "PLAVE",
         "count": 1
       },
       {
-        "name": "루",
-        "group": "루",
-        "count": 1
-      },
-      {
-        "name": "박솔",
-        "group": "솔루션스",
+        "name": "若璇",
+        "group": "&TEAM",
         "count": 1
       }
     ],
@@ -223,15 +240,15 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 17,
+    "flushCount": 11,
     "maxBatch": 1,
     "avgBatch": 1,
-    "medianGapMin": 590,
-    "lastFlushAt": "2026-09-13T22:40:37+09:00",
-    "timeSinceLastFlushMin": 869,
+    "medianGapMin": 940,
+    "lastFlushAt": "2026-09-21T09:40:34+09:00",
+    "timeSinceLastFlushMin": 209,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 14,
+    "quietGaps": 9,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
