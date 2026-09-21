@@ -25075,5 +25075,18 @@
     "firstAt": "2026-09-17T06:27:32.993Z",
     "lastAt": "2026-09-17T06:27:32.993Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:若璇|&team",
+    "name": "若璇",
+    "group": "&TEAM",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20040708",
+    "note": "hybe yxl分部",
+    "count": 1,
+    "firstAt": "2026-09-21T00:31:02.257Z",
+    "lastAt": "2026-09-21T00:31:02.257Z",
+    "status": "pending"
   }
 ]
