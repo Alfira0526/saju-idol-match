@@ -1,9 +1,9 @@
 {
-  "total": 1663,
+  "total": 1680,
   "addedRecent": [
+    { "date": "2026-09-21", "text": "AOA·브레이브걸스·포미닛 추가", "count": 17 },
     { "date": "2026-09-20", "text": "4EVE 추가", "count": 7 },
-    { "date": "2026-09-16", "text": "모모랜드·GHOST9 추가", "count": 13 },
-    { "date": "2026-09-14", "text": "CLC·위키미키·솔루션스·이새롬 추가", "count": 20 }
+    { "date": "2026-09-16", "text": "모모랜드·GHOST9 추가", "count": 13 }
   ],
-  "updatedAt": "2026-09-20"
+  "updatedAt": "2026-09-21"
 }

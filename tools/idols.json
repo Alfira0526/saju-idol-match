@@ -14346,5 +14346,157 @@
     "gender": "F",
     "dob": "2005-06-09",
     "cat": "TH-idol"
+  },
+  {
+    "name": "지민",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1991-01-08",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "초아",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-03-06",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "유경",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1993-03-15",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "혜정",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1993-08-10",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "민아",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1993-09-21",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "설현",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1995-01-03",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "찬미",
+    "group": "AOA",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1996-06-19",
+    "cat": "K-idol",
+    "subAgency": "FNC"
+  },
+  {
+    "name": "민영",
+    "group": "Brave Girls",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-09-12",
+    "cat": "K-idol",
+    "subAgency": "브레이브엔터테인먼트"
+  },
+  {
+    "name": "유정",
+    "group": "Brave Girls",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1991-05-02",
+    "cat": "K-idol",
+    "subAgency": "브레이브엔터테인먼트"
+  },
+  {
+    "name": "은지",
+    "group": "Brave Girls",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1992-07-19",
+    "cat": "K-idol",
+    "subAgency": "브레이브엔터테인먼트"
+  },
+  {
+    "name": "유나",
+    "group": "Brave Girls",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1993-04-06",
+    "cat": "K-idol",
+    "subAgency": "브레이브엔터테인먼트"
+  },
+  {
+    "name": "지현",
+    "group": "4minute",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-01-09",
+    "cat": "K-idol",
+    "subAgency": "큐브"
+  },
+  {
+    "name": "가윤",
+    "group": "4minute",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-05-18",
+    "cat": "K-idol",
+    "subAgency": "큐브"
+  },
+  {
+    "name": "지윤",
+    "group": "4minute",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-10-15",
+    "cat": "K-idol",
+    "subAgency": "큐브"
+  },
+  {
+    "name": "현아",
+    "group": "4minute",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1992-06-06",
+    "cat": "K-idol",
+    "subAgency": "큐브"
+  },
+  {
+    "name": "소현",
+    "group": "4minute",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1994-08-30",
+    "cat": "K-idol",
+    "subAgency": "큐브"
+  },
+  {
+    "name": "박효신",
+    "group": "가수",
+    "agency": "가수",
+    "gender": "M",
+    "dob": "1981-12-01",
+    "cat": "Etc"
   }
 ]
