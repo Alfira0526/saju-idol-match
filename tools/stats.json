@@ -1,9 +1,10 @@
 {
-  "total": 1680,
+  "total": 1683,
   "addedRecent": [
+    { "date": "2026-09-22", "text": "TFBOYS 추가", "count": 3 },
     { "date": "2026-09-21", "text": "AOA·브레이브걸스·포미닛 추가", "count": 17 },
     { "date": "2026-09-20", "text": "4EVE 추가", "count": 7 },
     { "date": "2026-09-16", "text": "모모랜드·GHOST9 추가", "count": 13 }
   ],
-  "updatedAt": "2026-09-21"
+  "updatedAt": "2026-09-22"
 }

@@ -2978,7 +2978,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1997-05-30",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "빅플래닛메이드"
   },
   {
     "name": "신비",
@@ -2986,7 +2987,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1998-06-03",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "빅플래닛메이드"
   },
   {
     "name": "엄지",
@@ -2994,7 +2996,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1998-08-19",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "빅플래닛메이드"
   },
   {
     "name": "수진",
@@ -3487,7 +3490,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1997-06-26",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "피플라이크피플"
   },
   {
     "name": "안지영",
@@ -3549,7 +3553,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1995-09-27",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "빈첸",
@@ -14037,7 +14042,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1997-01-07",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "333"
   },
   {
     "name": "오승희",
@@ -14498,5 +14504,29 @@
     "gender": "M",
     "dob": "1981-12-01",
     "cat": "Etc"
+  },
+  {
+    "name": "왕쥔카이",
+    "group": "TFBOYS",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "1999-09-21",
+    "cat": "C-idol"
+  },
+  {
+    "name": "왕위안",
+    "group": "TFBOYS",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-11-08",
+    "cat": "C-idol"
+  },
+  {
+    "name": "이양첸시",
+    "group": "TFBOYS",
+    "agency": "중국 아이돌",
+    "gender": "M",
+    "dob": "2000-11-28",
+    "cat": "C-idol"
   }
 ]
