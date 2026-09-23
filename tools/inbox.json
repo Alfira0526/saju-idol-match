@@ -25127,5 +25127,18 @@
     "firstAt": "2026-09-22T13:44:33.860Z",
     "lastAt": "2026-09-22T13:44:33.860Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:朴炡禹|treasure",
+    "name": "朴炡禹",
+    "group": "TREASURE",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040928",
+    "note": "yg",
+    "count": 1,
+    "firstAt": "2026-09-23T13:37:14.868Z",
+    "lastAt": "2026-09-23T13:37:14.868Z",
+    "status": "pending"
   }
 ]
