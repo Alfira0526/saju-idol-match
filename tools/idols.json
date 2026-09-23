@@ -14528,5 +14528,105 @@
     "gender": "M",
     "dob": "2000-11-28",
     "cat": "C-idol"
+  },
+  {
+    "name": "문희준",
+    "group": "H.O.T.",
+    "agency": "SM",
+    "gender": "M",
+    "dob": "1978-03-14",
+    "cat": "K-idol"
+  },
+  {
+    "name": "장우혁",
+    "group": "H.O.T.",
+    "agency": "SM",
+    "gender": "M",
+    "dob": "1978-05-08",
+    "cat": "K-idol"
+  },
+  {
+    "name": "토니안",
+    "group": "H.O.T.",
+    "agency": "SM",
+    "gender": "M",
+    "dob": "1978-06-07",
+    "cat": "K-idol"
+  },
+  {
+    "name": "강타",
+    "group": "H.O.T.",
+    "agency": "SM",
+    "gender": "M",
+    "dob": "1979-11-29",
+    "cat": "K-idol"
+  },
+  {
+    "name": "이재원",
+    "group": "H.O.T.",
+    "agency": "SM",
+    "gender": "M",
+    "dob": "1980-04-05",
+    "cat": "K-idol"
+  },
+  {
+    "name": "바다",
+    "group": "S.E.S.",
+    "agency": "SM",
+    "gender": "F",
+    "dob": "1980-02-28",
+    "cat": "K-idol"
+  },
+  {
+    "name": "유진",
+    "group": "S.E.S.",
+    "agency": "SM",
+    "gender": "F",
+    "dob": "1981-03-03",
+    "cat": "K-idol"
+  },
+  {
+    "name": "슈",
+    "group": "S.E.S.",
+    "agency": "SM",
+    "gender": "F",
+    "dob": "1981-10-23",
+    "cat": "K-idol"
+  },
+  {
+    "name": "이효리",
+    "group": "Fin.K.L",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1979-05-10",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "옥주현",
+    "group": "Fin.K.L",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1980-03-20",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "이진",
+    "group": "Fin.K.L",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1980-03-21",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "성유리",
+    "group": "Fin.K.L",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1981-03-03",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
   }
 ]
