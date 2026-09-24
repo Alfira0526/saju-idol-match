@@ -25166,5 +25166,18 @@
     "firstAt": "2026-09-24T05:13:58.066Z",
     "lastAt": "2026-09-24T05:13:58.066Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kurumi|kiiras",
+    "name": "Kurumi",
+    "group": "Kiiras",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20060620",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-24T10:44:28.748Z",
+    "lastAt": "2026-09-24T10:44:28.748Z",
+    "status": "pending"
   }
 ]
