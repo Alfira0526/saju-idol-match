@@ -14628,5 +14628,122 @@
     "dob": "1981-03-03",
     "cat": "K-idol",
     "subAgency": "DSP미디어"
+  },
+  {
+    "name": "링링",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2005-04-20",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "쿠루미",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2006-06-20",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "하린",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2008-01-03",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "카일리",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2008-05-17",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "도연",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2009-12-26",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "로아",
+    "group": "KIIRAS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2011-10-16",
+    "cat": "K-idol",
+    "subAgency": "LeanBranding"
+  },
+  {
+    "name": "빈치",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2000-03-11",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "킴",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-02-17",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "카일러",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-07-06",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "레이스터",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-02-08",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "윈스턴",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2005-02-02",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "제로미",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2009-02-02",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "마커스",
+    "group": "HORI7ON",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2009-08-31",
+    "cat": "K-idol",
+    "subAgency": "MLD엔터테인먼트"
   }
 ]
