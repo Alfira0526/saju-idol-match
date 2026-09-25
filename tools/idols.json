@@ -14745,5 +14745,102 @@
     "dob": "2009-08-31",
     "cat": "K-idol",
     "subAgency": "MLD엔터테인먼트"
+  },
+  {
+    "name": "강훈",
+    "group": "배우",
+    "agency": "배우",
+    "gender": "M",
+    "dob": "1991-05-23",
+    "cat": "Etc"
+  },
+  {
+    "name": "Film",
+    "group": "배우",
+    "agency": "GMMTV",
+    "gender": "F",
+    "dob": "2000-07-14",
+    "cat": "Etc"
+  },
+  {
+    "name": "하루",
+    "group": "S2iT",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2005-07-14",
+    "cat": "K-idol",
+    "subAgency": "몬스터브레인"
+  },
+  {
+    "name": "연수",
+    "group": "S2iT",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2005-06-25",
+    "cat": "K-idol",
+    "subAgency": "몬스터브레인"
+  },
+  {
+    "name": "시아",
+    "group": "S2iT",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2006-08-09",
+    "cat": "K-idol",
+    "subAgency": "몬스터브레인"
+  },
+  {
+    "name": "효빈",
+    "group": "S2iT",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2009-10-16",
+    "cat": "K-idol",
+    "subAgency": "몬스터브레인"
+  },
+  {
+    "name": "승비",
+    "group": "S2iT",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2010-07-13",
+    "cat": "K-idol",
+    "subAgency": "몬스터브레인"
+  },
+  {
+    "name": "켈리",
+    "group": "I.MET.U",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1998-09-02",
+    "cat": "K-idol",
+    "subAgency": "PI코퍼레이션"
+  },
+  {
+    "name": "리아",
+    "group": "I.MET.U",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-01-05",
+    "cat": "K-idol",
+    "subAgency": "PI코퍼레이션"
+  },
+  {
+    "name": "예린",
+    "group": "I.MET.U",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2001-03-12",
+    "cat": "K-idol",
+    "subAgency": "PI코퍼레이션"
+  },
+  {
+    "name": "클레오",
+    "group": "I.MET.U",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-08-01",
+    "cat": "K-idol",
+    "subAgency": "PI코퍼레이션"
   }
 ]
