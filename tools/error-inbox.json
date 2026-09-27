@@ -1655,5 +1655,21 @@
     "firstAt": "2026-09-17T16:01:00.390Z",
     "lastAt": "2026-09-17T16:01:00.390Z",
     "status": "pending"
+  },
+  {
+    "key": "er:희승|enhypen",
+    "name": "희승",
+    "group": "ENHYPEN",
+    "fields": {
+      "소속 그룹": 1
+    },
+    "suggests": [
+      "에반"
+    ],
+    "notes": [],
+    "count": 1,
+    "firstAt": "2026-09-27T16:12:49.248Z",
+    "lastAt": "2026-09-27T16:12:49.248Z",
+    "status": "pending"
   }
 ]
