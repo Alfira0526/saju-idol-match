@@ -25218,5 +25218,18 @@
     "firstAt": "2026-09-27T09:17:49.056Z",
     "lastAt": "2026-09-27T09:17:49.056Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:璇|seventeen",
+    "name": "璇",
+    "group": "Seventeen",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19950211",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-27T19:01:55.378Z",
+    "lastAt": "2026-09-27T19:01:55.378Z",
+    "status": "pending"
   }
 ]
