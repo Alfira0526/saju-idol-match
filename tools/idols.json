@@ -14842,5 +14842,59 @@
     "dob": "2004-08-01",
     "cat": "K-idol",
     "subAgency": "PI코퍼레이션"
+  },
+  {
+    "name": "김희수",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2004-05-12",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
+  },
+  {
+    "name": "타나톤",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2005-04-05",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
+  },
+  {
+    "name": "최한빈",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2007-07-25",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
+  },
+  {
+    "name": "박하유찬",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2007-08-21",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
+  },
+  {
+    "name": "안찬원",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2008-03-21",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
+  },
+  {
+    "name": "장현준",
+    "group": "The Wind",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2008-10-25",
+    "cat": "K-idol",
+    "subAgency": "팡스타엔터테인먼트"
   }
 ]
