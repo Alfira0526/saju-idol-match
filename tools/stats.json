@@ -1,6 +1,7 @@
 {
-  "total": 1757,
+  "total": 1756,
   "addedRecent": [
+    { "date": "2026-09-28", "text": "희승(엔하이픈, 탈퇴 확인) 중복 정리", "count": -1 },
     { "date": "2026-09-27", "text": "BNK48·CGM48 추가", "count": 32 },
     { "date": "2026-09-27", "text": "The Wind 추가", "count": 6 },
     { "date": "2026-09-25", "text": "S2iT·I.MET.U 추가", "count": 9 },
@@ -9,5 +10,5 @@
     { "date": "2026-09-23", "text": "H.O.T.·S.E.S.·핑클 추가", "count": 12 },
     { "date": "2026-09-22", "text": "TFBOYS 추가", "count": 3 }
   ],
-  "updatedAt": "2026-09-27"
+  "updatedAt": "2026-09-28"
 }

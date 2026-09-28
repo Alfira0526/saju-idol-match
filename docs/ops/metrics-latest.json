@@ -1,16 +1,20 @@
 {
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-09-28",
   "dataset": {
-    "totalIdols": 1663,
-    "totalGroups": 322,
-    "statsTotal": 1663,
+    "totalIdols": 1756,
+    "totalGroups": 336,
+    "statsTotal": 1756,
     "byCategory": {
       "K-idol": {
-        "count": 1381,
+        "count": 1436,
         "visible": true
       },
       "J-idol": {
         "count": 122,
+        "visible": true
+      },
+      "TH-idol": {
+        "count": 39,
         "visible": true
       },
       "C-actor": {
@@ -22,7 +26,7 @@
         "visible": true
       },
       "C-idol": {
-        "count": 32,
+        "count": 35,
         "visible": true
       },
       "US-actor": {
@@ -30,57 +34,56 @@
         "visible": true
       },
       "Etc": {
-        "count": 16,
-        "visible": false
-      },
-      "TH-idol": {
-        "count": 7,
+        "count": 19,
         "visible": false
       }
     },
     "byAgency": {
-      "HYBE": 93,
+      "HYBE": 92,
       "YG": 40,
-      "기타": 1089,
-      "SM": 87,
+      "기타": 1137,
+      "SM": 95,
       "JYP": 79,
       "미국 배우": 31,
       "중국 배우": 38,
       "노기자카46": 30,
-      "배우": 39,
+      "배우": 40,
       "LAPONE": 34,
       "XG": 7,
       "페포니뮤직": 1,
-      "가수": 9,
+      "가수": 10,
       "avex": 8,
       "ASOBISYSTEM": 8,
       "LDH": 4,
       "중국 그룹": 3,
-      "중국 아이돌": 29,
+      "중국 아이돌": 32,
       "AKB48": 11,
       "Luvless": 3,
       "STARTO ENTERTAINMENT": 9,
       "MPMG뮤직": 4,
-      "XOXO Entertainment": 7
+      "XOXO Entertainment": 7,
+      "GMMTV": 1,
+      "iAM": 32
     },
     "subAgency": {
-      "etcTotal": 1082,
-      "assigned": 1074,
-      "unassigned": 8,
-      "coveragePct": 99,
+      "etcTotal": 1130,
+      "assigned": 1128,
+      "unassigned": 2,
+      "coveragePct": 100,
       "byLabel": {
+        "333": 1,
         "스타쉽엔터테인먼트": 60,
         "MODHAUS": 60,
-        "FNC엔터테인먼트": 43,
-        "큐브엔터테인먼트": 37,
+        "FNC엔터테인먼트": 50,
+        "큐브엔터테인먼트": 42,
         "웨이크원": 33,
         "스윙엔터테인먼트": 31,
         "아이에스티엔터테인먼트": 30,
         "울림엔터테인먼트": 27,
         "젤리피시엔터테인먼트": 26,
-        "RBW": 24,
+        "RBW": 25,
+        "DSP미디어": 25,
         "TOP미디어": 23,
-        "DSP미디어": 21,
         "Fantagio": 20,
         "C9엔터테인먼트": 20,
         "인코드엔터테인먼트": 19,
@@ -88,8 +91,10 @@
         "WM엔터테인먼트": 18,
         "F&F엔터테인먼트": 17,
         "포켓돌스튜디오": 14,
+        "MLD엔터테인먼트": 13,
         "하이업엔터테인먼트": 12,
         "YH엔터테인먼트": 12,
+        "브레이브엔터테인먼트": 12,
         "비트인터랙티브": 12,
         "이엔터테인먼트": 12,
         "미스틱스토리": 11,
@@ -104,7 +109,6 @@
         "피네이션": 9,
         "잭소엔터테인먼트": 9,
         "MBK엔터테인먼트": 8,
-        "브레이브엔터테인먼트": 8,
         "MNH엔터테인먼트": 8,
         "카카오엔터테인먼트": 8,
         "인피니트컴퍼니": 7,
@@ -135,7 +139,8 @@
         "하이퍼리듬": 6,
         "iMe KOREA": 6,
         "오크컴퍼니": 6,
-        "MLD엔터테인먼트": 6,
+        "LeanBranding": 6,
+        "팡스타엔터테인먼트": 6,
         "플레디스엔터테인먼트": 5,
         "바나나컬쳐엔터테인먼트": 5,
         "동요엔터테인먼트": 5,
@@ -149,6 +154,7 @@
         "VT엔터테인먼트": 5,
         "IX엔터테인먼트": 5,
         "UNBLUE LABELS": 5,
+        "몬스터브레인": 5,
         "어라운드어스엔터테인먼트": 4,
         "드림티엔터테인먼트": 4,
         "S2엔터테인먼트": 4,
@@ -164,18 +170,20 @@
         "어트랙트": 4,
         "220Entertainment": 4,
         "빅오션이엔엠": 4,
+        "PI코퍼레이션": 4,
+        "빅플래닛메이드": 3,
+        "CAM WITH US": 3,
         "FM엔터테인먼트": 3,
         "피나클엔터테인먼트": 3,
         "EDAM엔터테인먼트": 2,
-        "CAM WITH US": 2,
         "PCS엔터테인먼트": 2,
         "빅토리컴퍼니": 2,
         "P NATION": 1,
         "808 HI RECORDINGS": 1,
+        "피플라이크피플": 1,
         "쇼파르엔터테인먼트": 1,
         "131레이블": 1,
         "하이라인엔터테인먼트": 1,
-        "CAM": 1,
         "로맨틱팩토리": 1,
         "BRD엔터테인먼트": 1,
         "이에스네이션": 1,
@@ -196,10 +204,10 @@
       ]
     },
     "byGender": {
-      "M": 1076,
-      "F": 587
+      "M": 1098,
+      "F": 658
     },
-    "recentAddsListed": 40
+    "recentAddsListed": 76
   },
   "integrity": {
     "statsTotalMatches": true,
@@ -207,30 +215,19 @@
     "duplicateSamples": []
   },
   "backlog": {
-    "handled": 2032,
-    "addPending": 2,
+    "handled": 2046,
+    "addPending": 0,
     "addPendingGroups": {
-      "distinctGroups": 2,
+      "distinctGroups": 0,
       "newGroups": 0,
-      "knownGroups": 2,
+      "knownGroups": 0,
       "alreadyPresentPersons": 0,
       "note": "개인 제보 수는 로마자/한글 변형·오타로 과대. 실질 작업 단위는 distinctGroups. newGroups도 변형·오타 포함해 실제 신규는 더 적음."
     },
     "errorPending": 0,
-    "oldestAddPending": "2026-09-15T10:03:02.497Z",
+    "oldestAddPending": null,
     "oldestErrorPending": null,
-    "topAddPending": [
-      {
-        "name": "하민",
-        "group": "PLAVE",
-        "count": 1
-      },
-      {
-        "name": "若璇",
-        "group": "&TEAM",
-        "count": 1
-      }
-    ],
+    "topAddPending": [],
     "topErrorPending": []
   },
   "i18n": {
@@ -240,15 +237,15 @@
   },
   "flushCadence": {
     "windowDays": 7,
-    "flushCount": 11,
+    "flushCount": 4,
     "maxBatch": 1,
     "avgBatch": 1,
-    "medianGapMin": 940,
-    "lastFlushAt": "2026-09-21T09:40:34+09:00",
-    "timeSinceLastFlushMin": 209,
+    "medianGapMin": 420,
+    "lastFlushAt": "2026-09-28T04:10:59+09:00",
+    "timeSinceLastFlushMin": 545,
     "cronDelayEvents": 0,
     "recentCronDelayEvents": 0,
-    "quietGaps": 9,
+    "quietGaps": 3,
     "inflowSurges": 0,
     "surges": [],
     "assessment": "정상(최근 48h 누적-지연 없음. 큰 gap은 대부분 조용한 시간대·제보 적음)",
@@ -257,18 +254,18 @@
   "contentUsage": {
     "available": true,
     "metric": "unique-users-per-day (UTC)",
-    "updatedAt": "2026-09-07T09:40:47.827Z",
-    "daysCovered": 7,
+    "updatedAt": "2026-09-26T22:20:50.406Z",
+    "daysCovered": 8,
     "windowDays": 7,
-    "recentTotal": 0,
-    "allTotal": 17,
+    "recentTotal": 1,
+    "allTotal": 18,
     "ranking": [
       {
         "event": "match",
         "label": "사주궁합",
-        "recent7d": 0,
-        "total": 7,
-        "recentSharePct": 0
+        "recent7d": 1,
+        "total": 8,
+        "recentSharePct": 100
       },
       {
         "event": "pair",
