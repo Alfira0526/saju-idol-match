@@ -25231,5 +25231,18 @@
     "firstAt": "2026-09-27T19:01:55.378Z",
     "lastAt": "2026-09-27T19:01:55.378Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:벨|세븐틴",
+    "name": "벨",
+    "group": "세븐틴",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-09-30T13:41:16.869Z",
+    "lastAt": "2026-09-30T13:41:16.869Z",
+    "status": "pending"
   }
 ]
