@@ -15199,5 +15199,68 @@
     "dob": "1999-05-26",
     "cat": "K-idol",
     "subAgency": "MBK엔터테인먼트"
+  },
+  {
+    "name": "재경",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1988-12-24",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "우리",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1988-02-22",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "노을",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1989-05-10",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "승아",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1988-09-13",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "지숙",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-07-18",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "윤혜",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1990-04-14",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
+  },
+  {
+    "name": "현영",
+    "group": "Rainbow",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1991-08-11",
+    "cat": "K-idol",
+    "subAgency": "DSP미디어"
   }
 ]
