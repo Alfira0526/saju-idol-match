@@ -1,6 +1,11 @@
 {
-  "total": 1769,
+  "total": 1770,
   "addedRecent": [
+    {
+      "date": "2026-10-01",
+      "text": "GMMTV 배우 Mark 추가",
+      "count": 1
+    },
     {
       "date": "2026-09-30",
       "text": "레인보우(Rainbow) 추가",
@@ -52,5 +57,5 @@
       "count": 3
     }
   ],
-  "updatedAt": "2026-09-30"
+  "updatedAt": "2026-10-01"
 }

@@ -15262,5 +15262,13 @@
     "dob": "1991-08-11",
     "cat": "K-idol",
     "subAgency": "DSP미디어"
+  },
+  {
+    "name": "Mark",
+    "group": "배우",
+    "agency": "GMMTV",
+    "gender": "M",
+    "dob": "1997-06-15",
+    "cat": "Etc"
   }
 ]
