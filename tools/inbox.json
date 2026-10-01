@@ -25244,5 +25244,18 @@
     "firstAt": "2026-09-30T13:41:16.869Z",
     "lastAt": "2026-09-30T13:41:16.869Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이지은|iu",
+    "name": "이지은",
+    "group": "iu",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19930516",
+    "note": "EDAM娛樂",
+    "count": 1,
+    "firstAt": "2026-10-01T10:51:35.377Z",
+    "lastAt": "2026-10-01T10:51:35.377Z",
+    "status": "pending"
   }
 ]
