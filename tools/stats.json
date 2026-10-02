@@ -1,6 +1,11 @@
 {
-  "total": 1770,
+  "total": 1778,
   "addedRecent": [
+    {
+      "date": "2026-10-02",
+      "text": "체리블렛(Cherry Bullet) 추가",
+      "count": 8
+    },
     {
       "date": "2026-10-01",
       "text": "GMMTV 배우 Mark 추가",
@@ -57,5 +62,5 @@
       "count": 3
     }
   ],
-  "updatedAt": "2026-10-01"
+  "updatedAt": "2026-10-02"
 }
