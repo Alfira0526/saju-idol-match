@@ -25283,5 +25283,18 @@
     "firstAt": "2026-10-03T12:35:56.868Z",
     "lastAt": "2026-10-03T12:35:56.868Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mabelz|pixxie",
+    "name": "MABELZ",
+    "group": "PiXXiE",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "20001206",
+    "note": "태국 아이돌",
+    "count": 1,
+    "firstAt": "2026-10-03T14:50:24.484Z",
+    "lastAt": "2026-10-03T14:50:24.484Z",
+    "status": "pending"
   }
 ]
