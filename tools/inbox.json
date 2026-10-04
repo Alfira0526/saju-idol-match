@@ -25322,5 +25322,18 @@
     "firstAt": "2026-10-04T11:36:13.092Z",
     "lastAt": "2026-10-04T11:36:13.092Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:류호존|배우",
+    "name": "류호존",
+    "group": "배우",
+    "cat": "C-actor",
+    "gender": "F",
+    "dob": "20000520",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-04T13:07:33.625Z",
+    "lastAt": "2026-10-04T13:07:33.625Z",
+    "status": "pending"
   }
 ]
