@@ -25335,5 +25335,18 @@
     "firstAt": "2026-10-04T13:07:33.625Z",
     "lastAt": "2026-10-04T13:07:33.625Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:소람|캔디샵",
+    "name": "소람",
+    "group": "캔디샵",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20050924",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-04T13:22:06.444Z",
+    "lastAt": "2026-10-04T13:22:06.444Z",
+    "status": "pending"
   }
 ]
