@@ -15278,5 +15278,185 @@
     "gender": "F",
     "dob": "1999-05-11",
     "cat": "Etc"
+  },
+  {
+    "name": "마이나",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-05-12",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "나현",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-01-25",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "형신",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-05-03",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "다나",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2003-12-25",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "예원",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-01-11",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "예빈",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-11-01",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "다인",
+    "group": "HOT ISSUE",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2004-12-15",
+    "cat": "K-idol",
+    "subAgency": "S2엔터테인먼트"
+  },
+  {
+    "name": "소람",
+    "group": "Candy Shop",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2005-09-24",
+    "cat": "K-idol",
+    "subAgency": "BRAVE엔터테인먼트"
+  },
+  {
+    "name": "수이",
+    "group": "Candy Shop",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2007-08-15",
+    "cat": "K-idol",
+    "subAgency": "BRAVE엔터테인먼트"
+  },
+  {
+    "name": "줄리아",
+    "group": "Candy Shop",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2008-03-10",
+    "cat": "K-idol",
+    "subAgency": "BRAVE엔터테인먼트"
+  },
+  {
+    "name": "유이나",
+    "group": "Candy Shop",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2007-02-27",
+    "cat": "K-idol",
+    "subAgency": "BRAVE엔터테인먼트"
+  },
+  {
+    "name": "사랑",
+    "group": "Candy Shop",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2007-11-30",
+    "cat": "K-idol",
+    "subAgency": "BRAVE엔터테인먼트"
+  },
+  {
+    "name": "Mabelz",
+    "group": "PiXXiE",
+    "agency": "LIT Entertainment",
+    "gender": "F",
+    "dob": "2000-12-06",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Pimma",
+    "group": "PiXXiE",
+    "agency": "LIT Entertainment",
+    "gender": "F",
+    "dob": "2001-03-15",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "Ingkho",
+    "group": "PiXXiE",
+    "agency": "LIT Entertainment",
+    "gender": "F",
+    "dob": "2002-11-23",
+    "cat": "TH-idol"
+  },
+  {
+    "name": "SOTA",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "2001-01-18",
+    "cat": "J-idol"
+  },
+  {
+    "name": "SHUNTO",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "2003-09-01",
+    "cat": "J-idol"
+  },
+  {
+    "name": "MANATO",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "2001-04-29",
+    "cat": "J-idol"
+  },
+  {
+    "name": "RYUHEI",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "2006-11-07",
+    "cat": "J-idol"
+  },
+  {
+    "name": "JUNON",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "1998-05-23",
+    "cat": "J-idol"
+  },
+  {
+    "name": "LEO",
+    "group": "BE:FIRST",
+    "agency": "BMSG",
+    "gender": "M",
+    "dob": "1998-09-08",
+    "cat": "J-idol"
   }
 ]

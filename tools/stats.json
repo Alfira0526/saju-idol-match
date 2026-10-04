@@ -1,6 +1,11 @@
 {
-  "total": 1771,
+  "total": 1792,
   "addedRecent": [
+    {
+      "date": "2026-10-04",
+      "text": "BE:FIRST·핫이슈·캔디샵·PiXXiE 추가",
+      "count": 21
+    },
     {
       "date": "2026-10-03",
       "text": "사브리나 카펜터 추가",
@@ -62,5 +67,5 @@
       "count": 3
     }
   ],
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-04"
 }
