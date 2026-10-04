@@ -25348,5 +25348,18 @@
     "firstAt": "2026-10-04T13:22:06.444Z",
     "lastAt": "2026-10-04T13:22:06.444Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:liz|tws",
+    "name": "liz",
+    "group": "tws",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20031213",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-04T14:11:39.950Z",
+    "lastAt": "2026-10-04T14:11:39.950Z",
+    "status": "pending"
   }
 ]
