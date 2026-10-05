@@ -25361,5 +25361,18 @@
     "firstAt": "2026-10-04T14:11:39.950Z",
     "lastAt": "2026-10-04T14:11:39.950Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:지한솔|뉴키드",
+    "name": "지한솔",
+    "group": "뉴키드",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19941121",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-05T02:17:20.308Z",
+    "lastAt": "2026-10-05T02:17:20.308Z",
+    "status": "pending"
   }
 ]
