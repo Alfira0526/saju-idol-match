@@ -15458,5 +15458,101 @@
     "gender": "M",
     "dob": "1998-09-08",
     "cat": "J-idol"
+  },
+  {
+    "name": "지한솔",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1994-11-21",
+    "cat": "K-idol"
+  },
+  {
+    "name": "지안",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "1997-09-30",
+    "cat": "K-idol"
+  },
+  {
+    "name": "윤민",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2001-02-26",
+    "cat": "K-idol"
+  },
+  {
+    "name": "휘",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-09-26",
+    "cat": "K-idol"
+  },
+  {
+    "name": "우철",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2002-10-02",
+    "cat": "K-idol"
+  },
+  {
+    "name": "승찬",
+    "group": "NEWKIDD",
+    "agency": "기타",
+    "gender": "M",
+    "dob": "2003-08-08",
+    "cat": "K-idol"
+  },
+  {
+    "name": "나고은",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "1999-09-03",
+    "cat": "K-idol"
+  },
+  {
+    "name": "도시",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2000-02-11",
+    "cat": "K-idol"
+  },
+  {
+    "name": "이레",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-04-30",
+    "cat": "K-idol"
+  },
+  {
+    "name": "유키",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-11-06",
+    "cat": "K-idol"
+  },
+  {
+    "name": "채인",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2002-12-05",
+    "cat": "K-idol"
+  },
+  {
+    "name": "수안",
+    "group": "PURPLE KISS",
+    "agency": "기타",
+    "gender": "F",
+    "dob": "2003-07-11",
+    "cat": "K-idol"
   }
 ]

@@ -1,6 +1,11 @@
 {
-  "total": 1792,
+  "total": 1804,
   "addedRecent": [
+    {
+      "date": "2026-10-05",
+      "text": "NEWKIDD·PURPLE KISS 추가",
+      "count": 12
+    },
     {
       "date": "2026-10-04",
       "text": "BE:FIRST·핫이슈·캔디샵·PiXXiE 추가",
@@ -67,5 +72,5 @@
       "count": 3
     }
   ],
-  "updatedAt": "2026-10-04"
+  "updatedAt": "2026-10-05"
 }
