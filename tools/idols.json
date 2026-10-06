@@ -15465,7 +15465,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1994-11-21",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "지안",
@@ -15473,7 +15474,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "1997-09-30",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "윤민",
@@ -15481,7 +15483,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2001-02-26",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "휘",
@@ -15489,7 +15492,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2002-09-26",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "우철",
@@ -15497,7 +15501,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2002-10-02",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "승찬",
@@ -15505,7 +15510,8 @@
     "agency": "기타",
     "gender": "M",
     "dob": "2003-08-08",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "J-FLO엔터테인먼트"
   },
   {
     "name": "나고은",
@@ -15513,7 +15519,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "1999-09-03",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "도시",
@@ -15521,7 +15528,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2000-02-11",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "이레",
@@ -15529,7 +15537,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2002-04-30",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "유키",
@@ -15537,7 +15546,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2002-11-06",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "채인",
@@ -15545,7 +15555,8 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2002-12-05",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   },
   {
     "name": "수안",
@@ -15553,6 +15564,7 @@
     "agency": "기타",
     "gender": "F",
     "dob": "2003-07-11",
-    "cat": "K-idol"
+    "cat": "K-idol",
+    "subAgency": "RBW"
   }
 ]
