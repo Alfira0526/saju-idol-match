@@ -15554,5 +15554,86 @@
     "gender": "F",
     "dob": "2003-07-11",
     "cat": "K-idol"
+  },
+  {
+    "name": "이연",
+    "group": "BVNDIT",
+    "agency": "기타",
+    "subAgency": "MNH",
+    "gender": "F",
+    "dob": "1995-05-28",
+    "cat": "K-idol"
+  },
+  {
+    "name": "송희",
+    "group": "BVNDIT",
+    "agency": "기타",
+    "subAgency": "MNH",
+    "gender": "F",
+    "dob": "1998-11-08",
+    "cat": "K-idol"
+  },
+  {
+    "name": "정우",
+    "group": "BVNDIT",
+    "agency": "기타",
+    "subAgency": "MNH",
+    "gender": "F",
+    "dob": "1999-04-02",
+    "cat": "K-idol"
+  },
+  {
+    "name": "시명",
+    "group": "BVNDIT",
+    "agency": "기타",
+    "subAgency": "MNH",
+    "gender": "F",
+    "dob": "1999-05-27",
+    "cat": "K-idol"
+  },
+  {
+    "name": "승은",
+    "group": "BVNDIT",
+    "agency": "기타",
+    "subAgency": "MNH",
+    "gender": "F",
+    "dob": "2000-12-27",
+    "cat": "K-idol"
+  },
+  {
+    "name": "세반",
+    "group": "VAV",
+    "agency": "기타",
+    "subAgency": "A Team",
+    "gender": "M",
+    "dob": "1991-12-22",
+    "cat": "K-idol"
+  },
+  {
+    "name": "제이콥",
+    "group": "VAV",
+    "agency": "기타",
+    "subAgency": "A Team",
+    "gender": "M",
+    "dob": "1996-09-07",
+    "cat": "K-idol"
+  },
+  {
+    "name": "에이노",
+    "group": "VAV",
+    "agency": "기타",
+    "subAgency": "A Team",
+    "gender": "M",
+    "dob": "1996-05-01",
+    "cat": "K-idol"
+  },
+  {
+    "name": "루",
+    "group": "VAV",
+    "agency": "기타",
+    "subAgency": "A Team",
+    "gender": "M",
+    "dob": "1996-12-21",
+    "cat": "K-idol"
   }
 ]
