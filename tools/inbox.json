@@ -25374,5 +25374,18 @@
     "firstAt": "2026-10-05T02:17:20.308Z",
     "lastAt": "2026-10-05T02:17:20.308Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유오|xd",
+    "name": "유오",
+    "group": "XD",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19961218",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-07T10:47:01.918Z",
+    "lastAt": "2026-10-07T10:47:01.918Z",
+    "status": "pending"
   }
 ]
