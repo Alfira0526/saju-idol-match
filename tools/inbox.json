@@ -25400,5 +25400,18 @@
     "firstAt": "2026-10-07T17:45:12.510Z",
     "lastAt": "2026-10-07T17:45:12.510Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:mananpat|enhypen",
+    "name": "Mananpat",
+    "group": "ENHYPEN",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20090130",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-08T17:13:12.807Z",
+    "lastAt": "2026-10-08T17:13:12.807Z",
+    "status": "pending"
   }
 ]
