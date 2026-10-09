@@ -25426,5 +25426,18 @@
     "firstAt": "2026-10-09T02:43:56.678Z",
     "lastAt": "2026-10-09T02:43:56.678Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:윤서빈|솔로",
+    "name": "윤서빈",
+    "group": "솔로",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19991214",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-09T16:13:47.003Z",
+    "lastAt": "2026-10-09T16:13:47.003Z",
+    "status": "pending"
   }
 ]
