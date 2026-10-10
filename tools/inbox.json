@@ -25452,5 +25452,18 @@
     "firstAt": "2026-10-10T00:35:42.779Z",
     "lastAt": "2026-10-10T00:35:42.779Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:서현진|배우",
+    "name": "서현진",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "F",
+    "dob": "19850227",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-10T04:02:52.137Z",
+    "lastAt": "2026-10-10T04:02:52.137Z",
+    "status": "pending"
   }
 ]
