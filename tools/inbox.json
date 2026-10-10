@@ -25478,5 +25478,18 @@
     "firstAt": "2026-10-10T13:17:17.237Z",
     "lastAt": "2026-10-10T13:17:17.237Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:가람|asc2nt",
+    "name": "가람",
+    "group": "ASC2NT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19910628",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-10T14:28:32.851Z",
+    "lastAt": "2026-10-10T14:28:32.851Z",
+    "status": "pending"
   }
 ]
