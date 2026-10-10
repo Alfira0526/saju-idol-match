@@ -25465,5 +25465,18 @@
     "firstAt": "2026-10-10T04:02:52.137Z",
     "lastAt": "2026-10-10T04:02:52.137Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:태힝|라이즈원빈",
+    "name": "태힝",
+    "group": "라이즈 원빈",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "20010302",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-10T13:17:17.237Z",
+    "lastAt": "2026-10-10T13:17:17.237Z",
+    "status": "pending"
   }
 ]
