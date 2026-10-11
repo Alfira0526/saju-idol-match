@@ -25491,5 +25491,18 @@
     "firstAt": "2026-10-10T14:28:32.851Z",
     "lastAt": "2026-10-10T14:28:32.851Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:대성|bigbang",
+    "name": "대성",
+    "group": "bigbang",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19890426",
+    "note": "제 최애라서",
+    "count": 1,
+    "firstAt": "2026-10-11T00:52:44.481Z",
+    "lastAt": "2026-10-11T00:52:44.481Z",
+    "status": "pending"
   }
 ]
