@@ -25543,5 +25543,18 @@
     "firstAt": "2026-10-12T16:38:59.387Z",
     "lastAt": "2026-10-12T16:38:59.387Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:최산|kq엔터테이먼트",
+    "name": "최산",
+    "group": "KQ엔터테이먼트",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990710",
+    "note": "미남",
+    "count": 1,
+    "firstAt": "2026-10-13T10:20:22.913Z",
+    "lastAt": "2026-10-13T10:20:22.913Z",
+    "status": "pending"
   }
 ]
