@@ -25556,5 +25556,18 @@
     "firstAt": "2026-10-13T10:20:22.913Z",
     "lastAt": "2026-10-13T10:20:22.913Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:헝위|modyssey",
+    "name": "헝위",
+    "group": "Modyssey",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20010622",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-13T13:56:10.916Z",
+    "lastAt": "2026-10-13T13:56:10.916Z",
+    "status": "pending"
   }
 ]
