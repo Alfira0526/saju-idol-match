@@ -25569,5 +25569,18 @@
     "firstAt": "2026-10-13T13:56:10.916Z",
     "lastAt": "2026-10-13T13:56:10.916Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:정빈|pow",
+    "name": "정빈",
+    "group": "POW",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20030722",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-14T15:03:36.035Z",
+    "lastAt": "2026-10-14T15:03:36.035Z",
+    "status": "pending"
   }
 ]
