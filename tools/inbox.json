@@ -25595,5 +25595,18 @@
     "firstAt": "2026-10-16T15:01:00.668Z",
     "lastAt": "2026-10-16T15:01:00.668Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:히로세료|nctwish",
+    "name": "히로세 료",
+    "group": "NCT wish",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070804",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-16T15:11:33.704Z",
+    "lastAt": "2026-10-16T15:11:33.704Z",
+    "status": "pending"
   }
 ]
