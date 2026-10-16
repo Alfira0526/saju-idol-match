@@ -150,17 +150,20 @@
     "key": "er:마크|nct",
     "name": "마크",
     "group": "NCT",
-    "count": 1,
+    "count": 2,
     "firstAt": "2026-07-24T07:01:51.536Z",
-    "lastAt": "2026-07-24T07:01:51.536Z",
+    "lastAt": "2026-10-16T15:57:18.373Z",
     "status": "pending",
     "fields": {
-      "소속 그룹": 1
+      "소속 그룹": 2
     },
     "suggests": [
-      "솔로"
+      "솔로",
+      "현재 nct 아니고 솔로입니당"
     ],
-    "notes": []
+    "notes": [
+      "나무위키에 nct 탈퇴했다고 나와있어용"
+    ]
   },
   {
     "key": "er:윤재혁|treasure",
