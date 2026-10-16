@@ -25582,5 +25582,18 @@
     "firstAt": "2026-10-14T15:03:36.035Z",
     "lastAt": "2026-10-14T15:03:36.035Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:영|a2olite",
+    "name": "영",
+    "group": "A2O LITE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20081027",
+    "note": "A2O엔터테인먼트",
+    "count": 1,
+    "firstAt": "2026-10-16T15:01:00.668Z",
+    "lastAt": "2026-10-16T15:01:00.668Z",
+    "status": "pending"
   }
 ]
