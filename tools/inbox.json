@@ -25647,5 +25647,18 @@
     "firstAt": "2026-10-17T09:20:42.339Z",
     "lastAt": "2026-10-17T09:20:42.339Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:张元英|ive",
+    "name": "张元英",
+    "group": "ive",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20040831",
+    "note": "星船",
+    "count": 1,
+    "firstAt": "2026-10-17T10:55:37.958Z",
+    "lastAt": "2026-10-17T10:55:37.958Z",
+    "status": "pending"
   }
 ]
