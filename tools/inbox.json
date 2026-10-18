@@ -25660,5 +25660,18 @@
     "firstAt": "2026-10-17T10:55:37.958Z",
     "lastAt": "2026-10-17T10:55:37.958Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:haon|kc",
+    "name": "HAON",
+    "group": "KC",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "20000707",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-18T09:27:40.695Z",
+    "lastAt": "2026-10-18T09:27:40.695Z",
+    "status": "pending"
   }
 ]
