@@ -25699,5 +25699,18 @@
     "firstAt": "2026-10-18T15:21:18.489Z",
     "lastAt": "2026-10-18T15:21:18.489Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:도훈|tws",
+    "name": "도훈",
+    "group": "TWS",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20050130",
+    "note": "사랑",
+    "count": 1,
+    "firstAt": "2026-10-18T19:09:36.443Z",
+    "lastAt": "2026-10-18T19:09:36.443Z",
+    "status": "pending"
   }
 ]
