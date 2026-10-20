@@ -25725,5 +25725,18 @@
     "firstAt": "2026-10-20T08:55:18.081Z",
     "lastAt": "2026-10-20T08:55:18.081Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이준서|에이엔",
+    "name": "이준서",
+    "group": "에이엔",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20070215",
+    "note": "스타쉽",
+    "count": 1,
+    "firstAt": "2026-10-20T11:59:18.368Z",
+    "lastAt": "2026-10-20T11:59:18.368Z",
+    "status": "pending"
   }
 ]
