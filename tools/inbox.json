@@ -25712,5 +25712,18 @@
     "firstAt": "2026-10-18T19:09:36.443Z",
     "lastAt": "2026-10-18T19:09:36.443Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:doa|whynot",
+    "name": "Doa",
+    "group": "WHYNOT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20040126",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-20T08:55:18.081Z",
+    "lastAt": "2026-10-20T08:55:18.081Z",
+    "status": "pending"
   }
 ]
