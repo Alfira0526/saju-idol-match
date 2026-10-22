@@ -25764,5 +25764,18 @@
     "firstAt": "2026-10-22T00:02:40.787Z",
     "lastAt": "2026-10-22T00:02:40.787Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:류준열|배우",
+    "name": "류준열",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19860925",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-22T13:27:04.526Z",
+    "lastAt": "2026-10-22T13:27:04.526Z",
+    "status": "pending"
   }
 ]
