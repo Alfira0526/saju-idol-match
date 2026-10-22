@@ -25777,5 +25777,18 @@
     "firstAt": "2026-10-22T13:27:04.526Z",
     "lastAt": "2026-10-22T13:27:04.526Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:왕안우|배우",
+    "name": "왕안우",
+    "group": "배우",
+    "cat": "C-actor",
+    "gender": "M",
+    "dob": "19980203",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-22T14:09:18.560Z",
+    "lastAt": "2026-10-22T14:09:18.560Z",
+    "status": "pending"
   }
 ]
