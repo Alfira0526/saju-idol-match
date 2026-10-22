@@ -25751,5 +25751,18 @@
     "firstAt": "2026-10-21T06:19:19.779Z",
     "lastAt": "2026-10-21T06:19:19.779Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김선우|더보이즈",
+    "name": "김선우",
+    "group": "더보이즈",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20000412",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-22T00:02:40.787Z",
+    "lastAt": "2026-10-22T00:02:40.787Z",
+    "status": "pending"
   }
 ]
