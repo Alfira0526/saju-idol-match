@@ -25790,5 +25790,18 @@
     "firstAt": "2026-10-22T14:09:18.560Z",
     "lastAt": "2026-10-22T14:09:18.560Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:오아|a2olite",
+    "name": "오아",
+    "group": "A2O LITE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20130208",
+    "note": "제 본진 에투라..넣어주십쇼ㅜ",
+    "count": 1,
+    "firstAt": "2026-10-22T14:58:44.530Z",
+    "lastAt": "2026-10-22T14:58:44.530Z",
+    "status": "pending"
   }
 ]
