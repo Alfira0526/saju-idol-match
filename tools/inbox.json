@@ -25803,5 +25803,18 @@
     "firstAt": "2026-10-22T14:58:44.530Z",
     "lastAt": "2026-10-22T14:58:44.530Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:김성규|infinite",
+    "name": "김성규",
+    "group": "INFINITE",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19890428",
+    "note": "제 최애인데 없어요",
+    "count": 1,
+    "firstAt": "2026-10-24T00:22:05.893Z",
+    "lastAt": "2026-10-24T00:22:05.893Z",
+    "status": "pending"
   }
 ]
