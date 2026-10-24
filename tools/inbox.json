@@ -25829,5 +25829,18 @@
     "firstAt": "2026-10-24T05:54:57.054Z",
     "lastAt": "2026-10-24T05:54:57.054Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:도영|nct",
+    "name": "도영",
+    "group": "NCT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19960201",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-24T06:01:50.681Z",
+    "lastAt": "2026-10-24T06:01:50.681Z",
+    "status": "pending"
   }
 ]
