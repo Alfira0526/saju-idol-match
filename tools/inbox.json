@@ -25816,5 +25816,18 @@
     "firstAt": "2026-10-24T00:22:05.893Z",
     "lastAt": "2026-10-24T00:22:05.893Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:보라|a20lite",
+    "name": "보라",
+    "group": "A20 lite",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20100210",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-24T05:54:57.054Z",
+    "lastAt": "2026-10-24T05:54:57.054Z",
+    "status": "pending"
   }
 ]
