@@ -25842,5 +25842,18 @@
     "firstAt": "2026-10-24T06:01:50.681Z",
     "lastAt": "2026-10-24T06:01:50.681Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:강서하|a2osoul",
+    "name": "강서하",
+    "group": "a2o soul",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "20080101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-24T10:43:02.684Z",
+    "lastAt": "2026-10-24T10:43:02.684Z",
+    "status": "pending"
   }
 ]
