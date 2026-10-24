@@ -25855,5 +25855,18 @@
     "firstAt": "2026-10-24T10:43:02.684Z",
     "lastAt": "2026-10-24T10:43:02.684Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:아이찡|a20lite",
+    "name": "아이찡",
+    "group": "a20 lite",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "20130424",
+    "note": "SM",
+    "count": 1,
+    "firstAt": "2026-10-24T12:46:32.640Z",
+    "lastAt": "2026-10-24T12:46:32.640Z",
+    "status": "pending"
   }
 ]
