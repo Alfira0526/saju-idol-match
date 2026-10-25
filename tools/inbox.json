@@ -25894,5 +25894,18 @@
     "firstAt": "2026-10-25T04:48:17.791Z",
     "lastAt": "2026-10-25T04:48:17.791Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:민호|샤이니",
+    "name": "민호",
+    "group": "샤이니",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19911209",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-25T05:01:58.963Z",
+    "lastAt": "2026-10-25T05:01:58.963Z",
+    "status": "pending"
   }
 ]
