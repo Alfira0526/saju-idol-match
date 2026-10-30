@@ -25907,5 +25907,18 @@
     "firstAt": "2026-10-25T05:01:58.963Z",
     "lastAt": "2026-10-25T05:01:58.963Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이등대|리도어",
+    "name": "이등대",
+    "group": "리도어",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19990101",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-10-30T15:41:21.730Z",
+    "lastAt": "2026-10-30T15:41:21.730Z",
+    "status": "pending"
   }
 ]
