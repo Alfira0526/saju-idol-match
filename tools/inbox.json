@@ -25920,5 +25920,18 @@
     "firstAt": "2026-10-30T15:41:21.730Z",
     "lastAt": "2026-10-30T15:41:21.730Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:jay|asc2nt",
+    "name": "Jay",
+    "group": "ASC2NT",
+    "cat": "K-idol",
+    "gender": "M",
+    "dob": "19940331",
+    "note": "내 최애",
+    "count": 1,
+    "firstAt": "2026-11-01T07:04:41.444Z",
+    "lastAt": "2026-11-01T07:04:41.444Z",
+    "status": "pending"
   }
 ]
