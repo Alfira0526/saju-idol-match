@@ -1675,5 +1675,21 @@
     "firstAt": "2026-09-27T16:12:49.248Z",
     "lastAt": "2026-09-27T16:12:49.248Z",
     "status": "pending"
+  },
+  {
+    "key": "er:은호|plave",
+    "name": "은호",
+    "group": "PLAVE",
+    "fields": {
+      "비실존·중복": 1
+    },
+    "suggests": [],
+    "notes": [
+      "… 버츄얼도 사주를 따져요…? 가짜인데..?"
+    ],
+    "count": 1,
+    "firstAt": "2026-11-03T11:28:12.003Z",
+    "lastAt": "2026-11-03T11:28:12.003Z",
+    "status": "pending"
   }
 ]
