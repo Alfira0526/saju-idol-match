@@ -25946,5 +25946,18 @@
     "firstAt": "2026-11-02T17:09:16.659Z",
     "lastAt": "2026-11-02T17:09:16.659Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:崔然竣|txt",
+    "name": "崔然竣",
+    "group": "TXT",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "19990913",
+    "note": "Hybe",
+    "count": 1,
+    "firstAt": "2026-11-08T10:25:01.779Z",
+    "lastAt": "2026-11-08T10:25:01.779Z",
+    "status": "pending"
   }
 ]
