@@ -25959,5 +25959,18 @@
     "firstAt": "2026-11-08T10:25:01.779Z",
     "lastAt": "2026-11-08T10:25:01.779Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:유지|bestie",
+    "name": "유지",
+    "group": "BESTie",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19910102",
+    "note": "제 유지언니!!!",
+    "count": 1,
+    "firstAt": "2026-11-10T18:39:37.092Z",
+    "lastAt": "2026-11-10T18:39:37.092Z",
+    "status": "pending"
   }
 ]
