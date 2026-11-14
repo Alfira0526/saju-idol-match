@@ -25972,5 +25972,18 @@
     "firstAt": "2026-11-10T18:39:37.092Z",
     "lastAt": "2026-11-10T18:39:37.092Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:이수현|akmu",
+    "name": "이수현",
+    "group": "AKMU",
+    "cat": "K-idol",
+    "gender": "F",
+    "dob": "19990504",
+    "note": "영감의 샘터",
+    "count": 1,
+    "firstAt": "2026-11-14T01:49:52.636Z",
+    "lastAt": "2026-11-14T01:49:52.636Z",
+    "status": "pending"
   }
 ]
