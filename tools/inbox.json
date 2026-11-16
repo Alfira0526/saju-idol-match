@@ -25985,5 +25985,18 @@
     "firstAt": "2026-11-14T01:49:52.636Z",
     "lastAt": "2026-11-14T01:49:52.636Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:sena|lilleague",
+    "name": "SENA",
+    "group": "LILLEAGUE",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-11-16T14:07:11.666Z",
+    "lastAt": "2026-11-16T14:07:11.666Z",
+    "status": "pending"
   }
 ]
