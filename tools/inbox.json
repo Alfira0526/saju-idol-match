@@ -25998,5 +25998,18 @@
     "firstAt": "2026-11-16T14:07:11.666Z",
     "lastAt": "2026-11-16T14:07:11.666Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:kazuma|therampang",
+    "name": "KAZUMA",
+    "group": "The rampang",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-11-16T15:26:41.587Z",
+    "lastAt": "2026-11-16T15:26:41.587Z",
+    "status": "pending"
   }
 ]
