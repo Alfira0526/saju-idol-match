@@ -26050,5 +26050,18 @@
     "firstAt": "2026-11-18T07:14:54.905Z",
     "lastAt": "2026-11-18T07:14:54.905Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:배현성|배우",
+    "name": "배현성",
+    "group": "배우",
+    "cat": "Etc",
+    "gender": "M",
+    "dob": "19990503",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-11-18T16:06:52.048Z",
+    "lastAt": "2026-11-18T16:06:52.048Z",
+    "status": "pending"
   }
 ]
