@@ -26024,5 +26024,18 @@
     "firstAt": "2026-11-16T17:56:21.807Z",
     "lastAt": "2026-11-16T17:56:21.807Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:ryu|therampagefromexiletribe",
+    "name": "Ryu",
+    "group": "The Rampage from Exile Tribe",
+    "cat": "J-idol",
+    "gender": "M",
+    "dob": "19980909",
+    "note": "",
+    "count": 1,
+    "firstAt": "2026-11-18T03:42:32.908Z",
+    "lastAt": "2026-11-18T03:42:32.908Z",
+    "status": "pending"
   }
 ]
