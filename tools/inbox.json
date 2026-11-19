@@ -26063,5 +26063,18 @@
     "firstAt": "2026-11-18T16:06:52.048Z",
     "lastAt": "2026-11-18T16:06:52.048Z",
     "status": "pending"
+  },
+  {
+    "key": "sg:成韩彬|zb1",
+    "name": "成韩彬",
+    "group": "Zb1",
+    "cat": "K-idol",
+    "gender": "",
+    "dob": "20010613",
+    "note": "WK1",
+    "count": 1,
+    "firstAt": "2026-11-19T10:49:14.675Z",
+    "lastAt": "2026-11-19T10:49:14.675Z",
+    "status": "pending"
   }
 ]
